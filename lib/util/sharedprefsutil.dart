@@ -5,21 +5,21 @@ import 'dart:ui';
 
 import 'package:flutter/scheduler.dart';
 import 'package:intl/intl.dart';
-import 'package:wallet_flutter/model/authentication_method.dart';
-import 'package:wallet_flutter/model/available_block_explorer.dart';
-import 'package:wallet_flutter/model/available_currency.dart';
-import 'package:wallet_flutter/model/available_language.dart';
-import 'package:wallet_flutter/model/available_themes.dart';
-import 'package:wallet_flutter/model/currency_mode_setting.dart';
-import 'package:wallet_flutter/model/device_lock_timeout.dart';
-import 'package:wallet_flutter/model/vault.dart';
-import 'package:wallet_flutter/model/wallet.dart';
-import 'package:wallet_flutter/network/alert_codes.dart';
-import 'package:wallet_flutter/network/model/response/alerts_response_item.dart';
-import 'package:wallet_flutter/service_locator.dart';
-import 'package:wallet_flutter/util/deviceutil.dart';
-import 'package:wallet_flutter/util/encrypt.dart';
-import 'package:wallet_flutter/util/random_util.dart';
+import 'package:velocity/model/authentication_method.dart';
+import 'package:velocity/model/available_block_explorer.dart';
+import 'package:velocity/model/available_currency.dart';
+import 'package:velocity/model/available_language.dart';
+import 'package:velocity/model/available_themes.dart';
+import 'package:velocity/model/currency_mode_setting.dart';
+import 'package:velocity/model/device_lock_timeout.dart';
+import 'package:velocity/model/vault.dart';
+import 'package:velocity/model/wallet.dart';
+import 'package:velocity/network/alert_codes.dart';
+import 'package:velocity/network/model/response/alerts_response_item.dart';
+import 'package:velocity/service_locator.dart';
+import 'package:velocity/util/deviceutil.dart';
+import 'package:velocity/util/encrypt.dart';
+import 'package:velocity/util/random_util.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 /// Price conversion preference values
@@ -42,9 +42,9 @@ class SharedPrefsUtil {
   static const String user_representative = 'fkalium_user_rep'; // For when non-opened accounts have set a representative
   static const String firstcontact_added = 'fkalium_first_c_added';
   static const String notification_enabled = 'fkalium_notification_on';
-  static const String contacts_enabled = 'fnautilus_contacts_on';
-  static const String unopened_warning = 'fnautilus_unopened_warning';
-  static const String funding_enabled = 'fnautilus_funding_on';
+  static const String contacts_enabled = 'flumex_contacts_on';
+  static const String unopened_warning = 'flumex_unopened_warning';
+  static const String funding_enabled = 'flumex_funding_on';
   static const String lock_kalium = 'fkalium_lock_dev';
   static const String kalium_lock_timeout = 'fkalium_lock_timeout';
   static const String has_shown_root_warning = 'fkalium_root_warn'; // If user has seen the root/jailbreak warning yet
@@ -56,32 +56,32 @@ class SharedPrefsUtil {
   // Caching ninja API response
   static const String ninja_api_cache = 'fkalium_ninja_api_cache';
   // Natricon setting
-  static const String use_natricon = 'fnautilus_use_natricon';
+  static const String use_natricon = 'flumex_use_natricon';
   // Nyanicon setting
-  static const String use_nyanicon = 'fnautilus_use_nyanicon';
+  static const String use_nyanicon = 'flumex_use_nyanicon';
   // currency / nyano mode:
-  static const String currency_mode = 'fnautilus_currency_mode';
+  static const String currency_mode = 'flumex_currency_mode';
   // spam prevention min-RAW for receives
-  static const String min_raw_receive = 'fnautilus_min_raw_receive';
+  static const String min_raw_receive = 'flumex_min_raw_receive';
   // last time we checked for updates:
-  static const String last_napi_users_check = 'fnautilus_last_napi_users_check';
+  static const String last_napi_users_check = 'flumex_last_napi_users_check';
   // store app version (for showing the change log):
-  static const String app_version = 'fnautilus_app_version';
+  static const String app_version = 'flumex_app_version';
   // tracking permissions:
-  static const String tracking_enabled = 'fnautilus_tracking_enabled';
+  static const String tracking_enabled = 'flumex_tracking_enabled';
 
   // key derivation method:
-  static const String key_derivation = 'fnautilus_key_derivation';
+  static const String key_derivation = 'flumex_key_derivation';
 
   // pro sub status (whether they have paid):
-  static const String pro_sub_status = 'fnautilus_pro_sub_status';
+  static const String pro_sub_status = 'flumex_pro_sub_status';
   // whether they should automatically renew:
-  static const String pro_renew_active = 'fnautilus_pro_renew_active';
+  static const String pro_renew_active = 'flumex_pro_renew_active';
 
   // RPC settings:
-  // static const String http_url = 'fnautilus_http_url';
-  // static const String ws_url = 'fnautilus_ws_url';
-  static const String node_index = 'fnautilus_node_index';
+  // static const String http_url = 'flumex_http_url';
+  // static const String ws_url = 'flumex_ws_url';
+  static const String node_index = 'flumex_node_index';
 
 
 
@@ -504,7 +504,7 @@ class SharedPrefsUtil {
   }
 
   Future<String> getCurrencyMode() async {
-    return await get(currency_mode, defaultValue: CurrencyModeSetting(CurrencyModeOptions.NANO).getDisplayName())
+    return await get(currency_mode, defaultValue: CurrencyModeSetting(CurrencyModeOptions.Lumex).getDisplayName())
         as String;
   }
 

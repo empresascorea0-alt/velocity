@@ -4,17 +4,17 @@ import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
-import 'package:wallet_flutter/app_icons.dart';
-import 'package:wallet_flutter/appstate_container.dart';
-import 'package:wallet_flutter/generated/l10n.dart';
-import 'package:wallet_flutter/localize.dart';
-import 'package:wallet_flutter/model/available_currency.dart';
-import 'package:wallet_flutter/styles.dart';
-import 'package:wallet_flutter/ui/shop/use_card.dart';
-import 'package:wallet_flutter/ui/util/handlebars.dart';
-import 'package:wallet_flutter/ui/util/ui_util.dart';
-import 'package:wallet_flutter/ui/widgets/dialog.dart';
-import 'package:wallet_flutter/ui/widgets/draggable_scrollbar.dart';
+import 'package:velocity/app_icons.dart';
+import 'package:velocity/appstate_container.dart';
+import 'package:velocity/generated/l10n.dart';
+import 'package:velocity/localize.dart';
+import 'package:velocity/model/available_currency.dart';
+import 'package:velocity/styles.dart';
+import 'package:velocity/ui/shop/use_card.dart';
+import 'package:velocity/ui/util/handlebars.dart';
+import 'package:velocity/ui/util/ui_util.dart';
+import 'package:velocity/ui/widgets/dialog.dart';
+import 'package:velocity/ui/widgets/draggable_scrollbar.dart';
 
 class ShopSheet extends StatefulWidget {
   const ShopSheet({required this.localCurrency}) : super();
@@ -105,7 +105,7 @@ class ShopSheetState extends State<ShopSheet> {
                       //       image: "assets/logos/playnano.png",
                       //       title: NonTranslatable.cryptovision,
                       //       onPress: () async {
-                      //         await UIUtil.showChromeSafariWebview(context, "https://playnano.online/?ref=nautilus");
+                      //         await UIUtil.showChromeSafariWebview(context, "https://playnano.online/?ref=lumex");
                       //       },
                       //     ),
                       //   ],
@@ -145,7 +145,7 @@ class ShopSheetState extends State<ShopSheet> {
                             title: NonTranslatable.onramper,
                             onPress: () async {
                               final String url =
-                                  "https://widget.onramper.com?apiKey=${dotenv.env["ONRAMPER_API_KEY"]!}&color=4080D7&onlyCryptos=NANO&defaultCrypto=NANO&darkMode=${StateContainer.of(context).curTheme.brightness == Brightness.dark}";
+                                  "https://widget.onramper.com?apiKey=${dotenv.env["ONRAMPER_API_KEY"]!}&color=4080D7&onlyCryptos=Lumex&defaultCrypto=Lumex&darkMode=${StateContainer.of(context).curTheme.brightness == Brightness.dark}";
                               await UIUtil.showChromeSafariWebview(context, url);
                             },
                           ),
@@ -209,7 +209,7 @@ class ShopSheetState extends State<ShopSheet> {
                               image: "assets/logos/playnano.png",
                               title: NonTranslatable.playnano,
                               onPress: () async {
-                                await UIUtil.showChromeSafariWebview(context, "https://playnano.online/?ref=nautilus");
+                                await UIUtil.showChromeSafariWebview(context, "https://playnano.online/?ref=lumex");
                               },
                             ),
                           ],
@@ -236,7 +236,7 @@ class ShopSheetState extends State<ShopSheet> {
                               image: "assets/logos/nanswap.png",
                               title: NonTranslatable.nanswap,
                               onPress: () async {
-                                await UIUtil.showChromeSafariWebview(context, "https://nanswap.com/?ref=nautilus");
+                                await UIUtil.showChromeSafariWebview(context, "https://nanswap.com/?ref=lumex");
                               },
                             ),
                           ],

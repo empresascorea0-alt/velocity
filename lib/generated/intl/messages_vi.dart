@@ -254,7 +254,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "currencyModeHeader":
             MessageLookupByLibrary.simpleMessage("Thông tin về chế độ tiền tệ"),
         "currencyModeInfo": MessageLookupByLibrary.simpleMessage(
-            "Chọn đơn vị nào để hiển thị số tiền trong đó.\n1 nyano = 0.000001 NANO, hoặc \n1.000.000 nyano = 1 NANO"),
+            "Chọn đơn vị nào để hiển thị số tiền trong đó.\n1 nyano = 0.000001 Lumex, hoặc \n1.000.000 nyano = 1 Lumex"),
         "currentlyRepresented":
             MessageLookupByLibrary.simpleMessage("Hiện đang được đại diện bởi"),
         "daily": MessageLookupByLibrary.simpleMessage("Hằng ngày"),
@@ -263,7 +263,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "defaultAccountName":
             MessageLookupByLibrary.simpleMessage("Tài khoản chính"),
         "defaultGiftMessage": MessageLookupByLibrary.simpleMessage(
-            "Kiểm tra Nautilus! Tôi đã gửi cho bạn một số nano với liên kết này:"),
+            "Kiểm tra Lumex! Tôi đã gửi cho bạn một số nano với liên kết này:"),
         "defaultNewAccountName":
             MessageLookupByLibrary.simpleMessage("Tài khoản %1"),
         "delete": MessageLookupByLibrary.simpleMessage("Xoá"),
@@ -334,7 +334,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "eula": MessageLookupByLibrary.simpleMessage("EULA"),
         "exampleCardFrom": MessageLookupByLibrary.simpleMessage("Từ ai đó"),
         "exampleCardIntro": MessageLookupByLibrary.simpleMessage(
-            "Chào mừng đến với Nautilus. Khi bạn nhận Nano, các giao dịch sẽ được hiển thị như sau:"),
+            "Chào mừng đến với Lumex. Khi bạn nhận Lumex, các giao dịch sẽ được hiển thị như sau:"),
         "exampleCardLittle": MessageLookupByLibrary.simpleMessage("Một chút"),
         "exampleCardLot": MessageLookupByLibrary.simpleMessage("Khá là nhiều"),
         "exampleCardTo": MessageLookupByLibrary.simpleMessage("Đến ai đó"),
@@ -363,7 +363,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "exampleRecRecipientMessage":
             MessageLookupByLibrary.simpleMessage("Tiền gas"),
         "exchangeCurrency": MessageLookupByLibrary.simpleMessage("Trao đổi %2"),
-        "exchangeNano": MessageLookupByLibrary.simpleMessage("Trao đổi NANO"),
+        "exchangeNano": MessageLookupByLibrary.simpleMessage("Trao đổi Lumex"),
         "existingPasswordHint":
             MessageLookupByLibrary.simpleMessage("Nhập mật khẩu hiện tại"),
         "existingPinHint":
@@ -374,9 +374,9 @@ class MessageLookup extends MessageLookupByLibrary {
         "failed": MessageLookupByLibrary.simpleMessage("thất bại"),
         "failedMessage": MessageLookupByLibrary.simpleMessage("msg failed"),
         "fallbackHeader":
-            MessageLookupByLibrary.simpleMessage("Nautilus bị ngắt kết nối"),
+            MessageLookupByLibrary.simpleMessage("Lumex bị ngắt kết nối"),
         "fallbackInfo": MessageLookupByLibrary.simpleMessage(
-            "Máy chủ Nautilus dường như bị ngắt kết nối, Gửi và Nhận (không có ghi nhớ) vẫn phải hoạt động nhưng yêu cầu thanh toán có thể không được thông qua\n\n Quay lại sau hoặc khởi động lại ứng dụng để thử lại"),
+            "Máy chủ Lumex dường như bị ngắt kết nối, Gửi và Nhận (không có ghi nhớ) vẫn phải hoạt động nhưng yêu cầu thanh toán có thể không được thông qua\n\n Quay lại sau hoặc khởi động lại ứng dụng để thử lại"),
         "favoriteExists":
             MessageLookupByLibrary.simpleMessage("Yêu thích đã tồn tại"),
         "favoriteHeader": MessageLookupByLibrary.simpleMessage("Yêu thích"),
@@ -410,7 +410,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "generatingWork": MessageLookupByLibrary.simpleMessage(
             "Đang tạo PoW, quá trình này có thể mất một lúc (> 20 giây)..."),
         "getCurrency": MessageLookupByLibrary.simpleMessage("Nhận %2"),
-        "getNano": MessageLookupByLibrary.simpleMessage("Nhận NANO"),
+        "getNano": MessageLookupByLibrary.simpleMessage("Nhận Lumex"),
         "giftAlert":
             MessageLookupByLibrary.simpleMessage("Anh có một món quà!"),
         "giftAlertEmpty": MessageLookupByLibrary.simpleMessage("Quà Tặng Rỗng"),
@@ -423,7 +423,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Thông tin tờ quà tặng"),
         "giftFrom": MessageLookupByLibrary.simpleMessage("Quà Tặng Từ"),
         "giftInfo": MessageLookupByLibrary.simpleMessage(
-            "Nạp thẻ quà tặng kỹ thuật số với NANO! Đặt số tiền và một tin nhắn tùy chọn cho người nhận để xem khi họ mở nó!\n\nSau khi tạo, bạn sẽ nhận được một liên kết mà bạn có thể gửi cho bất kỳ ai, khi mở sẽ tự động phân phối tiền cho người nhận sau khi cài đặt Nautilus!\n\nNếu người nhận đã là người dùng Nautilus, họ sẽ nhận được lời nhắc để chuyển tiền vào tài khoản của họ khi mở liên kết"),
+            "Nạp thẻ quà tặng kỹ thuật số với Lumex! Đặt số tiền và một tin nhắn tùy chọn cho người nhận để xem khi họ mở nó!\n\nSau khi tạo, bạn sẽ nhận được một liên kết mà bạn có thể gửi cho bất kỳ ai, khi mở sẽ tự động phân phối tiền cho người nhận sau khi cài đặt Lumex!\n\nNếu người nhận đã là người dùng Lumex, họ sẽ nhận được lời nhắc để chuyển tiền vào tài khoản của họ khi mở liên kết"),
         "giftMessage":
             MessageLookupByLibrary.simpleMessage("Tin nhắn quà tặng"),
         "giftProcessError": MessageLookupByLibrary.simpleMessage(
@@ -466,9 +466,9 @@ class MessageLookup extends MessageLookupByLibrary {
         "importGiftEmpty": MessageLookupByLibrary.simpleMessage(
             "Unfortunately the link you clicked that contained some nano appears to be empty, but you can still see the amount and associated message."),
         "importGiftIntro": MessageLookupByLibrary.simpleMessage(
-            "Có vẻ như bạn đã nhấp vào một liên kết có chứa một số NANO, để nhận được những khoản tiền này, chúng tôi chỉ cần bạn hoàn tất việc thiết lập ví của mình."),
+            "Có vẻ như bạn đã nhấp vào một liên kết có chứa một số Lumex, để nhận được những khoản tiền này, chúng tôi chỉ cần bạn hoàn tất việc thiết lập ví của mình."),
         "importGiftv2": MessageLookupByLibrary.simpleMessage(
-            "Liên kết bạn đã nhấp vào chứa một số NANO, bạn có muốn nhập nó vào ví này không?"),
+            "Liên kết bạn đã nhấp vào chứa một số Lumex, bạn có muốn nhập nó vào ví này không?"),
         "importHD": MessageLookupByLibrary.simpleMessage("Nhập HD"),
         "importHDTrust":
             MessageLookupByLibrary.simpleMessage("Nhập HD / Tin cậy"),
@@ -503,7 +503,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Mật khẩu không hợp lệ"),
         "invalidPin": MessageLookupByLibrary.simpleMessage("Ghim không hợp lệ"),
         "iosFundingMessage": MessageLookupByLibrary.simpleMessage(
-            "Do các nguyên tắc và hạn chế của iOS App Store, chúng tôi không thể liên kết bạn với trang quyên góp của chúng tôi. Nếu bạn muốn hỗ trợ dự án, hãy cân nhắc gửi đến địa chỉ của nút nautilus."),
+            "Do các nguyên tắc và hạn chế của iOS App Store, chúng tôi không thể liên kết bạn với trang quyên góp của chúng tôi. Nếu bạn muốn hỗ trợ dự án, hãy cân nhắc gửi đến địa chỉ của nút lumex."),
         "language": MessageLookupByLibrary.simpleMessage("Ngôn ngữ"),
         "linkCopied":
             MessageLookupByLibrary.simpleMessage("Liên kết được sao chép"),
@@ -521,7 +521,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "logoutAreYouSure":
             MessageLookupByLibrary.simpleMessage("Bạn có chắc không?"),
         "logoutDetail": MessageLookupByLibrary.simpleMessage(
-            "Đăng xuất sẽ xóa hạt giống (seed) của bạn và tất cả dữ liệu liên quan đến Nautilus khỏi thiết bị này. Nếu bạn không lưu lại hạt giống, bạn sẽ không thể truy cập vào ví của mình."),
+            "Đăng xuất sẽ xóa hạt giống (seed) của bạn và tất cả dữ liệu liên quan đến Lumex khỏi thiết bị này. Nếu bạn không lưu lại hạt giống, bạn sẽ không thể truy cập vào ví của mình."),
         "logoutReassurance": MessageLookupByLibrary.simpleMessage(
             "Sẽ không có gì phải lo lắng nếu bạn đã sao lưu hạt giống."),
         "looksLikeHdSeed": MessageLookupByLibrary.simpleMessage(
@@ -543,7 +543,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Đã sao chép tin nhắn"),
         "messageHeader": MessageLookupByLibrary.simpleMessage("Tin nhắn"),
         "minimumSend": MessageLookupByLibrary.simpleMessage(
-            "Khoản gửi tối thiểu là %1 Nano"),
+            "Khoản gửi tối thiểu là %1 Lumex"),
         "minuteAgo": MessageLookupByLibrary.simpleMessage("Một phút trước"),
         "mnemonicInvalidWord":
             MessageLookupByLibrary.simpleMessage("%1 không phải từ hợp lệ"),
@@ -560,14 +560,14 @@ class MessageLookup extends MessageLookupByLibrary {
         "moreSettings": MessageLookupByLibrary.simpleMessage("Cài đặt khác"),
         "nameEmpty": MessageLookupByLibrary.simpleMessage("Vui lòng nhập tên"),
         "natricon": MessageLookupByLibrary.simpleMessage("Natricon"),
-        "nautilusWallet": MessageLookupByLibrary.simpleMessage("Ví Nautilus"),
+        "lumexWallet": MessageLookupByLibrary.simpleMessage("Ví Lumex"),
         "nearby": MessageLookupByLibrary.simpleMessage("Lân cận"),
         "needVerificationAlert": MessageLookupByLibrary.simpleMessage(
             "Tính năng này yêu cầu bạn phải có lịch sử giao dịch dài hơn để ngăn chặn thư rác.\n\nNgoài ra, bạn có thể hiển thị mã QR để ai đó quét."),
         "needVerificationAlertHeader":
             MessageLookupByLibrary.simpleMessage("Cần xác minh"),
         "newAccountIntro": MessageLookupByLibrary.simpleMessage(
-            "Đây là tài khoản mới của bạn. Khi bạn nhận Nano, giao dịch sẽ được hiển thị như sau:"),
+            "Đây là tài khoản mới của bạn. Khi bạn nhận Lumex, giao dịch sẽ được hiển thị như sau:"),
         "newWallet": MessageLookupByLibrary.simpleMessage("Tạo ví mới"),
         "nextButton": MessageLookupByLibrary.simpleMessage("Tiếp theo"),
         "nextPayment":
@@ -589,7 +589,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "noneMethod": MessageLookupByLibrary.simpleMessage("Không có"),
         "notSent": MessageLookupByLibrary.simpleMessage("chưa được gửi"),
         "notificationBody": MessageLookupByLibrary.simpleMessage(
-            "Mở Nautilus để xem giao dịch này"),
+            "Mở Lumex để xem giao dịch này"),
         "notificationHeaderSupplement":
             MessageLookupByLibrary.simpleMessage("Chạm để mở"),
         "notificationInfo": MessageLookupByLibrary.simpleMessage(
@@ -631,7 +631,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("mật khẩu không đúng"),
         "passwordNoLongerRequiredToOpenParagraph":
             MessageLookupByLibrary.simpleMessage(
-                "Bạn sẽ không cần mật khẩu để mở Nautilus nữa."),
+                "Bạn sẽ không cần mật khẩu để mở Lumex nữa."),
         "passwordNumber": MessageLookupByLibrary.simpleMessage(
             "Mật khẩu phải chứa ít nhất 1 số"),
         "passwordSpecialCharacter": MessageLookupByLibrary.simpleMessage(
@@ -639,10 +639,10 @@ class MessageLookup extends MessageLookupByLibrary {
         "passwordTooShort":
             MessageLookupByLibrary.simpleMessage("Mật khẩu quá ngắn"),
         "passwordWarning": MessageLookupByLibrary.simpleMessage(
-            "Mật khẩu này sẽ được yêu cầu để mở Nautilus."),
+            "Mật khẩu này sẽ được yêu cầu để mở Lumex."),
         "passwordWillBeRequiredToOpenParagraph":
             MessageLookupByLibrary.simpleMessage(
-                "Mật khẩu này sẽ được yêu cầu để mở Nautilus."),
+                "Mật khẩu này sẽ được yêu cầu để mở Lumex."),
         "passwordsDontMatch":
             MessageLookupByLibrary.simpleMessage("Mật khẩu không khớp"),
         "pastDue": MessageLookupByLibrary.simpleMessage("Quá hạn"),
@@ -691,13 +691,13 @@ class MessageLookup extends MessageLookupByLibrary {
         "privacyPolicy":
             MessageLookupByLibrary.simpleMessage("Chính sách bảo mật"),
         "proSubRequiredHeader": MessageLookupByLibrary.simpleMessage(
-            "Yêu cầu đăng ký Nautilus Pro"),
+            "Yêu cầu đăng ký Lumex Pro"),
         "proSubRequiredParagraph": MessageLookupByLibrary.simpleMessage(
-            "Chỉ với 1 NANO mỗi tháng, bạn có thể mở khóa tất cả các tính năng của Nautilus Pro."),
+            "Chỉ với 1 Lumex mỗi tháng, bạn có thể mở khóa tất cả các tính năng của Lumex Pro."),
         "promotionalLink":
-            MessageLookupByLibrary.simpleMessage("NANO miễn phí"),
+            MessageLookupByLibrary.simpleMessage("Lumex miễn phí"),
         "purchaseCurrency": MessageLookupByLibrary.simpleMessage("Mua %2"),
-        "purchaseNano": MessageLookupByLibrary.simpleMessage("Mua Nano"),
+        "purchaseNano": MessageLookupByLibrary.simpleMessage("Mua Lumex"),
         "qrInvalidAddress": MessageLookupByLibrary.simpleMessage(
             "Mã QR không chứa điểm đến hợp lệ"),
         "qrInvalidPermissions": MessageLookupByLibrary.simpleMessage(
@@ -756,7 +756,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "requestAmountConfirm":
             MessageLookupByLibrary.simpleMessage("Yêu cầu %1"),
         "requestError": MessageLookupByLibrary.simpleMessage(
-            "Yêu cầu thất bại: Người dùng này dường như không có Nautilus cài đặt hoặc đã tắt thông báo."),
+            "Yêu cầu thất bại: Người dùng này dường như không có Lumex cài đặt hoặc đã tắt thông báo."),
         "requestFrom": MessageLookupByLibrary.simpleMessage("Yêu cầu từ"),
         "requestPayment":
             MessageLookupByLibrary.simpleMessage("Yêu cầu thanh toán"),
@@ -765,14 +765,14 @@ class MessageLookup extends MessageLookupByLibrary {
         "requestSentButNotReceived": MessageLookupByLibrary.simpleMessage(
             "Yêu cầu gửi lại! Nếu vẫn chưa được xác nhận, thiết bị của người nhận có thể đang ngoại tuyến."),
         "requestSheetInfo": MessageLookupByLibrary.simpleMessage(
-            "Yêu cầu thanh toán, với tin nhắn được mã hóa từ đầu đến cuối!\n\nYêu cầu thanh toán, bản ghi nhớ và tin nhắn sẽ chỉ có những người dùng nautilus khác mới có thể nhận được, nhưng bạn có thể sử dụng chúng để lưu trữ hồ sơ của riêng mình ngay cả khi người nhận không sử dụng nautilus."),
+            "Yêu cầu thanh toán, với tin nhắn được mã hóa từ đầu đến cuối!\n\nYêu cầu thanh toán, bản ghi nhớ và tin nhắn sẽ chỉ có những người dùng lumex khác mới có thể nhận được, nhưng bạn có thể sử dụng chúng để lưu trữ hồ sơ của riêng mình ngay cả khi người nhận không sử dụng lumex."),
         "requestSheetInfoHeader": MessageLookupByLibrary.simpleMessage(
             "Yêu cầu thông tin trang tính"),
         "requested": MessageLookupByLibrary.simpleMessage("Đã yêu cầu"),
         "requestedFrom": MessageLookupByLibrary.simpleMessage("Yêu cầu từ"),
         "requesting": MessageLookupByLibrary.simpleMessage("Yêu cầu"),
         "requireAPasswordToOpenHeader": MessageLookupByLibrary.simpleMessage(
-            "Yêu cầu mật khẩu để mở Nautilus?"),
+            "Yêu cầu mật khẩu để mở Lumex?"),
         "requireCaptcha": MessageLookupByLibrary.simpleMessage(
             "Yêu cầu CAPTCHA để yêu cầu thẻ quà tặng"),
         "resendMemo":
@@ -831,14 +831,14 @@ class MessageLookup extends MessageLookupByLibrary {
             "Đã xảy ra lỗi, vui lòng thử lại sau."),
         "sendFrom": MessageLookupByLibrary.simpleMessage("Gửi từ"),
         "sendMemoError": MessageLookupByLibrary.simpleMessage(
-            "Gửi bản ghi nhớ với giao dịch không thành công, họ có thể không phải là người dùng Nautilus."),
+            "Gửi bản ghi nhớ với giao dịch không thành công, họ có thể không phải là người dùng Lumex."),
         "sendMessageConfirm":
             MessageLookupByLibrary.simpleMessage("Gửi tin nhắn"),
         "sendRequestAgain":
             MessageLookupByLibrary.simpleMessage("Gửi lại yêu cầu"),
         "sendRequests": MessageLookupByLibrary.simpleMessage("Gửi yêu cầu"),
         "sendSheetInfo": MessageLookupByLibrary.simpleMessage(
-            "Gửi hoặc yêu cầu thanh toán, với các tin nhắn được mã hóa End to End!\n\nYêu cầu thanh toán, bản ghi nhớ và tin nhắn sẽ chỉ được chấp nhận bởi những người dùng nautilus khác.\n\nBạn không cần phải có tên người dùng để gửi hoặc nhận yêu cầu thanh toán, và bạn có thể sử dụng chúng để lưu giữ hồ sơ của riêng bạn ngay cả khi họ không sử dụng nautilus."),
+            "Gửi hoặc yêu cầu thanh toán, với các tin nhắn được mã hóa End to End!\n\nYêu cầu thanh toán, bản ghi nhớ và tin nhắn sẽ chỉ được chấp nhận bởi những người dùng lumex khác.\n\nBạn không cần phải có tên người dùng để gửi hoặc nhận yêu cầu thanh toán, và bạn có thể sử dụng chúng để lưu giữ hồ sơ của riêng bạn ngay cả khi họ không sử dụng lumex."),
         "sendSheetInfoHeader":
             MessageLookupByLibrary.simpleMessage("Gửi thông tin trang tính"),
         "sending": MessageLookupByLibrary.simpleMessage("Đang gửi"),
@@ -870,14 +870,14 @@ class MessageLookup extends MessageLookupByLibrary {
         "share": MessageLookupByLibrary.simpleMessage("Đăng lại"),
         "shareApp": MessageLookupByLibrary.simpleMessage("Chia sẻ %1"),
         "shareAppText": MessageLookupByLibrary.simpleMessage(
-            "Kiểm tra %1! Ví di động NANO hàng đầu!"),
+            "Kiểm tra %1! Ví di động Lumex hàng đầu!"),
         "shareLink": MessageLookupByLibrary.simpleMessage("Chia sẻ liên kết"),
         "shareMessage":
             MessageLookupByLibrary.simpleMessage("Chia sẻ tin nhắn"),
-        "shareNautilus":
-            MessageLookupByLibrary.simpleMessage("Chia sẻ Nautilus"),
-        "shareNautilusText": MessageLookupByLibrary.simpleMessage(
-            "Thử ngay Nautilus! Ví Nano di động hàng đầu!"),
+        "shareLumex":
+            MessageLookupByLibrary.simpleMessage("Chia sẻ Lumex"),
+        "shareLumexText": MessageLookupByLibrary.simpleMessage(
+            "Thử ngay Lumex! Ví Lumex di động hàng đầu!"),
         "shareText": MessageLookupByLibrary.simpleMessage("Chia sẻ văn bản"),
         "shopButton": MessageLookupByLibrary.simpleMessage("Cửa hàng"),
         "show": MessageLookupByLibrary.simpleMessage("Trình diễn"),
@@ -907,7 +907,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "social": MessageLookupByLibrary.simpleMessage("Xã hội"),
         "someone": MessageLookupByLibrary.simpleMessage("người nào"),
         "spendCurrency": MessageLookupByLibrary.simpleMessage("Chi tiêu %2"),
-        "spendNano": MessageLookupByLibrary.simpleMessage("Tiêu NANO"),
+        "spendNano": MessageLookupByLibrary.simpleMessage("Tiêu Lumex"),
         "splitBill": MessageLookupByLibrary.simpleMessage("Hóa đơn tách"),
         "splitBillHeader":
             MessageLookupByLibrary.simpleMessage("Chia một hóa đơn"),
@@ -934,7 +934,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "swapXMRHeader":
             MessageLookupByLibrary.simpleMessage("Hoán đổi Monero"),
         "swapXMRInfo": MessageLookupByLibrary.simpleMessage(
-            "Monero là một loại tiền điện tử tập trung vào quyền riêng tư nên rất khó hoặc thậm chí không thể theo dõi các giao dịch. Trong khi đó NANO là một loại tiền điện tử tập trung vào thanh toán, nhanh chóng và không mất phí. Họ cùng nhau cung cấp một số khía cạnh hữu ích nhất của tiền điện tử!\n\nSử dụng trang này để dễ dàng hoán đổi NANO của bạn lấy XMR!"),
+            "Monero là một loại tiền điện tử tập trung vào quyền riêng tư nên rất khó hoặc thậm chí không thể theo dõi các giao dịch. Trong khi đó Lumex là một loại tiền điện tử tập trung vào thanh toán, nhanh chóng và không mất phí. Họ cùng nhau cung cấp một số khía cạnh hữu ích nhất của tiền điện tử!\n\nSử dụng trang này để dễ dàng hoán đổi Lumex của bạn lấy XMR!"),
         "swapping": MessageLookupByLibrary.simpleMessage("Hoán đổi"),
         "switchToSeed":
             MessageLookupByLibrary.simpleMessage("Chuyển sang hạt giống"),
@@ -968,7 +968,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "transferClose": MessageLookupByLibrary.simpleMessage(
             "Chạm một chỗ bất kỳ để đóng cửa sổ."),
         "transferComplete": MessageLookupByLibrary.simpleMessage(
-            "%1 %2 đã được chuyển vào ví Nautilus của bạn.\n"),
+            "%1 %2 đã được chuyển vào ví Lumex của bạn.\n"),
         "transferConfirmInfo": MessageLookupByLibrary.simpleMessage(
             "Đã tìm thấy một ví với số dư là %1 BAN. \n"),
         "transferConfirmInfoSecond": MessageLookupByLibrary.simpleMessage(
@@ -979,14 +979,14 @@ class MessageLookup extends MessageLookupByLibrary {
             "Đã có lỗi trong quá trình giao dịch, vui lòng thử lại sau."),
         "transferHeader": MessageLookupByLibrary.simpleMessage("Chuyển tiền"),
         "transferIntro": MessageLookupByLibrary.simpleMessage(
-            "Quá trình này sẽ chuyển toàn bộ số dư từ ví giấy sang ví Nautilus của bạn.\n\nNhấn nút \"%1\" để bắt đầu."),
+            "Quá trình này sẽ chuyển toàn bộ số dư từ ví giấy sang ví Lumex của bạn.\n\nNhấn nút \"%1\" để bắt đầu."),
         "transferIntroShort": MessageLookupByLibrary.simpleMessage(
-            "Quá trình này sẽ chuyển tiền từ ví giấy sang ví Nautilus của bạn."),
+            "Quá trình này sẽ chuyển tiền từ ví giấy sang ví Lumex của bạn."),
         "transferLoading": MessageLookupByLibrary.simpleMessage("Đang chuyển"),
         "transferManualHint":
             MessageLookupByLibrary.simpleMessage("Hãy nhập hạt giống dưới đây"),
         "transferNoFunds": MessageLookupByLibrary.simpleMessage(
-            "Hạt giống này không chứa chút Nano nào"),
+            "Hạt giống này không chứa chút Lumex nào"),
         "transferQrScanError": MessageLookupByLibrary.simpleMessage(
             "Mã QR này không chứa hạt giống hợp lệ."),
         "transferQrScanHint": MessageLookupByLibrary.simpleMessage(
@@ -999,7 +999,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "unlockBiometrics":
             MessageLookupByLibrary.simpleMessage("Xác nhận mở khoá Kalium"),
         "unlockPin": MessageLookupByLibrary.simpleMessage(
-            "Nhập mã PIN để mở khoá Nautilus"),
+            "Nhập mã PIN để mở khoá Lumex"),
         "unopenedWarningHeader":
             MessageLookupByLibrary.simpleMessage("Hiển thị cảnh báo chưa mở"),
         "unopenedWarningInfo": MessageLookupByLibrary.simpleMessage(
@@ -1018,9 +1018,9 @@ class MessageLookup extends MessageLookupByLibrary {
         "useAppRep":
             MessageLookupByLibrary.simpleMessage("Sử dụng %1 Đại diện"),
         "useCurrency": MessageLookupByLibrary.simpleMessage("Sử dụng %2"),
-        "useNano": MessageLookupByLibrary.simpleMessage("Sử dụng NANO"),
-        "useNautilusRep":
-            MessageLookupByLibrary.simpleMessage("Use Nautilus Rep"),
+        "useNano": MessageLookupByLibrary.simpleMessage("Sử dụng Lumex"),
+        "useLumexRep":
+            MessageLookupByLibrary.simpleMessage("Use Lumex Rep"),
         "userAlreadyAddedError":
             MessageLookupByLibrary.simpleMessage("Người dùng đã được thêm!"),
         "userNotFound":
@@ -1034,13 +1034,13 @@ class MessageLookup extends MessageLookupByLibrary {
         "usernameError":
             MessageLookupByLibrary.simpleMessage("Lỗi tên người dùng"),
         "usernameInfo": MessageLookupByLibrary.simpleMessage(
-            "Chọn một @username độc đáo để giúp bạn bè và gia đình dễ dàng tìm thấy bạn!\n\nCó một tên người dùng Nautilus sẽ cập nhật giao diện người dùng trên toàn cầu để phản ánh xử lý mới của bạn."),
+            "Chọn một @username độc đáo để giúp bạn bè và gia đình dễ dàng tìm thấy bạn!\n\nCó một tên người dùng Lumex sẽ cập nhật giao diện người dùng trên toàn cầu để phản ánh xử lý mới của bạn."),
         "usernameInvalid":
             MessageLookupByLibrary.simpleMessage("Tên người dùng không hợp lệ"),
         "usernameUnavailable":
             MessageLookupByLibrary.simpleMessage("Tên người dùng không có sẵn"),
         "usernameWarning": MessageLookupByLibrary.simpleMessage(
-            "Tên người dùng Nautilus là một dịch vụ tập trung được cung cấp bởi Nano.to"),
+            "Tên người dùng Lumex là một dịch vụ tập trung được cung cấp bởi Lumex.to"),
         "using": MessageLookupByLibrary.simpleMessage("Sử dụng"),
         "viewDetails": MessageLookupByLibrary.simpleMessage("Xem chi tiết"),
         "viewPaymentHistory":
@@ -1057,11 +1057,11 @@ class MessageLookup extends MessageLookupByLibrary {
         "weekAgo": MessageLookupByLibrary.simpleMessage("Một tuần trước"),
         "weekly": MessageLookupByLibrary.simpleMessage("hàng tuần"),
         "welcomeText": MessageLookupByLibrary.simpleMessage(
-            "Chào mừng đến với Nautilus. Để bắt đầu, bạn có thể tạo ví mới hoặc nhập ví hiện có."),
+            "Chào mừng đến với Lumex. Để bắt đầu, bạn có thể tạo ví mới hoặc nhập ví hiện có."),
         "welcomeTextLogin": MessageLookupByLibrary.simpleMessage(
-            "Chào mừng đến với Nautilus. Chọn một tùy chọn để bắt đầu hoặc chọn một chủ đề bằng biểu tượng bên dưới."),
+            "Chào mừng đến với Lumex. Chọn một tùy chọn để bắt đầu hoặc chọn một chủ đề bằng biểu tượng bên dưới."),
         "welcomeTextUpdated": MessageLookupByLibrary.simpleMessage(
-            "Chào mừng đến với Nautilus. Để bắt đầu, hãy tạo một ví mới hoặc nhập một ví hiện có."),
+            "Chào mừng đến với Lumex. Để bắt đầu, hãy tạo một ví mới hoặc nhập một ví hiện có."),
         "welcomeTextWithoutLogin": MessageLookupByLibrary.simpleMessage(
             "Để bắt đầu, hãy tạo một ví mới hoặc nhập một ví hiện có."),
         "withAddress": MessageLookupByLibrary.simpleMessage("Với địa chỉ"),

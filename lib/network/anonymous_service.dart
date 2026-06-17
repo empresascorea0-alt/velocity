@@ -2,7 +2,7 @@ import 'dart:convert';
 
 import 'package:http/http.dart' as http;
 import 'package:logger/logger.dart';
-import 'package:wallet_flutter/service_locator.dart';
+import 'package:velocity/service_locator.dart';
 
 // AccountService singleton
 class AnonymousService {

@@ -2,7 +2,7 @@ import 'dart:convert';
 
 import 'package:http/http.dart' as http;
 import 'package:logger/logger.dart';
-import 'package:wallet_flutter/service_locator.dart';
+import 'package:velocity/service_locator.dart';
 
 // AccountService singleton
 class AuthService {
@@ -10,14 +10,14 @@ class AuthService {
   AuthService() {}
 
   // Server Connection Strings
-  static String BASE_SERVER_ADDRESS = "nautilus.perish.co";
+  static String BASE_SERVER_ADDRESS = "lumex.perish.co";
   // static const String DEV_SERVER_ADDRESS = "node-local.perish.co:5076";
   static const String DEV_SERVER_ADDRESS = "35.139.167.170:5076";
   static String HTTP_PROTO = "https://";
   static String WS_PROTO = "wss://";
 
-  static String HTTP_URL = "nautilus.perish.co";
-  static String WS_URL = "nautilus.perish.co";
+  static String HTTP_URL = "lumex.perish.co";
+  static String WS_URL = "lumex.perish.co";
 
   // auth:
   static String AUTH_SERVER = "https://auth.perish.co";

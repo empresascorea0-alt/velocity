@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:wallet_flutter/appstate_container.dart';
+import 'package:velocity/appstate_container.dart';
 
 /// TextField button
 class TextFieldButton extends StatelessWidget {

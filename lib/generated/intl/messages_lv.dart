@@ -254,7 +254,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "currencyModeHeader":
             MessageLookupByLibrary.simpleMessage("Currency Mode Info"),
         "currencyModeInfo": MessageLookupByLibrary.simpleMessage(
-            "Choose which unit to display amounts in.\n1 nyano = 0.000001 NANO, or \n1,000,000 nyano = 1 NANO"),
+            "Choose which unit to display amounts in.\n1 nyano = 0.000001 Lumex, or \n1,000,000 nyano = 1 Lumex"),
         "currentlyRepresented":
             MessageLookupByLibrary.simpleMessage("Pašreizējais pārstāvis ir"),
         "daily": MessageLookupByLibrary.simpleMessage("Ikdienas"),
@@ -264,7 +264,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "defaultAccountName":
             MessageLookupByLibrary.simpleMessage("Pamata konts"),
         "defaultGiftMessage": MessageLookupByLibrary.simpleMessage(
-            "Iepazīstieties ar Nautilus! Es nosūtīju jums nano ar šo saiti:"),
+            "Iepazīstieties ar Lumex! Es nosūtīju jums nano ar šo saiti:"),
         "defaultNewAccountName":
             MessageLookupByLibrary.simpleMessage("Konts %1"),
         "delete": MessageLookupByLibrary.simpleMessage("Delete"),
@@ -345,7 +345,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "eula": MessageLookupByLibrary.simpleMessage("EULA"),
         "exampleCardFrom": MessageLookupByLibrary.simpleMessage("no kāda"),
         "exampleCardIntro": MessageLookupByLibrary.simpleMessage(
-            "Sveicināti Nautilus. Tiklīdz saņemsiet NANO, transakcijas būs redzamas šādi:"),
+            "Sveicināti Lumex. Tiklīdz saņemsiet Lumex, transakcijas būs redzamas šādi:"),
         "exampleCardLittle": MessageLookupByLibrary.simpleMessage("Nedaudz"),
         "exampleCardLot": MessageLookupByLibrary.simpleMessage("Daudz"),
         "exampleCardTo": MessageLookupByLibrary.simpleMessage("kādam"),
@@ -374,7 +374,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Gas Money"),
         "exchangeCurrency": MessageLookupByLibrary.simpleMessage("Apmaiņa %2"),
         "exchangeNano":
-            MessageLookupByLibrary.simpleMessage("Apmainīties ar NANO"),
+            MessageLookupByLibrary.simpleMessage("Apmainīties ar Lumex"),
         "existingPasswordHint":
             MessageLookupByLibrary.simpleMessage("Ievadiet pašreizējo paroli"),
         "existingPinHint":
@@ -385,9 +385,9 @@ class MessageLookup extends MessageLookupByLibrary {
         "failed": MessageLookupByLibrary.simpleMessage("failed"),
         "failedMessage": MessageLookupByLibrary.simpleMessage("msg failed"),
         "fallbackHeader":
-            MessageLookupByLibrary.simpleMessage("Nautilus Disconnected"),
+            MessageLookupByLibrary.simpleMessage("Lumex Disconnected"),
         "fallbackInfo": MessageLookupByLibrary.simpleMessage(
-            "Nautilus Servers appear to be disconnected, Sending and Receiving (without memos) should still be operational but payment requests may not go through\n\n Come back later or restart the app to try again"),
+            "Lumex Servers appear to be disconnected, Sending and Receiving (without memos) should still be operational but payment requests may not go through\n\n Come back later or restart the app to try again"),
         "favoriteExists":
             MessageLookupByLibrary.simpleMessage("Favorite Already Exists"),
         "favoriteHeader": MessageLookupByLibrary.simpleMessage("Favorite"),
@@ -421,7 +421,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "generatingWork": MessageLookupByLibrary.simpleMessage(
             "Notiek PoW ģenerēšana, tas var aizņemt kādu laiku (> 20 sekundes)..."),
         "getCurrency": MessageLookupByLibrary.simpleMessage("Iegūstiet %2"),
-        "getNano": MessageLookupByLibrary.simpleMessage("Iegūstiet NANO"),
+        "getNano": MessageLookupByLibrary.simpleMessage("Iegūstiet Lumex"),
         "giftAlert": MessageLookupByLibrary.simpleMessage("You have a gift!"),
         "giftAlertEmpty": MessageLookupByLibrary.simpleMessage("Empty Gift"),
         "giftAmount": MessageLookupByLibrary.simpleMessage("Gift Amount"),
@@ -433,7 +433,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Informācija par dāvanu lapu"),
         "giftFrom": MessageLookupByLibrary.simpleMessage("Gift From"),
         "giftInfo": MessageLookupByLibrary.simpleMessage(
-            "Load a Digital Gift Card with NANO! Set an amount, and an optional message for the recipient to see when they open it!\n\nOnce created, you\'ll get a link that you can send to anyone, which when opened will automatically distribute the funds to the recipient after installing Nautilus!\n\nIf the recipient is already a Nautilus user they will get a prompt to transfer the funds into their account upon opening the link"),
+            "Load a Digital Gift Card with Lumex! Set an amount, and an optional message for the recipient to see when they open it!\n\nOnce created, you\'ll get a link that you can send to anyone, which when opened will automatically distribute the funds to the recipient after installing Lumex!\n\nIf the recipient is already a Lumex user they will get a prompt to transfer the funds into their account upon opening the link"),
         "giftMessage": MessageLookupByLibrary.simpleMessage("Gift Message"),
         "giftProcessError": MessageLookupByLibrary.simpleMessage(
             "Apstrādājot šo dāvanu karti, radās kļūda. Varbūt pārbaudiet savienojumu un mēģiniet vēlreiz noklikšķināt uz dāvanas saites."),
@@ -475,9 +475,9 @@ class MessageLookup extends MessageLookupByLibrary {
         "importGiftEmpty": MessageLookupByLibrary.simpleMessage(
             "Unfortunately the link you clicked that contained some nano appears to be empty, but you can still see the amount and associated message."),
         "importGiftIntro": MessageLookupByLibrary.simpleMessage(
-            "Šķiet, ka noklikšķinājāt uz saites, kurā ir ietverts NANO. Lai saņemtu šos līdzekļus, mums tikai jāpabeidz sava maka iestatīšana."),
+            "Šķiet, ka noklikšķinājāt uz saites, kurā ir ietverts Lumex. Lai saņemtu šos līdzekļus, mums tikai jāpabeidz sava maka iestatīšana."),
         "importGiftv2": MessageLookupByLibrary.simpleMessage(
-            "Saite, uz kuras noklikšķinājāt, satur kādu NANO. Vai vēlaties to importēt šajā makā?"),
+            "Saite, uz kuras noklikšķinājāt, satur kādu Lumex. Vai vēlaties to importēt šajā makā?"),
         "importHD": MessageLookupByLibrary.simpleMessage("Importēt HD"),
         "importHDTrust":
             MessageLookupByLibrary.simpleMessage("Importēt HD / Trust"),
@@ -512,7 +512,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Invalid Password"),
         "invalidPin": MessageLookupByLibrary.simpleMessage("Nederīga Pin"),
         "iosFundingMessage": MessageLookupByLibrary.simpleMessage(
-            "iOS App Store vadlīniju un ierobežojumu dēļ mēs nevaram saistīt jūs ar mūsu ziedojumu lapu. Ja vēlaties atbalstīt projektu, apsveriet iespēju nosūtīt uz nautilus mezgla adresi."),
+            "iOS App Store vadlīniju un ierobežojumu dēļ mēs nevaram saistīt jūs ar mūsu ziedojumu lapu. Ja vēlaties atbalstīt projektu, apsveriet iespēju nosūtīt uz lumex mezgla adresi."),
         "language": MessageLookupByLibrary.simpleMessage("Valoda"),
         "linkCopied": MessageLookupByLibrary.simpleMessage("Link Copied"),
         "loaded": MessageLookupByLibrary.simpleMessage("Loaded"),
@@ -529,7 +529,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "logoutAreYouSure":
             MessageLookupByLibrary.simpleMessage("Vai esat drošs?"),
         "logoutDetail": MessageLookupByLibrary.simpleMessage(
-            "Izejot tiks aizmirsta jūsu sēkla un visi Nautilus saistītie dati šajā ierīcē. Ja neesat izveidojis maka sēklas rezerves kopiju, maks un tā līdzekļi tiks neatgriezeniski zaudēti"),
+            "Izejot tiks aizmirsta jūsu sēkla un visi Lumex saistītie dati šajā ierīcē. Ja neesat izveidojis maka sēklas rezerves kopiju, maks un tā līdzekļi tiks neatgriezeniski zaudēti"),
         "logoutReassurance": MessageLookupByLibrary.simpleMessage(
             "Ja vien esat saglabājis maka sēklu, jums ne par ko nav jāuztraucas."),
         "looksLikeHdSeed": MessageLookupByLibrary.simpleMessage(
@@ -567,14 +567,14 @@ class MessageLookup extends MessageLookupByLibrary {
         "nameEmpty":
             MessageLookupByLibrary.simpleMessage("Lūdzu, ievadiet Vārdu"),
         "natricon": MessageLookupByLibrary.simpleMessage("Natricon"),
-        "nautilusWallet": MessageLookupByLibrary.simpleMessage("Nautilus maks"),
+        "lumexWallet": MessageLookupByLibrary.simpleMessage("Lumex maks"),
         "nearby": MessageLookupByLibrary.simpleMessage("Tuvumā"),
         "needVerificationAlert": MessageLookupByLibrary.simpleMessage(
             "This feature requires you to have a longer transaction history in order to prevent spam.\n\nAlternatively, you can show a QR code for someone to scan."),
         "needVerificationAlertHeader":
             MessageLookupByLibrary.simpleMessage("Verification Needed"),
         "newAccountIntro": MessageLookupByLibrary.simpleMessage(
-            "Šis ir jūsu jaunais konts. Tiklīdz saņemsiet NANO, transakcijas būs redzamas šādi:"),
+            "Šis ir jūsu jaunais konts. Tiklīdz saņemsiet Lumex, transakcijas būs redzamas šādi:"),
         "newWallet": MessageLookupByLibrary.simpleMessage("Jauns maks"),
         "nextButton": MessageLookupByLibrary.simpleMessage("Next"),
         "nextPayment":
@@ -596,13 +596,13 @@ class MessageLookup extends MessageLookupByLibrary {
         "noneMethod": MessageLookupByLibrary.simpleMessage("Nav"),
         "notSent": MessageLookupByLibrary.simpleMessage("not sent"),
         "notificationBody": MessageLookupByLibrary.simpleMessage(
-            "Atveriet Nautilus, lai apskatītu šo transakciju"),
+            "Atveriet Lumex, lai apskatītu šo transakciju"),
         "notificationHeaderSupplement":
             MessageLookupByLibrary.simpleMessage("Pieskaries, lai atvērtu"),
         "notificationInfo": MessageLookupByLibrary.simpleMessage(
             "In order for this feature to work correctly, notifications must be enabled"),
         "notificationTitle":
-            MessageLookupByLibrary.simpleMessage("Saņemts %1 NANO"),
+            MessageLookupByLibrary.simpleMessage("Saņemts %1 Lumex"),
         "notificationWarning":
             MessageLookupByLibrary.simpleMessage("Paziņojumi ir atspējoti"),
         "notificationWarningBodyLong": MessageLookupByLibrary.simpleMessage(
@@ -638,7 +638,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("nepareiza parole"),
         "passwordNoLongerRequiredToOpenParagraph":
             MessageLookupByLibrary.simpleMessage(
-                "You will not need a password to open Nautilus anymore."),
+                "You will not need a password to open Lumex anymore."),
         "passwordNumber": MessageLookupByLibrary.simpleMessage(
             "Parolē ir jābūt vismaz 1 ciparam"),
         "passwordSpecialCharacter": MessageLookupByLibrary.simpleMessage(
@@ -646,10 +646,10 @@ class MessageLookup extends MessageLookupByLibrary {
         "passwordTooShort":
             MessageLookupByLibrary.simpleMessage("Parole ir pārāk īsa"),
         "passwordWarning": MessageLookupByLibrary.simpleMessage(
-            "Šī parole būs nepieciešama, lai atvērtu Nautilus."),
+            "Šī parole būs nepieciešama, lai atvērtu Lumex."),
         "passwordWillBeRequiredToOpenParagraph":
             MessageLookupByLibrary.simpleMessage(
-                "This password will be required to open Nautilus."),
+                "This password will be required to open Lumex."),
         "passwordsDontMatch":
             MessageLookupByLibrary.simpleMessage("Passwords do not match"),
         "pastDue": MessageLookupByLibrary.simpleMessage("Nokavēts termiņš"),
@@ -694,13 +694,13 @@ class MessageLookup extends MessageLookupByLibrary {
         "privacyPolicy":
             MessageLookupByLibrary.simpleMessage("Privātuma politika"),
         "proSubRequiredHeader": MessageLookupByLibrary.simpleMessage(
-            "Nepieciešams Nautilus Pro abonements"),
+            "Nepieciešams Lumex Pro abonements"),
         "proSubRequiredParagraph": MessageLookupByLibrary.simpleMessage(
-            "Tikai par 1 NANO mēnesī varat atbloķēt visas Nautilus Pro funkcijas."),
+            "Tikai par 1 Lumex mēnesī varat atbloķēt visas Lumex Pro funkcijas."),
         "promotionalLink":
-            MessageLookupByLibrary.simpleMessage("Bezmaksas NANO"),
+            MessageLookupByLibrary.simpleMessage("Bezmaksas Lumex"),
         "purchaseCurrency": MessageLookupByLibrary.simpleMessage("Pirkums %2"),
-        "purchaseNano": MessageLookupByLibrary.simpleMessage("Purchase Nano"),
+        "purchaseNano": MessageLookupByLibrary.simpleMessage("Purchase Lumex"),
         "qrInvalidAddress": MessageLookupByLibrary.simpleMessage(
             "QR code does not contain a valid destination"),
         "qrInvalidPermissions": MessageLookupByLibrary.simpleMessage(
@@ -761,7 +761,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "requestAmountConfirm":
             MessageLookupByLibrary.simpleMessage("Request %1 %2"),
         "requestError": MessageLookupByLibrary.simpleMessage(
-            "Request Failed: This user doesn\'t appear to have Nautilus installed, or has notifications disabled."),
+            "Request Failed: This user doesn\'t appear to have Lumex installed, or has notifications disabled."),
         "requestFrom": MessageLookupByLibrary.simpleMessage("Pieprasījums no"),
         "requestPayment":
             MessageLookupByLibrary.simpleMessage("Request Payment"),
@@ -770,14 +770,14 @@ class MessageLookup extends MessageLookupByLibrary {
         "requestSentButNotReceived": MessageLookupByLibrary.simpleMessage(
             "Request re-sent! If still unacknowledged, the recipient\'s device may be offline."),
         "requestSheetInfo": MessageLookupByLibrary.simpleMessage(
-            "Pieprasiet maksājumu ar šifrētiem ziņojumiem no gala līdz beigām!\n\nMaksājumu pieprasījumus, piezīmes un ziņojumus varēs saņemt tikai citi nautilus lietotāji, taču jūs varat tos izmantot savai uzskaitei pat tad, ja saņēmējs neizmanto Nautilus."),
+            "Pieprasiet maksājumu ar šifrētiem ziņojumiem no gala līdz beigām!\n\nMaksājumu pieprasījumus, piezīmes un ziņojumus varēs saņemt tikai citi lumex lietotāji, taču jūs varat tos izmantot savai uzskaitei pat tad, ja saņēmējs neizmanto Lumex."),
         "requestSheetInfoHeader":
             MessageLookupByLibrary.simpleMessage("Pieprasīt lapas informāciju"),
         "requested": MessageLookupByLibrary.simpleMessage("Requested"),
         "requestedFrom": MessageLookupByLibrary.simpleMessage("Requested From"),
         "requesting": MessageLookupByLibrary.simpleMessage("Requesting"),
         "requireAPasswordToOpenHeader": MessageLookupByLibrary.simpleMessage(
-            "Require a password to open Nautilus?"),
+            "Require a password to open Lumex?"),
         "requireCaptcha": MessageLookupByLibrary.simpleMessage(
             "Lai pieprasītu dāvanu karti, ir nepieciešams CAPTCHA"),
         "resendMemo": MessageLookupByLibrary.simpleMessage("Resend this memo"),
@@ -794,7 +794,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "It appears your device is \"rooted\", \"jailbroken\", or modified in a way that compromises security. It is recommended that you reset your device to its original state before proceeding."),
         "save": MessageLookupByLibrary.simpleMessage("Saglabāt"),
         "scanInstructions": MessageLookupByLibrary.simpleMessage(
-            "Noskenējiet Nano \nadreses QR kodu"),
+            "Noskenējiet Lumex \nadreses QR kodu"),
         "scanNFC":
             MessageLookupByLibrary.simpleMessage("Sūtīt, izmantojot NFC"),
         "scanQrCode": MessageLookupByLibrary.simpleMessage("Skenēt QR kodu"),
@@ -830,13 +830,13 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Can\'t request from self"),
         "send": MessageLookupByLibrary.simpleMessage("Sūtīt"),
         "sendAmountConfirm":
-            MessageLookupByLibrary.simpleMessage("Sūtīt %1 NANO"),
+            MessageLookupByLibrary.simpleMessage("Sūtīt %1 Lumex"),
         "sendAmounts": MessageLookupByLibrary.simpleMessage("Sūtīt summas"),
         "sendError": MessageLookupByLibrary.simpleMessage(
             "Notika kļūda. Pēc laika mēģiniet atkal."),
         "sendFrom": MessageLookupByLibrary.simpleMessage("Sūtīt no"),
         "sendMemoError": MessageLookupByLibrary.simpleMessage(
-            "Sending memo with transaction failed, they may not be a Nautilus user."),
+            "Sending memo with transaction failed, they may not be a Lumex user."),
         "sendMessageConfirm":
             MessageLookupByLibrary.simpleMessage("Sending message"),
         "sendRequestAgain":
@@ -844,7 +844,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "sendRequests":
             MessageLookupByLibrary.simpleMessage("Sūtīt pieprasījumus"),
         "sendSheetInfo": MessageLookupByLibrary.simpleMessage(
-            "Send or Request a payment, with End to End Encrypted messages!\n\nPayment requests, memos, and messages will only be receivable by other nautilus users.\n\nYou don\'t need to have a username in order to send or receive payment requests, and you can use them for your own record keeping even if they don\'t use nautilus."),
+            "Send or Request a payment, with End to End Encrypted messages!\n\nPayment requests, memos, and messages will only be receivable by other lumex users.\n\nYou don\'t need to have a username in order to send or receive payment requests, and you can use them for your own record keeping even if they don\'t use lumex."),
         "sendSheetInfoHeader":
             MessageLookupByLibrary.simpleMessage("Send Sheet Info"),
         "sending": MessageLookupByLibrary.simpleMessage("Sūta"),
@@ -876,13 +876,13 @@ class MessageLookup extends MessageLookupByLibrary {
         "share": MessageLookupByLibrary.simpleMessage("Dalīties"),
         "shareApp": MessageLookupByLibrary.simpleMessage("Kopīgot %1"),
         "shareAppText": MessageLookupByLibrary.simpleMessage(
-            "Pārbaudiet %1! Labākais NANO mobilais maks!"),
+            "Pārbaudiet %1! Labākais Lumex mobilais maks!"),
         "shareLink": MessageLookupByLibrary.simpleMessage("Share Link"),
         "shareMessage": MessageLookupByLibrary.simpleMessage("Kopīgot ziņu"),
-        "shareNautilus":
-            MessageLookupByLibrary.simpleMessage("Dalīties ar Nautilus"),
-        "shareNautilusText": MessageLookupByLibrary.simpleMessage(
-            "Uzmet aci Nautilus! Izcils NANO viedais maks!"),
+        "shareLumex":
+            MessageLookupByLibrary.simpleMessage("Dalīties ar Lumex"),
+        "shareLumexText": MessageLookupByLibrary.simpleMessage(
+            "Uzmet aci Lumex! Izcils Lumex viedais maks!"),
         "shareText": MessageLookupByLibrary.simpleMessage("Kopīgot tekstu"),
         "shopButton": MessageLookupByLibrary.simpleMessage("Veikals"),
         "show": MessageLookupByLibrary.simpleMessage("Rādīt"),
@@ -909,7 +909,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "social": MessageLookupByLibrary.simpleMessage("Sociālie"),
         "someone": MessageLookupByLibrary.simpleMessage("kāds"),
         "spendCurrency": MessageLookupByLibrary.simpleMessage("Iztērē %2"),
-        "spendNano": MessageLookupByLibrary.simpleMessage("Tērē NANO"),
+        "spendNano": MessageLookupByLibrary.simpleMessage("Tērē Lumex"),
         "splitBill": MessageLookupByLibrary.simpleMessage("Sadalīts Bils"),
         "splitBillHeader":
             MessageLookupByLibrary.simpleMessage("Sadaliet rēķinu"),
@@ -936,7 +936,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "swapXMRHeader":
             MessageLookupByLibrary.simpleMessage("Apmainīt Monero"),
         "swapXMRInfo": MessageLookupByLibrary.simpleMessage(
-            "Monero ir uz privātumu vērsta kriptovalūta, kas padara darījumu izsekošanu ļoti sarežģītu vai pat neiespējamu. Tikmēr NANO ir uz maksājumiem orientēta kriptovalūta, kas ir ātra un bez maksas. Kopā tie nodrošina dažus no visnoderīgākajiem kriptovalūtu aspektiem!\n\nIzmantojiet šo lapu, lai viegli nomainītu savu NANO pret XMR!"),
+            "Monero ir uz privātumu vērsta kriptovalūta, kas padara darījumu izsekošanu ļoti sarežģītu vai pat neiespējamu. Tikmēr Lumex ir uz maksājumiem orientēta kriptovalūta, kas ir ātra un bez maksas. Kopā tie nodrošina dažus no visnoderīgākajiem kriptovalūtu aspektiem!\n\nIzmantojiet šo lapu, lai viegli nomainītu savu Lumex pret XMR!"),
         "swapping": MessageLookupByLibrary.simpleMessage("Maiņa"),
         "switchToSeed": MessageLookupByLibrary.simpleMessage(
             "Pārslēgties uz privāto atslēgu"),
@@ -972,9 +972,9 @@ class MessageLookup extends MessageLookupByLibrary {
         "transferClose": MessageLookupByLibrary.simpleMessage(
             "Pieskarieties jebkur, lai aizvērtu."),
         "transferComplete": MessageLookupByLibrary.simpleMessage(
-            "%1 NANO sekmīgi pārskaitīti uz jūsu Nautilus maku.\n"),
+            "%1 Lumex sekmīgi pārskaitīti uz jūsu Lumex maku.\n"),
         "transferConfirmInfo": MessageLookupByLibrary.simpleMessage(
-            "Maks ar %1 NANO bilanci ir atrasts.\n"),
+            "Maks ar %1 Lumex bilanci ir atrasts.\n"),
         "transferConfirmInfoSecond": MessageLookupByLibrary.simpleMessage(
             "Pieskarieties, lai apstiprinātu līdzekļu pārskaitīšanu.\n"),
         "transferConfirmInfoThird": MessageLookupByLibrary.simpleMessage(
@@ -984,9 +984,9 @@ class MessageLookup extends MessageLookupByLibrary {
         "transferHeader":
             MessageLookupByLibrary.simpleMessage("Pārsūtīt līdzekļus"),
         "transferIntro": MessageLookupByLibrary.simpleMessage(
-            "Šis process pārskaitīs jūsu papīra maka līdzekļus uz jūsu Nautilus maku.\n\nPieskaries \"%1\" pogai, lai sāktu."),
+            "Šis process pārskaitīs jūsu papīra maka līdzekļus uz jūsu Lumex maku.\n\nPieskaries \"%1\" pogai, lai sāktu."),
         "transferIntroShort": MessageLookupByLibrary.simpleMessage(
-            "This process will transfer the funds from a paper wallet to your Nautilus wallet."),
+            "This process will transfer the funds from a paper wallet to your Lumex wallet."),
         "transferLoading": MessageLookupByLibrary.simpleMessage("Pārsūta"),
         "transferManualHint":
             MessageLookupByLibrary.simpleMessage("Lūdzu, zemāk ievadiet sēklu"),
@@ -995,16 +995,16 @@ class MessageLookup extends MessageLookupByLibrary {
         "transferQrScanError": MessageLookupByLibrary.simpleMessage(
             "Šis QR kods nesatur derīgu sēklu"),
         "transferQrScanHint": MessageLookupByLibrary.simpleMessage(
-            "Skenē Nano \nsēklu vai privāto atslēgu"),
+            "Skenē Lumex \nsēklu vai privāto atslēgu"),
         "unacknowledged":
             MessageLookupByLibrary.simpleMessage("unacknowledged"),
         "unconfirmed": MessageLookupByLibrary.simpleMessage("unconfirmed"),
         "unfulfilled": MessageLookupByLibrary.simpleMessage("unfulfilled"),
         "unlock": MessageLookupByLibrary.simpleMessage("Atslēgt"),
         "unlockBiometrics": MessageLookupByLibrary.simpleMessage(
-            "Autorizējieties, lai piekļūtu Nautilus"),
+            "Autorizējieties, lai piekļūtu Lumex"),
         "unlockPin": MessageLookupByLibrary.simpleMessage(
-            "Ievadiet PIN, lai piekļūtu Nautilus"),
+            "Ievadiet PIN, lai piekļūtu Lumex"),
         "unopenedWarningHeader":
             MessageLookupByLibrary.simpleMessage("Rādīt neatvērto brīdinājumu"),
         "unopenedWarningInfo": MessageLookupByLibrary.simpleMessage(
@@ -1020,9 +1020,9 @@ class MessageLookup extends MessageLookupByLibrary {
         "urlEmpty": MessageLookupByLibrary.simpleMessage("Lūdzu, ievadiet URL"),
         "useAppRep": MessageLookupByLibrary.simpleMessage("Izmantojiet %1 Rep"),
         "useCurrency": MessageLookupByLibrary.simpleMessage("Izmantojiet %2"),
-        "useNano": MessageLookupByLibrary.simpleMessage("Izmantojiet NANO"),
-        "useNautilusRep":
-            MessageLookupByLibrary.simpleMessage("Use Nautilus Rep"),
+        "useNano": MessageLookupByLibrary.simpleMessage("Izmantojiet Lumex"),
+        "useLumexRep":
+            MessageLookupByLibrary.simpleMessage("Use Lumex Rep"),
         "userAlreadyAddedError": MessageLookupByLibrary.simpleMessage(
             "Lietotājs jau ir pievienots!"),
         "userNotFound": MessageLookupByLibrary.simpleMessage("User not found!"),
@@ -1034,13 +1034,13 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Please Enter a Username"),
         "usernameError": MessageLookupByLibrary.simpleMessage("Username Error"),
         "usernameInfo": MessageLookupByLibrary.simpleMessage(
-            "Pick out a unique @username to make it easy for friends and family to find you!\n\nHaving a Nautilus username updates the UI globally to reflect your new handle."),
+            "Pick out a unique @username to make it easy for friends and family to find you!\n\nHaving a Lumex username updates the UI globally to reflect your new handle."),
         "usernameInvalid":
             MessageLookupByLibrary.simpleMessage("Invalid Username"),
         "usernameUnavailable":
             MessageLookupByLibrary.simpleMessage("Username unavailable"),
         "usernameWarning": MessageLookupByLibrary.simpleMessage(
-            "Nautilus usernames are a centralized service provided by Nano.to"),
+            "Lumex usernames are a centralized service provided by Lumex.to"),
         "using": MessageLookupByLibrary.simpleMessage("Izmantojot"),
         "viewDetails": MessageLookupByLibrary.simpleMessage("Apskatīt detaļas"),
         "viewPaymentHistory":
@@ -1057,11 +1057,11 @@ class MessageLookup extends MessageLookupByLibrary {
         "weekAgo": MessageLookupByLibrary.simpleMessage("Pirms nedēļas"),
         "weekly": MessageLookupByLibrary.simpleMessage("Iknedēļas"),
         "welcomeText": MessageLookupByLibrary.simpleMessage(
-            "Sveicināti Nautilus. Izveidojiet jaunu maku vai importējiet eksistējošu"),
+            "Sveicināti Lumex. Izveidojiet jaunu maku vai importējiet eksistējošu"),
         "welcomeTextLogin": MessageLookupByLibrary.simpleMessage(
-            "Laipni lūdzam Nautilus. Izvēlieties opciju, lai sāktu darbu, vai izvēlieties motīvu, izmantojot tālāk esošo ikonu."),
+            "Laipni lūdzam Lumex. Izvēlieties opciju, lai sāktu darbu, vai izvēlieties motīvu, izmantojot tālāk esošo ikonu."),
         "welcomeTextUpdated": MessageLookupByLibrary.simpleMessage(
-            "Laipni lūdzam Nautilus. Lai sāktu, izveidojiet jaunu maku vai importējiet esošu."),
+            "Laipni lūdzam Lumex. Lai sāktu, izveidojiet jaunu maku vai importējiet esošu."),
         "welcomeTextWithoutLogin": MessageLookupByLibrary.simpleMessage(
             "Lai sāktu, izveidojiet jaunu maku vai importējiet esošu."),
         "withAddress": MessageLookupByLibrary.simpleMessage("With Address"),

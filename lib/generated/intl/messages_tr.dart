@@ -250,7 +250,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "currencyModeHeader":
             MessageLookupByLibrary.simpleMessage("Para Birimi Modu Bilgisi"),
         "currencyModeInfo": MessageLookupByLibrary.simpleMessage(
-            "Miktarları hangi birimde görüntüleneceğini seçin.\n1 nyano = 0.000001 NANO veya \n1,000.000 nyano = 1 NANO"),
+            "Miktarları hangi birimde görüntüleneceğini seçin.\n1 nyano = 0.000001 Lumex veya \n1,000.000 nyano = 1 Lumex"),
         "currentlyRepresented":
             MessageLookupByLibrary.simpleMessage("Mevcut Temsilci:"),
         "daily": MessageLookupByLibrary.simpleMessage("Günlük"),
@@ -259,7 +259,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Şifre Çözme Hatası!"),
         "defaultAccountName": MessageLookupByLibrary.simpleMessage("Ana Hesap"),
         "defaultGiftMessage": MessageLookupByLibrary.simpleMessage(
-            "Nautilus\'a bakın! Size bu bağlantıyla biraz nano gönderdim:"),
+            "Lumex\'a bakın! Size bu bağlantıyla biraz nano gönderdim:"),
         "defaultNewAccountName":
             MessageLookupByLibrary.simpleMessage("Hesap %1"),
         "delete": MessageLookupByLibrary.simpleMessage("Sil"),
@@ -337,7 +337,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "eula": MessageLookupByLibrary.simpleMessage("EULA"),
         "exampleCardFrom": MessageLookupByLibrary.simpleMessage("birinden"),
         "exampleCardIntro": MessageLookupByLibrary.simpleMessage(
-            "Nautilus’a hoşgeldin. Hesabına NANO geldiğinde işlemlerin şu şekilde görünecek"),
+            "Lumex’a hoşgeldin. Hesabına Lumex geldiğinde işlemlerin şu şekilde görünecek"),
         "exampleCardLittle": MessageLookupByLibrary.simpleMessage("Birazcık"),
         "exampleCardLot": MessageLookupByLibrary.simpleMessage("Bir sürü"),
         "exampleCardTo": MessageLookupByLibrary.simpleMessage("birine"),
@@ -365,7 +365,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "exampleRecRecipientMessage":
             MessageLookupByLibrary.simpleMessage("Gaz Para"),
         "exchangeCurrency": MessageLookupByLibrary.simpleMessage("%2 takas"),
-        "exchangeNano": MessageLookupByLibrary.simpleMessage("NANO değişimi"),
+        "exchangeNano": MessageLookupByLibrary.simpleMessage("Lumex değişimi"),
         "existingPasswordHint":
             MessageLookupByLibrary.simpleMessage("Güncel şifrenizi giriniz"),
         "existingPinHint":
@@ -376,9 +376,9 @@ class MessageLookup extends MessageLookupByLibrary {
         "failed": MessageLookupByLibrary.simpleMessage("başarısız"),
         "failedMessage": MessageLookupByLibrary.simpleMessage("msg failed"),
         "fallbackHeader":
-            MessageLookupByLibrary.simpleMessage("Nautilus Bağlantısı Kesildi"),
+            MessageLookupByLibrary.simpleMessage("Lumex Bağlantısı Kesildi"),
         "fallbackInfo": MessageLookupByLibrary.simpleMessage(
-            "Nautilus Sunucularının bağlantısı kesilmiş gibi görünüyor, Gönderme ve Alma (notlar olmadan) hala çalışır durumda olmalıdır, ancak ödeme talepleri geçmeyebilir\n\n Daha sonra tekrar gelin veya tekrar denemek için uygulamayı yeniden başlatın"),
+            "Lumex Sunucularının bağlantısı kesilmiş gibi görünüyor, Gönderme ve Alma (notlar olmadan) hala çalışır durumda olmalıdır, ancak ödeme talepleri geçmeyebilir\n\n Daha sonra tekrar gelin veya tekrar denemek için uygulamayı yeniden başlatın"),
         "favoriteExists":
             MessageLookupByLibrary.simpleMessage("Favori Zaten Var"),
         "favoriteHeader": MessageLookupByLibrary.simpleMessage("Favori"),
@@ -410,7 +410,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "generatingWork": MessageLookupByLibrary.simpleMessage(
             "PoW oluşturuluyor, bu biraz zaman alabilir (> 20 saniye)..."),
         "getCurrency": MessageLookupByLibrary.simpleMessage("%2\'yi al"),
-        "getNano": MessageLookupByLibrary.simpleMessage("NANO\'yu edinin"),
+        "getNano": MessageLookupByLibrary.simpleMessage("Lumex\'yu edinin"),
         "giftAlert": MessageLookupByLibrary.simpleMessage("Bir yeteneğin var!"),
         "giftAlertEmpty": MessageLookupByLibrary.simpleMessage("Boş Hediye"),
         "giftAmount": MessageLookupByLibrary.simpleMessage("Hediye Miktarı"),
@@ -422,7 +422,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Hediye Sayfası Bilgisi"),
         "giftFrom": MessageLookupByLibrary.simpleMessage("Hediye Gönderen"),
         "giftInfo": MessageLookupByLibrary.simpleMessage(
-            "NANO ile Dijital Hediye Kartı Yükleyin! Alıcının ne zaman açtıklarını görmesi için bir miktar ve isteğe bağlı bir mesaj belirleyin!\n\nOluşturulduktan sonra, herkese gönderebileceğiniz bir bağlantı alacaksınız, bu da açıldığında Nautilus\'u kurduktan sonra parayı alıcıya otomatik olarak dağıtacaktır!\n\nAlıcı zaten bir Nautilus kullanıcısıysa, bağlantıyı açtıktan sonra parayı hesabına aktarma istemi alacaktır."),
+            "Lumex ile Dijital Hediye Kartı Yükleyin! Alıcının ne zaman açtıklarını görmesi için bir miktar ve isteğe bağlı bir mesaj belirleyin!\n\nOluşturulduktan sonra, herkese gönderebileceğiniz bir bağlantı alacaksınız, bu da açıldığında Lumex\'u kurduktan sonra parayı alıcıya otomatik olarak dağıtacaktır!\n\nAlıcı zaten bir Lumex kullanıcısıysa, bağlantıyı açtıktan sonra parayı hesabına aktarma istemi alacaktır."),
         "giftMessage": MessageLookupByLibrary.simpleMessage("Hediye Mesajı"),
         "giftProcessError": MessageLookupByLibrary.simpleMessage(
             "Bu hediye kartı işlenirken bir hata oluştu. Belki bağlantınızı kontrol edin ve hediye bağlantısını tekrar tıklamayı deneyin."),
@@ -464,9 +464,9 @@ class MessageLookup extends MessageLookupByLibrary {
         "importGiftEmpty": MessageLookupByLibrary.simpleMessage(
             "Unfortunately the link you clicked that contained some nano appears to be empty, but you can still see the amount and associated message."),
         "importGiftIntro": MessageLookupByLibrary.simpleMessage(
-            "Görünüşe göre biraz NANO içeren bir bağlantıya tıkladınız, bu fonları almak için cüzdanınızı ayarlamanızı tamamlamanız yeterli."),
+            "Görünüşe göre biraz Lumex içeren bir bağlantıya tıkladınız, bu fonları almak için cüzdanınızı ayarlamanızı tamamlamanız yeterli."),
         "importGiftv2": MessageLookupByLibrary.simpleMessage(
-            "Tıkladığınız bağlantı biraz NANO içeriyor, onu bu cüzdana aktarmak ister misiniz?"),
+            "Tıkladığınız bağlantı biraz Lumex içeriyor, onu bu cüzdana aktarmak ister misiniz?"),
         "importHD": MessageLookupByLibrary.simpleMessage("HD\'yi içe aktar"),
         "importHDTrust":
             MessageLookupByLibrary.simpleMessage("HD / Güveni İçe Aktar"),
@@ -501,7 +501,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Geçersiz Şifre"),
         "invalidPin": MessageLookupByLibrary.simpleMessage("Geçersiz Pin"),
         "iosFundingMessage": MessageLookupByLibrary.simpleMessage(
-            "iOS App Store yönergeleri ve kısıtlamaları nedeniyle, sizi bağış sayfamıza bağlayamıyoruz. Projeyi desteklemek istiyorsanız, nautilus düğümünün adresine göndermeyi düşünün."),
+            "iOS App Store yönergeleri ve kısıtlamaları nedeniyle, sizi bağış sayfamıza bağlayamıyoruz. Projeyi desteklemek istiyorsanız, lumex düğümünün adresine göndermeyi düşünün."),
         "language": MessageLookupByLibrary.simpleMessage("Dil"),
         "linkCopied":
             MessageLookupByLibrary.simpleMessage("Bağlantı Kopyalandı"),
@@ -519,7 +519,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "logoutAreYouSure":
             MessageLookupByLibrary.simpleMessage("Emin misiniz?"),
         "logoutDetail": MessageLookupByLibrary.simpleMessage(
-            "Çıkış yaptığınızda seed\'iniz ve Nautilus\'la ilgili bütün verileriniz bu cihazdan silinecektir. Seed\'inizi yedeklemediyseniz paranıza bir daha asla ulaşamazsınız."),
+            "Çıkış yaptığınızda seed\'iniz ve Lumex\'la ilgili bütün verileriniz bu cihazdan silinecektir. Seed\'inizi yedeklemediyseniz paranıza bir daha asla ulaşamazsınız."),
         "logoutReassurance": MessageLookupByLibrary.simpleMessage(
             "Seed\'inizi yedeklediyseniz endişe etmenize gerek yok."),
         "looksLikeHdSeed": MessageLookupByLibrary.simpleMessage(
@@ -541,7 +541,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Mesaj Kopyalandı"),
         "messageHeader": MessageLookupByLibrary.simpleMessage("Mesaj"),
         "minimumSend": MessageLookupByLibrary.simpleMessage(
-            "Minimumu Nano yollama miktarı %1"),
+            "Minimumu Lumex yollama miktarı %1"),
         "minuteAgo": MessageLookupByLibrary.simpleMessage("Bir dakika önce"),
         "mnemonicInvalidWord":
             MessageLookupByLibrary.simpleMessage("%1 geçerli bir kelime değil"),
@@ -558,15 +558,15 @@ class MessageLookup extends MessageLookupByLibrary {
         "nameEmpty":
             MessageLookupByLibrary.simpleMessage("Lütfen bir Ad girin"),
         "natricon": MessageLookupByLibrary.simpleMessage("Natricon"),
-        "nautilusWallet":
-            MessageLookupByLibrary.simpleMessage("Nautilus Cüzdanı"),
+        "lumexWallet":
+            MessageLookupByLibrary.simpleMessage("Lumex Cüzdanı"),
         "nearby": MessageLookupByLibrary.simpleMessage("Yakında"),
         "needVerificationAlert": MessageLookupByLibrary.simpleMessage(
             "Bu özellik, istenmeyen postaları önlemek için daha uzun bir işlem geçmişine sahip olmanızı gerektirir.\n\nAlternatif olarak, birinin taraması için bir QR kodu gösterebilirsiniz."),
         "needVerificationAlertHeader":
             MessageLookupByLibrary.simpleMessage("Doğrulama Gerekli"),
         "newAccountIntro": MessageLookupByLibrary.simpleMessage(
-            "Bu senin yeni hesabın. Hesabına NANO geldiğinde işlemlerin aşağıdaki gibi görünecek."),
+            "Bu senin yeni hesabın. Hesabına Lumex geldiğinde işlemlerin aşağıdaki gibi görünecek."),
         "newWallet": MessageLookupByLibrary.simpleMessage("Yeni Cüzdan"),
         "nextButton": MessageLookupByLibrary.simpleMessage("İleri"),
         "nextPayment": MessageLookupByLibrary.simpleMessage("Sonraki ödeme"),
@@ -587,7 +587,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "noneMethod": MessageLookupByLibrary.simpleMessage("Hiçbiri"),
         "notSent": MessageLookupByLibrary.simpleMessage("gönderilmedi"),
         "notificationBody": MessageLookupByLibrary.simpleMessage(
-            "Bu transferi görmek için Nautilus’u aç."),
+            "Bu transferi görmek için Lumex’u aç."),
         "notificationHeaderSupplement":
             MessageLookupByLibrary.simpleMessage("Açmak için dokun"),
         "notificationInfo": MessageLookupByLibrary.simpleMessage(
@@ -629,7 +629,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("yanlış parola"),
         "passwordNoLongerRequiredToOpenParagraph":
             MessageLookupByLibrary.simpleMessage(
-                "Artık Nautilus\'u açmak için şifre gerekmeyecek."),
+                "Artık Lumex\'u açmak için şifre gerekmeyecek."),
         "passwordNumber": MessageLookupByLibrary.simpleMessage(
             "Şifre en az 1 rakam içermelidir"),
         "passwordSpecialCharacter": MessageLookupByLibrary.simpleMessage(
@@ -637,10 +637,10 @@ class MessageLookup extends MessageLookupByLibrary {
         "passwordTooShort":
             MessageLookupByLibrary.simpleMessage("Şifre çok kısa"),
         "passwordWarning": MessageLookupByLibrary.simpleMessage(
-            "Nautilus\'u açmak için bu parola gerekli olacaktır."),
+            "Lumex\'u açmak için bu parola gerekli olacaktır."),
         "passwordWillBeRequiredToOpenParagraph":
             MessageLookupByLibrary.simpleMessage(
-                "Nautilus\'u açabilmek için bu şifre gerekecek."),
+                "Lumex\'u açabilmek için bu şifre gerekecek."),
         "passwordsDontMatch":
             MessageLookupByLibrary.simpleMessage("Şifreler eşleşmiyor"),
         "pastDue": MessageLookupByLibrary.simpleMessage("Vadesi Geçti"),
@@ -685,13 +685,13 @@ class MessageLookup extends MessageLookupByLibrary {
         "privacyPolicy":
             MessageLookupByLibrary.simpleMessage("Gizlilik Politikası"),
         "proSubRequiredHeader": MessageLookupByLibrary.simpleMessage(
-            "Nautilus Pro Aboneliği Gerekli"),
+            "Lumex Pro Aboneliği Gerekli"),
         "proSubRequiredParagraph": MessageLookupByLibrary.simpleMessage(
-            "Ayda sadece 1 NANO karşılığında Nautilus Pro\'nun tüm özelliklerinin kilidini açabilirsiniz."),
+            "Ayda sadece 1 Lumex karşılığında Lumex Pro\'nun tüm özelliklerinin kilidini açabilirsiniz."),
         "promotionalLink":
-            MessageLookupByLibrary.simpleMessage("Ücretsiz NANO"),
+            MessageLookupByLibrary.simpleMessage("Ücretsiz Lumex"),
         "purchaseCurrency": MessageLookupByLibrary.simpleMessage("%2 satın al"),
-        "purchaseNano": MessageLookupByLibrary.simpleMessage("Satın al Nano"),
+        "purchaseNano": MessageLookupByLibrary.simpleMessage("Satın al Lumex"),
         "qrInvalidAddress": MessageLookupByLibrary.simpleMessage(
             "QR kodu geçerli bir adres içermiyor"),
         "qrInvalidPermissions": MessageLookupByLibrary.simpleMessage(
@@ -751,7 +751,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "requestAmountConfirm":
             MessageLookupByLibrary.simpleMessage("İstek %1 %2"),
         "requestError": MessageLookupByLibrary.simpleMessage(
-            "İstek Başarısız: Bu kullanıcı Nautilus yüklü görünmüyor, veya bildirimler devre dışı bırakıldı."),
+            "İstek Başarısız: Bu kullanıcı Lumex yüklü görünmüyor, veya bildirimler devre dışı bırakıldı."),
         "requestFrom": MessageLookupByLibrary.simpleMessage("İstek Gönderen"),
         "requestPayment":
             MessageLookupByLibrary.simpleMessage("Ödeme Talep Et"),
@@ -760,14 +760,14 @@ class MessageLookup extends MessageLookupByLibrary {
         "requestSentButNotReceived": MessageLookupByLibrary.simpleMessage(
             "İstek yeniden gönderildi! Hala onaylanmamışsa, alıcının cihazı çevrimdışı olabilir."),
         "requestSheetInfo": MessageLookupByLibrary.simpleMessage(
-            "Uçtan Uca Şifreli mesajlarla ödeme talep edin!\n\nÖdeme istekleri, notlar ve mesajlar yalnızca diğer nautilus kullanıcıları tarafından alınabilir, ancak alıcı nautilus kullanmasa bile bunları kendi kayıt tutmak için kullanabilirsiniz."),
+            "Uçtan Uca Şifreli mesajlarla ödeme talep edin!\n\nÖdeme istekleri, notlar ve mesajlar yalnızca diğer lumex kullanıcıları tarafından alınabilir, ancak alıcı lumex kullanmasa bile bunları kendi kayıt tutmak için kullanabilirsiniz."),
         "requestSheetInfoHeader":
             MessageLookupByLibrary.simpleMessage("Sayfa Bilgisi İste"),
         "requested": MessageLookupByLibrary.simpleMessage("İstenen"),
         "requestedFrom": MessageLookupByLibrary.simpleMessage("Talep Edilen"),
         "requesting": MessageLookupByLibrary.simpleMessage("İstemek"),
         "requireAPasswordToOpenHeader": MessageLookupByLibrary.simpleMessage(
-            "Nautilus\'u açarken şifre sorulsun mu?"),
+            "Lumex\'u açarken şifre sorulsun mu?"),
         "requireCaptcha": MessageLookupByLibrary.simpleMessage(
             "Hediye kartı talep etmek için CAPTCHA gerektir"),
         "resendMemo":
@@ -785,7 +785,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "Cihazın \"root\" veya \"jailbreak\" edilmiş gibi görünüyor. Bu durum bir güvenlik riski oluşturuyor. Devam etmeden önce cihazını sıfırlamanı ve eski haline döndürmeni tavsiye ederiz."),
         "save": MessageLookupByLibrary.simpleMessage("Kaydetmek"),
         "scanInstructions": MessageLookupByLibrary.simpleMessage(
-            "Nano Adresi\'nin \n QR Kodu\'nu tarayın"),
+            "Lumex Adresi\'nin \n QR Kodu\'nu tarayın"),
         "scanNFC": MessageLookupByLibrary.simpleMessage("NFC ile gönder"),
         "scanQrCode": MessageLookupByLibrary.simpleMessage("QR Kodu Tara"),
         "schedule": MessageLookupByLibrary.simpleMessage("Takvim"),
@@ -826,7 +826,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "Bir hata oluştu. Daha sonra tekrar dene."),
         "sendFrom": MessageLookupByLibrary.simpleMessage("Gönderici"),
         "sendMemoError": MessageLookupByLibrary.simpleMessage(
-            "İşlem ile not gönderme başarısız oldu, Nautilus kullanıcısı olmayabilirler."),
+            "İşlem ile not gönderme başarısız oldu, Lumex kullanıcısı olmayabilirler."),
         "sendMessageConfirm":
             MessageLookupByLibrary.simpleMessage("Mesaj gönderme"),
         "sendRequestAgain":
@@ -834,7 +834,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "sendRequests":
             MessageLookupByLibrary.simpleMessage("İstekleri göndermek"),
         "sendSheetInfo": MessageLookupByLibrary.simpleMessage(
-            "Uçtan Uca Şifreli mesajlarla ödeme gönderin veya talep edin!\n\nÖdeme istekleri, notlar, ve mesajlar yalnızca diğer nautilus kullanıcıları tarafından alınacaktır.\n\nÖdeme istekleri göndermek veya almak için bir kullanıcı adınızın olması gerekmez, ve nautilus kullanmasalar bile bunları kendi kayıt tutmanız için kullanabilirsiniz."),
+            "Uçtan Uca Şifreli mesajlarla ödeme gönderin veya talep edin!\n\nÖdeme istekleri, notlar, ve mesajlar yalnızca diğer lumex kullanıcıları tarafından alınacaktır.\n\nÖdeme istekleri göndermek veya almak için bir kullanıcı adınızın olması gerekmez, ve lumex kullanmasalar bile bunları kendi kayıt tutmanız için kullanabilirsiniz."),
         "sendSheetInfoHeader":
             MessageLookupByLibrary.simpleMessage("Sayfa Bilgisi Gönder"),
         "sending": MessageLookupByLibrary.simpleMessage("Miktar"),
@@ -866,13 +866,13 @@ class MessageLookup extends MessageLookupByLibrary {
         "share": MessageLookupByLibrary.simpleMessage("Paylaşmak"),
         "shareApp": MessageLookupByLibrary.simpleMessage("%1 paylaş"),
         "shareAppText": MessageLookupByLibrary.simpleMessage(
-            "%1\'e göz atın! Birinci sınıf bir NANO mobil cüzdan!"),
+            "%1\'e göz atın! Birinci sınıf bir Lumex mobil cüzdan!"),
         "shareLink": MessageLookupByLibrary.simpleMessage("Link Paylaş"),
         "shareMessage": MessageLookupByLibrary.simpleMessage("Mesajı Paylaş"),
-        "shareNautilus":
-            MessageLookupByLibrary.simpleMessage("Nautilus\'u Paylaş"),
-        "shareNautilusText": MessageLookupByLibrary.simpleMessage(
-            "Nano\'nun resmi Android Cüzdanı Nautilus\'u denesene!"),
+        "shareLumex":
+            MessageLookupByLibrary.simpleMessage("Lumex\'u Paylaş"),
+        "shareLumexText": MessageLookupByLibrary.simpleMessage(
+            "Lumex\'nun resmi Android Cüzdanı Lumex\'u denesene!"),
         "shareText": MessageLookupByLibrary.simpleMessage("Metni Paylaş"),
         "shopButton": MessageLookupByLibrary.simpleMessage("Mağaza"),
         "show": MessageLookupByLibrary.simpleMessage("Göstermek"),
@@ -900,7 +900,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "social": MessageLookupByLibrary.simpleMessage("Sosyal"),
         "someone": MessageLookupByLibrary.simpleMessage("birisi"),
         "spendCurrency": MessageLookupByLibrary.simpleMessage("%2 harca"),
-        "spendNano": MessageLookupByLibrary.simpleMessage("NANO harca"),
+        "spendNano": MessageLookupByLibrary.simpleMessage("Lumex harca"),
         "splitBill": MessageLookupByLibrary.simpleMessage("Faturayı Böl"),
         "splitBillHeader": MessageLookupByLibrary.simpleMessage("Fatura Böl"),
         "splitBillInfo": MessageLookupByLibrary.simpleMessage(
@@ -926,7 +926,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "swapXMRHeader":
             MessageLookupByLibrary.simpleMessage("Monero\'yu Değiştir"),
         "swapXMRInfo": MessageLookupByLibrary.simpleMessage(
-            "Monero, işlemleri izlemeyi çok zor hatta imkansız kılan gizlilik odaklı bir kripto para birimidir. Bu arada NANO, hızlı ve ücretsiz, ödeme odaklı bir kripto para birimidir. Birlikte kripto para birimlerinin en faydalı yönlerinden bazılarını sağlarlar!\n\nNANO\'nuzu XMR ile kolayca değiştirmek için bu sayfayı kullanın!"),
+            "Monero, işlemleri izlemeyi çok zor hatta imkansız kılan gizlilik odaklı bir kripto para birimidir. Bu arada Lumex, hızlı ve ücretsiz, ödeme odaklı bir kripto para birimidir. Birlikte kripto para birimlerinin en faydalı yönlerinden bazılarını sağlarlar!\n\nNANO\'nuzu XMR ile kolayca değiştirmek için bu sayfayı kullanın!"),
         "swapping": MessageLookupByLibrary.simpleMessage("takas"),
         "switchToSeed": MessageLookupByLibrary.simpleMessage("Seede Geç"),
         "systemDefault": MessageLookupByLibrary.simpleMessage("Sistem Dili"),
@@ -960,7 +960,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "transferClose": MessageLookupByLibrary.simpleMessage(
             "Pencereyi kapatmak için herhangi bir yere dokun."),
         "transferComplete": MessageLookupByLibrary.simpleMessage(
-            "%1 NANO başarıyla Nautilus cüzdanına aktarıldı."),
+            "%1 Lumex başarıyla Lumex cüzdanına aktarıldı."),
         "transferConfirmInfo": MessageLookupByLibrary.simpleMessage(
             "%1 %2 bakiyeye sahip bir cüzdan tespit edildi.\n"),
         "transferConfirmInfoSecond": MessageLookupByLibrary.simpleMessage(
@@ -972,27 +972,27 @@ class MessageLookup extends MessageLookupByLibrary {
         "transferHeader":
             MessageLookupByLibrary.simpleMessage("Bakiye\nTransferi"),
         "transferIntro": MessageLookupByLibrary.simpleMessage(
-            "Bu işlem bir kağıt cüzdanda bulunan bakiyeyi senin Nautilus cüzdanına aktaracak.\n\nBaşlamak için \"%1\" butonuna bas."),
+            "Bu işlem bir kağıt cüzdanda bulunan bakiyeyi senin Lumex cüzdanına aktaracak.\n\nBaşlamak için \"%1\" butonuna bas."),
         "transferIntroShort": MessageLookupByLibrary.simpleMessage(
-            "Bu işlem, parayı bir kağıt cüzdandan Nautilus cüzdanınıza aktaracaktır."),
+            "Bu işlem, parayı bir kağıt cüzdandan Lumex cüzdanınıza aktaracaktır."),
         "transferLoading": MessageLookupByLibrary.simpleMessage("Aktarılıyor"),
         "transferManualHint":
             MessageLookupByLibrary.simpleMessage("Lütfen seedi gir."),
         "transferNoFunds": MessageLookupByLibrary.simpleMessage(
-            "Bu seedin içinde hiç NANO yok."),
+            "Bu seedin içinde hiç Lumex yok."),
         "transferQrScanError": MessageLookupByLibrary.simpleMessage(
             "Bu QR kodu geçerli bir seed içermiyor."),
         "transferQrScanHint": MessageLookupByLibrary.simpleMessage(
-            "Bir Nano seedi \nveya private key\'i tara"),
+            "Bir Lumex seedi \nveya private key\'i tara"),
         "unacknowledged": MessageLookupByLibrary.simpleMessage("onaylanmamış"),
         "unconfirmed": MessageLookupByLibrary.simpleMessage("onaylanmamış"),
         "unfulfilled":
             MessageLookupByLibrary.simpleMessage("yerine getirilmemiş"),
         "unlock": MessageLookupByLibrary.simpleMessage("Kilidi Aç"),
         "unlockBiometrics": MessageLookupByLibrary.simpleMessage(
-            "Nautilus’u Açmak için Kimliğini Doğrula"),
+            "Lumex’u Açmak için Kimliğini Doğrula"),
         "unlockPin": MessageLookupByLibrary.simpleMessage(
-            "Nautilus’u Açmak için Pin Kodunu Gir"),
+            "Lumex’u Açmak için Pin Kodunu Gir"),
         "unopenedWarningHeader":
             MessageLookupByLibrary.simpleMessage("Açılmamış Uyarısını Göster"),
         "unopenedWarningInfo": MessageLookupByLibrary.simpleMessage(
@@ -1009,9 +1009,9 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Lütfen bir URL girin"),
         "useAppRep": MessageLookupByLibrary.simpleMessage("%1 Temsilci Kullan"),
         "useCurrency": MessageLookupByLibrary.simpleMessage("%2 kullan"),
-        "useNano": MessageLookupByLibrary.simpleMessage("NANO kullan"),
-        "useNautilusRep":
-            MessageLookupByLibrary.simpleMessage("Use Nautilus Rep"),
+        "useNano": MessageLookupByLibrary.simpleMessage("Lumex kullan"),
+        "useLumexRep":
+            MessageLookupByLibrary.simpleMessage("Use Lumex Rep"),
         "userAlreadyAddedError":
             MessageLookupByLibrary.simpleMessage("Kullanıcı zaten eklendi!"),
         "userNotFound":
@@ -1025,13 +1025,13 @@ class MessageLookup extends MessageLookupByLibrary {
         "usernameError":
             MessageLookupByLibrary.simpleMessage("Kullanıcı Adı Hatası"),
         "usernameInfo": MessageLookupByLibrary.simpleMessage(
-            "Arkadaşlarınızın ve ailenizin sizi bulmasını kolaylaştırmak için benzersiz bir @username seçin!\n\nBir Nautilus kullanıcı adına sahip olmak, yeni tanıtıcınızı yansıtacak şekilde kullanıcı arayüzünü küresel olarak günceller."),
+            "Arkadaşlarınızın ve ailenizin sizi bulmasını kolaylaştırmak için benzersiz bir @username seçin!\n\nBir Lumex kullanıcı adına sahip olmak, yeni tanıtıcınızı yansıtacak şekilde kullanıcı arayüzünü küresel olarak günceller."),
         "usernameInvalid":
             MessageLookupByLibrary.simpleMessage("Geçersiz Kullanıcı Adı"),
         "usernameUnavailable": MessageLookupByLibrary.simpleMessage(
             "Kullanıcı adı kullanılamıyor"),
         "usernameWarning": MessageLookupByLibrary.simpleMessage(
-            "Nautilus kullanıcı adları Nano.to tarafından sağlanan merkezi bir hizmettir"),
+            "Lumex kullanıcı adları Lumex.to tarafından sağlanan merkezi bir hizmettir"),
         "using": MessageLookupByLibrary.simpleMessage("kullanma"),
         "viewDetails": MessageLookupByLibrary.simpleMessage("Ayrıntılar"),
         "viewPaymentHistory":
@@ -1048,11 +1048,11 @@ class MessageLookup extends MessageLookupByLibrary {
         "weekAgo": MessageLookupByLibrary.simpleMessage("Bir hafta önce"),
         "weekly": MessageLookupByLibrary.simpleMessage("Haftalık"),
         "welcomeText": MessageLookupByLibrary.simpleMessage(
-            "Nautilus\'a hoşgeldiniz. Devam etmek için yeni bir cüzdan oluşturabilir veya var olanı içe aktarabilirsiniz."),
+            "Lumex\'a hoşgeldiniz. Devam etmek için yeni bir cüzdan oluşturabilir veya var olanı içe aktarabilirsiniz."),
         "welcomeTextLogin": MessageLookupByLibrary.simpleMessage(
-            "Nautilus\'a hoş geldiniz. Başlamak için bir seçenek belirleyin veya aşağıdaki simgeyi kullanarak bir tema seçin."),
+            "Lumex\'a hoş geldiniz. Başlamak için bir seçenek belirleyin veya aşağıdaki simgeyi kullanarak bir tema seçin."),
         "welcomeTextUpdated": MessageLookupByLibrary.simpleMessage(
-            "Nautilus\'a hoş geldiniz. Başlamak için yeni bir cüzdan oluşturun veya mevcut bir cüzdanı içe aktarın."),
+            "Lumex\'a hoş geldiniz. Başlamak için yeni bir cüzdan oluşturun veya mevcut bir cüzdanı içe aktarın."),
         "welcomeTextWithoutLogin": MessageLookupByLibrary.simpleMessage(
             "Başlamak için yeni bir cüzdan oluşturun veya mevcut bir cüzdanı içe aktarın."),
         "withAddress": MessageLookupByLibrary.simpleMessage("Adres ile"),

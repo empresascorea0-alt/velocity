@@ -249,7 +249,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "currencyModeHeader": MessageLookupByLibrary.simpleMessage(
             "Informacje o trybie walutowym"),
         "currencyModeInfo": MessageLookupByLibrary.simpleMessage(
-            "Wybierz jednostkę, w której chcesz wyświetlić kwoty.\n1 nyano = 0.000001 NANO, lub \n1 000 000 nyano = 1 NANO"),
+            "Wybierz jednostkę, w której chcesz wyświetlić kwoty.\n1 nyano = 0.000001 Lumex, lub \n1 000 000 nyano = 1 Lumex"),
         "currentlyRepresented": MessageLookupByLibrary.simpleMessage(
             "Obecnie Representowany Przez"),
         "daily": MessageLookupByLibrary.simpleMessage("Codziennie"),
@@ -259,7 +259,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "defaultAccountName":
             MessageLookupByLibrary.simpleMessage("Główne konto"),
         "defaultGiftMessage": MessageLookupByLibrary.simpleMessage(
-            "Sprawdź Nautilusa! Wysłałem Ci trochę %2 z tym linkiem:"),
+            "Sprawdź Lumexa! Wysłałem Ci trochę %2 z tym linkiem:"),
         "defaultNewAccountName":
             MessageLookupByLibrary.simpleMessage("Konto %1"),
         "delete": MessageLookupByLibrary.simpleMessage("Usuń"),
@@ -337,7 +337,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "eula": MessageLookupByLibrary.simpleMessage("EULA"),
         "exampleCardFrom": MessageLookupByLibrary.simpleMessage("od kogoś"),
         "exampleCardIntro": MessageLookupByLibrary.simpleMessage(
-            "Witam w Nautilus. Kiedy dostaniesz NANO, transakcje pokażą się w ten sposób"),
+            "Witam w Lumex. Kiedy dostaniesz Lumex, transakcje pokażą się w ten sposób"),
         "exampleCardLittle": MessageLookupByLibrary.simpleMessage("Troszkę"),
         "exampleCardLot": MessageLookupByLibrary.simpleMessage("Całkiem dużo"),
         "exampleCardTo": MessageLookupByLibrary.simpleMessage("do kogoś"),
@@ -366,7 +366,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "exampleRecRecipientMessage":
             MessageLookupByLibrary.simpleMessage("Pieniądz"),
         "exchangeCurrency": MessageLookupByLibrary.simpleMessage("Wymiana %2"),
-        "exchangeNano": MessageLookupByLibrary.simpleMessage("Wymiana NANO"),
+        "exchangeNano": MessageLookupByLibrary.simpleMessage("Wymiana Lumex"),
         "existingPasswordHint":
             MessageLookupByLibrary.simpleMessage("Wprowadź bieżące hasło"),
         "existingPinHint":
@@ -377,9 +377,9 @@ class MessageLookup extends MessageLookupByLibrary {
         "failed": MessageLookupByLibrary.simpleMessage("nie powiodło się"),
         "failedMessage": MessageLookupByLibrary.simpleMessage("msg failed"),
         "fallbackHeader":
-            MessageLookupByLibrary.simpleMessage("Nautilus rozłączony"),
+            MessageLookupByLibrary.simpleMessage("Lumex rozłączony"),
         "fallbackInfo": MessageLookupByLibrary.simpleMessage(
-            "Serwery Nautilus wydają się być rozłączone, wysyłanie i odbieranie (bez notatek) powinno nadal działać, ale żądania płatności mogą nie przejść\n\n Wróć później lub uruchom ponownie aplikację, aby spróbować ponownie"),
+            "Serwery Lumex wydają się być rozłączone, wysyłanie i odbieranie (bez notatek) powinno nadal działać, ale żądania płatności mogą nie przejść\n\n Wróć później lub uruchom ponownie aplikację, aby spróbować ponownie"),
         "favoriteExists":
             MessageLookupByLibrary.simpleMessage("Ulubiony już istnieje"),
         "favoriteHeader": MessageLookupByLibrary.simpleMessage("Ulubione"),
@@ -412,7 +412,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "generatingWork": MessageLookupByLibrary.simpleMessage(
             "Generowanie PoW może zająć trochę czasu (> 20 sekund)..."),
         "getCurrency": MessageLookupByLibrary.simpleMessage("Uzyskaj %2"),
-        "getNano": MessageLookupByLibrary.simpleMessage("Zdobądź NANO"),
+        "getNano": MessageLookupByLibrary.simpleMessage("Zdobądź Lumex"),
         "giftAlert": MessageLookupByLibrary.simpleMessage("Masz dar!"),
         "giftAlertEmpty": MessageLookupByLibrary.simpleMessage("Pusty prezent"),
         "giftAmount": MessageLookupByLibrary.simpleMessage("Kwota prezent"),
@@ -424,7 +424,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "Informacje o arkuszu prezentowym"),
         "giftFrom": MessageLookupByLibrary.simpleMessage("Prezent od"),
         "giftInfo": MessageLookupByLibrary.simpleMessage(
-            "Załaduj cyfrową kartę podarunkową za pomocą NANO! Ustaw kwotę i opcjonalną wiadomość, aby odbiorca zobaczył, kiedy ją otworzy!\n\nPo utworzeniu otrzymasz link, który możesz wysłać każdemu, który po otwarciu automatycznie rozdzieli środki do odbiorcy po zainstalowaniu Nautilusa!\n\nJeśli odbiorca jest już użytkownikiem Nautilus, po otwarciu linku otrzyma monit o przelanie środków na swoje konto"),
+            "Załaduj cyfrową kartę podarunkową za pomocą Lumex! Ustaw kwotę i opcjonalną wiadomość, aby odbiorca zobaczył, kiedy ją otworzy!\n\nPo utworzeniu otrzymasz link, który możesz wysłać każdemu, który po otwarciu automatycznie rozdzieli środki do odbiorcy po zainstalowaniu Lumexa!\n\nJeśli odbiorca jest już użytkownikiem Lumex, po otwarciu linku otrzyma monit o przelanie środków na swoje konto"),
         "giftMessage":
             MessageLookupByLibrary.simpleMessage("Wiadomość Prezent"),
         "giftProcessError": MessageLookupByLibrary.simpleMessage(
@@ -466,9 +466,9 @@ class MessageLookup extends MessageLookupByLibrary {
         "importGiftEmpty": MessageLookupByLibrary.simpleMessage(
             "Unfortunately the link you clicked that contained some nano appears to be empty, but you can still see the amount and associated message."),
         "importGiftIntro": MessageLookupByLibrary.simpleMessage(
-            "Wygląda na to, że kliknąłeś link, który zawiera NANO, aby otrzymać te środki, wystarczy, że dokończysz konfigurowanie portfela."),
+            "Wygląda na to, że kliknąłeś link, który zawiera Lumex, aby otrzymać te środki, wystarczy, że dokończysz konfigurowanie portfela."),
         "importGiftv2": MessageLookupByLibrary.simpleMessage(
-            "Link, który kliknąłeś zawiera jakieś NANO, czy chcesz je zaimportować do tego portfela?"),
+            "Link, który kliknąłeś zawiera jakieś Lumex, czy chcesz je zaimportować do tego portfela?"),
         "importHD": MessageLookupByLibrary.simpleMessage("Importuj HD"),
         "importHDTrust":
             MessageLookupByLibrary.simpleMessage("Importuj HD / Zaufanie"),
@@ -504,13 +504,13 @@ class MessageLookup extends MessageLookupByLibrary {
         "invalidPin":
             MessageLookupByLibrary.simpleMessage("Nieprawidłowy kod PIN"),
         "iosFundingMessage": MessageLookupByLibrary.simpleMessage(
-            "Ze względu na wytyczne i ograniczenia iOS App Store nie możemy połączyć Cię z naszą stroną darowizn. Jeśli chcesz wesprzeć projekt, rozważ wysłanie na adres węzła nautilusa."),
+            "Ze względu na wytyczne i ograniczenia iOS App Store nie możemy połączyć Cię z naszą stroną darowizn. Jeśli chcesz wesprzeć projekt, rozważ wysłanie na adres węzła lumexa."),
         "language": MessageLookupByLibrary.simpleMessage("Język"),
         "linkCopied": MessageLookupByLibrary.simpleMessage("Link skopiowany"),
         "loaded": MessageLookupByLibrary.simpleMessage("Załadowany"),
         "loadedInto": MessageLookupByLibrary.simpleMessage("Załadowany do"),
         "lockAppSetting": MessageLookupByLibrary.simpleMessage(
-            "Potwierdź tożsamość kiedy włączysz Nautilus"),
+            "Potwierdź tożsamość kiedy włączysz Lumex"),
         "locked": MessageLookupByLibrary.simpleMessage("Zablokowane"),
         "loginButton": MessageLookupByLibrary.simpleMessage("Zaloguj sie"),
         "loginOrRegisterHeader":
@@ -521,7 +521,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "logoutAreYouSure":
             MessageLookupByLibrary.simpleMessage("Czy jesteś pewny?"),
         "logoutDetail": MessageLookupByLibrary.simpleMessage(
-            "Wylogowanie usunie twoje nasiono i wszystkie dane związane z Nautilus. Jeżeli twoje nasiono nie jest zapisane, nigdy nie odzyskasz dostępu do swoich środków."),
+            "Wylogowanie usunie twoje nasiono i wszystkie dane związane z Lumex. Jeżeli twoje nasiono nie jest zapisane, nigdy nie odzyskasz dostępu do swoich środków."),
         "logoutReassurance": MessageLookupByLibrary.simpleMessage(
             "Jeżeli zapisałeś nasiono nie musisz się niczego obawiać."),
         "looksLikeHdSeed": MessageLookupByLibrary.simpleMessage(
@@ -561,15 +561,15 @@ class MessageLookup extends MessageLookupByLibrary {
         "moreSettings": MessageLookupByLibrary.simpleMessage("Więcej ustawień"),
         "nameEmpty": MessageLookupByLibrary.simpleMessage("Wprowadź nazwę"),
         "natricon": MessageLookupByLibrary.simpleMessage("Natricon"),
-        "nautilusWallet":
-            MessageLookupByLibrary.simpleMessage("Portfel Nautilusa"),
+        "lumexWallet":
+            MessageLookupByLibrary.simpleMessage("Portfel Lumexa"),
         "nearby": MessageLookupByLibrary.simpleMessage("W pobliżu"),
         "needVerificationAlert": MessageLookupByLibrary.simpleMessage(
             "Ta funkcja wymaga dłuższej historii transakcji, aby zapobiec spamowi.\n\nAlternatywnie, możesz pokazać kod QR, aby ktoś mógł zeskanować."),
         "needVerificationAlertHeader":
             MessageLookupByLibrary.simpleMessage("Wymagana weryfikacja"),
         "newAccountIntro": MessageLookupByLibrary.simpleMessage(
-            "To jest twoje nowe konto. Kiedy dostaniesz NANO, transakcje będą tak wyglądały:"),
+            "To jest twoje nowe konto. Kiedy dostaniesz Lumex, transakcje będą tak wyglądały:"),
         "newWallet": MessageLookupByLibrary.simpleMessage("Nowy Portfel"),
         "nextButton": MessageLookupByLibrary.simpleMessage("Następne"),
         "nextPayment": MessageLookupByLibrary.simpleMessage("Następna zapłata"),
@@ -590,13 +590,13 @@ class MessageLookup extends MessageLookupByLibrary {
         "noneMethod": MessageLookupByLibrary.simpleMessage("Nic"),
         "notSent": MessageLookupByLibrary.simpleMessage("nie wysłane"),
         "notificationBody": MessageLookupByLibrary.simpleMessage(
-            "Otwórz Nautilus żeby zobaczyć tą transakcje."),
+            "Otwórz Lumex żeby zobaczyć tą transakcje."),
         "notificationHeaderSupplement":
             MessageLookupByLibrary.simpleMessage("Naciśnij aby Otworzyć"),
         "notificationInfo": MessageLookupByLibrary.simpleMessage(
             "Aby ta funkcja działała poprawnie, powiadomienia muszą być włączone"),
         "notificationTitle":
-            MessageLookupByLibrary.simpleMessage("Otrzymano %1 NANO"),
+            MessageLookupByLibrary.simpleMessage("Otrzymano %1 Lumex"),
         "notificationWarning":
             MessageLookupByLibrary.simpleMessage("Powiadomienia wyłączone"),
         "notificationWarningBodyLong": MessageLookupByLibrary.simpleMessage(
@@ -634,7 +634,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("niepoprawne hasło"),
         "passwordNoLongerRequiredToOpenParagraph":
             MessageLookupByLibrary.simpleMessage(
-                "Od teraz nie będziesz potrzebował hasła aby otworzyć Nautilus."),
+                "Od teraz nie będziesz potrzebował hasła aby otworzyć Lumex."),
         "passwordNumber": MessageLookupByLibrary.simpleMessage(
             "Hasło musi zawierać co najmniej 1 cyfrę"),
         "passwordSpecialCharacter": MessageLookupByLibrary.simpleMessage(
@@ -642,10 +642,10 @@ class MessageLookup extends MessageLookupByLibrary {
         "passwordTooShort":
             MessageLookupByLibrary.simpleMessage("Hasło jest za krótkie"),
         "passwordWarning": MessageLookupByLibrary.simpleMessage(
-            "To hasło będzie wymagane do otwarcia Nautilusa."),
+            "To hasło będzie wymagane do otwarcia Lumexa."),
         "passwordWillBeRequiredToOpenParagraph":
             MessageLookupByLibrary.simpleMessage(
-                "To hasło będzie potrzebne aby otworzyć Nautilus"),
+                "To hasło będzie potrzebne aby otworzyć Lumex"),
         "passwordsDontMatch":
             MessageLookupByLibrary.simpleMessage("Hasła się nie zgadzają"),
         "pastDue": MessageLookupByLibrary.simpleMessage("Termin przekroczony"),
@@ -692,13 +692,13 @@ class MessageLookup extends MessageLookupByLibrary {
         "privacyPolicy":
             MessageLookupByLibrary.simpleMessage("Polityka Prywatności"),
         "proSubRequiredHeader": MessageLookupByLibrary.simpleMessage(
-            "Wymagana subskrypcja Nautilus Pro"),
+            "Wymagana subskrypcja Lumex Pro"),
         "proSubRequiredParagraph": MessageLookupByLibrary.simpleMessage(
-            "Za jedyne 1 NANO miesięcznie możesz odblokować wszystkie funkcje Nautilus Pro."),
+            "Za jedyne 1 Lumex miesięcznie możesz odblokować wszystkie funkcje Lumex Pro."),
         "promotionalLink":
-            MessageLookupByLibrary.simpleMessage("Bezpłatna NANO"),
+            MessageLookupByLibrary.simpleMessage("Bezpłatna Lumex"),
         "purchaseCurrency": MessageLookupByLibrary.simpleMessage("Kup %2"),
-        "purchaseNano": MessageLookupByLibrary.simpleMessage("Zakup Nano"),
+        "purchaseNano": MessageLookupByLibrary.simpleMessage("Zakup Lumex"),
         "qrInvalidAddress":
             MessageLookupByLibrary.simpleMessage("Kod QR jest nieprawidłowy"),
         "qrInvalidPermissions": MessageLookupByLibrary.simpleMessage(
@@ -759,7 +759,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "requestAmountConfirm":
             MessageLookupByLibrary.simpleMessage("Żądanie %1 %2"),
         "requestError": MessageLookupByLibrary.simpleMessage(
-            "Żądanie nie powiodło się: Ten użytkownik nie ma zainstalowanego Nautilusa lub ma wyłączone powiadomienia."),
+            "Żądanie nie powiodło się: Ten użytkownik nie ma zainstalowanego Lumexa lub ma wyłączone powiadomienia."),
         "requestFrom": MessageLookupByLibrary.simpleMessage("Prośba od"),
         "requestPayment":
             MessageLookupByLibrary.simpleMessage("Żądaj płatności"),
@@ -768,14 +768,14 @@ class MessageLookup extends MessageLookupByLibrary {
         "requestSentButNotReceived": MessageLookupByLibrary.simpleMessage(
             "Żądanie ponownie wysłane! Jeśli nadal nie jest potwierdzone, urządzenie odbiorcy może być w trybie offline."),
         "requestSheetInfo": MessageLookupByLibrary.simpleMessage(
-            "Poproś o płatność za pomocą zaszyfrowanych wiadomości od końca do końca!\n\nŻądania płatności, notatki i wiadomości będą odbierane tylko przez innych użytkowników nautilusa, ale możesz ich używać do prowadzenia własnej dokumentacji, nawet jeśli odbiorca nie korzysta z nautilusa."),
+            "Poproś o płatność za pomocą zaszyfrowanych wiadomości od końca do końca!\n\nŻądania płatności, notatki i wiadomości będą odbierane tylko przez innych użytkowników lumexa, ale możesz ich używać do prowadzenia własnej dokumentacji, nawet jeśli odbiorca nie korzysta z lumexa."),
         "requestSheetInfoHeader": MessageLookupByLibrary.simpleMessage(
             "Poproś o informacje o arkuszu"),
         "requested": MessageLookupByLibrary.simpleMessage("Żądany"),
         "requestedFrom": MessageLookupByLibrary.simpleMessage("Żądany od"),
         "requesting": MessageLookupByLibrary.simpleMessage("Żądanie"),
         "requireAPasswordToOpenHeader": MessageLookupByLibrary.simpleMessage(
-            "Chcesz, żeby żądać hasło aby otworzyć Nautilus?"),
+            "Chcesz, żeby żądać hasło aby otworzyć Lumex?"),
         "requireCaptcha": MessageLookupByLibrary.simpleMessage(
             "Wymagaj CAPTCHA, aby odebrać kartę podarunkową"),
         "resendMemo":
@@ -836,14 +836,14 @@ class MessageLookup extends MessageLookupByLibrary {
             "Wystąpił błąd. Spróbuj póżniej"),
         "sendFrom": MessageLookupByLibrary.simpleMessage("Wyślij Od"),
         "sendMemoError": MessageLookupByLibrary.simpleMessage(
-            "Wysyłanie notatki z transakcją nie powiodło się, mogą nie być użytkownikiem Nautilus."),
+            "Wysyłanie notatki z transakcją nie powiodło się, mogą nie być użytkownikiem Lumex."),
         "sendMessageConfirm":
             MessageLookupByLibrary.simpleMessage("Wysyłanie wiadomości"),
         "sendRequestAgain":
             MessageLookupByLibrary.simpleMessage("Wyślij prośbę ponownie"),
         "sendRequests": MessageLookupByLibrary.simpleMessage("Wyślij prośby"),
         "sendSheetInfo": MessageLookupByLibrary.simpleMessage(
-            "Wyślij lub zażądaj płatności, z End to End Encrypted messages!\n\nProśby o płatność, notatki i wiadomości będą odbierane tylko przez innych użytkowników Nautilus.\n\nNie musisz mieć nazwy użytkownika, aby wysyłać lub odbierać prośby o płatność, i możesz ich używać do prowadzenia własnej dokumentacji, nawet jeśli nie używają nautilusa."),
+            "Wyślij lub zażądaj płatności, z End to End Encrypted messages!\n\nProśby o płatność, notatki i wiadomości będą odbierane tylko przez innych użytkowników Lumex.\n\nNie musisz mieć nazwy użytkownika, aby wysyłać lub odbierać prośby o płatność, i możesz ich używać do prowadzenia własnej dokumentacji, nawet jeśli nie używają lumexa."),
         "sendSheetInfoHeader":
             MessageLookupByLibrary.simpleMessage("Wyślij informacje o arkuszu"),
         "sending": MessageLookupByLibrary.simpleMessage("Wysyłanie"),
@@ -875,14 +875,14 @@ class MessageLookup extends MessageLookupByLibrary {
         "share": MessageLookupByLibrary.simpleMessage("Dzielić"),
         "shareApp": MessageLookupByLibrary.simpleMessage("Udostępnij %1"),
         "shareAppText": MessageLookupByLibrary.simpleMessage(
-            "Sprawdź %1! Najlepszy mobilny portfel NANO!"),
+            "Sprawdź %1! Najlepszy mobilny portfel Lumex!"),
         "shareLink": MessageLookupByLibrary.simpleMessage("Udostępnij link"),
         "shareMessage":
             MessageLookupByLibrary.simpleMessage("Udostępnij wiadomość"),
-        "shareNautilus":
-            MessageLookupByLibrary.simpleMessage("Udostępnij Nautilus"),
-        "shareNautilusText": MessageLookupByLibrary.simpleMessage(
-            "Zobacz Nautilus! Oficjalny portfel Nano dla Android!"),
+        "shareLumex":
+            MessageLookupByLibrary.simpleMessage("Udostępnij Lumex"),
+        "shareLumexText": MessageLookupByLibrary.simpleMessage(
+            "Zobacz Lumex! Oficjalny portfel Lumex dla Android!"),
         "shareText": MessageLookupByLibrary.simpleMessage("Udostępnij tekst"),
         "shopButton": MessageLookupByLibrary.simpleMessage("Sklep"),
         "show": MessageLookupByLibrary.simpleMessage("Pokazać"),
@@ -909,7 +909,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "social": MessageLookupByLibrary.simpleMessage("Społeczny"),
         "someone": MessageLookupByLibrary.simpleMessage("ktoś"),
         "spendCurrency": MessageLookupByLibrary.simpleMessage("Wydaj %2"),
-        "spendNano": MessageLookupByLibrary.simpleMessage("Wydaj NANO"),
+        "spendNano": MessageLookupByLibrary.simpleMessage("Wydaj Lumex"),
         "splitBill": MessageLookupByLibrary.simpleMessage("Podziel rachunek"),
         "splitBillHeader":
             MessageLookupByLibrary.simpleMessage("Podziel rachunek"),
@@ -935,7 +935,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "swapXMR": MessageLookupByLibrary.simpleMessage("Zamień XMR"),
         "swapXMRHeader": MessageLookupByLibrary.simpleMessage("Zamień Monero"),
         "swapXMRInfo": MessageLookupByLibrary.simpleMessage(
-            "Monero to kryptowaluta skoncentrowana na prywatności, która bardzo utrudnia, a nawet uniemożliwia śledzenie transakcji. Tymczasem NANO to kryptowaluta skoncentrowana na płatnościach, która jest szybka i bez opłat. Razem zapewniają jedne z najbardziej użytecznych aspektów kryptowalut!\n\nSkorzystaj z tej strony, aby łatwo zamienić NANO na XMR!"),
+            "Monero to kryptowaluta skoncentrowana na prywatności, która bardzo utrudnia, a nawet uniemożliwia śledzenie transakcji. Tymczasem Lumex to kryptowaluta skoncentrowana na płatnościach, która jest szybka i bez opłat. Razem zapewniają jedne z najbardziej użytecznych aspektów kryptowalut!\n\nSkorzystaj z tej strony, aby łatwo zamienić Lumex na XMR!"),
         "swapping": MessageLookupByLibrary.simpleMessage("Zamiana"),
         "switchToSeed":
             MessageLookupByLibrary.simpleMessage("Zamień na nasiono"),
@@ -971,9 +971,9 @@ class MessageLookup extends MessageLookupByLibrary {
         "transferClose": MessageLookupByLibrary.simpleMessage(
             "Naciśnij gdziekolwiek żeby zamknąć okno."),
         "transferComplete": MessageLookupByLibrary.simpleMessage(
-            "%1 NANO zostało z powodzeniem przesłane do twojego portfela Nautilus."),
+            "%1 Lumex zostało z powodzeniem przesłane do twojego portfela Lumex."),
         "transferConfirmInfo": MessageLookupByLibrary.simpleMessage(
-            "Portfel z saldem %1 NANO został wykryty.\n"),
+            "Portfel z saldem %1 Lumex został wykryty.\n"),
         "transferConfirmInfoSecond": MessageLookupByLibrary.simpleMessage(
             "Naciśnij potwierdz aby transferować środki.\n"),
         "transferConfirmInfoThird": MessageLookupByLibrary.simpleMessage(
@@ -983,14 +983,14 @@ class MessageLookup extends MessageLookupByLibrary {
         "transferHeader":
             MessageLookupByLibrary.simpleMessage("Transferuj\nŚrodki"),
         "transferIntro": MessageLookupByLibrary.simpleMessage(
-            "Ten proces trensferuje środki z portfela papierowego do twojego portfela Nautilus.\n\nNaciśnij \"%1\" przycisk aby zacząć."),
+            "Ten proces trensferuje środki z portfela papierowego do twojego portfela Lumex.\n\nNaciśnij \"%1\" przycisk aby zacząć."),
         "transferIntroShort": MessageLookupByLibrary.simpleMessage(
-            "Ten proces przeniesie środki z portfela papierowego do portfela Nautilus."),
+            "Ten proces przeniesie środki z portfela papierowego do portfela Lumex."),
         "transferLoading": MessageLookupByLibrary.simpleMessage("Transferuje"),
         "transferManualHint": MessageLookupByLibrary.simpleMessage(
             "Proszę wpisz nasiono poniżej"),
         "transferNoFunds": MessageLookupByLibrary.simpleMessage(
-            "To nasiono nie zawiera żadnego NANO."),
+            "To nasiono nie zawiera żadnego Lumex."),
         "transferQrScanError": MessageLookupByLibrary.simpleMessage(
             "Ten kod QR nie zawiera ważnego nasiona."),
         "transferQrScanHint": MessageLookupByLibrary.simpleMessage(
@@ -1001,9 +1001,9 @@ class MessageLookup extends MessageLookupByLibrary {
         "unfulfilled": MessageLookupByLibrary.simpleMessage("niespełnione"),
         "unlock": MessageLookupByLibrary.simpleMessage("Odblokuj"),
         "unlockBiometrics": MessageLookupByLibrary.simpleMessage(
-            "Potwierdź tożsamość aby odblokować Nautilus"),
+            "Potwierdź tożsamość aby odblokować Lumex"),
         "unlockPin": MessageLookupByLibrary.simpleMessage(
-            "Wpisz PIN aby odblokować Nautilus"),
+            "Wpisz PIN aby odblokować Lumex"),
         "unopenedWarningHeader": MessageLookupByLibrary.simpleMessage(
             "Pokaż nieotwarte ostrzeżenie"),
         "unopenedWarningInfo": MessageLookupByLibrary.simpleMessage(
@@ -1019,9 +1019,9 @@ class MessageLookup extends MessageLookupByLibrary {
         "urlEmpty": MessageLookupByLibrary.simpleMessage("Wprowadź adres URL"),
         "useAppRep": MessageLookupByLibrary.simpleMessage("Użyj %1 rep"),
         "useCurrency": MessageLookupByLibrary.simpleMessage("Użyj %2"),
-        "useNano": MessageLookupByLibrary.simpleMessage("Użyj NANO"),
-        "useNautilusRep":
-            MessageLookupByLibrary.simpleMessage("Use Nautilus Rep"),
+        "useNano": MessageLookupByLibrary.simpleMessage("Użyj Lumex"),
+        "useLumexRep":
+            MessageLookupByLibrary.simpleMessage("Use Lumex Rep"),
         "userAlreadyAddedError":
             MessageLookupByLibrary.simpleMessage("Użytkownik już dodany!"),
         "userNotFound": MessageLookupByLibrary.simpleMessage(
@@ -1035,13 +1035,13 @@ class MessageLookup extends MessageLookupByLibrary {
         "usernameError":
             MessageLookupByLibrary.simpleMessage("Błąd nazwy użytkownika"),
         "usernameInfo": MessageLookupByLibrary.simpleMessage(
-            "Wybierz wyjątkowy @username, aby ułatwić znajomym i rodzinie znalezienie Ciebie!\n\nPosiadanie nazwy użytkownika Nautilus aktualizuje interfejs użytkownika na całym świecie, aby odzwierciedlić Twój nowy uchwyt."),
+            "Wybierz wyjątkowy @username, aby ułatwić znajomym i rodzinie znalezienie Ciebie!\n\nPosiadanie nazwy użytkownika Lumex aktualizuje interfejs użytkownika na całym świecie, aby odzwierciedlić Twój nowy uchwyt."),
         "usernameInvalid":
             MessageLookupByLibrary.simpleMessage("Nieprawidłowy login"),
         "usernameUnavailable": MessageLookupByLibrary.simpleMessage(
             "Nazwa użytkownika niedostępna"),
         "usernameWarning": MessageLookupByLibrary.simpleMessage(
-            "Nazwy użytkowników Nautilus to scentralizowana usługa świadczona przez Nano.to"),
+            "Nazwy użytkowników Lumex to scentralizowana usługa świadczona przez Lumex.to"),
         "using": MessageLookupByLibrary.simpleMessage("Za pomocą"),
         "viewDetails": MessageLookupByLibrary.simpleMessage("Zobacz Szczegóły"),
         "viewPaymentHistory":
@@ -1058,11 +1058,11 @@ class MessageLookup extends MessageLookupByLibrary {
         "weekAgo": MessageLookupByLibrary.simpleMessage("Tydzień temu"),
         "weekly": MessageLookupByLibrary.simpleMessage("Co tydzień"),
         "welcomeText": MessageLookupByLibrary.simpleMessage(
-            "Witam w Nautilus. Żeby kontynuować, możesz stworzyć nowy portfel albo importować go."),
+            "Witam w Lumex. Żeby kontynuować, możesz stworzyć nowy portfel albo importować go."),
         "welcomeTextLogin": MessageLookupByLibrary.simpleMessage(
-            "Witamy w Nautilusie. Wybierz opcję, aby rozpocząć, lub wybierz motyw, korzystając z poniższej ikony."),
+            "Witamy w Lumexie. Wybierz opcję, aby rozpocząć, lub wybierz motyw, korzystając z poniższej ikony."),
         "welcomeTextUpdated": MessageLookupByLibrary.simpleMessage(
-            "Witamy w Nautilusie. Aby rozpocząć, utwórz nowy portfel lub zaimportuj istniejący."),
+            "Witamy w Lumexie. Aby rozpocząć, utwórz nowy portfel lub zaimportuj istniejący."),
         "welcomeTextWithoutLogin": MessageLookupByLibrary.simpleMessage(
             "Aby rozpocząć, utwórz nowy portfel lub zaimportuj istniejący."),
         "withAddress": MessageLookupByLibrary.simpleMessage("Z adresem"),

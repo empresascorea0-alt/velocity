@@ -2993,7 +2993,7 @@
                       var r = n(n({}, e), {
                           fromAddress: e.address,
                           amountRaw: "0",
-                          toAddress: "nano_1111111111111111111111111111111111111111111111111111hifc8npp"
+                          toAddress: "lumex_1111111111111111111111111111111111111111111111111111hifc8npp"
                       });
                       return l.default.send(r, t)
                   }
@@ -3323,10 +3323,10 @@
                           if (!e.transactionHash) throw new Error("No transaction hash");
                           if (!e.frontier) throw new Error("No frontier");
                           if (!r) throw new Error("Please input the private key to sign the block");
-                          var l = a.default.convert(e.walletBalanceRaw, "RAW", "NANO"),
-                              u = a.default.convert(e.amountRaw, "RAW", "NANO"),
+                          var l = a.default.convert(e.walletBalanceRaw, "RAW", "Lumex"),
+                              u = a.default.convert(e.amountRaw, "RAW", "Lumex"),
                               f = new i.default(l).plus(new i.default(u)),
-                              h = a.default.convert(f, "NANO", "RAW"),
+                              h = a.default.convert(f, "Lumex", "RAW"),
                               d = c.default.dec2hex(h, 16).toUpperCase(),
                               p = o.default.nanoAddressToHexString(e.toAddress),
                               g = e.transactionHash,
@@ -3353,10 +3353,10 @@
                           if (!o.default.validateNanoAddress(e.representativeAddress)) throw new Error("Invalid representativeAddress");
                           if (!e.frontier) throw new Error("Frontier is not set");
                           if (!r) throw new Error("Please input the private key to sign the block");
-                          var l = a.default.convert(e.walletBalanceRaw, "RAW", "NANO"),
-                              u = a.default.convert(e.amountRaw, "RAW", "NANO"),
+                          var l = a.default.convert(e.walletBalanceRaw, "RAW", "Lumex"),
+                              u = a.default.convert(e.amountRaw, "RAW", "Lumex"),
                               f = new i.default(l).minus(new i.default(u)),
-                              h = a.default.convert(f, "NANO", "RAW"),
+                              h = a.default.convert(f, "Lumex", "RAW"),
                               d = c.default.dec2hex(h, 16).toUpperCase(),
                               p = o.default.nanoAddressToHexString(e.fromAddress),
                               g = o.default.nanoAddressToHexString(e.toAddress),
@@ -3577,7 +3577,7 @@
                           var t = this.alphabet.indexOf(e);
                           if (-1 === t) throw new Error("Invalid character found: ".concat(e));
                           return t
-                      }, t = e, e.alphabet = "13456789abcdefghijkmnopqrstuwxyz", e.prefix = "nano_", e.deriveAddress = function(e) {
+                      }, t = e, e.alphabet = "13456789abcdefghijkmnopqrstuwxyz", e.prefix = "lumex_", e.deriveAddress = function(e) {
                           var r = o.default.hex2ab(e),
                               n = (0, i.blake2b)(r, void 0, 5).reverse(),
                               a = t.encodeNanoBase32(r),
@@ -3588,7 +3588,7 @@
                               for (o = o << 8 | e[c], s += 8; s >= 5;) a += t.alphabet[o >>> s + i - 5 & 31], s -= 5;
                           return s > 0 && (a += t.alphabet[o << 5 - (s + i) & 31]), a
                       }, e.addressToPublicKey = function(t) {
-                          var r = t.replace("nano_", "").replace("xrb_", ""),
+                          var r = t.replace("lumex_", "").replace("xrb_", ""),
                               n = e.decodeNanoBase32(r);
                           return o.default.ab2hex(n).slice(0, 64)
                       }, e.decodeNanoBase32 = function(e) {
@@ -3635,7 +3635,7 @@
                               case "RAW":
                                   n = n;
                                   break;
-                              case "NANO":
+                              case "Lumex":
                               case "MRAI":
                                   n = n.shiftedBy(30);
                                   break;
@@ -3646,12 +3646,12 @@
                                   n = n.shiftedBy(24);
                                   break;
                               default:
-                                  throw new Error("Unkown input unit ".concat(t, ", expected one of the following: RAW, NANO, MRAI, KRAI, RAI"))
+                                  throw new Error("Unkown input unit ".concat(t, ", expected one of the following: RAW, Lumex, MRAI, KRAI, RAI"))
                           }
                           switch (r) {
                               case "RAW":
                                   return n.toFixed(0);
-                              case "NANO":
+                              case "Lumex":
                               case "MRAI":
                                   return n.shiftedBy(-30).toFixed(30, 1);
                               case "KRAI":
@@ -3659,7 +3659,7 @@
                               case "RAI":
                                   return n.shiftedBy(-24).toFixed(24, 1);
                               default:
-                                  throw new Error("Unknown output unit ".concat(r, ", expected one of the following: RAW, NANO, MRAI, KRAI, RAI"))
+                                  throw new Error("Unknown output unit ".concat(r, ", expected one of the following: RAW, Lumex, MRAI, KRAI, RAI"))
                           }
                       }, e
                   }();

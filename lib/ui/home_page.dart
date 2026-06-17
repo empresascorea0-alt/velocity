@@ -21,74 +21,74 @@ import 'package:quiver/strings.dart';
 import 'package:rate_my_app/rate_my_app.dart';
 import 'package:searchbar_animation/searchbar_animation.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:wallet_flutter/app_icons.dart';
-import 'package:wallet_flutter/appstate_container.dart';
-import 'package:wallet_flutter/bus/blocked_modified_event.dart';
-import 'package:wallet_flutter/bus/deep_link_event.dart';
-import 'package:wallet_flutter/bus/events.dart';
-import 'package:wallet_flutter/bus/payments_home_event.dart';
-import 'package:wallet_flutter/bus/scheduled_changed_event.dart';
-import 'package:wallet_flutter/bus/subs_changed_event.dart';
-import 'package:wallet_flutter/bus/tx_update_event.dart';
-import 'package:wallet_flutter/bus/unified_home_event.dart';
-import 'package:wallet_flutter/generated/l10n.dart';
-import 'package:wallet_flutter/localize.dart';
-import 'package:wallet_flutter/model/address.dart';
-import 'package:wallet_flutter/model/db/account.dart';
-import 'package:wallet_flutter/model/db/appdb.dart';
-import 'package:wallet_flutter/model/db/scheduled.dart';
-import 'package:wallet_flutter/model/db/subscription.dart';
-import 'package:wallet_flutter/model/db/txdata.dart';
-import 'package:wallet_flutter/model/db/user.dart';
-import 'package:wallet_flutter/model/list_model.dart';
-import 'package:wallet_flutter/network/account_service.dart';
-import 'package:wallet_flutter/network/alert_codes.dart';
-import 'package:wallet_flutter/network/giftcards.dart';
-import 'package:wallet_flutter/network/metadata_service.dart';
-import 'package:wallet_flutter/network/model/block_types.dart';
-import 'package:wallet_flutter/network/model/fcm_message_event.dart';
-import 'package:wallet_flutter/network/model/record_types.dart';
-import 'package:wallet_flutter/network/model/response/account_history_response_item.dart';
-import 'package:wallet_flutter/network/model/response/accounts_balances_response.dart';
-import 'package:wallet_flutter/network/model/response/alerts_response_item.dart';
-import 'package:wallet_flutter/network/model/response/auth_item.dart';
-import 'package:wallet_flutter/network/model/response/pay_item.dart';
-import 'package:wallet_flutter/network/model/response/sub_item.dart';
-import 'package:wallet_flutter/network/subscription_service.dart';
-import 'package:wallet_flutter/network/username_service.dart';
-import 'package:wallet_flutter/service_locator.dart';
-import 'package:wallet_flutter/styles.dart';
-import 'package:wallet_flutter/ui/auth/auth_confirm_sheet.dart';
-import 'package:wallet_flutter/ui/business/calc_sheet.dart';
-import 'package:wallet_flutter/ui/handoff/handoff_confirm_sheet.dart';
-import 'package:wallet_flutter/ui/home/wallet_info.dart';
-import 'package:wallet_flutter/ui/popup_button.dart';
-import 'package:wallet_flutter/ui/receive/receive_show_qr.dart';
-import 'package:wallet_flutter/ui/send/send_confirm_sheet.dart';
-import 'package:wallet_flutter/ui/send/send_sheet.dart';
-import 'package:wallet_flutter/ui/settings/settings_drawer.dart';
-import 'package:wallet_flutter/ui/shop/shop_sheet.dart';
-import 'package:wallet_flutter/ui/subs/sub_confirm_sheet.dart';
-import 'package:wallet_flutter/ui/transfer/transfer_overview_sheet.dart';
-import 'package:wallet_flutter/ui/upcoming/upcoming_sheet.dart';
-import 'package:wallet_flutter/ui/util/formatters.dart';
-import 'package:wallet_flutter/ui/util/routes.dart';
-import 'package:wallet_flutter/ui/util/ui_util.dart';
-import 'package:wallet_flutter/ui/widgets/animations.dart';
-import 'package:wallet_flutter/ui/widgets/app_simpledialog.dart';
-import 'package:wallet_flutter/ui/widgets/buttons.dart';
-import 'package:wallet_flutter/ui/widgets/custom_worker.dart';
-import 'package:wallet_flutter/ui/widgets/dialog.dart';
-import 'package:wallet_flutter/ui/widgets/draggable_scrollbar.dart';
-import 'package:wallet_flutter/ui/widgets/list_gradient.dart';
-import 'package:wallet_flutter/ui/widgets/reactive_refresh.dart';
-import 'package:wallet_flutter/ui/widgets/remote_message_card.dart';
-import 'package:wallet_flutter/ui/widgets/remote_message_sheet.dart';
-import 'package:wallet_flutter/ui/widgets/sheet_util.dart';
-import 'package:wallet_flutter/ui/widgets/transaction_cards.dart';
-import 'package:wallet_flutter/util/caseconverter.dart';
-import 'package:wallet_flutter/util/hapticutil.dart';
-import 'package:wallet_flutter/util/sharedprefsutil.dart';
+import 'package:velocity/app_icons.dart';
+import 'package:velocity/appstate_container.dart';
+import 'package:velocity/bus/blocked_modified_event.dart';
+import 'package:velocity/bus/deep_link_event.dart';
+import 'package:velocity/bus/events.dart';
+import 'package:velocity/bus/payments_home_event.dart';
+import 'package:velocity/bus/scheduled_changed_event.dart';
+import 'package:velocity/bus/subs_changed_event.dart';
+import 'package:velocity/bus/tx_update_event.dart';
+import 'package:velocity/bus/unified_home_event.dart';
+import 'package:velocity/generated/l10n.dart';
+import 'package:velocity/localize.dart';
+import 'package:velocity/model/address.dart';
+import 'package:velocity/model/db/account.dart';
+import 'package:velocity/model/db/appdb.dart';
+import 'package:velocity/model/db/scheduled.dart';
+import 'package:velocity/model/db/subscription.dart';
+import 'package:velocity/model/db/txdata.dart';
+import 'package:velocity/model/db/user.dart';
+import 'package:velocity/model/list_model.dart';
+import 'package:velocity/network/account_service.dart';
+import 'package:velocity/network/alert_codes.dart';
+import 'package:velocity/network/giftcards.dart';
+import 'package:velocity/network/metadata_service.dart';
+import 'package:velocity/network/model/block_types.dart';
+import 'package:velocity/network/model/fcm_message_event.dart';
+import 'package:velocity/network/model/record_types.dart';
+import 'package:velocity/network/model/response/account_history_response_item.dart';
+import 'package:velocity/network/model/response/accounts_balances_response.dart';
+import 'package:velocity/network/model/response/alerts_response_item.dart';
+import 'package:velocity/network/model/response/auth_item.dart';
+import 'package:velocity/network/model/response/pay_item.dart';
+import 'package:velocity/network/model/response/sub_item.dart';
+import 'package:velocity/network/subscription_service.dart';
+import 'package:velocity/network/username_service.dart';
+import 'package:velocity/service_locator.dart';
+import 'package:velocity/styles.dart';
+import 'package:velocity/ui/auth/auth_confirm_sheet.dart';
+import 'package:velocity/ui/business/calc_sheet.dart';
+import 'package:velocity/ui/handoff/handoff_confirm_sheet.dart';
+import 'package:velocity/ui/home/wallet_info.dart';
+import 'package:velocity/ui/popup_button.dart';
+import 'package:velocity/ui/receive/receive_show_qr.dart';
+import 'package:velocity/ui/send/send_confirm_sheet.dart';
+import 'package:velocity/ui/send/send_sheet.dart';
+import 'package:velocity/ui/settings/settings_drawer.dart';
+import 'package:velocity/ui/shop/shop_sheet.dart';
+import 'package:velocity/ui/subs/sub_confirm_sheet.dart';
+import 'package:velocity/ui/transfer/transfer_overview_sheet.dart';
+import 'package:velocity/ui/upcoming/upcoming_sheet.dart';
+import 'package:velocity/ui/util/formatters.dart';
+import 'package:velocity/ui/util/routes.dart';
+import 'package:velocity/ui/util/ui_util.dart';
+import 'package:velocity/ui/widgets/animations.dart';
+import 'package:velocity/ui/widgets/app_simpledialog.dart';
+import 'package:velocity/ui/widgets/buttons.dart';
+import 'package:velocity/ui/widgets/custom_worker.dart';
+import 'package:velocity/ui/widgets/dialog.dart';
+import 'package:velocity/ui/widgets/draggable_scrollbar.dart';
+import 'package:velocity/ui/widgets/list_gradient.dart';
+import 'package:velocity/ui/widgets/reactive_refresh.dart';
+import 'package:velocity/ui/widgets/remote_message_card.dart';
+import 'package:velocity/ui/widgets/remote_message_sheet.dart';
+import 'package:velocity/ui/widgets/sheet_util.dart';
+import 'package:velocity/ui/widgets/transaction_cards.dart';
+import 'package:velocity/util/caseconverter.dart';
+import 'package:velocity/util/hapticutil.dart';
+import 'package:velocity/util/sharedprefsutil.dart';
 
 // ignore: must_be_immutable
 class AppHomePage extends StatefulWidget {
@@ -161,7 +161,7 @@ class AppHomePageState extends State<AppHomePage>
     minLaunches: 5,
     remindDays: 7,
     remindLaunches: 5,
-    googlePlayIdentifier: "co.perish.nautiluswallet",
+    googlePlayIdentifier: "co.perish.lumexwallet",
     appStoreIdentifier: '1615775960',
   );
 
@@ -915,7 +915,7 @@ class AppHomePageState extends State<AppHomePage>
         }
       }
 
-      // check for nautilus pro sub:
+      // check for lumex pro sub:
       if (!mounted) return;
       _isPro = await AppDialogs.proCheck(context, shouldShowDialog: false);
 
@@ -1077,12 +1077,12 @@ class AppHomePageState extends State<AppHomePage>
   Future<void> _addSampleContact() async {
     final bool contactAdded = await sl.get<SharedPrefsUtil>().getFirstContactAdded();
     if (!contactAdded) {
-      const String nautilusDonationsNickname = "NautilusDonations";
+      const String lumexDonationsNickname = "LumexDonations";
       await sl.get<SharedPrefsUtil>().setFirstContactAdded(true);
       final User donationsContact = User(
-          nickname: nautilusDonationsNickname,
-          address: "nano_38713x95zyjsqzx6nm1dsom1jmm668owkeb9913ax6nfgj15az3nu8xkx579",
-          // username: "nautilus",
+          nickname: lumexDonationsNickname,
+          address: "lumex_38713x95zyjsqzx6nm1dsom1jmm668owkeb9913ax6nfgj15az3nu8xkx579",
+          // username: "lumex",
           type: UserTypes.CONTACT);
       await sl.get<DBHelper>().saveContact(donationsContact);
     }

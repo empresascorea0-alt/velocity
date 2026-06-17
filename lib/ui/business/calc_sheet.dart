@@ -7,18 +7,18 @@ import 'package:logger/logger.dart';
 import 'package:math_expressions/math_expressions.dart';
 // ignore: depend_on_referenced_packages
 // import 'package:ndef/ndef.dart' as ndef;
-import 'package:wallet_flutter/appstate_container.dart';
-import 'package:wallet_flutter/dimens.dart';
-import 'package:wallet_flutter/generated/l10n.dart';
-import 'package:wallet_flutter/model/available_currency.dart';
-import 'package:wallet_flutter/service_locator.dart';
-import 'package:wallet_flutter/styles.dart';
-import 'package:wallet_flutter/ui/receive/receive_show_qr.dart';
-import 'package:wallet_flutter/ui/util/formatters.dart';
-import 'package:wallet_flutter/ui/util/handlebars.dart';
-import 'package:wallet_flutter/ui/widgets/buttons.dart';
-import 'package:wallet_flutter/ui/widgets/sheet_util.dart';
-import 'package:wallet_flutter/util/numberutil.dart';
+import 'package:velocity/appstate_container.dart';
+import 'package:velocity/dimens.dart';
+import 'package:velocity/generated/l10n.dart';
+import 'package:velocity/model/available_currency.dart';
+import 'package:velocity/service_locator.dart';
+import 'package:velocity/styles.dart';
+import 'package:velocity/ui/receive/receive_show_qr.dart';
+import 'package:velocity/ui/util/formatters.dart';
+import 'package:velocity/ui/util/handlebars.dart';
+import 'package:velocity/ui/widgets/buttons.dart';
+import 'package:velocity/ui/widgets/sheet_util.dart';
+import 'package:velocity/util/numberutil.dart';
 
 class CalcSheet extends StatefulWidget {
   const CalcSheet({required this.localCurrency, this.address, this.qrWidget, this.amountRaw}) : super();

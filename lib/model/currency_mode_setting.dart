@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:wallet_flutter/model/setting_item.dart';
+import 'package:velocity/model/setting_item.dart';
 
-enum CurrencyModeOptions { NANO, NYANO, BANANO }
+enum CurrencyModeOptions { Lumex, NYANO, BANANO }
 
 /// Represent nyano/nano  setting
 class CurrencyModeSetting extends SettingSelectionItem {
@@ -11,14 +11,14 @@ class CurrencyModeSetting extends SettingSelectionItem {
 
   String getDisplayName([BuildContext? context]) {
     switch (setting) {
-      case CurrencyModeOptions.NANO:
-        return "NANO";
+      case CurrencyModeOptions.Lumex:
+        return "Lumex";
       case CurrencyModeOptions.NYANO:
         return "NYANO";
       case CurrencyModeOptions.BANANO:
         return "BANANO";
       default:
-        return "NANO";
+        return "Lumex";
     }
   }
 

@@ -328,7 +328,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "failedMessage": MessageLookupByLibrary.simpleMessage("msg failed"),
         "fallbackHeader": MessageLookupByLibrary.simpleMessage("ノーチラス切断"),
         "fallbackInfo": MessageLookupByLibrary.simpleMessage(
-            "Nautilus サーバが切断されているように見え、送受信 (メモなし) はまだ動作しているはずですが、支払い要求が通過しない可能性があります\n\n 後で戻ってくるか、アプリを再起動してもう一度試してください"),
+            "Lumex サーバが切断されているように見え、送受信 (メモなし) はまだ動作しているはずですが、支払い要求が通過しない可能性があります\n\n 後で戻ってくるか、アプリを再起動してもう一度試してください"),
         "favoriteExists": MessageLookupByLibrary.simpleMessage("お気に入りは既に存在します"),
         "favoriteHeader": MessageLookupByLibrary.simpleMessage("お気に入り"),
         "favoriteInvalid": MessageLookupByLibrary.simpleMessage("お気に入り名が無効です"),
@@ -365,7 +365,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "giftCardInfoHeader": MessageLookupByLibrary.simpleMessage("ギフトシート情報"),
         "giftFrom": MessageLookupByLibrary.simpleMessage("ギフト元"),
         "giftInfo": MessageLookupByLibrary.simpleMessage(
-            "NANOでデジタルギフトカードを読み込もう！金額と、受信者がそれを開いたときに表示するオプションのメッセージを設定します！\n\n作成すると、誰にでも送信できるリンクが届きます。リンクを開くと、Nautilusをインストールした後に自動的に受取人に資金が分配されます！\n\n受取人がすでにNautilusユーザーの場合、リンクを開くと口座に資金を送金するように促されます。"),
+            "NANOでデジタルギフトカードを読み込もう！金額と、受信者がそれを開いたときに表示するオプションのメッセージを設定します！\n\n作成すると、誰にでも送信できるリンクが届きます。リンクを開くと、Lumexをインストールした後に自動的に受取人に資金が分配されます！\n\n受取人がすでにLumexユーザーの場合、リンクを開くと口座に資金を送金するように促されます。"),
         "giftMessage": MessageLookupByLibrary.simpleMessage("ギフトメッセージ"),
         "giftProcessError": MessageLookupByLibrary.simpleMessage(
             "このギフトカードの処理中にエラーが発生しました。接続を確認して、ギフト リンクをもう一度クリックしてみてください。"),
@@ -406,9 +406,9 @@ class MessageLookup extends MessageLookupByLibrary {
         "importGiftEmpty": MessageLookupByLibrary.simpleMessage(
             "Unfortunately the link you clicked that contained some nano appears to be empty, but you can still see the amount and associated message."),
         "importGiftIntro": MessageLookupByLibrary.simpleMessage(
-            "NANO を含むリンクをクリックしたようです。これらの資金を受け取るには、ウォレットの設定を完了する必要があります。"),
+            "Lumex を含むリンクをクリックしたようです。これらの資金を受け取るには、ウォレットの設定を完了する必要があります。"),
         "importGiftv2": MessageLookupByLibrary.simpleMessage(
-            "クリックしたリンクには NANO が含まれています。このウォレットにインポートしますか?"),
+            "クリックしたリンクには Lumex が含まれています。このウォレットにインポートしますか?"),
         "importHD": MessageLookupByLibrary.simpleMessage("HD のインポート"),
         "importHDTrust": MessageLookupByLibrary.simpleMessage("HD のインポート / 信頼"),
         "importSecretPhrase":
@@ -435,7 +435,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "invalidPassword": MessageLookupByLibrary.simpleMessage("パスワードが無効です"),
         "invalidPin": MessageLookupByLibrary.simpleMessage("無効なピン"),
         "iosFundingMessage": MessageLookupByLibrary.simpleMessage(
-            "iOS App Store のガイドラインと制限により、寄付ページにリンクすることはできません。プロジェクトをサポートしたい場合は、nautilus ノードのアドレスに送信することを検討してください。"),
+            "iOS App Store のガイドラインと制限により、寄付ページにリンクすることはできません。プロジェクトをサポートしたい場合は、lumex ノードのアドレスに送信することを検討してください。"),
         "language": MessageLookupByLibrary.simpleMessage("言語"),
         "linkCopied": MessageLookupByLibrary.simpleMessage("リンクがコピーされました"),
         "loaded": MessageLookupByLibrary.simpleMessage("ロード済み"),
@@ -484,7 +484,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "moreSettings": MessageLookupByLibrary.simpleMessage("その他の設定"),
         "nameEmpty": MessageLookupByLibrary.simpleMessage("名前を入力してください"),
         "natricon": MessageLookupByLibrary.simpleMessage("Natricon"),
-        "nautilusWallet": MessageLookupByLibrary.simpleMessage("ノーチラス ウォレット"),
+        "lumexWallet": MessageLookupByLibrary.simpleMessage("ノーチラス ウォレット"),
         "nearby": MessageLookupByLibrary.simpleMessage("近く"),
         "needVerificationAlert": MessageLookupByLibrary.simpleMessage(
             "この機能では、スパムを防ぐために、より長い取引履歴が必要です。\n\nまたは、誰かがスキャンできるように QR コードを表示することもできます。"),
@@ -549,17 +549,17 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("パスワードが正しくありません"),
         "passwordNoLongerRequiredToOpenParagraph":
             MessageLookupByLibrary.simpleMessage(
-                "Nautilusを開く際にパスワードを必要としなくなります。"),
+                "Lumexを開く際にパスワードを必要としなくなります。"),
         "passwordNumber": MessageLookupByLibrary.simpleMessage(
             "パスワードには少なくとも 1 つの数字が含まれている必要があります"),
         "passwordSpecialCharacter": MessageLookupByLibrary.simpleMessage(
             "パスワードには少なくとも 1 つの特殊文字が含まれている必要があります"),
         "passwordTooShort": MessageLookupByLibrary.simpleMessage("パスワードが短すぎます"),
         "passwordWarning": MessageLookupByLibrary.simpleMessage(
-            "Nautilus を開くには、このパスワードが必要です。"),
+            "Lumex を開くには、このパスワードが必要です。"),
         "passwordWillBeRequiredToOpenParagraph":
             MessageLookupByLibrary.simpleMessage(
-                "このパスワードはNautilusを開く際に必要となります。"),
+                "このパスワードはLumexを開く際に必要となります。"),
         "passwordsDontMatch":
             MessageLookupByLibrary.simpleMessage("パスワードが一致しません"),
         "pastDue": MessageLookupByLibrary.simpleMessage("延滞"),
@@ -598,9 +598,9 @@ class MessageLookup extends MessageLookupByLibrary {
         "preferences": MessageLookupByLibrary.simpleMessage("設定"),
         "privacyPolicy": MessageLookupByLibrary.simpleMessage("個人情報保護方針"),
         "proSubRequiredHeader":
-            MessageLookupByLibrary.simpleMessage("Nautilus Pro サブスクリプションが必要"),
+            MessageLookupByLibrary.simpleMessage("Lumex Pro サブスクリプションが必要"),
         "proSubRequiredParagraph": MessageLookupByLibrary.simpleMessage(
-            "毎月わずか 1 NANO で、Nautilus Pro のすべての機能のロックを解除できます。"),
+            "毎月わずか 1 Lumex で、Lumex Pro のすべての機能のロックを解除できます。"),
         "promotionalLink": MessageLookupByLibrary.simpleMessage("フリーナノ"),
         "purchaseCurrency": MessageLookupByLibrary.simpleMessage("%2 を購入"),
         "purchaseNano": MessageLookupByLibrary.simpleMessage("ナノを購入"),
@@ -658,7 +658,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "requestAmountConfirm":
             MessageLookupByLibrary.simpleMessage("%1 %2を要求"),
         "requestError": MessageLookupByLibrary.simpleMessage(
-            "リクエスト失敗:このユーザーは Nautilus をインストールしていないか、通知が無効になっています。"),
+            "リクエスト失敗:このユーザーは Lumex をインストールしていないか、通知が無効になっています。"),
         "requestFrom": MessageLookupByLibrary.simpleMessage("リクエスト元"),
         "requestPayment": MessageLookupByLibrary.simpleMessage("支払いをリクエスト"),
         "requestSendError": MessageLookupByLibrary.simpleMessage(
@@ -666,14 +666,14 @@ class MessageLookup extends MessageLookupByLibrary {
         "requestSentButNotReceived": MessageLookupByLibrary.simpleMessage(
             "リクエストを再送信しました！それでも確認されない場合は、受信者のデバイスがオフラインになっている可能性があります。"),
         "requestSheetInfo": MessageLookupByLibrary.simpleMessage(
-            "エンド ツー エンドの暗号化されたメッセージで支払いをリクエストしてください!\n\n支払い請求、メモ、メッセージは、他の nautilus ユーザーのみが受信できますが、受信者が nautilus を使用していなくても、自分の記録管理に使用できます。"),
+            "エンド ツー エンドの暗号化されたメッセージで支払いをリクエストしてください!\n\n支払い請求、メモ、メッセージは、他の lumex ユーザーのみが受信できますが、受信者が lumex を使用していなくても、自分の記録管理に使用できます。"),
         "requestSheetInfoHeader":
             MessageLookupByLibrary.simpleMessage("シート情報のリクエスト"),
         "requested": MessageLookupByLibrary.simpleMessage("リクエスト済み"),
         "requestedFrom": MessageLookupByLibrary.simpleMessage("リクエスト元"),
         "requesting": MessageLookupByLibrary.simpleMessage("リクエスト中"),
         "requireAPasswordToOpenHeader":
-            MessageLookupByLibrary.simpleMessage("Nautilusを開く際にパスワードを要求しますか?"),
+            MessageLookupByLibrary.simpleMessage("Lumexを開く際にパスワードを要求しますか?"),
         "requireCaptcha":
             MessageLookupByLibrary.simpleMessage("ギフトカードを受け取るには CAPTCHA が必要です"),
         "resendMemo": MessageLookupByLibrary.simpleMessage("このメモを再送する"),
@@ -724,7 +724,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("エラーが発生しました。後で再び実行してください。"),
         "sendFrom": MessageLookupByLibrary.simpleMessage("送金元"),
         "sendMemoError": MessageLookupByLibrary.simpleMessage(
-            "トランザクションを含むメモの送信に失敗しました。Nautilus ユーザーではない可能性があります。"),
+            "トランザクションを含むメモの送信に失敗しました。Lumex ユーザーではない可能性があります。"),
         "sendMessageConfirm": MessageLookupByLibrary.simpleMessage("メッセージを送信中"),
         "sendRequestAgain":
             MessageLookupByLibrary.simpleMessage("リクエストをもう一度送る"),
@@ -762,8 +762,8 @@ class MessageLookup extends MessageLookupByLibrary {
             "%1 をチェックしてください!最高のNANOモバイルウォレット！"),
         "shareLink": MessageLookupByLibrary.simpleMessage("共有リンク"),
         "shareMessage": MessageLookupByLibrary.simpleMessage("メッセージを共有"),
-        "shareNautilus": MessageLookupByLibrary.simpleMessage("Nautilusを共有する"),
-        "shareNautilusText": MessageLookupByLibrary.simpleMessage(
+        "shareLumex": MessageLookupByLibrary.simpleMessage("Lumexを共有する"),
+        "shareLumexText": MessageLookupByLibrary.simpleMessage(
             "優秀なナノモバイルウォレットであるナトリアムを使ってみましょう。"),
         "shareText": MessageLookupByLibrary.simpleMessage("テキストを共有"),
         "shopButton": MessageLookupByLibrary.simpleMessage("店"),
@@ -809,7 +809,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "swapXMR": MessageLookupByLibrary.simpleMessage("スワップXMR"),
         "swapXMRHeader": MessageLookupByLibrary.simpleMessage("スワップモネロ"),
         "swapXMRInfo": MessageLookupByLibrary.simpleMessage(
-            "Monero はプライバシー重視の暗号通貨であり、トランザクションの追跡が非常に困難または不可能になっています。一方、NANO は決済に特化した高速で手数料のない暗号通貨です。一緒に、暗号通貨の最も有用な側面のいくつかを提供します!\n\nこのページを使用して、NANO を XMR に簡単に交換できます。"),
+            "Monero はプライバシー重視の暗号通貨であり、トランザクションの追跡が非常に困難または不可能になっています。一方、Lumex は決済に特化した高速で手数料のない暗号通貨です。一緒に、暗号通貨の最も有用な側面のいくつかを提供します!\n\nこのページを使用して、Lumex を XMR に簡単に交換できます。"),
         "swapping": MessageLookupByLibrary.simpleMessage("スワッピング"),
         "switchToSeed": MessageLookupByLibrary.simpleMessage("シードに切り替える"),
         "systemDefault": MessageLookupByLibrary.simpleMessage("システムのデフォルト言語"),
@@ -849,7 +849,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "転送中にエラーが発生しました。後で再び実行してください。"),
         "transferHeader": MessageLookupByLibrary.simpleMessage("資金を転送する"),
         "transferIntro": MessageLookupByLibrary.simpleMessage(
-            "このプロセスにより、資金がペーパーウォレットからNautilusウォレットに転送されます。\n \n「％1」ボタンをタップして開始します。"),
+            "このプロセスにより、資金がペーパーウォレットからLumexウォレットに転送されます。\n \n「％1」ボタンをタップして開始します。"),
         "transferIntroShort": MessageLookupByLibrary.simpleMessage(
             "このプロセスでは、資金が紙のウォレットからノーチラスウォレットに送金されます。"),
         "transferLoading": MessageLookupByLibrary.simpleMessage("転送中"),
@@ -885,8 +885,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "useAppRep": MessageLookupByLibrary.simpleMessage("%1 担当者を使用"),
         "useCurrency": MessageLookupByLibrary.simpleMessage("%2 を使用"),
         "useNano": MessageLookupByLibrary.simpleMessage("NANOを使う"),
-        "useNautilusRep":
-            MessageLookupByLibrary.simpleMessage("Use Nautilus Rep"),
+        "useLumexRep":
+            MessageLookupByLibrary.simpleMessage("Use Lumex Rep"),
         "userAlreadyAddedError":
             MessageLookupByLibrary.simpleMessage("ユーザーはすでに追加されています!"),
         "userNotFound":
@@ -898,12 +898,12 @@ class MessageLookup extends MessageLookupByLibrary {
         "usernameEmpty": MessageLookupByLibrary.simpleMessage("ユーザー名を入力してください"),
         "usernameError": MessageLookupByLibrary.simpleMessage("ユーザー名エラー"),
         "usernameInfo": MessageLookupByLibrary.simpleMessage(
-            "ユニークな @username を選んで友達や家族があなたを見つけやすくしよう！\n\nNautilus のユーザー名を持つと、UI がグローバルに更新され、新しいハンドルが反映されます。"),
+            "ユニークな @username を選んで友達や家族があなたを見つけやすくしよう！\n\nLumex のユーザー名を持つと、UI がグローバルに更新され、新しいハンドルが反映されます。"),
         "usernameInvalid": MessageLookupByLibrary.simpleMessage("ユーザー名が無効です"),
         "usernameUnavailable":
             MessageLookupByLibrary.simpleMessage("ユーザー名は利用できません"),
         "usernameWarning": MessageLookupByLibrary.simpleMessage(
-            "Nautilusユーザー名は、Nano.toが提供する集中型サービスです"),
+            "Lumexユーザー名は、Lumex.toが提供する集中型サービスです"),
         "using": MessageLookupByLibrary.simpleMessage("使用する"),
         "viewDetails": MessageLookupByLibrary.simpleMessage("詳細を表示する"),
         "viewPaymentHistory": MessageLookupByLibrary.simpleMessage("支払い履歴を見る"),

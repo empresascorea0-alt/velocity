@@ -493,7 +493,7 @@
   "connectingHeader": "連線中",
   "@connectingHeader": {
     "type": "text",
-    "description": "A header to let the user now that Nautilus is currently connecting to (or loading) live chat."
+    "description": "A header to let the user now that Lumex is currently connecting to (or loading) live chat."
   },
   "connectionWarning": "無法連接",
   "@connectionWarning": {
@@ -957,7 +957,7 @@
     "type": "text",
     "description": "example_card_from"
   },
-  "exampleCardIntro": "歡迎來到 Nautilus。當您收到或發送 NANO 時，交易將顯示如下：",
+  "exampleCardIntro": "歡迎來到 Lumex。當您收到或發送 Lumex 時，交易將顯示如下：",
   "@exampleCardIntro": {
     "type": "text",
     "description": "example_card_intro"
@@ -1087,7 +1087,7 @@
     "type": "text",
     "description": "fallback_connected"
   },
-  "fallbackInfo": "Nautilus 服務器似乎斷開連接，發送和接收（沒有備忘錄）應該仍然可以運行，但付款請求可能無法通過\n\n 稍後再回來或重新啟動應用程式再試一次",
+  "fallbackInfo": "Lumex 服務器似乎斷開連接，發送和接收（沒有備忘錄）應該仍然可以運行，但付款請求可能無法通過\n\n 稍後再回來或重新啟動應用程式再試一次",
   "@fallbackInfo": {
     "type": "text",
     "description": "fallback_info"
@@ -1231,7 +1231,7 @@
     "type": "text",
     "description": "gift_from"
   },
-  "giftInfo": "使用 NANO 加載數字禮品卡！設置金額，並為收件人查看何時打開它的可選消息！\n\n創建完成後，您將獲得一個可以發送給任何人的鏈接，打開後會在安裝 Nautilus 後自動將資金分配給收件人！\n\n如果收款人已經是 Nautilus 用戶，他們將在打開鏈接時提示將資金轉入他們的帳戶",
+  "giftInfo": "使用 Lumex 加載數字禮品卡！設置金額，並為收件人查看何時打開它的可選消息！\n\n創建完成後，您將獲得一個可以發送給任何人的鏈接，打開後會在安裝 Lumex 後自動將資金分配給收件人！\n\n如果收款人已經是 Lumex 用戶，他們將在打開鏈接時提示將資金轉入他們的帳戶",
   "@giftInfo": {
     "type": "text",
     "description": "Description for gift card creation"
@@ -1356,12 +1356,12 @@
     "type": "text",
     "description": "import_gift_empty"
   },
-  "importGiftIntro": "看起來你點擊了一個包含一些 NANO 的鏈接，為了接收這些資金，我們只需要你完成設置你的錢包。",
+  "importGiftIntro": "看起來你點擊了一個包含一些 Lumex 的鏈接，為了接收這些資金，我們只需要你完成設置你的錢包。",
   "@importGiftIntro": {
     "type": "text",
     "description": "import_gift_intro"
   },
-  "importGiftv2": "您點擊的鏈接包含一些 NANO，您想將其導入此錢包嗎？",
+  "importGiftv2": "您點擊的鏈接包含一些 Lumex，您想將其導入此錢包嗎？",
   "@importGiftv2": {
     "type": "text",
     "description": "import_gift_v2"
@@ -1466,7 +1466,7 @@
     "type": "text",
     "description": "An error indicating a pin has been entered incorrectly"
   },
-  "iosFundingMessage": "由於 iOS App Store 指南和限制，我們無法將您鏈接到我們的捐贈頁面。如果您想支持該項目，請考慮發送到 nautilus 節點的地址。",
+  "iosFundingMessage": "由於 iOS App Store 指南和限制，我們無法將您鏈接到我們的捐贈頁面。如果您想支持該項目，請考慮發送到 lumex 節點的地址。",
   "@iosFundingMessage": {
     "type": "text",
     "description": "ios_funding_message"
@@ -1531,7 +1531,7 @@
     "type": "text",
     "description": "settings_logout_warning_title"
   },
-  "logoutDetail": "本動作會刪除您在本裝置裡頭的種子及所有和 Nautilus 有關的資料。如果您的種子沒有備份，您將永遠無法存取您的帳戶",
+  "logoutDetail": "本動作會刪除您在本裝置裡頭的種子及所有和 Lumex 有關的資料。如果您的種子沒有備份，您將永遠無法存取您的帳戶",
   "@logoutDetail": {
     "type": "text",
     "description": "settings_logout_alert_message"
@@ -1656,10 +1656,10 @@
     "type": "text",
     "description": "natricon_settings"
   },
-  "nautilusWallet": "鸚鵡螺錢包",
-  "@nautilusWallet": {
+  "lumexWallet": "鸚鵡螺錢包",
+  "@lumexWallet": {
     "type": "text",
-    "description": "nautilus_wallet"
+    "description": "lumex_wallet"
   },
   "nearby": "附近",
   "@nearby": {
@@ -1676,7 +1676,7 @@
     "type": "text",
     "description": "verification_needed_header"
   },
-  "newAccountIntro": "這是您的新帳戶。當您收到 NANO 時，交易會顯示如下：",
+  "newAccountIntro": "這是您的新帳戶。當您收到 Lumex 時，交易會顯示如下：",
   "@newAccountIntro": {
     "type": "text",
     "description": "Alternate account intro card"
@@ -1891,10 +1891,10 @@
     "type": "text",
     "description": "An error indicating the password is incorrect"
   },
-  "passwordNoLongerRequiredToOpenParagraph": "您日後啟動 Nautilus 時不用輸入密碼。",
+  "passwordNoLongerRequiredToOpenParagraph": "您日後啟動 Lumex 時不用輸入密碼。",
   "@passwordNoLongerRequiredToOpenParagraph": {
     "type": "text",
-    "description": "An info paragraph that tells the user a password will no longer be needed to open Nautilus"
+    "description": "An info paragraph that tells the user a password will no longer be needed to open Velocity"
   },
   "passwordNumber": "密碼必須至少包含 1 個數字",
   "@passwordNumber": {
@@ -1916,15 +1916,15 @@
     "type": "text",
     "description": "An error indicating the password is too short"
   },
-  "passwordWarning": "打開 Nautilus 需要此密碼。",
+  "passwordWarning": "打開 Lumex 需要此密碼。",
   "@passwordWarning": {
     "type": "text",
     "description": "A paragraph that warns the user to not lose their password."
   },
-  "passwordWillBeRequiredToOpenParagraph": "以後需要這個密碼方可開啟 Nautilus。",
+  "passwordWillBeRequiredToOpenParagraph": "以後需要這個密碼方可開啟 Lumex。",
   "@passwordWillBeRequiredToOpenParagraph": {
     "type": "text",
-    "description": "A paragraph that tells the users that the created password will be required to open Nautilus."
+    "description": "A paragraph that tells the users that the created password will be required to open Velocity."
   },
   "pastDue": "逾期",
   "@pastDue": {
@@ -2066,12 +2066,12 @@
     "type": "text",
     "description": "promo_Link"
   },
-  "proSubRequiredHeader": "需要訂閱 Nautilus Pro",
+  "proSubRequiredHeader": "需要訂閱 Velocity Pro",
   "@proSubRequiredHeader": {
     "type": "text",
     "description": "pro_sub_required_header"
   },
-  "proSubRequiredParagraph": "每月只需 1 NANO，您就可以解鎖 Nautilus Pro 的所有功能。",
+  "proSubRequiredParagraph": "每月只需 1 Lumex，您就可以解鎖 Velocity Pro 的所有功能。",
   "@proSubRequiredParagraph": {
     "type": "text",
     "description": "pro_sub_required_paragraph"
@@ -2286,7 +2286,7 @@
     "type": "text",
     "description": "requested_from"
   },
-  "requestError": "要求失敗：此使用者似乎沒有安裝 Nautilus，或已停用通知。",
+  "requestError": "要求失敗：此使用者似乎沒有安裝 Lumex，或已停用通知。",
   "@requestError": {
     "type": "text",
     "description": "request_generic_error"
@@ -2316,7 +2316,7 @@
     "type": "text",
     "description": "request_sent_again"
   },
-  "requestSheetInfo": "使用端到端加密消息請求付款！\n\n付款請求、備忘錄和消息只能由其他 nautilus 用戶接收，但即使收件人不使用 nautilus，您也可以將它們用於自己的記錄保存。",
+  "requestSheetInfo": "使用端到端加密消息請求付款！\n\n付款請求、備忘錄和消息只能由其他 lumex 用戶接收，但即使收件人不使用 lumex，您也可以將它們用於自己的記錄保存。",
   "@requestSheetInfo": {
     "type": "text",
     "description": "request_sheet_info"
@@ -2326,10 +2326,10 @@
     "type": "text",
     "description": "request_sheet_info_header"
   },
-  "requireAPasswordToOpenHeader": "需要密碼才可開啟 Nautilus 嗎？",
+  "requireAPasswordToOpenHeader": "需要密碼才可開啟 Lumex 嗎？",
   "@requireAPasswordToOpenHeader": {
     "type": "text",
-    "description": "A paragraph that asks the users if they would like a password to be required to open Nautilus."
+    "description": "A paragraph that asks the users if they would like a password to be required to open Velocity."
   },
   "requireCaptcha": "要求 CAPTCHA 領取禮品卡",
   "@requireCaptcha": {
@@ -2376,7 +2376,7 @@
     "type": "text",
     "description": "dialog_save"
   },
-  "scanInstructions": "掃描 NANO 二維條碼地址",
+  "scanInstructions": "掃描 Lumex 二維條碼地址",
   "@scanInstructions": {
     "type": "text",
     "description": "scan_send_instruction_label"
@@ -2511,7 +2511,7 @@
     "type": "text",
     "description": "send_sending"
   },
-  "sendMemoError": "發送交易備忘錄失敗，他們可能不是 Nautilus 用戶。",
+  "sendMemoError": "發送交易備忘錄失敗，他們可能不是 Lumex 用戶。",
   "@sendMemoError": {
     "type": "text",
     "description": "send_memo_error"
@@ -2531,7 +2531,7 @@
     "type": "text",
     "description": "split_bill_send_requests"
   },
-  "sendSheetInfo": "發送或請求付款，帶有端到端加密消息！\n\n付款請求，備忘錄和消息僅由其他 Nautilus 用戶應收。\n\n您無需擁有用戶名即可發送或接收付款請求，即使他們不使用鸚鵡螺，也可以將它們用於自己的記錄保存。",
+  "sendSheetInfo": "發送或請求付款，帶有端到端加密消息！\n\n付款請求，備忘錄和消息僅由其他 Lumex 用戶應收。\n\n您無需擁有用戶名即可發送或接收付款請求，即使他們不使用鸚鵡螺，也可以將它們用於自己的記錄保存。",
   "@sendSheetInfo": {
     "type": "text",
     "description": "send_sheet_info"
@@ -2624,14 +2624,14 @@
   "share": "分享",
   "@share": {
     "type": "text",
-    "description": "nautilus_share"
+    "description": "lumex_share"
   },
   "shareApp": "分享 %1",
   "@shareApp": {
     "type": "text",
     "description": "settings_share"
   },
-  "shareAppText": "檢查 %1！首屈一指的 NANO 手機錢包！",
+  "shareAppText": "檢查 %1！首屈一指的 Lumex 手機錢包！",
   "@shareAppText": {
     "type": "text",
     "description": "share_extra"
@@ -2646,13 +2646,13 @@
     "type": "text",
     "description": "share_message"
   },
-  "shareNautilus": "分享 Nautilus",
-  "@shareNautilus": {
+  "shareLumex": "分享 Lumex",
+  "@shareLumex": {
     "type": "text",
     "description": "settings_share"
   },
-  "shareNautilusText": "請試試 Nautilus —— 針對行動裝置的 NANO 錢包！",
-  "@shareNautilusText": {
+  "shareLumexText": "請試試 Lumex —— 針對行動裝置的 Lumex 錢包！",
+  "@shareLumexText": {
     "type": "text",
     "description": "share_extra"
   },
@@ -2751,7 +2751,7 @@
     "type": "text",
     "description": "spend_currency"
   },
-  "spendNano": "花費 NANO",
+  "spendNano": "花費 Lumex",
   "@spendNano": {
     "type": "text",
     "description": "spend_nano"
@@ -2846,7 +2846,7 @@
     "type": "text",
     "description": "swap_xmr_header"
   },
-  "swapXMRInfo": "門羅幣是一種以隱私為中心的加密貨幣，它使得追踪交易變得非常困難甚至不可能。同時，NANO 是一種以支付為中心的加密貨幣，速度快，費用低。它們一起提供了加密貨幣的一些最有用的方面！\n\n使用此頁面輕鬆將您的 NANO 換成 XMR！",
+  "swapXMRInfo": "門羅幣是一種以隱私為中心的加密貨幣，它使得追踪交易變得非常困難甚至不可能。同時，Lumex 是一種以支付為中心的加密貨幣，速度快，費用低。它們一起提供了加密貨幣的一些最有用的方面！\n\n使用此頁面輕鬆將您的 Lumex 換成 XMR！",
   "@swapXMRInfo": {
     "type": "text",
     "description": "swap_xmr_header"
@@ -2946,7 +2946,7 @@
     "type": "text",
     "description": "transfer_close_text"
   },
-  "transferComplete": "%1 NANO 順利移轉到您的 Nautilus 錢包。\n",
+  "transferComplete": "%1 Lumex 順利移轉到您的 Lumex 錢包。\n",
   "@transferComplete": {
     "type": "text",
     "description": "transfer_complete_text"
@@ -2976,12 +2976,12 @@
     "type": "text",
     "description": "transfer_header"
   },
-  "transferIntro": "這過程會將紙錢包的資產移轉至您的 Nautilus 錢包。\n\n輕觸 \"%1\" 按鈕開始。",
+  "transferIntro": "這過程會將紙錢包的資產移轉至您的 Lumex 錢包。\n\n輕觸 \"%1\" 按鈕開始。",
   "@transferIntro": {
     "type": "text",
     "description": "transfer_intro"
   },
-  "transferIntroShort": "這個過程會將資金從紙錢包轉移到您的 Nautilus 錢包。",
+  "transferIntroShort": "這個過程會將資金從紙錢包轉移到您的 Lumex 錢包。",
   "@transferIntroShort": {
     "type": "text",
     "description": "transfer_intro_short"
@@ -2996,7 +2996,7 @@
     "type": "text",
     "description": "transfer_hint"
   },
-  "transferNoFunds": "這個種子不含任何 NANO",
+  "transferNoFunds": "這個種子不含任何 Lumex",
   "@transferNoFunds": {
     "type": "text",
     "description": "transfer_no_funds_toast"
@@ -3006,7 +3006,7 @@
     "type": "text",
     "description": "transfer_qr_scan_error"
   },
-  "transferQrScanHint": "掃描 NANO 種子",
+  "transferQrScanHint": "掃描 Lumex 種子",
   "@transferQrScanHint": {
     "type": "text",
     "description": "transfer_qr_scan_hint"
@@ -3031,12 +3031,12 @@
     "type": "text",
     "description": "unlocktxt"
   },
-  "unlockBiometrics": "經由生物辨識解鎖 Nautilus",
+  "unlockBiometrics": "經由生物辨識解鎖 Lumex",
   "@unlockBiometrics": {
     "type": "text",
     "description": "unlock_bio"
   },
-  "unlockPin": "請輸入識別碼以解鎖 Nautilus",
+  "unlockPin": "請輸入識別碼以解鎖 Lumex",
   "@unlockPin": {
     "type": "text",
     "description": "unlock_pin"
@@ -3101,10 +3101,10 @@
     "type": "text",
     "description": "use_nano"
   },
-  "useNautilusRep": "Use Nautilus Rep",
-  "@useNautilusRep": {
+  "useLumexRep": "Use Lumex Rep",
+  "@useLumexRep": {
     "type": "text",
-    "description": "use nautilus node as rep"
+    "description": "use lumex node as rep"
   },
   "userAlreadyAddedError": "用戶已添加！",
   "@userAlreadyAddedError": {
@@ -3131,7 +3131,7 @@
     "type": "text",
     "description": "username_unknown_error"
   },
-  "usernameInfo": "挑選一個獨特的 @username，讓朋友和家人都能輕鬆找到你！\n\n擁有 Nautilus 使用者名稱會在全球範圍內更新使用者介面，以反映您的新帳號。",
+  "usernameInfo": "挑選一個獨特的 @username，讓朋友和家人都能輕鬆找到你！\n\n擁有 Lumex 使用者名稱會在全球範圍內更新使用者介面，以反映您的新帳號。",
   "@usernameInfo": {
     "type": "text",
     "description": "Description for username registration"
@@ -3146,7 +3146,7 @@
     "type": "text",
     "description": "username_unavailable"
   },
-  "usernameWarning": "Nautilus 用戶名是 Nano.by 提供的集中式服務",
+  "usernameWarning": "Lumex 用戶名是 Lumex.by 提供的集中式服務",
   "@usernameWarning": {
     "type": "text",
     "description": "Username centralization warning"
@@ -3211,7 +3211,7 @@
     "type": "text",
     "description": "frequency_weekly"
   },
-  "welcomeText": "歡迎來到 Nautilus。接著您可建立新錢包或匯入現有錢包",
+  "welcomeText": "歡迎來到 Lumex。接著您可建立新錢包或匯入現有錢包",
   "@welcomeText": {
     "type": "text",
     "description": "intro_welcome_title"

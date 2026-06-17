@@ -1,9 +1,9 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:wallet_flutter/generated/l10n.dart';
-import 'package:wallet_flutter/model/available_block_explorer.dart';
-import 'package:wallet_flutter/model/available_language.dart';
+import 'package:velocity/generated/l10n.dart';
+import 'package:velocity/model/available_block_explorer.dart';
+import 'package:velocity/model/available_language.dart';
 
 class ZsDelegate extends LocalizationsDelegate<Z> {
   const ZsDelegate(this.languageSetting);
@@ -77,16 +77,16 @@ class NonTranslatable {
     return "Discord";
   }
 
-  static String get nautilusNodeUrl {
-    return "https://node.nautilus.io";
+  static String get lumexNodeUrl {
+    return "https://node.lumex.io";
   }
 
   static String get eulaUrl {
-    return "https://nautilus.io/eula";
+    return "https://lumex.io/eula";
   }
 
   static String get privacyUrl {
-    return "https://nautilus.io/privacy";
+    return "https://lumex.io/privacy";
   }
 
   static String get nanocafe {
@@ -122,28 +122,28 @@ class NonTranslatable {
   }
 
   static String get promoLink {
-    return "https://nautilus.io/promo";
+    return "https://lumex.io/promo";
   }
 
   static String get genericStoreLink {
-    return "https://nautilus.io";
+    return "https://lumex.io";
   }
 
   static String get hcaptchaUrl {
-    return "https://nautilus.io/hcaptcha";
+    return "https://lumex.io/hcaptcha";
   }
 
   static String get appName {
-    return "Nautilus";
+    return "Velocity";
   }
 
-  static String currencyName = "Nano";
-  static String currencyPrefix = "nano_";
-  static String currencyUriPrefix = "nano";
+  static String currencyName = "Lumex";
+  static String currencyPrefix = "lumex_";
+  static String currencyUriPrefix = "lumex";
   static int accountType = 1;
 
   static String get nano {
-    return "Nano";
+    return "Lumex";
   }
 
   static String get monero {

@@ -13,10 +13,10 @@ import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:integration_test/integration_test.dart';
 import 'package:logger/logger.dart';
-import 'package:wallet_flutter/appstate_container.dart';
-import 'package:wallet_flutter/firebase_options.dart';
-import 'package:wallet_flutter/main.dart' as app;
-import 'package:wallet_flutter/service_locator.dart';
+import 'package:velocity/appstate_container.dart';
+import 'package:velocity/firebase_options.dart';
+import 'package:velocity/main.dart' as app;
+import 'package:velocity/service_locator.dart';
 
 Future<void> pumpForSeconds(WidgetTester tester, int seconds) async {
   bool timerDone = false;

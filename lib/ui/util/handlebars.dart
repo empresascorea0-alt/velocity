@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:wallet_flutter/appstate_container.dart';
+import 'package:velocity/appstate_container.dart';
 
 class Handlebars {
   static Widget vertical(BuildContext context, {double height = 30}) {

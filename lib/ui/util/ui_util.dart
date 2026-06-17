@@ -6,11 +6,11 @@ import 'dart:ui' as ui;
 import 'package:event_taxi/event_taxi.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_inappwebview/flutter_inappwebview.dart';
-import 'package:wallet_flutter/appstate_container.dart';
-import 'package:wallet_flutter/bus/events.dart';
-import 'package:wallet_flutter/localize.dart';
-import 'package:wallet_flutter/styles.dart';
-import 'package:wallet_flutter/ui/util/exceptions.dart';
+import 'package:velocity/appstate_container.dart';
+import 'package:velocity/bus/events.dart';
+import 'package:velocity/localize.dart';
+import 'package:velocity/styles.dart';
+import 'package:velocity/ui/util/exceptions.dart';
 import 'package:oktoast/oktoast.dart';
 import 'package:pretty_qr_code/pretty_qr_code.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -467,7 +467,7 @@ class UIUtil {
             "nanopay",
             "nanoauth",
             "nanosub",
-            "nautilus",
+            "lumex",
             "nanorep",
           ],
           useShouldOverrideUrlLoading: true,

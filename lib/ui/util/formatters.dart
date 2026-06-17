@@ -3,9 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:intl/intl.dart';
 import 'package:nanoutil/nanoutil.dart';
-import 'package:wallet_flutter/appstate_container.dart';
-import 'package:wallet_flutter/generated/l10n.dart';
-import 'package:wallet_flutter/util/numberutil.dart';
+import 'package:velocity/appstate_container.dart';
+import 'package:velocity/generated/l10n.dart';
+import 'package:velocity/util/numberutil.dart';
 
 /// Input formatter for Crypto/Fiat amounts
 int findDifferentCharacterInString(String str1, String str2) {
@@ -378,7 +378,7 @@ String getCurrencySuffix(BuildContext context) {
   if (StateContainer.of(context).bananoMode) {
     return " banano)";
   }
-  return " NANO)";
+  return " Lumex)";
 }
 
 List<TextSpan> displayRawFull(BuildContext context, TextStyle textStyle, String raw) {
@@ -483,7 +483,7 @@ String getThemeCurrencyMode(BuildContext context) {
   if (StateContainer.of(context).nyanoMode) {
     return "NYANO";
   } else {
-    return "NANO";
+    return "Lumex";
   }
 }
 

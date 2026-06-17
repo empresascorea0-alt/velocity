@@ -8,19 +8,19 @@ import 'package:cron/cron.dart';
 import 'package:event_taxi/event_taxi.dart';
 import 'package:http/http.dart' as http;
 import 'package:logger/logger.dart';
-import 'package:wallet_flutter/bus/price_event.dart';
-import 'package:wallet_flutter/localize.dart';
-import 'package:wallet_flutter/model/available_currency.dart';
-import 'package:wallet_flutter/network/model/base_request.dart';
-import 'package:wallet_flutter/network/model/payment/payment_ack.dart';
-import 'package:wallet_flutter/network/model/payment/payment_memo.dart';
-import 'package:wallet_flutter/network/model/payment/payment_message.dart';
-import 'package:wallet_flutter/network/model/payment/payment_request.dart';
-import 'package:wallet_flutter/network/model/response/alerts_response_item.dart';
-import 'package:wallet_flutter/network/model/response/error_response.dart';
-import 'package:wallet_flutter/network/model/response/funding_response_item.dart';
-import 'package:wallet_flutter/network/model/response/price_response.dart';
-import 'package:wallet_flutter/service_locator.dart';
+import 'package:velocity/bus/price_event.dart';
+import 'package:velocity/localize.dart';
+import 'package:velocity/model/available_currency.dart';
+import 'package:velocity/network/model/base_request.dart';
+import 'package:velocity/network/model/payment/payment_ack.dart';
+import 'package:velocity/network/model/payment/payment_memo.dart';
+import 'package:velocity/network/model/payment/payment_message.dart';
+import 'package:velocity/network/model/payment/payment_request.dart';
+import 'package:velocity/network/model/response/alerts_response_item.dart';
+import 'package:velocity/network/model/response/error_response.dart';
+import 'package:velocity/network/model/response/funding_response_item.dart';
+import 'package:velocity/network/model/response/price_response.dart';
+import 'package:velocity/service_locator.dart';
 
 // MetadataService singleton
 class MetadataService {
@@ -54,7 +54,7 @@ class MetadataService {
 
   Future<void> getPriceData() async {
     // Price info sent from server
-    // nano / banano:
+    // nano / balumex:
     final String cryptoId = NonTranslatable.currencyName.toLowerCase();
     try {
       final CoinGeckoResult<List<PriceInfo>> results = await CGApi.simple.listPrices(

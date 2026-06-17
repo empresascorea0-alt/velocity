@@ -108,10 +108,10 @@ abstract class NyanTheme extends BaseTheme {
   // just used to distinguish between the two types of themes
 }
 
-class NautilusTheme extends BaseTheme {
-  static const Color nautilusBlue = Color(0xFF4080D7);
+class LumexTheme extends BaseTheme {
+  static const Color lumexBlue = Color(0xFF4080D7);
 
-  static const Color main = nautilusBlue;
+  static const Color main = lumexBlue;
   static const Color bg = Color.fromRGBO(32, 32, 32, 1);
   static const Color bgDark = Color.fromRGBO(24, 24, 24, 1);
   static const Color bgDarkest = Color.fromRGBO(48, 48, 48, 1);
@@ -206,9 +206,9 @@ class NautilusTheme extends BaseTheme {
 
 
 class PotassiusTheme extends BaseTheme {
-  static const Color nautilusBlue = Color(0xFFF4D820);
+  static const Color lumexBlue = Color(0xFFF4D820);
 
-  static const Color main = nautilusBlue;
+  static const Color main = lumexBlue;
   static const Color bg = Color.fromRGBO(32, 32, 32, 1);
   static const Color bgDark = Color.fromRGBO(24, 24, 24, 1);
   static const Color bgDarkest = Color.fromRGBO(48, 48, 48, 1);
@@ -507,7 +507,7 @@ class IndiumTheme extends BaseTheme {
 }
 
 class SunshineTheme extends BaseTheme {
-  static const Color nautilusBlue = Color(0xFF4080D7);
+  static const Color lumexBlue = Color(0xFF4080D7);
 
   static const Color bg = Color(0xFFFFCB42);
   static const Color bgDark = Color(0xFFFFB200);
@@ -526,13 +526,13 @@ class SunshineTheme extends BaseTheme {
   static const Color red = Color(0xFFE80000);
   static const Color redDark = Color(0xFFB20000);
 
-  Color? primary = nautilusBlue;
-  Color? primary60 = nautilusBlue.withOpacity(0.6);
-  Color? primary45 = nautilusBlue.withOpacity(0.45);
-  Color? primary30 = nautilusBlue.withOpacity(0.3);
-  Color? primary20 = nautilusBlue.withOpacity(0.2);
-  Color? primary15 = nautilusBlue.withOpacity(0.15);
-  Color? primary10 = nautilusBlue.withOpacity(0.1);
+  Color? primary = lumexBlue;
+  Color? primary60 = lumexBlue.withOpacity(0.6);
+  Color? primary45 = lumexBlue.withOpacity(0.45);
+  Color? primary30 = lumexBlue.withOpacity(0.3);
+  Color? primary20 = lumexBlue.withOpacity(0.2);
+  Color? primary15 = lumexBlue.withOpacity(0.15);
+  Color? primary10 = lumexBlue.withOpacity(0.1);
 
   Color? success = green;
   Color? success60 = green.withOpacity(0.6);
@@ -1244,7 +1244,7 @@ class MonochromeTheme extends BaseTheme {
 }
 
 class MidnightTheme extends BaseTheme {
-  static const Color nautilusBlue = Color(0xFF4080D7);
+  static const Color lumexBlue = Color(0xFF4080D7);
   static const Color brighterBlue = Color(0xFF80BAC7);
   // some test colors:
   // current: #B999F0
@@ -1267,13 +1267,13 @@ class MidnightTheme extends BaseTheme {
   static const Color red = Color(0xFFE80000);
   static const Color redDark = Color(0xFFB20000);
 
-  Color? primary = nautilusBlue;
-  Color? primary60 = nautilusBlue.withOpacity(0.6);
-  Color? primary45 = nautilusBlue.withOpacity(0.45);
-  Color? primary30 = nautilusBlue.withOpacity(0.3);
-  Color? primary20 = nautilusBlue.withOpacity(0.2);
-  Color? primary15 = nautilusBlue.withOpacity(0.15);
-  Color? primary10 = nautilusBlue.withOpacity(0.1);
+  Color? primary = lumexBlue;
+  Color? primary60 = lumexBlue.withOpacity(0.6);
+  Color? primary45 = lumexBlue.withOpacity(0.45);
+  Color? primary30 = lumexBlue.withOpacity(0.3);
+  Color? primary20 = lumexBlue.withOpacity(0.2);
+  Color? primary15 = lumexBlue.withOpacity(0.15);
+  Color? primary10 = lumexBlue.withOpacity(0.1);
 
   Color? success = green;
   Color? success60 = green.withOpacity(0.6);
@@ -1348,7 +1348,7 @@ class MidnightTheme extends BaseTheme {
   );
   BoxShadow? boxShadowButton = BoxShadow(
     // color: brightRed,
-    color: nautilusBlue.withOpacity(0.24),
+    color: lumexBlue.withOpacity(0.24),
     offset: Offset.zero,
     blurRadius: 0,
     spreadRadius: 0,
@@ -1359,7 +1359,7 @@ class MidnightTheme extends BaseTheme {
 }
 
 class PerishableTheme extends BaseTheme {
-  static const Color nautilusBlue = Color(0xFF4080D7);
+  static const Color lumexBlue = Color(0xFF4080D7);
 
   // static const Color perishPurple = Color(0xFF9A5EFC);
   // // static const Color perishPurple = Color(0xFF6305fa);
@@ -1482,7 +1482,7 @@ class PerishableTheme extends BaseTheme {
   );
   BoxShadow? boxShadowButton = BoxShadow(
     // color: brightRed,
-    color: nautilusBlue.withOpacity(0.24),
+    color: lumexBlue.withOpacity(0.24),
     offset: Offset.zero,
     blurRadius: 0,
     spreadRadius: 0,

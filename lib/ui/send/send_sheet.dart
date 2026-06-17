@@ -15,47 +15,47 @@ import 'package:logger/logger.dart';
 import 'package:nanoutil/nanoutil.dart';
 import 'package:nfc_manager/nfc_manager.dart';
 import 'package:qr_flutter/qr_flutter.dart';
-import 'package:wallet_flutter/app_icons.dart';
-import 'package:wallet_flutter/appstate_container.dart';
-import 'package:wallet_flutter/bus/deep_link_event.dart';
-import 'package:wallet_flutter/bus/fcm_update_event.dart';
-import 'package:wallet_flutter/bus/notification_setting_change_event.dart';
-import 'package:wallet_flutter/dimens.dart';
-import 'package:wallet_flutter/generated/l10n.dart';
-import 'package:wallet_flutter/localize.dart';
-import 'package:wallet_flutter/model/address.dart';
-import 'package:wallet_flutter/model/available_currency.dart';
-import 'package:wallet_flutter/model/db/appdb.dart';
-import 'package:wallet_flutter/model/db/subscription.dart';
-import 'package:wallet_flutter/model/db/user.dart';
-import 'package:wallet_flutter/model/notification_setting.dart';
-import 'package:wallet_flutter/network/model/response/auth_item.dart';
-import 'package:wallet_flutter/network/model/response/pay_item.dart';
-import 'package:wallet_flutter/network/model/response/sub_item.dart';
-import 'package:wallet_flutter/network/username_service.dart';
-import 'package:wallet_flutter/service_locator.dart';
-import 'package:wallet_flutter/styles.dart';
-import 'package:wallet_flutter/ui/auth/auth_confirm_sheet.dart';
-import 'package:wallet_flutter/ui/handoff/handoff_confirm_sheet.dart';
-import 'package:wallet_flutter/ui/receive/receive_sheet.dart';
-import 'package:wallet_flutter/ui/send/send_confirm_sheet.dart';
-import 'package:wallet_flutter/ui/subs/sub_confirm_sheet.dart';
-import 'package:wallet_flutter/ui/util/confirm_sheet.dart';
-import 'package:wallet_flutter/ui/util/formatters.dart';
-import 'package:wallet_flutter/ui/util/handlebars.dart';
-import 'package:wallet_flutter/ui/util/routes.dart';
-import 'package:wallet_flutter/ui/util/ui_util.dart';
-import 'package:wallet_flutter/ui/widgets/app_simpledialog.dart';
-import 'package:wallet_flutter/ui/widgets/app_text_field.dart';
-import 'package:wallet_flutter/ui/widgets/buttons.dart';
-import 'package:wallet_flutter/ui/widgets/dialog.dart';
-import 'package:wallet_flutter/ui/widgets/misc.dart';
-import 'package:wallet_flutter/ui/widgets/sheet_util.dart';
-import 'package:wallet_flutter/util/caseconverter.dart';
-import 'package:wallet_flutter/util/deviceutil.dart';
-import 'package:wallet_flutter/util/numberutil.dart';
-import 'package:wallet_flutter/util/sharedprefsutil.dart';
-import 'package:wallet_flutter/util/user_data_util.dart';
+import 'package:velocity/app_icons.dart';
+import 'package:velocity/appstate_container.dart';
+import 'package:velocity/bus/deep_link_event.dart';
+import 'package:velocity/bus/fcm_update_event.dart';
+import 'package:velocity/bus/notification_setting_change_event.dart';
+import 'package:velocity/dimens.dart';
+import 'package:velocity/generated/l10n.dart';
+import 'package:velocity/localize.dart';
+import 'package:velocity/model/address.dart';
+import 'package:velocity/model/available_currency.dart';
+import 'package:velocity/model/db/appdb.dart';
+import 'package:velocity/model/db/subscription.dart';
+import 'package:velocity/model/db/user.dart';
+import 'package:velocity/model/notification_setting.dart';
+import 'package:velocity/network/model/response/auth_item.dart';
+import 'package:velocity/network/model/response/pay_item.dart';
+import 'package:velocity/network/model/response/sub_item.dart';
+import 'package:velocity/network/username_service.dart';
+import 'package:velocity/service_locator.dart';
+import 'package:velocity/styles.dart';
+import 'package:velocity/ui/auth/auth_confirm_sheet.dart';
+import 'package:velocity/ui/handoff/handoff_confirm_sheet.dart';
+import 'package:velocity/ui/receive/receive_sheet.dart';
+import 'package:velocity/ui/send/send_confirm_sheet.dart';
+import 'package:velocity/ui/subs/sub_confirm_sheet.dart';
+import 'package:velocity/ui/util/confirm_sheet.dart';
+import 'package:velocity/ui/util/formatters.dart';
+import 'package:velocity/ui/util/handlebars.dart';
+import 'package:velocity/ui/util/routes.dart';
+import 'package:velocity/ui/util/ui_util.dart';
+import 'package:velocity/ui/widgets/app_simpledialog.dart';
+import 'package:velocity/ui/widgets/app_text_field.dart';
+import 'package:velocity/ui/widgets/buttons.dart';
+import 'package:velocity/ui/widgets/dialog.dart';
+import 'package:velocity/ui/widgets/misc.dart';
+import 'package:velocity/ui/widgets/sheet_util.dart';
+import 'package:velocity/util/caseconverter.dart';
+import 'package:velocity/util/deviceutil.dart';
+import 'package:velocity/util/numberutil.dart';
+import 'package:velocity/util/sharedprefsutil.dart';
+import 'package:velocity/util/user_data_util.dart';
 
 class SendSheet extends StatefulWidget {
   const SendSheet({required this.localCurrency, this.user, this.address, this.quickSendAmount})
@@ -99,7 +99,7 @@ mixin SendSheetHelpers {
     String lastCryptoAmount,
   ) {
     // Keep a cache of previous amounts because, it's kinda nice to see approx what nano is worth
-    // this way you can tap button and tap back and not end up with X.9993451 NANO
+    // this way you can tap button and tap back and not end up with X.9993451 Lumex
     if (localCurrencyMode) {
       // Switching to crypto-mode
       String cryptoAmountStr;
@@ -1295,7 +1295,7 @@ class SendSheetState extends State<SendSheet> {
 
   // void toggleLocalCurrency() {
   //   // Keep a cache of previous amounts because, it's kinda nice to see approx what nano is worth
-  //   // this way you can tap button and tap back and not end up with X.9993451 NANO
+  //   // this way you can tap button and tap back and not end up with X.9993451 Lumex
   //   if (_localCurrencyMode) {
   //     // Switching to crypto-mode
   //     String cryptoAmountStr;

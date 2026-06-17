@@ -493,7 +493,7 @@
   "connectingHeader": "Connecting",
   "@connectingHeader": {
     "type": "text",
-    "description": "A header to let the user now that Nautilus is currently connecting to (or loading) live chat."
+    "description": "A header to let the user now that Lumex is currently connecting to (or loading) live chat."
   },
   "connectionWarning": "연결할 수 없음",
   "@connectionWarning": {
@@ -957,7 +957,7 @@
     "type": "text",
     "description": "example_card_from"
   },
-  "exampleCardIntro": "Nautilus에 오신 것을 환영합니다. NANO를 받으시면 거래가 다음과 같이 표시됩니다.",
+  "exampleCardIntro": "Lumex에 오신 것을 환영합니다. NANO를 받으시면 거래가 다음과 같이 표시됩니다.",
   "@exampleCardIntro": {
     "type": "text",
     "description": "example_card_intro"
@@ -1087,7 +1087,7 @@
     "type": "text",
     "description": "fallback_connected"
   },
-  "fallbackInfo": "Nautilus 서버는 연결이 끊어진 것처럼 보입니다. 전송 및 수신 (메모 없음) 은 여전히 작동해야하지만 지불 요청은 진행되지 않을 수 있습니다.\n\n 나중에 다시 방문하거나 앱을 다시 시작하여 다시 시도하세요",
+  "fallbackInfo": "Lumex 서버는 연결이 끊어진 것처럼 보입니다. 전송 및 수신 (메모 없음) 은 여전히 작동해야하지만 지불 요청은 진행되지 않을 수 있습니다.\n\n 나중에 다시 방문하거나 앱을 다시 시작하여 다시 시도하세요",
   "@fallbackInfo": {
     "type": "text",
     "description": "fallback_info"
@@ -1231,7 +1231,7 @@
     "type": "text",
     "description": "gift_from"
   },
-  "giftInfo": "NANO로 디지털 기프트 카드를 로드하세요!금액을 설정하고 수신자가 열 때 볼 수 있는 선택적 메시지를 설정합니다.\n\n링크가 생성되면 누구에게나 보낼 수 있으며, 링크를 열면 Nautilus를 설치 한 후 수취인에게 자동으로 자금을 분배합니다!\n\n수취인이 이미 Nautilus 사용자인 경우 링크를 열 때 자금을 계좌로 이체하라는 메시지가 표시됩니다.",
+  "giftInfo": "NANO로 디지털 기프트 카드를 로드하세요!금액을 설정하고 수신자가 열 때 볼 수 있는 선택적 메시지를 설정합니다.\n\n링크가 생성되면 누구에게나 보낼 수 있으며, 링크를 열면 Lumex를 설치 한 후 수취인에게 자동으로 자금을 분배합니다!\n\n수취인이 이미 Lumex 사용자인 경우 링크를 열 때 자금을 계좌로 이체하라는 메시지가 표시됩니다.",
   "@giftInfo": {
     "type": "text",
     "description": "Description for gift card creation"
@@ -1531,7 +1531,7 @@
     "type": "text",
     "description": "settings_logout_warning_title"
   },
-  "logoutDetail": "로그 아웃하면 시드와 모든 Nautilus 관련 데이터가 삭제됩니다. 귀하의 시드가 백업되지 않은 경우 귀하의 자금을 다시  복구 할 수 없습니다.",
+  "logoutDetail": "로그 아웃하면 시드와 모든 Lumex 관련 데이터가 삭제됩니다. 귀하의 시드가 백업되지 않은 경우 귀하의 자금을 다시  복구 할 수 없습니다.",
   "@logoutDetail": {
     "type": "text",
     "description": "settings_logout_alert_message"
@@ -1656,10 +1656,10 @@
     "type": "text",
     "description": "natricon_settings"
   },
-  "nautilusWallet": "노틸러스 지갑",
-  "@nautilusWallet": {
+  "lumexWallet": "노틸러스 지갑",
+  "@lumexWallet": {
     "type": "text",
-    "description": "nautilus_wallet"
+    "description": "lumex_wallet"
   },
   "nearby": "가까운",
   "@nearby": {
@@ -1676,7 +1676,7 @@
     "type": "text",
     "description": "verification_needed_header"
   },
-  "newAccountIntro": "This is your new account. Once you receive NANO, transactions will show up like this:",
+  "newAccountIntro": "This is your new account. Once you receive Lumex, transactions will show up like this:",
   "@newAccountIntro": {
     "type": "text",
     "description": "Alternate account intro card"
@@ -1746,7 +1746,7 @@
     "type": "text",
     "description": "no_thanks_app_button"
   },
-  "notificationBody": "이 거래를 보려면 Nautilus을 여십시오.",
+  "notificationBody": "이 거래를 보려면 Lumex을 여십시오.",
   "@notificationBody": {
     "type": "text",
     "description": "notification_body"
@@ -1891,10 +1891,10 @@
     "type": "text",
     "description": "An error indicating the password is incorrect"
   },
-  "passwordNoLongerRequiredToOpenParagraph": "You will not need a password to open Nautilus anymore.",
+  "passwordNoLongerRequiredToOpenParagraph": "You will not need a password to open Velocity anymore.",
   "@passwordNoLongerRequiredToOpenParagraph": {
     "type": "text",
-    "description": "An info paragraph that tells the user a password will no longer be needed to open Nautilus"
+    "description": "An info paragraph that tells the user a password will no longer be needed to open Velocity"
   },
   "passwordNumber": "비밀번호는 1개 이상의 숫자를 포함해야 합니다.",
   "@passwordNumber": {
@@ -1921,10 +1921,10 @@
     "type": "text",
     "description": "A paragraph that warns the user to not lose their password."
   },
-  "passwordWillBeRequiredToOpenParagraph": "This password will be required to open Nautilus.",
+  "passwordWillBeRequiredToOpenParagraph": "This password will be required to open Velocity.",
   "@passwordWillBeRequiredToOpenParagraph": {
     "type": "text",
-    "description": "A paragraph that tells the users that the created password will be required to open Nautilus."
+    "description": "A paragraph that tells the users that the created password will be required to open Velocity."
   },
   "pastDue": "연체",
   "@pastDue": {
@@ -2066,12 +2066,12 @@
     "type": "text",
     "description": "promo_Link"
   },
-  "proSubRequiredHeader": "Nautilus Pro 구독 필요",
+  "proSubRequiredHeader": "Velocity Pro 구독 필요",
   "@proSubRequiredHeader": {
     "type": "text",
     "description": "pro_sub_required_header"
   },
-  "proSubRequiredParagraph": "매월 단 1NANO로 Nautilus Pro의 모든 기능을 잠금 해제할 수 있습니다.",
+  "proSubRequiredParagraph": "매월 단 1NANO로 Velocity Pro의 모든 기능을 잠금 해제할 수 있습니다.",
   "@proSubRequiredParagraph": {
     "type": "text",
     "description": "pro_sub_required_paragraph"
@@ -2286,7 +2286,7 @@
     "type": "text",
     "description": "requested_from"
   },
-  "requestError": "요청 실패: 이 사용자는 Nautilus가 설치되어 있지 않거나 알림이 비활성화된 것으로 보입니다.",
+  "requestError": "요청 실패: 이 사용자는 Lumex가 설치되어 있지 않거나 알림이 비활성화된 것으로 보입니다.",
   "@requestError": {
     "type": "text",
     "description": "request_generic_error"
@@ -2326,10 +2326,10 @@
     "type": "text",
     "description": "request_sheet_info_header"
   },
-  "requireAPasswordToOpenHeader": "Require a password to open Nautilus?",
+  "requireAPasswordToOpenHeader": "Require a password to open Velocity?",
   "@requireAPasswordToOpenHeader": {
     "type": "text",
-    "description": "A paragraph that asks the users if they would like a password to be required to open Nautilus."
+    "description": "A paragraph that asks the users if they would like a password to be required to open Velocity."
   },
   "requireCaptcha": "기프트 카드를 청구하려면 보안문자가 필요합니다.",
   "@requireCaptcha": {
@@ -2376,7 +2376,7 @@
     "type": "text",
     "description": "dialog_save"
   },
-  "scanInstructions": "Nano QR 코드 주소를 스캔하하세요",
+  "scanInstructions": "Lumex QR 코드 주소를 스캔하하세요",
   "@scanInstructions": {
     "type": "text",
     "description": "scan_send_instruction_label"
@@ -2511,7 +2511,7 @@
     "type": "text",
     "description": "send_sending"
   },
-  "sendMemoError": "트랜잭션과 함께 메모를 보내지 못했습니다. Nautilus 사용자가 아닐 수 있습니다.",
+  "sendMemoError": "트랜잭션과 함께 메모를 보내지 못했습니다. Lumex 사용자가 아닐 수 있습니다.",
   "@sendMemoError": {
     "type": "text",
     "description": "send_memo_error"
@@ -2531,7 +2531,7 @@
     "type": "text",
     "description": "split_bill_send_requests"
   },
-  "sendSheetInfo": "엔드투엔드 암호화 메시지로 결제를 보내거나 요청하세요!\n\n지불 요청, 메모 및 메시지는 다른 nautilus 사용자만 받을 수 있습니다.\n\n지불 요청을 보내거나 받기 위해 사용자 이름이 필요하지 않으며, 노틸러스를 사용하지 않더라도 자신의 기록 보관에 사용할 수 있습니다.",
+  "sendSheetInfo": "엔드투엔드 암호화 메시지로 결제를 보내거나 요청하세요!\n\n지불 요청, 메모 및 메시지는 다른 lumex 사용자만 받을 수 있습니다.\n\n지불 요청을 보내거나 받기 위해 사용자 이름이 필요하지 않으며, 노틸러스를 사용하지 않더라도 자신의 기록 보관에 사용할 수 있습니다.",
   "@sendSheetInfo": {
     "type": "text",
     "description": "send_sheet_info"
@@ -2624,14 +2624,14 @@
   "share": "공유하다",
   "@share": {
     "type": "text",
-    "description": "nautilus_share"
+    "description": "lumex_share"
   },
   "shareApp": "공유 %1",
   "@shareApp": {
     "type": "text",
     "description": "settings_share"
   },
-  "shareAppText": "%1을(를) 확인하십시오! 최고의 NANO 모바일 지갑!",
+  "shareAppText": "%1을(를) 확인하십시오! 최고의 Lumex 모바일 지갑!",
   "@shareAppText": {
     "type": "text",
     "description": "share_extra"
@@ -2646,13 +2646,13 @@
     "type": "text",
     "description": "share_message"
   },
-  "shareNautilus": "Nautilus 공유 ",
-  "@shareNautilus": {
+  "shareLumex": "Lumex 공유 ",
+  "@shareLumex": {
     "type": "text",
     "description": "settings_share"
   },
-  "shareNautilusText": "Nautilus을 확인하세요! Nano의 공식 Android 지갑!",
-  "@shareNautilusText": {
+  "shareLumexText": "Lumex을 확인하세요! Nano의 공식 Android 지갑!",
+  "@shareLumexText": {
     "type": "text",
     "description": "share_extra"
   },
@@ -2946,7 +2946,7 @@
     "type": "text",
     "description": "transfer_close_text"
   },
-  "transferComplete": "%1 %2 successfully transferred to your Nautilus Wallet.\n",
+  "transferComplete": "%1 %2 successfully transferred to your Velocity Wallet.\n",
   "@transferComplete": {
     "type": "text",
     "description": "transfer_complete_text"
@@ -2976,12 +2976,12 @@
     "type": "text",
     "description": "transfer_header"
   },
-  "transferIntro": "This process will transfer the funds from a paper wallet to your Nautilus wallet.\n\nTap the \"%1\" button to start.",
+  "transferIntro": "This process will transfer the funds from a paper wallet to your Lumex wallet.\n\nTap the \"%1\" button to start.",
   "@transferIntro": {
     "type": "text",
     "description": "transfer_intro"
   },
-  "transferIntroShort": "이 프로세스는 종이 지갑에서 Nautilus 지갑으로 자금을 이체합니다.",
+  "transferIntroShort": "이 프로세스는 종이 지갑에서 Lumex 지갑으로 자금을 이체합니다.",
   "@transferIntroShort": {
     "type": "text",
     "description": "transfer_intro_short"
@@ -2996,7 +2996,7 @@
     "type": "text",
     "description": "transfer_hint"
   },
-  "transferNoFunds": "This seed does not have any NANO on it",
+  "transferNoFunds": "This seed does not have any Lumex on it",
   "@transferNoFunds": {
     "type": "text",
     "description": "transfer_no_funds_toast"
@@ -3006,7 +3006,7 @@
     "type": "text",
     "description": "transfer_qr_scan_error"
   },
-  "transferQrScanHint": "Scan a Nano \nseed or private key",
+  "transferQrScanHint": "Scan a Lumex \nseed or private key",
   "@transferQrScanHint": {
     "type": "text",
     "description": "transfer_qr_scan_hint"
@@ -3031,12 +3031,12 @@
     "type": "text",
     "description": "unlocktxt"
   },
-  "unlockBiometrics": "Authenticate to Unlock Nautilus",
+  "unlockBiometrics": "Authenticate to Unlock Lumex",
   "@unlockBiometrics": {
     "type": "text",
     "description": "unlock_bio"
   },
-  "unlockPin": "Enter PIN to Unlock Nautilus",
+  "unlockPin": "Enter PIN to Unlock Lumex",
   "@unlockPin": {
     "type": "text",
     "description": "unlock_pin"
@@ -3101,10 +3101,10 @@
     "type": "text",
     "description": "use_nano"
   },
-  "useNautilusRep": "Use Nautilus Rep",
-  "@useNautilusRep": {
+  "useLumexRep": "Use Lumex Rep",
+  "@useLumexRep": {
     "type": "text",
-    "description": "use nautilus node as rep"
+    "description": "use lumex node as rep"
   },
   "userAlreadyAddedError": "사용자가 이미 추가되었습니다!",
   "@userAlreadyAddedError": {
@@ -3131,7 +3131,7 @@
     "type": "text",
     "description": "username_unknown_error"
   },
-  "usernameInfo": "친구와 가족이 나를 쉽게 찾을 수 있도록 독특한 @username 를 선택하세요!\n\nNautilus 사용자 이름이 있으면 새로운 핸들을 반영하기 위해 UI가 전역으로 업데이트됩니다.",
+  "usernameInfo": "친구와 가족이 나를 쉽게 찾을 수 있도록 독특한 @username 를 선택하세요!\n\nLumex 사용자 이름이 있으면 새로운 핸들을 반영하기 위해 UI가 전역으로 업데이트됩니다.",
   "@usernameInfo": {
     "type": "text",
     "description": "Description for username registration"
@@ -3146,7 +3146,7 @@
     "type": "text",
     "description": "username_unavailable"
   },
-  "usernameWarning": "노틸러스 사용자 이름은 Nano.to에서 제공하는 중앙 집중식 서비스입니다.",
+  "usernameWarning": "노틸러스 사용자 이름은 Lumex.to에서 제공하는 중앙 집중식 서비스입니다.",
   "@usernameWarning": {
     "type": "text",
     "description": "Username centralization warning"
@@ -3211,7 +3211,7 @@
     "type": "text",
     "description": "frequency_weekly"
   },
-  "welcomeText": "Nautilus에 오신 것을 환영합니다. 계속하려면, 새 지갑을 만들거나 기존 지갑을 불러오세요.",
+  "welcomeText": "Lumex에 오신 것을 환영합니다. 계속하려면, 새 지갑을 만들거나 기존 지갑을 불러오세요.",
   "@welcomeText": {
     "type": "text",
     "description": "intro_welcome_title"

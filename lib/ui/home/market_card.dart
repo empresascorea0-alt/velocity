@@ -6,15 +6,15 @@ import 'package:coingecko_api/coingecko_result.dart';
 import 'package:coingecko_api/data/market_chart_data.dart';
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
-import 'package:wallet_flutter/app_icons.dart';
-import 'package:wallet_flutter/appstate_container.dart';
-import 'package:wallet_flutter/localize.dart';
-import 'package:wallet_flutter/model/available_currency.dart';
-import 'package:wallet_flutter/service_locator.dart';
-import 'package:wallet_flutter/styles.dart';
-import 'package:wallet_flutter/ui/util/formatters.dart';
-import 'package:wallet_flutter/ui/util/ui_util.dart';
-import 'package:wallet_flutter/util/sharedprefsutil.dart';
+import 'package:velocity/app_icons.dart';
+import 'package:velocity/appstate_container.dart';
+import 'package:velocity/localize.dart';
+import 'package:velocity/model/available_currency.dart';
+import 'package:velocity/service_locator.dart';
+import 'package:velocity/styles.dart';
+import 'package:velocity/ui/util/formatters.dart';
+import 'package:velocity/ui/util/ui_util.dart';
+import 'package:velocity/util/sharedprefsutil.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
 // ignore: must_be_immutable
@@ -38,7 +38,7 @@ class MarketCardState extends State<MarketCard> with AutomaticKeepAliveClientMix
 
   String hashedSeed = "";
 
-  // Price conversion state (XMR, NANO, NONE)
+  // Price conversion state (XMR, Lumex, NONE)
   PriceConversion? _priceConversion;
 
   // Main card height

@@ -7,12 +7,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_nano_ffi/flutter_nano_ffi.dart';
 import 'package:libcrypto/libcrypto.dart';
 import 'package:nanoutil/nanoutil.dart';
-import 'package:wallet_flutter/appstate_container.dart';
-import 'package:wallet_flutter/generated/l10n.dart';
-import 'package:wallet_flutter/localize.dart';
-import 'package:wallet_flutter/model/db/account.dart';
-import 'package:wallet_flutter/model/db/appdb.dart';
-import 'package:wallet_flutter/service_locator.dart';
+import 'package:velocity/appstate_container.dart';
+import 'package:velocity/generated/l10n.dart';
+import 'package:velocity/localize.dart';
+import 'package:velocity/model/db/account.dart';
+import 'package:velocity/model/db/appdb.dart';
+import 'package:velocity/service_locator.dart';
 
 class NanoUtilities {
 

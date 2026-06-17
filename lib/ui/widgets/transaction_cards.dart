@@ -3,25 +3,25 @@ import 'package:flutter_slidable/flutter_slidable.dart';
 import 'package:lottie/lottie.dart';
 import 'package:quiver/strings.dart';
 import 'package:substring_highlight/substring_highlight.dart';
-import 'package:wallet_flutter/app_icons.dart';
-import 'package:wallet_flutter/appstate_container.dart';
-import 'package:wallet_flutter/generated/l10n.dart';
-import 'package:wallet_flutter/localize.dart';
-import 'package:wallet_flutter/model/db/appdb.dart';
-import 'package:wallet_flutter/model/db/txdata.dart';
-import 'package:wallet_flutter/network/model/block_types.dart';
-import 'package:wallet_flutter/network/model/record_types.dart';
-import 'package:wallet_flutter/network/model/status_types.dart';
-import 'package:wallet_flutter/service_locator.dart';
-import 'package:wallet_flutter/styles.dart';
-import 'package:wallet_flutter/ui/home/card_actions.dart';
-import 'package:wallet_flutter/ui/home/payment_details_sheet.dart';
-import 'package:wallet_flutter/ui/util/formatters.dart';
-import 'package:wallet_flutter/ui/util/handlebars.dart';
-import 'package:wallet_flutter/ui/util/ui_util.dart';
-import 'package:wallet_flutter/ui/widgets/animations.dart';
-import 'package:wallet_flutter/ui/widgets/sheet_util.dart';
-import 'package:wallet_flutter/ui/widgets/transaction_state_tag.dart';
+import 'package:velocity/app_icons.dart';
+import 'package:velocity/appstate_container.dart';
+import 'package:velocity/generated/l10n.dart';
+import 'package:velocity/localize.dart';
+import 'package:velocity/model/db/appdb.dart';
+import 'package:velocity/model/db/txdata.dart';
+import 'package:velocity/network/model/block_types.dart';
+import 'package:velocity/network/model/record_types.dart';
+import 'package:velocity/network/model/status_types.dart';
+import 'package:velocity/service_locator.dart';
+import 'package:velocity/styles.dart';
+import 'package:velocity/ui/home/card_actions.dart';
+import 'package:velocity/ui/home/payment_details_sheet.dart';
+import 'package:velocity/ui/util/formatters.dart';
+import 'package:velocity/ui/util/handlebars.dart';
+import 'package:velocity/ui/util/ui_util.dart';
+import 'package:velocity/ui/widgets/animations.dart';
+import 'package:velocity/ui/widgets/sheet_util.dart';
+import 'package:velocity/ui/widgets/transaction_state_tag.dart';
 
 class TXCards {
   // Welcome Card
@@ -36,16 +36,16 @@ class TXCards {
         .replaceAll("%1", NonTranslatable.appName)
         .replaceAll("%2", NonTranslatable.currencyName.toUpperCase());
 
-    if (!workingStr.contains("NANO") && !workingStr.contains("XMR")) {
+    if (!workingStr.contains("Lumex") && !workingStr.contains("XMR")) {
       return TextSpan(
         text: workingStr,
         style: AppStyles.textStyleTransactionWelcome(context),
       );
     }
 
-    final String word = xmr ? "XMR" : "NANO";
+    final String word = xmr ? "XMR" : "Lumex";
 
-    // Colorize NANO/XMR
+    // Colorize Lumex/XMR
     final List<String> splitStr = workingStr.split(NonTranslatable.currencyName.toUpperCase());
     if (splitStr.length != 2) {
       return TextSpan(

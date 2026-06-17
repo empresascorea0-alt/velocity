@@ -10,24 +10,24 @@ import 'package:flutter_contacts/flutter_contacts.dart' as cont;
 import 'package:logger/logger.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:share_plus/share_plus.dart';
-import 'package:wallet_flutter/app_icons.dart';
-import 'package:wallet_flutter/appstate_container.dart';
-import 'package:wallet_flutter/bus/contacts_setting_change_event.dart';
-import 'package:wallet_flutter/bus/events.dart';
-import 'package:wallet_flutter/dimens.dart';
-import 'package:wallet_flutter/generated/l10n.dart';
-import 'package:wallet_flutter/model/address.dart';
-import 'package:wallet_flutter/model/db/appdb.dart';
-import 'package:wallet_flutter/model/db/user.dart';
-import 'package:wallet_flutter/service_locator.dart';
-import 'package:wallet_flutter/styles.dart';
-import 'package:wallet_flutter/ui/contacts/add_contact.dart';
-import 'package:wallet_flutter/ui/contacts/contact_details.dart';
-import 'package:wallet_flutter/ui/util/ui_util.dart';
-import 'package:wallet_flutter/ui/widgets/buttons.dart';
-import 'package:wallet_flutter/ui/widgets/list_gradient.dart';
-import 'package:wallet_flutter/ui/widgets/sheet_util.dart';
-import 'package:wallet_flutter/util/sharedprefsutil.dart';
+import 'package:velocity/app_icons.dart';
+import 'package:velocity/appstate_container.dart';
+import 'package:velocity/bus/contacts_setting_change_event.dart';
+import 'package:velocity/bus/events.dart';
+import 'package:velocity/dimens.dart';
+import 'package:velocity/generated/l10n.dart';
+import 'package:velocity/model/address.dart';
+import 'package:velocity/model/db/appdb.dart';
+import 'package:velocity/model/db/user.dart';
+import 'package:velocity/service_locator.dart';
+import 'package:velocity/styles.dart';
+import 'package:velocity/ui/contacts/add_contact.dart';
+import 'package:velocity/ui/contacts/contact_details.dart';
+import 'package:velocity/ui/util/ui_util.dart';
+import 'package:velocity/ui/widgets/buttons.dart';
+import 'package:velocity/ui/widgets/list_gradient.dart';
+import 'package:velocity/ui/widgets/sheet_util.dart';
+import 'package:velocity/util/sharedprefsutil.dart';
 
 class ContactsList extends StatefulWidget {
   ContactsList(this.contactsController, this.contactsOpen);
@@ -262,7 +262,7 @@ class _ContactsListState extends State<ContactsList> {
     }
     final DateTime exportTime = DateTime.now();
     final String filename =
-        "nautilus_contacts_${exportTime.year}${exportTime.month}${exportTime.day}${exportTime.hour}${exportTime.minute}${exportTime.second}.json";
+        "lumex_contacts_${exportTime.year}${exportTime.month}${exportTime.day}${exportTime.hour}${exportTime.minute}${exportTime.second}.json";
     final Directory baseDirectory = await getApplicationDocumentsDirectory();
     final File contactsFile = File("${baseDirectory.path}/$filename");
     await contactsFile.writeAsString(json.encode(jsonList));

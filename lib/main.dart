@@ -14,41 +14,41 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_nano_ffi/flutter_nano_ffi.dart';
 import 'package:logger/logger.dart';
 import 'package:oktoast/oktoast.dart';
-import 'package:wallet_flutter/appstate_container.dart';
-import 'package:wallet_flutter/firebase_options.dart';
-import 'package:wallet_flutter/generated/l10n.dart';
-import 'package:wallet_flutter/localize.dart';
-import 'package:wallet_flutter/model/available_currency.dart';
-import 'package:wallet_flutter/model/available_language.dart';
-import 'package:wallet_flutter/model/vault.dart';
-import 'package:wallet_flutter/service_locator.dart';
-import 'package:wallet_flutter/styles.dart';
-import 'package:wallet_flutter/ui/avatar/avatar.dart';
-import 'package:wallet_flutter/ui/avatar/avatar_change.dart';
-import 'package:wallet_flutter/ui/gift/gift_paper_wallet.dart';
-import 'package:wallet_flutter/ui/home_page.dart';
-import 'package:wallet_flutter/ui/intro/intro_backup_confirm.dart';
-import 'package:wallet_flutter/ui/intro/intro_backup_safety.dart';
-import 'package:wallet_flutter/ui/intro/intro_backup_seed.dart';
-import 'package:wallet_flutter/ui/intro/intro_import_seed.dart';
-import 'package:wallet_flutter/ui/intro/intro_magic_password.dart';
-import 'package:wallet_flutter/ui/intro/intro_new_existing.dart';
-import 'package:wallet_flutter/ui/intro/intro_password.dart';
-import 'package:wallet_flutter/ui/intro/intro_password_on_launch.dart';
-import 'package:wallet_flutter/ui/intro/intro_welcome.dart';
-import 'package:wallet_flutter/ui/lock_screen.dart';
-import 'package:wallet_flutter/ui/password_lock_screen.dart';
-import 'package:wallet_flutter/ui/purchase_nano.dart';
-import 'package:wallet_flutter/ui/register/register_nano_to_username.dart';
-import 'package:wallet_flutter/ui/register/register_onchain_username.dart';
-import 'package:wallet_flutter/ui/scan/before_scan_screen.dart';
-import 'package:wallet_flutter/ui/scan/scan_screen.dart';
-import 'package:wallet_flutter/ui/swap/swap_xmr_screen.dart';
-import 'package:wallet_flutter/ui/util/routes.dart';
-import 'package:wallet_flutter/ui/widgets/dialog.dart';
-import 'package:wallet_flutter/util/caseconverter.dart';
-import 'package:wallet_flutter/util/nanoutil.dart';
-import 'package:wallet_flutter/util/sharedprefsutil.dart';
+import 'package:velocity/appstate_container.dart';
+import 'package:velocity/firebase_options.dart';
+import 'package:velocity/generated/l10n.dart';
+import 'package:velocity/localize.dart';
+import 'package:velocity/model/available_currency.dart';
+import 'package:velocity/model/available_language.dart';
+import 'package:velocity/model/vault.dart';
+import 'package:velocity/service_locator.dart';
+import 'package:velocity/styles.dart';
+import 'package:velocity/ui/avatar/avatar.dart';
+import 'package:velocity/ui/avatar/avatar_change.dart';
+import 'package:velocity/ui/gift/gift_paper_wallet.dart';
+import 'package:velocity/ui/home_page.dart';
+import 'package:velocity/ui/intro/intro_backup_confirm.dart';
+import 'package:velocity/ui/intro/intro_backup_safety.dart';
+import 'package:velocity/ui/intro/intro_backup_seed.dart';
+import 'package:velocity/ui/intro/intro_import_seed.dart';
+import 'package:velocity/ui/intro/intro_magic_password.dart';
+import 'package:velocity/ui/intro/intro_new_existing.dart';
+import 'package:velocity/ui/intro/intro_password.dart';
+import 'package:velocity/ui/intro/intro_password_on_launch.dart';
+import 'package:velocity/ui/intro/intro_welcome.dart';
+import 'package:velocity/ui/lock_screen.dart';
+import 'package:velocity/ui/password_lock_screen.dart';
+import 'package:velocity/ui/purchase_nano.dart';
+import 'package:velocity/ui/register/register_lumex_to_username.dart';
+import 'package:velocity/ui/register/register_onchain_username.dart';
+import 'package:velocity/ui/scan/before_scan_screen.dart';
+import 'package:velocity/ui/scan/scan_screen.dart';
+import 'package:velocity/ui/swap/swap_xmr_screen.dart';
+import 'package:velocity/ui/util/routes.dart';
+import 'package:velocity/ui/widgets/dialog.dart';
+import 'package:velocity/util/caseconverter.dart';
+import 'package:velocity/util/nanoutil.dart';
+import 'package:velocity/util/sharedprefsutil.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -349,8 +349,8 @@ class AppState extends State<App> {
                 builder: (_) => BeforeScanScreen(),
                 settings: settings,
               );
-            // nautilus API routes:
-            case '/register_nano_to_username':
+            // lumex API routes:
+            case '/register_lumex_to_username':
               return NoTransitionRoute(
                 builder: (_) => RegisterNanoToUsernameScreen(),
                 settings: settings,

@@ -3,9 +3,9 @@ import 'dart:convert';
 import 'package:flutter_nano_ffi/flutter_nano_ffi.dart' as NFFI;
 import 'package:json_annotation/json_annotation.dart';
 import 'package:nanoutil/nanoutil.dart';
-import 'package:wallet_flutter/localize.dart';
-import 'package:wallet_flutter/network/model/block_types.dart';
-import 'package:wallet_flutter/util/nanoutil.dart';
+import 'package:velocity/localize.dart';
+import 'package:velocity/network/model/block_types.dart';
+import 'package:velocity/util/nanoutil.dart';
 
 part 'state_block.g.dart';
 

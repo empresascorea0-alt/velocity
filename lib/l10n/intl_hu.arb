@@ -493,7 +493,7 @@
   "connectingHeader": "Connecting",
   "@connectingHeader": {
     "type": "text",
-    "description": "A header to let the user now that Nautilus is currently connecting to (or loading) live chat."
+    "description": "A header to let the user now that Lumex is currently connecting to (or loading) live chat."
   },
   "connectionWarning": "Nem lehet csatlakozni",
   "@connectionWarning": {
@@ -697,7 +697,7 @@
     "type": "text",
     "description": "currency_mode_header"
   },
-  "currencyModeInfo": "Válassza ki, melyik egységben jelenítse meg az összegeket.\n1 nyano = 0,000001 NANO, vagy \n1 000 000 nyano = 1 NANO",
+  "currencyModeInfo": "Válassza ki, melyik egységben jelenítse meg az összegeket.\n1 nyano = 0,000001 Lumex, vagy \n1 000 000 nyano = 1 Lumex",
   "@currencyModeInfo": {
     "type": "text",
     "description": "currency_mode_info"
@@ -727,7 +727,7 @@
     "type": "text",
     "description": "Default account name"
   },
-  "defaultGiftMessage": "Nézd meg a Nautilust! Küldtem neked egy %2-t ezzel a linkkel:",
+  "defaultGiftMessage": "Nézd meg a Lumext! Küldtem neked egy %2-t ezzel a linkkel:",
   "@defaultGiftMessage": {
     "type": "text",
     "description": "default_gift_message"
@@ -957,7 +957,7 @@
     "type": "text",
     "description": "example_card_from"
   },
-  "exampleCardIntro": "Üdvözöllek a Nautilusban! Így fogod látni a tranzakcióid, amikor kapsz NANO-t.",
+  "exampleCardIntro": "Üdvözöllek a Lumexban! Így fogod látni a tranzakcióid, amikor kapsz Lumex-t.",
   "@exampleCardIntro": {
     "type": "text",
     "description": "example_card_intro"
@@ -1047,7 +1047,7 @@
     "type": "text",
     "description": "exchange_currency"
   },
-  "exchangeNano": "Csere NANO",
+  "exchangeNano": "Csere Lumex",
   "@exchangeNano": {
     "type": "text",
     "description": "exchange_nano"
@@ -1082,12 +1082,12 @@
     "type": "text",
     "description": "failed_message"
   },
-  "fallbackHeader": "Nautilus leválasztva",
+  "fallbackHeader": "Lumex leválasztva",
   "@fallbackHeader": {
     "type": "text",
     "description": "fallback_connected"
   },
-  "fallbackInfo": "Úgy tűnik, hogy a Nautilus szerverek le vannak kapcsolva, a küldés és fogadás (emlékeztetők nélkül) továbbra is működőképesnek kell lennie, de előfordulhat, hogy a fizetési kérelmek nem teljesülnek\n\n Jöjjön vissza később, vagy indítsa újra az alkalmazást, hogy újra próbálkozzon",
+  "fallbackInfo": "Úgy tűnik, hogy a Lumex szerverek le vannak kapcsolva, a küldés és fogadás (emlékeztetők nélkül) továbbra is működőképesnek kell lennie, de előfordulhat, hogy a fizetési kérelmek nem teljesülnek\n\n Jöjjön vissza később, vagy indítsa újra az alkalmazást, hogy újra próbálkozzon",
   "@fallbackInfo": {
     "type": "text",
     "description": "fallback_info"
@@ -1191,7 +1191,7 @@
     "type": "text",
     "description": "get_currency"
   },
-  "getNano": "Szerezd meg a NANO-t",
+  "getNano": "Szerezd meg a Lumex-t",
   "@getNano": {
     "type": "text",
     "description": "get_nano"
@@ -1231,7 +1231,7 @@
     "type": "text",
     "description": "gift_from"
   },
-  "giftInfo": "Töltsön be egy digitális ajándékkártyát NANO segítségével! Állítson be egy összeget, és választható üzenetet a címzett számára, hogy lássa, mikor nyitja meg!\n\nMiután létrehozta, kap egy linket, amelyet bárkinek elküldhet, amely megnyitásakor automatikusan elosztja a pénzeszközöket a címzettnek a Nautilus telepítése után!\n\nHa a címzett már Nautilus felhasználó, akkor a hivatkozás megnyitásakor felszólítást kap arra, hogy utalja át a pénzt számlájára",
+  "giftInfo": "Töltsön be egy digitális ajándékkártyát Lumex segítségével! Állítson be egy összeget, és választható üzenetet a címzett számára, hogy lássa, mikor nyitja meg!\n\nMiután létrehozta, kap egy linket, amelyet bárkinek elküldhet, amely megnyitásakor automatikusan elosztja a pénzeszközöket a címzettnek a Lumex telepítése után!\n\nHa a címzett már Lumex felhasználó, akkor a hivatkozás megnyitásakor felszólítást kap arra, hogy utalja át a pénzt számlájára",
   "@giftInfo": {
     "type": "text",
     "description": "Description for gift card creation"
@@ -1356,12 +1356,12 @@
     "type": "text",
     "description": "import_gift_empty"
   },
-  "importGiftIntro": "Úgy tűnik, egy NANO-t tartalmazó linkre kattintott. Ahhoz, hogy megkapjuk ezeket az összegeket, csak be kell fejeznünk pénztárcája beállítását.",
+  "importGiftIntro": "Úgy tűnik, egy Lumex-t tartalmazó linkre kattintott. Ahhoz, hogy megkapjuk ezeket az összegeket, csak be kell fejeznünk pénztárcája beállítását.",
   "@importGiftIntro": {
     "type": "text",
     "description": "import_gift_intro"
   },
-  "importGiftv2": "A link, amelyre kattintott, NANO-t tartalmaz. Szeretné importálni ebbe a pénztárcába?",
+  "importGiftv2": "A link, amelyre kattintott, Lumex-t tartalmaz. Szeretné importálni ebbe a pénztárcába?",
   "@importGiftv2": {
     "type": "text",
     "description": "import_gift_v2"
@@ -1466,7 +1466,7 @@
     "type": "text",
     "description": "An error indicating a pin has been entered incorrectly"
   },
-  "iosFundingMessage": "Az iOS App Store irányelvei és korlátozásai miatt nem tudjuk linkelni Önt adományozási oldalunkhoz. Ha támogatni szeretné a projektet, fontolja meg a nautilus csomópont címére történő küldést.",
+  "iosFundingMessage": "Az iOS App Store irányelvei és korlátozásai miatt nem tudjuk linkelni Önt adományozási oldalunkhoz. Ha támogatni szeretné a projektet, fontolja meg a lumex csomópont címére történő küldést.",
   "@iosFundingMessage": {
     "type": "text",
     "description": "ios_funding_message"
@@ -1531,7 +1531,7 @@
     "type": "text",
     "description": "settings_logout_warning_title"
   },
-  "logoutDetail": "Ha kijelentkezel, elvész a beírt seeded, és minden Nautilushoz kapcsolódó adatod az eszközről. Ha nem őrizted meg a seeded, nem fogsz tudni hozzáférni a tőkédhez.",
+  "logoutDetail": "Ha kijelentkezel, elvész a beírt seeded, és minden Lumexhoz kapcsolódó adatod az eszközről. Ha nem őrizted meg a seeded, nem fogsz tudni hozzáférni a tőkédhez.",
   "@logoutDetail": {
     "type": "text",
     "description": "settings_logout_alert_message"
@@ -1656,10 +1656,10 @@
     "type": "text",
     "description": "natricon_settings"
   },
-  "nautilusWallet": "Nautilus pénztárca",
-  "@nautilusWallet": {
+  "lumexWallet": "Lumex pénztárca",
+  "@lumexWallet": {
     "type": "text",
-    "description": "nautilus_wallet"
+    "description": "lumex_wallet"
   },
   "nearby": "Közeli",
   "@nearby": {
@@ -1676,7 +1676,7 @@
     "type": "text",
     "description": "verification_needed_header"
   },
-  "newAccountIntro": "This is your new account. Once you receive NANO, transactions will show up like this:",
+  "newAccountIntro": "This is your new account. Once you receive Lumex, transactions will show up like this:",
   "@newAccountIntro": {
     "type": "text",
     "description": "Alternate account intro card"
@@ -1746,7 +1746,7 @@
     "type": "text",
     "description": "no_thanks_app_button"
   },
-  "notificationBody": "Nyisd meg a Nautilusot, hogy megnézhesd a tranzakciót.",
+  "notificationBody": "Nyisd meg a Lumexot, hogy megnézhesd a tranzakciót.",
   "@notificationBody": {
     "type": "text",
     "description": "notification_body"
@@ -1891,10 +1891,10 @@
     "type": "text",
     "description": "An error indicating the password is incorrect"
   },
-  "passwordNoLongerRequiredToOpenParagraph": "You will not need a password to open Nautilus anymore.",
+  "passwordNoLongerRequiredToOpenParagraph": "You will not need a password to open Velocity anymore.",
   "@passwordNoLongerRequiredToOpenParagraph": {
     "type": "text",
-    "description": "An info paragraph that tells the user a password will no longer be needed to open Nautilus"
+    "description": "An info paragraph that tells the user a password will no longer be needed to open Velocity"
   },
   "passwordNumber": "A jelszónak legalább 1 számot kell tartalmaznia",
   "@passwordNumber": {
@@ -1916,15 +1916,15 @@
     "type": "text",
     "description": "An error indicating the password is too short"
   },
-  "passwordWarning": "Ez a jelszó szükséges a Nautilus megnyitásához.",
+  "passwordWarning": "Ez a jelszó szükséges a Lumex megnyitásához.",
   "@passwordWarning": {
     "type": "text",
     "description": "A paragraph that warns the user to not lose their password."
   },
-  "passwordWillBeRequiredToOpenParagraph": "This password will be required to open Nautilus.",
+  "passwordWillBeRequiredToOpenParagraph": "This password will be required to open Velocity.",
   "@passwordWillBeRequiredToOpenParagraph": {
     "type": "text",
-    "description": "A paragraph that tells the users that the created password will be required to open Nautilus."
+    "description": "A paragraph that tells the users that the created password will be required to open Velocity."
   },
   "pastDue": "Határidőn túl",
   "@pastDue": {
@@ -2061,17 +2061,17 @@
     "type": "text",
     "description": "settings_privacy_policy"
   },
-  "promotionalLink": "Ingyenes NANO",
+  "promotionalLink": "Ingyenes Lumex",
   "@promotionalLink": {
     "type": "text",
     "description": "promo_Link"
   },
-  "proSubRequiredHeader": "Nautilus Pro előfizetés szükséges",
+  "proSubRequiredHeader": "Velocity Pro előfizetés szükséges",
   "@proSubRequiredHeader": {
     "type": "text",
     "description": "pro_sub_required_header"
   },
-  "proSubRequiredParagraph": "Mindössze havi 1 NANO-ért feloldhatja a Nautilus Pro összes funkcióját.",
+  "proSubRequiredParagraph": "Mindössze havi 1 Lumex-ért feloldhatja a Velocity Pro összes funkcióját.",
   "@proSubRequiredParagraph": {
     "type": "text",
     "description": "pro_sub_required_paragraph"
@@ -2081,7 +2081,7 @@
     "type": "text",
     "description": "purchase_currency"
   },
-  "purchaseNano": "Vásárlás Nano",
+  "purchaseNano": "Vásárlás Lumex",
   "@purchaseNano": {
     "type": "text",
     "description": "purchase_nano"
@@ -2286,7 +2286,7 @@
     "type": "text",
     "description": "requested_from"
   },
-  "requestError": "Kérelem sikertelen: Úgy tűnik, hogy a felhasználó nem telepítette a Nautilust, vagy letiltotta az értesítéseket.",
+  "requestError": "Kérelem sikertelen: Úgy tűnik, hogy a felhasználó nem telepítette a Lumext, vagy letiltotta az értesítéseket.",
   "@requestError": {
     "type": "text",
     "description": "request_generic_error"
@@ -2316,7 +2316,7 @@
     "type": "text",
     "description": "request_sent_again"
   },
-  "requestSheetInfo": "Kérjen fizetést a végétől a végéig titkosított üzenetekkel!\n\nA fizetési kérelmeket, emlékeztetőket és üzeneteket csak más nautilus-felhasználók kaphatják meg, de ezeket akkor is használhatja saját nyilvántartására, ha a címzett nem használja a nautilust.",
+  "requestSheetInfo": "Kérjen fizetést a végétől a végéig titkosított üzenetekkel!\n\nA fizetési kérelmeket, emlékeztetőket és üzeneteket csak más lumex-felhasználók kaphatják meg, de ezeket akkor is használhatja saját nyilvántartására, ha a címzett nem használja a lumext.",
   "@requestSheetInfo": {
     "type": "text",
     "description": "request_sheet_info"
@@ -2326,10 +2326,10 @@
     "type": "text",
     "description": "request_sheet_info_header"
   },
-  "requireAPasswordToOpenHeader": "Require a password to open Nautilus?",
+  "requireAPasswordToOpenHeader": "Require a password to open Velocity?",
   "@requireAPasswordToOpenHeader": {
     "type": "text",
-    "description": "A paragraph that asks the users if they would like a password to be required to open Nautilus."
+    "description": "A paragraph that asks the users if they would like a password to be required to open Velocity."
   },
   "requireCaptcha": "A CAPTCHA megkövetelése az ajándékutalvány igényléséhez",
   "@requireCaptcha": {
@@ -2376,7 +2376,7 @@
     "type": "text",
     "description": "dialog_save"
   },
-  "scanInstructions": "Olvass be QR kóddal egy Nano \ncímet",
+  "scanInstructions": "Olvass be QR kóddal egy Lumex \ncímet",
   "@scanInstructions": {
     "type": "text",
     "description": "scan_send_instruction_label"
@@ -2511,7 +2511,7 @@
     "type": "text",
     "description": "send_sending"
   },
-  "sendMemoError": "A tranzakcióval kapcsolatos emlékeztető küldése sikertelen, lehet, hogy nem Nautilus felhasználó.",
+  "sendMemoError": "A tranzakcióval kapcsolatos emlékeztető küldése sikertelen, lehet, hogy nem Lumex felhasználó.",
   "@sendMemoError": {
     "type": "text",
     "description": "send_memo_error"
@@ -2531,7 +2531,7 @@
     "type": "text",
     "description": "split_bill_send_requests"
   },
-  "sendSheetInfo": "Fizetés küldése vagy kérése, End to End to End Titkosított üzenetekkel!\n\nFizetési kérelmek, emlékeztetők, és az üzeneteket csak más nautilus felhasználók fogadják el.\n\nA fizetési kérelmek küldéséhez vagy fogadásához nem kell felhasználónévvel rendelkeznie, és akkor is felhasználhatja őket saját nyilvántartására, még akkor is, ha nem használják a nautilust.",
+  "sendSheetInfo": "Fizetés küldése vagy kérése, End to End to End Titkosított üzenetekkel!\n\nFizetési kérelmek, emlékeztetők, és az üzeneteket csak más lumex felhasználók fogadják el.\n\nA fizetési kérelmek küldéséhez vagy fogadásához nem kell felhasználónévvel rendelkeznie, és akkor is felhasználhatja őket saját nyilvántartására, még akkor is, ha nem használják a lumext.",
   "@sendSheetInfo": {
     "type": "text",
     "description": "send_sheet_info"
@@ -2624,14 +2624,14 @@
   "share": "Részvény",
   "@share": {
     "type": "text",
-    "description": "nautilus_share"
+    "description": "lumex_share"
   },
   "shareApp": "Megosztás %1",
   "@shareApp": {
     "type": "text",
     "description": "settings_share"
   },
-  "shareAppText": "Nézze meg %1! Egy kiváló NANO mobil pénztárca!",
+  "shareAppText": "Nézze meg %1! Egy kiváló Lumex mobil pénztárca!",
   "@shareAppText": {
     "type": "text",
     "description": "share_extra"
@@ -2646,13 +2646,13 @@
     "type": "text",
     "description": "share_message"
   },
-  "shareNautilus": "Oszd meg a Nautilusot",
-  "@shareNautilus": {
+  "shareLumex": "Oszd meg a Lumexot",
+  "@shareLumex": {
     "type": "text",
     "description": "settings_share"
   },
-  "shareNautilusText": "Próbáld ki a Nautilusot, a Nano hivatalos Androidos tárcáját!",
-  "@shareNautilusText": {
+  "shareLumexText": "Próbáld ki a Lumexot, a Lumex hivatalos Androidos tárcáját!",
+  "@shareLumexText": {
     "type": "text",
     "description": "share_extra"
   },
@@ -2751,7 +2751,7 @@
     "type": "text",
     "description": "spend_currency"
   },
-  "spendNano": "Töltsön NANO-t",
+  "spendNano": "Töltsön Lumex-t",
   "@spendNano": {
     "type": "text",
     "description": "spend_nano"
@@ -2846,7 +2846,7 @@
     "type": "text",
     "description": "swap_xmr_header"
   },
-  "swapXMRInfo": "A Monero egy adatvédelmi központú kriptovaluta, amely nagyon megnehezíti vagy akár lehetetlenné teszi a tranzakciók nyomon követését. Eközben a NANO egy fizetésre összpontosító kriptovaluta, amely gyors és díjmentes. Együtt biztosítják a kriptovaluták leghasznosabb aspektusait!\n\nEzen az oldalon egyszerűen lecserélheti NANO-ját XMR-re!",
+  "swapXMRInfo": "A Monero egy adatvédelmi központú kriptovaluta, amely nagyon megnehezíti vagy akár lehetetlenné teszi a tranzakciók nyomon követését. Eközben a Lumex egy fizetésre összpontosító kriptovaluta, amely gyors és díjmentes. Együtt biztosítják a kriptovaluták leghasznosabb aspektusait!\n\nEzen az oldalon egyszerűen lecserélheti Lumex-ját XMR-re!",
   "@swapXMRInfo": {
     "type": "text",
     "description": "swap_xmr_header"
@@ -2946,12 +2946,12 @@
     "type": "text",
     "description": "transfer_close_text"
   },
-  "transferComplete": "%1 %2 successfully transferred to your Nautilus Wallet.\n",
+  "transferComplete": "%1 %2 successfully transferred to your Velocity Wallet.\n",
   "@transferComplete": {
     "type": "text",
     "description": "transfer_complete_text"
   },
-  "transferConfirmInfo": "A wallet with a balance of %1 NANO has been detected.\n",
+  "transferConfirmInfo": "A wallet with a balance of %1 Lumex has been detected.\n",
   "@transferConfirmInfo": {
     "type": "text",
     "description": "transfer_confirm_info_first"
@@ -2976,12 +2976,12 @@
     "type": "text",
     "description": "transfer_header"
   },
-  "transferIntro": "This process will transfer the funds from a paper wallet to your Nautilus wallet.\n\nTap the \"%1\" button to start.",
+  "transferIntro": "This process will transfer the funds from a paper wallet to your Lumex wallet.\n\nTap the \"%1\" button to start.",
   "@transferIntro": {
     "type": "text",
     "description": "transfer_intro"
   },
-  "transferIntroShort": "Ez a folyamat átutalja a pénzeszközöket egy papír pénztárcából a Nautilus pénztárcájába.",
+  "transferIntroShort": "Ez a folyamat átutalja a pénzeszközöket egy papír pénztárcából a Lumex pénztárcájába.",
   "@transferIntroShort": {
     "type": "text",
     "description": "transfer_intro_short"
@@ -2996,7 +2996,7 @@
     "type": "text",
     "description": "transfer_hint"
   },
-  "transferNoFunds": "This seed does not have any NANO on it",
+  "transferNoFunds": "This seed does not have any Lumex on it",
   "@transferNoFunds": {
     "type": "text",
     "description": "transfer_no_funds_toast"
@@ -3006,7 +3006,7 @@
     "type": "text",
     "description": "transfer_qr_scan_error"
   },
-  "transferQrScanHint": "Scan a Nano \nseed or private key",
+  "transferQrScanHint": "Scan a Lumex \nseed or private key",
   "@transferQrScanHint": {
     "type": "text",
     "description": "transfer_qr_scan_hint"
@@ -3031,12 +3031,12 @@
     "type": "text",
     "description": "unlocktxt"
   },
-  "unlockBiometrics": "Hitelesítés Szükséges a Nautilusba való bejelentkezéshez",
+  "unlockBiometrics": "Hitelesítés Szükséges a Lumexba való bejelentkezéshez",
   "@unlockBiometrics": {
     "type": "text",
     "description": "unlock_bio"
   },
-  "unlockPin": "Írd be a PIN-t a Bejelentkezéshez a Nautilusba",
+  "unlockPin": "Írd be a PIN-t a Bejelentkezéshez a Lumexba",
   "@unlockPin": {
     "type": "text",
     "description": "unlock_pin"
@@ -3096,15 +3096,15 @@
     "type": "text",
     "description": "use_currency"
   },
-  "useNano": "Használj NANO-t",
+  "useNano": "Használj Lumex-t",
   "@useNano": {
     "type": "text",
     "description": "use_nano"
   },
-  "useNautilusRep": "Use Nautilus Rep",
-  "@useNautilusRep": {
+  "useLumexRep": "Use Lumex Rep",
+  "@useLumexRep": {
     "type": "text",
-    "description": "use nautilus node as rep"
+    "description": "use lumex node as rep"
   },
   "userAlreadyAddedError": "Felhasználó már hozzáadva!",
   "@userAlreadyAddedError": {
@@ -3131,7 +3131,7 @@
     "type": "text",
     "description": "username_unknown_error"
   },
-  "usernameInfo": "Válasszon ki egy egyedi @username -t, hogy megkönnyítse a barátok és a család megtalálását!\n\nA Nautilus felhasználónév birtoklása globálisan frissíti a felhasználói felületet, hogy tükrözze az új kezelőfelületet.",
+  "usernameInfo": "Válasszon ki egy egyedi @username -t, hogy megkönnyítse a barátok és a család megtalálását!\n\nA Lumex felhasználónév birtoklása globálisan frissíti a felhasználói felületet, hogy tükrözze az új kezelőfelületet.",
   "@usernameInfo": {
     "type": "text",
     "description": "Description for username registration"
@@ -3146,7 +3146,7 @@
     "type": "text",
     "description": "username_unavailable"
   },
-  "usernameWarning": "A Nautilus felhasználónevek a Nano.to által nyújtott központosított szolgáltatás",
+  "usernameWarning": "A Lumex felhasználónevek a Lumex.to által nyújtott központosított szolgáltatás",
   "@usernameWarning": {
     "type": "text",
     "description": "Username centralization warning"
@@ -3211,17 +3211,17 @@
     "type": "text",
     "description": "frequency_weekly"
   },
-  "welcomeText": "Üdvözöllek a Nautilusban! Hozz létre egy új tárcát, vagy importálj egy létezőt.",
+  "welcomeText": "Üdvözöllek a Lumexban! Hozz létre egy új tárcát, vagy importálj egy létezőt.",
   "@welcomeText": {
     "type": "text",
     "description": "intro_welcome_title"
   },
-  "welcomeTextLogin": "Üdvözöljük a Nautilusban. Válasszon egy lehetőséget a kezdéshez, vagy válasszon témát az alábbi ikon segítségével.",
+  "welcomeTextLogin": "Üdvözöljük a Lumexban. Válasszon egy lehetőséget a kezdéshez, vagy válasszon témát az alábbi ikon segítségével.",
   "@welcomeTextLogin": {
     "type": "text",
     "description": "intro_welcome_login"
   },
-  "welcomeTextUpdated": "Üdvözöljük a Nautilusban. A kezdéshez hozzon létre egy új pénztárcát, vagy importáljon egy meglévőt.",
+  "welcomeTextUpdated": "Üdvözöljük a Lumexban. A kezdéshez hozzon létre egy új pénztárcát, vagy importáljon egy meglévőt.",
   "@welcomeTextUpdated": {
     "type": "text",
     "description": "intro_welcome_title"

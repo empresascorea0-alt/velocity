@@ -6,8 +6,8 @@ import 'dart:async';
 
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:wallet_flutter/appstate_container.dart';
-import 'package:wallet_flutter/ui/widgets/dialog.dart';
+import 'package:velocity/appstate_container.dart';
+import 'package:velocity/ui/widgets/dialog.dart';
 
 // Examples can assume:
 // enum Department { treasury, state }

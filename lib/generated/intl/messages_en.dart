@@ -249,7 +249,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "currencyModeHeader":
             MessageLookupByLibrary.simpleMessage("Currency Mode Info"),
         "currencyModeInfo": MessageLookupByLibrary.simpleMessage(
-            "Choose which unit to display amounts in.\n1 nyano = 0.000001 NANO, or \n1,000,000 nyano = 1 NANO"),
+            "Choose which unit to display amounts in.\n1 nyano = 0.000001 Lumex, or \n1,000,000 nyano = 1 Lumex"),
         "currentlyRepresented":
             MessageLookupByLibrary.simpleMessage("Currently Represented By"),
         "daily": MessageLookupByLibrary.simpleMessage("Daily"),
@@ -364,7 +364,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "exampleRecRecipientMessage":
             MessageLookupByLibrary.simpleMessage("Gas Money"),
         "exchangeCurrency": MessageLookupByLibrary.simpleMessage("Exchange %2"),
-        "exchangeNano": MessageLookupByLibrary.simpleMessage("Exchange NANO"),
+        "exchangeNano": MessageLookupByLibrary.simpleMessage("Exchange Lumex"),
         "existingPasswordHint":
             MessageLookupByLibrary.simpleMessage("Enter current password"),
         "existingPinHint":
@@ -409,7 +409,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "generatingWork": MessageLookupByLibrary.simpleMessage(
             "Generating PoW, this may take a while (> 20 seconds)..."),
         "getCurrency": MessageLookupByLibrary.simpleMessage("Get %2"),
-        "getNano": MessageLookupByLibrary.simpleMessage("Get NANO"),
+        "getNano": MessageLookupByLibrary.simpleMessage("Get Lumex"),
         "giftAlert": MessageLookupByLibrary.simpleMessage("You have a gift!"),
         "giftAlertEmpty": MessageLookupByLibrary.simpleMessage("Empty Gift"),
         "giftAmount": MessageLookupByLibrary.simpleMessage("Gift Amount"),
@@ -553,8 +553,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "nameEmpty":
             MessageLookupByLibrary.simpleMessage("Please enter a Name"),
         "natricon": MessageLookupByLibrary.simpleMessage("Natricon"),
-        "nautilusWallet":
-            MessageLookupByLibrary.simpleMessage("Nautilus Wallet"),
+        "lumexWallet":
+            MessageLookupByLibrary.simpleMessage("Lumex Wallet"),
         "nearby": MessageLookupByLibrary.simpleMessage("Nearby"),
         "needVerificationAlert": MessageLookupByLibrary.simpleMessage(
             "This feature requires you to have a longer transaction history in order to prevent spam.\n\nAlternatively, you can show a QR code for someone to scan."),
@@ -686,7 +686,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "For just %3 %2 per month, you can unlock all of the features of %1 Pro."),
         "promotionalLink": MessageLookupByLibrary.simpleMessage("Free %2"),
         "purchaseCurrency": MessageLookupByLibrary.simpleMessage("Purchase %2"),
-        "purchaseNano": MessageLookupByLibrary.simpleMessage("Purchase Nano"),
+        "purchaseNano": MessageLookupByLibrary.simpleMessage("Purchase Lumex"),
         "qrInvalidAddress": MessageLookupByLibrary.simpleMessage(
             "QR code does not contain a valid destination"),
         "qrInvalidPermissions": MessageLookupByLibrary.simpleMessage(
@@ -859,9 +859,9 @@ class MessageLookup extends MessageLookupByLibrary {
             "Check out %1! A premier %2 mobile wallet!"),
         "shareLink": MessageLookupByLibrary.simpleMessage("Share Link"),
         "shareMessage": MessageLookupByLibrary.simpleMessage("Share Message"),
-        "shareNautilus": MessageLookupByLibrary.simpleMessage("Share Nautilus"),
-        "shareNautilusText": MessageLookupByLibrary.simpleMessage(
-            "Check out Nautilus! A premier NANO mobile wallet!"),
+        "shareLumex": MessageLookupByLibrary.simpleMessage("Share Lumex"),
+        "shareLumexText": MessageLookupByLibrary.simpleMessage(
+            "Check out Lumex! A premier Lumex mobile wallet!"),
         "shareText": MessageLookupByLibrary.simpleMessage("Share Text"),
         "shopButton": MessageLookupByLibrary.simpleMessage("Shop"),
         "show": MessageLookupByLibrary.simpleMessage("Show"),
@@ -886,7 +886,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "social": MessageLookupByLibrary.simpleMessage("Social"),
         "someone": MessageLookupByLibrary.simpleMessage("someone"),
         "spendCurrency": MessageLookupByLibrary.simpleMessage("Spend %2"),
-        "spendNano": MessageLookupByLibrary.simpleMessage("Spend NANO"),
+        "spendNano": MessageLookupByLibrary.simpleMessage("Spend Lumex"),
         "splitBill": MessageLookupByLibrary.simpleMessage("Split Bill"),
         "splitBillHeader": MessageLookupByLibrary.simpleMessage("Split A Bill"),
         "splitBillInfo": MessageLookupByLibrary.simpleMessage(
@@ -992,9 +992,9 @@ class MessageLookup extends MessageLookupByLibrary {
         "urlEmpty": MessageLookupByLibrary.simpleMessage("Please enter a URL"),
         "useAppRep": MessageLookupByLibrary.simpleMessage("Use %1 Rep"),
         "useCurrency": MessageLookupByLibrary.simpleMessage("Use %2"),
-        "useNano": MessageLookupByLibrary.simpleMessage("Use NANO"),
-        "useNautilusRep":
-            MessageLookupByLibrary.simpleMessage("Use Nautilus Rep"),
+        "useNano": MessageLookupByLibrary.simpleMessage("Use Lumex"),
+        "useLumexRep":
+            MessageLookupByLibrary.simpleMessage("Use Lumex Rep"),
         "userAlreadyAddedError":
             MessageLookupByLibrary.simpleMessage("User already added!"),
         "userNotFound": MessageLookupByLibrary.simpleMessage("User not found!"),
@@ -1012,7 +1012,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "usernameUnavailable":
             MessageLookupByLibrary.simpleMessage("Username unavailable"),
         "usernameWarning": MessageLookupByLibrary.simpleMessage(
-            "%1 usernames are a centralized service provided by Nano.to"),
+            "%1 usernames are a centralized service provided by Lumex.to"),
         "using": MessageLookupByLibrary.simpleMessage("Using"),
         "viewDetails": MessageLookupByLibrary.simpleMessage("View Details"),
         "viewPaymentHistory":

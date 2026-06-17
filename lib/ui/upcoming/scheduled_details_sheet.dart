@@ -1,20 +1,20 @@
 import 'package:event_taxi/event_taxi.dart';
 import 'package:flutter/material.dart';
-import 'package:wallet_flutter/appstate_container.dart';
-import 'package:wallet_flutter/bus/sub_modified_event.dart';
-import 'package:wallet_flutter/dimens.dart';
-import 'package:wallet_flutter/generated/l10n.dart';
-import 'package:wallet_flutter/model/db/appdb.dart';
-import 'package:wallet_flutter/model/db/scheduled.dart';
-import 'package:wallet_flutter/model/db/subscription.dart';
-import 'package:wallet_flutter/network/subscription_service.dart';
-import 'package:wallet_flutter/service_locator.dart';
-import 'package:wallet_flutter/ui/send/send_sheet.dart';
-import 'package:wallet_flutter/ui/subs/payment_history.dart';
-import 'package:wallet_flutter/ui/util/handlebars.dart';
-import 'package:wallet_flutter/ui/util/routes.dart';
-import 'package:wallet_flutter/ui/widgets/buttons.dart';
-import 'package:wallet_flutter/ui/widgets/sheet_util.dart';
+import 'package:velocity/appstate_container.dart';
+import 'package:velocity/bus/sub_modified_event.dart';
+import 'package:velocity/dimens.dart';
+import 'package:velocity/generated/l10n.dart';
+import 'package:velocity/model/db/appdb.dart';
+import 'package:velocity/model/db/scheduled.dart';
+import 'package:velocity/model/db/subscription.dart';
+import 'package:velocity/network/subscription_service.dart';
+import 'package:velocity/service_locator.dart';
+import 'package:velocity/ui/send/send_sheet.dart';
+import 'package:velocity/ui/subs/payment_history.dart';
+import 'package:velocity/ui/util/handlebars.dart';
+import 'package:velocity/ui/util/routes.dart';
+import 'package:velocity/ui/widgets/buttons.dart';
+import 'package:velocity/ui/widgets/sheet_util.dart';
 
 class ScheduledDetailsSheet extends StatefulWidget {
   const ScheduledDetailsSheet({required this.scheduled}) : super();

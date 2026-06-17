@@ -2,11 +2,11 @@ import 'dart:async';
 
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
-import 'package:wallet_flutter/appstate_container.dart';
-import 'package:wallet_flutter/generated/l10n.dart';
-import 'package:wallet_flutter/styles.dart';
-import 'package:wallet_flutter/ui/util/ui_util.dart';
-import 'package:wallet_flutter/util/user_data_util.dart';
+import 'package:velocity/appstate_container.dart';
+import 'package:velocity/generated/l10n.dart';
+import 'package:velocity/styles.dart';
+import 'package:velocity/ui/util/ui_util.dart';
+import 'package:velocity/util/user_data_util.dart';
 
 /// A widget for displaying a mnemonic phrase
 class PlainSeedDisplay extends StatefulWidget {

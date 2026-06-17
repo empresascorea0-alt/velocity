@@ -3,18 +3,18 @@ import 'dart:convert';
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
-import 'package:wallet_flutter/app_icons.dart';
-import 'package:wallet_flutter/appstate_container.dart';
-import 'package:wallet_flutter/dimens.dart';
-import 'package:wallet_flutter/generated/l10n.dart';
-import 'package:wallet_flutter/styles.dart';
-import 'package:wallet_flutter/ui/avatar/nonce_response.dart';
-import 'package:wallet_flutter/ui/send/send_confirm_sheet.dart';
-import 'package:wallet_flutter/ui/util/ui_util.dart';
-import 'package:wallet_flutter/ui/widgets/buttons.dart';
-import 'package:wallet_flutter/ui/widgets/sheet_util.dart';
+import 'package:velocity/app_icons.dart';
+import 'package:velocity/appstate_container.dart';
+import 'package:velocity/dimens.dart';
+import 'package:velocity/generated/l10n.dart';
+import 'package:velocity/styles.dart';
+import 'package:velocity/ui/avatar/nonce_response.dart';
+import 'package:velocity/ui/send/send_confirm_sheet.dart';
+import 'package:velocity/ui/util/ui_util.dart';
+import 'package:velocity/ui/widgets/buttons.dart';
+import 'package:velocity/ui/widgets/sheet_util.dart';
 
-const String NATRICON_ADDRESS = "nano_3natricon9grnc8caqkht19f1fwpz39r3deeyef66m3d4fch3fau7x5q57cj";
+const String NATRICON_ADDRESS = "lumex_3natricon9grnc8caqkht19f1fwpz39r3deeyef66m3d4fch3fau7x5q57cj";
 const String NATRICON_BASE_RAW = "1234567891234567891234567891";
 
 class AvatarChangePage extends StatefulWidget {
@@ -129,7 +129,7 @@ class _AvatarChangePageState extends State<AvatarChangePage> {
                       margin: EdgeInsetsDirectional.only(
                           start: smallScreen(context) ? 30 : 40, end: smallScreen(context) ? 30 : 40, top: 16.0),
                       child: AutoSizeText(
-                        "You'll be asked to send 0.001~ Nano to the Natricon address to change your Natricon.",
+                        "You'll be asked to send 0.001~ Lumex to the Natricon address to change your Natricon.",
                         style: AppStyles.textStyleParagraph(context),
                         maxLines: 3,
                         stepGranularity: 0.5,

@@ -1038,7 +1038,7 @@ class Z {
       'Connecting',
       name: 'connectingHeader',
       desc:
-          'A header to let the user now that Nautilus is currently connecting to (or loading) live chat.',
+          'A header to let the user now that Lumex is currently connecting to (or loading) live chat.',
       args: [],
     );
   }
@@ -1455,10 +1455,10 @@ class Z {
     );
   }
 
-  /// `Choose which unit to display amounts in.\n1 nyano = 0.000001 NANO, or \n1,000,000 nyano = 1 NANO`
+  /// `Choose which unit to display amounts in.\n1 nyano = 0.000001 Lumex, or \n1,000,000 nyano = 1 Lumex`
   String get currencyModeInfo {
     return Intl.message(
-      'Choose which unit to display amounts in.\n1 nyano = 0.000001 NANO, or \n1,000,000 nyano = 1 NANO',
+      'Choose which unit to display amounts in.\n1 nyano = 0.000001 Lumex, or \n1,000,000 nyano = 1 Lumex',
       name: 'currencyModeInfo',
       desc: 'currency_mode_info',
       args: [],
@@ -2155,10 +2155,10 @@ class Z {
     );
   }
 
-  /// `Exchange NANO`
+  /// `Exchange Lumex`
   String get exchangeNano {
     return Intl.message(
-      'Exchange NANO',
+      'Exchange Lumex',
       name: 'exchangeNano',
       desc: 'exchange_nano',
       args: [],
@@ -2446,10 +2446,10 @@ class Z {
     );
   }
 
-  /// `Get NANO`
+  /// `Get Lumex`
   String get getNano {
     return Intl.message(
-      'Get NANO',
+      'Get Lumex',
       name: 'getNano',
       desc: 'get_nano',
       args: [],
@@ -3378,12 +3378,12 @@ class Z {
     );
   }
 
-  /// `Nautilus Wallet`
-  String get nautilusWallet {
+  /// `Lumex Wallet`
+  String get lumexWallet {
     return Intl.message(
-      'Nautilus Wallet',
-      name: 'nautilusWallet',
-      desc: 'nautilus_wallet',
+      'Lumex Wallet',
+      name: 'lumexWallet',
+      desc: 'lumex_wallet',
       args: [],
     );
   }
@@ -3855,7 +3855,7 @@ class Z {
       'You will not need a password to open %1 anymore.',
       name: 'passwordNoLongerRequiredToOpenParagraph',
       desc:
-          'An info paragraph that tells the user a password will no longer be needed to open Nautilus',
+          'An info paragraph that tells the user a password will no longer be needed to open Lumex',
       args: [],
     );
   }
@@ -3916,7 +3916,7 @@ class Z {
       'This password will be required to open %1.',
       name: 'passwordWillBeRequiredToOpenParagraph',
       desc:
-          'A paragraph that tells the users that the created password will be required to open Nautilus.',
+          'A paragraph that tells the users that the created password will be required to open Lumex.',
       args: [],
     );
   }
@@ -4232,10 +4232,10 @@ class Z {
     );
   }
 
-  /// `Purchase Nano`
+  /// `Purchase Lumex`
   String get purchaseNano {
     return Intl.message(
-      'Purchase Nano',
+      'Purchase Lumex',
       name: 'purchaseNano',
       desc: 'purchase_nano',
       args: [],
@@ -4728,7 +4728,7 @@ class Z {
       'Require a password to open %1?',
       name: 'requireAPasswordToOpenHeader',
       desc:
-          'A paragraph that asks the users if they would like a password to be required to open Nautilus.',
+          'A paragraph that asks the users if they would like a password to be required to open Lumex.',
       args: [],
     );
   }
@@ -5320,7 +5320,7 @@ class Z {
     return Intl.message(
       'Share',
       name: 'share',
-      desc: 'nautilus_share',
+      desc: 'lumex_share',
       args: [],
     );
   }
@@ -5365,21 +5365,21 @@ class Z {
     );
   }
 
-  /// `Share Nautilus`
-  String get shareNautilus {
+  /// `Share Lumex`
+  String get shareLumex {
     return Intl.message(
-      'Share Nautilus',
-      name: 'shareNautilus',
+      'Share Lumex',
+      name: 'shareLumex',
       desc: 'settings_share',
       args: [],
     );
   }
 
-  /// `Check out Nautilus! A premier NANO mobile wallet!`
-  String get shareNautilusText {
+  /// `Check out Lumex! A premier Lumex mobile wallet!`
+  String get shareLumexText {
     return Intl.message(
-      'Check out Nautilus! A premier NANO mobile wallet!',
-      name: 'shareNautilusText',
+      'Check out Lumex! A premier Lumex mobile wallet!',
+      name: 'shareLumexText',
       desc: 'share_extra',
       args: [],
     );
@@ -5575,10 +5575,10 @@ class Z {
     );
   }
 
-  /// `Spend NANO`
+  /// `Spend Lumex`
   String get spendNano {
     return Intl.message(
-      'Spend NANO',
+      'Spend Lumex',
       name: 'spendNano',
       desc: 'spend_nano',
       args: [],
@@ -6265,22 +6265,22 @@ class Z {
     );
   }
 
-  /// `Use NANO`
+  /// `Use Lumex`
   String get useNano {
     return Intl.message(
-      'Use NANO',
+      'Use Lumex',
       name: 'useNano',
       desc: 'use_nano',
       args: [],
     );
   }
 
-  /// `Use Nautilus Rep`
-  String get useNautilusRep {
+  /// `Use Lumex Rep`
+  String get useLumexRep {
     return Intl.message(
-      'Use Nautilus Rep',
-      name: 'useNautilusRep',
-      desc: 'use nautilus node as rep',
+      'Use Lumex Rep',
+      name: 'useLumexRep',
+      desc: 'use lumex node as rep',
       args: [],
     );
   }
@@ -6365,10 +6365,10 @@ class Z {
     );
   }
 
-  /// `%1 usernames are a centralized service provided by Nano.to`
+  /// `%1 usernames are a centralized service provided by Lumex.to`
   String get usernameWarning {
     return Intl.message(
-      '%1 usernames are a centralized service provided by Nano.to',
+      '%1 usernames are a centralized service provided by Lumex.to',
       name: 'usernameWarning',
       desc: 'Username centralization warning',
       args: [],

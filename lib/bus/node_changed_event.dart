@@ -1,5 +1,5 @@
 import 'package:event_taxi/event_taxi.dart';
-import 'package:wallet_flutter/model/db/node.dart';
+import 'package:velocity/model/db/node.dart';
 
 class NodeChangedEvent implements Event {
 

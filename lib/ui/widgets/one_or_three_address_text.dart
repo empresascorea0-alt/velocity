@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:wallet_flutter/styles.dart';
+import 'package:velocity/styles.dart';
 
 enum AddressTextType { PRIMARY60, PRIMARY, SUCCESS }
 

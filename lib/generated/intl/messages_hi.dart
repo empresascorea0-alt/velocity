@@ -424,7 +424,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("उपहार पत्रक जानकारी"),
         "giftFrom": MessageLookupByLibrary.simpleMessage("गिफ्ट फ्रॉम"),
         "giftInfo": MessageLookupByLibrary.simpleMessage(
-            "NANO के साथ एक डिजिटल गिफ्ट कार्ड लोड करें! प्राप्तकर्ता को यह देखने के लिए कि वे कब खोलते हैं, राशि और एक वैकल्पिक संदेश सेट करें!\n\nएक बार बनने के बाद, आपको एक लिंक मिलेगा जिसे आप किसी को भी भेज सकते हैं, जिसे खोलने पर नॉटिलस स्थापित करने के बाद प्राप्तकर्ता को स्वचालित रूप से धन वितरित किया जाएगा!\n\nयदि प्राप्तकर्ता पहले से ही एक Nautilus उपयोगकर्ता है, तो उन्हें लिंक खोलने पर अपने खाते में धनराशि स्थानांतरित करने का संकेत मिलेगा।"),
+            "Lumex के साथ एक डिजिटल गिफ्ट कार्ड लोड करें! प्राप्तकर्ता को यह देखने के लिए कि वे कब खोलते हैं, राशि और एक वैकल्पिक संदेश सेट करें!\n\nएक बार बनने के बाद, आपको एक लिंक मिलेगा जिसे आप किसी को भी भेज सकते हैं, जिसे खोलने पर नॉटिलस स्थापित करने के बाद प्राप्तकर्ता को स्वचालित रूप से धन वितरित किया जाएगा!\n\nयदि प्राप्तकर्ता पहले से ही एक Lumex उपयोगकर्ता है, तो उन्हें लिंक खोलने पर अपने खाते में धनराशि स्थानांतरित करने का संकेत मिलेगा।"),
         "giftMessage": MessageLookupByLibrary.simpleMessage("गिफ्ट मैसेज"),
         "giftProcessError": MessageLookupByLibrary.simpleMessage(
             "इस उपहार कार्ड को संसाधित करते समय एक त्रुटि हुई थी। हो सकता है कि अपने कनेक्शन की जांच करें और फिर से उपहार लिंक पर क्लिक करने का प्रयास करें।"),
@@ -558,7 +558,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "nameEmpty":
             MessageLookupByLibrary.simpleMessage("कृपया एक नाम दर्ज करें"),
         "natricon": MessageLookupByLibrary.simpleMessage("नैट्रिकोन"),
-        "nautilusWallet": MessageLookupByLibrary.simpleMessage("नॉटिलस वॉलेट"),
+        "lumexWallet": MessageLookupByLibrary.simpleMessage("नॉटिलस वॉलेट"),
         "nearby": MessageLookupByLibrary.simpleMessage("पास ही"),
         "needVerificationAlert": MessageLookupByLibrary.simpleMessage(
             "स्पैम को रोकने के लिए इस सुविधा के लिए आपके पास एक लंबा लेनदेन इतिहास होना आवश्यक है।\n\nवैकल्पिक रूप से, आप किसी व्यक्ति को स्कैन करने के लिए QR कोड दिखा सकते हैं।"),
@@ -688,7 +688,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "proSubRequiredHeader":
             MessageLookupByLibrary.simpleMessage("नॉटिलस प्रो सदस्यता आवश्यक"),
         "proSubRequiredParagraph": MessageLookupByLibrary.simpleMessage(
-            "केवल 1 नैनो प्रति माह के लिए, आप Nautilus Pro की सभी विशेषताओं को अनलॉक कर सकते हैं।"),
+            "केवल 1 नैनो प्रति माह के लिए, आप Lumex Pro की सभी विशेषताओं को अनलॉक कर सकते हैं।"),
         "promotionalLink": MessageLookupByLibrary.simpleMessage("मुफ़्त नैनो"),
         "purchaseCurrency": MessageLookupByLibrary.simpleMessage("खरीद%2"),
         "purchaseNano": MessageLookupByLibrary.simpleMessage("नैनो खरीदें"),
@@ -751,7 +751,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "requestAmountConfirm":
             MessageLookupByLibrary.simpleMessage("निवेद %1 %2"),
         "requestError": MessageLookupByLibrary.simpleMessage(
-            "अनुरोध विफल: इस उपयोगकर्ता के पास Nautilus इंस्टॉल नहीं है, या उसके पास सूचनाएं अक्षम हैं।"),
+            "अनुरोध विफल: इस उपयोगकर्ता के पास Lumex इंस्टॉल नहीं है, या उसके पास सूचनाएं अक्षम हैं।"),
         "requestFrom": MessageLookupByLibrary.simpleMessage("से निवेदन"),
         "requestPayment":
             MessageLookupByLibrary.simpleMessage("भुगतान का अनुरोध करें"),
@@ -829,7 +829,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "एक त्रुटि पाई गई। बाद में पुन: प्रयास करें।"),
         "sendFrom": MessageLookupByLibrary.simpleMessage("भेजने का पता -"),
         "sendMemoError": MessageLookupByLibrary.simpleMessage(
-            "लेनदेन के साथ ज्ञापन भेजना विफल रहा, वे Nautilus उपयोगकर्ता नहीं हो सकते हैं।"),
+            "लेनदेन के साथ ज्ञापन भेजना विफल रहा, वे Lumex उपयोगकर्ता नहीं हो सकते हैं।"),
         "sendMessageConfirm":
             MessageLookupByLibrary.simpleMessage("संदेश भेज रहा है"),
         "sendRequestAgain":
@@ -871,8 +871,8 @@ class MessageLookup extends MessageLookupByLibrary {
             "चेक आउट %1! एक प्रमुख नैनो मोबाइल वॉलेट!"),
         "shareLink": MessageLookupByLibrary.simpleMessage("लिंक शेयर करें"),
         "shareMessage": MessageLookupByLibrary.simpleMessage("संदेश साझा करें"),
-        "shareNautilus": MessageLookupByLibrary.simpleMessage("शेयर नैट्रियम"),
-        "shareNautilusText": MessageLookupByLibrary.simpleMessage(
+        "shareLumex": MessageLookupByLibrary.simpleMessage("शेयर नैट्रियम"),
+        "shareLumexText": MessageLookupByLibrary.simpleMessage(
             "नैट्रियम की जाँच करें! एक प्रमुख नैनो मोबाइल वॉलेट!"),
         "shareText": MessageLookupByLibrary.simpleMessage("पाठ साझा करें"),
         "shopButton": MessageLookupByLibrary.simpleMessage("दुकान"),
@@ -978,7 +978,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "transferIntro": MessageLookupByLibrary.simpleMessage(
             "यह प्रक्रिया एक पेपर वॉलेट से आपके नैट्रियम वॉलेट में फंड ट्रांसफर कर देगी। \n\nशुरू करने के लिए \"%1\" बटन को दबाएँ।"),
         "transferIntroShort": MessageLookupByLibrary.simpleMessage(
-            "यह प्रक्रिया एक पेपर वॉलेट से आपके Nautilus वॉलेट में धनराशि स्थानांतरित कर देगी।"),
+            "यह प्रक्रिया एक पेपर वॉलेट से आपके Lumex वॉलेट में धनराशि स्थानांतरित कर देगी।"),
         "transferLoading":
             MessageLookupByLibrary.simpleMessage("ट्रांसफर हो रहा है"),
         "transferManualHint":
@@ -1016,8 +1016,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "useCurrency":
             MessageLookupByLibrary.simpleMessage("%2 का प्रयोग करें"),
         "useNano": MessageLookupByLibrary.simpleMessage("नैनो का प्रयोग करें"),
-        "useNautilusRep":
-            MessageLookupByLibrary.simpleMessage("Use Nautilus Rep"),
+        "useLumexRep":
+            MessageLookupByLibrary.simpleMessage("Use Lumex Rep"),
         "userAlreadyAddedError": MessageLookupByLibrary.simpleMessage(
             "उपयोगकर्ता पहले ही जोड़ा जा चुका है!"),
         "userNotFound":
@@ -1031,13 +1031,13 @@ class MessageLookup extends MessageLookupByLibrary {
         "usernameError":
             MessageLookupByLibrary.simpleMessage("उपयोगकर्ता नाम त्रुटि"),
         "usernameInfo": MessageLookupByLibrary.simpleMessage(
-            "दोस्तों और परिवार के लिए आपको ढूंढना आसान बनाने के लिए एक अनोखा @username चुनें!\n\nNautilus उपयोगकर्ता नाम होने से आपके नए हैंडल को प्रतिबिंबित करने के लिए वैश्विक स्तर पर UI अपडेट हो जाता है।"),
+            "दोस्तों और परिवार के लिए आपको ढूंढना आसान बनाने के लिए एक अनोखा @username चुनें!\n\nLumex उपयोगकर्ता नाम होने से आपके नए हैंडल को प्रतिबिंबित करने के लिए वैश्विक स्तर पर UI अपडेट हो जाता है।"),
         "usernameInvalid":
             MessageLookupByLibrary.simpleMessage("अवैध उपयोक्ता नाम"),
         "usernameUnavailable":
             MessageLookupByLibrary.simpleMessage("उपयोक्ता नाम अनुपलब्ध"),
         "usernameWarning": MessageLookupByLibrary.simpleMessage(
-            "Nautilus उपयोगकर्ता नाम Nano.to द्वारा प्रदान की जाने वाली एक केंद्रीकृत सेवा है"),
+            "Lumex उपयोगकर्ता नाम Lumex.to द्वारा प्रदान की जाने वाली एक केंद्रीकृत सेवा है"),
         "using": MessageLookupByLibrary.simpleMessage("का उपयोग करते हुए"),
         "viewDetails":
             MessageLookupByLibrary.simpleMessage("अधिक जानकारी देखें"),

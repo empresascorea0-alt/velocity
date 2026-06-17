@@ -5,17 +5,17 @@
 // import 'package:flutter/material.dart';
 // import 'package:keyboard_avoider/keyboard_avoider.dart';
 // import 'package:magic_sdk/magic_sdk.dart';
-// import 'package:wallet_flutter/app_icons.dart';
-// import 'package:wallet_flutter/appstate_container.dart';
-// import 'package:wallet_flutter/dimens.dart';
-// import 'package:wallet_flutter/generated/l10n.dart';
-// import 'package:wallet_flutter/network/auth_service.dart';
-// import 'package:wallet_flutter/service_locator.dart';
-// import 'package:wallet_flutter/styles.dart';
-// import 'package:wallet_flutter/ui/widgets/animations.dart';
-// import 'package:wallet_flutter/ui/widgets/app_text_field.dart';
-// import 'package:wallet_flutter/ui/widgets/buttons.dart';
-// import 'package:wallet_flutter/ui/widgets/tap_outside_unfocus.dart';
+// import 'package:velocity/app_icons.dart';
+// import 'package:velocity/appstate_container.dart';
+// import 'package:velocity/dimens.dart';
+// import 'package:velocity/generated/l10n.dart';
+// import 'package:velocity/network/auth_service.dart';
+// import 'package:velocity/service_locator.dart';
+// import 'package:velocity/styles.dart';
+// import 'package:velocity/ui/widgets/animations.dart';
+// import 'package:velocity/ui/widgets/app_text_field.dart';
+// import 'package:velocity/ui/widgets/buttons.dart';
+// import 'package:velocity/ui/widgets/tap_outside_unfocus.dart';
 
 // class IntroLoginPage extends StatefulWidget {
 //   const IntroLoginPage({super.key});

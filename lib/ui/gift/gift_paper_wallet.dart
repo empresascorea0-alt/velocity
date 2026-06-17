@@ -8,23 +8,23 @@ import 'package:flutter_nano_ffi/flutter_nano_ffi.dart';
 import 'package:intl/intl.dart';
 import 'package:keyboard_avoider/keyboard_avoider.dart';
 import 'package:nanoutil/nanoutil.dart';
-import 'package:wallet_flutter/app_icons.dart';
-import 'package:wallet_flutter/appstate_container.dart';
-import 'package:wallet_flutter/dimens.dart';
-import 'package:wallet_flutter/generated/l10n.dart';
-import 'package:wallet_flutter/localize.dart';
-import 'package:wallet_flutter/model/available_currency.dart';
-import 'package:wallet_flutter/styles.dart';
-import 'package:wallet_flutter/ui/gift/gift_confirm_sheet.dart';
-import 'package:wallet_flutter/ui/send/send_sheet.dart';
-import 'package:wallet_flutter/ui/util/formatters.dart';
-import 'package:wallet_flutter/ui/widgets/app_text_field.dart';
-import 'package:wallet_flutter/ui/widgets/buttons.dart';
-import 'package:wallet_flutter/ui/widgets/dialog.dart';
-import 'package:wallet_flutter/ui/widgets/draggable_scrollbar.dart';
-import 'package:wallet_flutter/ui/widgets/sheet_util.dart';
-import 'package:wallet_flutter/util/nanoutil.dart';
-import 'package:wallet_flutter/util/numberutil.dart';
+import 'package:velocity/app_icons.dart';
+import 'package:velocity/appstate_container.dart';
+import 'package:velocity/dimens.dart';
+import 'package:velocity/generated/l10n.dart';
+import 'package:velocity/localize.dart';
+import 'package:velocity/model/available_currency.dart';
+import 'package:velocity/styles.dart';
+import 'package:velocity/ui/gift/gift_confirm_sheet.dart';
+import 'package:velocity/ui/send/send_sheet.dart';
+import 'package:velocity/ui/util/formatters.dart';
+import 'package:velocity/ui/widgets/app_text_field.dart';
+import 'package:velocity/ui/widgets/buttons.dart';
+import 'package:velocity/ui/widgets/dialog.dart';
+import 'package:velocity/ui/widgets/draggable_scrollbar.dart';
+import 'package:velocity/ui/widgets/sheet_util.dart';
+import 'package:velocity/util/nanoutil.dart';
+import 'package:velocity/util/numberutil.dart';
 
 class GeneratePaperWalletScreen extends StatefulWidget {
   // needs: StateContainer.of(context).curCurrency
@@ -587,7 +587,7 @@ class GeneratePaperWalletScreenState extends State<GeneratePaperWalletScreen> {
 
   // void toggleLocalCurrency() {
   //   // Keep a cache of previous amounts because, it's kinda nice to see approx what nano is worth
-  //   // this way you can tap button and tap back and not end up with X.9993451 NANO
+  //   // this way you can tap button and tap back and not end up with X.9993451 Lumex
   //   if (_localCurrencyMode) {
   //     // Switching to crypto-mode
   //     String cryptoAmountStr;

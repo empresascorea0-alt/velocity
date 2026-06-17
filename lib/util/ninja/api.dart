@@ -1,11 +1,11 @@
 import 'dart:convert';
 
 import 'package:http/http.dart' as http;
-import 'package:wallet_flutter/network/account_service.dart';
-import 'package:wallet_flutter/service_locator.dart';
-import 'package:wallet_flutter/util/ninja/n2_node.dart';
-import 'package:wallet_flutter/util/ninja/ninja_node.dart';
-import 'package:wallet_flutter/util/sharedprefsutil.dart';
+import 'package:velocity/network/account_service.dart';
+import 'package:velocity/service_locator.dart';
+import 'package:velocity/util/ninja/n2_node.dart';
+import 'package:velocity/util/ninja/ninja_node.dart';
+import 'package:velocity/util/sharedprefsutil.dart';
 
 class N2NodeAPI {
   // static const String API_URL = 'https://mynano.ninja/api';

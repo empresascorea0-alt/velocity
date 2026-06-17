@@ -493,7 +493,7 @@
   "connectingHeader": "Bağlanıyor",
   "@connectingHeader": {
     "type": "text",
-    "description": "A header to let the user now that Nautilus is currently connecting to (or loading) live chat."
+    "description": "A header to let the user now that Lumex is currently connecting to (or loading) live chat."
   },
   "connectionWarning": "Bağlanamıyorum",
   "@connectionWarning": {
@@ -697,7 +697,7 @@
     "type": "text",
     "description": "currency_mode_header"
   },
-  "currencyModeInfo": "Miktarları hangi birimde görüntüleneceğini seçin.\n1 nyano = 0.000001 NANO veya \n1,000.000 nyano = 1 NANO",
+  "currencyModeInfo": "Miktarları hangi birimde görüntüleneceğini seçin.\n1 nyano = 0.000001 Lumex veya \n1,000.000 nyano = 1 Lumex",
   "@currencyModeInfo": {
     "type": "text",
     "description": "currency_mode_info"
@@ -727,7 +727,7 @@
     "type": "text",
     "description": "Default account name"
   },
-  "defaultGiftMessage": "Nautilus'a bakın! Size bu bağlantıyla biraz nano gönderdim:",
+  "defaultGiftMessage": "Lumex'a bakın! Size bu bağlantıyla biraz nano gönderdim:",
   "@defaultGiftMessage": {
     "type": "text",
     "description": "default_gift_message"
@@ -957,7 +957,7 @@
     "type": "text",
     "description": "example_card_from"
   },
-  "exampleCardIntro": "Nautilus’a hoşgeldin. Hesabına NANO geldiğinde işlemlerin şu şekilde görünecek",
+  "exampleCardIntro": "Lumex’a hoşgeldin. Hesabına Lumex geldiğinde işlemlerin şu şekilde görünecek",
   "@exampleCardIntro": {
     "type": "text",
     "description": "example_card_intro"
@@ -1047,7 +1047,7 @@
     "type": "text",
     "description": "exchange_currency"
   },
-  "exchangeNano": "NANO değişimi",
+  "exchangeNano": "Lumex değişimi",
   "@exchangeNano": {
     "type": "text",
     "description": "exchange_nano"
@@ -1082,12 +1082,12 @@
     "type": "text",
     "description": "failed_message"
   },
-  "fallbackHeader": "Nautilus Bağlantısı Kesildi",
+  "fallbackHeader": "Lumex Bağlantısı Kesildi",
   "@fallbackHeader": {
     "type": "text",
     "description": "fallback_connected"
   },
-  "fallbackInfo": "Nautilus Sunucularının bağlantısı kesilmiş gibi görünüyor, Gönderme ve Alma (notlar olmadan) hala çalışır durumda olmalıdır, ancak ödeme talepleri geçmeyebilir\n\n Daha sonra tekrar gelin veya tekrar denemek için uygulamayı yeniden başlatın",
+  "fallbackInfo": "Lumex Sunucularının bağlantısı kesilmiş gibi görünüyor, Gönderme ve Alma (notlar olmadan) hala çalışır durumda olmalıdır, ancak ödeme talepleri geçmeyebilir\n\n Daha sonra tekrar gelin veya tekrar denemek için uygulamayı yeniden başlatın",
   "@fallbackInfo": {
     "type": "text",
     "description": "fallback_info"
@@ -1191,7 +1191,7 @@
     "type": "text",
     "description": "get_currency"
   },
-  "getNano": "NANO'yu edinin",
+  "getNano": "Lumex'yu edinin",
   "@getNano": {
     "type": "text",
     "description": "get_nano"
@@ -1231,7 +1231,7 @@
     "type": "text",
     "description": "gift_from"
   },
-  "giftInfo": "NANO ile Dijital Hediye Kartı Yükleyin! Alıcının ne zaman açtıklarını görmesi için bir miktar ve isteğe bağlı bir mesaj belirleyin!\n\nOluşturulduktan sonra, herkese gönderebileceğiniz bir bağlantı alacaksınız, bu da açıldığında Nautilus'u kurduktan sonra parayı alıcıya otomatik olarak dağıtacaktır!\n\nAlıcı zaten bir Nautilus kullanıcısıysa, bağlantıyı açtıktan sonra parayı hesabına aktarma istemi alacaktır.",
+  "giftInfo": "Lumex ile Dijital Hediye Kartı Yükleyin! Alıcının ne zaman açtıklarını görmesi için bir miktar ve isteğe bağlı bir mesaj belirleyin!\n\nOluşturulduktan sonra, herkese gönderebileceğiniz bir bağlantı alacaksınız, bu da açıldığında Lumex'u kurduktan sonra parayı alıcıya otomatik olarak dağıtacaktır!\n\nAlıcı zaten bir Lumex kullanıcısıysa, bağlantıyı açtıktan sonra parayı hesabına aktarma istemi alacaktır.",
   "@giftInfo": {
     "type": "text",
     "description": "Description for gift card creation"
@@ -1356,12 +1356,12 @@
     "type": "text",
     "description": "import_gift_empty"
   },
-  "importGiftIntro": "Görünüşe göre biraz NANO içeren bir bağlantıya tıkladınız, bu fonları almak için cüzdanınızı ayarlamanızı tamamlamanız yeterli.",
+  "importGiftIntro": "Görünüşe göre biraz Lumex içeren bir bağlantıya tıkladınız, bu fonları almak için cüzdanınızı ayarlamanızı tamamlamanız yeterli.",
   "@importGiftIntro": {
     "type": "text",
     "description": "import_gift_intro"
   },
-  "importGiftv2": "Tıkladığınız bağlantı biraz NANO içeriyor, onu bu cüzdana aktarmak ister misiniz?",
+  "importGiftv2": "Tıkladığınız bağlantı biraz Lumex içeriyor, onu bu cüzdana aktarmak ister misiniz?",
   "@importGiftv2": {
     "type": "text",
     "description": "import_gift_v2"
@@ -1466,7 +1466,7 @@
     "type": "text",
     "description": "An error indicating a pin has been entered incorrectly"
   },
-  "iosFundingMessage": "iOS App Store yönergeleri ve kısıtlamaları nedeniyle, sizi bağış sayfamıza bağlayamıyoruz. Projeyi desteklemek istiyorsanız, nautilus düğümünün adresine göndermeyi düşünün.",
+  "iosFundingMessage": "iOS App Store yönergeleri ve kısıtlamaları nedeniyle, sizi bağış sayfamıza bağlayamıyoruz. Projeyi desteklemek istiyorsanız, lumex düğümünün adresine göndermeyi düşünün.",
   "@iosFundingMessage": {
     "type": "text",
     "description": "ios_funding_message"
@@ -1531,7 +1531,7 @@
     "type": "text",
     "description": "settings_logout_warning_title"
   },
-  "logoutDetail": "Çıkış yaptığınızda seed'iniz ve Nautilus'la ilgili bütün verileriniz bu cihazdan silinecektir. Seed'inizi yedeklemediyseniz paranıza bir daha asla ulaşamazsınız.",
+  "logoutDetail": "Çıkış yaptığınızda seed'iniz ve Lumex'la ilgili bütün verileriniz bu cihazdan silinecektir. Seed'inizi yedeklemediyseniz paranıza bir daha asla ulaşamazsınız.",
   "@logoutDetail": {
     "type": "text",
     "description": "settings_logout_alert_message"
@@ -1596,7 +1596,7 @@
     "type": "text",
     "description": "message_header"
   },
-  "minimumSend": "Minimumu Nano yollama miktarı %1",
+  "minimumSend": "Minimumu Lumex yollama miktarı %1",
   "@minimumSend": {
     "type": "text",
     "description": "send_minimum_error"
@@ -1656,10 +1656,10 @@
     "type": "text",
     "description": "natricon_settings"
   },
-  "nautilusWallet": "Nautilus Cüzdanı",
-  "@nautilusWallet": {
+  "lumexWallet": "Lumex Cüzdanı",
+  "@lumexWallet": {
     "type": "text",
-    "description": "nautilus_wallet"
+    "description": "lumex_wallet"
   },
   "nearby": "Yakında",
   "@nearby": {
@@ -1676,7 +1676,7 @@
     "type": "text",
     "description": "verification_needed_header"
   },
-  "newAccountIntro": "Bu senin yeni hesabın. Hesabına NANO geldiğinde işlemlerin aşağıdaki gibi görünecek.",
+  "newAccountIntro": "Bu senin yeni hesabın. Hesabına Lumex geldiğinde işlemlerin aşağıdaki gibi görünecek.",
   "@newAccountIntro": {
     "type": "text",
     "description": "Alternate account intro card"
@@ -1746,7 +1746,7 @@
     "type": "text",
     "description": "no_thanks_app_button"
   },
-  "notificationBody": "Bu transferi görmek için Nautilus’u aç.",
+  "notificationBody": "Bu transferi görmek için Lumex’u aç.",
   "@notificationBody": {
     "type": "text",
     "description": "notification_body"
@@ -1891,10 +1891,10 @@
     "type": "text",
     "description": "An error indicating the password is incorrect"
   },
-  "passwordNoLongerRequiredToOpenParagraph": "Artık Nautilus'u açmak için şifre gerekmeyecek.",
+  "passwordNoLongerRequiredToOpenParagraph": "Artık Lumex'u açmak için şifre gerekmeyecek.",
   "@passwordNoLongerRequiredToOpenParagraph": {
     "type": "text",
-    "description": "An info paragraph that tells the user a password will no longer be needed to open Nautilus"
+    "description": "An info paragraph that tells the user a password will no longer be needed to open Velocity"
   },
   "passwordNumber": "Şifre en az 1 rakam içermelidir",
   "@passwordNumber": {
@@ -1916,15 +1916,15 @@
     "type": "text",
     "description": "An error indicating the password is too short"
   },
-  "passwordWarning": "Nautilus'u açmak için bu parola gerekli olacaktır.",
+  "passwordWarning": "Lumex'u açmak için bu parola gerekli olacaktır.",
   "@passwordWarning": {
     "type": "text",
     "description": "A paragraph that warns the user to not lose their password."
   },
-  "passwordWillBeRequiredToOpenParagraph": "Nautilus'u açabilmek için bu şifre gerekecek.",
+  "passwordWillBeRequiredToOpenParagraph": "Lumex'u açabilmek için bu şifre gerekecek.",
   "@passwordWillBeRequiredToOpenParagraph": {
     "type": "text",
-    "description": "A paragraph that tells the users that the created password will be required to open Nautilus."
+    "description": "A paragraph that tells the users that the created password will be required to open Velocity."
   },
   "pastDue": "Vadesi Geçti",
   "@pastDue": {
@@ -2061,17 +2061,17 @@
     "type": "text",
     "description": "settings_privacy_policy"
   },
-  "promotionalLink": "Ücretsiz NANO",
+  "promotionalLink": "Ücretsiz Lumex",
   "@promotionalLink": {
     "type": "text",
     "description": "promo_Link"
   },
-  "proSubRequiredHeader": "Nautilus Pro Aboneliği Gerekli",
+  "proSubRequiredHeader": "Velocity Pro Aboneliği Gerekli",
   "@proSubRequiredHeader": {
     "type": "text",
     "description": "pro_sub_required_header"
   },
-  "proSubRequiredParagraph": "Ayda sadece 1 NANO karşılığında Nautilus Pro'nun tüm özelliklerinin kilidini açabilirsiniz.",
+  "proSubRequiredParagraph": "Ayda sadece 1 Lumex karşılığında Velocity Pro'nun tüm özelliklerinin kilidini açabilirsiniz.",
   "@proSubRequiredParagraph": {
     "type": "text",
     "description": "pro_sub_required_paragraph"
@@ -2081,7 +2081,7 @@
     "type": "text",
     "description": "purchase_currency"
   },
-  "purchaseNano": "Satın al Nano",
+  "purchaseNano": "Satın al Lumex",
   "@purchaseNano": {
     "type": "text",
     "description": "purchase_nano"
@@ -2286,7 +2286,7 @@
     "type": "text",
     "description": "requested_from"
   },
-  "requestError": "İstek Başarısız: Bu kullanıcı Nautilus yüklü görünmüyor, veya bildirimler devre dışı bırakıldı.",
+  "requestError": "İstek Başarısız: Bu kullanıcı Lumex yüklü görünmüyor, veya bildirimler devre dışı bırakıldı.",
   "@requestError": {
     "type": "text",
     "description": "request_generic_error"
@@ -2316,7 +2316,7 @@
     "type": "text",
     "description": "request_sent_again"
   },
-  "requestSheetInfo": "Uçtan Uca Şifreli mesajlarla ödeme talep edin!\n\nÖdeme istekleri, notlar ve mesajlar yalnızca diğer nautilus kullanıcıları tarafından alınabilir, ancak alıcı nautilus kullanmasa bile bunları kendi kayıt tutmak için kullanabilirsiniz.",
+  "requestSheetInfo": "Uçtan Uca Şifreli mesajlarla ödeme talep edin!\n\nÖdeme istekleri, notlar ve mesajlar yalnızca diğer lumex kullanıcıları tarafından alınabilir, ancak alıcı lumex kullanmasa bile bunları kendi kayıt tutmak için kullanabilirsiniz.",
   "@requestSheetInfo": {
     "type": "text",
     "description": "request_sheet_info"
@@ -2326,10 +2326,10 @@
     "type": "text",
     "description": "request_sheet_info_header"
   },
-  "requireAPasswordToOpenHeader": "Nautilus'u açarken şifre sorulsun mu?",
+  "requireAPasswordToOpenHeader": "Lumex'u açarken şifre sorulsun mu?",
   "@requireAPasswordToOpenHeader": {
     "type": "text",
-    "description": "A paragraph that asks the users if they would like a password to be required to open Nautilus."
+    "description": "A paragraph that asks the users if they would like a password to be required to open Velocity."
   },
   "requireCaptcha": "Hediye kartı talep etmek için CAPTCHA gerektir",
   "@requireCaptcha": {
@@ -2376,7 +2376,7 @@
     "type": "text",
     "description": "dialog_save"
   },
-  "scanInstructions": "Nano Adresi'nin \n QR Kodu'nu tarayın",
+  "scanInstructions": "Lumex Adresi'nin \n QR Kodu'nu tarayın",
   "@scanInstructions": {
     "type": "text",
     "description": "scan_send_instruction_label"
@@ -2511,7 +2511,7 @@
     "type": "text",
     "description": "send_sending"
   },
-  "sendMemoError": "İşlem ile not gönderme başarısız oldu, Nautilus kullanıcısı olmayabilirler.",
+  "sendMemoError": "İşlem ile not gönderme başarısız oldu, Lumex kullanıcısı olmayabilirler.",
   "@sendMemoError": {
     "type": "text",
     "description": "send_memo_error"
@@ -2531,7 +2531,7 @@
     "type": "text",
     "description": "split_bill_send_requests"
   },
-  "sendSheetInfo": "Uçtan Uca Şifreli mesajlarla ödeme gönderin veya talep edin!\n\nÖdeme istekleri, notlar, ve mesajlar yalnızca diğer nautilus kullanıcıları tarafından alınacaktır.\n\nÖdeme istekleri göndermek veya almak için bir kullanıcı adınızın olması gerekmez, ve nautilus kullanmasalar bile bunları kendi kayıt tutmanız için kullanabilirsiniz.",
+  "sendSheetInfo": "Uçtan Uca Şifreli mesajlarla ödeme gönderin veya talep edin!\n\nÖdeme istekleri, notlar, ve mesajlar yalnızca diğer lumex kullanıcıları tarafından alınacaktır.\n\nÖdeme istekleri göndermek veya almak için bir kullanıcı adınızın olması gerekmez, ve lumex kullanmasalar bile bunları kendi kayıt tutmanız için kullanabilirsiniz.",
   "@sendSheetInfo": {
     "type": "text",
     "description": "send_sheet_info"
@@ -2624,14 +2624,14 @@
   "share": "Paylaşmak",
   "@share": {
     "type": "text",
-    "description": "nautilus_share"
+    "description": "lumex_share"
   },
   "shareApp": "%1 paylaş",
   "@shareApp": {
     "type": "text",
     "description": "settings_share"
   },
-  "shareAppText": "%1'e göz atın! Birinci sınıf bir NANO mobil cüzdan!",
+  "shareAppText": "%1'e göz atın! Birinci sınıf bir Lumex mobil cüzdan!",
   "@shareAppText": {
     "type": "text",
     "description": "share_extra"
@@ -2646,13 +2646,13 @@
     "type": "text",
     "description": "share_message"
   },
-  "shareNautilus": "Nautilus'u Paylaş",
-  "@shareNautilus": {
+  "shareLumex": "Lumex'u Paylaş",
+  "@shareLumex": {
     "type": "text",
     "description": "settings_share"
   },
-  "shareNautilusText": "Nano'nun resmi Android Cüzdanı Nautilus'u denesene!",
-  "@shareNautilusText": {
+  "shareLumexText": "Lumex'nun resmi Android Cüzdanı Lumex'u denesene!",
+  "@shareLumexText": {
     "type": "text",
     "description": "share_extra"
   },
@@ -2751,7 +2751,7 @@
     "type": "text",
     "description": "spend_currency"
   },
-  "spendNano": "NANO harca",
+  "spendNano": "Lumex harca",
   "@spendNano": {
     "type": "text",
     "description": "spend_nano"
@@ -2846,7 +2846,7 @@
     "type": "text",
     "description": "swap_xmr_header"
   },
-  "swapXMRInfo": "Monero, işlemleri izlemeyi çok zor hatta imkansız kılan gizlilik odaklı bir kripto para birimidir. Bu arada NANO, hızlı ve ücretsiz, ödeme odaklı bir kripto para birimidir. Birlikte kripto para birimlerinin en faydalı yönlerinden bazılarını sağlarlar!\n\nNANO'nuzu XMR ile kolayca değiştirmek için bu sayfayı kullanın!",
+  "swapXMRInfo": "Monero, işlemleri izlemeyi çok zor hatta imkansız kılan gizlilik odaklı bir kripto para birimidir. Bu arada Lumex, hızlı ve ücretsiz, ödeme odaklı bir kripto para birimidir. Birlikte kripto para birimlerinin en faydalı yönlerinden bazılarını sağlarlar!\n\nNANO'nuzu XMR ile kolayca değiştirmek için bu sayfayı kullanın!",
   "@swapXMRInfo": {
     "type": "text",
     "description": "swap_xmr_header"
@@ -2946,7 +2946,7 @@
     "type": "text",
     "description": "transfer_close_text"
   },
-  "transferComplete": "%1 NANO başarıyla Nautilus cüzdanına aktarıldı.",
+  "transferComplete": "%1 Lumex başarıyla Lumex cüzdanına aktarıldı.",
   "@transferComplete": {
     "type": "text",
     "description": "transfer_complete_text"
@@ -2976,12 +2976,12 @@
     "type": "text",
     "description": "transfer_header"
   },
-  "transferIntro": "Bu işlem bir kağıt cüzdanda bulunan bakiyeyi senin Nautilus cüzdanına aktaracak.\n\nBaşlamak için \"%1\" butonuna bas.",
+  "transferIntro": "Bu işlem bir kağıt cüzdanda bulunan bakiyeyi senin Lumex cüzdanına aktaracak.\n\nBaşlamak için \"%1\" butonuna bas.",
   "@transferIntro": {
     "type": "text",
     "description": "transfer_intro"
   },
-  "transferIntroShort": "Bu işlem, parayı bir kağıt cüzdandan Nautilus cüzdanınıza aktaracaktır.",
+  "transferIntroShort": "Bu işlem, parayı bir kağıt cüzdandan Lumex cüzdanınıza aktaracaktır.",
   "@transferIntroShort": {
     "type": "text",
     "description": "transfer_intro_short"
@@ -2996,7 +2996,7 @@
     "type": "text",
     "description": "transfer_hint"
   },
-  "transferNoFunds": "Bu seedin içinde hiç NANO yok.",
+  "transferNoFunds": "Bu seedin içinde hiç Lumex yok.",
   "@transferNoFunds": {
     "type": "text",
     "description": "transfer_no_funds_toast"
@@ -3006,7 +3006,7 @@
     "type": "text",
     "description": "transfer_qr_scan_error"
   },
-  "transferQrScanHint": "Bir Nano seedi \nveya private key'i tara",
+  "transferQrScanHint": "Bir Lumex seedi \nveya private key'i tara",
   "@transferQrScanHint": {
     "type": "text",
     "description": "transfer_qr_scan_hint"
@@ -3031,12 +3031,12 @@
     "type": "text",
     "description": "unlocktxt"
   },
-  "unlockBiometrics": "Nautilus’u Açmak için Kimliğini Doğrula",
+  "unlockBiometrics": "Lumex’u Açmak için Kimliğini Doğrula",
   "@unlockBiometrics": {
     "type": "text",
     "description": "unlock_bio"
   },
-  "unlockPin": "Nautilus’u Açmak için Pin Kodunu Gir",
+  "unlockPin": "Lumex’u Açmak için Pin Kodunu Gir",
   "@unlockPin": {
     "type": "text",
     "description": "unlock_pin"
@@ -3096,15 +3096,15 @@
     "type": "text",
     "description": "use_currency"
   },
-  "useNano": "NANO kullan",
+  "useNano": "Lumex kullan",
   "@useNano": {
     "type": "text",
     "description": "use_nano"
   },
-  "useNautilusRep": "Use Nautilus Rep",
-  "@useNautilusRep": {
+  "useLumexRep": "Use Lumex Rep",
+  "@useLumexRep": {
     "type": "text",
-    "description": "use nautilus node as rep"
+    "description": "use lumex node as rep"
   },
   "userAlreadyAddedError": "Kullanıcı zaten eklendi!",
   "@userAlreadyAddedError": {
@@ -3131,7 +3131,7 @@
     "type": "text",
     "description": "username_unknown_error"
   },
-  "usernameInfo": "Arkadaşlarınızın ve ailenizin sizi bulmasını kolaylaştırmak için benzersiz bir @username seçin!\n\nBir Nautilus kullanıcı adına sahip olmak, yeni tanıtıcınızı yansıtacak şekilde kullanıcı arayüzünü küresel olarak günceller.",
+  "usernameInfo": "Arkadaşlarınızın ve ailenizin sizi bulmasını kolaylaştırmak için benzersiz bir @username seçin!\n\nBir Lumex kullanıcı adına sahip olmak, yeni tanıtıcınızı yansıtacak şekilde kullanıcı arayüzünü küresel olarak günceller.",
   "@usernameInfo": {
     "type": "text",
     "description": "Description for username registration"
@@ -3146,7 +3146,7 @@
     "type": "text",
     "description": "username_unavailable"
   },
-  "usernameWarning": "Nautilus kullanıcı adları Nano.to tarafından sağlanan merkezi bir hizmettir",
+  "usernameWarning": "Lumex kullanıcı adları Lumex.to tarafından sağlanan merkezi bir hizmettir",
   "@usernameWarning": {
     "type": "text",
     "description": "Username centralization warning"
@@ -3211,17 +3211,17 @@
     "type": "text",
     "description": "frequency_weekly"
   },
-  "welcomeText": "Nautilus'a hoşgeldiniz. Devam etmek için yeni bir cüzdan oluşturabilir veya var olanı içe aktarabilirsiniz.",
+  "welcomeText": "Lumex'a hoşgeldiniz. Devam etmek için yeni bir cüzdan oluşturabilir veya var olanı içe aktarabilirsiniz.",
   "@welcomeText": {
     "type": "text",
     "description": "intro_welcome_title"
   },
-  "welcomeTextLogin": "Nautilus'a hoş geldiniz. Başlamak için bir seçenek belirleyin veya aşağıdaki simgeyi kullanarak bir tema seçin.",
+  "welcomeTextLogin": "Lumex'a hoş geldiniz. Başlamak için bir seçenek belirleyin veya aşağıdaki simgeyi kullanarak bir tema seçin.",
   "@welcomeTextLogin": {
     "type": "text",
     "description": "intro_welcome_login"
   },
-  "welcomeTextUpdated": "Nautilus'a hoş geldiniz. Başlamak için yeni bir cüzdan oluşturun veya mevcut bir cüzdanı içe aktarın.",
+  "welcomeTextUpdated": "Lumex'a hoş geldiniz. Başlamak için yeni bir cüzdan oluşturun veya mevcut bir cüzdanı içe aktarın.",
   "@welcomeTextUpdated": {
     "type": "text",
     "description": "intro_welcome_title"

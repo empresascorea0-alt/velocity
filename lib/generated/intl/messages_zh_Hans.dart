@@ -197,7 +197,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "请记住将节点更改为/从 BANANO 节点以使更改生效！您可以在高级设置菜单 -> 更改节点中执行此操作。"),
         "currencyModeHeader": MessageLookupByLibrary.simpleMessage("货币模式信息"),
         "currencyModeInfo": MessageLookupByLibrary.simpleMessage(
-            "选择要显示金额的单位。\n1 nyano = 0.000001 NANO，或者 \n1,000,000 nyano = 1 NANO"),
+            "选择要显示金额的单位。\n1 nyano = 0.000001 Lumex，或者 \n1,000,000 nyano = 1 Lumex"),
         "currentlyRepresented": MessageLookupByLibrary.simpleMessage("当前代表"),
         "daily": MessageLookupByLibrary.simpleMessage("日常的"),
         "dayAgo": MessageLookupByLibrary.simpleMessage("一天前"),
@@ -264,7 +264,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "eula": MessageLookupByLibrary.simpleMessage("EULA"),
         "exampleCardFrom": MessageLookupByLibrary.simpleMessage("来自某人"),
         "exampleCardIntro": MessageLookupByLibrary.simpleMessage(
-            "欢迎来到Nautilus。当您收到或发送NANO时，交易将如下出现。"),
+            "欢迎来到Lumex。当您收到或发送NANO时，交易将如下出现。"),
         "exampleCardLittle": MessageLookupByLibrary.simpleMessage("一点"),
         "exampleCardLot": MessageLookupByLibrary.simpleMessage("很多"),
         "exampleCardTo": MessageLookupByLibrary.simpleMessage("发给某人"),
@@ -299,7 +299,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "failedMessage": MessageLookupByLibrary.simpleMessage("msg failed"),
         "fallbackHeader": MessageLookupByLibrary.simpleMessage("鹦鹉螺已断开连接"),
         "fallbackInfo": MessageLookupByLibrary.simpleMessage(
-            "Nautilus 服务器似乎已断开连接，发送和接收（无备忘录）应该仍然可以运行，但付款请求可能无法通过\n\n 稍后再回来或重启应用程序再试一次"),
+            "Lumex 服务器似乎已断开连接，发送和接收（无备忘录）应该仍然可以运行，但付款请求可能无法通过\n\n 稍后再回来或重启应用程序再试一次"),
         "favoriteExists": MessageLookupByLibrary.simpleMessage("收藏夹已存在"),
         "favoriteHeader": MessageLookupByLibrary.simpleMessage("最喜欢的"),
         "favoriteInvalid": MessageLookupByLibrary.simpleMessage("收藏名称无效"),
@@ -334,7 +334,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "giftCardInfoHeader": MessageLookupByLibrary.simpleMessage("礼品单信息"),
         "giftFrom": MessageLookupByLibrary.simpleMessage("礼物来自"),
         "giftInfo": MessageLookupByLibrary.simpleMessage(
-            "使用 NANO 加载一张数字礼品卡！设置金额和一条可选消息，供收件人打开时查看！\n\n创建后，您将获得一个可以发送给任何人的链接，该链接打开后将在安装Nautilus后自动将资金分配给收款人！\n\n如果收款人已经是Nautilus用户，他们将在打开链接时收到将资金转入其账户的提示。"),
+            "使用 Lumex 加载一张数字礼品卡！设置金额和一条可选消息，供收件人打开时查看！\n\n创建后，您将获得一个可以发送给任何人的链接，该链接打开后将在安装Lumex后自动将资金分配给收款人！\n\n如果收款人已经是Lumex用户，他们将在打开链接时收到将资金转入其账户的提示。"),
         "giftMessage": MessageLookupByLibrary.simpleMessage("礼物留言"),
         "giftProcessError": MessageLookupByLibrary.simpleMessage(
             "处理此礼品卡时出错。也许检查您的连接并尝试再次单击礼物链接。"),
@@ -369,9 +369,9 @@ class MessageLookup extends MessageLookupByLibrary {
         "importGiftEmpty": MessageLookupByLibrary.simpleMessage(
             "Unfortunately the link you clicked that contained some nano appears to be empty, but you can still see the amount and associated message."),
         "importGiftIntro": MessageLookupByLibrary.simpleMessage(
-            "看起来你点击了一个包含一些 NANO 的链接，为了接收这些资金，我们只需要你完成设置你的钱包。"),
+            "看起来你点击了一个包含一些 Lumex 的链接，为了接收这些资金，我们只需要你完成设置你的钱包。"),
         "importGiftv2":
-            MessageLookupByLibrary.simpleMessage("您点击的链接包含一些 NANO，您想将其导入此钱包吗？"),
+            MessageLookupByLibrary.simpleMessage("您点击的链接包含一些 Lumex，您想将其导入此钱包吗？"),
         "importHD": MessageLookupByLibrary.simpleMessage("导入高清"),
         "importHDTrust": MessageLookupByLibrary.simpleMessage("导入高清/信任"),
         "importSecretPhrase": MessageLookupByLibrary.simpleMessage("输入秘密词语"),
@@ -396,7 +396,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "invalidPassword": MessageLookupByLibrary.simpleMessage("无效密码"),
         "invalidPin": MessageLookupByLibrary.simpleMessage("无效引脚"),
         "iosFundingMessage": MessageLookupByLibrary.simpleMessage(
-            "由于 iOS App Store 指南和限制，我们无法将您链接到我们的捐赠页面。如果您想支持该项目，请考虑发送到 nautilus 节点的地址。"),
+            "由于 iOS App Store 指南和限制，我们无法将您链接到我们的捐赠页面。如果您想支持该项目，请考虑发送到 lumex 节点的地址。"),
         "language": MessageLookupByLibrary.simpleMessage("语言"),
         "linkCopied": MessageLookupByLibrary.simpleMessage("链接已复制"),
         "loaded": MessageLookupByLibrary.simpleMessage("已加载"),
@@ -409,7 +409,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "logoutAction": MessageLookupByLibrary.simpleMessage("删除种子并登出"),
         "logoutAreYouSure": MessageLookupByLibrary.simpleMessage("您确定？"),
         "logoutDetail": MessageLookupByLibrary.simpleMessage(
-            "注销将从此设备中删除您的种子和所有与Nautilus相关的数据。如果您的种子代码没有备份，您将永远无法再次访问您的帐户"),
+            "注销将从此设备中删除您的种子和所有与Lumex相关的数据。如果您的种子代码没有备份，您将永远无法再次访问您的帐户"),
         "logoutReassurance":
             MessageLookupByLibrary.simpleMessage("只要您有备份您的种子，就没有什么可担心的。"),
         "looksLikeHdSeed": MessageLookupByLibrary.simpleMessage(
@@ -441,14 +441,14 @@ class MessageLookup extends MessageLookupByLibrary {
         "moreSettings": MessageLookupByLibrary.simpleMessage("更多设置"),
         "nameEmpty": MessageLookupByLibrary.simpleMessage("请输入姓名"),
         "natricon": MessageLookupByLibrary.simpleMessage("Natricon"),
-        "nautilusWallet": MessageLookupByLibrary.simpleMessage("鹦鹉螺钱包"),
+        "lumexWallet": MessageLookupByLibrary.simpleMessage("鹦鹉螺钱包"),
         "nearby": MessageLookupByLibrary.simpleMessage("附近"),
         "needVerificationAlert": MessageLookupByLibrary.simpleMessage(
             "此功能要求您具有更长的交易历史记录，以防止垃圾邮件。\n\n或者，您可以显示二维码供他人扫描。"),
         "needVerificationAlertHeader":
             MessageLookupByLibrary.simpleMessage("需要验证"),
         "newAccountIntro": MessageLookupByLibrary.simpleMessage(
-            "这是您的新账户。当您收到 NANO 时, 交易会如下出现："),
+            "这是您的新账户。当您收到 Lumex 时, 交易会如下出现："),
         "newWallet": MessageLookupByLibrary.simpleMessage("创建新钱包"),
         "nextButton": MessageLookupByLibrary.simpleMessage("继续"),
         "nextPayment": MessageLookupByLibrary.simpleMessage("下次付款"),
@@ -465,7 +465,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "noneMethod": MessageLookupByLibrary.simpleMessage("没有任何"),
         "notSent": MessageLookupByLibrary.simpleMessage("未发送"),
         "notificationBody":
-            MessageLookupByLibrary.simpleMessage("打开Nautilus查看此交易"),
+            MessageLookupByLibrary.simpleMessage("打开Lumex查看此交易"),
         "notificationHeaderSupplement":
             MessageLookupByLibrary.simpleMessage("点击打开"),
         "notificationInfo":
@@ -500,16 +500,16 @@ class MessageLookup extends MessageLookupByLibrary {
             "如果您忘记了密码，我们概不负责，并且我们无法为您重置或更改密码。"),
         "passwordIncorrect": MessageLookupByLibrary.simpleMessage("密码错误"),
         "passwordNoLongerRequiredToOpenParagraph":
-            MessageLookupByLibrary.simpleMessage("您以后打开Nautilus不再需要密码了。"),
+            MessageLookupByLibrary.simpleMessage("您以后打开Lumex不再需要密码了。"),
         "passwordNumber":
             MessageLookupByLibrary.simpleMessage("密码必须至少包含 1 个数字"),
         "passwordSpecialCharacter":
             MessageLookupByLibrary.simpleMessage("密码必须至少包含 1 个特殊字符"),
         "passwordTooShort": MessageLookupByLibrary.simpleMessage("密码太短"),
         "passwordWarning":
-            MessageLookupByLibrary.simpleMessage("打开 Nautilus 需要此密码。"),
+            MessageLookupByLibrary.simpleMessage("打开 Lumex 需要此密码。"),
         "passwordWillBeRequiredToOpenParagraph":
-            MessageLookupByLibrary.simpleMessage("以后需要这个密码才能打开Nautilus。"),
+            MessageLookupByLibrary.simpleMessage("以后需要这个密码才能打开Lumex。"),
         "passwordsDontMatch": MessageLookupByLibrary.simpleMessage("密码不匹配"),
         "pastDue": MessageLookupByLibrary.simpleMessage("逾期"),
         "pay": MessageLookupByLibrary.simpleMessage("付钱"),
@@ -543,12 +543,12 @@ class MessageLookup extends MessageLookupByLibrary {
         "preferences": MessageLookupByLibrary.simpleMessage("偏好"),
         "privacyPolicy": MessageLookupByLibrary.simpleMessage("隐私政策"),
         "proSubRequiredHeader":
-            MessageLookupByLibrary.simpleMessage("需要订阅 Nautilus Pro"),
+            MessageLookupByLibrary.simpleMessage("需要订阅 Lumex Pro"),
         "proSubRequiredParagraph": MessageLookupByLibrary.simpleMessage(
-            "每月只需 1 NANO，您就可以解锁 Nautilus Pro 的所有功能。"),
+            "每月只需 1 Lumex，您就可以解锁 Lumex Pro 的所有功能。"),
         "promotionalLink": MessageLookupByLibrary.simpleMessage("免费纳米"),
         "purchaseCurrency": MessageLookupByLibrary.simpleMessage("购买 %2"),
-        "purchaseNano": MessageLookupByLibrary.simpleMessage("购买 Nano"),
+        "purchaseNano": MessageLookupByLibrary.simpleMessage("购买 Lumex"),
         "qrInvalidAddress":
             MessageLookupByLibrary.simpleMessage("二维码不包含一个有效的地址"),
         "qrInvalidPermissions":
@@ -601,7 +601,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "requestAmountConfirm":
             MessageLookupByLibrary.simpleMessage("请求 %1 %2"),
         "requestError": MessageLookupByLibrary.simpleMessage(
-            "请求失败：此用户似乎没有安装 Nautilus，或者禁用了通知。"),
+            "请求失败：此用户似乎没有安装 Lumex，或者禁用了通知。"),
         "requestFrom": MessageLookupByLibrary.simpleMessage("请求来自"),
         "requestPayment": MessageLookupByLibrary.simpleMessage("申请付款"),
         "requestSendError": MessageLookupByLibrary.simpleMessage(
@@ -609,13 +609,13 @@ class MessageLookup extends MessageLookupByLibrary {
         "requestSentButNotReceived": MessageLookupByLibrary.simpleMessage(
             "请求重新发送！如果仍未确认，则收件人的设备可能处于脱机状态。"),
         "requestSheetInfo": MessageLookupByLibrary.simpleMessage(
-            "使用端到端加密消息请求付款！\n\n付款请求、备忘录和消息只能由其他 nautilus 用户接收，但即使收件人不使用 nautilus，您也可以将它们用于自己的记录保存。"),
+            "使用端到端加密消息请求付款！\n\n付款请求、备忘录和消息只能由其他 lumex 用户接收，但即使收件人不使用 lumex，您也可以将它们用于自己的记录保存。"),
         "requestSheetInfoHeader": MessageLookupByLibrary.simpleMessage("请求表信息"),
         "requested": MessageLookupByLibrary.simpleMessage("已请求"),
         "requestedFrom": MessageLookupByLibrary.simpleMessage("请求自"),
         "requesting": MessageLookupByLibrary.simpleMessage("正在申请"),
         "requireAPasswordToOpenHeader":
-            MessageLookupByLibrary.simpleMessage("需要密码来打开Nautilus吗？"),
+            MessageLookupByLibrary.simpleMessage("需要密码来打开Lumex吗？"),
         "requireCaptcha":
             MessageLookupByLibrary.simpleMessage("要求 CAPTCHA 领取礼品卡"),
         "resendMemo": MessageLookupByLibrary.simpleMessage("重新发送此备忘录"),
@@ -660,12 +660,12 @@ class MessageLookup extends MessageLookupByLibrary {
         "sendError": MessageLookupByLibrary.simpleMessage("发生错误。请稍后再试。"),
         "sendFrom": MessageLookupByLibrary.simpleMessage("发送自"),
         "sendMemoError": MessageLookupByLibrary.simpleMessage(
-            "发送包含交易的备忘录失败，他们可能不是Nautilus用户。"),
+            "发送包含交易的备忘录失败，他们可能不是Lumex用户。"),
         "sendMessageConfirm": MessageLookupByLibrary.simpleMessage("正在发送消息"),
         "sendRequestAgain": MessageLookupByLibrary.simpleMessage("再次发送请求"),
         "sendRequests": MessageLookupByLibrary.simpleMessage("发送请求"),
         "sendSheetInfo": MessageLookupByLibrary.simpleMessage(
-            "使用端到端加密消息发送或请求付款！\n\n付款请求、备忘录和消息只能由其他 nautilus 用户接收。\n\n您无需拥有用户名即可发送或接收付款请求，即使他们不使用nautilus，您也可以将其用于自己的记录保存。"),
+            "使用端到端加密消息发送或请求付款！\n\n付款请求、备忘录和消息只能由其他 lumex 用户接收。\n\n您无需拥有用户名即可发送或接收付款请求，即使他们不使用lumex，您也可以将其用于自己的记录保存。"),
         "sendSheetInfoHeader": MessageLookupByLibrary.simpleMessage("发送工作表信息"),
         "sending": MessageLookupByLibrary.simpleMessage("发出"),
         "sent": MessageLookupByLibrary.simpleMessage("发送"),
@@ -691,12 +691,12 @@ class MessageLookup extends MessageLookupByLibrary {
         "share": MessageLookupByLibrary.simpleMessage("分享"),
         "shareApp": MessageLookupByLibrary.simpleMessage("共享 %1"),
         "shareAppText":
-            MessageLookupByLibrary.simpleMessage("检查 %1！首屈一指的 NANO 手机钱包！"),
+            MessageLookupByLibrary.simpleMessage("检查 %1！首屈一指的 Lumex 手机钱包！"),
         "shareLink": MessageLookupByLibrary.simpleMessage("分享链接"),
         "shareMessage": MessageLookupByLibrary.simpleMessage("分享讯息"),
-        "shareNautilus": MessageLookupByLibrary.simpleMessage("分享Nautilus"),
-        "shareNautilusText":
-            MessageLookupByLibrary.simpleMessage("来试试Nautilus！ 一个卓越的NANO手机钱包！"),
+        "shareLumex": MessageLookupByLibrary.simpleMessage("分享Lumex"),
+        "shareLumexText":
+            MessageLookupByLibrary.simpleMessage("来试试Lumex！ 一个卓越的NANO手机钱包！"),
         "shareText": MessageLookupByLibrary.simpleMessage("分享文字"),
         "shopButton": MessageLookupByLibrary.simpleMessage("店铺"),
         "show": MessageLookupByLibrary.simpleMessage("节目"),
@@ -716,7 +716,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "social": MessageLookupByLibrary.simpleMessage("社会的"),
         "someone": MessageLookupByLibrary.simpleMessage("某人"),
         "spendCurrency": MessageLookupByLibrary.simpleMessage("花费 %2"),
-        "spendNano": MessageLookupByLibrary.simpleMessage("花费 NANO"),
+        "spendNano": MessageLookupByLibrary.simpleMessage("花费 Lumex"),
         "splitBill": MessageLookupByLibrary.simpleMessage("拆分账单"),
         "splitBillHeader": MessageLookupByLibrary.simpleMessage("拆分账单"),
         "splitBillInfo": MessageLookupByLibrary.simpleMessage(
@@ -738,7 +738,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "swapXMR": MessageLookupByLibrary.simpleMessage("交换 XMR"),
         "swapXMRHeader": MessageLookupByLibrary.simpleMessage("交换门罗币"),
         "swapXMRInfo": MessageLookupByLibrary.simpleMessage(
-            "门罗币是一种以隐私为中心的加密货币，它使得追踪交易变得非常困难甚至不可能。同时，NANO 是一种以支付为中心的加密货币，速度快，费用低。它们一起提供了加密货币的一些最有用的方面！\n\n使用此页面轻松将您的 NANO 换成 XMR！"),
+            "门罗币是一种以隐私为中心的加密货币，它使得追踪交易变得非常困难甚至不可能。同时，Lumex 是一种以支付为中心的加密货币，速度快，费用低。它们一起提供了加密货币的一些最有用的方面！\n\n使用此页面轻松将您的 Lumex 换成 XMR！"),
         "swapping": MessageLookupByLibrary.simpleMessage("交换"),
         "switchToSeed": MessageLookupByLibrary.simpleMessage("转换成种子"),
         "systemDefault": MessageLookupByLibrary.simpleMessage("系统默认"),
@@ -764,7 +764,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "transfer": MessageLookupByLibrary.simpleMessage("传送"),
         "transferClose": MessageLookupByLibrary.simpleMessage("点击任意位置关闭窗口。"),
         "transferComplete": MessageLookupByLibrary.simpleMessage(
-            "%1 NANO 成功传送到您的 Nautilus 钱包。\n"),
+            "%1 Lumex 成功传送到您的 Lumex 钱包。\n"),
         "transferConfirmInfo":
             MessageLookupByLibrary.simpleMessage("检测到一个包含 %1 %2 的钱包。\n"),
         "transferConfirmInfoSecond":
@@ -775,24 +775,24 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("传送出现了问题，请稍后再尝试。"),
         "transferHeader": MessageLookupByLibrary.simpleMessage("传送钱币"),
         "transferIntro": MessageLookupByLibrary.simpleMessage(
-            "这个过程会将纸钱包的钱币转移到您的 Nautilus 钱包。\n\n请按 \"%1\" 键开始。"),
+            "这个过程会将纸钱包的钱币转移到您的 Lumex 钱包。\n\n请按 \"%1\" 键开始。"),
         "transferIntroShort": MessageLookupByLibrary.simpleMessage(
-            "此过程会将资金从纸质钱包转移到您的Nautilus钱包。"),
+            "此过程会将资金从纸质钱包转移到您的Lumex钱包。"),
         "transferLoading": MessageLookupByLibrary.simpleMessage("传送中"),
         "transferManualHint": MessageLookupByLibrary.simpleMessage("请输入种子。"),
         "transferNoFunds":
-            MessageLookupByLibrary.simpleMessage("这个种子没有包含任何 NANO"),
+            MessageLookupByLibrary.simpleMessage("这个种子没有包含任何 Lumex"),
         "transferQrScanError":
             MessageLookupByLibrary.simpleMessage("这个二维码没有包含任何有效的种子。"),
         "transferQrScanHint":
-            MessageLookupByLibrary.simpleMessage("请扫描 NANO \n种子"),
+            MessageLookupByLibrary.simpleMessage("请扫描 Lumex \n种子"),
         "unacknowledged": MessageLookupByLibrary.simpleMessage("未被承认"),
         "unconfirmed": MessageLookupByLibrary.simpleMessage("未经证实"),
         "unfulfilled": MessageLookupByLibrary.simpleMessage("未了"),
         "unlock": MessageLookupByLibrary.simpleMessage("解锁"),
         "unlockBiometrics":
-            MessageLookupByLibrary.simpleMessage("验证并解锁 Nautilus"),
-        "unlockPin": MessageLookupByLibrary.simpleMessage("请输入识别码来解锁 Nautilus"),
+            MessageLookupByLibrary.simpleMessage("验证并解锁 Lumex"),
+        "unlockPin": MessageLookupByLibrary.simpleMessage("请输入识别码来解锁 Lumex"),
         "unopenedWarningHeader":
             MessageLookupByLibrary.simpleMessage("显示未打开的警告"),
         "unopenedWarningInfo": MessageLookupByLibrary.simpleMessage(
@@ -809,8 +809,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "useAppRep": MessageLookupByLibrary.simpleMessage("使用 %1 代表"),
         "useCurrency": MessageLookupByLibrary.simpleMessage("使用 %2"),
         "useNano": MessageLookupByLibrary.simpleMessage("使用纳米"),
-        "useNautilusRep":
-            MessageLookupByLibrary.simpleMessage("Use Nautilus Rep"),
+        "useLumexRep":
+            MessageLookupByLibrary.simpleMessage("Use Lumex Rep"),
         "userAlreadyAddedError": MessageLookupByLibrary.simpleMessage("用户已添加！"),
         "userNotFound": MessageLookupByLibrary.simpleMessage("找不到用户！"),
         "usernameAlreadyRegistered": MessageLookupByLibrary.simpleMessage(
@@ -819,7 +819,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "usernameEmpty": MessageLookupByLibrary.simpleMessage("请输入用户名"),
         "usernameError": MessageLookupByLibrary.simpleMessage("用户名错误"),
         "usernameInfo": MessageLookupByLibrary.simpleMessage(
-            "挑选一个独特的 @username 让亲朋好友轻松找到你！\n\n拥有 Nautilus 用户名可在全局范围内更新用户界面，以反映您的新用户名。"),
+            "挑选一个独特的 @username 让亲朋好友轻松找到你！\n\n拥有 Lumex 用户名可在全局范围内更新用户界面，以反映您的新用户名。"),
         "usernameInvalid": MessageLookupByLibrary.simpleMessage("用户名无效"),
         "usernameUnavailable": MessageLookupByLibrary.simpleMessage("用户名不可用"),
         "usernameWarning":
@@ -837,7 +837,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "weekAgo": MessageLookupByLibrary.simpleMessage("一星期前"),
         "weekly": MessageLookupByLibrary.simpleMessage("每周"),
         "welcomeText": MessageLookupByLibrary.simpleMessage(
-            "欢迎来到Nautilus。下一步，您可以创建新钱包或导入已有钱包。"),
+            "欢迎来到Lumex。下一步，您可以创建新钱包或导入已有钱包。"),
         "welcomeTextLogin": MessageLookupByLibrary.simpleMessage(
             "欢迎来到鹦鹉螺。选择一个选项以开始使用或使用下面的图标选择一个主题。"),
         "welcomeTextUpdated":

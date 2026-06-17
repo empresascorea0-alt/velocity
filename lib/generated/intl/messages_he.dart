@@ -244,7 +244,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "defaultAccountName":
             MessageLookupByLibrary.simpleMessage("חשבון ראשי"),
         "defaultGiftMessage": MessageLookupByLibrary.simpleMessage(
-            "בדוק את Nautilus! שלחתי לך קצת ננו עם הקישור הזה:"),
+            "בדוק את Lumex! שלחתי לך קצת ננו עם הקישור הזה:"),
         "defaultNewAccountName":
             MessageLookupByLibrary.simpleMessage("חשבון %1"),
         "delete": MessageLookupByLibrary.simpleMessage("מחיקה"),
@@ -344,7 +344,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "exampleRecRecipientMessage":
             MessageLookupByLibrary.simpleMessage("כסף גז"),
         "exchangeCurrency": MessageLookupByLibrary.simpleMessage("Exchange %2"),
-        "exchangeNano": MessageLookupByLibrary.simpleMessage("החלף NANO"),
+        "exchangeNano": MessageLookupByLibrary.simpleMessage("החלף Lumex"),
         "existingPasswordHint":
             MessageLookupByLibrary.simpleMessage("הכנס סיסמא נוכחית"),
         "existingPinHint":
@@ -385,7 +385,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "generatingWork": MessageLookupByLibrary.simpleMessage(
             "יוצר PoW, זה עשוי לקחת זמן מה (> 20 שניות)..."),
         "getCurrency": MessageLookupByLibrary.simpleMessage("קבל %2"),
-        "getNano": MessageLookupByLibrary.simpleMessage("קבל NANO"),
+        "getNano": MessageLookupByLibrary.simpleMessage("קבל Lumex"),
         "giftAlert": MessageLookupByLibrary.simpleMessage("יש לך כישרון!"),
         "giftAlertEmpty": MessageLookupByLibrary.simpleMessage("מתנה ריקה"),
         "giftAmount": MessageLookupByLibrary.simpleMessage("סכום מתנה"),
@@ -397,7 +397,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("מידע על גיליון מתנה"),
         "giftFrom": MessageLookupByLibrary.simpleMessage("מתנה מ"),
         "giftInfo": MessageLookupByLibrary.simpleMessage(
-            "טען כרטיס מתנה דיגיטלי עם NANO! הגדר סכום, והודעה אופציונלית עבור הנמען כדי לראות מתי הוא פותח אותו!\n\nלאחר שנוצר, תקבל קישור שאתה יכול לשלוח לכל אחד, אשר כאשר נפתח באופן אוטומטי להפיץ את הכספים לנמען לאחר התקנת נאוטילוס!\n\nאם הנמען הוא כבר משתמש Nautilus הם יקבלו הנחיה להעביר את הכספים לחשבון שלהם עם פתיחת הקישור"),
+            "טען כרטיס מתנה דיגיטלי עם Lumex! הגדר סכום, והודעה אופציונלית עבור הנמען כדי לראות מתי הוא פותח אותו!\n\nלאחר שנוצר, תקבל קישור שאתה יכול לשלוח לכל אחד, אשר כאשר נפתח באופן אוטומטי להפיץ את הכספים לנמען לאחר התקנת נאוטילוס!\n\nאם הנמען הוא כבר משתמש Lumex הם יקבלו הנחיה להעביר את הכספים לחשבון שלהם עם פתיחת הקישור"),
         "giftMessage": MessageLookupByLibrary.simpleMessage("הודעת מתנה"),
         "giftProcessError": MessageLookupByLibrary.simpleMessage(
             "אירעה שגיאה במהלך עיבוד כרטיס המתנה הזה. אולי תבדוק את החיבור שלך ונסה ללחוץ שוב על קישור המתנה."),
@@ -438,9 +438,9 @@ class MessageLookup extends MessageLookupByLibrary {
         "importGiftEmpty": MessageLookupByLibrary.simpleMessage(
             "Unfortunately the link you clicked that contained some nano appears to be empty, but you can still see the amount and associated message."),
         "importGiftIntro": MessageLookupByLibrary.simpleMessage(
-            "נראה שלחצת על קישור שמכיל קצת NANO, כדי לקבל את הכספים האלה אנחנו רק צריכים שתסיים להגדיר את הארנק שלך."),
+            "נראה שלחצת על קישור שמכיל קצת Lumex, כדי לקבל את הכספים האלה אנחנו רק צריכים שתסיים להגדיר את הארנק שלך."),
         "importGiftv2": MessageLookupByLibrary.simpleMessage(
-            "הקישור שלחצתם מכיל קצת NANO, האם תרצה לייבא אותו לארנק הזה?"),
+            "הקישור שלחצתם מכיל קצת Lumex, האם תרצה לייבא אותו לארנק הזה?"),
         "importHD": MessageLookupByLibrary.simpleMessage("ייבוא HD"),
         "importHDTrust":
             MessageLookupByLibrary.simpleMessage("ייבוא HD / אמון"),
@@ -487,7 +487,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "logoutAction": MessageLookupByLibrary.simpleMessage("מחק סיד והתנתק"),
         "logoutAreYouSure": MessageLookupByLibrary.simpleMessage("אתה בטוח?"),
         "logoutDetail": MessageLookupByLibrary.simpleMessage(
-            "Logging out will remove your seed and all Nautilus-related data from this device. If your seed is not backed up, you will never be able to access your funds again"),
+            "Logging out will remove your seed and all Lumex-related data from this device. If your seed is not backed up, you will never be able to access your funds again"),
         "logoutReassurance": MessageLookupByLibrary.simpleMessage(
             "כל עוד גיבית את הסיד שלך, אין לך מה לדאוג."),
         "looksLikeHdSeed": MessageLookupByLibrary.simpleMessage(
@@ -522,7 +522,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "moreSettings": MessageLookupByLibrary.simpleMessage("הגדרות נוספות"),
         "nameEmpty": MessageLookupByLibrary.simpleMessage("נא להזין שם"),
         "natricon": MessageLookupByLibrary.simpleMessage("Natricon"),
-        "nautilusWallet": MessageLookupByLibrary.simpleMessage("ארנק נאוטילוס"),
+        "lumexWallet": MessageLookupByLibrary.simpleMessage("ארנק נאוטילוס"),
         "nearby": MessageLookupByLibrary.simpleMessage("סָמוּך"),
         "needVerificationAlert": MessageLookupByLibrary.simpleMessage(
             "תכונה זו דורשת ממך היסטוריית עסקאות ארוכה יותר כדי למנוע דואר זבל.\n\nלחלופין, אתה יכול להציג קוד QR עבור מישהו לסרוק."),
@@ -592,7 +592,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("סיסמא לא נכונה"),
         "passwordNoLongerRequiredToOpenParagraph":
             MessageLookupByLibrary.simpleMessage(
-                "You will not need a password to open Nautilus anymore."),
+                "You will not need a password to open Lumex anymore."),
         "passwordNumber": MessageLookupByLibrary.simpleMessage(
             "הסיסמה חייבת להכיל לפחות מספר אחד"),
         "passwordSpecialCharacter": MessageLookupByLibrary.simpleMessage(
@@ -600,10 +600,10 @@ class MessageLookup extends MessageLookupByLibrary {
         "passwordTooShort":
             MessageLookupByLibrary.simpleMessage("הסיסמה קצרה מדי"),
         "passwordWarning": MessageLookupByLibrary.simpleMessage(
-            "סיסמה זו תידרש לפתיחת Nautilus."),
+            "סיסמה זו תידרש לפתיחת Lumex."),
         "passwordWillBeRequiredToOpenParagraph":
             MessageLookupByLibrary.simpleMessage(
-                "This password will be required to open Nautilus."),
+                "This password will be required to open Lumex."),
         "passwordsDontMatch":
             MessageLookupByLibrary.simpleMessage("Passwords do not match"),
         "pastDue": MessageLookupByLibrary.simpleMessage("עבר מועד"),
@@ -646,10 +646,10 @@ class MessageLookup extends MessageLookupByLibrary {
         "preferences": MessageLookupByLibrary.simpleMessage("העדפות"),
         "privacyPolicy": MessageLookupByLibrary.simpleMessage("פרטיות"),
         "proSubRequiredHeader":
-            MessageLookupByLibrary.simpleMessage("נדרש מנוי ל-Nautilus Pro"),
+            MessageLookupByLibrary.simpleMessage("נדרש מנוי ל-Lumex Pro"),
         "proSubRequiredParagraph": MessageLookupByLibrary.simpleMessage(
-            "תמורת NANO אחד בלבד לחודש, אתה יכול לפתוח את כל התכונות של Nautilus Pro."),
-        "promotionalLink": MessageLookupByLibrary.simpleMessage("חינם NANO"),
+            "תמורת Lumex אחד בלבד לחודש, אתה יכול לפתוח את כל התכונות של Lumex Pro."),
+        "promotionalLink": MessageLookupByLibrary.simpleMessage("חינם Lumex"),
         "purchaseCurrency": MessageLookupByLibrary.simpleMessage("קנה %2"),
         "purchaseNano": MessageLookupByLibrary.simpleMessage("רכישת ננו"),
         "qrInvalidAddress": MessageLookupByLibrary.simpleMessage(
@@ -716,14 +716,14 @@ class MessageLookup extends MessageLookupByLibrary {
         "requestSentButNotReceived": MessageLookupByLibrary.simpleMessage(
             "בקשה נשלחה מחדש! אם עדיין לא הודה, ייתכן שהמכשיר של הנמען במצב לא מקוון."),
         "requestSheetInfo": MessageLookupByLibrary.simpleMessage(
-            "בקש תשלום, עם הודעות מוצפנות מקצה לקצה!\n\nבקשות תשלום, תזכירים והודעות יתקבלו רק על ידי משתמשי nautilus אחרים, אך תוכל להשתמש בהם לשמירת תיעוד משלך גם אם הנמען אינו משתמש ב-nautilus."),
+            "בקש תשלום, עם הודעות מוצפנות מקצה לקצה!\n\nבקשות תשלום, תזכירים והודעות יתקבלו רק על ידי משתמשי lumex אחרים, אך תוכל להשתמש בהם לשמירת תיעוד משלך גם אם הנמען אינו משתמש ב-lumex."),
         "requestSheetInfoHeader":
             MessageLookupByLibrary.simpleMessage("בקש מידע על גיליון"),
         "requested": MessageLookupByLibrary.simpleMessage("התבקש"),
         "requestedFrom": MessageLookupByLibrary.simpleMessage("התבקש מ"),
         "requesting": MessageLookupByLibrary.simpleMessage("מבקש"),
         "requireAPasswordToOpenHeader": MessageLookupByLibrary.simpleMessage(
-            "Require a password to open Nautilus?"),
+            "Require a password to open Lumex?"),
         "requireCaptcha": MessageLookupByLibrary.simpleMessage(
             "דרוש CAPTCHA כדי לתבוע כרטיס מתנה"),
         "resendMemo": MessageLookupByLibrary.simpleMessage("שלח שוב תזכיר זה"),
@@ -816,12 +816,12 @@ class MessageLookup extends MessageLookupByLibrary {
         "share": MessageLookupByLibrary.simpleMessage("לַחֲלוֹק"),
         "shareApp": MessageLookupByLibrary.simpleMessage("שתף %1"),
         "shareAppText": MessageLookupByLibrary.simpleMessage(
-            "בדוק את%1! ארנק נייד NANO מעולה!"),
+            "בדוק את%1! ארנק נייד Lumex מעולה!"),
         "shareLink": MessageLookupByLibrary.simpleMessage("שתף קישור"),
         "shareMessage": MessageLookupByLibrary.simpleMessage("שתף הודעה"),
-        "shareNautilus": MessageLookupByLibrary.simpleMessage("Share Nautilus"),
-        "shareNautilusText": MessageLookupByLibrary.simpleMessage(
-            "Check out Nautilus! A premier NANO mobile wallet!"),
+        "shareLumex": MessageLookupByLibrary.simpleMessage("Share Lumex"),
+        "shareLumexText": MessageLookupByLibrary.simpleMessage(
+            "Check out Lumex! A premier Lumex mobile wallet!"),
         "shareText": MessageLookupByLibrary.simpleMessage("שתף טקסט"),
         "shopButton": MessageLookupByLibrary.simpleMessage("לִקְנוֹת"),
         "show": MessageLookupByLibrary.simpleMessage("הופעה"),
@@ -871,7 +871,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "swapXMR": MessageLookupByLibrary.simpleMessage("החלפת XMR"),
         "swapXMRHeader": MessageLookupByLibrary.simpleMessage("החלפת Monero"),
         "swapXMRInfo": MessageLookupByLibrary.simpleMessage(
-            "Monero הוא מטבע קריפטוגרפי ממוקד פרטיות שמקשה מאוד או אפילו בלתי אפשרי לעקוב אחר עסקאות. בינתיים NANO הוא מטבע קריפטוגרפי ממוקד תשלומים שהוא מהיר וללא עמלות. יחד הם מספקים כמה מההיבטים השימושיים ביותר של מטבעות קריפטוגרפיים!\n\nהשתמש בדף זה כדי להחליף בקלות את ה-NANO שלך עבור XMR!"),
+            "Monero הוא מטבע קריפטוגרפי ממוקד פרטיות שמקשה מאוד או אפילו בלתי אפשרי לעקוב אחר עסקאות. בינתיים Lumex הוא מטבע קריפטוגרפי ממוקד תשלומים שהוא מהיר וללא עמלות. יחד הם מספקים כמה מההיבטים השימושיים ביותר של מטבעות קריפטוגרפיים!\n\nהשתמש בדף זה כדי להחליף בקלות את ה-Lumex שלך עבור XMR!"),
         "swapping": MessageLookupByLibrary.simpleMessage("החלפה"),
         "switchToSeed": MessageLookupByLibrary.simpleMessage("Switch to Seed"),
         "systemDefault":
@@ -947,9 +947,9 @@ class MessageLookup extends MessageLookupByLibrary {
         "urlEmpty": MessageLookupByLibrary.simpleMessage("נא להזין כתובת URL"),
         "useAppRep": MessageLookupByLibrary.simpleMessage("השתמש ב- 1 נציג"),
         "useCurrency": MessageLookupByLibrary.simpleMessage("השתמש ב%2"),
-        "useNano": MessageLookupByLibrary.simpleMessage("השתמש ב-NANO"),
-        "useNautilusRep":
-            MessageLookupByLibrary.simpleMessage("Use Nautilus Rep"),
+        "useNano": MessageLookupByLibrary.simpleMessage("השתמש ב-Lumex"),
+        "useLumexRep":
+            MessageLookupByLibrary.simpleMessage("Use Lumex Rep"),
         "userAlreadyAddedError":
             MessageLookupByLibrary.simpleMessage("משתמש כבר נוסף!"),
         "userNotFound": MessageLookupByLibrary.simpleMessage("המשתמש לא נמצא!"),

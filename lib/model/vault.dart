@@ -2,10 +2,10 @@ import 'dart:async';
 
 import 'package:flutter/services.dart';
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
-import 'package:wallet_flutter/service_locator.dart';
-import 'package:wallet_flutter/util/encrypt.dart';
-import 'package:wallet_flutter/util/random_util.dart';
-import 'package:wallet_flutter/util/sharedprefsutil.dart';
+import 'package:velocity/service_locator.dart';
+import 'package:velocity/util/encrypt.dart';
+import 'package:velocity/util/random_util.dart';
+import 'package:velocity/util/sharedprefsutil.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 // Singleton for keystore access methods in android/iOS
@@ -13,7 +13,7 @@ class Vault {
   static const String seedKey = 'fkalium_seed';
   static const String encryptionKey = 'fkalium_secret_phrase';
   static const String pinKey = 'fkalium_pin';
-  static const String plausiblePinKey = 'fnautilus_plausible_pin';
+  static const String plausiblePinKey = 'flumex_plausible_pin';
   static const String sessionKey = 'fencsess_key';
   final FlutterSecureStorage secureStorage = const FlutterSecureStorage();
 

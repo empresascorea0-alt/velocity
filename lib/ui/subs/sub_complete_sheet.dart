@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:wallet_flutter/app_icons.dart';
-import 'package:wallet_flutter/appstate_container.dart';
-import 'package:wallet_flutter/dimens.dart';
-import 'package:wallet_flutter/generated/l10n.dart';
-import 'package:wallet_flutter/ui/util/handlebars.dart';
-import 'package:wallet_flutter/ui/widgets/buttons.dart';
-import 'package:wallet_flutter/util/caseconverter.dart';
+import 'package:velocity/app_icons.dart';
+import 'package:velocity/appstate_container.dart';
+import 'package:velocity/dimens.dart';
+import 'package:velocity/generated/l10n.dart';
+import 'package:velocity/ui/util/handlebars.dart';
+import 'package:velocity/ui/widgets/buttons.dart';
+import 'package:velocity/util/caseconverter.dart';
 
 class SubCompleteSheet extends StatefulWidget {
   final String? label;

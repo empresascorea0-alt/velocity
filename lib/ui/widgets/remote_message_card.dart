@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:wallet_flutter/appstate_container.dart';
-import 'package:wallet_flutter/network/model/response/alerts_response_item.dart';
-import 'package:wallet_flutter/styles.dart';
+import 'package:velocity/appstate_container.dart';
+import 'package:velocity/network/model/response/alerts_response_item.dart';
+import 'package:velocity/styles.dart';
 
 class RemoteMessageCard extends StatefulWidget {
   const RemoteMessageCard({

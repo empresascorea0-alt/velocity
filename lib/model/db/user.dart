@@ -1,5 +1,5 @@
 import 'package:json_annotation/json_annotation.dart';
-import 'package:wallet_flutter/model/address.dart';
+import 'package:velocity/model/address.dart';
 import 'package:quiver/core.dart';
 
 part 'user.g.dart';
@@ -7,7 +7,7 @@ part 'user.g.dart';
 class UserTypes {
   static const String UD = "unstoppable_domain";
   static const String ENS = "ethereum_name_service";
-  static const String NANO_TO = "nano_to";
+  static const String NANO_TO = "lumex_to";
   static const String OPENCAP = "opencap";
   static const String CONTACT = "contact";
   static const String ONCHAIN = "onchain";
@@ -21,7 +21,7 @@ String? lowerStripAddress(String? address) {
   return address
       .toLowerCase()
       .replaceAll("xrb_", "")
-      .replaceAll("nano_", "")
+      .replaceAll("lumex_", "")
       .replaceAll("ban_", "")
       .replaceAll(" ", "");
 }
@@ -31,7 +31,7 @@ String? formatAddress(String? address) {
     return null;
   }
   // nano mode:
-  return "nano_${lowerStripAddress(address)}";
+  return "lumex_${lowerStripAddress(address)}";
 }
 
 @JsonSerializable()

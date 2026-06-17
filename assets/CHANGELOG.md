@@ -208,7 +208,7 @@
 ## v0.7.3 - [2023-01-20]
 #### Added
 - Subscriptions menu
-- Long press the share nautilus button for a QR code for easy onboarding (promo link)
+- Long press the share lumex button for a QR code for easy onboarding (promo link)
 - Ability to change PoW Source
 - Icon for notifications updated
 #### Changed
@@ -230,7 +230,7 @@
 #### Changed
 - Made it impossible to confirm a transaction before the send warning has a chance to show up
 - UI fixes in the set plausible pin menu
-- Nano.to usernames are now prefixed with '#' instead of '@' which will be reserved for on chain usernames
+- Lumex.to usernames are now prefixed with '#' instead of '@' which will be reserved for on chain usernames
 - Usernames are now checked as they are received / used
 #### Fixed
 - Even more QR code scanning bugs
@@ -258,7 +258,7 @@
 #### Changed
 - Start working on bip39 seed support (still a WIP)
 - Revert some button styling changes
-- Updated generated domains to use nautilus.io
+- Updated generated domains to use lumex.io
 #### Fixed
 - Updated a lot of packages and minor fixes
 ## v0.6.8 - [2022-10-16]
@@ -303,7 +303,7 @@
 #### Added
 - Sunshine Theme! A new lightmode theme
 - The default theme is now dependent on your OS's dark mode preferences
-  - Default light theme is Sunshine and the Default dark is Nautilus
+  - Default light theme is Sunshine and the Default dark is Lumex
 #### Changed
 - Lots of tweaks to the default theme to be brighter while keeping good contrast & text readability
 - Massively improved XMR sync times by actually caching wallet state, requires a full resync to take effect
@@ -343,9 +343,9 @@
 #### Added
 - Major improvements to NFC handling, NFC scans within the app no longer re-load the entire app
 - Scan NFC button on relevant iOS platforms / send screen (on android scanning is automatic)
-- Reworked Nautilus theme to be more inviting and easier on the eyes
+- Reworked Lumex theme to be more inviting and easier on the eyes
 #### Changed
-- Old Nautilus theme is now a new theme "Midnight" for those that want to keep it
+- Old Lumex theme is now a new theme "Midnight" for those that want to keep it
 - Improvements to the in-app webview for the use-nano section and more
 #### Fixed
 - Bugs related to sending messages
@@ -358,7 +358,7 @@
 - "nanopay" and (WIP) "nanoauth" URI scheme support!
   - [Demo Handoff](https://perish.co/handoff)
 - Checkbox option to require a captcha in order to redeem a gift card
-- perish.co/promo (feel free to use as a general promotional link for nautilus / easy onboarding)
+- perish.co/promo (feel free to use as a general promotional link for lumex / easy onboarding)
 #### Changed
 - Better support for landscape views / iPads
 - Updated Gift Cards to look a lot more modern and added a custom page for Desktop links
@@ -377,18 +377,18 @@
 ## v0.5.8 - [2022-08-18]
 #### Added
 - Split Bill Menu! Easily split a bill by sending payment requests to multiple people at once!
-- Updated "Share Nautilus" button -> now a menu with some onboarding tools
+- Updated "Share Lumex" button -> now a menu with some onboarding tools
 #### Changed
 - Lots of minor improvements to gift card UI/UX to make things as smooth as possible for onboarding
 - Added handlebars to some sheet menus that were missing them
 - UI Tweaks to the gift creation / completion sheet
 #### Fixed
 - (iOS) bug when pressing backspace on amount fields
-- Nano.to leasing API updated
+- Lumex.to leasing API updated
 - Rounding bug when displaying amounts like 4.99999 -> 5.999999
 ## v0.5.7 - [2022-08-16]
 #### Added
-- New "Exchange NANO" section
+- New "Exchange Lumex" section
 - Added link to nanswap.com
 - Opencap username / domain support, for example: "xno$kga.earth"
 - Change paste button to a clear button when address is full on the send / receive / etc. screen
@@ -418,13 +418,13 @@
 - Bug with displaying gift card from address / username
 ## v0.5.4 - [2022-08-10]
 #### Added
-- New Use NANO section replacing the old purchase NANO button
+- New Use Lumex section replacing the old purchase Lumex button
 - Links to nanocafe.cc and redeemfor.me
 - Block Handoff implementation (WIP)
 - Something special for those who see me at the meetup
 - Swipe gesture to close settings drawer sub-menus
 #### Changed
-- Purchase NANO -> get NANO
+- Purchase Lumex -> get Lumex
 - Fastest possible onboarding through gift card links
 - Remove balance requirement to be able to scan QR codes via the swipe up on send gesture
 ## v0.5.3 - [2022-08-09]
@@ -507,7 +507,7 @@
 #### Fixed
 - All tx's were showing as receives lol
 - Send sheet showing currency symbols incorrectly in local currency mode
-- Donation contact (NautilusDonations) wasn't being added on a fresh install
+- Donation contact (LumexDonations) wasn't being added on a fresh install
 - Bug with pay this request button in nyano mode
 ## v0.4.3 - [2022-07-16]
 #### Added
@@ -595,7 +595,7 @@
 - Better handling of contacts / permissions, but still a WIP / texts feature not done
 #### Fixed
 - Minor bugs related to the alerts system
-- Nano <-> local currency price display bug
+- Lumex <-> local currency price display bug
 - Accounts sheet rendering fixes
 ## v0.3.7 - [2022-06-24]
 #### Added
@@ -683,7 +683,7 @@
 - Support for ENS Domains
 - Support for Unstoppable Domains
 - Reminder to Rate the App after some time (dismissable)
-- Button to change rep to the Nautilus Node
+- Button to change rep to the Lumex Node
 - Node status page in the settings drawer
 - "not sent" transaction status tag for failed messages
 - Button to destroy the internal db (useful to simulate a fresh install)
@@ -722,11 +722,11 @@
 - End to End Encrypted Memos
 - Digital Gift Card creation with a custom message
 - Customize the QR code on the Receive Sheet
-- Purchase NANO from within the app
+- Purchase Lumex from within the app
   - Onramper, Simplex
 - Randomize default Representative
 - Ability to block a user by address / username
 - Nyano Mode
-  - Displays balances in nyano instead of NANO
+  - Displays balances in nyano instead of Lumex
 #### Changed
 - Contacts -> Favorites

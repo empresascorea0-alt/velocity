@@ -1,7 +1,7 @@
 import 'dart:core';
 import 'package:json_annotation/json_annotation.dart';
-import 'package:wallet_flutter/model/method.dart';
-import 'package:wallet_flutter/network/model/auth_types.dart';
+import 'package:velocity/model/method.dart';
+import 'package:velocity/network/model/auth_types.dart';
 
 part 'auth_item.g.dart';
 

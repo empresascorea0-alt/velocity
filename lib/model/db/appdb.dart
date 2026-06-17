@@ -5,18 +5,18 @@ import 'package:nanoutil/nanoutil.dart';
 import 'package:path/path.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:sqflite/sqflite.dart';
-import 'package:wallet_flutter/model/db/account.dart';
-import 'package:wallet_flutter/model/db/node.dart';
-import 'package:wallet_flutter/model/db/scheduled.dart';
-import 'package:wallet_flutter/model/db/subscription.dart';
-import 'package:wallet_flutter/model/db/txdata.dart';
-import 'package:wallet_flutter/model/db/user.dart';
-import 'package:wallet_flutter/model/db/work_source.dart';
-import 'package:wallet_flutter/network/account_service.dart';
-import 'package:wallet_flutter/service_locator.dart';
-import 'package:wallet_flutter/ui/send/send_sheet.dart';
-import 'package:wallet_flutter/util/nanoutil.dart';
-import 'package:wallet_flutter/util/sharedprefsutil.dart';
+import 'package:velocity/model/db/account.dart';
+import 'package:velocity/model/db/node.dart';
+import 'package:velocity/model/db/scheduled.dart';
+import 'package:velocity/model/db/subscription.dart';
+import 'package:velocity/model/db/txdata.dart';
+import 'package:velocity/model/db/user.dart';
+import 'package:velocity/model/db/work_source.dart';
+import 'package:velocity/network/account_service.dart';
+import 'package:velocity/service_locator.dart';
+import 'package:velocity/ui/send/send_sheet.dart';
+import 'package:velocity/util/nanoutil.dart';
+import 'package:velocity/util/sharedprefsutil.dart';
 
 class DBHelper {
   DBHelper() {
@@ -178,7 +178,7 @@ class DBHelper {
 
   Future<Database> initDb() async {
     final io.Directory documentsDirectory = await getApplicationDocumentsDirectory();
-    final String path = join(documentsDirectory.path, "nautilus.db");
+    final String path = join(documentsDirectory.path, "lumex.db");
     final Database theDb = await openDatabase(
       path,
       version: DB_VERSION,
@@ -280,7 +280,7 @@ class DBHelper {
     await saveNode(
       Node(
         id: id++,
-        name: "Nautilus Node",
+        name: "Lumex Node",
         selected: true,
         http_url: AccountService.DEFAULT_HTTP_URL,
         ws_url: AccountService.DEFAULT_WS_URL,
@@ -360,7 +360,7 @@ class DBHelper {
     // await saveNode(
     //   Node(
     //     id: 1,
-    //     name: "Nano.to Node",
+    //     name: "Lumex.to Node",
     //     selected: false,
     //     http_url: "https://rpc.nano.to",
     //     // ws_url: "",// todo: add nano.to rpc ws (doesn't exist yet)
@@ -443,7 +443,7 @@ class DBHelper {
     return address
         .toLowerCase()
         .replaceAll("xrb_", "")
-        .replaceAll("nano_", "")
+        .replaceAll("lumex_", "")
         .replaceAll("ban_", "");
   }
 
@@ -452,7 +452,7 @@ class DBHelper {
       return null;
     }
     // nano mode:
-    return "nano_${lowerStripAddress(address)}";
+    return "lumex_${lowerStripAddress(address)}";
   }
 
   // NODES:

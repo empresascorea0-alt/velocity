@@ -1,5 +1,5 @@
 import 'package:json_annotation/json_annotation.dart';
-import 'package:wallet_flutter/model/address.dart';
+import 'package:velocity/model/address.dart';
 
 part 'account_history_response_item.g.dart';
 

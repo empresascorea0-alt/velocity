@@ -5,20 +5,20 @@ import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:flutter_nano_ffi/flutter_nano_ffi.dart';
-import 'package:wallet_flutter/app_icons.dart';
-import 'package:wallet_flutter/appstate_container.dart';
-import 'package:wallet_flutter/dimens.dart';
-import 'package:wallet_flutter/generated/l10n.dart';
-import 'package:wallet_flutter/localize.dart';
-import 'package:wallet_flutter/model/db/appdb.dart';
-import 'package:wallet_flutter/model/vault.dart';
-import 'package:wallet_flutter/service_locator.dart';
-import 'package:wallet_flutter/styles.dart';
-import 'package:wallet_flutter/themes.dart';
-import 'package:wallet_flutter/ui/widgets/buttons.dart';
-import 'package:wallet_flutter/util/caseconverter.dart';
-import 'package:wallet_flutter/util/nanoutil.dart';
-import 'package:wallet_flutter/util/sharedprefsutil.dart';
+import 'package:velocity/app_icons.dart';
+import 'package:velocity/appstate_container.dart';
+import 'package:velocity/dimens.dart';
+import 'package:velocity/generated/l10n.dart';
+import 'package:velocity/localize.dart';
+import 'package:velocity/model/db/appdb.dart';
+import 'package:velocity/model/vault.dart';
+import 'package:velocity/service_locator.dart';
+import 'package:velocity/styles.dart';
+import 'package:velocity/themes.dart';
+import 'package:velocity/ui/widgets/buttons.dart';
+import 'package:velocity/util/caseconverter.dart';
+import 'package:velocity/util/nanoutil.dart';
+import 'package:velocity/util/sharedprefsutil.dart';
 
 class IntroNewExistingPage extends StatefulWidget {
   @override
@@ -103,7 +103,7 @@ class IntroNewExistingPageState extends State<IntroNewExistingPage> {
                                 height: 100,
                                 child: TextLiquidFill(
                                   text: CaseChange.toUpperCase(NonTranslatable.appName, context),
-                                  waveColor: primaryColor ?? NautilusTheme.nautilusBlue,
+                                  waveColor: primaryColor ?? LumexTheme.lumexBlue,
                                   boxBackgroundColor: StateContainer.of(context).curTheme.backgroundDark!,
                                   textStyle: const TextStyle(fontSize: 60.0, fontWeight: FontWeight.bold, color: Colors.white),
                                   boxHeight: 100,

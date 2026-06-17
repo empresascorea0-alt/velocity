@@ -1,5 +1,5 @@
 import 'package:event_taxi/event_taxi.dart';
-import 'package:wallet_flutter/model/db/scheduled.dart';
+import 'package:velocity/model/db/scheduled.dart';
 
 class ScheduledModifiedEvent implements Event {
   ScheduledModifiedEvent({this.scheduled, this.deleted = false, this.created = false});

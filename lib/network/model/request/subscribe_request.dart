@@ -1,7 +1,7 @@
 import 'package:json_annotation/json_annotation.dart';
-import 'package:wallet_flutter/network/model/base_request.dart';
-import 'package:wallet_flutter/network/model/request/actions.dart';
-import 'package:wallet_flutter/network/model/request/subscribe_option.dart';
+import 'package:velocity/network/model/base_request.dart';
+import 'package:velocity/network/model/request/actions.dart';
+import 'package:velocity/network/model/request/subscribe_option.dart';
 
 part 'subscribe_request.g.dart';
 

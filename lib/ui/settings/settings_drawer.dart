@@ -14,73 +14,73 @@ import 'package:package_info_plus/package_info_plus.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:quiver/strings.dart';
 import 'package:share_plus/share_plus.dart';
-import 'package:wallet_flutter/app_icons.dart';
-import 'package:wallet_flutter/appstate_container.dart';
-import 'package:wallet_flutter/bus/contacts_setting_change_event.dart';
-import 'package:wallet_flutter/bus/events.dart';
-import 'package:wallet_flutter/bus/notification_setting_change_event.dart';
-import 'package:wallet_flutter/generated/l10n.dart';
-import 'package:wallet_flutter/localize.dart';
-import 'package:wallet_flutter/model/address.dart';
-import 'package:wallet_flutter/model/authentication_method.dart';
-import 'package:wallet_flutter/model/available_block_explorer.dart';
-import 'package:wallet_flutter/model/available_currency.dart';
-import 'package:wallet_flutter/model/available_language.dart';
-import 'package:wallet_flutter/model/available_themes.dart';
-import 'package:wallet_flutter/model/contacts_setting.dart';
-import 'package:wallet_flutter/model/currency_mode_setting.dart';
-import 'package:wallet_flutter/model/db/account.dart';
-import 'package:wallet_flutter/model/db/appdb.dart';
-import 'package:wallet_flutter/model/db/node.dart';
-import 'package:wallet_flutter/model/db/txdata.dart';
-import 'package:wallet_flutter/model/db/work_source.dart';
-import 'package:wallet_flutter/model/device_lock_timeout.dart';
-import 'package:wallet_flutter/model/device_unlock_option.dart';
-import 'package:wallet_flutter/model/funding_setting.dart';
-import 'package:wallet_flutter/model/min_raw_setting.dart';
-import 'package:wallet_flutter/model/natricon_option.dart';
-import 'package:wallet_flutter/model/notification_setting.dart';
-import 'package:wallet_flutter/model/nyanicon_option.dart';
-import 'package:wallet_flutter/model/vault.dart';
-import 'package:wallet_flutter/network/model/response/account_history_response_item.dart';
-import 'package:wallet_flutter/network/model/response/alerts_response_item.dart';
-import 'package:wallet_flutter/network/model/response/funding_response_item.dart';
-import 'package:wallet_flutter/service_locator.dart';
-import 'package:wallet_flutter/styles.dart';
-import 'package:wallet_flutter/ui/accounts/accountdetails_sheet.dart';
-import 'package:wallet_flutter/ui/accounts/accounts_sheet.dart';
-import 'package:wallet_flutter/ui/onboard_sheet.dart';
-import 'package:wallet_flutter/ui/settings/backup/backupseed_sheet.dart';
-import 'package:wallet_flutter/ui/settings/node/change_node_sheet.dart';
-import 'package:wallet_flutter/ui/settings/password/set_pin_sheet.dart';
-import 'package:wallet_flutter/ui/settings/password/set_plausible_pin_sheet.dart';
-import 'package:wallet_flutter/ui/settings/pow/change_work_source_sheet.dart';
-import 'package:wallet_flutter/ui/settings/rep/changerepresentative_sheet.dart';
-import 'package:wallet_flutter/ui/settings/settings_list_item.dart';
-import 'package:wallet_flutter/ui/settings/users/blocked_widget.dart';
-import 'package:wallet_flutter/ui/settings/users/contacts_widget.dart';
-import 'package:wallet_flutter/ui/transfer/transfer_complete_sheet.dart';
-import 'package:wallet_flutter/ui/transfer/transfer_confirm_sheet.dart';
-import 'package:wallet_flutter/ui/transfer/transfer_overview_sheet.dart';
-import 'package:wallet_flutter/ui/util/formatters.dart';
-import 'package:wallet_flutter/ui/util/ui_util.dart';
-import 'package:wallet_flutter/ui/widgets/animations.dart';
-import 'package:wallet_flutter/ui/widgets/app_simpledialog.dart';
-import 'package:wallet_flutter/ui/widgets/buttons.dart';
-import 'package:wallet_flutter/ui/widgets/dialog.dart';
-import 'package:wallet_flutter/ui/widgets/draggable_scrollbar.dart';
-import 'package:wallet_flutter/ui/widgets/list_gradient.dart';
-import 'package:wallet_flutter/ui/widgets/remote_message_card.dart';
-import 'package:wallet_flutter/ui/widgets/remote_message_sheet.dart';
-import 'package:wallet_flutter/ui/widgets/security.dart';
-import 'package:wallet_flutter/ui/widgets/sheet_util.dart';
-import 'package:wallet_flutter/util/biometrics.dart';
-import 'package:wallet_flutter/util/caseconverter.dart';
-import 'package:wallet_flutter/util/hapticutil.dart';
-import 'package:wallet_flutter/util/ninja/api.dart';
-import 'package:wallet_flutter/util/ninja/n2_node.dart';
-import 'package:wallet_flutter/util/ninja/ninja_node.dart';
-import 'package:wallet_flutter/util/sharedprefsutil.dart';
+import 'package:velocity/app_icons.dart';
+import 'package:velocity/appstate_container.dart';
+import 'package:velocity/bus/contacts_setting_change_event.dart';
+import 'package:velocity/bus/events.dart';
+import 'package:velocity/bus/notification_setting_change_event.dart';
+import 'package:velocity/generated/l10n.dart';
+import 'package:velocity/localize.dart';
+import 'package:velocity/model/address.dart';
+import 'package:velocity/model/authentication_method.dart';
+import 'package:velocity/model/available_block_explorer.dart';
+import 'package:velocity/model/available_currency.dart';
+import 'package:velocity/model/available_language.dart';
+import 'package:velocity/model/available_themes.dart';
+import 'package:velocity/model/contacts_setting.dart';
+import 'package:velocity/model/currency_mode_setting.dart';
+import 'package:velocity/model/db/account.dart';
+import 'package:velocity/model/db/appdb.dart';
+import 'package:velocity/model/db/node.dart';
+import 'package:velocity/model/db/txdata.dart';
+import 'package:velocity/model/db/work_source.dart';
+import 'package:velocity/model/device_lock_timeout.dart';
+import 'package:velocity/model/device_unlock_option.dart';
+import 'package:velocity/model/funding_setting.dart';
+import 'package:velocity/model/min_raw_setting.dart';
+import 'package:velocity/model/natricon_option.dart';
+import 'package:velocity/model/notification_setting.dart';
+import 'package:velocity/model/nyanicon_option.dart';
+import 'package:velocity/model/vault.dart';
+import 'package:velocity/network/model/response/account_history_response_item.dart';
+import 'package:velocity/network/model/response/alerts_response_item.dart';
+import 'package:velocity/network/model/response/funding_response_item.dart';
+import 'package:velocity/service_locator.dart';
+import 'package:velocity/styles.dart';
+import 'package:velocity/ui/accounts/accountdetails_sheet.dart';
+import 'package:velocity/ui/accounts/accounts_sheet.dart';
+import 'package:velocity/ui/onboard_sheet.dart';
+import 'package:velocity/ui/settings/backup/backupseed_sheet.dart';
+import 'package:velocity/ui/settings/node/change_node_sheet.dart';
+import 'package:velocity/ui/settings/password/set_pin_sheet.dart';
+import 'package:velocity/ui/settings/password/set_plausible_pin_sheet.dart';
+import 'package:velocity/ui/settings/pow/change_work_source_sheet.dart';
+import 'package:velocity/ui/settings/rep/changerepresentative_sheet.dart';
+import 'package:velocity/ui/settings/settings_list_item.dart';
+import 'package:velocity/ui/settings/users/blocked_widget.dart';
+import 'package:velocity/ui/settings/users/contacts_widget.dart';
+import 'package:velocity/ui/transfer/transfer_complete_sheet.dart';
+import 'package:velocity/ui/transfer/transfer_confirm_sheet.dart';
+import 'package:velocity/ui/transfer/transfer_overview_sheet.dart';
+import 'package:velocity/ui/util/formatters.dart';
+import 'package:velocity/ui/util/ui_util.dart';
+import 'package:velocity/ui/widgets/animations.dart';
+import 'package:velocity/ui/widgets/app_simpledialog.dart';
+import 'package:velocity/ui/widgets/buttons.dart';
+import 'package:velocity/ui/widgets/dialog.dart';
+import 'package:velocity/ui/widgets/draggable_scrollbar.dart';
+import 'package:velocity/ui/widgets/list_gradient.dart';
+import 'package:velocity/ui/widgets/remote_message_card.dart';
+import 'package:velocity/ui/widgets/remote_message_sheet.dart';
+import 'package:velocity/ui/widgets/security.dart';
+import 'package:velocity/ui/widgets/sheet_util.dart';
+import 'package:velocity/util/biometrics.dart';
+import 'package:velocity/util/caseconverter.dart';
+import 'package:velocity/util/hapticutil.dart';
+import 'package:velocity/util/ninja/api.dart';
+import 'package:velocity/util/ninja/n2_node.dart';
+import 'package:velocity/util/ninja/ninja_node.dart';
+import 'package:velocity/util/sharedprefsutil.dart';
 
 class SettingsSheet extends StatefulWidget {
   @override
@@ -122,7 +122,7 @@ class SettingsSheetState extends State<SettingsSheet>
   NyaniconSetting _curNyaniconSetting = NyaniconSetting(NyaniconOptions.ON);
   FundingSetting _curFundingSetting = FundingSetting(FundingOptions.SHOW);
   MinRawSetting _curMinRawSetting = MinRawSetting(MinRawOptions.OFF);
-  CurrencyModeSetting _curCurrencyModeSetting = CurrencyModeSetting(CurrencyModeOptions.NANO);
+  CurrencyModeSetting _curCurrencyModeSetting = CurrencyModeSetting(CurrencyModeOptions.Lumex);
   UnlockSetting _curUnlockSetting = UnlockSetting(UnlockOption.NO);
   LockTimeoutSetting _curTimeoutSetting = LockTimeoutSetting(LockTimeoutOption.ONE);
   ThemeSetting _curThemeSetting = ThemeSetting(ThemeOptions.NAUTILUS);
@@ -294,8 +294,8 @@ class SettingsSheetState extends State<SettingsSheet>
     sl.get<SharedPrefsUtil>().getCurrencyMode().then((String currencyMode) {
       setState(() {
         switch (currencyMode) {
-          case "NANO":
-            _curCurrencyModeSetting = CurrencyModeSetting(CurrencyModeOptions.NANO);
+          case "Lumex":
+            _curCurrencyModeSetting = CurrencyModeSetting(CurrencyModeOptions.Lumex);
             break;
           case "NYANO":
             _curCurrencyModeSetting = CurrencyModeSetting(CurrencyModeOptions.NYANO);
@@ -1567,7 +1567,7 @@ class SettingsSheetState extends State<SettingsSheet>
         // Divider(height: 2, color: StateContainer.of(context).curTheme.text15),
         // AppSettings.buildSettingsListItemSingleLine(context, Z.of(context).registerUsername, Icons.tag,
         //     onPressed: () {
-        //   Navigator.of(context).pushNamed("/register_nano_to_username");
+        //   Navigator.of(context).pushNamed("/register_lumex_to_username");
         // }),
         // Divider(height: 2, color: StateContainer.of(context).curTheme.text15),
         // AppSettings.buildSettingsListItemSingleLine(context, Z.of(context).createGiftCard, AppIcons.export_icon, onPressed: () {
@@ -1785,7 +1785,7 @@ class SettingsSheetState extends State<SettingsSheet>
                     }),
                     AppButton.pillButton(context, Z.of(context).nodeStatus, onPressed: () async {
                       await UIUtil.showChromeSafariWebview(
-                          context, NonTranslatable.nautilusNodeUrl);
+                          context, NonTranslatable.lumexNodeUrl);
                     }),
                   ],
                 ),
@@ -2464,7 +2464,7 @@ class SettingsSheetState extends State<SettingsSheet>
 
     final DateTime exportTime = DateTime.now();
     final String filename =
-        "nautilus_txdata_${exportTime.year}${exportTime.month}${exportTime.day}${exportTime.hour}${exportTime.minute}${exportTime.second}.json";
+        "lumex_txdata_${exportTime.year}${exportTime.month}${exportTime.day}${exportTime.hour}${exportTime.minute}${exportTime.second}.json";
     final Directory baseDirectory = await getApplicationDocumentsDirectory();
     final File contactsFile = File("${baseDirectory.path}/$filename");
     await contactsFile.writeAsString(json.encode(jsonList));
@@ -2799,7 +2799,7 @@ class SettingsSheetState extends State<SettingsSheet>
                       AppIcons.coins,
                       onPressed: () async {
                         final String url =
-                            "https://widget.onramper.com?apiKey=${dotenv.env["ONRAMPER_API_KEY"]!}&color=4080D7&onlyCryptos=NANO&defaultCrypto=NANO&darkMode=${StateContainer.of(context).curTheme.brightness == Brightness.dark}";
+                            "https://widget.onramper.com?apiKey=${dotenv.env["ONRAMPER_API_KEY"]!}&color=4080D7&onlyCryptos=Lumex&defaultCrypto=Lumex&darkMode=${StateContainer.of(context).curTheme.brightness == Brightness.dark}";
                         await UIUtil.showChromeSafariWebview(context, url);
                       },
                       iconOverride: const SizedBox(
@@ -2890,7 +2890,7 @@ class SettingsSheetState extends State<SettingsSheet>
                       NonTranslatable.nanswap,
                       AppIcons.coins,
                       onPressed: () async {
-                        const String url = "https://nanswap.com/?ref=nautilus";
+                        const String url = "https://nanswap.com/?ref=lumex";
                         await UIUtil.showChromeSafariWebview(context, url);
                       },
                       iconOverride: const SizedBox(

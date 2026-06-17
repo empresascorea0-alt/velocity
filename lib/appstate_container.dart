@@ -17,57 +17,57 @@ import 'package:logger/logger.dart';
 import 'package:nanoutil/nanoutil.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:uni_links/uni_links.dart';
-import 'package:wallet_flutter/bus/events.dart';
-import 'package:wallet_flutter/bus/payments_home_event.dart';
-import 'package:wallet_flutter/bus/tx_update_event.dart';
-import 'package:wallet_flutter/bus/unified_home_event.dart';
-import 'package:wallet_flutter/generated/l10n.dart';
-import 'package:wallet_flutter/localize.dart';
-import 'package:wallet_flutter/model/address.dart';
-import 'package:wallet_flutter/model/available_block_explorer.dart';
-import 'package:wallet_flutter/model/available_currency.dart';
-import 'package:wallet_flutter/model/available_language.dart';
-import 'package:wallet_flutter/model/available_themes.dart';
-import 'package:wallet_flutter/model/currency_mode_setting.dart';
-import 'package:wallet_flutter/model/db/account.dart';
-import 'package:wallet_flutter/model/db/appdb.dart';
-import 'package:wallet_flutter/model/db/txdata.dart';
-import 'package:wallet_flutter/model/db/user.dart';
-import 'package:wallet_flutter/model/vault.dart';
-import 'package:wallet_flutter/model/wallet.dart';
-import 'package:wallet_flutter/network/account_service.dart';
-import 'package:wallet_flutter/network/alert_codes.dart';
-import 'package:wallet_flutter/network/metadata_service.dart';
-import 'package:wallet_flutter/network/model/block_types.dart';
-import 'package:wallet_flutter/network/model/fcm_message_event.dart';
-import 'package:wallet_flutter/network/model/request/fcm_update_request.dart';
-import 'package:wallet_flutter/network/model/request/subscribe_option.dart';
-import 'package:wallet_flutter/network/model/request/subscribe_request.dart';
-import 'package:wallet_flutter/network/model/response/account_balance_item.dart';
-import 'package:wallet_flutter/network/model/response/account_history_response.dart';
-import 'package:wallet_flutter/network/model/response/account_history_response_item.dart';
-import 'package:wallet_flutter/network/model/response/account_info_response.dart';
-import 'package:wallet_flutter/network/model/response/account_representative_response.dart';
-import 'package:wallet_flutter/network/model/response/accounts_balances_response.dart';
-import 'package:wallet_flutter/network/model/response/alerts_response_item.dart';
-import 'package:wallet_flutter/network/model/response/callback_response.dart';
-import 'package:wallet_flutter/network/model/response/error_response.dart';
-import 'package:wallet_flutter/network/model/response/funding_response_item.dart';
-import 'package:wallet_flutter/network/model/response/process_response.dart';
-import 'package:wallet_flutter/network/model/response/receivable_response.dart';
-import 'package:wallet_flutter/network/model/response/receivable_response_item.dart';
-import 'package:wallet_flutter/network/model/response/subscribe_response.dart';
-import 'package:wallet_flutter/network/model/status_types.dart';
-import 'package:wallet_flutter/network/subscription_service.dart';
-import 'package:wallet_flutter/network/username_service.dart';
-import 'package:wallet_flutter/service_locator.dart';
-import 'package:wallet_flutter/themes.dart';
-import 'package:wallet_flutter/util/box.dart';
-import 'package:wallet_flutter/util/nanoutil.dart';
-import 'package:wallet_flutter/util/ninja/api.dart';
-import 'package:wallet_flutter/util/ninja/n2_node.dart';
-import 'package:wallet_flutter/util/ninja/ninja_node.dart';
-import 'package:wallet_flutter/util/sharedprefsutil.dart';
+import 'package:velocity/bus/events.dart';
+import 'package:velocity/bus/payments_home_event.dart';
+import 'package:velocity/bus/tx_update_event.dart';
+import 'package:velocity/bus/unified_home_event.dart';
+import 'package:velocity/generated/l10n.dart';
+import 'package:velocity/localize.dart';
+import 'package:velocity/model/address.dart';
+import 'package:velocity/model/available_block_explorer.dart';
+import 'package:velocity/model/available_currency.dart';
+import 'package:velocity/model/available_language.dart';
+import 'package:velocity/model/available_themes.dart';
+import 'package:velocity/model/currency_mode_setting.dart';
+import 'package:velocity/model/db/account.dart';
+import 'package:velocity/model/db/appdb.dart';
+import 'package:velocity/model/db/txdata.dart';
+import 'package:velocity/model/db/user.dart';
+import 'package:velocity/model/vault.dart';
+import 'package:velocity/model/wallet.dart';
+import 'package:velocity/network/account_service.dart';
+import 'package:velocity/network/alert_codes.dart';
+import 'package:velocity/network/metadata_service.dart';
+import 'package:velocity/network/model/block_types.dart';
+import 'package:velocity/network/model/fcm_message_event.dart';
+import 'package:velocity/network/model/request/fcm_update_request.dart';
+import 'package:velocity/network/model/request/subscribe_option.dart';
+import 'package:velocity/network/model/request/subscribe_request.dart';
+import 'package:velocity/network/model/response/account_balance_item.dart';
+import 'package:velocity/network/model/response/account_history_response.dart';
+import 'package:velocity/network/model/response/account_history_response_item.dart';
+import 'package:velocity/network/model/response/account_info_response.dart';
+import 'package:velocity/network/model/response/account_representative_response.dart';
+import 'package:velocity/network/model/response/accounts_balances_response.dart';
+import 'package:velocity/network/model/response/alerts_response_item.dart';
+import 'package:velocity/network/model/response/callback_response.dart';
+import 'package:velocity/network/model/response/error_response.dart';
+import 'package:velocity/network/model/response/funding_response_item.dart';
+import 'package:velocity/network/model/response/process_response.dart';
+import 'package:velocity/network/model/response/receivable_response.dart';
+import 'package:velocity/network/model/response/receivable_response_item.dart';
+import 'package:velocity/network/model/response/subscribe_response.dart';
+import 'package:velocity/network/model/status_types.dart';
+import 'package:velocity/network/subscription_service.dart';
+import 'package:velocity/network/username_service.dart';
+import 'package:velocity/service_locator.dart';
+import 'package:velocity/themes.dart';
+import 'package:velocity/util/box.dart';
+import 'package:velocity/util/nanoutil.dart';
+import 'package:velocity/util/ninja/api.dart';
+import 'package:velocity/util/ninja/n2_node.dart';
+import 'package:velocity/util/ninja/ninja_node.dart';
+import 'package:velocity/util/sharedprefsutil.dart';
 
 Future<void> firebaseMessagingBackgroundHandler(RemoteMessage message) async {
   // print("Handling a background message");
@@ -136,7 +136,7 @@ class StateContainer extends StatefulWidget {
 class StateContainerState extends State<StateContainer> {
   final Logger log = sl.get<Logger>();
 
-  // Minimum receive = 0.000001 NANO
+  // Minimum receive = 0.000001 Lumex
   // String receiveThreshold = BigInt.from(10).pow(24).toString();
   String? receiveThreshold = "0";
   // min raw for receive
@@ -154,11 +154,11 @@ class StateContainerState extends State<StateContainer> {
       AvailableBlockExplorer(AvailableBlockExplorerEnum.NANOBROWSE);
 
   BaseTheme curTheme = SchedulerBinding.instance.window.platformBrightness == Brightness.dark
-      ? NautilusTheme()
+      ? LumexTheme()
       : IndiumTheme();
   bool nyanoMode = false;
   bool bananoMode = false;
-  String currencyMode = CurrencyModeSetting(CurrencyModeOptions.NANO).getDisplayName();
+  String currencyMode = CurrencyModeSetting(CurrencyModeOptions.Lumex).getDisplayName();
   // Currently selected account
   Account? selectedAccount = Account(id: 1, name: "AB", index: 0, lastAccess: 0, selected: true);
   // Two most recently used accounts
@@ -195,7 +195,7 @@ class StateContainerState extends State<StateContainer> {
   List<String?> receivableRequests = [];
   List<String?> alreadyReceived = [];
 
-  // List of Verified Nano Ninja Nodes
+  // List of Verified Lumex Ninja Nodes
   bool nanoNodesUpdated = false;
   List<N2Node> n2Nodes = [];
 
@@ -464,9 +464,9 @@ class StateContainerState extends State<StateContainer> {
     );
     const int MIN_REP_SCORE = 95;
     try {
-      // // don't show if set to the nautilus node:
+      // // don't show if set to the lumex node:
       // if (wallet!.representative ==
-      //     "nano_38713x95zyjsqzx6nm1dsom1jmm668owkeb9913ax6nfgj15az3nu8xkx579") {
+      //     "lumex_38713x95zyjsqzx6nm1dsom1jmm668owkeb9913ax6nfgj15az3nu8xkx579") {
       //   removeActiveOrSettingsAlert(alert, null);
       //   return;
       // }
@@ -882,8 +882,8 @@ class StateContainerState extends State<StateContainer> {
     // add the donations contact:
     await sl.get<SharedPrefsUtil>().setFirstContactAdded(true);
     final User donationsContact = User(
-      nickname: "NautilusDonations",
-      address: "nano_38713x95zyjsqzx6nm1dsom1jmm668owkeb9913ax6nfgj15az3nu8xkx579",
+      nickname: "LumexDonations",
+      address: "lumex_38713x95zyjsqzx6nm1dsom1jmm668owkeb9913ax6nfgj15az3nu8xkx579",
       type: UserTypes.CONTACT,
     );
     await sl.get<DBHelper>().saveContact(donationsContact);
@@ -982,8 +982,8 @@ class StateContainerState extends State<StateContainer> {
           this.currencyMode == CurrencyModeSetting(CurrencyModeOptions.BANANO).getDisplayName();
 
       if (bananoMode) {
-        if (wallet?.representative.startsWith("nano_") ?? false) {
-          wallet?.representative = wallet!.representative.replaceAll("nano_", "ban_");
+        if (wallet?.representative.startsWith("lumex_") ?? false) {
+          wallet?.representative = wallet!.representative.replaceAll("lumex_", "ban_");
         }
         NonTranslatable.currencyName = "Banano";
         NonTranslatable.currencyPrefix = "ban_";
@@ -991,12 +991,12 @@ class StateContainerState extends State<StateContainer> {
         NonTranslatable.accountType = NanoAccountType.BANANO;
       } else {
         if (wallet?.representative.startsWith("ban_") ?? false) {
-          wallet?.representative = wallet!.representative.replaceAll("ban_", "nano_");
+          wallet?.representative = wallet!.representative.replaceAll("ban_", "lumex_");
         }
-        NonTranslatable.currencyName = "Nano";
-        NonTranslatable.currencyPrefix = "nano_";
+        NonTranslatable.currencyName = "Lumex";
+        NonTranslatable.currencyPrefix = "lumex_";
         NonTranslatable.currencyUriPrefix = "nano";
-        NonTranslatable.accountType = NanoAccountType.NANO;
+        NonTranslatable.accountType = NanoAccountType.Lumex;
       }
       if (context != null) {
         modeChange(context);

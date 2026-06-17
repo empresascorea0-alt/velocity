@@ -1,5 +1,5 @@
 import 'package:event_taxi/event_taxi.dart';
-import 'package:wallet_flutter/model/db/user.dart';
+import 'package:velocity/model/db/user.dart';
 
 class BlockedAddedEvent implements Event {
   final User? user;

@@ -3,27 +3,27 @@ import 'dart:async';
 import 'package:event_taxi/event_taxi.dart';
 import 'package:flutter/material.dart';
 import 'package:logger/logger.dart';
-import 'package:wallet_flutter/appstate_container.dart';
-import 'package:wallet_flutter/bus/events.dart';
-import 'package:wallet_flutter/dimens.dart';
-import 'package:wallet_flutter/generated/l10n.dart';
-import 'package:wallet_flutter/model/authentication_method.dart';
-import 'package:wallet_flutter/model/vault.dart';
-import 'package:wallet_flutter/network/account_service.dart';
-import 'package:wallet_flutter/network/model/response/process_response.dart';
-import 'package:wallet_flutter/service_locator.dart';
-import 'package:wallet_flutter/styles.dart';
-import 'package:wallet_flutter/ui/util/formatters.dart';
-import 'package:wallet_flutter/ui/util/handlebars.dart';
-import 'package:wallet_flutter/ui/util/ui_util.dart';
-import 'package:wallet_flutter/ui/widgets/animations.dart';
-import 'package:wallet_flutter/ui/widgets/buttons.dart';
-import 'package:wallet_flutter/ui/widgets/security.dart';
-import 'package:wallet_flutter/util/biometrics.dart';
-import 'package:wallet_flutter/util/caseconverter.dart';
-import 'package:wallet_flutter/util/hapticutil.dart';
-import 'package:wallet_flutter/util/nanoutil.dart';
-import 'package:wallet_flutter/util/sharedprefsutil.dart';
+import 'package:velocity/appstate_container.dart';
+import 'package:velocity/bus/events.dart';
+import 'package:velocity/dimens.dart';
+import 'package:velocity/generated/l10n.dart';
+import 'package:velocity/model/authentication_method.dart';
+import 'package:velocity/model/vault.dart';
+import 'package:velocity/network/account_service.dart';
+import 'package:velocity/network/model/response/process_response.dart';
+import 'package:velocity/service_locator.dart';
+import 'package:velocity/styles.dart';
+import 'package:velocity/ui/util/formatters.dart';
+import 'package:velocity/ui/util/handlebars.dart';
+import 'package:velocity/ui/util/ui_util.dart';
+import 'package:velocity/ui/widgets/animations.dart';
+import 'package:velocity/ui/widgets/buttons.dart';
+import 'package:velocity/ui/widgets/security.dart';
+import 'package:velocity/util/biometrics.dart';
+import 'package:velocity/util/caseconverter.dart';
+import 'package:velocity/util/hapticutil.dart';
+import 'package:velocity/util/nanoutil.dart';
+import 'package:velocity/util/sharedprefsutil.dart';
 
 class SwapXMRConfirmSheet extends StatefulWidget {
   const SwapXMRConfirmSheet({this.amountRaw = "", this.destination = "", this.localCurrency, this.maxSend = false})
@@ -274,9 +274,9 @@ class SwapXMRConfirmSheetState extends State<SwapXMRConfirmSheet> {
     //   // create link:
     //   // final BranchUniversalObject buo = BranchUniversalObject(
     //   //     canonicalIdentifier: 'flutter/branch',
-    //   //     title: 'Nautilus Gift Card',
+    //   //     title: 'Lumex Gift Card',
     //   //     contentDescription: 'Get the app to open this gift card!',
-    //   //     keywords: ['Nautilus', "Gift Card"],
+    //   //     keywords: ['Lumex', "Gift Card"],
     //   //     publiclyIndex: true,
     //   //     locallyIndex: true,
     //   //     contentMetadata: BranchContentMetaData()
@@ -290,7 +290,7 @@ class SwapXMRConfirmSheetState extends State<SwapXMRConfirmSheet> {
 
     //   // final BranchLinkProperties lp = BranchLinkProperties(
     //   //     //alias: 'flutterplugin', //define link url,
-    //   //     channel: 'nautilusapp',
+    //   //     channel: 'lumexapp',
     //   //     feature: 'gift',
     //   //     stage: 'new share');
 

@@ -493,7 +493,7 @@
   "connectingHeader": "Se încarcă",
   "@connectingHeader": {
     "type": "text",
-    "description": "A header to let the user now that Nautilus is currently connecting to (or loading) live chat."
+    "description": "A header to let the user now that Lumex is currently connecting to (or loading) live chat."
   },
   "connectionWarning": "Nu se poate conecta",
   "@connectionWarning": {
@@ -697,7 +697,7 @@
     "type": "text",
     "description": "currency_mode_header"
   },
-  "currencyModeInfo": "Alegeți în ce unitate să afișați sumele.\n1 nyano = 0.000001 NANO, sau \n1.000,000 nyano = 1 NANO",
+  "currencyModeInfo": "Alegeți în ce unitate să afișați sumele.\n1 nyano = 0.000001 Lumex, sau \n1.000,000 nyano = 1 Lumex",
   "@currencyModeInfo": {
     "type": "text",
     "description": "currency_mode_info"
@@ -727,7 +727,7 @@
     "type": "text",
     "description": "Default account name"
   },
-  "defaultGiftMessage": "Vezi Nautilus! Ți-am trimis niște %2 cu acest link:",
+  "defaultGiftMessage": "Vezi Lumex! Ți-am trimis niște %2 cu acest link:",
   "@defaultGiftMessage": {
     "type": "text",
     "description": "default_gift_message"
@@ -957,7 +957,7 @@
     "type": "text",
     "description": "example_card_from"
   },
-  "exampleCardIntro": "Bine ai venit! Odată ce primești sau trimiți NANO, tranzacțiile vor arăta astfel",
+  "exampleCardIntro": "Bine ai venit! Odată ce primești sau trimiți Lumex, tranzacțiile vor arăta astfel",
   "@exampleCardIntro": {
     "type": "text",
     "description": "example_card_intro"
@@ -1047,7 +1047,7 @@
     "type": "text",
     "description": "exchange_currency"
   },
-  "exchangeNano": "Schimbă NANO",
+  "exchangeNano": "Schimbă Lumex",
   "@exchangeNano": {
     "type": "text",
     "description": "exchange_nano"
@@ -1082,12 +1082,12 @@
     "type": "text",
     "description": "failed_message"
   },
-  "fallbackHeader": "Nautilus Deconectat",
+  "fallbackHeader": "Lumex Deconectat",
   "@fallbackHeader": {
     "type": "text",
     "description": "fallback_connected"
   },
-  "fallbackInfo": "Serverele Nautilus par să fie deconectate, trimiterea și primirea (fără note) ar trebui să fie în continuare operaționale, dar este posibil ca cererile de plată să nu treacă prin\n\n Reveniți mai târziu sau reporniți aplicația pentru a încerca din nou",
+  "fallbackInfo": "Serverele Lumex par să fie deconectate, trimiterea și primirea (fără note) ar trebui să fie în continuare operaționale, dar este posibil ca cererile de plată să nu treacă prin\n\n Reveniți mai târziu sau reporniți aplicația pentru a încerca din nou",
   "@fallbackInfo": {
     "type": "text",
     "description": "fallback_info"
@@ -1191,7 +1191,7 @@
     "type": "text",
     "description": "get_currency"
   },
-  "getNano": "Ia NANO",
+  "getNano": "Ia Lumex",
   "@getNano": {
     "type": "text",
     "description": "get_nano"
@@ -1231,7 +1231,7 @@
     "type": "text",
     "description": "gift_from"
   },
-  "giftInfo": "Încărcați un card cadou digital cu NANO! Setați o sumă și un mesaj opțional pe care destinatarul să îl vadă când îl deschide!\n\nOdată creat, veți primi un link pe care îl puteți trimite oricui, care, atunci când este deschis, va distribui automat fondurile destinatarului după instalarea Nautilus!\n\nDacă destinatarul este deja utilizator Nautilus, acesta va primi o solicitare de a transfera fondurile în contul său la deschiderea linkului",
+  "giftInfo": "Încărcați un card cadou digital cu Lumex! Setați o sumă și un mesaj opțional pe care destinatarul să îl vadă când îl deschide!\n\nOdată creat, veți primi un link pe care îl puteți trimite oricui, care, atunci când este deschis, va distribui automat fondurile destinatarului după instalarea Lumex!\n\nDacă destinatarul este deja utilizator Lumex, acesta va primi o solicitare de a transfera fondurile în contul său la deschiderea linkului",
   "@giftInfo": {
     "type": "text",
     "description": "Description for gift card creation"
@@ -1356,12 +1356,12 @@
     "type": "text",
     "description": "import_gift_empty"
   },
-  "importGiftIntro": "Se pare că ați dat clic pe un link care conține niște NANO, pentru a primi aceste fonduri avem nevoie doar pentru a finaliza configurarea portofelului.",
+  "importGiftIntro": "Se pare că ați dat clic pe un link care conține niște Lumex, pentru a primi aceste fonduri avem nevoie doar pentru a finaliza configurarea portofelului.",
   "@importGiftIntro": {
     "type": "text",
     "description": "import_gift_intro"
   },
-  "importGiftv2": "Linkul pe care ați dat clic conține niște NANO, doriți să îl importați în acest portofel?",
+  "importGiftv2": "Linkul pe care ați dat clic conține niște Lumex, doriți să îl importați în acest portofel?",
   "@importGiftv2": {
     "type": "text",
     "description": "import_gift_v2"
@@ -1466,7 +1466,7 @@
     "type": "text",
     "description": "An error indicating a pin has been entered incorrectly"
   },
-  "iosFundingMessage": "Din cauza regulilor și restricțiilor iOS App Store, nu vă putem conecta la pagina noastră de donații. Dacă doriți să susțineți proiectul, luați în considerare trimiterea la adresa nodului nautilus.",
+  "iosFundingMessage": "Din cauza regulilor și restricțiilor iOS App Store, nu vă putem conecta la pagina noastră de donații. Dacă doriți să susțineți proiectul, luați în considerare trimiterea la adresa nodului lumex.",
   "@iosFundingMessage": {
     "type": "text",
     "description": "ios_funding_message"
@@ -1531,7 +1531,7 @@
     "type": "text",
     "description": "settings_logout_warning_title"
   },
-  "logoutDetail": "Prin deconectare vom elimina seed-ul și toate datele legate de Nautilus de pe acest dispozitiv. Dacă seed-ul nu are o copie de rezervă/backup, fondurile for fi pierdute permanent.",
+  "logoutDetail": "Prin deconectare vom elimina seed-ul și toate datele legate de Lumex de pe acest dispozitiv. Dacă seed-ul nu are o copie de rezervă/backup, fondurile for fi pierdute permanent.",
   "@logoutDetail": {
     "type": "text",
     "description": "settings_logout_alert_message"
@@ -1656,10 +1656,10 @@
     "type": "text",
     "description": "natricon_settings"
   },
-  "nautilusWallet": "Portofel Nautilus",
-  "@nautilusWallet": {
+  "lumexWallet": "Portofel Lumex",
+  "@lumexWallet": {
     "type": "text",
-    "description": "nautilus_wallet"
+    "description": "lumex_wallet"
   },
   "nearby": "Din apropiere",
   "@nearby": {
@@ -1676,7 +1676,7 @@
     "type": "text",
     "description": "verification_needed_header"
   },
-  "newAccountIntro": "Acesta este noul tău cont! Odată ce primești NANO, tranzacțiile vor arată astfel:",
+  "newAccountIntro": "Acesta este noul tău cont! Odată ce primești Lumex, tranzacțiile vor arată astfel:",
   "@newAccountIntro": {
     "type": "text",
     "description": "Alternate account intro card"
@@ -1746,7 +1746,7 @@
     "type": "text",
     "description": "no_thanks_app_button"
   },
-  "notificationBody": "Deschide Nautilus pentru a vizualiza tranzacția.",
+  "notificationBody": "Deschide Lumex pentru a vizualiza tranzacția.",
   "@notificationBody": {
     "type": "text",
     "description": "notification_body"
@@ -1766,7 +1766,7 @@
     "type": "text",
     "description": "notifications_settings"
   },
-  "notificationTitle": "Ai primit %1 NANO",
+  "notificationTitle": "Ai primit %1 Lumex",
   "@notificationTitle": {
     "type": "text",
     "description": "notification_title"
@@ -1894,7 +1894,7 @@
   "passwordNoLongerRequiredToOpenParagraph": "Deschideți aplicația fără a mai introduce parola.",
   "@passwordNoLongerRequiredToOpenParagraph": {
     "type": "text",
-    "description": "An info paragraph that tells the user a password will no longer be needed to open Nautilus"
+    "description": "An info paragraph that tells the user a password will no longer be needed to open Velocity"
   },
   "passwordNumber": "Parola trebuie să conțină cel puțin 1 număr",
   "@passwordNumber": {
@@ -1916,15 +1916,15 @@
     "type": "text",
     "description": "An error indicating the password is too short"
   },
-  "passwordWarning": "Această parolă va fi necesară pentru a deschide Nautilus.",
+  "passwordWarning": "Această parolă va fi necesară pentru a deschide Lumex.",
   "@passwordWarning": {
     "type": "text",
     "description": "A paragraph that warns the user to not lose their password."
   },
-  "passwordWillBeRequiredToOpenParagraph": "Această parolă va fi necesară pentru a deschide Nautilus.",
+  "passwordWillBeRequiredToOpenParagraph": "Această parolă va fi necesară pentru a deschide Lumex.",
   "@passwordWillBeRequiredToOpenParagraph": {
     "type": "text",
-    "description": "A paragraph that tells the users that the created password will be required to open Nautilus."
+    "description": "A paragraph that tells the users that the created password will be required to open Velocity."
   },
   "pastDue": "Ulterior",
   "@pastDue": {
@@ -2061,17 +2061,17 @@
     "type": "text",
     "description": "settings_privacy_policy"
   },
-  "promotionalLink": "NANO gratuit",
+  "promotionalLink": "Lumex gratuit",
   "@promotionalLink": {
     "type": "text",
     "description": "promo_Link"
   },
-  "proSubRequiredHeader": "Este necesar un abonament Nautilus Pro",
+  "proSubRequiredHeader": "Este necesar un abonament Velocity Pro",
   "@proSubRequiredHeader": {
     "type": "text",
     "description": "pro_sub_required_header"
   },
-  "proSubRequiredParagraph": "Pentru doar 1 NANO pe lună, puteți debloca toate funcțiile Nautilus Pro.",
+  "proSubRequiredParagraph": "Pentru doar 1 Lumex pe lună, puteți debloca toate funcțiile Velocity Pro.",
   "@proSubRequiredParagraph": {
     "type": "text",
     "description": "pro_sub_required_paragraph"
@@ -2081,7 +2081,7 @@
     "type": "text",
     "description": "purchase_currency"
   },
-  "purchaseNano": "Achiziționați Nano",
+  "purchaseNano": "Achiziționați Lumex",
   "@purchaseNano": {
     "type": "text",
     "description": "purchase_nano"
@@ -2286,7 +2286,7 @@
     "type": "text",
     "description": "requested_from"
   },
-  "requestError": "Solicitare eșuată: Acest utilizator nu pare să aibă instalat Nautilus sau notificările sunt dezactivate.",
+  "requestError": "Solicitare eșuată: Acest utilizator nu pare să aibă instalat Lumex sau notificările sunt dezactivate.",
   "@requestError": {
     "type": "text",
     "description": "request_generic_error"
@@ -2316,7 +2316,7 @@
     "type": "text",
     "description": "request_sent_again"
   },
-  "requestSheetInfo": "Solicitați o plată, cu mesaje criptate End to End!\n\nSolicitările de plată, notele și mesajele vor fi primite numai de alți utilizatori nautilus, dar le puteți utiliza pentru a vă păstra propria evidență chiar dacă destinatarul nu folosește nautilus.",
+  "requestSheetInfo": "Solicitați o plată, cu mesaje criptate End to End!\n\nSolicitările de plată, notele și mesajele vor fi primite numai de alți utilizatori lumex, dar le puteți utiliza pentru a vă păstra propria evidență chiar dacă destinatarul nu folosește lumex.",
   "@requestSheetInfo": {
     "type": "text",
     "description": "request_sheet_info"
@@ -2326,10 +2326,10 @@
     "type": "text",
     "description": "request_sheet_info_header"
   },
-  "requireAPasswordToOpenHeader": "Doriți să setați o parolă pentru a deschide Nautilus?",
+  "requireAPasswordToOpenHeader": "Doriți să setați o parolă pentru a deschide Lumex?",
   "@requireAPasswordToOpenHeader": {
     "type": "text",
-    "description": "A paragraph that asks the users if they would like a password to be required to open Nautilus."
+    "description": "A paragraph that asks the users if they would like a password to be required to open Velocity."
   },
   "requireCaptcha": "Solicitați CAPTCHA pentru a revendica cardul cadou",
   "@requireCaptcha": {
@@ -2376,7 +2376,7 @@
     "type": "text",
     "description": "dialog_save"
   },
-  "scanInstructions": "Scanează o adresă NANO de tip cod QR",
+  "scanInstructions": "Scanează o adresă Lumex de tip cod QR",
   "@scanInstructions": {
     "type": "text",
     "description": "scan_send_instruction_label"
@@ -2511,7 +2511,7 @@
     "type": "text",
     "description": "send_sending"
   },
-  "sendMemoError": "Trimiterea memoriei cu tranzacția a eșuat, este posibil ca acestea să nu fie un utilizator Nautilus.",
+  "sendMemoError": "Trimiterea memoriei cu tranzacția a eșuat, este posibil ca acestea să nu fie un utilizator Lumex.",
   "@sendMemoError": {
     "type": "text",
     "description": "send_memo_error"
@@ -2531,7 +2531,7 @@
     "type": "text",
     "description": "split_bill_send_requests"
   },
-  "sendSheetInfo": "Trimiteți sau solicitați o plată, cu mesaje criptate End to End!\n\nSolicitările de plată, memoriile și mesajele vor fi primite numai de către alți utilizatori nautilus.\n\nNu este necesar să aveți un nume de utilizator pentru a trimite sau primi cereri de plată și le puteți utiliza pentru păstrarea propriei evidențe, chiar dacă nu utilizează nautilus.",
+  "sendSheetInfo": "Trimiteți sau solicitați o plată, cu mesaje criptate End to End!\n\nSolicitările de plată, memoriile și mesajele vor fi primite numai de către alți utilizatori lumex.\n\nNu este necesar să aveți un nume de utilizator pentru a trimite sau primi cereri de plată și le puteți utiliza pentru păstrarea propriei evidențe, chiar dacă nu utilizează lumex.",
   "@sendSheetInfo": {
     "type": "text",
     "description": "send_sheet_info"
@@ -2624,14 +2624,14 @@
   "share": "Acțiune",
   "@share": {
     "type": "text",
-    "description": "nautilus_share"
+    "description": "lumex_share"
   },
   "shareApp": "Distribuie %1",
   "@shareApp": {
     "type": "text",
     "description": "settings_share"
   },
-  "shareAppText": "Verificați %1! Un portofel mobil NANO de prim rang!",
+  "shareAppText": "Verificați %1! Un portofel mobil Lumex de prim rang!",
   "@shareAppText": {
     "type": "text",
     "description": "share_extra"
@@ -2646,13 +2646,13 @@
     "type": "text",
     "description": "share_message"
   },
-  "shareNautilus": "Share Nautilus",
-  "@shareNautilus": {
+  "shareLumex": "Share Lumex",
+  "@shareLumex": {
     "type": "text",
     "description": "settings_share"
   },
-  "shareNautilusText": "Încearcă Nautilus! Portofelul mobil NANO de talie mondială!",
-  "@shareNautilusText": {
+  "shareLumexText": "Încearcă Lumex! Portofelul mobil Lumex de talie mondială!",
+  "@shareLumexText": {
     "type": "text",
     "description": "share_extra"
   },
@@ -2751,7 +2751,7 @@
     "type": "text",
     "description": "spend_currency"
   },
-  "spendNano": "Cheltuiește NANO",
+  "spendNano": "Cheltuiește Lumex",
   "@spendNano": {
     "type": "text",
     "description": "spend_nano"
@@ -2846,7 +2846,7 @@
     "type": "text",
     "description": "swap_xmr_header"
   },
-  "swapXMRInfo": "Monero este o criptomonedă axată pe confidențialitate, care face foarte dificilă sau chiar imposibilă urmărirea tranzacțiilor. Între timp, NANO este o criptomonedă axată pe plăți, rapidă și fără taxe. Împreună, oferă unele dintre cele mai utile aspecte ale criptomonedelor!\n\nUtilizați această pagină pentru a schimba cu ușurință NANO-ul dvs. cu XMR!",
+  "swapXMRInfo": "Monero este o criptomonedă axată pe confidențialitate, care face foarte dificilă sau chiar imposibilă urmărirea tranzacțiilor. Între timp, Lumex este o criptomonedă axată pe plăți, rapidă și fără taxe. Împreună, oferă unele dintre cele mai utile aspecte ale criptomonedelor!\n\nUtilizați această pagină pentru a schimba cu ușurință Lumex-ul dvs. cu XMR!",
   "@swapXMRInfo": {
     "type": "text",
     "description": "swap_xmr_header"
@@ -2946,12 +2946,12 @@
     "type": "text",
     "description": "transfer_close_text"
   },
-  "transferComplete": "%1 NANO au fost transferate cu succes în portofelul dvs. Nautilus.",
+  "transferComplete": "%1 Lumex au fost transferate cu succes în portofelul dvs. Lumex.",
   "@transferComplete": {
     "type": "text",
     "description": "transfer_complete_text"
   },
-  "transferConfirmInfo": "Un portofel cu un sold de %1 NANO a fost găsit.\n",
+  "transferConfirmInfo": "Un portofel cu un sold de %1 Lumex a fost găsit.\n",
   "@transferConfirmInfo": {
     "type": "text",
     "description": "transfer_confirm_info_first"
@@ -2976,12 +2976,12 @@
     "type": "text",
     "description": "transfer_header"
   },
-  "transferIntro": "Acest proces va transfera fondurile dintr-un Paper Wallet către contul dvs. Nautilus.\n\nAtingeți butonul \"%1\" pentru a începe.",
+  "transferIntro": "Acest proces va transfera fondurile dintr-un Paper Wallet către contul dvs. Lumex.\n\nAtingeți butonul \"%1\" pentru a începe.",
   "@transferIntro": {
     "type": "text",
     "description": "transfer_intro"
   },
-  "transferIntroShort": "Acest proces va transfera fondurile dintr-un portofel de hârtie în portofelul dvs. Nautilus.",
+  "transferIntroShort": "Acest proces va transfera fondurile dintr-un portofel de hârtie în portofelul dvs. Lumex.",
   "@transferIntroShort": {
     "type": "text",
     "description": "transfer_intro_short"
@@ -2996,7 +2996,7 @@
     "type": "text",
     "description": "transfer_hint"
   },
-  "transferNoFunds": "Acest seed nu conține NANO.",
+  "transferNoFunds": "Acest seed nu conține Lumex.",
   "@transferNoFunds": {
     "type": "text",
     "description": "transfer_no_funds_toast"
@@ -3006,7 +3006,7 @@
     "type": "text",
     "description": "transfer_qr_scan_error"
   },
-  "transferQrScanHint": "Scanați un seed pentru NANO\n sau un private key",
+  "transferQrScanHint": "Scanați un seed pentru Lumex\n sau un private key",
   "@transferQrScanHint": {
     "type": "text",
     "description": "transfer_qr_scan_hint"
@@ -3031,12 +3031,12 @@
     "type": "text",
     "description": "unlocktxt"
   },
-  "unlockBiometrics": "Autentificaţi-vă pentru a debloca Nautilus",
+  "unlockBiometrics": "Autentificaţi-vă pentru a debloca Lumex",
   "@unlockBiometrics": {
     "type": "text",
     "description": "unlock_bio"
   },
-  "unlockPin": "Introduceți codul PIN pentru a debloca Nautilus",
+  "unlockPin": "Introduceți codul PIN pentru a debloca Lumex",
   "@unlockPin": {
     "type": "text",
     "description": "unlock_pin"
@@ -3096,15 +3096,15 @@
     "type": "text",
     "description": "use_currency"
   },
-  "useNano": "Folosește NANO",
+  "useNano": "Folosește Lumex",
   "@useNano": {
     "type": "text",
     "description": "use_nano"
   },
-  "useNautilusRep": "Use Nautilus Rep",
-  "@useNautilusRep": {
+  "useLumexRep": "Use Lumex Rep",
+  "@useLumexRep": {
     "type": "text",
-    "description": "use nautilus node as rep"
+    "description": "use lumex node as rep"
   },
   "userAlreadyAddedError": "Utilizator deja adăugat!",
   "@userAlreadyAddedError": {
@@ -3131,7 +3131,7 @@
     "type": "text",
     "description": "username_unknown_error"
   },
-  "usernameInfo": "Alegeți un @username unic pentru a vă ajuta prietenii și familia să vă găsească mai ușor!\n\nAvând un nume de utilizator Nautilus actualizează interfața de utilizator la nivel global pentru a reflecta noul dvs. mâner.",
+  "usernameInfo": "Alegeți un @username unic pentru a vă ajuta prietenii și familia să vă găsească mai ușor!\n\nAvând un nume de utilizator Lumex actualizează interfața de utilizator la nivel global pentru a reflecta noul dvs. mâner.",
   "@usernameInfo": {
     "type": "text",
     "description": "Description for username registration"
@@ -3146,7 +3146,7 @@
     "type": "text",
     "description": "username_unavailable"
   },
-  "usernameWarning": "Numele de utilizator Nautilus sunt un serviciu centralizat furnizat de Nano.to",
+  "usernameWarning": "Numele de utilizator Lumex sunt un serviciu centralizat furnizat de Lumex.to",
   "@usernameWarning": {
     "type": "text",
     "description": "Username centralization warning"
@@ -3216,12 +3216,12 @@
     "type": "text",
     "description": "intro_welcome_title"
   },
-  "welcomeTextLogin": "Bun venit la Nautilus. Alegeți o opțiune pentru a începe sau alegeți o temă folosind pictograma de mai jos.",
+  "welcomeTextLogin": "Bun venit la Lumex. Alegeți o opțiune pentru a începe sau alegeți o temă folosind pictograma de mai jos.",
   "@welcomeTextLogin": {
     "type": "text",
     "description": "intro_welcome_login"
   },
-  "welcomeTextUpdated": "Bun venit la Nautilus. Pentru a începe, creați un portofel nou sau importați unul existent.",
+  "welcomeTextUpdated": "Bun venit la Lumex. Pentru a începe, creați un portofel nou sau importați unul existent.",
   "@welcomeTextUpdated": {
     "type": "text",
     "description": "intro_welcome_title"

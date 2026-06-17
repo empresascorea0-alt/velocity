@@ -13,28 +13,28 @@ import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:flutter_nano_ffi/flutter_nano_ffi.dart';
 import 'package:http/http.dart' as http;
 import 'package:logger/logger.dart';
-import 'package:wallet_flutter/appstate_container.dart';
-import 'package:wallet_flutter/bus/contact_modified_event.dart';
-import 'package:wallet_flutter/bus/payments_home_event.dart';
-import 'package:wallet_flutter/localize.dart';
-import 'package:wallet_flutter/model/db/appdb.dart';
-import 'package:wallet_flutter/model/db/txdata.dart';
-import 'package:wallet_flutter/model/db/user.dart';
-import 'package:wallet_flutter/model/state_block.dart';
-import 'package:wallet_flutter/network/account_service.dart';
-import 'package:wallet_flutter/network/model/block_types.dart';
-import 'package:wallet_flutter/network/model/request/process_request.dart';
-import 'package:wallet_flutter/network/model/response/account_info_response.dart';
-import 'package:wallet_flutter/network/model/response/block_info_item.dart';
-import 'package:wallet_flutter/network/model/response/error_response.dart';
-import 'package:wallet_flutter/network/model/response/process_response.dart';
-import 'package:wallet_flutter/network/model/response/receivable_response.dart';
-import 'package:wallet_flutter/network/model/response/receivable_response_item.dart';
-import 'package:wallet_flutter/service_locator.dart';
-import 'package:wallet_flutter/ui/send/send_sheet.dart';
-import 'package:wallet_flutter/util/blake2b.dart';
-import 'package:wallet_flutter/util/nanoutil.dart';
-import 'package:wallet_flutter/util/sharedprefsutil.dart';
+import 'package:velocity/appstate_container.dart';
+import 'package:velocity/bus/contact_modified_event.dart';
+import 'package:velocity/bus/payments_home_event.dart';
+import 'package:velocity/localize.dart';
+import 'package:velocity/model/db/appdb.dart';
+import 'package:velocity/model/db/txdata.dart';
+import 'package:velocity/model/db/user.dart';
+import 'package:velocity/model/state_block.dart';
+import 'package:velocity/network/account_service.dart';
+import 'package:velocity/network/model/block_types.dart';
+import 'package:velocity/network/model/request/process_request.dart';
+import 'package:velocity/network/model/response/account_info_response.dart';
+import 'package:velocity/network/model/response/block_info_item.dart';
+import 'package:velocity/network/model/response/error_response.dart';
+import 'package:velocity/network/model/response/process_response.dart';
+import 'package:velocity/network/model/response/receivable_response.dart';
+import 'package:velocity/network/model/response/receivable_response_item.dart';
+import 'package:velocity/service_locator.dart';
+import 'package:velocity/ui/send/send_sheet.dart';
+import 'package:velocity/util/blake2b.dart';
+import 'package:velocity/util/nanoutil.dart';
+import 'package:velocity/util/sharedprefsutil.dart';
 import 'package:web3dart/web3dart.dart';
 import 'package:web_socket_channel/io.dart';
 
@@ -110,7 +110,7 @@ class UsernameService {
 
     if (decoded != null &&
         decoded["records"] != null &&
-        decoded["records"]["crypto.NANO.address"] != null) {
+        decoded["records"]["crypto.Lumex.address"] != null) {
       address = decoded["records"]["crypto.${NonTranslatable.currencyName.toUpperCase()}.address"]
           as String?;
       if (NanoAccounts.isValid(NonTranslatable.accountType, address!)) {
@@ -122,7 +122,7 @@ class UsernameService {
   }
 
   Future<String?> checkENSDomain(String domain) async {
-    final String pubKey = await ens.withName(domain).getCoinAddress(CoinType.NANO);
+    final String pubKey = await ens.withName(domain).getCoinAddress(CoinType.Lumex);
     if (pubKey.isEmpty) {
       return null;
     } else {
@@ -181,7 +181,7 @@ class UsernameService {
     return null;
   }
 
-  // NANO.TO:
+  // Lumex.TO:
   Future<dynamic> checkNanoToUsernameAvailability(String username) async {
     final http.Response response = await http.get(
         Uri.parse("$NANO_TO_USERNAME_LEASE_ENDPOINT/$username/lease"),
@@ -235,7 +235,7 @@ class UsernameService {
     return checkWellKnownAddress("nano.to", address);
   }
 
-  // END NANO.TO
+  // END Lumex.TO
 
   // ON CHAIN USERNAMES:
   // credit where credit is due to plasmapower:

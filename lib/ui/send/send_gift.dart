@@ -11,29 +11,29 @@ import 'package:flutter_nano_ffi/flutter_nano_ffi.dart';
 import 'package:intl/intl.dart';
 import 'package:keyboard_avoider/keyboard_avoider.dart';
 import 'package:logger/logger.dart';
-import 'package:wallet_flutter/app_icons.dart';
-import 'package:wallet_flutter/appstate_container.dart';
-import 'package:wallet_flutter/dimens.dart';
-import 'package:wallet_flutter/generated/l10n.dart';
-import 'package:wallet_flutter/localize.dart';
-import 'package:wallet_flutter/model/available_currency.dart';
-import 'package:wallet_flutter/model/db/user.dart';
-import 'package:wallet_flutter/network/giftcards.dart';
-import 'package:wallet_flutter/service_locator.dart';
-import 'package:wallet_flutter/styles.dart';
-import 'package:wallet_flutter/ui/receive/receive_sheet.dart';
-import 'package:wallet_flutter/ui/send/send_confirm_sheet.dart';
-import 'package:wallet_flutter/ui/send/send_sheet.dart';
-import 'package:wallet_flutter/ui/util/formatters.dart';
-import 'package:wallet_flutter/ui/util/handlebars.dart';
-import 'package:wallet_flutter/ui/util/ui_util.dart';
-import 'package:wallet_flutter/ui/widgets/app_text_field.dart';
-import 'package:wallet_flutter/ui/widgets/buttons.dart';
-import 'package:wallet_flutter/ui/widgets/dialog.dart';
-import 'package:wallet_flutter/ui/widgets/sheet_util.dart';
-import 'package:wallet_flutter/util/caseconverter.dart';
-import 'package:wallet_flutter/util/nanoutil.dart';
-import 'package:wallet_flutter/util/numberutil.dart';
+import 'package:velocity/app_icons.dart';
+import 'package:velocity/appstate_container.dart';
+import 'package:velocity/dimens.dart';
+import 'package:velocity/generated/l10n.dart';
+import 'package:velocity/localize.dart';
+import 'package:velocity/model/available_currency.dart';
+import 'package:velocity/model/db/user.dart';
+import 'package:velocity/network/giftcards.dart';
+import 'package:velocity/service_locator.dart';
+import 'package:velocity/styles.dart';
+import 'package:velocity/ui/receive/receive_sheet.dart';
+import 'package:velocity/ui/send/send_confirm_sheet.dart';
+import 'package:velocity/ui/send/send_sheet.dart';
+import 'package:velocity/ui/util/formatters.dart';
+import 'package:velocity/ui/util/handlebars.dart';
+import 'package:velocity/ui/util/ui_util.dart';
+import 'package:velocity/ui/widgets/app_text_field.dart';
+import 'package:velocity/ui/widgets/buttons.dart';
+import 'package:velocity/ui/widgets/dialog.dart';
+import 'package:velocity/ui/widgets/sheet_util.dart';
+import 'package:velocity/util/caseconverter.dart';
+import 'package:velocity/util/nanoutil.dart';
+import 'package:velocity/util/numberutil.dart';
 
 class SendGiftSheet extends StatefulWidget {
   const SendGiftSheet({required this.localCurrency}) : super();
@@ -340,7 +340,7 @@ class SendGiftSheetState extends State<SendGiftSheet> {
                       // we need to create a gift card and change the destination address to the gift card address:
                       paperWalletSeed = NanoSeeds.generateSeed();
                       final String paperWalletAccount = NanoUtil.seedToAddress(paperWalletSeed, 0);
-                      // final String paperWalletAccount = "nano_1i4fcujt49de3mio9eb9y5jakw8o9m1za6ntidxn4nkwgnunktpy54z1ma58";
+                      // final String paperWalletAccount = "lumex_1i4fcujt49de3mio9eb9y5jakw8o9m1za6ntidxn4nkwgnunktpy54z1ma58";
                       if (!mounted) return;
                       final BranchResponse<dynamic> giftCardItem = await sl<GiftCards>().createGiftCard(
                         context,

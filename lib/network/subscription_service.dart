@@ -9,16 +9,16 @@ import 'package:logger/logger.dart';
 import 'package:timezone/data/latest.dart' as tz;
 // ignore: depend_on_referenced_packages
 import 'package:timezone/timezone.dart' as tz;
-import 'package:wallet_flutter/bus/scheduled_changed_event.dart';
-import 'package:wallet_flutter/bus/subs_changed_event.dart';
-import 'package:wallet_flutter/model/db/appdb.dart';
-import 'package:wallet_flutter/model/db/scheduled.dart';
-import 'package:wallet_flutter/model/db/subscription.dart';
-import 'package:wallet_flutter/network/model/block_types.dart';
-import 'package:wallet_flutter/network/model/response/account_history_response_item.dart';
-import 'package:wallet_flutter/service_locator.dart';
-import 'package:wallet_flutter/ui/send/send_sheet.dart';
-import 'package:wallet_flutter/util/sharedprefsutil.dart';
+import 'package:velocity/bus/scheduled_changed_event.dart';
+import 'package:velocity/bus/subs_changed_event.dart';
+import 'package:velocity/model/db/appdb.dart';
+import 'package:velocity/model/db/scheduled.dart';
+import 'package:velocity/model/db/subscription.dart';
+import 'package:velocity/network/model/block_types.dart';
+import 'package:velocity/network/model/response/account_history_response_item.dart';
+import 'package:velocity/service_locator.dart';
+import 'package:velocity/ui/send/send_sheet.dart';
+import 'package:velocity/util/sharedprefsutil.dart';
 
 // SubscriptionService singleton
 class SubscriptionService {
@@ -29,7 +29,7 @@ class SubscriptionService {
 
   FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin = FlutterLocalNotificationsPlugin();
 
-  static const String PRO_PAYMENT_ADDRESS = "nano_35n1a3fbbar5imzmsyrfxaeqwgkgkd7autbjxon9btfbui5ys86g8kmpbjte";
+  static const String PRO_PAYMENT_ADDRESS = "lumex_35n1a3fbbar5imzmsyrfxaeqwgkgkd7autbjxon9btfbui5ys86g8kmpbjte";
   static const String PRO_PAYMENT_MONTHLY_COST = "1000000000000000000000000000000";
   static const String PRO_PAYMENT_LIFETIME_COST = "100000000000000000000000000000000";
 

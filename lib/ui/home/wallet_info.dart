@@ -5,21 +5,21 @@ import 'package:auto_size_text/auto_size_text.dart';
 import 'package:event_taxi/event_taxi.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:wallet_flutter/app_icons.dart';
-import 'package:wallet_flutter/appstate_container.dart';
-import 'package:wallet_flutter/generated/l10n.dart';
-import 'package:wallet_flutter/model/address.dart';
-import 'package:wallet_flutter/model/db/account.dart';
-import 'package:wallet_flutter/model/db/appdb.dart';
-import 'package:wallet_flutter/service_locator.dart';
-import 'package:wallet_flutter/styles.dart';
-import 'package:wallet_flutter/ui/accounts/accountdetails_sheet.dart';
-import 'package:wallet_flutter/ui/accounts/accounts_sheet.dart';
-import 'package:wallet_flutter/ui/util/formatters.dart';
-import 'package:wallet_flutter/ui/util/ui_util.dart';
-import 'package:wallet_flutter/ui/widgets/sheet_util.dart';
-import 'package:wallet_flutter/util/caseconverter.dart';
-import 'package:wallet_flutter/util/sharedprefsutil.dart';
+import 'package:velocity/app_icons.dart';
+import 'package:velocity/appstate_container.dart';
+import 'package:velocity/generated/l10n.dart';
+import 'package:velocity/model/address.dart';
+import 'package:velocity/model/db/account.dart';
+import 'package:velocity/model/db/appdb.dart';
+import 'package:velocity/service_locator.dart';
+import 'package:velocity/styles.dart';
+import 'package:velocity/ui/accounts/accountdetails_sheet.dart';
+import 'package:velocity/ui/accounts/accounts_sheet.dart';
+import 'package:velocity/ui/util/formatters.dart';
+import 'package:velocity/ui/util/ui_util.dart';
+import 'package:velocity/ui/widgets/sheet_util.dart';
+import 'package:velocity/util/caseconverter.dart';
+import 'package:velocity/util/sharedprefsutil.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
 // ignore: must_be_immutable
@@ -41,7 +41,7 @@ class WalletInfoState extends State<WalletInfo> with AutomaticKeepAliveClientMix
 
   String hashedSeed = "";
 
-  // Price conversion state (XMR, NANO, NONE)
+  // Price conversion state (XMR, Lumex, NONE)
   PriceConversion? _priceConversion;
 
   // Main card height
@@ -220,7 +220,7 @@ class WalletInfoState extends State<WalletInfo> with AutomaticKeepAliveClientMix
           crossAxisAlignment: CrossAxisAlignment.start,
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            // Nano logo
+            // Lumex logo
             if (_priceConversion == PriceConversion.HIDDEN)
               Container(
                 width: 200,

@@ -256,7 +256,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "currencyModeHeader": MessageLookupByLibrary.simpleMessage(
             "Informacije o valutnem načinu"),
         "currencyModeInfo": MessageLookupByLibrary.simpleMessage(
-            "Izberite, v kateri enoti želite prikazati zneske.\n1 nyano = 0,000001 NANO, ali \n1.000.000 nyano = 1 NANO"),
+            "Izberite, v kateri enoti želite prikazati zneske.\n1 nyano = 0,000001 Lumex, ali \n1.000.000 nyano = 1 Lumex"),
         "currentlyRepresented":
             MessageLookupByLibrary.simpleMessage("Trenutni predstavnik"),
         "daily": MessageLookupByLibrary.simpleMessage("Dnevno"),
@@ -266,7 +266,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "defaultAccountName":
             MessageLookupByLibrary.simpleMessage("Glavni račun"),
         "defaultGiftMessage": MessageLookupByLibrary.simpleMessage(
-            "Oglejte si Nautilus! Poslal sem ti nekaj nano s to povezavo:"),
+            "Oglejte si Lumex! Poslal sem ti nekaj nano s to povezavo:"),
         "defaultNewAccountName":
             MessageLookupByLibrary.simpleMessage("Račun %1"),
         "delete": MessageLookupByLibrary.simpleMessage("Izbriši"),
@@ -344,7 +344,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "eula": MessageLookupByLibrary.simpleMessage("EULA"),
         "exampleCardFrom": MessageLookupByLibrary.simpleMessage("od nekoga"),
         "exampleCardIntro": MessageLookupByLibrary.simpleMessage(
-            "Dobrodošli v Nautilus. Ko boste prejeli NANO, bodo transakcije prikazane takole:"),
+            "Dobrodošli v Lumex. Ko boste prejeli Lumex, bodo transakcije prikazane takole:"),
         "exampleCardLittle": MessageLookupByLibrary.simpleMessage("nekaj"),
         "exampleCardLot": MessageLookupByLibrary.simpleMessage("več"),
         "exampleCardTo": MessageLookupByLibrary.simpleMessage("nekomu"),
@@ -373,7 +373,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "exampleRecRecipientMessage":
             MessageLookupByLibrary.simpleMessage("Plinski denar"),
         "exchangeCurrency": MessageLookupByLibrary.simpleMessage("Menjava %2"),
-        "exchangeNano": MessageLookupByLibrary.simpleMessage("Menjava NANO"),
+        "exchangeNano": MessageLookupByLibrary.simpleMessage("Menjava Lumex"),
         "existingPasswordHint":
             MessageLookupByLibrary.simpleMessage("Vnesite trenutno geslo"),
         "existingPinHint":
@@ -384,9 +384,9 @@ class MessageLookup extends MessageLookupByLibrary {
         "failed": MessageLookupByLibrary.simpleMessage("neuspelo"),
         "failedMessage": MessageLookupByLibrary.simpleMessage("msg failed"),
         "fallbackHeader":
-            MessageLookupByLibrary.simpleMessage("Nautilus Odklopljen"),
+            MessageLookupByLibrary.simpleMessage("Lumex Odklopljen"),
         "fallbackInfo": MessageLookupByLibrary.simpleMessage(
-            "Zdi se, da so strežniki Nautilus prekinjeni. Pošiljanje in prejemanje (brez beležk) bi moralo biti še vedno operativno, vendar zahtevki za plačilo\n\n Vrnite se pozneje ali znova zaženite aplikacijo, da poskusite znova"),
+            "Zdi se, da so strežniki Lumex prekinjeni. Pošiljanje in prejemanje (brez beležk) bi moralo biti še vedno operativno, vendar zahtevki za plačilo\n\n Vrnite se pozneje ali znova zaženite aplikacijo, da poskusite znova"),
         "favoriteExists":
             MessageLookupByLibrary.simpleMessage("Najljubši že obstaja"),
         "favoriteHeader": MessageLookupByLibrary.simpleMessage("Najljubši"),
@@ -418,7 +418,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "generatingWork": MessageLookupByLibrary.simpleMessage(
             "Ustvarjanje PoW, to lahko traja nekaj časa (> 20 sekund) ..."),
         "getCurrency": MessageLookupByLibrary.simpleMessage("Pridobite %2"),
-        "getNano": MessageLookupByLibrary.simpleMessage("Pridobite NANO"),
+        "getNano": MessageLookupByLibrary.simpleMessage("Pridobite Lumex"),
         "giftAlert": MessageLookupByLibrary.simpleMessage("Imate darilo!"),
         "giftAlertEmpty": MessageLookupByLibrary.simpleMessage("Prazno darilo"),
         "giftAmount": MessageLookupByLibrary.simpleMessage("Znesek darila"),
@@ -430,7 +430,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "Informacije o darilnem listu"),
         "giftFrom": MessageLookupByLibrary.simpleMessage("Darilo Od"),
         "giftInfo": MessageLookupByLibrary.simpleMessage(
-            "Naložite digitalno darilno kartico z NANO! Nastavite znesek in izbirno sporočilo, da bo prejemnik videl, kdaj ga odpre!\n\nKo ustvarite, boste dobili povezavo, ki jo lahko pošljete vsakomur, ki bo ob odprtju samodejno razdelila sredstva prejemniku po namestitvi Nautilusa!\n\nČe je prejemnik že uporabnik Nautilusa, bo ob odprtju povezave dobil poziv za prenos sredstev na svoj račun"),
+            "Naložite digitalno darilno kartico z Lumex! Nastavite znesek in izbirno sporočilo, da bo prejemnik videl, kdaj ga odpre!\n\nKo ustvarite, boste dobili povezavo, ki jo lahko pošljete vsakomur, ki bo ob odprtju samodejno razdelila sredstva prejemniku po namestitvi Lumexa!\n\nČe je prejemnik že uporabnik Lumexa, bo ob odprtju povezave dobil poziv za prenos sredstev na svoj račun"),
         "giftMessage":
             MessageLookupByLibrary.simpleMessage("Darilno sporočilo"),
         "giftProcessError": MessageLookupByLibrary.simpleMessage(
@@ -472,9 +472,9 @@ class MessageLookup extends MessageLookupByLibrary {
         "importGiftEmpty": MessageLookupByLibrary.simpleMessage(
             "Unfortunately the link you clicked that contained some nano appears to be empty, but you can still see the amount and associated message."),
         "importGiftIntro": MessageLookupByLibrary.simpleMessage(
-            "Videti je, da ste kliknili povezavo, ki vsebuje nekaj NANO. Da bi prejeli ta sredstva, potrebujete le, da dokončate nastavitev svoje denarnice."),
+            "Videti je, da ste kliknili povezavo, ki vsebuje nekaj Lumex. Da bi prejeli ta sredstva, potrebujete le, da dokončate nastavitev svoje denarnice."),
         "importGiftv2": MessageLookupByLibrary.simpleMessage(
-            "Povezava, ki ste jo kliknili, vsebuje nekaj NANO, ali bi ga radi uvozili v to denarnico?"),
+            "Povezava, ki ste jo kliknili, vsebuje nekaj Lumex, ali bi ga radi uvozili v to denarnico?"),
         "importHD": MessageLookupByLibrary.simpleMessage("Uvoz HD"),
         "importHDTrust":
             MessageLookupByLibrary.simpleMessage("Uvoz HD / Trust"),
@@ -509,7 +509,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Invalid Password"),
         "invalidPin": MessageLookupByLibrary.simpleMessage("Neveljaven PIN"),
         "iosFundingMessage": MessageLookupByLibrary.simpleMessage(
-            "Zaradi smernic in omejitev trgovine iOS App Store vas ne moremo povezati z našo stranjo za donacije. Če želite podpreti projekt, razmislite o pošiljanju na naslov vozlišča nautilus."),
+            "Zaradi smernic in omejitev trgovine iOS App Store vas ne moremo povezati z našo stranjo za donacije. Če želite podpreti projekt, razmislite o pošiljanju na naslov vozlišča lumex."),
         "language": MessageLookupByLibrary.simpleMessage("Jezik"),
         "linkCopied": MessageLookupByLibrary.simpleMessage("Povezava Kopirana"),
         "loaded": MessageLookupByLibrary.simpleMessage("Naložen"),
@@ -526,7 +526,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "logoutAreYouSure":
             MessageLookupByLibrary.simpleMessage("Ste prepričani?"),
         "logoutDetail": MessageLookupByLibrary.simpleMessage(
-            "Odjava bo izbrisala zasebni ključ in vse podatke v povezavi z aplikacijo Nautilus. Če zasebnega ključa niste shranili, ne boste imeli več dostopa do vašega računa."),
+            "Odjava bo izbrisala zasebni ključ in vse podatke v povezavi z aplikacijo Lumex. Če zasebnega ključa niste shranili, ne boste imeli več dostopa do vašega računa."),
         "logoutReassurance": MessageLookupByLibrary.simpleMessage(
             "Dokler imate shranjen zasebni ključ, ste lahko brez skrbi."),
         "looksLikeHdSeed": MessageLookupByLibrary.simpleMessage(
@@ -564,15 +564,15 @@ class MessageLookup extends MessageLookupByLibrary {
         "moreSettings": MessageLookupByLibrary.simpleMessage("Več nastavitev"),
         "nameEmpty": MessageLookupByLibrary.simpleMessage("Vnesite ime"),
         "natricon": MessageLookupByLibrary.simpleMessage("Natricon"),
-        "nautilusWallet":
-            MessageLookupByLibrary.simpleMessage("Denarnica Nautilus"),
+        "lumexWallet":
+            MessageLookupByLibrary.simpleMessage("Denarnica Lumex"),
         "nearby": MessageLookupByLibrary.simpleMessage("V bližini"),
         "needVerificationAlert": MessageLookupByLibrary.simpleMessage(
             "Ta funkcija zahteva daljšo zgodovino transakcij, da preprečite neželeno pošto.\n\nLahko pa prikažete tudi QR kodo, ki jo lahko nekdo skenira."),
         "needVerificationAlertHeader":
             MessageLookupByLibrary.simpleMessage("Potrebno preverjanje"),
         "newAccountIntro": MessageLookupByLibrary.simpleMessage(
-            "To je vaš nov račun. Ko boste prejeli NANO, bodo transakcije prikazane takole:"),
+            "To je vaš nov račun. Ko boste prejeli Lumex, bodo transakcije prikazane takole:"),
         "newWallet": MessageLookupByLibrary.simpleMessage("Nova denarnica"),
         "nextButton": MessageLookupByLibrary.simpleMessage("Next"),
         "nextPayment":
@@ -594,7 +594,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "noneMethod": MessageLookupByLibrary.simpleMessage("Noben"),
         "notSent": MessageLookupByLibrary.simpleMessage("ni poslano"),
         "notificationBody": MessageLookupByLibrary.simpleMessage(
-            "Odpri Nautilus za ogled transakcije"),
+            "Odpri Lumex za ogled transakcije"),
         "notificationHeaderSupplement":
             MessageLookupByLibrary.simpleMessage("Dotik za ogled"),
         "notificationInfo": MessageLookupByLibrary.simpleMessage(
@@ -637,7 +637,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("napačno geslo"),
         "passwordNoLongerRequiredToOpenParagraph":
             MessageLookupByLibrary.simpleMessage(
-                "You will not need a password to open Nautilus anymore."),
+                "You will not need a password to open Lumex anymore."),
         "passwordNumber": MessageLookupByLibrary.simpleMessage(
             "Geslo mora vsebovati vsaj 1 številko"),
         "passwordSpecialCharacter": MessageLookupByLibrary.simpleMessage(
@@ -645,10 +645,10 @@ class MessageLookup extends MessageLookupByLibrary {
         "passwordTooShort":
             MessageLookupByLibrary.simpleMessage("Geslo je prekratko"),
         "passwordWarning": MessageLookupByLibrary.simpleMessage(
-            "To geslo bo potrebno za odpiranje Nautilusa."),
+            "To geslo bo potrebno za odpiranje Lumexa."),
         "passwordWillBeRequiredToOpenParagraph":
             MessageLookupByLibrary.simpleMessage(
-                "This password will be required to open Nautilus."),
+                "This password will be required to open Lumex."),
         "passwordsDontMatch":
             MessageLookupByLibrary.simpleMessage("Passwords do not match"),
         "pastDue": MessageLookupByLibrary.simpleMessage("Preteklost"),
@@ -694,13 +694,13 @@ class MessageLookup extends MessageLookupByLibrary {
         "preferences": MessageLookupByLibrary.simpleMessage("Splošno"),
         "privacyPolicy": MessageLookupByLibrary.simpleMessage("Zasebnost"),
         "proSubRequiredHeader": MessageLookupByLibrary.simpleMessage(
-            "Zahtevana je naročnina na Nautilus Pro"),
+            "Zahtevana je naročnina na Lumex Pro"),
         "proSubRequiredParagraph": MessageLookupByLibrary.simpleMessage(
-            "Za samo 1 NANO na mesec lahko odklenete vse funkcije Nautilusa Pro."),
+            "Za samo 1 Lumex na mesec lahko odklenete vse funkcije Lumexa Pro."),
         "promotionalLink":
-            MessageLookupByLibrary.simpleMessage("Brezplačni NANO"),
+            MessageLookupByLibrary.simpleMessage("Brezplačni Lumex"),
         "purchaseCurrency": MessageLookupByLibrary.simpleMessage("Nakup %2"),
-        "purchaseNano": MessageLookupByLibrary.simpleMessage("Nakup Nano"),
+        "purchaseNano": MessageLookupByLibrary.simpleMessage("Nakup Lumex"),
         "qrInvalidAddress": MessageLookupByLibrary.simpleMessage(
             "QR code does not contain a valid destination"),
         "qrInvalidPermissions": MessageLookupByLibrary.simpleMessage(
@@ -763,7 +763,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "requestAmountConfirm":
             MessageLookupByLibrary.simpleMessage("Zahtevite %1 %2"),
         "requestError": MessageLookupByLibrary.simpleMessage(
-            "Zahteva ni uspela: Zdi se, da ta uporabnik nima nameščenega Nautilusa ali da so obvestila onemogočena."),
+            "Zahteva ni uspela: Zdi se, da ta uporabnik nima nameščenega Lumexa ali da so obvestila onemogočena."),
         "requestFrom": MessageLookupByLibrary.simpleMessage("Zahtevaj od"),
         "requestPayment":
             MessageLookupByLibrary.simpleMessage("Zahtevajte plačilo"),
@@ -772,14 +772,14 @@ class MessageLookup extends MessageLookupByLibrary {
         "requestSentButNotReceived": MessageLookupByLibrary.simpleMessage(
             "Zahteva ponovno poslana! Če še vedno ni potrjena, je naprava prejemnika morda brez povezave."),
         "requestSheetInfo": MessageLookupByLibrary.simpleMessage(
-            "Zahtevajte plačilo s šifriranimi sporočili od konca do konca!\n\nZahtevke za plačilo, opombe in sporočila bodo lahko prejeli samo drugi uporabniki nautilusa, vendar jih lahko uporabite za lastno vodenje evidence, tudi če prejemnik ne uporablja nautilusa."),
+            "Zahtevajte plačilo s šifriranimi sporočili od konca do konca!\n\nZahtevke za plačilo, opombe in sporočila bodo lahko prejeli samo drugi uporabniki lumexa, vendar jih lahko uporabite za lastno vodenje evidence, tudi če prejemnik ne uporablja lumexa."),
         "requestSheetInfoHeader": MessageLookupByLibrary.simpleMessage(
             "Zahtevaj informacije o listu"),
         "requested": MessageLookupByLibrary.simpleMessage("Zahtevano"),
         "requestedFrom": MessageLookupByLibrary.simpleMessage("Zahtevano od"),
         "requesting": MessageLookupByLibrary.simpleMessage("Zahteva"),
         "requireAPasswordToOpenHeader": MessageLookupByLibrary.simpleMessage(
-            "Require a password to open Nautilus?"),
+            "Require a password to open Lumex?"),
         "requireCaptcha": MessageLookupByLibrary.simpleMessage(
             "Za prevzem darilne kartice zahtevajte CAPTCHA"),
         "resendMemo":
@@ -797,7 +797,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "It appears your device is \"rooted\", \"jailbroken\", or modified in a way that compromises security. It is recommended that you reset your device to its original state before proceeding."),
         "save": MessageLookupByLibrary.simpleMessage("Shrani"),
         "scanInstructions": MessageLookupByLibrary.simpleMessage(
-            "Zajemi Nano \nnaslov QR kodo"),
+            "Zajemi Lumex \nnaslov QR kodo"),
         "scanNFC": MessageLookupByLibrary.simpleMessage("Pošlji prek NFC"),
         "scanQrCode": MessageLookupByLibrary.simpleMessage("Zajemi QR kodo"),
         "schedule": MessageLookupByLibrary.simpleMessage("Urnik"),
@@ -838,7 +838,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Napaka. Poskusite kasneje."),
         "sendFrom": MessageLookupByLibrary.simpleMessage("Pošlji iz"),
         "sendMemoError": MessageLookupByLibrary.simpleMessage(
-            "Pošiljanje beležke s transakcijo ni uspelo, morda niso uporabnik Nautilusa."),
+            "Pošiljanje beležke s transakcijo ni uspelo, morda niso uporabnik Lumexa."),
         "sendMessageConfirm":
             MessageLookupByLibrary.simpleMessage("Pošiljanje sporočila"),
         "sendRequestAgain":
@@ -846,7 +846,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "sendRequests":
             MessageLookupByLibrary.simpleMessage("Pošiljanje zahtev"),
         "sendSheetInfo": MessageLookupByLibrary.simpleMessage(
-            "Pošljite ali zahtevajte plačilo s šifriranimi sporočili od konca do konca!\n\nZahteve za plačilo, beležke in sporočila bodo terjali samo drugi uporabniki Nautilusa.\n\nZa pošiljanje ali prejemanje zahtevkov za plačilo vam ni treba imeti uporabniškega imena in jih lahko uporabite za lastno vodenje evidenc, tudi če ne uporabljajo nautilusa."),
+            "Pošljite ali zahtevajte plačilo s šifriranimi sporočili od konca do konca!\n\nZahteve za plačilo, beležke in sporočila bodo terjali samo drugi uporabniki Lumexa.\n\nZa pošiljanje ali prejemanje zahtevkov za plačilo vam ni treba imeti uporabniškega imena in jih lahko uporabite za lastno vodenje evidenc, tudi če ne uporabljajo lumexa."),
         "sendSheetInfoHeader":
             MessageLookupByLibrary.simpleMessage("Pošlji informacije o listu"),
         "sending": MessageLookupByLibrary.simpleMessage("Pošiljam"),
@@ -878,12 +878,12 @@ class MessageLookup extends MessageLookupByLibrary {
         "share": MessageLookupByLibrary.simpleMessage("Deliti"),
         "shareApp": MessageLookupByLibrary.simpleMessage("Skupna raba %1"),
         "shareAppText": MessageLookupByLibrary.simpleMessage(
-            "Oglejte si %1! Vrhunska mobilna denarnica NANO!"),
+            "Oglejte si %1! Vrhunska mobilna denarnica Lumex!"),
         "shareLink": MessageLookupByLibrary.simpleMessage("Delite povezavo"),
         "shareMessage": MessageLookupByLibrary.simpleMessage("Deli sporočilo"),
-        "shareNautilus": MessageLookupByLibrary.simpleMessage("Deli Nautilus"),
-        "shareNautilusText": MessageLookupByLibrary.simpleMessage(
-            "Preveri Nautilus! Uradna mobilna Nano denarnica!"),
+        "shareLumex": MessageLookupByLibrary.simpleMessage("Deli Lumex"),
+        "shareLumexText": MessageLookupByLibrary.simpleMessage(
+            "Preveri Lumex! Uradna mobilna Lumex denarnica!"),
         "shareText": MessageLookupByLibrary.simpleMessage("Delite besedilo"),
         "shopButton": MessageLookupByLibrary.simpleMessage("Trgovina"),
         "show": MessageLookupByLibrary.simpleMessage("Prikaži"),
@@ -911,7 +911,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "social": MessageLookupByLibrary.simpleMessage("Socialno"),
         "someone": MessageLookupByLibrary.simpleMessage("nekdo"),
         "spendCurrency": MessageLookupByLibrary.simpleMessage("Porabite %2"),
-        "spendNano": MessageLookupByLibrary.simpleMessage("Porabite NANO"),
+        "spendNano": MessageLookupByLibrary.simpleMessage("Porabite Lumex"),
         "splitBill": MessageLookupByLibrary.simpleMessage("Razdeljeni račun"),
         "splitBillHeader":
             MessageLookupByLibrary.simpleMessage("Razdeli račun"),
@@ -939,7 +939,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "swapXMRHeader":
             MessageLookupByLibrary.simpleMessage("Zamenjaj Monero"),
         "swapXMRInfo": MessageLookupByLibrary.simpleMessage(
-            "Monero je kriptovaluta, osredotočena na zasebnost, zaradi katere je zelo težko ali celo nemogoče slediti transakcijam. Medtem je NANO kriptovaluta, osredotočena na plačila, ki je hitra in brez provizij. Skupaj zagotavljajo nekaj najbolj uporabnih vidikov kriptovalut!\n\nUporabite to stran za preprosto zamenjavo NANO za XMR!"),
+            "Monero je kriptovaluta, osredotočena na zasebnost, zaradi katere je zelo težko ali celo nemogoče slediti transakcijam. Medtem je Lumex kriptovaluta, osredotočena na plačila, ki je hitra in brez provizij. Skupaj zagotavljajo nekaj najbolj uporabnih vidikov kriptovalut!\n\nUporabite to stran za preprosto zamenjavo Lumex za XMR!"),
         "swapping": MessageLookupByLibrary.simpleMessage("Zamenjava"),
         "switchToSeed":
             MessageLookupByLibrary.simpleMessage("Preklopi na zasebni ključ"),
@@ -974,7 +974,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "transferClose":
             MessageLookupByLibrary.simpleMessage("Pritisni kjerkoli za izhod."),
         "transferComplete": MessageLookupByLibrary.simpleMessage(
-            "%1 %2 uspešno prenešenih v vašo Nautilus denarnico.\n"),
+            "%1 %2 uspešno prenešenih v vašo Lumex denarnico.\n"),
         "transferConfirmInfo": MessageLookupByLibrary.simpleMessage(
             "Denarnica z zneskom %1 %2 je bila zaznana.\n"),
         "transferConfirmInfoSecond": MessageLookupByLibrary.simpleMessage(
@@ -986,26 +986,26 @@ class MessageLookup extends MessageLookupByLibrary {
         "transferHeader":
             MessageLookupByLibrary.simpleMessage("Prenesi znesek"),
         "transferIntro": MessageLookupByLibrary.simpleMessage(
-            "Postopek bo prenesel znesek iz papirnate denarnice v vašo Nautilus denarnico.\n\nPritisnite \"%1\" gumb za začetek."),
+            "Postopek bo prenesel znesek iz papirnate denarnice v vašo Lumex denarnico.\n\nPritisnite \"%1\" gumb za začetek."),
         "transferIntroShort": MessageLookupByLibrary.simpleMessage(
-            "Ta postopek bo prenesel sredstva iz papirnate denarnice v vašo Nautilus denarnico."),
+            "Ta postopek bo prenesel sredstva iz papirnate denarnice v vašo Lumex denarnico."),
         "transferLoading": MessageLookupByLibrary.simpleMessage("Prenašam"),
         "transferManualHint":
             MessageLookupByLibrary.simpleMessage("Spodaj vnesite ključ."),
         "transferNoFunds": MessageLookupByLibrary.simpleMessage(
-            "Ključ ne vsebuje nobenega NANO zneska."),
+            "Ključ ne vsebuje nobenega Lumex zneska."),
         "transferQrScanError": MessageLookupByLibrary.simpleMessage(
             "QR koda ne vsebuje veljavnega ključa."),
         "transferQrScanHint":
-            MessageLookupByLibrary.simpleMessage("Zajemi Nano \nključ"),
+            MessageLookupByLibrary.simpleMessage("Zajemi Lumex \nključ"),
         "unacknowledged": MessageLookupByLibrary.simpleMessage("nepriznano"),
         "unconfirmed": MessageLookupByLibrary.simpleMessage("nepotrjeno"),
         "unfulfilled": MessageLookupByLibrary.simpleMessage("neizpolnjena"),
         "unlock": MessageLookupByLibrary.simpleMessage("Odkleni"),
         "unlockBiometrics": MessageLookupByLibrary.simpleMessage(
-            "Avtenticiraj za odklep Nautilus"),
+            "Avtenticiraj za odklep Lumex"),
         "unlockPin": MessageLookupByLibrary.simpleMessage(
-            "Vnesite PIN za odklep Nautilus"),
+            "Vnesite PIN za odklep Lumex"),
         "unopenedWarningHeader":
             MessageLookupByLibrary.simpleMessage("Pokaži neodprto opozorilo"),
         "unopenedWarningInfo": MessageLookupByLibrary.simpleMessage(
@@ -1021,9 +1021,9 @@ class MessageLookup extends MessageLookupByLibrary {
         "urlEmpty": MessageLookupByLibrary.simpleMessage("Vnesite URL"),
         "useAppRep": MessageLookupByLibrary.simpleMessage("Uporabi %1 Rep"),
         "useCurrency": MessageLookupByLibrary.simpleMessage("Uporabi %2"),
-        "useNano": MessageLookupByLibrary.simpleMessage("Uporabite NANO"),
-        "useNautilusRep":
-            MessageLookupByLibrary.simpleMessage("Use Nautilus Rep"),
+        "useNano": MessageLookupByLibrary.simpleMessage("Uporabite Lumex"),
+        "useLumexRep":
+            MessageLookupByLibrary.simpleMessage("Use Lumex Rep"),
         "userAlreadyAddedError":
             MessageLookupByLibrary.simpleMessage("Uporabnik je že dodan!"),
         "userNotFound": MessageLookupByLibrary.simpleMessage(
@@ -1037,13 +1037,13 @@ class MessageLookup extends MessageLookupByLibrary {
         "usernameError":
             MessageLookupByLibrary.simpleMessage("Napaka uporabniškega imena"),
         "usernameInfo": MessageLookupByLibrary.simpleMessage(
-            "Izberite edinstveno @username, da bi bilo enostavno za prijatelje in družino, da vas najdejo!\n\nUporabniško ime Nautilus globalno posodobi uporabniški vmesnik, da odraža vaš novi ročaj."),
+            "Izberite edinstveno @username, da bi bilo enostavno za prijatelje in družino, da vas najdejo!\n\nUporabniško ime Lumex globalno posodobi uporabniški vmesnik, da odraža vaš novi ročaj."),
         "usernameInvalid":
             MessageLookupByLibrary.simpleMessage("Neveljavno uporabniško ime"),
         "usernameUnavailable":
             MessageLookupByLibrary.simpleMessage("Uporabniško ime na voljo"),
         "usernameWarning": MessageLookupByLibrary.simpleMessage(
-            "Uporabniška imena Nautilus so centralizirana storitev, ki jo ponuja Nano.to"),
+            "Uporabniška imena Lumex so centralizirana storitev, ki jo ponuja Lumex.to"),
         "using": MessageLookupByLibrary.simpleMessage("Uporaba"),
         "viewDetails": MessageLookupByLibrary.simpleMessage("Podrobnosti"),
         "viewPaymentHistory":
@@ -1060,11 +1060,11 @@ class MessageLookup extends MessageLookupByLibrary {
         "weekAgo": MessageLookupByLibrary.simpleMessage("Pred enim tednom"),
         "weekly": MessageLookupByLibrary.simpleMessage("Tedensko"),
         "welcomeText": MessageLookupByLibrary.simpleMessage(
-            "Dobrodošli v Nautilus. Za začetek ustvarite novo denarnico ali uvozite že obstoječo."),
+            "Dobrodošli v Lumex. Za začetek ustvarite novo denarnico ali uvozite že obstoječo."),
         "welcomeTextLogin": MessageLookupByLibrary.simpleMessage(
-            "Dobrodošli v Nautilusu. Za začetek izberite možnost ali izberite temo s spodnjo ikono."),
+            "Dobrodošli v Lumexu. Za začetek izberite možnost ali izberite temo s spodnjo ikono."),
         "welcomeTextUpdated": MessageLookupByLibrary.simpleMessage(
-            "Dobrodošli v Nautilusu. Za začetek ustvarite novo denarnico ali uvozite obstoječo."),
+            "Dobrodošli v Lumexu. Za začetek ustvarite novo denarnico ali uvozite obstoječo."),
         "welcomeTextWithoutLogin": MessageLookupByLibrary.simpleMessage(
             "Za začetek ustvarite novo denarnico ali uvozite obstoječo."),
         "withAddress": MessageLookupByLibrary.simpleMessage("Z naslovom"),

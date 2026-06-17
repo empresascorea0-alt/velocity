@@ -2,15 +2,15 @@ import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:keyboard_avoider/keyboard_avoider.dart';
-import 'package:wallet_flutter/appstate_container.dart';
-import 'package:wallet_flutter/dimens.dart';
-import 'package:wallet_flutter/generated/l10n.dart';
-import 'package:wallet_flutter/model/db/txdata.dart';
-import 'package:wallet_flutter/styles.dart';
-import 'package:wallet_flutter/ui/util/handlebars.dart';
-import 'package:wallet_flutter/ui/widgets/app_text_field.dart';
-import 'package:wallet_flutter/ui/widgets/buttons.dart';
-import 'package:wallet_flutter/util/caseconverter.dart';
+import 'package:velocity/appstate_container.dart';
+import 'package:velocity/dimens.dart';
+import 'package:velocity/generated/l10n.dart';
+import 'package:velocity/model/db/txdata.dart';
+import 'package:velocity/styles.dart';
+import 'package:velocity/ui/util/handlebars.dart';
+import 'package:velocity/ui/widgets/app_text_field.dart';
+import 'package:velocity/ui/widgets/buttons.dart';
+import 'package:velocity/util/caseconverter.dart';
 
 class AddMemoSheet extends StatefulWidget {
   const AddMemoSheet({Key? key}) : super(key: key);

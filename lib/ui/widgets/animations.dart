@@ -2,7 +2,7 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
-import 'package:wallet_flutter/appstate_container.dart';
+import 'package:velocity/appstate_container.dart';
 
 enum AnimationType {
   SEND,

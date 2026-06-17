@@ -493,7 +493,7 @@
   "connectingHeader": "সংযোগ হচ্ছে ",
   "@connectingHeader": {
     "type": "text",
-    "description": "A header to let the user now that Nautilus is currently connecting to (or loading) live chat."
+    "description": "A header to let the user now that Lumex is currently connecting to (or loading) live chat."
   },
   "connectionWarning": "কানেক্ট করা যাচ্ছে না",
   "@connectionWarning": {
@@ -1191,7 +1191,7 @@
     "type": "text",
     "description": "get_currency"
   },
-  "getNano": "NANO পান",
+  "getNano": "Lumex পান",
   "@getNano": {
     "type": "text",
     "description": "get_nano"
@@ -1231,7 +1231,7 @@
     "type": "text",
     "description": "gift_from"
   },
-  "giftInfo": "ন্যানো দিয়ে একটি ডিজিটাল উপহার কার্ড লোড করুন! একটি পরিমাণ সেট করুন, এবং প্রাপক যখন এটি খুলবেন তা দেখার জন্য একটি ঐচ্ছিক বার্তা!\n\nএকবার তৈরি হলে, আপনি একটি লিঙ্ক পাবেন যা আপনি যে কাউকে পাঠাতে পারেন, যা খোলা হলে স্বয়ংক্রিয়ভাবে Nautilus ইনস্টল করার পরে প্রাপকের কাছে তহবিল বিতরণ করবে!\n\nযদি প্রাপক ইতিমধ্যেই একটি নটিলাস ব্যবহারকারী হন তবে লিঙ্কটি খোলার পরে তারা তাদের অ্যাকাউন্টে তহবিল স্থানান্তর করার জন্য একটি প্রম্পট পাবেন।",
+  "giftInfo": "ন্যানো দিয়ে একটি ডিজিটাল উপহার কার্ড লোড করুন! একটি পরিমাণ সেট করুন, এবং প্রাপক যখন এটি খুলবেন তা দেখার জন্য একটি ঐচ্ছিক বার্তা!\n\nএকবার তৈরি হলে, আপনি একটি লিঙ্ক পাবেন যা আপনি যে কাউকে পাঠাতে পারেন, যা খোলা হলে স্বয়ংক্রিয়ভাবে Lumex ইনস্টল করার পরে প্রাপকের কাছে তহবিল বিতরণ করবে!\n\nযদি প্রাপক ইতিমধ্যেই একটি নটিলাস ব্যবহারকারী হন তবে লিঙ্কটি খোলার পরে তারা তাদের অ্যাকাউন্টে তহবিল স্থানান্তর করার জন্য একটি প্রম্পট পাবেন।",
   "@giftInfo": {
     "type": "text",
     "description": "Description for gift card creation"
@@ -1356,12 +1356,12 @@
     "type": "text",
     "description": "import_gift_empty"
   },
-  "importGiftIntro": "দেখে মনে হচ্ছে আপনি একটি লিঙ্কে ক্লিক করেছেন যাতে কিছু NANO রয়েছে, এই তহবিলগুলি পাওয়ার জন্য আমাদের শুধু আপনার ওয়ালেট সেট আপ করা শেষ করতে হবে৷",
+  "importGiftIntro": "দেখে মনে হচ্ছে আপনি একটি লিঙ্কে ক্লিক করেছেন যাতে কিছু Lumex রয়েছে, এই তহবিলগুলি পাওয়ার জন্য আমাদের শুধু আপনার ওয়ালেট সেট আপ করা শেষ করতে হবে৷",
   "@importGiftIntro": {
     "type": "text",
     "description": "import_gift_intro"
   },
-  "importGiftv2": "আপনি যে লিঙ্কটি ক্লিক করেছেন তাতে কিছু NANO রয়েছে, আপনি কি এটি এই ওয়ালেটে আমদানি করতে চান?",
+  "importGiftv2": "আপনি যে লিঙ্কটি ক্লিক করেছেন তাতে কিছু Lumex রয়েছে, আপনি কি এটি এই ওয়ালেটে আমদানি করতে চান?",
   "@importGiftv2": {
     "type": "text",
     "description": "import_gift_v2"
@@ -1656,10 +1656,10 @@
     "type": "text",
     "description": "natricon_settings"
   },
-  "nautilusWallet": "নটিলাস ওয়ালেট",
-  "@nautilusWallet": {
+  "lumexWallet": "নটিলাস ওয়ালেট",
+  "@lumexWallet": {
     "type": "text",
-    "description": "nautilus_wallet"
+    "description": "lumex_wallet"
   },
   "nearby": "কাছাকাছি",
   "@nearby": {
@@ -1894,7 +1894,7 @@
   "passwordNoLongerRequiredToOpenParagraph": "Natrium খুলতে আপনার আর পাসওয়ার্ড লাগবে না।",
   "@passwordNoLongerRequiredToOpenParagraph": {
     "type": "text",
-    "description": "An info paragraph that tells the user a password will no longer be needed to open Nautilus"
+    "description": "An info paragraph that tells the user a password will no longer be needed to open Velocity"
   },
   "passwordNumber": "পাসওয়ার্ডে কমপক্ষে 1 নম্বর থাকতে হবে",
   "@passwordNumber": {
@@ -1924,7 +1924,7 @@
   "passwordWillBeRequiredToOpenParagraph": "Natrium খোলার জন্য এই পাসওয়ার্ডের প্রয়োজন হবে।",
   "@passwordWillBeRequiredToOpenParagraph": {
     "type": "text",
-    "description": "A paragraph that tells the users that the created password will be required to open Nautilus."
+    "description": "A paragraph that tells the users that the created password will be required to open Velocity."
   },
   "pastDue": "অতীতের দেনা",
   "@pastDue": {
@@ -2071,7 +2071,7 @@
     "type": "text",
     "description": "pro_sub_required_header"
   },
-  "proSubRequiredParagraph": "প্রতি মাসে মাত্র 1 NANO এর জন্য, আপনি Nautilus Pro এর সমস্ত বৈশিষ্ট্য আনলক করতে পারেন।",
+  "proSubRequiredParagraph": "প্রতি মাসে মাত্র 1 Lumex এর জন্য, আপনি Velocity Pro এর সমস্ত বৈশিষ্ট্য আনলক করতে পারেন।",
   "@proSubRequiredParagraph": {
     "type": "text",
     "description": "pro_sub_required_paragraph"
@@ -2286,7 +2286,7 @@
     "type": "text",
     "description": "requested_from"
   },
-  "requestError": "অনুরোধ ব্যর্থ: এই ব্যবহারকারী Nautilus ইনস্টল করা আছে বলে মনে হচ্ছে না, অথবা বিজ্ঞপ্তি অক্ষম আছে।",
+  "requestError": "অনুরোধ ব্যর্থ: এই ব্যবহারকারী Lumex ইনস্টল করা আছে বলে মনে হচ্ছে না, অথবা বিজ্ঞপ্তি অক্ষম আছে।",
   "@requestError": {
     "type": "text",
     "description": "request_generic_error"
@@ -2329,7 +2329,7 @@
   "requireAPasswordToOpenHeader": "Natrium খুলতে একটি পাসওয়ার্ড প্রয়োজন?",
   "@requireAPasswordToOpenHeader": {
     "type": "text",
-    "description": "A paragraph that asks the users if they would like a password to be required to open Nautilus."
+    "description": "A paragraph that asks the users if they would like a password to be required to open Velocity."
   },
   "requireCaptcha": "উপহার কার্ড দাবি করার জন্য ক্যাপচা প্রয়োজন",
   "@requireCaptcha": {
@@ -2511,7 +2511,7 @@
     "type": "text",
     "description": "send_sending"
   },
-  "sendMemoError": "লেনদেনের সাথে মেমো পাঠানো ব্যর্থ হলে, তারা Nautilus ব্যবহারকারী নাও হতে পারে।",
+  "sendMemoError": "লেনদেনের সাথে মেমো পাঠানো ব্যর্থ হলে, তারা Lumex ব্যবহারকারী নাও হতে পারে।",
   "@sendMemoError": {
     "type": "text",
     "description": "send_memo_error"
@@ -2624,7 +2624,7 @@
   "share": "শেয়ার করুন",
   "@share": {
     "type": "text",
-    "description": "nautilus_share"
+    "description": "lumex_share"
   },
   "shareApp": "শেয়ার করুন %1",
   "@shareApp": {
@@ -2646,13 +2646,13 @@
     "type": "text",
     "description": "share_message"
   },
-  "shareNautilus": "Share Nautilus",
-  "@shareNautilus": {
+  "shareLumex": "Share Lumex",
+  "@shareLumex": {
     "type": "text",
     "description": "settings_share"
   },
-  "shareNautilusText": "Check out Nautilus! A premier NANO mobile wallet!",
-  "@shareNautilusText": {
+  "shareLumexText": "Check out Velocity! A premier Lumex mobile wallet!",
+  "@shareLumexText": {
     "type": "text",
     "description": "share_extra"
   },
@@ -2751,7 +2751,7 @@
     "type": "text",
     "description": "spend_currency"
   },
-  "spendNano": "NANO খরচ করুন",
+  "spendNano": "Lumex খরচ করুন",
   "@spendNano": {
     "type": "text",
     "description": "spend_nano"
@@ -2846,7 +2846,7 @@
     "type": "text",
     "description": "swap_xmr_header"
   },
-  "swapXMRInfo": "Monero হল একটি গোপনীয়তা-কেন্দ্রিক ক্রিপ্টোকারেন্সি যা লেনদেন ট্রেস করা খুব কঠিন বা এমনকি অসম্ভব করে তোলে। এদিকে NANO হল একটি পেমেন্ট-কেন্দ্রিক ক্রিপ্টোকারেন্সি যা দ্রুত এবং ফি-কম। একসাথে তারা ক্রিপ্টোকারেন্সির সবচেয়ে দরকারী দিকগুলির কিছু প্রদান করে!\n\nXMR-এর জন্য সহজেই আপনার NANO অদলবদল করতে এই পৃষ্ঠাটি ব্যবহার করুন!",
+  "swapXMRInfo": "Monero হল একটি গোপনীয়তা-কেন্দ্রিক ক্রিপ্টোকারেন্সি যা লেনদেন ট্রেস করা খুব কঠিন বা এমনকি অসম্ভব করে তোলে। এদিকে Lumex হল একটি পেমেন্ট-কেন্দ্রিক ক্রিপ্টোকারেন্সি যা দ্রুত এবং ফি-কম। একসাথে তারা ক্রিপ্টোকারেন্সির সবচেয়ে দরকারী দিকগুলির কিছু প্রদান করে!\n\nXMR-এর জন্য সহজেই আপনার Lumex অদলবদল করতে এই পৃষ্ঠাটি ব্যবহার করুন!",
   "@swapXMRInfo": {
     "type": "text",
     "description": "swap_xmr_header"
@@ -3096,15 +3096,15 @@
     "type": "text",
     "description": "use_currency"
   },
-  "useNano": "NANO ব্যবহার করুন",
+  "useNano": "Lumex ব্যবহার করুন",
   "@useNano": {
     "type": "text",
     "description": "use_nano"
   },
-  "useNautilusRep": "Use Nautilus Rep",
-  "@useNautilusRep": {
+  "useLumexRep": "Use Lumex Rep",
+  "@useLumexRep": {
     "type": "text",
-    "description": "use nautilus node as rep"
+    "description": "use lumex node as rep"
   },
   "userAlreadyAddedError": "ব্যবহারকারী ইতিমধ্যে যোগ করা হয়েছে!",
   "@userAlreadyAddedError": {
@@ -3131,7 +3131,7 @@
     "type": "text",
     "description": "username_unknown_error"
   },
-  "usernameInfo": "বন্ধু এবং পরিবারের জন্য আপনাকে খুঁজে পেতে সহজ করার জন্য একটি অনন্য @username চয়ন করুন!\n\nNautilus ব্যবহারকারীর নাম থাকা আপনার নতুন হ্যান্ডেল প্রতিফলিত করার জন্য বিশ্বব্যাপী UI আপডেট করে।",
+  "usernameInfo": "বন্ধু এবং পরিবারের জন্য আপনাকে খুঁজে পেতে সহজ করার জন্য একটি অনন্য @username চয়ন করুন!\n\nLumex ব্যবহারকারীর নাম থাকা আপনার নতুন হ্যান্ডেল প্রতিফলিত করার জন্য বিশ্বব্যাপী UI আপডেট করে।",
   "@usernameInfo": {
     "type": "text",
     "description": "Description for username registration"
@@ -3146,7 +3146,7 @@
     "type": "text",
     "description": "username_unavailable"
   },
-  "usernameWarning": "নটিলাস ইউজারনেম হল Nano.To দ্বারা সরবরাহিত একটি কেন্দ্রীভূত পরিষেবা",
+  "usernameWarning": "নটিলাস ইউজারনেম হল Lumex.To দ্বারা সরবরাহিত একটি কেন্দ্রীভূত পরিষেবা",
   "@usernameWarning": {
     "type": "text",
     "description": "Username centralization warning"

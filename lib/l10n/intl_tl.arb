@@ -493,7 +493,7 @@
   "connectingHeader": "Kumokonekta",
   "@connectingHeader": {
     "type": "text",
-    "description": "A header to let the user now that Nautilus is currently connecting to (or loading) live chat."
+    "description": "A header to let the user now that Lumex is currently connecting to (or loading) live chat."
   },
   "connectionWarning": "Hindi Makakonekta",
   "@connectionWarning": {
@@ -697,7 +697,7 @@
     "type": "text",
     "description": "currency_mode_header"
   },
-  "currencyModeInfo": "Piliin kung aling yunit ang magpapakita ng mga halaga.\n1 nyano = 0.000001 NANO, o \n1,000,000 nyano = 1 NANO",
+  "currencyModeInfo": "Piliin kung aling yunit ang magpapakita ng mga halaga.\n1 nyano = 0.000001 Lumex, o \n1,000,000 nyano = 1 Lumex",
   "@currencyModeInfo": {
     "type": "text",
     "description": "currency_mode_info"
@@ -727,7 +727,7 @@
     "type": "text",
     "description": "Default account name"
   },
-  "defaultGiftMessage": "Tingnan ang Nautilus! Nagpadala ako sa iyo ng ilang nano gamit ang link na ito:",
+  "defaultGiftMessage": "Tingnan ang Lumex! Nagpadala ako sa iyo ng ilang nano gamit ang link na ito:",
   "@defaultGiftMessage": {
     "type": "text",
     "description": "default_gift_message"
@@ -957,7 +957,7 @@
     "type": "text",
     "description": "example_card_from"
   },
-  "exampleCardIntro": "Maligayang pagdating sa Nautilus. Ganito ang makikita mong transaksyon pag nakatanggap ka ng NANO",
+  "exampleCardIntro": "Maligayang pagdating sa Lumex. Ganito ang makikita mong transaksyon pag nakatanggap ka ng Lumex",
   "@exampleCardIntro": {
     "type": "text",
     "description": "example_card_intro"
@@ -1047,7 +1047,7 @@
     "type": "text",
     "description": "exchange_currency"
   },
-  "exchangeNano": "Palitan ng NANO",
+  "exchangeNano": "Palitan ng Lumex",
   "@exchangeNano": {
     "type": "text",
     "description": "exchange_nano"
@@ -1082,12 +1082,12 @@
     "type": "text",
     "description": "failed_message"
   },
-  "fallbackHeader": "Naka-disconnect ang Nautilus",
+  "fallbackHeader": "Naka-disconnect ang Lumex",
   "@fallbackHeader": {
     "type": "text",
     "description": "fallback_connected"
   },
-  "fallbackInfo": "Ang mga server ng Nautilus ay lilitaw na hindi nakakonekta, ang Pagpapadala at Pagtanggap (walang mga memo) ay dapat pa rin sa pagpapatakbo ngunit ang mga kahilingan sa pagbabayad ay hindi maaaring dumaan\n\n Bumalik sa ibang pagkakataon o i-restart ang app upang subukang muli",
+  "fallbackInfo": "Ang mga server ng Lumex ay lilitaw na hindi nakakonekta, ang Pagpapadala at Pagtanggap (walang mga memo) ay dapat pa rin sa pagpapatakbo ngunit ang mga kahilingan sa pagbabayad ay hindi maaaring dumaan\n\n Bumalik sa ibang pagkakataon o i-restart ang app upang subukang muli",
   "@fallbackInfo": {
     "type": "text",
     "description": "fallback_info"
@@ -1191,7 +1191,7 @@
     "type": "text",
     "description": "get_currency"
   },
-  "getNano": "Kumuha ng NANO",
+  "getNano": "Kumuha ng Lumex",
   "@getNano": {
     "type": "text",
     "description": "get_nano"
@@ -1231,7 +1231,7 @@
     "type": "text",
     "description": "gift_from"
   },
-  "giftInfo": "Mag-load ng Digital Gift Card gamit ang NANO! Magtakda ng halaga, at opsyonal na mensahe para makita ng tatanggap kapag binuksan nila ito!\n\nSa sandaling nilikha, makakakuha ka ng isang link na maaari mong ipadala sa sinuman, na kapag binuksan ay awtomatikong ipamahagi ang mga pondo sa tatanggap pagkatapos i-install ang Nautilus!\n\nKung ang tatanggap ay isang gumagamit ng Nautilus, makakakuha sila ng prompt upang ilipat ang mga pondo sa kanilang account sa pagbubukas ng link.",
+  "giftInfo": "Mag-load ng Digital Gift Card gamit ang Lumex! Magtakda ng halaga, at opsyonal na mensahe para makita ng tatanggap kapag binuksan nila ito!\n\nSa sandaling nilikha, makakakuha ka ng isang link na maaari mong ipadala sa sinuman, na kapag binuksan ay awtomatikong ipamahagi ang mga pondo sa tatanggap pagkatapos i-install ang Lumex!\n\nKung ang tatanggap ay isang gumagamit ng Lumex, makakakuha sila ng prompt upang ilipat ang mga pondo sa kanilang account sa pagbubukas ng link.",
   "@giftInfo": {
     "type": "text",
     "description": "Description for gift card creation"
@@ -1356,12 +1356,12 @@
     "type": "text",
     "description": "import_gift_empty"
   },
-  "importGiftIntro": "Mukhang nag-click ka sa isang link na naglalaman ng ilang NANO, para matanggap ang mga pondong ito kailangan lang namin para matapos mo ang pag-set up ng iyong wallet.",
+  "importGiftIntro": "Mukhang nag-click ka sa isang link na naglalaman ng ilang Lumex, para matanggap ang mga pondong ito kailangan lang namin para matapos mo ang pag-set up ng iyong wallet.",
   "@importGiftIntro": {
     "type": "text",
     "description": "import_gift_intro"
   },
-  "importGiftv2": "Ang link na iyong na-click ay naglalaman ng ilang NANO, gusto mo bang i-import ito sa wallet na ito?",
+  "importGiftv2": "Ang link na iyong na-click ay naglalaman ng ilang Lumex, gusto mo bang i-import ito sa wallet na ito?",
   "@importGiftv2": {
     "type": "text",
     "description": "import_gift_v2"
@@ -1466,7 +1466,7 @@
     "type": "text",
     "description": "An error indicating a pin has been entered incorrectly"
   },
-  "iosFundingMessage": "Dahil sa mga alituntunin at paghihigpit ng iOS App Store, hindi ka namin mai-link sa aming page ng mga donasyon. Kung gusto mong suportahan ang proyekto, isaalang-alang ang pagpapadala sa address ng nautilus node.",
+  "iosFundingMessage": "Dahil sa mga alituntunin at paghihigpit ng iOS App Store, hindi ka namin mai-link sa aming page ng mga donasyon. Kung gusto mong suportahan ang proyekto, isaalang-alang ang pagpapadala sa address ng lumex node.",
   "@iosFundingMessage": {
     "type": "text",
     "description": "ios_funding_message"
@@ -1531,7 +1531,7 @@
     "type": "text",
     "description": "settings_logout_warning_title"
   },
-  "logoutDetail": "Mabubura ang iyong seed at lahat ng Nautilus-related na data sa aparato na ito kapag ikaw ay nag-logout. Kapag wala kang back up ng iyong seed, hindi mo na ulit ma-aaccess ang iyong pondo.",
+  "logoutDetail": "Mabubura ang iyong seed at lahat ng Lumex-related na data sa aparato na ito kapag ikaw ay nag-logout. Kapag wala kang back up ng iyong seed, hindi mo na ulit ma-aaccess ang iyong pondo.",
   "@logoutDetail": {
     "type": "text",
     "description": "settings_logout_alert_message"
@@ -1656,10 +1656,10 @@
     "type": "text",
     "description": "natricon_settings"
   },
-  "nautilusWallet": "Nautilus Wallet",
-  "@nautilusWallet": {
+  "lumexWallet": "Velocity Wallet",
+  "@lumexWallet": {
     "type": "text",
-    "description": "nautilus_wallet"
+    "description": "lumex_wallet"
   },
   "nearby": "Malapit",
   "@nearby": {
@@ -1676,7 +1676,7 @@
     "type": "text",
     "description": "verification_needed_header"
   },
-  "newAccountIntro": "Ito ang iyong bagong account. Pag nakareceive ka ng NANO, ganito ang makikita mo:",
+  "newAccountIntro": "Ito ang iyong bagong account. Pag nakareceive ka ng Lumex, ganito ang makikita mo:",
   "@newAccountIntro": {
     "type": "text",
     "description": "Alternate account intro card"
@@ -1746,7 +1746,7 @@
     "type": "text",
     "description": "no_thanks_app_button"
   },
-  "notificationBody": "Buksan ang Nautilus para tingnan ito.",
+  "notificationBody": "Buksan ang Lumex para tingnan ito.",
   "@notificationBody": {
     "type": "text",
     "description": "notification_body"
@@ -1891,10 +1891,10 @@
     "type": "text",
     "description": "An error indicating the password is incorrect"
   },
-  "passwordNoLongerRequiredToOpenParagraph": "Hindi mo na kailangan ng password para mabuksan ang Nautilus",
+  "passwordNoLongerRequiredToOpenParagraph": "Hindi mo na kailangan ng password para mabuksan ang Lumex",
   "@passwordNoLongerRequiredToOpenParagraph": {
     "type": "text",
-    "description": "An info paragraph that tells the user a password will no longer be needed to open Nautilus"
+    "description": "An info paragraph that tells the user a password will no longer be needed to open Velocity"
   },
   "passwordNumber": "Ang password ay dapat maglaman ng hindi bababa sa 1 numero",
   "@passwordNumber": {
@@ -1916,15 +1916,15 @@
     "type": "text",
     "description": "An error indicating the password is too short"
   },
-  "passwordWarning": "Ang password na ito ay kinakailangan upang buksan ang Nautilus.",
+  "passwordWarning": "Ang password na ito ay kinakailangan upang buksan ang Lumex.",
   "@passwordWarning": {
     "type": "text",
     "description": "A paragraph that warns the user to not lose their password."
   },
-  "passwordWillBeRequiredToOpenParagraph": "Itong password ay kailangan para mabuksan ang Nautilus",
+  "passwordWillBeRequiredToOpenParagraph": "Itong password ay kailangan para mabuksan ang Lumex",
   "@passwordWillBeRequiredToOpenParagraph": {
     "type": "text",
-    "description": "A paragraph that tells the users that the created password will be required to open Nautilus."
+    "description": "A paragraph that tells the users that the created password will be required to open Velocity."
   },
   "pastDue": "Past Due",
   "@pastDue": {
@@ -2061,17 +2061,17 @@
     "type": "text",
     "description": "settings_privacy_policy"
   },
-  "promotionalLink": "Libreng NANO",
+  "promotionalLink": "Libreng Lumex",
   "@promotionalLink": {
     "type": "text",
     "description": "promo_Link"
   },
-  "proSubRequiredHeader": "Kinakailangan ang Subscription sa Nautilus Pro",
+  "proSubRequiredHeader": "Kinakailangan ang Subscription sa Velocity Pro",
   "@proSubRequiredHeader": {
     "type": "text",
     "description": "pro_sub_required_header"
   },
-  "proSubRequiredParagraph": "Sa 1 NANO lang bawat buwan, maaari mong i-unlock ang lahat ng feature ng Nautilus Pro.",
+  "proSubRequiredParagraph": "Sa 1 Lumex lang bawat buwan, maaari mong i-unlock ang lahat ng feature ng Velocity Pro.",
   "@proSubRequiredParagraph": {
     "type": "text",
     "description": "pro_sub_required_paragraph"
@@ -2081,7 +2081,7 @@
     "type": "text",
     "description": "purchase_currency"
   },
-  "purchaseNano": "Bumili ng Nano",
+  "purchaseNano": "Bumili ng Lumex",
   "@purchaseNano": {
     "type": "text",
     "description": "purchase_nano"
@@ -2286,7 +2286,7 @@
     "type": "text",
     "description": "requested_from"
   },
-  "requestError": "Nabigo ang Kahilingan: Hindi mukhang naka-install ang Nautilus ng user na ito, o may hindi pinagana ang mga notification.",
+  "requestError": "Nabigo ang Kahilingan: Hindi mukhang naka-install ang Lumex ng user na ito, o may hindi pinagana ang mga notification.",
   "@requestError": {
     "type": "text",
     "description": "request_generic_error"
@@ -2316,7 +2316,7 @@
     "type": "text",
     "description": "request_sent_again"
   },
-  "requestSheetInfo": "Humiling ng pagbabayad, gamit ang End to End Encrypted na mga mensahe!\n\nAng mga kahilingan sa pagbabayad, memo, at mensahe ay matatanggap lamang ng ibang mga user ng nautilus, ngunit maaari mong gamitin ang mga ito para sa iyong sariling pag-iingat ng rekord kahit na ang tatanggap ay hindi gumagamit ng nautilus.",
+  "requestSheetInfo": "Humiling ng pagbabayad, gamit ang End to End Encrypted na mga mensahe!\n\nAng mga kahilingan sa pagbabayad, memo, at mensahe ay matatanggap lamang ng ibang mga user ng lumex, ngunit maaari mong gamitin ang mga ito para sa iyong sariling pag-iingat ng rekord kahit na ang tatanggap ay hindi gumagamit ng lumex.",
   "@requestSheetInfo": {
     "type": "text",
     "description": "request_sheet_info"
@@ -2326,10 +2326,10 @@
     "type": "text",
     "description": "request_sheet_info_header"
   },
-  "requireAPasswordToOpenHeader": "Gumawa ng password para mabuksan ang Nautilus?",
+  "requireAPasswordToOpenHeader": "Gumawa ng password para mabuksan ang Lumex?",
   "@requireAPasswordToOpenHeader": {
     "type": "text",
-    "description": "A paragraph that asks the users if they would like a password to be required to open Nautilus."
+    "description": "A paragraph that asks the users if they would like a password to be required to open Velocity."
   },
   "requireCaptcha": "Atasan ang CAPTCHA na mag-claim ng gift card",
   "@requireCaptcha": {
@@ -2376,7 +2376,7 @@
     "type": "text",
     "description": "dialog_save"
   },
-  "scanInstructions": "I-scan ang Nano \naddress QR code",
+  "scanInstructions": "I-scan ang Lumex \naddress QR code",
   "@scanInstructions": {
     "type": "text",
     "description": "scan_send_instruction_label"
@@ -2511,7 +2511,7 @@
     "type": "text",
     "description": "send_sending"
   },
-  "sendMemoError": "Nabigo ang pagpapadala ng memo na may transaksyon, maaaring hindi sila isang user ng Nautilus.",
+  "sendMemoError": "Nabigo ang pagpapadala ng memo na may transaksyon, maaaring hindi sila isang user ng Lumex.",
   "@sendMemoError": {
     "type": "text",
     "description": "send_memo_error"
@@ -2531,7 +2531,7 @@
     "type": "text",
     "description": "split_bill_send_requests"
   },
-  "sendSheetInfo": "Magpadala o Humiling ng pagbabayad, na may End to End End Encrypted na mensahe!\n\nAng mga kahilingan sa pagbabayad, mga memo, at mga mensahe ay matatanggap lamang ng iba pang mga gumagamit ng nautilus.\n\nHindi mo kailangang magkaroon ng username upang makapagpadala o makatanggap ng mga kahilingan sa pagbabayad, at maaari mo itong gamitin para sa iyong sariling record keeping kahit hindi sila gumagamit ng nautilus.",
+  "sendSheetInfo": "Magpadala o Humiling ng pagbabayad, na may End to End End Encrypted na mensahe!\n\nAng mga kahilingan sa pagbabayad, mga memo, at mga mensahe ay matatanggap lamang ng iba pang mga gumagamit ng lumex.\n\nHindi mo kailangang magkaroon ng username upang makapagpadala o makatanggap ng mga kahilingan sa pagbabayad, at maaari mo itong gamitin para sa iyong sariling record keeping kahit hindi sila gumagamit ng lumex.",
   "@sendSheetInfo": {
     "type": "text",
     "description": "send_sheet_info"
@@ -2624,14 +2624,14 @@
   "share": "Ibahagi",
   "@share": {
     "type": "text",
-    "description": "nautilus_share"
+    "description": "lumex_share"
   },
   "shareApp": "Ibahagi ang %1",
   "@shareApp": {
     "type": "text",
     "description": "settings_share"
   },
-  "shareAppText": "Tingnan ang %1! Isang nangungunang NANO mobile wallet!",
+  "shareAppText": "Tingnan ang %1! Isang nangungunang Lumex mobile wallet!",
   "@shareAppText": {
     "type": "text",
     "description": "share_extra"
@@ -2646,13 +2646,13 @@
     "type": "text",
     "description": "share_message"
   },
-  "shareNautilus": "I-share ang Nautilus",
-  "@shareNautilus": {
+  "shareLumex": "I-share ang Lumex",
+  "@shareLumex": {
     "type": "text",
     "description": "settings_share"
   },
-  "shareNautilusText": "Tingnan ang Nautilus! Ang opisyal na Android Wallet ng Nano!",
-  "@shareNautilusText": {
+  "shareLumexText": "Tingnan ang Lumex! Ang opisyal na Android Wallet ng Lumex!",
+  "@shareLumexText": {
     "type": "text",
     "description": "share_extra"
   },
@@ -2751,7 +2751,7 @@
     "type": "text",
     "description": "spend_currency"
   },
-  "spendNano": "Gumastos ng NANO",
+  "spendNano": "Gumastos ng Lumex",
   "@spendNano": {
     "type": "text",
     "description": "spend_nano"
@@ -2846,7 +2846,7 @@
     "type": "text",
     "description": "swap_xmr_header"
   },
-  "swapXMRInfo": "Ang Monero ay isang cryptocurrency na nakatuon sa privacy na ginagawang napakahirap o kahit imposibleng masubaybayan ang mga transaksyon. Samantala, ang NANO ay isang cryptocurrency na nakatuon sa pagbabayad na mabilis at walang bayad. Magkasama silang nagbibigay ng ilan sa mga pinakakapaki-pakinabang na aspeto ng cryptocurrencies!\n\nGamitin ang page na ito para madaling palitan ang iyong NANO para sa XMR!",
+  "swapXMRInfo": "Ang Monero ay isang cryptocurrency na nakatuon sa privacy na ginagawang napakahirap o kahit imposibleng masubaybayan ang mga transaksyon. Samantala, ang Lumex ay isang cryptocurrency na nakatuon sa pagbabayad na mabilis at walang bayad. Magkasama silang nagbibigay ng ilan sa mga pinakakapaki-pakinabang na aspeto ng cryptocurrencies!\n\nGamitin ang page na ito para madaling palitan ang iyong Lumex para sa XMR!",
   "@swapXMRInfo": {
     "type": "text",
     "description": "swap_xmr_header"
@@ -2946,7 +2946,7 @@
     "type": "text",
     "description": "transfer_close_text"
   },
-  "transferComplete": "%1 %2 ay nalipat na sa iyong Nautilus Wallet.",
+  "transferComplete": "%1 %2 ay nalipat na sa iyong Velocity Wallet.",
   "@transferComplete": {
     "type": "text",
     "description": "transfer_complete_text"
@@ -2981,7 +2981,7 @@
     "type": "text",
     "description": "transfer_intro"
   },
-  "transferIntroShort": "Ang prosesong ito ay maglilipat ng mga pondo mula sa isang wallet ng papel papunta sa iyong wallet ng Nautilus.",
+  "transferIntroShort": "Ang prosesong ito ay maglilipat ng mga pondo mula sa isang wallet ng papel papunta sa iyong wallet ng Lumex.",
   "@transferIntroShort": {
     "type": "text",
     "description": "transfer_intro_short"
@@ -2996,7 +2996,7 @@
     "type": "text",
     "description": "transfer_hint"
   },
-  "transferNoFunds": "Ang seed na ito ay walang NANO.",
+  "transferNoFunds": "Ang seed na ito ay walang Lumex.",
   "@transferNoFunds": {
     "type": "text",
     "description": "transfer_no_funds_toast"
@@ -3006,7 +3006,7 @@
     "type": "text",
     "description": "transfer_qr_scan_error"
   },
-  "transferQrScanHint": "Mag-scan ng Nano \nseed o private key",
+  "transferQrScanHint": "Mag-scan ng Lumex \nseed o private key",
   "@transferQrScanHint": {
     "type": "text",
     "description": "transfer_qr_scan_hint"
@@ -3096,15 +3096,15 @@
     "type": "text",
     "description": "use_currency"
   },
-  "useNano": "Gumamit ng NANO",
+  "useNano": "Gumamit ng Lumex",
   "@useNano": {
     "type": "text",
     "description": "use_nano"
   },
-  "useNautilusRep": "Use Nautilus Rep",
-  "@useNautilusRep": {
+  "useLumexRep": "Use Lumex Rep",
+  "@useLumexRep": {
     "type": "text",
-    "description": "use nautilus node as rep"
+    "description": "use lumex node as rep"
   },
   "userAlreadyAddedError": "Naidagdag na ang user!",
   "@userAlreadyAddedError": {
@@ -3131,7 +3131,7 @@
     "type": "text",
     "description": "username_unknown_error"
   },
-  "usernameInfo": "Pumili ng isang natatanging @username upang gawing madali para sa mga kaibigan at pamilya na mahanap ka!\n\nAng pagkakaroon ng username ng Nautilus ay ina-update ang UI sa buong mundo upang ipakita ang iyong bagong hawakan.",
+  "usernameInfo": "Pumili ng isang natatanging @username upang gawing madali para sa mga kaibigan at pamilya na mahanap ka!\n\nAng pagkakaroon ng username ng Lumex ay ina-update ang UI sa buong mundo upang ipakita ang iyong bagong hawakan.",
   "@usernameInfo": {
     "type": "text",
     "description": "Description for username registration"
@@ -3146,7 +3146,7 @@
     "type": "text",
     "description": "username_unavailable"
   },
-  "usernameWarning": "Ang mga username ng Nautilus ay isang sentralisadong serbisyo na ibinigay ng Nano.to",
+  "usernameWarning": "Ang mga username ng Lumex ay isang sentralisadong serbisyo na ibinigay ng Lumex.to",
   "@usernameWarning": {
     "type": "text",
     "description": "Username centralization warning"
@@ -3211,17 +3211,17 @@
     "type": "text",
     "description": "frequency_weekly"
   },
-  "welcomeText": "Maligayang pagdating sa Nautilus. Para magpatuloy, gumawa ng bagong wallet o gamitin ang dating wallet.",
+  "welcomeText": "Maligayang pagdating sa Lumex. Para magpatuloy, gumawa ng bagong wallet o gamitin ang dating wallet.",
   "@welcomeText": {
     "type": "text",
     "description": "intro_welcome_title"
   },
-  "welcomeTextLogin": "Maligayang pagdating sa Nautilus. Pumili ng opsyon para makapagsimula o pumili ng tema gamit ang icon sa ibaba.",
+  "welcomeTextLogin": "Maligayang pagdating sa Lumex. Pumili ng opsyon para makapagsimula o pumili ng tema gamit ang icon sa ibaba.",
   "@welcomeTextLogin": {
     "type": "text",
     "description": "intro_welcome_login"
   },
-  "welcomeTextUpdated": "Maligayang pagdating sa Nautilus. Para magsimula, gumawa ng bagong wallet o mag-import ng dati.",
+  "welcomeTextUpdated": "Maligayang pagdating sa Lumex. Para magsimula, gumawa ng bagong wallet o mag-import ng dati.",
   "@welcomeTextUpdated": {
     "type": "text",
     "description": "intro_welcome_title"

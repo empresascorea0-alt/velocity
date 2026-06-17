@@ -1,5 +1,5 @@
 import 'package:json_annotation/json_annotation.dart';
-import 'package:wallet_flutter/model/state_block.dart';
+import 'package:velocity/model/state_block.dart';
 
 part 'subscribe_response.g.dart';
 

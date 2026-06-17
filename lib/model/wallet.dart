@@ -3,12 +3,12 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_nano_ffi/flutter_nano_ffi.dart';
 import 'package:intl/intl.dart';
 import 'package:nanoutil/nanoutil.dart';
-import 'package:wallet_flutter/localize.dart';
-import 'package:wallet_flutter/model/available_currency.dart';
-import 'package:wallet_flutter/model/db/txdata.dart';
-import 'package:wallet_flutter/model/db/user.dart';
-import 'package:wallet_flutter/network/model/response/account_history_response_item.dart';
-import 'package:wallet_flutter/util/numberutil.dart';
+import 'package:velocity/localize.dart';
+import 'package:velocity/model/available_currency.dart';
+import 'package:velocity/model/db/txdata.dart';
+import 'package:velocity/model/db/user.dart';
+import 'package:velocity/network/model/response/account_history_response_item.dart';
+import 'package:velocity/util/numberutil.dart';
 
 /// Main wallet object that's passed around the app via state
 class AppWallet {
@@ -27,7 +27,7 @@ class AppWallet {
   //   this.historyLoading = true,
   //   this.solidsLoading = true,
   //   this.unifiedLoading = true,
-  //   // this.representative = nautilusRepresentative,
+  //   // this.representative = lumexRepresentative,
   //   this.localCurrencyPrice = "0",
   //   this.xmrPrice = "0",
   //   BigInt? accountBalance,
@@ -66,8 +66,8 @@ class AppWallet {
         solids = solids ?? [],
         unified = unified ?? [] {
     if (representative.isEmpty) {
-      if (NonTranslatable.accountType == NanoAccountType.NANO) {
-        representative = AppWallet.nautilusRepresentative;
+      if (NonTranslatable.accountType == NanoAccountType.Lumex) {
+        representative = AppWallet.lumexRepresentative;
       } else {
         representative = AppWallet.potasiusRepresentative;
       }
@@ -77,8 +77,8 @@ class AppWallet {
   // the default is randomized but in case the user is offline during account creation we still need a default:
   static String defaultRepresentative =
       "${NonTranslatable.currencyPrefix}38713x95zyjsqzx6nm1dsom1jmm668owkeb9913ax6nfgj15az3nu8xkx579";
-  static const String nautilusRepresentative =
-      "nano_38713x95zyjsqzx6nm1dsom1jmm668owkeb9913ax6nfgj15az3nu8xkx579";
+  static const String lumexRepresentative =
+      "lumex_38713x95zyjsqzx6nm1dsom1jmm668owkeb9913ax6nfgj15az3nu8xkx579";
   static const String potasiusRepresentative =
       "ban_38713x95zyjsqzx6nm1dsom1jmm668owkeb9913ax6nfgj15az3nu8xkx579";
 
@@ -106,7 +106,7 @@ class AppWallet {
 
   String getLocalCurrencyBalance(BuildContext context, AvailableCurrency currency,
       {String locale = "en_US"}) {
-    final BigInt rawPerCur = (NonTranslatable.accountType == NanoAccountType.NANO)
+    final BigInt rawPerCur = (NonTranslatable.accountType == NanoAccountType.Lumex)
         ? NanoAmounts.rawPerNano
         : NanoAmounts.rawPerBanano;
 

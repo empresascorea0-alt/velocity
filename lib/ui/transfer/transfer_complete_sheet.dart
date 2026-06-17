@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:wallet_flutter/app_icons.dart';
-import 'package:wallet_flutter/appstate_container.dart';
-import 'package:wallet_flutter/dimens.dart';
-import 'package:wallet_flutter/generated/l10n.dart';
-import 'package:wallet_flutter/localize.dart';
-import 'package:wallet_flutter/styles.dart';
-import 'package:wallet_flutter/ui/widgets/buttons.dart';
-import 'package:wallet_flutter/ui/widgets/sheets.dart';
+import 'package:velocity/app_icons.dart';
+import 'package:velocity/appstate_container.dart';
+import 'package:velocity/dimens.dart';
+import 'package:velocity/generated/l10n.dart';
+import 'package:velocity/localize.dart';
+import 'package:velocity/styles.dart';
+import 'package:velocity/ui/widgets/buttons.dart';
+import 'package:velocity/ui/widgets/sheets.dart';
 
 class AppTransferCompleteSheet extends StatefulWidget {
   const AppTransferCompleteSheet({required this.transferAmount}) : super();
@@ -51,7 +51,7 @@ class AppTransferCompleteSheetState extends State<AppTransferCompleteSheet> {
                     //           color: StateContainer.of(context).curTheme.text45, width: MediaQuery.of(context).size.width),
                     //     ),
                     //     Center(
-                    //       child: SvgPicture.asset('legacy_assets/transferfunds_illustration_end_nautiluswalletonly.svg',
+                    //       child: SvgPicture.asset('legacy_assets/transferfunds_illustration_end_lumexwalletonly.svg',
                     //           color: StateContainer.of(context).curTheme.success, width: MediaQuery.of(context).size.width),
                     //     ),
                     //   ],

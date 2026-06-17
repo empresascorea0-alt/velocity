@@ -493,7 +493,7 @@
   "connectingHeader": "Đang kết nối",
   "@connectingHeader": {
     "type": "text",
-    "description": "A header to let the user now that Nautilus is currently connecting to (or loading) live chat."
+    "description": "A header to let the user now that Lumex is currently connecting to (or loading) live chat."
   },
   "connectionWarning": "Không thể kết nối",
   "@connectionWarning": {
@@ -697,7 +697,7 @@
     "type": "text",
     "description": "currency_mode_header"
   },
-  "currencyModeInfo": "Chọn đơn vị nào để hiển thị số tiền trong đó.\n1 nyano = 0.000001 NANO, hoặc \n1.000.000 nyano = 1 NANO",
+  "currencyModeInfo": "Chọn đơn vị nào để hiển thị số tiền trong đó.\n1 nyano = 0.000001 Lumex, hoặc \n1.000.000 nyano = 1 Lumex",
   "@currencyModeInfo": {
     "type": "text",
     "description": "currency_mode_info"
@@ -727,7 +727,7 @@
     "type": "text",
     "description": "Default account name"
   },
-  "defaultGiftMessage": "Kiểm tra Nautilus! Tôi đã gửi cho bạn một số nano với liên kết này:",
+  "defaultGiftMessage": "Kiểm tra Lumex! Tôi đã gửi cho bạn một số nano với liên kết này:",
   "@defaultGiftMessage": {
     "type": "text",
     "description": "default_gift_message"
@@ -957,7 +957,7 @@
     "type": "text",
     "description": "example_card_from"
   },
-  "exampleCardIntro": "Chào mừng đến với Nautilus. Khi bạn nhận Nano, các giao dịch sẽ được hiển thị như sau:",
+  "exampleCardIntro": "Chào mừng đến với Lumex. Khi bạn nhận Lumex, các giao dịch sẽ được hiển thị như sau:",
   "@exampleCardIntro": {
     "type": "text",
     "description": "example_card_intro"
@@ -1047,7 +1047,7 @@
     "type": "text",
     "description": "exchange_currency"
   },
-  "exchangeNano": "Trao đổi NANO",
+  "exchangeNano": "Trao đổi Lumex",
   "@exchangeNano": {
     "type": "text",
     "description": "exchange_nano"
@@ -1082,12 +1082,12 @@
     "type": "text",
     "description": "failed_message"
   },
-  "fallbackHeader": "Nautilus bị ngắt kết nối",
+  "fallbackHeader": "Lumex bị ngắt kết nối",
   "@fallbackHeader": {
     "type": "text",
     "description": "fallback_connected"
   },
-  "fallbackInfo": "Máy chủ Nautilus dường như bị ngắt kết nối, Gửi và Nhận (không có ghi nhớ) vẫn phải hoạt động nhưng yêu cầu thanh toán có thể không được thông qua\n\n Quay lại sau hoặc khởi động lại ứng dụng để thử lại",
+  "fallbackInfo": "Máy chủ Lumex dường như bị ngắt kết nối, Gửi và Nhận (không có ghi nhớ) vẫn phải hoạt động nhưng yêu cầu thanh toán có thể không được thông qua\n\n Quay lại sau hoặc khởi động lại ứng dụng để thử lại",
   "@fallbackInfo": {
     "type": "text",
     "description": "fallback_info"
@@ -1191,7 +1191,7 @@
     "type": "text",
     "description": "get_currency"
   },
-  "getNano": "Nhận NANO",
+  "getNano": "Nhận Lumex",
   "@getNano": {
     "type": "text",
     "description": "get_nano"
@@ -1231,7 +1231,7 @@
     "type": "text",
     "description": "gift_from"
   },
-  "giftInfo": "Nạp thẻ quà tặng kỹ thuật số với NANO! Đặt số tiền và một tin nhắn tùy chọn cho người nhận để xem khi họ mở nó!\n\nSau khi tạo, bạn sẽ nhận được một liên kết mà bạn có thể gửi cho bất kỳ ai, khi mở sẽ tự động phân phối tiền cho người nhận sau khi cài đặt Nautilus!\n\nNếu người nhận đã là người dùng Nautilus, họ sẽ nhận được lời nhắc để chuyển tiền vào tài khoản của họ khi mở liên kết",
+  "giftInfo": "Nạp thẻ quà tặng kỹ thuật số với Lumex! Đặt số tiền và một tin nhắn tùy chọn cho người nhận để xem khi họ mở nó!\n\nSau khi tạo, bạn sẽ nhận được một liên kết mà bạn có thể gửi cho bất kỳ ai, khi mở sẽ tự động phân phối tiền cho người nhận sau khi cài đặt Lumex!\n\nNếu người nhận đã là người dùng Lumex, họ sẽ nhận được lời nhắc để chuyển tiền vào tài khoản của họ khi mở liên kết",
   "@giftInfo": {
     "type": "text",
     "description": "Description for gift card creation"
@@ -1356,12 +1356,12 @@
     "type": "text",
     "description": "import_gift_empty"
   },
-  "importGiftIntro": "Có vẻ như bạn đã nhấp vào một liên kết có chứa một số NANO, để nhận được những khoản tiền này, chúng tôi chỉ cần bạn hoàn tất việc thiết lập ví của mình.",
+  "importGiftIntro": "Có vẻ như bạn đã nhấp vào một liên kết có chứa một số Lumex, để nhận được những khoản tiền này, chúng tôi chỉ cần bạn hoàn tất việc thiết lập ví của mình.",
   "@importGiftIntro": {
     "type": "text",
     "description": "import_gift_intro"
   },
-  "importGiftv2": "Liên kết bạn đã nhấp vào chứa một số NANO, bạn có muốn nhập nó vào ví này không?",
+  "importGiftv2": "Liên kết bạn đã nhấp vào chứa một số Lumex, bạn có muốn nhập nó vào ví này không?",
   "@importGiftv2": {
     "type": "text",
     "description": "import_gift_v2"
@@ -1466,7 +1466,7 @@
     "type": "text",
     "description": "An error indicating a pin has been entered incorrectly"
   },
-  "iosFundingMessage": "Do các nguyên tắc và hạn chế của iOS App Store, chúng tôi không thể liên kết bạn với trang quyên góp của chúng tôi. Nếu bạn muốn hỗ trợ dự án, hãy cân nhắc gửi đến địa chỉ của nút nautilus.",
+  "iosFundingMessage": "Do các nguyên tắc và hạn chế của iOS App Store, chúng tôi không thể liên kết bạn với trang quyên góp của chúng tôi. Nếu bạn muốn hỗ trợ dự án, hãy cân nhắc gửi đến địa chỉ của nút lumex.",
   "@iosFundingMessage": {
     "type": "text",
     "description": "ios_funding_message"
@@ -1531,7 +1531,7 @@
     "type": "text",
     "description": "settings_logout_warning_title"
   },
-  "logoutDetail": "Đăng xuất sẽ xóa hạt giống (seed) của bạn và tất cả dữ liệu liên quan đến Nautilus khỏi thiết bị này. Nếu bạn không lưu lại hạt giống, bạn sẽ không thể truy cập vào ví của mình.",
+  "logoutDetail": "Đăng xuất sẽ xóa hạt giống (seed) của bạn và tất cả dữ liệu liên quan đến Lumex khỏi thiết bị này. Nếu bạn không lưu lại hạt giống, bạn sẽ không thể truy cập vào ví của mình.",
   "@logoutDetail": {
     "type": "text",
     "description": "settings_logout_alert_message"
@@ -1596,7 +1596,7 @@
     "type": "text",
     "description": "message_header"
   },
-  "minimumSend": "Khoản gửi tối thiểu là %1 Nano",
+  "minimumSend": "Khoản gửi tối thiểu là %1 Lumex",
   "@minimumSend": {
     "type": "text",
     "description": "send_minimum_error"
@@ -1656,10 +1656,10 @@
     "type": "text",
     "description": "natricon_settings"
   },
-  "nautilusWallet": "Ví Nautilus",
-  "@nautilusWallet": {
+  "lumexWallet": "Ví Lumex",
+  "@lumexWallet": {
     "type": "text",
-    "description": "nautilus_wallet"
+    "description": "lumex_wallet"
   },
   "nearby": "Lân cận",
   "@nearby": {
@@ -1676,7 +1676,7 @@
     "type": "text",
     "description": "verification_needed_header"
   },
-  "newAccountIntro": "Đây là tài khoản mới của bạn. Khi bạn nhận Nano, giao dịch sẽ được hiển thị như sau:",
+  "newAccountIntro": "Đây là tài khoản mới của bạn. Khi bạn nhận Lumex, giao dịch sẽ được hiển thị như sau:",
   "@newAccountIntro": {
     "type": "text",
     "description": "Alternate account intro card"
@@ -1746,7 +1746,7 @@
     "type": "text",
     "description": "no_thanks_app_button"
   },
-  "notificationBody": "Mở Nautilus để xem giao dịch này",
+  "notificationBody": "Mở Lumex để xem giao dịch này",
   "@notificationBody": {
     "type": "text",
     "description": "notification_body"
@@ -1891,10 +1891,10 @@
     "type": "text",
     "description": "An error indicating the password is incorrect"
   },
-  "passwordNoLongerRequiredToOpenParagraph": "Bạn sẽ không cần mật khẩu để mở Nautilus nữa.",
+  "passwordNoLongerRequiredToOpenParagraph": "Bạn sẽ không cần mật khẩu để mở Lumex nữa.",
   "@passwordNoLongerRequiredToOpenParagraph": {
     "type": "text",
-    "description": "An info paragraph that tells the user a password will no longer be needed to open Nautilus"
+    "description": "An info paragraph that tells the user a password will no longer be needed to open Velocity"
   },
   "passwordNumber": "Mật khẩu phải chứa ít nhất 1 số",
   "@passwordNumber": {
@@ -1916,15 +1916,15 @@
     "type": "text",
     "description": "An error indicating the password is too short"
   },
-  "passwordWarning": "Mật khẩu này sẽ được yêu cầu để mở Nautilus.",
+  "passwordWarning": "Mật khẩu này sẽ được yêu cầu để mở Lumex.",
   "@passwordWarning": {
     "type": "text",
     "description": "A paragraph that warns the user to not lose their password."
   },
-  "passwordWillBeRequiredToOpenParagraph": "Mật khẩu này sẽ được yêu cầu để mở Nautilus.",
+  "passwordWillBeRequiredToOpenParagraph": "Mật khẩu này sẽ được yêu cầu để mở Lumex.",
   "@passwordWillBeRequiredToOpenParagraph": {
     "type": "text",
-    "description": "A paragraph that tells the users that the created password will be required to open Nautilus."
+    "description": "A paragraph that tells the users that the created password will be required to open Velocity."
   },
   "pastDue": "Quá hạn",
   "@pastDue": {
@@ -2061,17 +2061,17 @@
     "type": "text",
     "description": "settings_privacy_policy"
   },
-  "promotionalLink": "NANO miễn phí",
+  "promotionalLink": "Lumex miễn phí",
   "@promotionalLink": {
     "type": "text",
     "description": "promo_Link"
   },
-  "proSubRequiredHeader": "Yêu cầu đăng ký Nautilus Pro",
+  "proSubRequiredHeader": "Yêu cầu đăng ký Velocity Pro",
   "@proSubRequiredHeader": {
     "type": "text",
     "description": "pro_sub_required_header"
   },
-  "proSubRequiredParagraph": "Chỉ với 1 NANO mỗi tháng, bạn có thể mở khóa tất cả các tính năng của Nautilus Pro.",
+  "proSubRequiredParagraph": "Chỉ với 1 Lumex mỗi tháng, bạn có thể mở khóa tất cả các tính năng của Velocity Pro.",
   "@proSubRequiredParagraph": {
     "type": "text",
     "description": "pro_sub_required_paragraph"
@@ -2081,7 +2081,7 @@
     "type": "text",
     "description": "purchase_currency"
   },
-  "purchaseNano": "Mua Nano",
+  "purchaseNano": "Mua Lumex",
   "@purchaseNano": {
     "type": "text",
     "description": "purchase_nano"
@@ -2286,7 +2286,7 @@
     "type": "text",
     "description": "requested_from"
   },
-  "requestError": "Yêu cầu thất bại: Người dùng này dường như không có Nautilus cài đặt hoặc đã tắt thông báo.",
+  "requestError": "Yêu cầu thất bại: Người dùng này dường như không có Lumex cài đặt hoặc đã tắt thông báo.",
   "@requestError": {
     "type": "text",
     "description": "request_generic_error"
@@ -2316,7 +2316,7 @@
     "type": "text",
     "description": "request_sent_again"
   },
-  "requestSheetInfo": "Yêu cầu thanh toán, với tin nhắn được mã hóa từ đầu đến cuối!\n\nYêu cầu thanh toán, bản ghi nhớ và tin nhắn sẽ chỉ có những người dùng nautilus khác mới có thể nhận được, nhưng bạn có thể sử dụng chúng để lưu trữ hồ sơ của riêng mình ngay cả khi người nhận không sử dụng nautilus.",
+  "requestSheetInfo": "Yêu cầu thanh toán, với tin nhắn được mã hóa từ đầu đến cuối!\n\nYêu cầu thanh toán, bản ghi nhớ và tin nhắn sẽ chỉ có những người dùng lumex khác mới có thể nhận được, nhưng bạn có thể sử dụng chúng để lưu trữ hồ sơ của riêng mình ngay cả khi người nhận không sử dụng lumex.",
   "@requestSheetInfo": {
     "type": "text",
     "description": "request_sheet_info"
@@ -2326,10 +2326,10 @@
     "type": "text",
     "description": "request_sheet_info_header"
   },
-  "requireAPasswordToOpenHeader": "Yêu cầu mật khẩu để mở Nautilus?",
+  "requireAPasswordToOpenHeader": "Yêu cầu mật khẩu để mở Lumex?",
   "@requireAPasswordToOpenHeader": {
     "type": "text",
-    "description": "A paragraph that asks the users if they would like a password to be required to open Nautilus."
+    "description": "A paragraph that asks the users if they would like a password to be required to open Velocity."
   },
   "requireCaptcha": "Yêu cầu CAPTCHA để yêu cầu thẻ quà tặng",
   "@requireCaptcha": {
@@ -2511,7 +2511,7 @@
     "type": "text",
     "description": "send_sending"
   },
-  "sendMemoError": "Gửi bản ghi nhớ với giao dịch không thành công, họ có thể không phải là người dùng Nautilus.",
+  "sendMemoError": "Gửi bản ghi nhớ với giao dịch không thành công, họ có thể không phải là người dùng Lumex.",
   "@sendMemoError": {
     "type": "text",
     "description": "send_memo_error"
@@ -2531,7 +2531,7 @@
     "type": "text",
     "description": "split_bill_send_requests"
   },
-  "sendSheetInfo": "Gửi hoặc yêu cầu thanh toán, với các tin nhắn được mã hóa End to End!\n\nYêu cầu thanh toán, bản ghi nhớ và tin nhắn sẽ chỉ được chấp nhận bởi những người dùng nautilus khác.\n\nBạn không cần phải có tên người dùng để gửi hoặc nhận yêu cầu thanh toán, và bạn có thể sử dụng chúng để lưu giữ hồ sơ của riêng bạn ngay cả khi họ không sử dụng nautilus.",
+  "sendSheetInfo": "Gửi hoặc yêu cầu thanh toán, với các tin nhắn được mã hóa End to End!\n\nYêu cầu thanh toán, bản ghi nhớ và tin nhắn sẽ chỉ được chấp nhận bởi những người dùng lumex khác.\n\nBạn không cần phải có tên người dùng để gửi hoặc nhận yêu cầu thanh toán, và bạn có thể sử dụng chúng để lưu giữ hồ sơ của riêng bạn ngay cả khi họ không sử dụng lumex.",
   "@sendSheetInfo": {
     "type": "text",
     "description": "send_sheet_info"
@@ -2624,14 +2624,14 @@
   "share": "Đăng lại",
   "@share": {
     "type": "text",
-    "description": "nautilus_share"
+    "description": "lumex_share"
   },
   "shareApp": "Chia sẻ %1",
   "@shareApp": {
     "type": "text",
     "description": "settings_share"
   },
-  "shareAppText": "Kiểm tra %1! Ví di động NANO hàng đầu!",
+  "shareAppText": "Kiểm tra %1! Ví di động Lumex hàng đầu!",
   "@shareAppText": {
     "type": "text",
     "description": "share_extra"
@@ -2646,13 +2646,13 @@
     "type": "text",
     "description": "share_message"
   },
-  "shareNautilus": "Chia sẻ Nautilus",
-  "@shareNautilus": {
+  "shareLumex": "Chia sẻ Lumex",
+  "@shareLumex": {
     "type": "text",
     "description": "settings_share"
   },
-  "shareNautilusText": "Thử ngay Nautilus! Ví Nano di động hàng đầu!",
-  "@shareNautilusText": {
+  "shareLumexText": "Thử ngay Lumex! Ví Lumex di động hàng đầu!",
+  "@shareLumexText": {
     "type": "text",
     "description": "share_extra"
   },
@@ -2751,7 +2751,7 @@
     "type": "text",
     "description": "spend_currency"
   },
-  "spendNano": "Tiêu NANO",
+  "spendNano": "Tiêu Lumex",
   "@spendNano": {
     "type": "text",
     "description": "spend_nano"
@@ -2846,7 +2846,7 @@
     "type": "text",
     "description": "swap_xmr_header"
   },
-  "swapXMRInfo": "Monero là một loại tiền điện tử tập trung vào quyền riêng tư nên rất khó hoặc thậm chí không thể theo dõi các giao dịch. Trong khi đó NANO là một loại tiền điện tử tập trung vào thanh toán, nhanh chóng và không mất phí. Họ cùng nhau cung cấp một số khía cạnh hữu ích nhất của tiền điện tử!\n\nSử dụng trang này để dễ dàng hoán đổi NANO của bạn lấy XMR!",
+  "swapXMRInfo": "Monero là một loại tiền điện tử tập trung vào quyền riêng tư nên rất khó hoặc thậm chí không thể theo dõi các giao dịch. Trong khi đó Lumex là một loại tiền điện tử tập trung vào thanh toán, nhanh chóng và không mất phí. Họ cùng nhau cung cấp một số khía cạnh hữu ích nhất của tiền điện tử!\n\nSử dụng trang này để dễ dàng hoán đổi Lumex của bạn lấy XMR!",
   "@swapXMRInfo": {
     "type": "text",
     "description": "swap_xmr_header"
@@ -2946,7 +2946,7 @@
     "type": "text",
     "description": "transfer_close_text"
   },
-  "transferComplete": "%1 %2 đã được chuyển vào ví Nautilus của bạn.\n",
+  "transferComplete": "%1 %2 đã được chuyển vào ví Lumex của bạn.\n",
   "@transferComplete": {
     "type": "text",
     "description": "transfer_complete_text"
@@ -2976,12 +2976,12 @@
     "type": "text",
     "description": "transfer_header"
   },
-  "transferIntro": "Quá trình này sẽ chuyển toàn bộ số dư từ ví giấy sang ví Nautilus của bạn.\n\nNhấn nút \"%1\" để bắt đầu.",
+  "transferIntro": "Quá trình này sẽ chuyển toàn bộ số dư từ ví giấy sang ví Lumex của bạn.\n\nNhấn nút \"%1\" để bắt đầu.",
   "@transferIntro": {
     "type": "text",
     "description": "transfer_intro"
   },
-  "transferIntroShort": "Quá trình này sẽ chuyển tiền từ ví giấy sang ví Nautilus của bạn.",
+  "transferIntroShort": "Quá trình này sẽ chuyển tiền từ ví giấy sang ví Lumex của bạn.",
   "@transferIntroShort": {
     "type": "text",
     "description": "transfer_intro_short"
@@ -2996,7 +2996,7 @@
     "type": "text",
     "description": "transfer_hint"
   },
-  "transferNoFunds": "Hạt giống này không chứa chút Nano nào",
+  "transferNoFunds": "Hạt giống này không chứa chút Lumex nào",
   "@transferNoFunds": {
     "type": "text",
     "description": "transfer_no_funds_toast"
@@ -3036,7 +3036,7 @@
     "type": "text",
     "description": "unlock_bio"
   },
-  "unlockPin": "Nhập mã PIN để mở khoá Nautilus",
+  "unlockPin": "Nhập mã PIN để mở khoá Lumex",
   "@unlockPin": {
     "type": "text",
     "description": "unlock_pin"
@@ -3096,15 +3096,15 @@
     "type": "text",
     "description": "use_currency"
   },
-  "useNano": "Sử dụng NANO",
+  "useNano": "Sử dụng Lumex",
   "@useNano": {
     "type": "text",
     "description": "use_nano"
   },
-  "useNautilusRep": "Use Nautilus Rep",
-  "@useNautilusRep": {
+  "useLumexRep": "Use Lumex Rep",
+  "@useLumexRep": {
     "type": "text",
-    "description": "use nautilus node as rep"
+    "description": "use lumex node as rep"
   },
   "userAlreadyAddedError": "Người dùng đã được thêm!",
   "@userAlreadyAddedError": {
@@ -3131,7 +3131,7 @@
     "type": "text",
     "description": "username_unknown_error"
   },
-  "usernameInfo": "Chọn một @username độc đáo để giúp bạn bè và gia đình dễ dàng tìm thấy bạn!\n\nCó một tên người dùng Nautilus sẽ cập nhật giao diện người dùng trên toàn cầu để phản ánh xử lý mới của bạn.",
+  "usernameInfo": "Chọn một @username độc đáo để giúp bạn bè và gia đình dễ dàng tìm thấy bạn!\n\nCó một tên người dùng Lumex sẽ cập nhật giao diện người dùng trên toàn cầu để phản ánh xử lý mới của bạn.",
   "@usernameInfo": {
     "type": "text",
     "description": "Description for username registration"
@@ -3146,7 +3146,7 @@
     "type": "text",
     "description": "username_unavailable"
   },
-  "usernameWarning": "Tên người dùng Nautilus là một dịch vụ tập trung được cung cấp bởi Nano.to",
+  "usernameWarning": "Tên người dùng Lumex là một dịch vụ tập trung được cung cấp bởi Lumex.to",
   "@usernameWarning": {
     "type": "text",
     "description": "Username centralization warning"
@@ -3211,17 +3211,17 @@
     "type": "text",
     "description": "frequency_weekly"
   },
-  "welcomeText": "Chào mừng đến với Nautilus. Để bắt đầu, bạn có thể tạo ví mới hoặc nhập ví hiện có.",
+  "welcomeText": "Chào mừng đến với Lumex. Để bắt đầu, bạn có thể tạo ví mới hoặc nhập ví hiện có.",
   "@welcomeText": {
     "type": "text",
     "description": "intro_welcome_title"
   },
-  "welcomeTextLogin": "Chào mừng đến với Nautilus. Chọn một tùy chọn để bắt đầu hoặc chọn một chủ đề bằng biểu tượng bên dưới.",
+  "welcomeTextLogin": "Chào mừng đến với Lumex. Chọn một tùy chọn để bắt đầu hoặc chọn một chủ đề bằng biểu tượng bên dưới.",
   "@welcomeTextLogin": {
     "type": "text",
     "description": "intro_welcome_login"
   },
-  "welcomeTextUpdated": "Chào mừng đến với Nautilus. Để bắt đầu, hãy tạo một ví mới hoặc nhập một ví hiện có.",
+  "welcomeTextUpdated": "Chào mừng đến với Lumex. Để bắt đầu, hãy tạo một ví mới hoặc nhập một ví hiện có.",
   "@welcomeTextUpdated": {
     "type": "text",
     "description": "intro_welcome_title"

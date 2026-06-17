@@ -9,37 +9,37 @@ import 'package:intl/intl.dart';
 import 'package:keyboard_avoider/keyboard_avoider.dart';
 import 'package:nanoutil/nanoutil.dart';
 import 'package:quiver/strings.dart';
-import 'package:wallet_flutter/app_icons.dart';
-import 'package:wallet_flutter/appstate_container.dart';
-import 'package:wallet_flutter/dimens.dart';
-import 'package:wallet_flutter/generated/l10n.dart';
-import 'package:wallet_flutter/localize.dart';
-import 'package:wallet_flutter/model/address.dart';
-import 'package:wallet_flutter/model/available_currency.dart';
-import 'package:wallet_flutter/model/db/appdb.dart';
-import 'package:wallet_flutter/model/db/user.dart';
-import 'package:wallet_flutter/network/username_service.dart';
-import 'package:wallet_flutter/service_locator.dart';
-import 'package:wallet_flutter/styles.dart';
-import 'package:wallet_flutter/ui/receive/receive_show_qr.dart';
-import 'package:wallet_flutter/ui/receive/split_bill_sheet.dart';
-import 'package:wallet_flutter/ui/request/request_confirm_sheet.dart';
-import 'package:wallet_flutter/ui/send/send_sheet.dart';
-import 'package:wallet_flutter/ui/util/confirm_sheet.dart';
-import 'package:wallet_flutter/ui/util/formatters.dart';
-import 'package:wallet_flutter/ui/util/handlebars.dart';
-import 'package:wallet_flutter/ui/util/routes.dart';
-import 'package:wallet_flutter/ui/util/ui_util.dart';
-import 'package:wallet_flutter/ui/widgets/app_simpledialog.dart';
-import 'package:wallet_flutter/ui/widgets/app_text_field.dart';
-import 'package:wallet_flutter/ui/widgets/buttons.dart';
-import 'package:wallet_flutter/ui/widgets/dialog.dart';
-import 'package:wallet_flutter/ui/widgets/misc.dart';
-import 'package:wallet_flutter/ui/widgets/sheet_util.dart';
-import 'package:wallet_flutter/util/caseconverter.dart';
-import 'package:wallet_flutter/util/numberutil.dart';
-import 'package:wallet_flutter/util/sharedprefsutil.dart';
-import 'package:wallet_flutter/util/user_data_util.dart';
+import 'package:velocity/app_icons.dart';
+import 'package:velocity/appstate_container.dart';
+import 'package:velocity/dimens.dart';
+import 'package:velocity/generated/l10n.dart';
+import 'package:velocity/localize.dart';
+import 'package:velocity/model/address.dart';
+import 'package:velocity/model/available_currency.dart';
+import 'package:velocity/model/db/appdb.dart';
+import 'package:velocity/model/db/user.dart';
+import 'package:velocity/network/username_service.dart';
+import 'package:velocity/service_locator.dart';
+import 'package:velocity/styles.dart';
+import 'package:velocity/ui/receive/receive_show_qr.dart';
+import 'package:velocity/ui/receive/split_bill_sheet.dart';
+import 'package:velocity/ui/request/request_confirm_sheet.dart';
+import 'package:velocity/ui/send/send_sheet.dart';
+import 'package:velocity/ui/util/confirm_sheet.dart';
+import 'package:velocity/ui/util/formatters.dart';
+import 'package:velocity/ui/util/handlebars.dart';
+import 'package:velocity/ui/util/routes.dart';
+import 'package:velocity/ui/util/ui_util.dart';
+import 'package:velocity/ui/widgets/app_simpledialog.dart';
+import 'package:velocity/ui/widgets/app_text_field.dart';
+import 'package:velocity/ui/widgets/buttons.dart';
+import 'package:velocity/ui/widgets/dialog.dart';
+import 'package:velocity/ui/widgets/misc.dart';
+import 'package:velocity/ui/widgets/sheet_util.dart';
+import 'package:velocity/util/caseconverter.dart';
+import 'package:velocity/util/numberutil.dart';
+import 'package:velocity/util/sharedprefsutil.dart';
+import 'package:velocity/util/user_data_util.dart';
 
 // import 'package:flutter_nfc_kit/flutter_nfc_kit.dart';
 // import 'package:ndef/ndef.dart' as ndef;
@@ -920,7 +920,7 @@ class _ReceiveSheetState extends State<ReceiveSheet> {
       }
 
       if (isValid) {
-        // still valid && you have to have a nautilus username to send requests:
+        // still valid && you have to have a lumex username to send requests:
         if (StateContainer.of(context).wallet!.user == null &&
             StateContainer.of(context).wallet!.confirmationHeight < _REQUIRED_CONFIRMATION_HEIGHT) {
           isValid = false;

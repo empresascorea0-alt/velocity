@@ -1,4 +1,4 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="co.perish.nautiluswallet">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="org.velocity.wallet">
 
     <!-- The INTERNET permission is required for development. Specifically,
          flutter needs it to communicate with the running application
@@ -21,7 +21,7 @@
          additional functionality it is fine to subclass or reimplement
          FlutterApplication and put your custom class here. -->
     <!-- android:enableOnBackInvokedCallback="true" -->
-    <application android:usesCleartextTraffic="true" android:name=".MultidexApplication" android:label="Nautilus" android:icon="@mipmap/ic_launcher" android:allowBackup="false">
+    <application android:usesCleartextTraffic="true" android:name=".MultidexApplication" android:label="Velocity" android:icon="@mipmap/ic_launcher" android:allowBackup="false">
         <meta-data android:name="flutterEmbedding" android:value="2" />
 
         <!-- Set custom default icon. This is used when no icon is set for incoming notification messages.
@@ -82,6 +82,16 @@
 
                 <data android:scheme="nanopay" />
             </intent-filter>
+            <!-- lumexpay uri scheme -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.nfc.action.NDEF_DISCOVERED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="lumexpay" />
+            </intent-filter>
             <!-- payto uri scheme -->
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
@@ -102,6 +112,16 @@
 
                 <data android:scheme="nanosub" />
             </intent-filter>
+            <!-- lumexsub uri scheme -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.nfc.action.NDEF_DISCOVERED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="lumexsub" />
+            </intent-filter>
             <!-- nanosign uri scheme -->
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
@@ -111,6 +131,16 @@
                 <category android:name="android.intent.category.BROWSABLE" />
 
                 <data android:scheme="nanosign" />
+            </intent-filter>
+            <!-- lumexsign uri scheme -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.nfc.action.NDEF_DISCOVERED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="lumexsign" />
             </intent-filter>
             <!-- nanoauth uri scheme -->
             <intent-filter>
@@ -122,6 +152,16 @@
 
                 <data android:scheme="nanoauth" />
             </intent-filter>
+            <!-- lumexauth uri scheme -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.nfc.action.NDEF_DISCOVERED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="lumexauth" />
+            </intent-filter>
             <!-- nanorep uri scheme -->
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
@@ -132,6 +172,16 @@
 
                 <data android:scheme="nanorep" />
             </intent-filter>
+            <!-- lumexrep uri scheme -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.nfc.action.NDEF_DISCOVERED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="lumexrep" />
+            </intent-filter>
 
             <!-- Branch URI Scheme -->
             <intent-filter>
@@ -139,7 +189,7 @@
                 <action android:name="android.nfc.action.NDEF_DISCOVERED" /> <!-- added 08/09/2022 -->
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
-                <data android:scheme="nautilus" />
+                <data android:scheme="lumex" />
             </intent-filter>
 
             <!-- Branch App Links -->
@@ -147,13 +197,13 @@
                 <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
-                <data android:scheme="https" android:host="app.nautilus.io" />
+                <data android:scheme="https" android:host="app.lumex.io" />
                 <!-- example-alternate domain is required for App Links when the Journeys/Web SDK and Deepviews are used inside your website.  -->
-                <data android:scheme="https" android:host="nautilus-alternate.app.link" />
+                <data android:scheme="https" android:host="lumex-alternate.app.link" />
                 <!-- test mode: -->
-                <data android:scheme="https" android:host="test-app.nautilus.io" />
-                <data android:scheme="https" android:host="nautilus.test-app.link" />
-                <data android:scheme="https" android:host="nautilus-alternate.test-app.link" />
+                <data android:scheme="https" android:host="test-app.lumex.io" />
+                <data android:scheme="https" android:host="lumex.test-app.link" />
+                <data android:scheme="https" android:host="lumex-alternate.test-app.link" />
             </intent-filter>
 
         </activity>

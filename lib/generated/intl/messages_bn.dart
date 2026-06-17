@@ -419,7 +419,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "generatingWork": MessageLookupByLibrary.simpleMessage(
             "PoW তৈরি করা হচ্ছে, এতে কিছু সময় লাগতে পারে (> 20 সেকেন্ড)..."),
         "getCurrency": MessageLookupByLibrary.simpleMessage("%2 পান"),
-        "getNano": MessageLookupByLibrary.simpleMessage("NANO পান"),
+        "getNano": MessageLookupByLibrary.simpleMessage("Lumex পান"),
         "giftAlert":
             MessageLookupByLibrary.simpleMessage("তোমার কাছে একটা উপহার আছে!"),
         "giftAlertEmpty": MessageLookupByLibrary.simpleMessage("ফাঁকা উপহার"),
@@ -432,7 +432,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("উপহার শীট তথ্য"),
         "giftFrom": MessageLookupByLibrary.simpleMessage("উপহার থেকে"),
         "giftInfo": MessageLookupByLibrary.simpleMessage(
-            "ন্যানো দিয়ে একটি ডিজিটাল উপহার কার্ড লোড করুন! একটি পরিমাণ সেট করুন, এবং প্রাপক যখন এটি খুলবেন তা দেখার জন্য একটি ঐচ্ছিক বার্তা!\n\nএকবার তৈরি হলে, আপনি একটি লিঙ্ক পাবেন যা আপনি যে কাউকে পাঠাতে পারেন, যা খোলা হলে স্বয়ংক্রিয়ভাবে Nautilus ইনস্টল করার পরে প্রাপকের কাছে তহবিল বিতরণ করবে!\n\nযদি প্রাপক ইতিমধ্যেই একটি নটিলাস ব্যবহারকারী হন তবে লিঙ্কটি খোলার পরে তারা তাদের অ্যাকাউন্টে তহবিল স্থানান্তর করার জন্য একটি প্রম্পট পাবেন।"),
+            "ন্যানো দিয়ে একটি ডিজিটাল উপহার কার্ড লোড করুন! একটি পরিমাণ সেট করুন, এবং প্রাপক যখন এটি খুলবেন তা দেখার জন্য একটি ঐচ্ছিক বার্তা!\n\nএকবার তৈরি হলে, আপনি একটি লিঙ্ক পাবেন যা আপনি যে কাউকে পাঠাতে পারেন, যা খোলা হলে স্বয়ংক্রিয়ভাবে Lumex ইনস্টল করার পরে প্রাপকের কাছে তহবিল বিতরণ করবে!\n\nযদি প্রাপক ইতিমধ্যেই একটি নটিলাস ব্যবহারকারী হন তবে লিঙ্কটি খোলার পরে তারা তাদের অ্যাকাউন্টে তহবিল স্থানান্তর করার জন্য একটি প্রম্পট পাবেন।"),
         "giftMessage": MessageLookupByLibrary.simpleMessage("উপহার বার্তা"),
         "giftProcessError": MessageLookupByLibrary.simpleMessage(
             "এই উপহার কার্ড প্রক্রিয়া করার সময় একটি ত্রুটি ছিল. হয়তো আপনার সংযোগ পরীক্ষা করুন এবং আবার উপহার লিঙ্ক ক্লিক করার চেষ্টা করুন."),
@@ -474,9 +474,9 @@ class MessageLookup extends MessageLookupByLibrary {
         "importGiftEmpty": MessageLookupByLibrary.simpleMessage(
             "Unfortunately the link you clicked that contained some nano appears to be empty, but you can still see the amount and associated message."),
         "importGiftIntro": MessageLookupByLibrary.simpleMessage(
-            "দেখে মনে হচ্ছে আপনি একটি লিঙ্কে ক্লিক করেছেন যাতে কিছু NANO রয়েছে, এই তহবিলগুলি পাওয়ার জন্য আমাদের শুধু আপনার ওয়ালেট সেট আপ করা শেষ করতে হবে৷"),
+            "দেখে মনে হচ্ছে আপনি একটি লিঙ্কে ক্লিক করেছেন যাতে কিছু Lumex রয়েছে, এই তহবিলগুলি পাওয়ার জন্য আমাদের শুধু আপনার ওয়ালেট সেট আপ করা শেষ করতে হবে৷"),
         "importGiftv2": MessageLookupByLibrary.simpleMessage(
-            "আপনি যে লিঙ্কটি ক্লিক করেছেন তাতে কিছু NANO রয়েছে, আপনি কি এটি এই ওয়ালেটে আমদানি করতে চান?"),
+            "আপনি যে লিঙ্কটি ক্লিক করেছেন তাতে কিছু Lumex রয়েছে, আপনি কি এটি এই ওয়ালেটে আমদানি করতে চান?"),
         "importHD": MessageLookupByLibrary.simpleMessage("এইচডি আমদানি করুন"),
         "importHDTrust":
             MessageLookupByLibrary.simpleMessage("এইচডি / ট্রাস্ট আমদানি করুন"),
@@ -570,7 +570,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "nameEmpty":
             MessageLookupByLibrary.simpleMessage("একটি নাম লিখুন দয়া করে"),
         "natricon": MessageLookupByLibrary.simpleMessage("নাট্রিকন"),
-        "nautilusWallet":
+        "lumexWallet":
             MessageLookupByLibrary.simpleMessage("নটিলাস ওয়ালেট"),
         "nearby": MessageLookupByLibrary.simpleMessage("কাছাকাছি"),
         "needVerificationAlert": MessageLookupByLibrary.simpleMessage(
@@ -700,7 +700,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "proSubRequiredHeader": MessageLookupByLibrary.simpleMessage(
             "নটিলাস প্রো সাবস্ক্রিপশন প্রয়োজন"),
         "proSubRequiredParagraph": MessageLookupByLibrary.simpleMessage(
-            "প্রতি মাসে মাত্র 1 NANO এর জন্য, আপনি Nautilus Pro এর সমস্ত বৈশিষ্ট্য আনলক করতে পারেন।"),
+            "প্রতি মাসে মাত্র 1 Lumex এর জন্য, আপনি Lumex Pro এর সমস্ত বৈশিষ্ট্য আনলক করতে পারেন।"),
         "promotionalLink":
             MessageLookupByLibrary.simpleMessage("বিনামূল্যে ন্যানো"),
         "purchaseCurrency": MessageLookupByLibrary.simpleMessage("ক্রয় %2"),
@@ -767,7 +767,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "requestAmountConfirm":
             MessageLookupByLibrary.simpleMessage("অনুরোধ%1"),
         "requestError": MessageLookupByLibrary.simpleMessage(
-            "অনুরোধ ব্যর্থ: এই ব্যবহারকারী Nautilus ইনস্টল করা আছে বলে মনে হচ্ছে না, অথবা বিজ্ঞপ্তি অক্ষম আছে।"),
+            "অনুরোধ ব্যর্থ: এই ব্যবহারকারী Lumex ইনস্টল করা আছে বলে মনে হচ্ছে না, অথবা বিজ্ঞপ্তি অক্ষম আছে।"),
         "requestFrom": MessageLookupByLibrary.simpleMessage("অনুরোধক্রমে"),
         "requestPayment":
             MessageLookupByLibrary.simpleMessage("পেমেন্ট অনুরোধ"),
@@ -844,7 +844,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "একটি ত্রুটি ঘটেছে. পরে আবার চেষ্টা করুন।"),
         "sendFrom": MessageLookupByLibrary.simpleMessage("থেকে পাঠানো"),
         "sendMemoError": MessageLookupByLibrary.simpleMessage(
-            "লেনদেনের সাথে মেমো পাঠানো ব্যর্থ হলে, তারা Nautilus ব্যবহারকারী নাও হতে পারে।"),
+            "লেনদেনের সাথে মেমো পাঠানো ব্যর্থ হলে, তারা Lumex ব্যবহারকারী নাও হতে পারে।"),
         "sendMessageConfirm":
             MessageLookupByLibrary.simpleMessage("বার্তা পাঠানো হচ্ছে"),
         "sendRequestAgain":
@@ -888,9 +888,9 @@ class MessageLookup extends MessageLookupByLibrary {
         "shareLink": MessageLookupByLibrary.simpleMessage("লিংক শেয়ার করুন"),
         "shareMessage":
             MessageLookupByLibrary.simpleMessage("বার্তা শেয়ার করুন"),
-        "shareNautilus": MessageLookupByLibrary.simpleMessage("Share Nautilus"),
-        "shareNautilusText": MessageLookupByLibrary.simpleMessage(
-            "Check out Nautilus! A premier NANO mobile wallet!"),
+        "shareLumex": MessageLookupByLibrary.simpleMessage("Share Lumex"),
+        "shareLumexText": MessageLookupByLibrary.simpleMessage(
+            "Check out Lumex! A premier Lumex mobile wallet!"),
         "shareText": MessageLookupByLibrary.simpleMessage("টেক্সট শেয়ার করুন"),
         "shopButton": MessageLookupByLibrary.simpleMessage("দোকান"),
         "show": MessageLookupByLibrary.simpleMessage("দেখান"),
@@ -916,7 +916,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "social": MessageLookupByLibrary.simpleMessage("সামাজিক"),
         "someone": MessageLookupByLibrary.simpleMessage("কেউ"),
         "spendCurrency": MessageLookupByLibrary.simpleMessage("%2 খরচ করুন"),
-        "spendNano": MessageLookupByLibrary.simpleMessage("NANO খরচ করুন"),
+        "spendNano": MessageLookupByLibrary.simpleMessage("Lumex খরচ করুন"),
         "splitBill": MessageLookupByLibrary.simpleMessage("বিভক্ত বিল"),
         "splitBillHeader":
             MessageLookupByLibrary.simpleMessage("বিভক্ত একটি বিল"),
@@ -943,7 +943,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "swapXMR": MessageLookupByLibrary.simpleMessage("অদলবদল XMR"),
         "swapXMRHeader": MessageLookupByLibrary.simpleMessage("অদলবদল Monero"),
         "swapXMRInfo": MessageLookupByLibrary.simpleMessage(
-            "Monero হল একটি গোপনীয়তা-কেন্দ্রিক ক্রিপ্টোকারেন্সি যা লেনদেন ট্রেস করা খুব কঠিন বা এমনকি অসম্ভব করে তোলে। এদিকে NANO হল একটি পেমেন্ট-কেন্দ্রিক ক্রিপ্টোকারেন্সি যা দ্রুত এবং ফি-কম। একসাথে তারা ক্রিপ্টোকারেন্সির সবচেয়ে দরকারী দিকগুলির কিছু প্রদান করে!\n\nXMR-এর জন্য সহজেই আপনার NANO অদলবদল করতে এই পৃষ্ঠাটি ব্যবহার করুন!"),
+            "Monero হল একটি গোপনীয়তা-কেন্দ্রিক ক্রিপ্টোকারেন্সি যা লেনদেন ট্রেস করা খুব কঠিন বা এমনকি অসম্ভব করে তোলে। এদিকে Lumex হল একটি পেমেন্ট-কেন্দ্রিক ক্রিপ্টোকারেন্সি যা দ্রুত এবং ফি-কম। একসাথে তারা ক্রিপ্টোকারেন্সির সবচেয়ে দরকারী দিকগুলির কিছু প্রদান করে!\n\nXMR-এর জন্য সহজেই আপনার Lumex অদলবদল করতে এই পৃষ্ঠাটি ব্যবহার করুন!"),
         "swapping": MessageLookupByLibrary.simpleMessage("অদলবদল"),
         "switchToSeed": MessageLookupByLibrary.simpleMessage("সিডে চলে যান"),
         "systemDefault":
@@ -1027,9 +1027,9 @@ class MessageLookup extends MessageLookupByLibrary {
         "useAppRep":
             MessageLookupByLibrary.simpleMessage("%1 প্রতিনিধি ব্যবহার করুন"),
         "useCurrency": MessageLookupByLibrary.simpleMessage("%2 ব্যবহার করুন"),
-        "useNano": MessageLookupByLibrary.simpleMessage("NANO ব্যবহার করুন"),
-        "useNautilusRep":
-            MessageLookupByLibrary.simpleMessage("Use Nautilus Rep"),
+        "useNano": MessageLookupByLibrary.simpleMessage("Lumex ব্যবহার করুন"),
+        "useLumexRep":
+            MessageLookupByLibrary.simpleMessage("Use Lumex Rep"),
         "userAlreadyAddedError": MessageLookupByLibrary.simpleMessage(
             "ব্যবহারকারী ইতিমধ্যে যোগ করা হয়েছে!"),
         "userNotFound":
@@ -1043,13 +1043,13 @@ class MessageLookup extends MessageLookupByLibrary {
         "usernameError":
             MessageLookupByLibrary.simpleMessage("ব্যবহারকারীর নাম ত্রুটি"),
         "usernameInfo": MessageLookupByLibrary.simpleMessage(
-            "বন্ধু এবং পরিবারের জন্য আপনাকে খুঁজে পেতে সহজ করার জন্য একটি অনন্য @username চয়ন করুন!\n\nNautilus ব্যবহারকারীর নাম থাকা আপনার নতুন হ্যান্ডেল প্রতিফলিত করার জন্য বিশ্বব্যাপী UI আপডেট করে।"),
+            "বন্ধু এবং পরিবারের জন্য আপনাকে খুঁজে পেতে সহজ করার জন্য একটি অনন্য @username চয়ন করুন!\n\nLumex ব্যবহারকারীর নাম থাকা আপনার নতুন হ্যান্ডেল প্রতিফলিত করার জন্য বিশ্বব্যাপী UI আপডেট করে।"),
         "usernameInvalid":
             MessageLookupByLibrary.simpleMessage("অকার্যকর ইউজারনেম"),
         "usernameUnavailable":
             MessageLookupByLibrary.simpleMessage("ব্যবহারকারীর নাম উপলব্ধ নেই"),
         "usernameWarning": MessageLookupByLibrary.simpleMessage(
-            "নটিলাস ইউজারনেম হল Nano.To দ্বারা সরবরাহিত একটি কেন্দ্রীভূত পরিষেবা"),
+            "নটিলাস ইউজারনেম হল Lumex.To দ্বারা সরবরাহিত একটি কেন্দ্রীভূত পরিষেবা"),
         "using": MessageLookupByLibrary.simpleMessage("ব্যবহার"),
         "viewDetails": MessageLookupByLibrary.simpleMessage("বিস্তারিত দেখুন"),
         "viewPaymentHistory":

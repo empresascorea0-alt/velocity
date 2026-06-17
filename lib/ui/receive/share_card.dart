@@ -1,7 +1,7 @@
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
-import 'package:wallet_flutter/app_icons.dart';
-import 'package:wallet_flutter/appstate_container.dart';
+import 'package:velocity/app_icons.dart';
+import 'package:velocity/appstate_container.dart';
 import 'package:qr_flutter/qr_flutter.dart';
 
 class AppShareCard extends StatefulWidget {
@@ -109,7 +109,7 @@ class _AppShareCardState extends State<AppShareCard> {
                     //       end: 8,
                     //     ),
                     //     child: Icon(
-                    //       AppIcons.nautilushorizontal,
+                    //       AppIcons.lumexhorizontal,
                     //       size: 4.9,
                     //       color: StateContainer.of(context).curTheme.backgroundDark,
                     //     ),
@@ -154,7 +154,7 @@ class _AppShareCardState extends State<AppShareCard> {
                           width: 60,
                           margin: const EdgeInsets.only(top: 1),
                           child: AutoSizeText(
-                            "NANO",
+                            "Lumex",
                             style: TextStyle(
                               color: StateContainer.of(context).curTheme.primary,
                               fontFamily: "Comfortaa",
@@ -300,7 +300,7 @@ class _AppShareCardState extends State<AppShareCard> {
                     width: 97,
                     margin: const EdgeInsets.only(bottom: 12.5),
                     child: AutoSizeText(
-                      "\$XNO      NANO.ORG",
+                      "\$XNO      Lumex.ORG",
                       minFontSize: 0.1,
                       stepGranularity: 0.1,
                       maxLines: 1,

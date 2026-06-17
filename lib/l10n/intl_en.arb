@@ -493,7 +493,7 @@
   "connectingHeader": "Connecting",
   "@connectingHeader": {
     "type": "text",
-    "description": "A header to let the user now that Nautilus is currently connecting to (or loading) live chat."
+    "description": "A header to let the user now that Lumex is currently connecting to (or loading) live chat."
   },
   "connectionWarning": "Node Connection Warning",
   "@connectionWarning": {
@@ -697,7 +697,7 @@
     "type": "text",
     "description": "currency_mode_header"
   },
-  "currencyModeInfo": "Choose which unit to display amounts in.\n1 nyano = 0.000001 NANO, or \n1,000,000 nyano = 1 NANO",
+  "currencyModeInfo": "Choose which unit to display amounts in.\n1 nyano = 0.000001 Lumex, or \n1,000,000 nyano = 1 Lumex",
   "@currencyModeInfo": {
     "type": "text",
     "description": "currency_mode_info"
@@ -1047,7 +1047,7 @@
     "type": "text",
     "description": "exchange_currency"
   },
-  "exchangeNano": "Exchange NANO",
+  "exchangeNano": "Exchange Lumex",
   "@exchangeNano": {
     "type": "text",
     "description": "exchange_nano"
@@ -1191,7 +1191,7 @@
     "type": "text",
     "description": "get_currency"
   },
-  "getNano": "Get NANO",
+  "getNano": "Get Lumex",
   "@getNano": {
     "type": "text",
     "description": "get_nano"
@@ -1656,10 +1656,10 @@
     "type": "text",
     "description": "natricon_settings"
   },
-  "nautilusWallet": "Nautilus Wallet",
-  "@nautilusWallet": {
+  "lumexWallet": "Velocity Wallet",
+  "@lumexWallet": {
     "type": "text",
-    "description": "nautilus_wallet"
+    "description": "lumex_wallet"
   },
   "nearby": "Nearby",
   "@nearby": {
@@ -1894,7 +1894,7 @@
   "passwordNoLongerRequiredToOpenParagraph": "You will not need a password to open %1 anymore.",
   "@passwordNoLongerRequiredToOpenParagraph": {
     "type": "text",
-    "description": "An info paragraph that tells the user a password will no longer be needed to open Nautilus"
+    "description": "An info paragraph that tells the user a password will no longer be needed to open Velocity"
   },
   "passwordNumber": "Password must contain at least 1 number",
   "@passwordNumber": {
@@ -1924,7 +1924,7 @@
   "passwordWillBeRequiredToOpenParagraph": "This password will be required to open %1.",
   "@passwordWillBeRequiredToOpenParagraph": {
     "type": "text",
-    "description": "A paragraph that tells the users that the created password will be required to open Nautilus."
+    "description": "A paragraph that tells the users that the created password will be required to open Velocity."
   },
   "pastDue": "Past Due",
   "@pastDue": {
@@ -2081,7 +2081,7 @@
     "type": "text",
     "description": "purchase_currency"
   },
-  "purchaseNano": "Purchase Nano",
+  "purchaseNano": "Purchase Lumex",
   "@purchaseNano": {
     "type": "text",
     "description": "purchase_nano"
@@ -2329,7 +2329,7 @@
   "requireAPasswordToOpenHeader": "Require a password to open %1?",
   "@requireAPasswordToOpenHeader": {
     "type": "text",
-    "description": "A paragraph that asks the users if they would like a password to be required to open Nautilus."
+    "description": "A paragraph that asks the users if they would like a password to be required to open Velocity."
   },
   "requireCaptcha": "Require CAPTCHA to claim gift card",
   "@requireCaptcha": {
@@ -2624,7 +2624,7 @@
   "share": "Share",
   "@share": {
     "type": "text",
-    "description": "nautilus_share"
+    "description": "lumex_share"
   },
   "shareApp": "Share %1",
   "@shareApp": {
@@ -2646,13 +2646,13 @@
     "type": "text",
     "description": "share_message"
   },
-  "shareNautilus": "Share Nautilus",
-  "@shareNautilus": {
+  "shareLumex": "Share Lumex",
+  "@shareLumex": {
     "type": "text",
     "description": "settings_share"
   },
-  "shareNautilusText": "Check out Nautilus! A premier NANO mobile wallet!",
-  "@shareNautilusText": {
+  "shareLumexText": "Check out Velocity! A premier Lumex mobile wallet!",
+  "@shareLumexText": {
     "type": "text",
     "description": "share_extra"
   },
@@ -2751,7 +2751,7 @@
     "type": "text",
     "description": "spend_currency"
   },
-  "spendNano": "Spend NANO",
+  "spendNano": "Spend Lumex",
   "@spendNano": {
     "type": "text",
     "description": "spend_nano"
@@ -3096,15 +3096,15 @@
     "type": "text",
     "description": "use_currency"
   },
-  "useNano": "Use NANO",
+  "useNano": "Use Lumex",
   "@useNano": {
     "type": "text",
     "description": "use_nano"
   },
-  "useNautilusRep": "Use Nautilus Rep",
-  "@useNautilusRep": {
+  "useLumexRep": "Use Lumex Rep",
+  "@useLumexRep": {
     "type": "text",
-    "description": "use nautilus node as rep"
+    "description": "use lumex node as rep"
   },
   "userAlreadyAddedError": "User already added!",
   "@userAlreadyAddedError": {
@@ -3146,7 +3146,7 @@
     "type": "text",
     "description": "username_unavailable"
   },
-  "usernameWarning": "%1 usernames are a centralized service provided by Nano.to",
+  "usernameWarning": "%1 usernames are a centralized service provided by Lumex.to",
   "@usernameWarning": {
     "type": "text",
     "description": "Username centralization warning"

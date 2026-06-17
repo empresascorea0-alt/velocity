@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:wallet_flutter/themes.dart';
-import 'package:wallet_flutter/model/setting_item.dart';
+import 'package:velocity/themes.dart';
+import 'package:velocity/model/setting_item.dart';
 
 enum ThemeOptions { NAUTILUS, POTASSIUS, TITANIUM, INDIUM, SUNSHINE, NEPTUNIUM, THORIUM, CARBON, PURPELIUM, MONOCHROME, MIDNIGHT, PERISHABLE }
 
@@ -40,7 +40,7 @@ class ThemeSetting extends SettingSelectionItem {
         return "Potassius";
       case ThemeOptions.NAUTILUS:
       default:
-        return "Nautilus";
+        return "Lumex";
     }
   }
 
@@ -72,7 +72,7 @@ class ThemeSetting extends SettingSelectionItem {
         return PotassiusTheme();
       case ThemeOptions.NAUTILUS:
       default:
-        return NautilusTheme();
+        return LumexTheme();
     }
   }
 

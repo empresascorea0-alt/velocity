@@ -258,7 +258,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "currencyModeHeader":
             MessageLookupByLibrary.simpleMessage("Pénznem mód információ"),
         "currencyModeInfo": MessageLookupByLibrary.simpleMessage(
-            "Válassza ki, melyik egységben jelenítse meg az összegeket.\n1 nyano = 0,000001 NANO, vagy \n1 000 000 nyano = 1 NANO"),
+            "Válassza ki, melyik egységben jelenítse meg az összegeket.\n1 nyano = 0,000001 Lumex, vagy \n1 000 000 nyano = 1 Lumex"),
         "currentlyRepresented":
             MessageLookupByLibrary.simpleMessage("Jelenlegi Képviselő"),
         "daily": MessageLookupByLibrary.simpleMessage("Napi"),
@@ -268,7 +268,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "defaultAccountName":
             MessageLookupByLibrary.simpleMessage("Main Account"),
         "defaultGiftMessage": MessageLookupByLibrary.simpleMessage(
-            "Nézd meg a Nautilust! Küldtem neked egy %2-t ezzel a linkkel:"),
+            "Nézd meg a Lumext! Küldtem neked egy %2-t ezzel a linkkel:"),
         "defaultNewAccountName":
             MessageLookupByLibrary.simpleMessage("Account %1"),
         "delete": MessageLookupByLibrary.simpleMessage("Törlés"),
@@ -352,7 +352,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "eula": MessageLookupByLibrary.simpleMessage("EULA"),
         "exampleCardFrom": MessageLookupByLibrary.simpleMessage("valakitől"),
         "exampleCardIntro": MessageLookupByLibrary.simpleMessage(
-            "Üdvözöllek a Nautilusban! Így fogod látni a tranzakcióid, amikor kapsz NANO-t."),
+            "Üdvözöllek a Lumexban! Így fogod látni a tranzakcióid, amikor kapsz Lumex-t."),
         "exampleCardLittle": MessageLookupByLibrary.simpleMessage("Egy kevés"),
         "exampleCardLot": MessageLookupByLibrary.simpleMessage("Rengeteg"),
         "exampleCardTo": MessageLookupByLibrary.simpleMessage("valakinek"),
@@ -380,7 +380,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "exampleRecRecipientMessage":
             MessageLookupByLibrary.simpleMessage("Gáz Pénz"),
         "exchangeCurrency": MessageLookupByLibrary.simpleMessage("Csere %2"),
-        "exchangeNano": MessageLookupByLibrary.simpleMessage("Csere NANO"),
+        "exchangeNano": MessageLookupByLibrary.simpleMessage("Csere Lumex"),
         "existingPasswordHint":
             MessageLookupByLibrary.simpleMessage("Írd be a jelenlegi jelszót"),
         "existingPinHint": MessageLookupByLibrary.simpleMessage(
@@ -391,9 +391,9 @@ class MessageLookup extends MessageLookupByLibrary {
         "failed": MessageLookupByLibrary.simpleMessage("nem sikerült"),
         "failedMessage": MessageLookupByLibrary.simpleMessage("msg failed"),
         "fallbackHeader":
-            MessageLookupByLibrary.simpleMessage("Nautilus leválasztva"),
+            MessageLookupByLibrary.simpleMessage("Lumex leválasztva"),
         "fallbackInfo": MessageLookupByLibrary.simpleMessage(
-            "Úgy tűnik, hogy a Nautilus szerverek le vannak kapcsolva, a küldés és fogadás (emlékeztetők nélkül) továbbra is működőképesnek kell lennie, de előfordulhat, hogy a fizetési kérelmek nem teljesülnek\n\n Jöjjön vissza később, vagy indítsa újra az alkalmazást, hogy újra próbálkozzon"),
+            "Úgy tűnik, hogy a Lumex szerverek le vannak kapcsolva, a küldés és fogadás (emlékeztetők nélkül) továbbra is működőképesnek kell lennie, de előfordulhat, hogy a fizetési kérelmek nem teljesülnek\n\n Jöjjön vissza később, vagy indítsa újra az alkalmazást, hogy újra próbálkozzon"),
         "favoriteExists":
             MessageLookupByLibrary.simpleMessage("Kedvenc már létezik"),
         "favoriteHeader": MessageLookupByLibrary.simpleMessage("Kedvenc"),
@@ -426,7 +426,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "PoW generálása, ez eltarthat egy ideig (> 20 másodperc)..."),
         "getCurrency":
             MessageLookupByLibrary.simpleMessage("Szerezze be a %2-t"),
-        "getNano": MessageLookupByLibrary.simpleMessage("Szerezd meg a NANO-t"),
+        "getNano": MessageLookupByLibrary.simpleMessage("Szerezd meg a Lumex-t"),
         "giftAlert": MessageLookupByLibrary.simpleMessage("Van egy ajándékod!"),
         "giftAlertEmpty": MessageLookupByLibrary.simpleMessage("Üres ajándék"),
         "giftAmount": MessageLookupByLibrary.simpleMessage("Ajándék összege"),
@@ -438,7 +438,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Ajándéklap információ"),
         "giftFrom": MessageLookupByLibrary.simpleMessage("Ajándék"),
         "giftInfo": MessageLookupByLibrary.simpleMessage(
-            "Töltsön be egy digitális ajándékkártyát NANO segítségével! Állítson be egy összeget, és választható üzenetet a címzett számára, hogy lássa, mikor nyitja meg!\n\nMiután létrehozta, kap egy linket, amelyet bárkinek elküldhet, amely megnyitásakor automatikusan elosztja a pénzeszközöket a címzettnek a Nautilus telepítése után!\n\nHa a címzett már Nautilus felhasználó, akkor a hivatkozás megnyitásakor felszólítást kap arra, hogy utalja át a pénzt számlájára"),
+            "Töltsön be egy digitális ajándékkártyát Lumex segítségével! Állítson be egy összeget, és választható üzenetet a címzett számára, hogy lássa, mikor nyitja meg!\n\nMiután létrehozta, kap egy linket, amelyet bárkinek elküldhet, amely megnyitásakor automatikusan elosztja a pénzeszközöket a címzettnek a Lumex telepítése után!\n\nHa a címzett már Lumex felhasználó, akkor a hivatkozás megnyitásakor felszólítást kap arra, hogy utalja át a pénzt számlájára"),
         "giftMessage": MessageLookupByLibrary.simpleMessage("Ajándék üzenet"),
         "giftProcessError": MessageLookupByLibrary.simpleMessage(
             "Hiba történt az ajándékutalvány feldolgozása közben. Esetleg ellenőrizze a kapcsolatot, és próbáljon meg újra kattintani az ajándék linkre."),
@@ -480,9 +480,9 @@ class MessageLookup extends MessageLookupByLibrary {
         "importGiftEmpty": MessageLookupByLibrary.simpleMessage(
             "Unfortunately the link you clicked that contained some nano appears to be empty, but you can still see the amount and associated message."),
         "importGiftIntro": MessageLookupByLibrary.simpleMessage(
-            "Úgy tűnik, egy NANO-t tartalmazó linkre kattintott. Ahhoz, hogy megkapjuk ezeket az összegeket, csak be kell fejeznünk pénztárcája beállítását."),
+            "Úgy tűnik, egy Lumex-t tartalmazó linkre kattintott. Ahhoz, hogy megkapjuk ezeket az összegeket, csak be kell fejeznünk pénztárcája beállítását."),
         "importGiftv2": MessageLookupByLibrary.simpleMessage(
-            "A link, amelyre kattintott, NANO-t tartalmaz. Szeretné importálni ebbe a pénztárcába?"),
+            "A link, amelyre kattintott, Lumex-t tartalmaz. Szeretné importálni ebbe a pénztárcába?"),
         "importHD": MessageLookupByLibrary.simpleMessage("HD importálása"),
         "importHDTrust":
             MessageLookupByLibrary.simpleMessage("HD/Trust importálása"),
@@ -518,7 +518,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "invalidPin":
             MessageLookupByLibrary.simpleMessage("Érvénytelen PIN-kód"),
         "iosFundingMessage": MessageLookupByLibrary.simpleMessage(
-            "Az iOS App Store irányelvei és korlátozásai miatt nem tudjuk linkelni Önt adományozási oldalunkhoz. Ha támogatni szeretné a projektet, fontolja meg a nautilus csomópont címére történő küldést."),
+            "Az iOS App Store irányelvei és korlátozásai miatt nem tudjuk linkelni Önt adományozási oldalunkhoz. Ha támogatni szeretné a projektet, fontolja meg a lumex csomópont címére történő küldést."),
         "language": MessageLookupByLibrary.simpleMessage("Nyelv"),
         "linkCopied": MessageLookupByLibrary.simpleMessage("Link másolva"),
         "loaded": MessageLookupByLibrary.simpleMessage("Betöltött"),
@@ -535,7 +535,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "logoutAreYouSure":
             MessageLookupByLibrary.simpleMessage("Biztos, hogy kijelentkezel?"),
         "logoutDetail": MessageLookupByLibrary.simpleMessage(
-            "Ha kijelentkezel, elvész a beírt seeded, és minden Nautilushoz kapcsolódó adatod az eszközről. Ha nem őrizted meg a seeded, nem fogsz tudni hozzáférni a tőkédhez."),
+            "Ha kijelentkezel, elvész a beírt seeded, és minden Lumexhoz kapcsolódó adatod az eszközről. Ha nem őrizted meg a seeded, nem fogsz tudni hozzáférni a tőkédhez."),
         "logoutReassurance": MessageLookupByLibrary.simpleMessage(
             "Ha elmentetted a seeded, akkor nem lehet baj."),
         "looksLikeHdSeed": MessageLookupByLibrary.simpleMessage(
@@ -576,15 +576,15 @@ class MessageLookup extends MessageLookupByLibrary {
         "nameEmpty":
             MessageLookupByLibrary.simpleMessage("Kérjük, adjon meg egy nevet"),
         "natricon": MessageLookupByLibrary.simpleMessage("Natricon"),
-        "nautilusWallet":
-            MessageLookupByLibrary.simpleMessage("Nautilus pénztárca"),
+        "lumexWallet":
+            MessageLookupByLibrary.simpleMessage("Lumex pénztárca"),
         "nearby": MessageLookupByLibrary.simpleMessage("Közeli"),
         "needVerificationAlert": MessageLookupByLibrary.simpleMessage(
             "Ez a funkció megköveteli, hogy hosszabb tranzakciós előzményekkel rendelkezzen a spam megelőzése érdekében.\n\nAlternatív megoldásként, megmutathat egy QR-kódot, amelyet valaki beolvashat."),
         "needVerificationAlertHeader":
             MessageLookupByLibrary.simpleMessage("Ellenőrzés szükséges"),
         "newAccountIntro": MessageLookupByLibrary.simpleMessage(
-            "This is your new account. Once you receive NANO, transactions will show up like this:"),
+            "This is your new account. Once you receive Lumex, transactions will show up like this:"),
         "newWallet": MessageLookupByLibrary.simpleMessage("Új Tárca"),
         "nextButton": MessageLookupByLibrary.simpleMessage("Next"),
         "nextPayment":
@@ -607,7 +607,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "noneMethod": MessageLookupByLibrary.simpleMessage("Egyik sem"),
         "notSent": MessageLookupByLibrary.simpleMessage("nem küldött"),
         "notificationBody": MessageLookupByLibrary.simpleMessage(
-            "Nyisd meg a Nautilusot, hogy megnézhesd a tranzakciót."),
+            "Nyisd meg a Lumexot, hogy megnézhesd a tranzakciót."),
         "notificationHeaderSupplement":
             MessageLookupByLibrary.simpleMessage("Koppints a megnyitáshoz"),
         "notificationInfo": MessageLookupByLibrary.simpleMessage(
@@ -649,7 +649,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("hibás jelszó"),
         "passwordNoLongerRequiredToOpenParagraph":
             MessageLookupByLibrary.simpleMessage(
-                "You will not need a password to open Nautilus anymore."),
+                "You will not need a password to open Lumex anymore."),
         "passwordNumber": MessageLookupByLibrary.simpleMessage(
             "A jelszónak legalább 1 számot kell tartalmaznia"),
         "passwordSpecialCharacter": MessageLookupByLibrary.simpleMessage(
@@ -657,10 +657,10 @@ class MessageLookup extends MessageLookupByLibrary {
         "passwordTooShort":
             MessageLookupByLibrary.simpleMessage("A jelszó túl rövid"),
         "passwordWarning": MessageLookupByLibrary.simpleMessage(
-            "Ez a jelszó szükséges a Nautilus megnyitásához."),
+            "Ez a jelszó szükséges a Lumex megnyitásához."),
         "passwordWillBeRequiredToOpenParagraph":
             MessageLookupByLibrary.simpleMessage(
-                "This password will be required to open Nautilus."),
+                "This password will be required to open Lumex."),
         "passwordsDontMatch":
             MessageLookupByLibrary.simpleMessage("Passwords do not match"),
         "pastDue": MessageLookupByLibrary.simpleMessage("Határidőn túl"),
@@ -709,14 +709,14 @@ class MessageLookup extends MessageLookupByLibrary {
         "privacyPolicy":
             MessageLookupByLibrary.simpleMessage("Adatvédelmi Szabályzat"),
         "proSubRequiredHeader": MessageLookupByLibrary.simpleMessage(
-            "Nautilus Pro előfizetés szükséges"),
+            "Lumex Pro előfizetés szükséges"),
         "proSubRequiredParagraph": MessageLookupByLibrary.simpleMessage(
-            "Mindössze havi 1 NANO-ért feloldhatja a Nautilus Pro összes funkcióját."),
+            "Mindössze havi 1 Lumex-ért feloldhatja a Lumex Pro összes funkcióját."),
         "promotionalLink":
-            MessageLookupByLibrary.simpleMessage("Ingyenes NANO"),
+            MessageLookupByLibrary.simpleMessage("Ingyenes Lumex"),
         "purchaseCurrency":
             MessageLookupByLibrary.simpleMessage("Vásároljon %2"),
-        "purchaseNano": MessageLookupByLibrary.simpleMessage("Vásárlás Nano"),
+        "purchaseNano": MessageLookupByLibrary.simpleMessage("Vásárlás Lumex"),
         "qrInvalidAddress": MessageLookupByLibrary.simpleMessage(
             "QR code does not contain a valid destination"),
         "qrInvalidPermissions": MessageLookupByLibrary.simpleMessage(
@@ -779,7 +779,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "requestAmountConfirm":
             MessageLookupByLibrary.simpleMessage("%1 %2 kérés"),
         "requestError": MessageLookupByLibrary.simpleMessage(
-            "Kérelem sikertelen: Úgy tűnik, hogy a felhasználó nem telepítette a Nautilust, vagy letiltotta az értesítéseket."),
+            "Kérelem sikertelen: Úgy tűnik, hogy a felhasználó nem telepítette a Lumext, vagy letiltotta az értesítéseket."),
         "requestFrom": MessageLookupByLibrary.simpleMessage("Kérelem feladója"),
         "requestPayment":
             MessageLookupByLibrary.simpleMessage("Fizetés kérése"),
@@ -788,14 +788,14 @@ class MessageLookup extends MessageLookupByLibrary {
         "requestSentButNotReceived": MessageLookupByLibrary.simpleMessage(
             "Kérés újra elküldve! Ha még mindig nem ismeri fel, előfordulhat, hogy a címzett készüléke offline állapotban van."),
         "requestSheetInfo": MessageLookupByLibrary.simpleMessage(
-            "Kérjen fizetést a végétől a végéig titkosított üzenetekkel!\n\nA fizetési kérelmeket, emlékeztetőket és üzeneteket csak más nautilus-felhasználók kaphatják meg, de ezeket akkor is használhatja saját nyilvántartására, ha a címzett nem használja a nautilust."),
+            "Kérjen fizetést a végétől a végéig titkosított üzenetekkel!\n\nA fizetési kérelmeket, emlékeztetőket és üzeneteket csak más lumex-felhasználók kaphatják meg, de ezeket akkor is használhatja saját nyilvántartására, ha a címzett nem használja a lumext."),
         "requestSheetInfoHeader":
             MessageLookupByLibrary.simpleMessage("Kérjen adatlapot"),
         "requested": MessageLookupByLibrary.simpleMessage("Kért"),
         "requestedFrom": MessageLookupByLibrary.simpleMessage("Kért Tól"),
         "requesting": MessageLookupByLibrary.simpleMessage("Kérő"),
         "requireAPasswordToOpenHeader": MessageLookupByLibrary.simpleMessage(
-            "Require a password to open Nautilus?"),
+            "Require a password to open Lumex?"),
         "requireCaptcha": MessageLookupByLibrary.simpleMessage(
             "A CAPTCHA megkövetelése az ajándékutalvány igényléséhez"),
         "resendMemo":
@@ -813,7 +813,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "It appears your device is \"rooted\", \"jailbroken\", or modified in a way that compromises security. It is recommended that you reset your device to its original state before proceeding."),
         "save": MessageLookupByLibrary.simpleMessage("Megment"),
         "scanInstructions": MessageLookupByLibrary.simpleMessage(
-            "Olvass be QR kóddal egy Nano \ncímet"),
+            "Olvass be QR kóddal egy Lumex \ncímet"),
         "scanNFC":
             MessageLookupByLibrary.simpleMessage("Küldés NFC-n keresztül"),
         "scanQrCode":
@@ -854,14 +854,14 @@ class MessageLookup extends MessageLookupByLibrary {
             "Hiba történt. Próbálkozz később."),
         "sendFrom": MessageLookupByLibrary.simpleMessage("Küldés Innen"),
         "sendMemoError": MessageLookupByLibrary.simpleMessage(
-            "A tranzakcióval kapcsolatos emlékeztető küldése sikertelen, lehet, hogy nem Nautilus felhasználó."),
+            "A tranzakcióval kapcsolatos emlékeztető küldése sikertelen, lehet, hogy nem Lumex felhasználó."),
         "sendMessageConfirm":
             MessageLookupByLibrary.simpleMessage("Üzenet küldése"),
         "sendRequestAgain":
             MessageLookupByLibrary.simpleMessage("Kérés küldése újra"),
         "sendRequests": MessageLookupByLibrary.simpleMessage("Kérések küldése"),
         "sendSheetInfo": MessageLookupByLibrary.simpleMessage(
-            "Fizetés küldése vagy kérése, End to End to End Titkosított üzenetekkel!\n\nFizetési kérelmek, emlékeztetők, és az üzeneteket csak más nautilus felhasználók fogadják el.\n\nA fizetési kérelmek küldéséhez vagy fogadásához nem kell felhasználónévvel rendelkeznie, és akkor is felhasználhatja őket saját nyilvántartására, még akkor is, ha nem használják a nautilust."),
+            "Fizetés küldése vagy kérése, End to End to End Titkosított üzenetekkel!\n\nFizetési kérelmek, emlékeztetők, és az üzeneteket csak más lumex felhasználók fogadják el.\n\nA fizetési kérelmek küldéséhez vagy fogadásához nem kell felhasználónévvel rendelkeznie, és akkor is felhasználhatja őket saját nyilvántartására, még akkor is, ha nem használják a lumext."),
         "sendSheetInfoHeader":
             MessageLookupByLibrary.simpleMessage("Adatlap küldése"),
         "sending": MessageLookupByLibrary.simpleMessage("Küldés folyamatban"),
@@ -893,14 +893,14 @@ class MessageLookup extends MessageLookupByLibrary {
         "share": MessageLookupByLibrary.simpleMessage("Részvény"),
         "shareApp": MessageLookupByLibrary.simpleMessage("Megosztás %1"),
         "shareAppText": MessageLookupByLibrary.simpleMessage(
-            "Nézze meg %1! Egy kiváló NANO mobil pénztárca!"),
+            "Nézze meg %1! Egy kiváló Lumex mobil pénztárca!"),
         "shareLink": MessageLookupByLibrary.simpleMessage("Link megosztása"),
         "shareMessage":
             MessageLookupByLibrary.simpleMessage("Üzenet megosztása"),
-        "shareNautilus":
-            MessageLookupByLibrary.simpleMessage("Oszd meg a Nautilusot"),
-        "shareNautilusText": MessageLookupByLibrary.simpleMessage(
-            "Próbáld ki a Nautilusot, a Nano hivatalos Androidos tárcáját!"),
+        "shareLumex":
+            MessageLookupByLibrary.simpleMessage("Oszd meg a Lumexot"),
+        "shareLumexText": MessageLookupByLibrary.simpleMessage(
+            "Próbáld ki a Lumexot, a Lumex hivatalos Androidos tárcáját!"),
         "shareText": MessageLookupByLibrary.simpleMessage("Szöveg megosztása"),
         "shopButton": MessageLookupByLibrary.simpleMessage("Üzlet"),
         "show": MessageLookupByLibrary.simpleMessage("Előadás"),
@@ -931,7 +931,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "social": MessageLookupByLibrary.simpleMessage("Társadalmi"),
         "someone": MessageLookupByLibrary.simpleMessage("valaki"),
         "spendCurrency": MessageLookupByLibrary.simpleMessage("Költés %2"),
-        "spendNano": MessageLookupByLibrary.simpleMessage("Töltsön NANO-t"),
+        "spendNano": MessageLookupByLibrary.simpleMessage("Töltsön Lumex-t"),
         "splitBill": MessageLookupByLibrary.simpleMessage("Split Bill"),
         "splitBillHeader": MessageLookupByLibrary.simpleMessage("Split A Bill"),
         "splitBillInfo": MessageLookupByLibrary.simpleMessage(
@@ -958,7 +958,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "swapXMRHeader":
             MessageLookupByLibrary.simpleMessage("Cseréld Monero-t"),
         "swapXMRInfo": MessageLookupByLibrary.simpleMessage(
-            "A Monero egy adatvédelmi központú kriptovaluta, amely nagyon megnehezíti vagy akár lehetetlenné teszi a tranzakciók nyomon követését. Eközben a NANO egy fizetésre összpontosító kriptovaluta, amely gyors és díjmentes. Együtt biztosítják a kriptovaluták leghasznosabb aspektusait!\n\nEzen az oldalon egyszerűen lecserélheti NANO-ját XMR-re!"),
+            "A Monero egy adatvédelmi központú kriptovaluta, amely nagyon megnehezíti vagy akár lehetetlenné teszi a tranzakciók nyomon követését. Eközben a Lumex egy fizetésre összpontosító kriptovaluta, amely gyors és díjmentes. Együtt biztosítják a kriptovaluták leghasznosabb aspektusait!\n\nEzen az oldalon egyszerűen lecserélheti Lumex-ját XMR-re!"),
         "swapping": MessageLookupByLibrary.simpleMessage("Csere"),
         "switchToSeed": MessageLookupByLibrary.simpleMessage("Switch to Seed"),
         "systemDefault":
@@ -991,9 +991,9 @@ class MessageLookup extends MessageLookupByLibrary {
         "transferClose": MessageLookupByLibrary.simpleMessage(
             "Tap anywhere to close the window."),
         "transferComplete": MessageLookupByLibrary.simpleMessage(
-            "%1 %2 successfully transferred to your Nautilus Wallet.\n"),
+            "%1 %2 successfully transferred to your Lumex Wallet.\n"),
         "transferConfirmInfo": MessageLookupByLibrary.simpleMessage(
-            "A wallet with a balance of %1 NANO has been detected.\n"),
+            "A wallet with a balance of %1 Lumex has been detected.\n"),
         "transferConfirmInfoSecond": MessageLookupByLibrary.simpleMessage(
             "Tap confirm to transfer the funds.\n"),
         "transferConfirmInfoThird": MessageLookupByLibrary.simpleMessage(
@@ -1003,27 +1003,27 @@ class MessageLookup extends MessageLookupByLibrary {
         "transferHeader":
             MessageLookupByLibrary.simpleMessage("Transfer Funds"),
         "transferIntro": MessageLookupByLibrary.simpleMessage(
-            "This process will transfer the funds from a paper wallet to your Nautilus wallet.\n\nTap the \"%1\" button to start."),
+            "This process will transfer the funds from a paper wallet to your Lumex wallet.\n\nTap the \"%1\" button to start."),
         "transferIntroShort": MessageLookupByLibrary.simpleMessage(
-            "Ez a folyamat átutalja a pénzeszközöket egy papír pénztárcából a Nautilus pénztárcájába."),
+            "Ez a folyamat átutalja a pénzeszközöket egy papír pénztárcából a Lumex pénztárcájába."),
         "transferLoading": MessageLookupByLibrary.simpleMessage("Transferring"),
         "transferManualHint":
             MessageLookupByLibrary.simpleMessage("Írd be a seedet."),
         "transferNoFunds": MessageLookupByLibrary.simpleMessage(
-            "This seed does not have any NANO on it"),
+            "This seed does not have any Lumex on it"),
         "transferQrScanError": MessageLookupByLibrary.simpleMessage(
             "This QR code does not contain a valid seed."),
         "transferQrScanHint": MessageLookupByLibrary.simpleMessage(
-            "Scan a Nano \nseed or private key"),
+            "Scan a Lumex \nseed or private key"),
         "unacknowledged": MessageLookupByLibrary.simpleMessage("nem igazolt"),
         "unconfirmed":
             MessageLookupByLibrary.simpleMessage("meg nem erősített"),
         "unfulfilled": MessageLookupByLibrary.simpleMessage("beteljesítetlen"),
         "unlock": MessageLookupByLibrary.simpleMessage("Feloldás"),
         "unlockBiometrics": MessageLookupByLibrary.simpleMessage(
-            "Hitelesítés Szükséges a Nautilusba való bejelentkezéshez"),
+            "Hitelesítés Szükséges a Lumexba való bejelentkezéshez"),
         "unlockPin": MessageLookupByLibrary.simpleMessage(
-            "Írd be a PIN-t a Bejelentkezéshez a Nautilusba"),
+            "Írd be a PIN-t a Bejelentkezéshez a Lumexba"),
         "unopenedWarningHeader": MessageLookupByLibrary.simpleMessage(
             "Bontatlan figyelmeztetés megjelenítése"),
         "unopenedWarningInfo": MessageLookupByLibrary.simpleMessage(
@@ -1040,9 +1040,9 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Kérjük, adjon meg egy URL-t"),
         "useAppRep": MessageLookupByLibrary.simpleMessage("Használja a %1 Rep"),
         "useCurrency": MessageLookupByLibrary.simpleMessage("Használja a %2"),
-        "useNano": MessageLookupByLibrary.simpleMessage("Használj NANO-t"),
-        "useNautilusRep":
-            MessageLookupByLibrary.simpleMessage("Use Nautilus Rep"),
+        "useNano": MessageLookupByLibrary.simpleMessage("Használj Lumex-t"),
+        "useLumexRep":
+            MessageLookupByLibrary.simpleMessage("Use Lumex Rep"),
         "userAlreadyAddedError":
             MessageLookupByLibrary.simpleMessage("Felhasználó már hozzáadva!"),
         "userNotFound": MessageLookupByLibrary.simpleMessage(
@@ -1056,13 +1056,13 @@ class MessageLookup extends MessageLookupByLibrary {
         "usernameError":
             MessageLookupByLibrary.simpleMessage("Felhasználónév hiba"),
         "usernameInfo": MessageLookupByLibrary.simpleMessage(
-            "Válasszon ki egy egyedi @username -t, hogy megkönnyítse a barátok és a család megtalálását!\n\nA Nautilus felhasználónév birtoklása globálisan frissíti a felhasználói felületet, hogy tükrözze az új kezelőfelületet."),
+            "Válasszon ki egy egyedi @username -t, hogy megkönnyítse a barátok és a család megtalálását!\n\nA Lumex felhasználónév birtoklása globálisan frissíti a felhasználói felületet, hogy tükrözze az új kezelőfelületet."),
         "usernameInvalid":
             MessageLookupByLibrary.simpleMessage("Érvénytelen felhasználónév"),
         "usernameUnavailable":
             MessageLookupByLibrary.simpleMessage("Felhasználónév nem elérhető"),
         "usernameWarning": MessageLookupByLibrary.simpleMessage(
-            "A Nautilus felhasználónevek a Nano.to által nyújtott központosított szolgáltatás"),
+            "A Lumex felhasználónevek a Lumex.to által nyújtott központosított szolgáltatás"),
         "using": MessageLookupByLibrary.simpleMessage("Használata"),
         "viewDetails":
             MessageLookupByLibrary.simpleMessage("Részletek Mutatása"),
@@ -1081,11 +1081,11 @@ class MessageLookup extends MessageLookupByLibrary {
         "weekAgo": MessageLookupByLibrary.simpleMessage("Egy hete"),
         "weekly": MessageLookupByLibrary.simpleMessage("Heti"),
         "welcomeText": MessageLookupByLibrary.simpleMessage(
-            "Üdvözöllek a Nautilusban! Hozz létre egy új tárcát, vagy importálj egy létezőt."),
+            "Üdvözöllek a Lumexban! Hozz létre egy új tárcát, vagy importálj egy létezőt."),
         "welcomeTextLogin": MessageLookupByLibrary.simpleMessage(
-            "Üdvözöljük a Nautilusban. Válasszon egy lehetőséget a kezdéshez, vagy válasszon témát az alábbi ikon segítségével."),
+            "Üdvözöljük a Lumexban. Válasszon egy lehetőséget a kezdéshez, vagy válasszon témát az alábbi ikon segítségével."),
         "welcomeTextUpdated": MessageLookupByLibrary.simpleMessage(
-            "Üdvözöljük a Nautilusban. A kezdéshez hozzon létre egy új pénztárcát, vagy importáljon egy meglévőt."),
+            "Üdvözöljük a Lumexban. A kezdéshez hozzon létre egy új pénztárcát, vagy importáljon egy meglévőt."),
         "welcomeTextWithoutLogin": MessageLookupByLibrary.simpleMessage(
             "A kezdéshez hozzon létre egy új pénztárcát, vagy importáljon egy meglévőt."),
         "withAddress": MessageLookupByLibrary.simpleMessage("Címmel"),

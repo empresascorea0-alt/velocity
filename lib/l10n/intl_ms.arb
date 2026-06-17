@@ -493,7 +493,7 @@
   "connectingHeader": "Menyambung",
   "@connectingHeader": {
     "type": "text",
-    "description": "A header to let the user now that Nautilus is currently connecting to (or loading) live chat."
+    "description": "A header to let the user now that Lumex is currently connecting to (or loading) live chat."
   },
   "connectionWarning": "Tidak Boleh Bersambung",
   "@connectionWarning": {
@@ -697,7 +697,7 @@
     "type": "text",
     "description": "currency_mode_header"
   },
-  "currencyModeInfo": "Pilih unit mana untuk memaparkan jumlah masuk.\n1 nyano = 0.000001 NANO, atau \n1,000,000 nyano = 1 NANO",
+  "currencyModeInfo": "Pilih unit mana untuk memaparkan jumlah masuk.\n1 nyano = 0.000001 Lumex, atau \n1,000,000 nyano = 1 Lumex",
   "@currencyModeInfo": {
     "type": "text",
     "description": "currency_mode_info"
@@ -727,7 +727,7 @@
     "type": "text",
     "description": "Default account name"
   },
-  "defaultGiftMessage": "Semak Nautilus! Saya menghantar beberapa nano kepada anda dengan pautan ini:",
+  "defaultGiftMessage": "Semak Lumex! Saya menghantar beberapa nano kepada anda dengan pautan ini:",
   "@defaultGiftMessage": {
     "type": "text",
     "description": "default_gift_message"
@@ -957,7 +957,7 @@
     "type": "text",
     "description": "example_card_from"
   },
-  "exampleCardIntro": "Selamat datang ke Nautilus. Sekali anda menerima NANO, transaksi akan terlihat seperti ini",
+  "exampleCardIntro": "Selamat datang ke Lumex. Sekali anda menerima Lumex, transaksi akan terlihat seperti ini",
   "@exampleCardIntro": {
     "type": "text",
     "description": "example_card_intro"
@@ -1047,7 +1047,7 @@
     "type": "text",
     "description": "exchange_currency"
   },
-  "exchangeNano": "Tukar NANO",
+  "exchangeNano": "Tukar Lumex",
   "@exchangeNano": {
     "type": "text",
     "description": "exchange_nano"
@@ -1082,12 +1082,12 @@
     "type": "text",
     "description": "failed_message"
   },
-  "fallbackHeader": "Nautilus Terputus",
+  "fallbackHeader": "Lumex Terputus",
   "@fallbackHeader": {
     "type": "text",
     "description": "fallback_connected"
   },
-  "fallbackInfo": "Pelayan Nautilus nampaknya terputus, Menghantar dan Menerima (tanpa memo) masih harus beroperasi tetapi permintaan pembayaran mungkin tidak dilalui\n\n Kembali kemudian atau mulakan semula aplikasi untuk mencuba lagi",
+  "fallbackInfo": "Pelayan Lumex nampaknya terputus, Menghantar dan Menerima (tanpa memo) masih harus beroperasi tetapi permintaan pembayaran mungkin tidak dilalui\n\n Kembali kemudian atau mulakan semula aplikasi untuk mencuba lagi",
   "@fallbackInfo": {
     "type": "text",
     "description": "fallback_info"
@@ -1191,7 +1191,7 @@
     "type": "text",
     "description": "get_currency"
   },
-  "getNano": "Dapatkan NANO",
+  "getNano": "Dapatkan Lumex",
   "@getNano": {
     "type": "text",
     "description": "get_nano"
@@ -1231,7 +1231,7 @@
     "type": "text",
     "description": "gift_from"
   },
-  "giftInfo": "Muatkan Kad Hadiah Digital dengan NANO! Tetapkan jumlah, dan mesej pilihan untuk penerima untuk melihat apabila mereka membukanya!\n\nSetelah dibuat, anda akan mendapat pautan yang boleh anda hantar kepada sesiapa sahaja, yang apabila dibuka secara automatik akan mengagihkan dana kepada penerima selepas memasang Nautilus!\n\nSekiranya penerima sudah menjadi pengguna Nautilus, mereka akan mendapat arahan untuk memindahkan dana ke akaun mereka semasa membuka pautan",
+  "giftInfo": "Muatkan Kad Hadiah Digital dengan Lumex! Tetapkan jumlah, dan mesej pilihan untuk penerima untuk melihat apabila mereka membukanya!\n\nSetelah dibuat, anda akan mendapat pautan yang boleh anda hantar kepada sesiapa sahaja, yang apabila dibuka secara automatik akan mengagihkan dana kepada penerima selepas memasang Lumex!\n\nSekiranya penerima sudah menjadi pengguna Lumex, mereka akan mendapat arahan untuk memindahkan dana ke akaun mereka semasa membuka pautan",
   "@giftInfo": {
     "type": "text",
     "description": "Description for gift card creation"
@@ -1356,12 +1356,12 @@
     "type": "text",
     "description": "import_gift_empty"
   },
-  "importGiftIntro": "Nampaknya anda telah mengklik pautan yang mengandungi beberapa NANO, untuk menerima dana ini, kami hanya perlukan anda untuk menyelesaikan persediaan dompet anda.",
+  "importGiftIntro": "Nampaknya anda telah mengklik pautan yang mengandungi beberapa Lumex, untuk menerima dana ini, kami hanya perlukan anda untuk menyelesaikan persediaan dompet anda.",
   "@importGiftIntro": {
     "type": "text",
     "description": "import_gift_intro"
   },
-  "importGiftv2": "Pautan yang anda klik mengandungi beberapa NANO, adakah anda ingin mengimportnya ke dompet ini?",
+  "importGiftv2": "Pautan yang anda klik mengandungi beberapa Lumex, adakah anda ingin mengimportnya ke dompet ini?",
   "@importGiftv2": {
     "type": "text",
     "description": "import_gift_v2"
@@ -1466,7 +1466,7 @@
     "type": "text",
     "description": "An error indicating a pin has been entered incorrectly"
   },
-  "iosFundingMessage": "Disebabkan garis panduan dan sekatan iOS App Store, kami tidak dapat memautkan anda ke halaman derma kami. Jika anda ingin menyokong projek itu, pertimbangkan untuk menghantar ke alamat nod nautilus.",
+  "iosFundingMessage": "Disebabkan garis panduan dan sekatan iOS App Store, kami tidak dapat memautkan anda ke halaman derma kami. Jika anda ingin menyokong projek itu, pertimbangkan untuk menghantar ke alamat nod lumex.",
   "@iosFundingMessage": {
     "type": "text",
     "description": "ios_funding_message"
@@ -1531,7 +1531,7 @@
     "type": "text",
     "description": "settings_logout_warning_title"
   },
-  "logoutDetail": "Log Keluar akan memadamkan benih anda dan semua data berkaitan Nautilus daripada peranti ini. Jikalau benih anda tidak disandarkan, anda tidak akan mendapatkan akses kepada baki anda lagi.",
+  "logoutDetail": "Log Keluar akan memadamkan benih anda dan semua data berkaitan Lumex daripada peranti ini. Jikalau benih anda tidak disandarkan, anda tidak akan mendapatkan akses kepada baki anda lagi.",
   "@logoutDetail": {
     "type": "text",
     "description": "settings_logout_alert_message"
@@ -1656,10 +1656,10 @@
     "type": "text",
     "description": "natricon_settings"
   },
-  "nautilusWallet": "Dompet Nautilus",
-  "@nautilusWallet": {
+  "lumexWallet": "Dompet Lumex",
+  "@lumexWallet": {
     "type": "text",
-    "description": "nautilus_wallet"
+    "description": "lumex_wallet"
   },
   "nearby": "Berdekatan",
   "@nearby": {
@@ -1676,7 +1676,7 @@
     "type": "text",
     "description": "verification_needed_header"
   },
-  "newAccountIntro": "Ini adalah akaun baru anda. Sebaik sahaja anda menerima NANO, transaksi akan muncul seperti ini:",
+  "newAccountIntro": "Ini adalah akaun baru anda. Sebaik sahaja anda menerima Lumex, transaksi akan muncul seperti ini:",
   "@newAccountIntro": {
     "type": "text",
     "description": "Alternate account intro card"
@@ -1746,7 +1746,7 @@
     "type": "text",
     "description": "no_thanks_app_button"
   },
-  "notificationBody": "Buka Nautilus bagi melihat transaksi ini.",
+  "notificationBody": "Buka Lumex bagi melihat transaksi ini.",
   "@notificationBody": {
     "type": "text",
     "description": "notification_body"
@@ -1891,10 +1891,10 @@
     "type": "text",
     "description": "An error indicating the password is incorrect"
   },
-  "passwordNoLongerRequiredToOpenParagraph": "Anda tidak perlu kata laluan untuk membuka Nautilus lagi.",
+  "passwordNoLongerRequiredToOpenParagraph": "Anda tidak perlu kata laluan untuk membuka Lumex lagi.",
   "@passwordNoLongerRequiredToOpenParagraph": {
     "type": "text",
-    "description": "An info paragraph that tells the user a password will no longer be needed to open Nautilus"
+    "description": "An info paragraph that tells the user a password will no longer be needed to open Velocity"
   },
   "passwordNumber": "Kata laluan mesti mengandungi sekurang-kurangnya 1 nombor",
   "@passwordNumber": {
@@ -1916,15 +1916,15 @@
     "type": "text",
     "description": "An error indicating the password is too short"
   },
-  "passwordWarning": "Kata laluan ini diperlukan untuk membuka Nautilus.",
+  "passwordWarning": "Kata laluan ini diperlukan untuk membuka Lumex.",
   "@passwordWarning": {
     "type": "text",
     "description": "A paragraph that warns the user to not lose their password."
   },
-  "passwordWillBeRequiredToOpenParagraph": "Kata laluan ini diperlukan untuk membuka Nautilus.",
+  "passwordWillBeRequiredToOpenParagraph": "Kata laluan ini diperlukan untuk membuka Lumex.",
   "@passwordWillBeRequiredToOpenParagraph": {
     "type": "text",
-    "description": "A paragraph that tells the users that the created password will be required to open Nautilus."
+    "description": "A paragraph that tells the users that the created password will be required to open Velocity."
   },
   "pastDue": "Telah berlalu",
   "@pastDue": {
@@ -2061,17 +2061,17 @@
     "type": "text",
     "description": "settings_privacy_policy"
   },
-  "promotionalLink": "NANO percuma",
+  "promotionalLink": "Lumex percuma",
   "@promotionalLink": {
     "type": "text",
     "description": "promo_Link"
   },
-  "proSubRequiredHeader": "Langganan Nautilus Pro Diperlukan",
+  "proSubRequiredHeader": "Langganan Velocity Pro Diperlukan",
   "@proSubRequiredHeader": {
     "type": "text",
     "description": "pro_sub_required_header"
   },
-  "proSubRequiredParagraph": "Dengan hanya 1 NANO sebulan, anda boleh membuka kunci semua ciri Nautilus Pro.",
+  "proSubRequiredParagraph": "Dengan hanya 1 Lumex sebulan, anda boleh membuka kunci semua ciri Velocity Pro.",
   "@proSubRequiredParagraph": {
     "type": "text",
     "description": "pro_sub_required_paragraph"
@@ -2081,7 +2081,7 @@
     "type": "text",
     "description": "purchase_currency"
   },
-  "purchaseNano": "Pembelian Nano",
+  "purchaseNano": "Pembelian Lumex",
   "@purchaseNano": {
     "type": "text",
     "description": "purchase_nano"
@@ -2286,7 +2286,7 @@
     "type": "text",
     "description": "requested_from"
   },
-  "requestError": "Permintaan Gagal: Pengguna ini nampaknya tidak memasang Nautilus, atau telah melumpuhkan pemberitahuan.",
+  "requestError": "Permintaan Gagal: Pengguna ini nampaknya tidak memasang Lumex, atau telah melumpuhkan pemberitahuan.",
   "@requestError": {
     "type": "text",
     "description": "request_generic_error"
@@ -2316,7 +2316,7 @@
     "type": "text",
     "description": "request_sent_again"
   },
-  "requestSheetInfo": "Minta pembayaran, dengan Mesej Disulitkan Akhir ke Akhir!\n\nPermintaan pembayaran, memo dan mesej hanya akan diterima oleh pengguna nautilus lain, tetapi anda boleh menggunakannya untuk penyimpanan rekod anda sendiri walaupun penerima tidak menggunakan nautilus.",
+  "requestSheetInfo": "Minta pembayaran, dengan Mesej Disulitkan Akhir ke Akhir!\n\nPermintaan pembayaran, memo dan mesej hanya akan diterima oleh pengguna lumex lain, tetapi anda boleh menggunakannya untuk penyimpanan rekod anda sendiri walaupun penerima tidak menggunakan lumex.",
   "@requestSheetInfo": {
     "type": "text",
     "description": "request_sheet_info"
@@ -2326,10 +2326,10 @@
     "type": "text",
     "description": "request_sheet_info_header"
   },
-  "requireAPasswordToOpenHeader": "Memerlukan kata laluan untuk membuka Nautilus?",
+  "requireAPasswordToOpenHeader": "Memerlukan kata laluan untuk membuka Lumex?",
   "@requireAPasswordToOpenHeader": {
     "type": "text",
-    "description": "A paragraph that asks the users if they would like a password to be required to open Nautilus."
+    "description": "A paragraph that asks the users if they would like a password to be required to open Velocity."
   },
   "requireCaptcha": "Memerlukan CAPTCHA untuk menuntut kad hadiah",
   "@requireCaptcha": {
@@ -2376,7 +2376,7 @@
     "type": "text",
     "description": "dialog_save"
   },
-  "scanInstructions": "Imbaskan Kod QR\n Alamat Nano anda",
+  "scanInstructions": "Imbaskan Kod QR\n Alamat Lumex anda",
   "@scanInstructions": {
     "type": "text",
     "description": "scan_send_instruction_label"
@@ -2511,7 +2511,7 @@
     "type": "text",
     "description": "send_sending"
   },
-  "sendMemoError": "Menghantar memo dengan transaksi gagal, mereka mungkin bukan pengguna Nautilus.",
+  "sendMemoError": "Menghantar memo dengan transaksi gagal, mereka mungkin bukan pengguna Lumex.",
   "@sendMemoError": {
     "type": "text",
     "description": "send_memo_error"
@@ -2531,7 +2531,7 @@
     "type": "text",
     "description": "split_bill_send_requests"
   },
-  "sendSheetInfo": "Hantar atau Minta pembayaran, dengan mesej End to End Encrypted!\n\nPermintaan pembayaran, memo, dan mesej hanya akan diterima oleh pengguna nautilus lain.\n\nAnda tidak perlu mempunyai nama pengguna untuk menghantar atau menerima permintaan pembayaran, dan anda boleh menggunakannya untuk penyimpanan rekod anda sendiri walaupun mereka tidak menggunakan nautilus.",
+  "sendSheetInfo": "Hantar atau Minta pembayaran, dengan mesej End to End Encrypted!\n\nPermintaan pembayaran, memo, dan mesej hanya akan diterima oleh pengguna lumex lain.\n\nAnda tidak perlu mempunyai nama pengguna untuk menghantar atau menerima permintaan pembayaran, dan anda boleh menggunakannya untuk penyimpanan rekod anda sendiri walaupun mereka tidak menggunakan lumex.",
   "@sendSheetInfo": {
     "type": "text",
     "description": "send_sheet_info"
@@ -2624,14 +2624,14 @@
   "share": "Kongsi",
   "@share": {
     "type": "text",
-    "description": "nautilus_share"
+    "description": "lumex_share"
   },
   "shareApp": "Kongsi %1",
   "@shareApp": {
     "type": "text",
     "description": "settings_share"
   },
-  "shareAppText": "Lihat %1! Dompet mudah alih NANO terulung!",
+  "shareAppText": "Lihat %1! Dompet mudah alih Lumex terulung!",
   "@shareAppText": {
     "type": "text",
     "description": "share_extra"
@@ -2646,13 +2646,13 @@
     "type": "text",
     "description": "share_message"
   },
-  "shareNautilus": "Kongsi Nautilus",
-  "@shareNautilus": {
+  "shareLumex": "Kongsi Lumex",
+  "@shareLumex": {
     "type": "text",
     "description": "settings_share"
   },
-  "shareNautilusText": "Semakkan Nautilus! Dompet Android Nano yang rasmi",
-  "@shareNautilusText": {
+  "shareLumexText": "Semakkan Lumex! Dompet Android Lumex yang rasmi",
+  "@shareLumexText": {
     "type": "text",
     "description": "share_extra"
   },
@@ -2751,7 +2751,7 @@
     "type": "text",
     "description": "spend_currency"
   },
-  "spendNano": "Belanjakan NANO",
+  "spendNano": "Belanjakan Lumex",
   "@spendNano": {
     "type": "text",
     "description": "spend_nano"
@@ -2846,7 +2846,7 @@
     "type": "text",
     "description": "swap_xmr_header"
   },
-  "swapXMRInfo": "Monero ialah mata wang kripto tertumpu kepada privasi yang menjadikannya sangat sukar atau bahkan mustahil untuk mengesan transaksi. Sementara itu NANO ialah mata wang kripto tertumpu kepada pembayaran yang pantas dan tanpa bayaran. Bersama-sama mereka menyediakan beberapa aspek yang paling berguna dalam mata wang kripto!\n\nGunakan halaman ini untuk menukar NANO anda dengan XMR dengan mudah!",
+  "swapXMRInfo": "Monero ialah mata wang kripto tertumpu kepada privasi yang menjadikannya sangat sukar atau bahkan mustahil untuk mengesan transaksi. Sementara itu Lumex ialah mata wang kripto tertumpu kepada pembayaran yang pantas dan tanpa bayaran. Bersama-sama mereka menyediakan beberapa aspek yang paling berguna dalam mata wang kripto!\n\nGunakan halaman ini untuk menukar Lumex anda dengan XMR dengan mudah!",
   "@swapXMRInfo": {
     "type": "text",
     "description": "swap_xmr_header"
@@ -2946,7 +2946,7 @@
     "type": "text",
     "description": "transfer_close_text"
   },
-  "transferComplete": "%1 NANO berjaya dipindahkan ke Dompet Nautilus anda. <Newline>",
+  "transferComplete": "%1 Lumex berjaya dipindahkan ke Dompet Lumex anda. <Newline>",
   "@transferComplete": {
     "type": "text",
     "description": "transfer_complete_text"
@@ -2976,12 +2976,12 @@
     "type": "text",
     "description": "transfer_header"
   },
-  "transferIntro": "Proses ini akan memindahkan dana dari dompet kertas ke dompet Nautilus anda.\n\nKetuk \"%1\" untuk memulakan.",
+  "transferIntro": "Proses ini akan memindahkan dana dari dompet kertas ke dompet Lumex anda.\n\nKetuk \"%1\" untuk memulakan.",
   "@transferIntro": {
     "type": "text",
     "description": "transfer_intro"
   },
-  "transferIntroShort": "Proses ini akan memindahkan dana dari dompet kertas ke dompet Nautilus anda.",
+  "transferIntroShort": "Proses ini akan memindahkan dana dari dompet kertas ke dompet Lumex anda.",
   "@transferIntroShort": {
     "type": "text",
     "description": "transfer_intro_short"
@@ -2996,7 +2996,7 @@
     "type": "text",
     "description": "transfer_hint"
   },
-  "transferNoFunds": "Benih ini tidak mempunyai sebarang NANO di atasnya",
+  "transferNoFunds": "Benih ini tidak mempunyai sebarang Lumex di atasnya",
   "@transferNoFunds": {
     "type": "text",
     "description": "transfer_no_funds_toast"
@@ -3006,7 +3006,7 @@
     "type": "text",
     "description": "transfer_qr_scan_error"
   },
-  "transferQrScanHint": "Imbas \nbenih atau kunci peribadi Nano.",
+  "transferQrScanHint": "Imbas \nbenih atau kunci peribadi Lumex.",
   "@transferQrScanHint": {
     "type": "text",
     "description": "transfer_qr_scan_hint"
@@ -3031,12 +3031,12 @@
     "type": "text",
     "description": "unlocktxt"
   },
-  "unlockBiometrics": "Mengesahkan untuk membuka kunci Nautilus",
+  "unlockBiometrics": "Mengesahkan untuk membuka kunci Lumex",
   "@unlockBiometrics": {
     "type": "text",
     "description": "unlock_bio"
   },
-  "unlockPin": "Masukkan PIN untuk Membuka Nautilus",
+  "unlockPin": "Masukkan PIN untuk Membuka Lumex",
   "@unlockPin": {
     "type": "text",
     "description": "unlock_pin"
@@ -3096,15 +3096,15 @@
     "type": "text",
     "description": "use_currency"
   },
-  "useNano": "Gunakan NANO",
+  "useNano": "Gunakan Lumex",
   "@useNano": {
     "type": "text",
     "description": "use_nano"
   },
-  "useNautilusRep": "Use Nautilus Rep",
-  "@useNautilusRep": {
+  "useLumexRep": "Use Lumex Rep",
+  "@useLumexRep": {
     "type": "text",
-    "description": "use nautilus node as rep"
+    "description": "use lumex node as rep"
   },
   "userAlreadyAddedError": "Pengguna sudah ditambahkan!",
   "@userAlreadyAddedError": {
@@ -3131,7 +3131,7 @@
     "type": "text",
     "description": "username_unknown_error"
   },
-  "usernameInfo": "Pilih @username yang unik untuk memudahkan rakan dan keluarga mencari anda!\n\nMempunyai nama pengguna Nautilus mengemas kini UI secara global untuk mencerminkan pemegang baru anda.",
+  "usernameInfo": "Pilih @username yang unik untuk memudahkan rakan dan keluarga mencari anda!\n\nMempunyai nama pengguna Lumex mengemas kini UI secara global untuk mencerminkan pemegang baru anda.",
   "@usernameInfo": {
     "type": "text",
     "description": "Description for username registration"
@@ -3146,7 +3146,7 @@
     "type": "text",
     "description": "username_unavailable"
   },
-  "usernameWarning": "Nama pengguna Nautilus adalah perkhidmatan terpusat yang disediakan oleh Nano.to",
+  "usernameWarning": "Nama pengguna Lumex adalah perkhidmatan terpusat yang disediakan oleh Lumex.to",
   "@usernameWarning": {
     "type": "text",
     "description": "Username centralization warning"
@@ -3211,17 +3211,17 @@
     "type": "text",
     "description": "frequency_weekly"
   },
-  "welcomeText": "Selamat datang ke Nautilus. Untuk bersambung, anda boleh membuat dompet yang baru atau import dompet yang sedia ada.",
+  "welcomeText": "Selamat datang ke Lumex. Untuk bersambung, anda boleh membuat dompet yang baru atau import dompet yang sedia ada.",
   "@welcomeText": {
     "type": "text",
     "description": "intro_welcome_title"
   },
-  "welcomeTextLogin": "Selamat datang ke Nautilus. Pilih pilihan untuk bermula atau pilih tema menggunakan ikon di bawah.",
+  "welcomeTextLogin": "Selamat datang ke Lumex. Pilih pilihan untuk bermula atau pilih tema menggunakan ikon di bawah.",
   "@welcomeTextLogin": {
     "type": "text",
     "description": "intro_welcome_login"
   },
-  "welcomeTextUpdated": "Selamat datang ke Nautilus. Untuk bermula, buat dompet baharu atau import yang sedia ada.",
+  "welcomeTextUpdated": "Selamat datang ke Lumex. Untuk bermula, buat dompet baharu atau import yang sedia ada.",
   "@welcomeTextUpdated": {
     "type": "text",
     "description": "intro_welcome_title"

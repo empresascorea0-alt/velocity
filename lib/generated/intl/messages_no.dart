@@ -252,7 +252,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "currencyModeHeader":
             MessageLookupByLibrary.simpleMessage("Valuta Mode Info"),
         "currencyModeInfo": MessageLookupByLibrary.simpleMessage(
-            "Velg hvilken enhet du vil vise beløp i.\n1 nyano = 0.000001 NANO, eller \n1 000,000 nyano = 1 NANO"),
+            "Velg hvilken enhet du vil vise beløp i.\n1 nyano = 0.000001 Lumex, eller \n1 000,000 nyano = 1 Lumex"),
         "currentlyRepresented":
             MessageLookupByLibrary.simpleMessage("Aktuell representant"),
         "daily": MessageLookupByLibrary.simpleMessage("Daglig"),
@@ -262,7 +262,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "defaultAccountName":
             MessageLookupByLibrary.simpleMessage("Hovedkonto"),
         "defaultGiftMessage": MessageLookupByLibrary.simpleMessage(
-            "Sjekk ut Nautilus! Jeg sendte deg litt nano med denne linken:"),
+            "Sjekk ut Lumex! Jeg sendte deg litt nano med denne linken:"),
         "defaultNewAccountName":
             MessageLookupByLibrary.simpleMessage("Konto %1"),
         "delete": MessageLookupByLibrary.simpleMessage("Slett"),
@@ -340,7 +340,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "exampleCardFrom":
             MessageLookupByLibrary.simpleMessage("Fra en tilfeldig"),
         "exampleCardIntro": MessageLookupByLibrary.simpleMessage(
-            "Velkommen til Nautilus. Når du mottar NANO, vil transaksjonene vises slik:"),
+            "Velkommen til Lumex. Når du mottar Lumex, vil transaksjonene vises slik:"),
         "exampleCardLittle": MessageLookupByLibrary.simpleMessage("Litt"),
         "exampleCardLot": MessageLookupByLibrary.simpleMessage("Mange"),
         "exampleCardTo":
@@ -368,7 +368,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "exampleRecRecipientMessage":
             MessageLookupByLibrary.simpleMessage("Gass Penger"),
         "exchangeCurrency": MessageLookupByLibrary.simpleMessage("Bytt %2"),
-        "exchangeNano": MessageLookupByLibrary.simpleMessage("Bytt NANO"),
+        "exchangeNano": MessageLookupByLibrary.simpleMessage("Bytt Lumex"),
         "existingPasswordHint":
             MessageLookupByLibrary.simpleMessage("Skriv inn nåværende passord"),
         "existingPinHint":
@@ -379,9 +379,9 @@ class MessageLookup extends MessageLookupByLibrary {
         "failed": MessageLookupByLibrary.simpleMessage("mislyktes"),
         "failedMessage": MessageLookupByLibrary.simpleMessage("msg failed"),
         "fallbackHeader":
-            MessageLookupByLibrary.simpleMessage("Nautilus frakoblet"),
+            MessageLookupByLibrary.simpleMessage("Lumex frakoblet"),
         "fallbackInfo": MessageLookupByLibrary.simpleMessage(
-            "Nautilus-servere ser ut til å være frakoblet, Sending og mottak (uten notater) skal fortsatt være i drift, men betalingsforespørsler kan ikke gå gjennom\n\n Kom tilbake senere eller start appen på nytt for å prøve igjen"),
+            "Lumex-servere ser ut til å være frakoblet, Sending og mottak (uten notater) skal fortsatt være i drift, men betalingsforespørsler kan ikke gå gjennom\n\n Kom tilbake senere eller start appen på nytt for å prøve igjen"),
         "favoriteExists":
             MessageLookupByLibrary.simpleMessage("Favoritt eksisterer"),
         "favoriteHeader": MessageLookupByLibrary.simpleMessage("favoritt"),
@@ -415,7 +415,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "generatingWork": MessageLookupByLibrary.simpleMessage(
             "Genererer PoW, dette kan ta en stund (> 20 sekunder)..."),
         "getCurrency": MessageLookupByLibrary.simpleMessage("Få %2"),
-        "getNano": MessageLookupByLibrary.simpleMessage("Skaff deg NANO"),
+        "getNano": MessageLookupByLibrary.simpleMessage("Skaff deg Lumex"),
         "giftAlert": MessageLookupByLibrary.simpleMessage("Du har en gave!"),
         "giftAlertEmpty": MessageLookupByLibrary.simpleMessage("Tom gave"),
         "giftAmount": MessageLookupByLibrary.simpleMessage("Gavebeløp"),
@@ -427,7 +427,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Gaveark info"),
         "giftFrom": MessageLookupByLibrary.simpleMessage("Gave fra"),
         "giftInfo": MessageLookupByLibrary.simpleMessage(
-            "Last inn et digitalt gavekort med NANO! Angi et beløp, og en valgfri melding for mottakeren å se når de åpner den!\n\nNår du er opprettet, får du en lenke som du kan sende til hvem som helst, som når den åpnes automatisk vil distribuere midlene til mottakeren etter installasjon av Nautilus!\n\nHvis mottakeren allerede er en Nautilus-bruker, vil de få beskjed om å overføre midlene til kontoen sin når lenken åpnes"),
+            "Last inn et digitalt gavekort med Lumex! Angi et beløp, og en valgfri melding for mottakeren å se når de åpner den!\n\nNår du er opprettet, får du en lenke som du kan sende til hvem som helst, som når den åpnes automatisk vil distribuere midlene til mottakeren etter installasjon av Lumex!\n\nHvis mottakeren allerede er en Lumex-bruker, vil de få beskjed om å overføre midlene til kontoen sin når lenken åpnes"),
         "giftMessage": MessageLookupByLibrary.simpleMessage("Gave Melding"),
         "giftProcessError": MessageLookupByLibrary.simpleMessage(
             "Det oppsto en feil under behandlingen av dette gavekortet. Sjekk kanskje tilkoblingen din og prøv å klikke på gavelenken igjen."),
@@ -470,9 +470,9 @@ class MessageLookup extends MessageLookupByLibrary {
         "importGiftEmpty": MessageLookupByLibrary.simpleMessage(
             "Unfortunately the link you clicked that contained some nano appears to be empty, but you can still see the amount and associated message."),
         "importGiftIntro": MessageLookupByLibrary.simpleMessage(
-            "Det ser ut til at du har klikket på en lenke som inneholder noe NANO, for å motta disse midlene trenger vi bare at du fullfører konfigureringen av lommeboken din."),
+            "Det ser ut til at du har klikket på en lenke som inneholder noe Lumex, for å motta disse midlene trenger vi bare at du fullfører konfigureringen av lommeboken din."),
         "importGiftv2": MessageLookupByLibrary.simpleMessage(
-            "Linken du klikket inneholder noe NANO, vil du importere det til denne lommeboken?"),
+            "Linken du klikket inneholder noe Lumex, vil du importere det til denne lommeboken?"),
         "importHD": MessageLookupByLibrary.simpleMessage("Importer HD"),
         "importHDTrust":
             MessageLookupByLibrary.simpleMessage("Importer HD / Trust"),
@@ -507,7 +507,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Ugyldig passord"),
         "invalidPin": MessageLookupByLibrary.simpleMessage("Ugyldig PIN-kode"),
         "iosFundingMessage": MessageLookupByLibrary.simpleMessage(
-            "På grunn av iOS App Store retningslinjer og begrensninger, kan vi ikke koble deg til donasjonssiden vår. Hvis du ønsker å støtte prosjektet, vurder å sende til nautilus-nodens adresse."),
+            "På grunn av iOS App Store retningslinjer og begrensninger, kan vi ikke koble deg til donasjonssiden vår. Hvis du ønsker å støtte prosjektet, vurder å sende til lumex-nodens adresse."),
         "language": MessageLookupByLibrary.simpleMessage("Språk"),
         "linkCopied": MessageLookupByLibrary.simpleMessage("Kopiert kobling"),
         "loaded": MessageLookupByLibrary.simpleMessage("lastet"),
@@ -524,7 +524,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "logoutAreYouSure":
             MessageLookupByLibrary.simpleMessage("Er du sikker?"),
         "logoutDetail": MessageLookupByLibrary.simpleMessage(
-            "Når du logger ut fjernes ditt Seed og all Nautilus-relatert data fra denne enheten. Om ditt Seed ikke er sikkerhetskopiert, vil du aldri kunne få tilgang til dine midler igjen"),
+            "Når du logger ut fjernes ditt Seed og all Lumex-relatert data fra denne enheten. Om ditt Seed ikke er sikkerhetskopiert, vil du aldri kunne få tilgang til dine midler igjen"),
         "logoutReassurance": MessageLookupByLibrary.simpleMessage(
             "Så lenge du har sikkerhetskopiert ditt Seed, har du ingenting å bekymre deg over."),
         "looksLikeHdSeed": MessageLookupByLibrary.simpleMessage(
@@ -566,15 +566,15 @@ class MessageLookup extends MessageLookupByLibrary {
         "nameEmpty":
             MessageLookupByLibrary.simpleMessage("Vennligst skriv inn et navn"),
         "natricon": MessageLookupByLibrary.simpleMessage("Natricon"),
-        "nautilusWallet":
-            MessageLookupByLibrary.simpleMessage("Nautilus lommebok"),
+        "lumexWallet":
+            MessageLookupByLibrary.simpleMessage("Lumex lommebok"),
         "nearby": MessageLookupByLibrary.simpleMessage("I nærheten"),
         "needVerificationAlert": MessageLookupByLibrary.simpleMessage(
             "Denne funksjonen krever at du har en lengre transaksjonshistorikk for å forhindre spam.\n\nAlternativt kan du vise en QR-kode for noen å skanne."),
         "needVerificationAlertHeader":
             MessageLookupByLibrary.simpleMessage("Bekreftelse nødvendig"),
         "newAccountIntro": MessageLookupByLibrary.simpleMessage(
-            "Dette er din nye konto. Når du mottar NANO vises transaksjoner slik:"),
+            "Dette er din nye konto. Når du mottar Lumex vises transaksjoner slik:"),
         "newWallet": MessageLookupByLibrary.simpleMessage("Ny lommebok"),
         "nextButton": MessageLookupByLibrary.simpleMessage("Neste"),
         "nextPayment": MessageLookupByLibrary.simpleMessage("Neste betaling"),
@@ -595,7 +595,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "noneMethod": MessageLookupByLibrary.simpleMessage("Ingen"),
         "notSent": MessageLookupByLibrary.simpleMessage("ikke sendt"),
         "notificationBody": MessageLookupByLibrary.simpleMessage(
-            "Åpne Nautilus for å vise denne transaksjonen"),
+            "Åpne Lumex for å vise denne transaksjonen"),
         "notificationHeaderSupplement":
             MessageLookupByLibrary.simpleMessage("Tap for å åpne"),
         "notificationInfo": MessageLookupByLibrary.simpleMessage(
@@ -637,7 +637,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("feil passord"),
         "passwordNoLongerRequiredToOpenParagraph":
             MessageLookupByLibrary.simpleMessage(
-                "Du trenger ikke lenger et passord for å åpne Nautilus."),
+                "Du trenger ikke lenger et passord for å åpne Lumex."),
         "passwordNumber": MessageLookupByLibrary.simpleMessage(
             "Passordet må inneholde minst ett tall"),
         "passwordSpecialCharacter": MessageLookupByLibrary.simpleMessage(
@@ -645,10 +645,10 @@ class MessageLookup extends MessageLookupByLibrary {
         "passwordTooShort":
             MessageLookupByLibrary.simpleMessage("Passordet er for kort"),
         "passwordWarning": MessageLookupByLibrary.simpleMessage(
-            "Dette passordet kreves for å åpne Nautilus."),
+            "Dette passordet kreves for å åpne Lumex."),
         "passwordWillBeRequiredToOpenParagraph":
             MessageLookupByLibrary.simpleMessage(
-                "Dette passordet vil være påkrevd for å åpne Nautilus."),
+                "Dette passordet vil være påkrevd for å åpne Lumex."),
         "passwordsDontMatch": MessageLookupByLibrary.simpleMessage(
             "Passordene stemmer ikke overens"),
         "pastDue": MessageLookupByLibrary.simpleMessage("Forfalt"),
@@ -697,12 +697,12 @@ class MessageLookup extends MessageLookupByLibrary {
         "privacyPolicy":
             MessageLookupByLibrary.simpleMessage("Personvernpolicy"),
         "proSubRequiredHeader": MessageLookupByLibrary.simpleMessage(
-            "Nautilus Pro-abonnement kreves"),
+            "Lumex Pro-abonnement kreves"),
         "proSubRequiredParagraph": MessageLookupByLibrary.simpleMessage(
-            "For bare 1 NANO per måned kan du låse opp alle funksjonene til Nautilus Pro."),
-        "promotionalLink": MessageLookupByLibrary.simpleMessage("Gratis NANO"),
+            "For bare 1 Lumex per måned kan du låse opp alle funksjonene til Lumex Pro."),
+        "promotionalLink": MessageLookupByLibrary.simpleMessage("Gratis Lumex"),
         "purchaseCurrency": MessageLookupByLibrary.simpleMessage("Kjøp %2"),
-        "purchaseNano": MessageLookupByLibrary.simpleMessage("Kjøp Nano"),
+        "purchaseNano": MessageLookupByLibrary.simpleMessage("Kjøp Lumex"),
         "qrInvalidAddress": MessageLookupByLibrary.simpleMessage(
             "QR-koden inneholder ikke en gyldig adresse"),
         "qrInvalidPermissions": MessageLookupByLibrary.simpleMessage(
@@ -764,7 +764,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "requestAmountConfirm":
             MessageLookupByLibrary.simpleMessage("Forespørsel %1 %2"),
         "requestError": MessageLookupByLibrary.simpleMessage(
-            "Forespørselen mislyktes: Denne brukeren ser ikke ut til å ha Nautilus installert eller har varslinger deaktivert."),
+            "Forespørselen mislyktes: Denne brukeren ser ikke ut til å ha Lumex installert eller har varslinger deaktivert."),
         "requestFrom": MessageLookupByLibrary.simpleMessage("Forespørsel fra"),
         "requestPayment":
             MessageLookupByLibrary.simpleMessage("Be om betaling"),
@@ -773,14 +773,14 @@ class MessageLookup extends MessageLookupByLibrary {
         "requestSentButNotReceived": MessageLookupByLibrary.simpleMessage(
             "Be om sendt på nytt! Hvis det fortsatt ikke er godkjent, kan mottakerens enhet være frakoblet."),
         "requestSheetInfo": MessageLookupByLibrary.simpleMessage(
-            "Be om en betaling med ende til ende krypterte meldinger!\n\nBetalingsforespørsler, notater og meldinger vil kun kunne mottas av andre nautilus-brukere, men du kan bruke dem til din egen journalføring selv om mottakeren ikke bruker nautilus."),
+            "Be om en betaling med ende til ende krypterte meldinger!\n\nBetalingsforespørsler, notater og meldinger vil kun kunne mottas av andre lumex-brukere, men du kan bruke dem til din egen journalføring selv om mottakeren ikke bruker lumex."),
         "requestSheetInfoHeader":
             MessageLookupByLibrary.simpleMessage("Be om arkinformasjon"),
         "requested": MessageLookupByLibrary.simpleMessage("forespurt"),
         "requestedFrom": MessageLookupByLibrary.simpleMessage("Forespurt fra"),
         "requesting": MessageLookupByLibrary.simpleMessage("Forespørsel"),
         "requireAPasswordToOpenHeader": MessageLookupByLibrary.simpleMessage(
-            "Krev et passord for å åpne Nautilus?"),
+            "Krev et passord for å åpne Lumex?"),
         "requireCaptcha": MessageLookupByLibrary.simpleMessage(
             "Krev CAPTCHA for å kreve gavekort"),
         "resendMemo":
@@ -798,7 +798,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "Din enhet er tilsynelatende \"rooted\", \"jailbroken\", eller endret på en måte som kompromitterer din sikkerhet. Det er anbefalt at du nullstiller enheten til opprinnelig tilstand, før du fortsetter."),
         "save": MessageLookupByLibrary.simpleMessage("Lagre"),
         "scanInstructions": MessageLookupByLibrary.simpleMessage(
-            "Scan en NANO \nadresse QR-kode"),
+            "Scan en Lumex \nadresse QR-kode"),
         "scanNFC": MessageLookupByLibrary.simpleMessage("Send via NFC"),
         "scanQrCode": MessageLookupByLibrary.simpleMessage("Scan QR-kode"),
         "schedule": MessageLookupByLibrary.simpleMessage("Rute"),
@@ -838,7 +838,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "Det oppsto en feil. Prøv igjen senere."),
         "sendFrom": MessageLookupByLibrary.simpleMessage("Send fra"),
         "sendMemoError": MessageLookupByLibrary.simpleMessage(
-            "Sending av notat med transaksjon mislyktes, de er kanskje ikke en Nautilus-bruker."),
+            "Sending av notat med transaksjon mislyktes, de er kanskje ikke en Lumex-bruker."),
         "sendMessageConfirm":
             MessageLookupByLibrary.simpleMessage("Sende melding"),
         "sendRequestAgain":
@@ -846,7 +846,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "sendRequests":
             MessageLookupByLibrary.simpleMessage("Sende forespørsler"),
         "sendSheetInfo": MessageLookupByLibrary.simpleMessage(
-            "Send eller be om betaling, med End to End-krypterte meldinger!\n\nBetalingsforespørsler, notater, og meldinger vil bare kunne mottas av andre nautilus-brukere.\n\nDu trenger ikke å ha et brukernavn for å sende eller motta betalingsforespørsler, og du kan bruke dem til din egen journalføring selv om de ikke bruker nautilus."),
+            "Send eller be om betaling, med End to End-krypterte meldinger!\n\nBetalingsforespørsler, notater, og meldinger vil bare kunne mottas av andre lumex-brukere.\n\nDu trenger ikke å ha et brukernavn for å sende eller motta betalingsforespørsler, og du kan bruke dem til din egen journalføring selv om de ikke bruker lumex."),
         "sendSheetInfoHeader":
             MessageLookupByLibrary.simpleMessage("Send info om ark"),
         "sending": MessageLookupByLibrary.simpleMessage("Sender"),
@@ -878,12 +878,12 @@ class MessageLookup extends MessageLookupByLibrary {
         "share": MessageLookupByLibrary.simpleMessage("Dele"),
         "shareApp": MessageLookupByLibrary.simpleMessage("Del %1"),
         "shareAppText": MessageLookupByLibrary.simpleMessage(
-            "Sjekk ut %1! En førsteklasses NANO-mobillommebok!"),
+            "Sjekk ut %1! En førsteklasses Lumex-mobillommebok!"),
         "shareLink": MessageLookupByLibrary.simpleMessage("Del Link"),
         "shareMessage": MessageLookupByLibrary.simpleMessage("Del melding"),
-        "shareNautilus": MessageLookupByLibrary.simpleMessage("Del Nautilus"),
-        "shareNautilusText": MessageLookupByLibrary.simpleMessage(
-            "Sjekk ut Nautilus! En ledende NANO mobil lommebok!"),
+        "shareLumex": MessageLookupByLibrary.simpleMessage("Del Lumex"),
+        "shareLumexText": MessageLookupByLibrary.simpleMessage(
+            "Sjekk ut Lumex! En ledende Lumex mobil lommebok!"),
         "shareText": MessageLookupByLibrary.simpleMessage("Del tekst"),
         "shopButton": MessageLookupByLibrary.simpleMessage("Butikk"),
         "show": MessageLookupByLibrary.simpleMessage("Forestilling"),
@@ -909,7 +909,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "social": MessageLookupByLibrary.simpleMessage("Sosial"),
         "someone": MessageLookupByLibrary.simpleMessage("noen"),
         "spendCurrency": MessageLookupByLibrary.simpleMessage("Bruk %2"),
-        "spendNano": MessageLookupByLibrary.simpleMessage("Bruk NANO"),
+        "spendNano": MessageLookupByLibrary.simpleMessage("Bruk Lumex"),
         "splitBill": MessageLookupByLibrary.simpleMessage("Delt regning"),
         "splitBillHeader":
             MessageLookupByLibrary.simpleMessage("Del en regning"),
@@ -935,7 +935,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "swapXMR": MessageLookupByLibrary.simpleMessage("Bytt XMR"),
         "swapXMRHeader": MessageLookupByLibrary.simpleMessage("Bytt Monero"),
         "swapXMRInfo": MessageLookupByLibrary.simpleMessage(
-            "Monero er en personvernfokusert kryptovaluta som gjør det svært vanskelig eller til og med umulig å spore transaksjoner. I mellomtiden er NANO en betalingsfokusert kryptovaluta som er rask og avgiftsfri. Sammen gir de noen av de mest nyttige aspektene ved kryptovalutaer!\n\nBruk denne siden til å enkelt bytte ut NANO-en din med XMR!"),
+            "Monero er en personvernfokusert kryptovaluta som gjør det svært vanskelig eller til og med umulig å spore transaksjoner. I mellomtiden er Lumex en betalingsfokusert kryptovaluta som er rask og avgiftsfri. Sammen gir de noen av de mest nyttige aspektene ved kryptovalutaer!\n\nBruk denne siden til å enkelt bytte ut Lumex-en din med XMR!"),
         "swapping": MessageLookupByLibrary.simpleMessage("Bytting"),
         "switchToSeed": MessageLookupByLibrary.simpleMessage("Bytt til Seed"),
         "systemDefault": MessageLookupByLibrary.simpleMessage("Systemstandard"),
@@ -967,9 +967,9 @@ class MessageLookup extends MessageLookupByLibrary {
         "transferClose": MessageLookupByLibrary.simpleMessage(
             "Trykk hvor som helst for å lukke vinduet."),
         "transferComplete": MessageLookupByLibrary.simpleMessage(
-            "%1 NANO ble overført til din Nautilus lommebok.\n"),
+            "%1 Lumex ble overført til din Lumex lommebok.\n"),
         "transferConfirmInfo": MessageLookupByLibrary.simpleMessage(
-            "En lommebok med en saldo på %1 NANO ble funnet.\n"),
+            "En lommebok med en saldo på %1 Lumex ble funnet.\n"),
         "transferConfirmInfoSecond": MessageLookupByLibrary.simpleMessage(
             "Trykk bekreft for å overføre midlene.\n"),
         "transferConfirmInfoThird": MessageLookupByLibrary.simpleMessage(
@@ -979,26 +979,26 @@ class MessageLookup extends MessageLookupByLibrary {
         "transferHeader":
             MessageLookupByLibrary.simpleMessage("Overfør midler"),
         "transferIntro": MessageLookupByLibrary.simpleMessage(
-            "Denne prosessen vil overføre midler fra en papirlommebok til din Nautilus lommebok.\n\nTrykk på \"%1\" knappen for å starte."),
+            "Denne prosessen vil overføre midler fra en papirlommebok til din Lumex lommebok.\n\nTrykk på \"%1\" knappen for å starte."),
         "transferIntroShort": MessageLookupByLibrary.simpleMessage(
-            "Denne prosessen vil overføre midlene fra en papirlommebok til din Nautilus-lommebok."),
+            "Denne prosessen vil overføre midlene fra en papirlommebok til din Lumex-lommebok."),
         "transferLoading": MessageLookupByLibrary.simpleMessage("Overfører"),
         "transferManualHint":
             MessageLookupByLibrary.simpleMessage("Tast inn Seed nedenfor."),
         "transferNoFunds": MessageLookupByLibrary.simpleMessage(
-            "Det er ingen NANO i dette Seed"),
+            "Det er ingen Lumex i dette Seed"),
         "transferQrScanError": MessageLookupByLibrary.simpleMessage(
             "Denne QR-koden inneholder ikke et gyldig Seed."),
         "transferQrScanHint": MessageLookupByLibrary.simpleMessage(
-            "Scan NANO \nSeed eller privat nøkkel"),
+            "Scan Lumex \nSeed eller privat nøkkel"),
         "unacknowledged": MessageLookupByLibrary.simpleMessage("ubekreftede"),
         "unconfirmed": MessageLookupByLibrary.simpleMessage("ubekreftet"),
         "unfulfilled": MessageLookupByLibrary.simpleMessage("uoppfylt"),
         "unlock": MessageLookupByLibrary.simpleMessage("Lås opp"),
         "unlockBiometrics": MessageLookupByLibrary.simpleMessage(
-            "Verifiser for å låse opp Nautilus"),
+            "Verifiser for å låse opp Lumex"),
         "unlockPin": MessageLookupByLibrary.simpleMessage(
-            "Angi PIN-kode for å låse opp Nautilus"),
+            "Angi PIN-kode for å låse opp Lumex"),
         "unopenedWarningHeader":
             MessageLookupByLibrary.simpleMessage("Vis uåpnet advarsel"),
         "unopenedWarningInfo": MessageLookupByLibrary.simpleMessage(
@@ -1015,9 +1015,9 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Vennligst skriv inn en URL"),
         "useAppRep": MessageLookupByLibrary.simpleMessage("Bruk %1 rep"),
         "useCurrency": MessageLookupByLibrary.simpleMessage("Bruk %2"),
-        "useNano": MessageLookupByLibrary.simpleMessage("Bruk NANO"),
-        "useNautilusRep":
-            MessageLookupByLibrary.simpleMessage("Use Nautilus Rep"),
+        "useNano": MessageLookupByLibrary.simpleMessage("Bruk Lumex"),
+        "useLumexRep":
+            MessageLookupByLibrary.simpleMessage("Use Lumex Rep"),
         "userAlreadyAddedError":
             MessageLookupByLibrary.simpleMessage("Bruker allerede lagt til!"),
         "userNotFound":
@@ -1031,13 +1031,13 @@ class MessageLookup extends MessageLookupByLibrary {
         "usernameError":
             MessageLookupByLibrary.simpleMessage("Brukernavn Feil"),
         "usernameInfo": MessageLookupByLibrary.simpleMessage(
-            "Velg en unik @username for å gjøre det enkelt for venner og familie å finne deg!\n\nÅ ha et Nautilus-brukernavn oppdaterer brukergrensesnittet globalt for å gjenspeile det nye håndtaket ditt."),
+            "Velg en unik @username for å gjøre det enkelt for venner og familie å finne deg!\n\nÅ ha et Lumex-brukernavn oppdaterer brukergrensesnittet globalt for å gjenspeile det nye håndtaket ditt."),
         "usernameInvalid":
             MessageLookupByLibrary.simpleMessage("Ugyldig brukernavn"),
         "usernameUnavailable":
             MessageLookupByLibrary.simpleMessage("Brukernavn utilgjengelig"),
         "usernameWarning": MessageLookupByLibrary.simpleMessage(
-            "Nautilus brukernavn er en sentralisert tjeneste levert av nano.to"),
+            "Lumex brukernavn er en sentralisert tjeneste levert av nano.to"),
         "using": MessageLookupByLibrary.simpleMessage("Ved hjelp av"),
         "viewDetails": MessageLookupByLibrary.simpleMessage("Vis detaljer"),
         "viewPaymentHistory":
@@ -1054,11 +1054,11 @@ class MessageLookup extends MessageLookupByLibrary {
         "weekAgo": MessageLookupByLibrary.simpleMessage("En uke siden"),
         "weekly": MessageLookupByLibrary.simpleMessage("Ukentlig"),
         "welcomeText": MessageLookupByLibrary.simpleMessage(
-            "Velkommen til Nautilus. For å starte, kan du opprette en ny lommebok eller importere en eksisterende."),
+            "Velkommen til Lumex. For å starte, kan du opprette en ny lommebok eller importere en eksisterende."),
         "welcomeTextLogin": MessageLookupByLibrary.simpleMessage(
-            "Velkommen til Nautilus. Velg et alternativ for å komme i gang eller velg et tema ved å bruke ikonet nedenfor."),
+            "Velkommen til Lumex. Velg et alternativ for å komme i gang eller velg et tema ved å bruke ikonet nedenfor."),
         "welcomeTextUpdated": MessageLookupByLibrary.simpleMessage(
-            "Velkommen til Nautilus. For å starte, lag en ny lommebok eller importer en eksisterende."),
+            "Velkommen til Lumex. For å starte, lag en ny lommebok eller importer en eksisterende."),
         "welcomeTextWithoutLogin": MessageLookupByLibrary.simpleMessage(
             "For å starte, opprett en ny lommebok eller importer en eksisterende."),
         "withAddress": MessageLookupByLibrary.simpleMessage("Med adresse"),

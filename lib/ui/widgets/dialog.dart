@@ -8,22 +8,22 @@ import 'package:logger/logger.dart';
 // ignore: depend_on_referenced_packages
 import 'package:markdown/markdown.dart' as md;
 import 'package:url_launcher/url_launcher.dart';
-import 'package:wallet_flutter/app_icons.dart';
-import 'package:wallet_flutter/appstate_container.dart';
-import 'package:wallet_flutter/generated/l10n.dart';
-import 'package:wallet_flutter/localize.dart';
-import 'package:wallet_flutter/model/db/appdb.dart';
-import 'package:wallet_flutter/model/db/subscription.dart';
-import 'package:wallet_flutter/network/subscription_service.dart';
-import 'package:wallet_flutter/service_locator.dart';
-import 'package:wallet_flutter/styles.dart';
-import 'package:wallet_flutter/ui/subs/sub_confirm_sheet.dart';
-import 'package:wallet_flutter/ui/util/formatters.dart';
-import 'package:wallet_flutter/ui/util/routes.dart';
-import 'package:wallet_flutter/ui/widgets/app_simpledialog.dart';
-import 'package:wallet_flutter/ui/widgets/draggable_scrollbar.dart';
-import 'package:wallet_flutter/ui/widgets/funding_messages_sheet.dart';
-import 'package:wallet_flutter/ui/widgets/sheet_util.dart';
+import 'package:velocity/app_icons.dart';
+import 'package:velocity/appstate_container.dart';
+import 'package:velocity/generated/l10n.dart';
+import 'package:velocity/localize.dart';
+import 'package:velocity/model/db/appdb.dart';
+import 'package:velocity/model/db/subscription.dart';
+import 'package:velocity/network/subscription_service.dart';
+import 'package:velocity/service_locator.dart';
+import 'package:velocity/styles.dart';
+import 'package:velocity/ui/subs/sub_confirm_sheet.dart';
+import 'package:velocity/ui/util/formatters.dart';
+import 'package:velocity/ui/util/routes.dart';
+import 'package:velocity/ui/widgets/app_simpledialog.dart';
+import 'package:velocity/ui/widgets/draggable_scrollbar.dart';
+import 'package:velocity/ui/widgets/funding_messages_sheet.dart';
+import 'package:velocity/ui/widgets/sheet_util.dart';
 
 class AppDialogs {
   static void showConfirmDialog(

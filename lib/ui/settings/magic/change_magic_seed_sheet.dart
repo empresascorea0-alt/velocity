@@ -6,16 +6,16 @@
 // import 'package:flutter_nano_ffi/flutter_nano_ffi.dart';
 // import 'package:keyboard_avoider/keyboard_avoider.dart';
 // import 'package:magic_sdk/magic_sdk.dart';
-// import 'package:wallet_flutter/appstate_container.dart';
-// import 'package:wallet_flutter/dimens.dart';
-// import 'package:wallet_flutter/generated/l10n.dart';
-// import 'package:wallet_flutter/styles.dart';
-// import 'package:wallet_flutter/ui/util/handlebars.dart';
-// import 'package:wallet_flutter/ui/widgets/app_text_field.dart';
-// import 'package:wallet_flutter/ui/widgets/buttons.dart';
-// import 'package:wallet_flutter/ui/widgets/tap_outside_unfocus.dart';
-// import 'package:wallet_flutter/util/blake2b.dart';
-// import 'package:wallet_flutter/util/caseconverter.dart';
+// import 'package:velocity/appstate_container.dart';
+// import 'package:velocity/dimens.dart';
+// import 'package:velocity/generated/l10n.dart';
+// import 'package:velocity/styles.dart';
+// import 'package:velocity/ui/util/handlebars.dart';
+// import 'package:velocity/ui/widgets/app_text_field.dart';
+// import 'package:velocity/ui/widgets/buttons.dart';
+// import 'package:velocity/ui/widgets/tap_outside_unfocus.dart';
+// import 'package:velocity/util/blake2b.dart';
+// import 'package:velocity/util/caseconverter.dart';
 
 // class ChangeMagicSeedSheet extends StatefulWidget {
 //   @override

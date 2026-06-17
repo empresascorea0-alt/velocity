@@ -38,9 +38,9 @@ class DefaultFirebaseOptions {
     apiKey: dotenv.env["FIREBASE_WEB_API_KEY"]!,
     appId: '1:871480363204:web:72ea28aeacd116e4492191',
     messagingSenderId: '871480363204',
-    projectId: 'nautilus-a7345',
-    authDomain: 'nautilus-a7345.firebaseapp.com',
-    storageBucket: 'nautilus-a7345.appspot.com',
+    projectId: 'lumex-a7345',
+    authDomain: 'lumex-a7345.firebaseapp.com',
+    storageBucket: 'lumex-a7345.appspot.com',
     measurementId: 'G-K2BCTV2J80',
   );
 
@@ -48,27 +48,27 @@ class DefaultFirebaseOptions {
     apiKey: dotenv.env["FIREBASE_ANDROID_API_KEY"]!,
     appId: '1:871480363204:android:9e4022cb87c00946492191',
     messagingSenderId: '871480363204',
-    projectId: 'nautilus-a7345',
-    storageBucket: 'nautilus-a7345.appspot.com',
+    projectId: 'lumex-a7345',
+    storageBucket: 'lumex-a7345.appspot.com',
   );
 
   static FirebaseOptions ios = FirebaseOptions(
     apiKey: dotenv.env["FIREBASE_IOS_API_KEY"]!,
     appId: '1:871480363204:ios:95b9c6a998425703492191',
     messagingSenderId: '871480363204',
-    projectId: 'nautilus-a7345',
-    storageBucket: 'nautilus-a7345.appspot.com',
+    projectId: 'lumex-a7345',
+    storageBucket: 'lumex-a7345.appspot.com',
     iosClientId: '871480363204-bd20vmid7gk577hkioua0124o9g1ass5.apps.googleusercontent.com',
-    iosBundleId: 'co.perish.nautilus',
+    iosBundleId: 'co.perish.lumex',
   );
 
   static FirebaseOptions macos = FirebaseOptions(
     apiKey: dotenv.env["FIREBASE_MACOS_API_KEY"]!,
     appId: '1:871480363204:ios:91fb1984a3dbbda2492191',
     messagingSenderId: '871480363204',
-    projectId: 'nautilus-a7345',
-    storageBucket: 'nautilus-a7345.appspot.com',
+    projectId: 'lumex-a7345',
+    storageBucket: 'lumex-a7345.appspot.com',
     iosClientId: '871480363204-2de9id8nj3eod5pip1g3l9erqvbjgahm.apps.googleusercontent.com',
-    iosBundleId: 'co.perish.nautiluswallet',
+    iosBundleId: 'co.perish.lumexwallet',
   );
 }

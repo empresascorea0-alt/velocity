@@ -8,17 +8,17 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter_branch_sdk/flutter_branch_sdk.dart';
 import 'package:http/http.dart' as http;
 import 'package:nanoutil/nanoutil.dart';
-import 'package:wallet_flutter/appstate_container.dart';
-import 'package:wallet_flutter/model/db/appdb.dart';
-import 'package:wallet_flutter/model/db/txdata.dart';
-import 'package:wallet_flutter/network/metadata_service.dart';
-import 'package:wallet_flutter/network/model/record_types.dart';
-import 'package:wallet_flutter/network/model/status_types.dart';
-import 'package:wallet_flutter/service_locator.dart';
-import 'package:wallet_flutter/ui/gift/gift_complete_sheet.dart';
-import 'package:wallet_flutter/ui/util/routes.dart';
-import 'package:wallet_flutter/ui/widgets/sheet_util.dart';
-import 'package:wallet_flutter/util/numberutil.dart';
+import 'package:velocity/appstate_container.dart';
+import 'package:velocity/model/db/appdb.dart';
+import 'package:velocity/model/db/txdata.dart';
+import 'package:velocity/network/metadata_service.dart';
+import 'package:velocity/network/model/record_types.dart';
+import 'package:velocity/network/model/status_types.dart';
+import 'package:velocity/service_locator.dart';
+import 'package:velocity/ui/gift/gift_complete_sheet.dart';
+import 'package:velocity/ui/util/routes.dart';
+import 'package:velocity/ui/widgets/sheet_util.dart';
+import 'package:velocity/util/numberutil.dart';
 import 'package:package_info_plus/package_info_plus.dart';
 import 'package:uuid/uuid.dart';
 
@@ -42,18 +42,18 @@ class GiftCards {
 
     final BigInt amountBigInt = BigInt.parse(amountRaw ?? "0");
     if (amountBigInt > BigInt.parse("1000000000000000000000000000000")) {
-      // more than 1 NANO:
+      // more than 1 Lumex:
       final BigInt rawPerNano = BigInt.from(10).pow(30);
       final String formattedAmount = NanoAmounts.getRawAsUsableString(amountRaw, rawPerNano);
-      giftDescription = "Someone sent you $formattedAmount NANO! Get the app to open this gift card!";
+      giftDescription = "Someone sent you $formattedAmount Lumex! Get the app to open this gift card!";
     }
 
     final BranchUniversalObject buo = BranchUniversalObject(
         canonicalIdentifier: 'flutter/branch/giftcard/$paperWalletAccount',
         //canonicalUrl: '',
-        title: "Nautilus Wallet",
+        title: "Lumex Wallet",
         contentDescription: giftDescription,
-        keywords: ['Nautilus', "Gift Card"],
+        keywords: ['Lumex', "Gift Card"],
         publiclyIndex: false,
         locallyIndex: true,
         contentMetadata: BranchContentMetaData()
@@ -68,7 +68,7 @@ class GiftCards {
 
     final BranchLinkProperties lp = BranchLinkProperties(
         //alias: 'flutterplugin', //define link url,
-        channel: 'nautilusapp',
+        channel: 'lumexapp',
         feature: 'gift',
         stage: 'new share');
 
@@ -206,9 +206,9 @@ class GiftCards {
   //   // final BranchUniversalObject buo = BranchUniversalObject(
   //   //     canonicalIdentifier: 'flutter/branch',
   //   //     //canonicalUrl: '',
-  //   //     title: 'Nautilus Gift Card',
+  //   //     title: 'Lumex Gift Card',
   //   //     contentDescription: 'Get the app to open this gift card!',
-  //   //     keywords: ['Nautilus', "Gift Card"],
+  //   //     keywords: ['Lumex', "Gift Card"],
   //   //     publiclyIndex: true,
   //   //     locallyIndex: true,
   //   //     contentMetadata: BranchContentMetaData()
@@ -222,7 +222,7 @@ class GiftCards {
 
   //   // final BranchLinkProperties lp = BranchLinkProperties(
   //   //     //alias: 'flutterplugin', //define link url,
-  //   //     channel: 'nautilusapp',
+  //   //     channel: 'lumexapp',
   //   //     feature: 'gift',
   //   //     stage: 'new share');
 

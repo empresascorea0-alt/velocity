@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:wallet_flutter/generated/l10n.dart';
-import 'package:wallet_flutter/model/setting_item.dart';
+import 'package:velocity/generated/l10n.dart';
+import 'package:velocity/model/setting_item.dart';
 
 enum NyaniconOptions { ON, OFF }
 

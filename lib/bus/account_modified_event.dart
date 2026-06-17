@@ -1,5 +1,5 @@
 import 'package:event_taxi/event_taxi.dart';
-import 'package:wallet_flutter/model/db/account.dart';
+import 'package:velocity/model/db/account.dart';
 
 class AccountModifiedEvent implements Event {
   AccountModifiedEvent({this.account, this.deleted = false, this.created = false});

@@ -388,7 +388,7 @@ var compute_default = "struct UBO{blockhash:array<vec4<u32>,2>,random:vec2<u32>,
       throw new Error("Query reported result but nonce value not found");
     }
     /**
-    * Finds a nonce that satisfies the Nano proof-of-work requirements.
+    * Finds a nonce that satisfies the Lumex proof-of-work requirements.
     *
     * @param {string} hash - Hexadecimal hash of previous block, or public key for new accounts
     * @param {number} [threshold=0xfffffff8] - Difficulty of proof-of-work calculation
@@ -421,7 +421,7 @@ var compute_default = "struct UBO{blockhash:array<vec4<u32>,2>,random:vec2<u32>,
       return nonce;
     }
     /**
-    * Validates that a nonce satisfies Nano proof-of-work requirements.
+    * Validates that a nonce satisfies Lumex proof-of-work requirements.
     *
     * @param {string} work - Hexadecimal proof-of-work value to validate
     * @param {string} hash - Hexadecimal hash of previous block, or public key for new accounts
@@ -584,7 +584,7 @@ var compute_default = "struct UBO{blockhash:array<vec4<u32>,2>,random:vec2<u32>,
       return data;
     }
     /**
-    * Finds a nonce that satisfies the Nano proof-of-work requirements.
+    * Finds a nonce that satisfies the Lumex proof-of-work requirements.
     *
     * @param {string} hash - Hexadecimal hash of previous block, or public key for new accounts
     * @param {number} [threshold=0xfffffff8] - Difficulty of proof-of-work calculation
@@ -619,7 +619,7 @@ var compute_default = "struct UBO{blockhash:array<vec4<u32>,2>,random:vec2<u32>,
       return nonce.toString(16).padStart(16, "0");
     }
     /**
-    * Validates that a nonce satisfies Nano proof-of-work requirements.
+    * Validates that a nonce satisfies Lumex proof-of-work requirements.
     *
     * @param {string} work - Hexadecimal proof-of-work value to validate
     * @param {string} hash - Hexadecimal hash of previous block, or public key for new accounts

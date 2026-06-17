@@ -5,24 +5,24 @@ import 'package:flutter_nano_ffi/flutter_nano_ffi.dart';
 import 'package:keyboard_avoider/keyboard_avoider.dart';
 import 'package:logger/logger.dart';
 import 'package:nanoutil/nanoutil.dart';
-import 'package:wallet_flutter/app_icons.dart';
-import 'package:wallet_flutter/appstate_container.dart';
-import 'package:wallet_flutter/dimens.dart';
-import 'package:wallet_flutter/generated/l10n.dart';
-import 'package:wallet_flutter/model/db/appdb.dart';
-import 'package:wallet_flutter/model/vault.dart';
-import 'package:wallet_flutter/network/auth_service.dart';
-import 'package:wallet_flutter/service_locator.dart';
-import 'package:wallet_flutter/styles.dart';
-import 'package:wallet_flutter/ui/util/formatters.dart';
-import 'package:wallet_flutter/ui/util/ui_util.dart';
-import 'package:wallet_flutter/ui/widgets/app_text_field.dart';
-import 'package:wallet_flutter/ui/widgets/buttons.dart';
-import 'package:wallet_flutter/ui/widgets/dialog.dart';
-import 'package:wallet_flutter/ui/widgets/tap_outside_unfocus.dart';
-import 'package:wallet_flutter/util/nanoutil.dart';
-import 'package:wallet_flutter/util/sharedprefsutil.dart';
-import 'package:wallet_flutter/util/user_data_util.dart';
+import 'package:velocity/app_icons.dart';
+import 'package:velocity/appstate_container.dart';
+import 'package:velocity/dimens.dart';
+import 'package:velocity/generated/l10n.dart';
+import 'package:velocity/model/db/appdb.dart';
+import 'package:velocity/model/vault.dart';
+import 'package:velocity/network/auth_service.dart';
+import 'package:velocity/service_locator.dart';
+import 'package:velocity/styles.dart';
+import 'package:velocity/ui/util/formatters.dart';
+import 'package:velocity/ui/util/ui_util.dart';
+import 'package:velocity/ui/widgets/app_text_field.dart';
+import 'package:velocity/ui/widgets/buttons.dart';
+import 'package:velocity/ui/widgets/dialog.dart';
+import 'package:velocity/ui/widgets/tap_outside_unfocus.dart';
+import 'package:velocity/util/nanoutil.dart';
+import 'package:velocity/util/sharedprefsutil.dart';
+import 'package:velocity/util/user_data_util.dart';
 import 'package:quiver/strings.dart';
 
 class IntroImportSeedPage extends StatefulWidget {
@@ -45,10 +45,10 @@ class IntroImportSeedState extends State<IntroImportSeedPage> {
   final TextEditingController _mnemonicController = TextEditingController();
 
   // bool _seedMode = false; // False if restoring phrase, true if restoring seed
-  // String _seedMode = "nano_phrase"; // "nano_phrase" if restoring phrase, "nano_seed" if restoring seed
+  // String _seedMode = "lumex_phrase"; // "lumex_phrase" if restoring phrase, "lumex_seed" if restoring seed
   // "bip39_phrase" if restoring bip39 phase "bip39_seed" if restoring bip39 seed
 
-  // String _fullMode = "nano_phrase";
+  // String _fullMode = "lumex_phrase";
   // String _fullMode = "bip39_phrase";
   bool _seedMode = false;
   // bool _bip39Mode = true;

@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:wallet_flutter/appstate_container.dart';
-import 'package:wallet_flutter/dimens.dart';
-import 'package:wallet_flutter/ui/widgets/buttons.dart';
-import 'package:wallet_flutter/model/natricon_option.dart';
-import 'package:wallet_flutter/util/sharedprefsutil.dart';
-import 'package:wallet_flutter/service_locator.dart';
+import 'package:velocity/appstate_container.dart';
+import 'package:velocity/dimens.dart';
+import 'package:velocity/ui/widgets/buttons.dart';
+import 'package:velocity/model/natricon_option.dart';
+import 'package:velocity/util/sharedprefsutil.dart';
+import 'package:velocity/service_locator.dart';
 
 class AvatarPage extends StatefulWidget {
   @override
@@ -98,7 +98,7 @@ class _AvatarPageState extends State<AvatarPage> with SingleTickerProviderStateM
                                         mainAxisSize: MainAxisSize.min,
                                         mainAxisAlignment: MainAxisAlignment.end,
                                         children: <Widget>[
-                                          // If balance if below 0.0123457 Nano, don't display this button
+                                          // If balance if below 0.0123457 Lumex, don't display this button
                                           if (hasEnoughFunds)
                                             Row(
                                               children: <Widget>[

@@ -493,7 +493,7 @@
   "connectingHeader": "Conectando",
   "@connectingHeader": {
     "type": "text",
-    "description": "A header to let the user now that Nautilus is currently connecting to (or loading) live chat."
+    "description": "A header to let the user now that Lumex is currently connecting to (or loading) live chat."
   },
   "connectionWarning": "no se puede conectar",
   "@connectionWarning": {
@@ -697,7 +697,7 @@
     "type": "text",
     "description": "currency_mode_header"
   },
-  "currencyModeInfo": "Elige en qué unidad quieres mostrar los importes.\n1 nyano = 0.000001 NANO, o \n1.000.000 nyano = 1 NANO",
+  "currencyModeInfo": "Elige en qué unidad quieres mostrar los importes.\n1 nyano = 0.000001 Lumex, o \n1.000.000 nyano = 1 Lumex",
   "@currencyModeInfo": {
     "type": "text",
     "description": "currency_mode_info"
@@ -727,7 +727,7 @@
     "type": "text",
     "description": "Default account name"
   },
-  "defaultGiftMessage": "¡Echa un vistazo a Nautilus! Te envié algunos nano con este enlace:",
+  "defaultGiftMessage": "¡Echa un vistazo a Lumex! Te envié algunos nano con este enlace:",
   "@defaultGiftMessage": {
     "type": "text",
     "description": "default_gift_message"
@@ -957,7 +957,7 @@
     "type": "text",
     "description": "example_card_from"
   },
-  "exampleCardIntro": "Bienvenido a Nautilus. Una vez que envíe o reciba NANO, las transacciones se verán así:",
+  "exampleCardIntro": "Bienvenido a Lumex. Una vez que envíe o reciba Lumex, las transacciones se verán así:",
   "@exampleCardIntro": {
     "type": "text",
     "description": "example_card_intro"
@@ -1047,7 +1047,7 @@
     "type": "text",
     "description": "exchange_currency"
   },
-  "exchangeNano": "Intercambio NANO",
+  "exchangeNano": "Intercambio Lumex",
   "@exchangeNano": {
     "type": "text",
     "description": "exchange_nano"
@@ -1082,12 +1082,12 @@
     "type": "text",
     "description": "failed_message"
   },
-  "fallbackHeader": "Nautilus desconectado",
+  "fallbackHeader": "Lumex desconectado",
   "@fallbackHeader": {
     "type": "text",
     "description": "fallback_connected"
   },
-  "fallbackInfo": "Los servidores de Nautilus parecen estar desconectados, el envío y la recepción (sin notas) deberían seguir funcionando, pero es posible que las solicitudes de pago no se reciban\n\n Vuelve más tarde o reinicia la aplicación para volver a intentarlo",
+  "fallbackInfo": "Los servidores de Lumex parecen estar desconectados, el envío y la recepción (sin notas) deberían seguir funcionando, pero es posible que las solicitudes de pago no se reciban\n\n Vuelve más tarde o reinicia la aplicación para volver a intentarlo",
   "@fallbackInfo": {
     "type": "text",
     "description": "fallback_info"
@@ -1191,7 +1191,7 @@
     "type": "text",
     "description": "get_currency"
   },
-  "getNano": "Obtén NANO",
+  "getNano": "Obtén Lumex",
   "@getNano": {
     "type": "text",
     "description": "get_nano"
@@ -1231,7 +1231,7 @@
     "type": "text",
     "description": "gift_from"
   },
-  "giftInfo": "¡Carga una tarjeta regalo digital con NANO! ¡Establece una cantidad y un mensaje opcional para que el destinatario lo vea cuando lo abra!\n\nUna vez creado, recibirá un enlace que puede enviar a cualquier persona, que cuando se abra distribuirá automáticamente los fondos al destinatario después de instalar Nautilus.\n\nSi el destinatario ya es usuario de Nautilus, se le solicitará que transfiera los fondos a su cuenta al abrir el enlace.\n\nPuede establecer un monto dividido para distribuir desde la tarjeta de regalo en lugar del saldo completo.",
+  "giftInfo": "¡Carga una tarjeta regalo digital con Lumex! ¡Establece una cantidad y un mensaje opcional para que el destinatario lo vea cuando lo abra!\n\nUna vez creado, recibirá un enlace que puede enviar a cualquier persona, que cuando se abra distribuirá automáticamente los fondos al destinatario después de instalar Lumex.\n\nSi el destinatario ya es usuario de Lumex, se le solicitará que transfiera los fondos a su cuenta al abrir el enlace.\n\nPuede establecer un monto dividido para distribuir desde la tarjeta de regalo en lugar del saldo completo.",
   "@giftInfo": {
     "type": "text",
     "description": "Description for gift card creation"
@@ -1356,12 +1356,12 @@
     "type": "text",
     "description": "import_gift_empty"
   },
-  "importGiftIntro": "Parece que hizo clic en un enlace que contiene algunos NANO, para recibir estos fondos solo necesitamos que termine de configurar su billetera.",
+  "importGiftIntro": "Parece que hizo clic en un enlace que contiene algunos Lumex, para recibir estos fondos solo necesitamos que termine de configurar su billetera.",
   "@importGiftIntro": {
     "type": "text",
     "description": "import_gift_intro"
   },
-  "importGiftv2": "El enlace en el que hizo clic contiene algo de NANO, ¿le gustaría importarlo a esta billetera?",
+  "importGiftv2": "El enlace en el que hizo clic contiene algo de Lumex, ¿le gustaría importarlo a esta billetera?",
   "@importGiftv2": {
     "type": "text",
     "description": "import_gift_v2"
@@ -1466,7 +1466,7 @@
     "type": "text",
     "description": "An error indicating a pin has been entered incorrectly"
   },
-  "iosFundingMessage": "Debido a pautas y restricciones de la App Store de iOS, no podemos vincularte a nuestra página de donaciones. Si deseas apoyar el proyecto, considera enviarlo a la dirección del nodo de Nautilus.",
+  "iosFundingMessage": "Debido a pautas y restricciones de la App Store de iOS, no podemos vincularte a nuestra página de donaciones. Si deseas apoyar el proyecto, considera enviarlo a la dirección del nodo de Lumex.",
   "@iosFundingMessage": {
     "type": "text",
     "description": "ios_funding_message"
@@ -1531,7 +1531,7 @@
     "type": "text",
     "description": "settings_logout_warning_title"
   },
-  "logoutDetail": "Cerrar la sesión eliminará su semilla, y todos los datos relacionados a Nautilus serán borrados de este dispositivo. Si no ha almacenado una copia de su semilla, nunca será capaz de volver a acceder a sus fondos.",
+  "logoutDetail": "Cerrar la sesión eliminará su semilla, y todos los datos relacionados a Lumex serán borrados de este dispositivo. Si no ha almacenado una copia de su semilla, nunca será capaz de volver a acceder a sus fondos.",
   "@logoutDetail": {
     "type": "text",
     "description": "settings_logout_alert_message"
@@ -1656,10 +1656,10 @@
     "type": "text",
     "description": "natricon_settings"
   },
-  "nautilusWallet": "Monedero Nautilus",
-  "@nautilusWallet": {
+  "lumexWallet": "Monedero Lumex",
+  "@lumexWallet": {
     "type": "text",
-    "description": "nautilus_wallet"
+    "description": "lumex_wallet"
   },
   "nearby": "Cercano",
   "@nearby": {
@@ -1676,7 +1676,7 @@
     "type": "text",
     "description": "verification_needed_header"
   },
-  "newAccountIntro": "Esta es su nueva cuenta. Una vez que reciba NANO, las transacciones se mostrarán así:",
+  "newAccountIntro": "Esta es su nueva cuenta. Una vez que reciba Lumex, las transacciones se mostrarán así:",
   "@newAccountIntro": {
     "type": "text",
     "description": "Alternate account intro card"
@@ -1746,7 +1746,7 @@
     "type": "text",
     "description": "no_thanks_app_button"
   },
-  "notificationBody": "Abra Nautilus para ver esta transacción.",
+  "notificationBody": "Abra Lumex para ver esta transacción.",
   "@notificationBody": {
     "type": "text",
     "description": "notification_body"
@@ -1891,10 +1891,10 @@
     "type": "text",
     "description": "An error indicating the password is incorrect"
   },
-  "passwordNoLongerRequiredToOpenParagraph": "Ya no necesitará una contraseña para abrir Nautilus.",
+  "passwordNoLongerRequiredToOpenParagraph": "Ya no necesitará una contraseña para abrir Lumex.",
   "@passwordNoLongerRequiredToOpenParagraph": {
     "type": "text",
-    "description": "An info paragraph that tells the user a password will no longer be needed to open Nautilus"
+    "description": "An info paragraph that tells the user a password will no longer be needed to open Velocity"
   },
   "passwordNumber": "La contraseña debe contener al menos 1 número",
   "@passwordNumber": {
@@ -1916,15 +1916,15 @@
     "type": "text",
     "description": "An error indicating the password is too short"
   },
-  "passwordWarning": "Esta contraseña será necesaria para abrir Nautilus.",
+  "passwordWarning": "Esta contraseña será necesaria para abrir Lumex.",
   "@passwordWarning": {
     "type": "text",
     "description": "A paragraph that warns the user to not lose their password."
   },
-  "passwordWillBeRequiredToOpenParagraph": "Esta contraseña será necesaria para abrir Nautilus.",
+  "passwordWillBeRequiredToOpenParagraph": "Esta contraseña será necesaria para abrir Lumex.",
   "@passwordWillBeRequiredToOpenParagraph": {
     "type": "text",
-    "description": "A paragraph that tells the users that the created password will be required to open Nautilus."
+    "description": "A paragraph that tells the users that the created password will be required to open Velocity."
   },
   "pastDue": "Atrasado",
   "@pastDue": {
@@ -2061,17 +2061,17 @@
     "type": "text",
     "description": "settings_privacy_policy"
   },
-  "promotionalLink": "NANO libre",
+  "promotionalLink": "Lumex libre",
   "@promotionalLink": {
     "type": "text",
     "description": "promo_Link"
   },
-  "proSubRequiredHeader": "Se requiere suscripción a Nautilus Pro",
+  "proSubRequiredHeader": "Se requiere suscripción a Velocity Pro",
   "@proSubRequiredHeader": {
     "type": "text",
     "description": "pro_sub_required_header"
   },
-  "proSubRequiredParagraph": "Por solo 1 NANO al mes, puede desbloquear todas las funciones de Nautilus Pro.",
+  "proSubRequiredParagraph": "Por solo 1 Lumex al mes, puede desbloquear todas las funciones de Velocity Pro.",
   "@proSubRequiredParagraph": {
     "type": "text",
     "description": "pro_sub_required_paragraph"
@@ -2081,7 +2081,7 @@
     "type": "text",
     "description": "purchase_currency"
   },
-  "purchaseNano": "Comprar Nano",
+  "purchaseNano": "Comprar Lumex",
   "@purchaseNano": {
     "type": "text",
     "description": "purchase_nano"
@@ -2286,7 +2286,7 @@
     "type": "text",
     "description": "requested_from"
   },
-  "requestError": "Error en la solicitud: Parece que este usuario no tiene Nautilus instalado o tiene las notificaciones deshabilitadas.",
+  "requestError": "Error en la solicitud: Parece que este usuario no tiene Lumex instalado o tiene las notificaciones deshabilitadas.",
   "@requestError": {
     "type": "text",
     "description": "request_generic_error"
@@ -2316,7 +2316,7 @@
     "type": "text",
     "description": "request_sent_again"
   },
-  "requestSheetInfo": "¡Solicite un pago, con mensajes cifrados de extremo a extremo!\n\nLas solicitudes de pago, las notas y los mensajes solo podrán ser recibidos por otros usuarios de nautilus, pero puede usarlos para su propio mantenimiento de registros incluso si el destinatario no usa nautilus.",
+  "requestSheetInfo": "¡Solicite un pago, con mensajes cifrados de extremo a extremo!\n\nLas solicitudes de pago, las notas y los mensajes solo podrán ser recibidos por otros usuarios de lumex, pero puede usarlos para su propio mantenimiento de registros incluso si el destinatario no usa lumex.",
   "@requestSheetInfo": {
     "type": "text",
     "description": "request_sheet_info"
@@ -2326,10 +2326,10 @@
     "type": "text",
     "description": "request_sheet_info_header"
   },
-  "requireAPasswordToOpenHeader": "¿Requerir de una contraseña para abrir Nautilus?",
+  "requireAPasswordToOpenHeader": "¿Requerir de una contraseña para abrir Lumex?",
   "@requireAPasswordToOpenHeader": {
     "type": "text",
-    "description": "A paragraph that asks the users if they would like a password to be required to open Nautilus."
+    "description": "A paragraph that asks the users if they would like a password to be required to open Velocity."
   },
   "requireCaptcha": "Requerir CAPTCHA para reclamar la tarjeta de regalo",
   "@requireCaptcha": {
@@ -2376,7 +2376,7 @@
     "type": "text",
     "description": "dialog_save"
   },
-  "scanInstructions": "Escanear el código QR\n de una billetera de Nano.",
+  "scanInstructions": "Escanear el código QR\n de una billetera de Lumex.",
   "@scanInstructions": {
     "type": "text",
     "description": "scan_send_instruction_label"
@@ -2511,7 +2511,7 @@
     "type": "text",
     "description": "send_sending"
   },
-  "sendMemoError": "Envío de memorándum con transacción fallida, puede que no sea usuario de Nautilus.",
+  "sendMemoError": "Envío de memorándum con transacción fallida, puede que no sea usuario de Lumex.",
   "@sendMemoError": {
     "type": "text",
     "description": "send_memo_error"
@@ -2531,7 +2531,7 @@
     "type": "text",
     "description": "split_bill_send_requests"
   },
-  "sendSheetInfo": "¡Envíe o solicite un pago, con mensajes cifrados de extremo a extremo!\n\nLas solicitudes de pago, notas y mensajes solo podrán ser recibidos por otros usuarios de nautilus.\n\nNo necesita tener un nombre de usuario para enviar o recibir solicitudes de pago, y puede usarlos para llevar su propio registro incluso si no utilizan nautilus.",
+  "sendSheetInfo": "¡Envíe o solicite un pago, con mensajes cifrados de extremo a extremo!\n\nLas solicitudes de pago, notas y mensajes solo podrán ser recibidos por otros usuarios de lumex.\n\nNo necesita tener un nombre de usuario para enviar o recibir solicitudes de pago, y puede usarlos para llevar su propio registro incluso si no utilizan lumex.",
   "@sendSheetInfo": {
     "type": "text",
     "description": "send_sheet_info"
@@ -2624,14 +2624,14 @@
   "share": "Cuota",
   "@share": {
     "type": "text",
-    "description": "nautilus_share"
+    "description": "lumex_share"
   },
   "shareApp": "Compartir %1",
   "@shareApp": {
     "type": "text",
     "description": "settings_share"
   },
-  "shareAppText": "¡Echa un vistazo a %1! ¡Una billetera móvil NANO de primer nivel!",
+  "shareAppText": "¡Echa un vistazo a %1! ¡Una billetera móvil Lumex de primer nivel!",
   "@shareAppText": {
     "type": "text",
     "description": "share_extra"
@@ -2646,13 +2646,13 @@
     "type": "text",
     "description": "share_message"
   },
-  "shareNautilus": "Compartir Nautilus",
-  "@shareNautilus": {
+  "shareLumex": "Compartir Lumex",
+  "@shareLumex": {
     "type": "text",
     "description": "settings_share"
   },
-  "shareNautilusText": "¡Eche un vistazo a Nautilus, la billetera oficial de Nano para Android!",
-  "@shareNautilusText": {
+  "shareLumexText": "¡Eche un vistazo a Lumex, la billetera oficial de Lumex para Android!",
+  "@shareLumexText": {
     "type": "text",
     "description": "share_extra"
   },
@@ -2751,7 +2751,7 @@
     "type": "text",
     "description": "spend_currency"
   },
-  "spendNano": "Gasta NANO",
+  "spendNano": "Gasta Lumex",
   "@spendNano": {
     "type": "text",
     "description": "spend_nano"
@@ -2846,7 +2846,7 @@
     "type": "text",
     "description": "swap_xmr_header"
   },
-  "swapXMRInfo": "Monero es una criptomoneda centrada en la privacidad que hace que sea muy difícil o incluso imposible rastrear las transacciones. Mientras tanto, NANO es una criptomoneda enfocada en pagos que es rápida y gratuita. ¡Juntos proporcionan algunos de los aspectos más útiles de las criptomonedas!\n\n¡Use esta página para cambiar fácilmente su NANO por XMR!",
+  "swapXMRInfo": "Monero es una criptomoneda centrada en la privacidad que hace que sea muy difícil o incluso imposible rastrear las transacciones. Mientras tanto, Lumex es una criptomoneda enfocada en pagos que es rápida y gratuita. ¡Juntos proporcionan algunos de los aspectos más útiles de las criptomonedas!\n\n¡Use esta página para cambiar fácilmente su Lumex por XMR!",
   "@swapXMRInfo": {
     "type": "text",
     "description": "swap_xmr_header"
@@ -2946,7 +2946,7 @@
     "type": "text",
     "description": "transfer_close_text"
   },
-  "transferComplete": "%1 NANO se han transferido con éxito a su billetera de Nautilus.",
+  "transferComplete": "%1 Lumex se han transferido con éxito a su billetera de Lumex.",
   "@transferComplete": {
     "type": "text",
     "description": "transfer_complete_text"
@@ -2976,12 +2976,12 @@
     "type": "text",
     "description": "transfer_header"
   },
-  "transferIntro": "Este proceso transferirá los fondos de una billetera de papel a su billetera en Nautilus.\n\nPulse el botón \"%1\"  para empezar.",
+  "transferIntro": "Este proceso transferirá los fondos de una billetera de papel a su billetera en Lumex.\n\nPulse el botón \"%1\"  para empezar.",
   "@transferIntro": {
     "type": "text",
     "description": "transfer_intro"
   },
-  "transferIntroShort": "Este proceso transferirá los fondos de un monedero de papel a tu monedero Nautilus.",
+  "transferIntroShort": "Este proceso transferirá los fondos de un monedero de papel a tu monedero Lumex.",
   "@transferIntroShort": {
     "type": "text",
     "description": "transfer_intro_short"
@@ -2996,7 +2996,7 @@
     "type": "text",
     "description": "transfer_hint"
   },
-  "transferNoFunds": "Esta semilla no contiene ningún NANO.",
+  "transferNoFunds": "Esta semilla no contiene ningún Lumex.",
   "@transferNoFunds": {
     "type": "text",
     "description": "transfer_no_funds_toast"
@@ -3006,7 +3006,7 @@
     "type": "text",
     "description": "transfer_qr_scan_error"
   },
-  "transferQrScanHint": "Escanear una semilla \nde NANO o clave privada",
+  "transferQrScanHint": "Escanear una semilla \nde Lumex o clave privada",
   "@transferQrScanHint": {
     "type": "text",
     "description": "transfer_qr_scan_hint"
@@ -3031,12 +3031,12 @@
     "type": "text",
     "description": "unlocktxt"
   },
-  "unlockBiometrics": "Autentíquese para desbloquear Nautilus",
+  "unlockBiometrics": "Autentíquese para desbloquear Lumex",
   "@unlockBiometrics": {
     "type": "text",
     "description": "unlock_bio"
   },
-  "unlockPin": "Introduzca el código PIN para desbloquear Nautilus",
+  "unlockPin": "Introduzca el código PIN para desbloquear Lumex",
   "@unlockPin": {
     "type": "text",
     "description": "unlock_pin"
@@ -3096,15 +3096,15 @@
     "type": "text",
     "description": "use_currency"
   },
-  "useNano": "Usa NANO",
+  "useNano": "Usa Lumex",
   "@useNano": {
     "type": "text",
     "description": "use_nano"
   },
-  "useNautilusRep": "Use Nautilus Rep",
-  "@useNautilusRep": {
+  "useLumexRep": "Use Lumex Rep",
+  "@useLumexRep": {
     "type": "text",
-    "description": "use nautilus node as rep"
+    "description": "use lumex node as rep"
   },
   "userAlreadyAddedError": "¡Usuario ya agregado!",
   "@userAlreadyAddedError": {
@@ -3131,7 +3131,7 @@
     "type": "text",
     "description": "username_unknown_error"
   },
-  "usernameInfo": "¡Elige una @username única para que tus amigos y familiares te encuentren fácilmente!\n\nTener un nombre de usuario de Nautilus actualiza la IU de forma global para reflejar tu nuevo nombre de usuario.",
+  "usernameInfo": "¡Elige una @username única para que tus amigos y familiares te encuentren fácilmente!\n\nTener un nombre de usuario de Lumex actualiza la IU de forma global para reflejar tu nuevo nombre de usuario.",
   "@usernameInfo": {
     "type": "text",
     "description": "Description for username registration"
@@ -3146,7 +3146,7 @@
     "type": "text",
     "description": "username_unavailable"
   },
-  "usernameWarning": "Los nombres de usuario de Nautilus son un servicio centralizado proporcionado por Nano.to",
+  "usernameWarning": "Los nombres de usuario de Lumex son un servicio centralizado proporcionado por Lumex.to",
   "@usernameWarning": {
     "type": "text",
     "description": "Username centralization warning"
@@ -3211,17 +3211,17 @@
     "type": "text",
     "description": "frequency_weekly"
   },
-  "welcomeText": "Bienvenido a Nautilus. Para continuar, crea una billetera nueva o importa una ya existente.",
+  "welcomeText": "Bienvenido a Lumex. Para continuar, crea una billetera nueva o importa una ya existente.",
   "@welcomeText": {
     "type": "text",
     "description": "intro_welcome_title"
   },
-  "welcomeTextLogin": "Bienvenido a Nautilus. Elija una opción para comenzar o elija un tema usando el ícono a continuación.",
+  "welcomeTextLogin": "Bienvenido a Lumex. Elija una opción para comenzar o elija un tema usando el ícono a continuación.",
   "@welcomeTextLogin": {
     "type": "text",
     "description": "intro_welcome_login"
   },
-  "welcomeTextUpdated": "Bienvenido a Nautilus. Para comenzar, cree una nueva billetera o importe una existente.",
+  "welcomeTextUpdated": "Bienvenido a Lumex. Para comenzar, cree una nueva billetera o importe una existente.",
   "@welcomeTextUpdated": {
     "type": "text",
     "description": "intro_welcome_title"

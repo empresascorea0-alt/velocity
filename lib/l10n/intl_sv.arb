@@ -493,7 +493,7 @@
   "connectingHeader": "Ansluter",
   "@connectingHeader": {
     "type": "text",
-    "description": "A header to let the user now that Nautilus is currently connecting to (or loading) live chat."
+    "description": "A header to let the user now that Lumex is currently connecting to (or loading) live chat."
   },
   "connectionWarning": "Kan inte ansluta",
   "@connectionWarning": {
@@ -697,7 +697,7 @@
     "type": "text",
     "description": "currency_mode_header"
   },
-  "currencyModeInfo": "Välj vilken enhet som ska visas i.\n1 nyano = 0,000001 NANO, eller \n1,000,000 nyano = 1 NANO",
+  "currencyModeInfo": "Välj vilken enhet som ska visas i.\n1 nyano = 0,000001 Lumex, eller \n1,000,000 nyano = 1 Lumex",
   "@currencyModeInfo": {
     "type": "text",
     "description": "currency_mode_info"
@@ -727,7 +727,7 @@
     "type": "text",
     "description": "Default account name"
   },
-  "defaultGiftMessage": "Kolla in Nautilus! Jag skickade lite nano till dig med denna länk:",
+  "defaultGiftMessage": "Kolla in Lumex! Jag skickade lite nano till dig med denna länk:",
   "@defaultGiftMessage": {
     "type": "text",
     "description": "default_gift_message"
@@ -957,7 +957,7 @@
     "type": "text",
     "description": "example_card_from"
   },
-  "exampleCardIntro": "Välkommen till Nautilus. Så snart du tar emot NANO, visas transaktionerna på detta vis",
+  "exampleCardIntro": "Välkommen till Lumex. Så snart du tar emot Lumex, visas transaktionerna på detta vis",
   "@exampleCardIntro": {
     "type": "text",
     "description": "example_card_intro"
@@ -1047,7 +1047,7 @@
     "type": "text",
     "description": "exchange_currency"
   },
-  "exchangeNano": "Byt NANO",
+  "exchangeNano": "Byt Lumex",
   "@exchangeNano": {
     "type": "text",
     "description": "exchange_nano"
@@ -1082,12 +1082,12 @@
     "type": "text",
     "description": "failed_message"
   },
-  "fallbackHeader": "Nautilus frånkopplad",
+  "fallbackHeader": "Lumex frånkopplad",
   "@fallbackHeader": {
     "type": "text",
     "description": "fallback_connected"
   },
-  "fallbackInfo": "Nautilus-servrar verkar vara frånkopplade, skicka och ta emot (utan anteckningar) bör fortfarande vara i drift men betalningsförfrågningar kanske inte går igenom\n\n Kom tillbaka senare eller starta om appen för att försöka igen",
+  "fallbackInfo": "Lumex-servrar verkar vara frånkopplade, skicka och ta emot (utan anteckningar) bör fortfarande vara i drift men betalningsförfrågningar kanske inte går igenom\n\n Kom tillbaka senare eller starta om appen för att försöka igen",
   "@fallbackInfo": {
     "type": "text",
     "description": "fallback_info"
@@ -1191,7 +1191,7 @@
     "type": "text",
     "description": "get_currency"
   },
-  "getNano": "Skaffa NANO",
+  "getNano": "Skaffa Lumex",
   "@getNano": {
     "type": "text",
     "description": "get_nano"
@@ -1231,7 +1231,7 @@
     "type": "text",
     "description": "gift_from"
   },
-  "giftInfo": "Ladda ett digitalt presentkort med NANO! Ange ett belopp, och ett valfritt meddelande för mottagaren att se när de öppnar det!\n\nNär du väl har skapat får du en länk som du kan skicka till vem som helst, som när den öppnas automatiskt distribuerar pengarna till mottagaren efter installationen av Nautilus!\n\nOm mottagaren redan är en Nautilus-användare kommer de att få en uppmaning att överföra pengarna till sitt konto när länken öppnas",
+  "giftInfo": "Ladda ett digitalt presentkort med Lumex! Ange ett belopp, och ett valfritt meddelande för mottagaren att se när de öppnar det!\n\nNär du väl har skapat får du en länk som du kan skicka till vem som helst, som när den öppnas automatiskt distribuerar pengarna till mottagaren efter installationen av Lumex!\n\nOm mottagaren redan är en Lumex-användare kommer de att få en uppmaning att överföra pengarna till sitt konto när länken öppnas",
   "@giftInfo": {
     "type": "text",
     "description": "Description for gift card creation"
@@ -1356,12 +1356,12 @@
     "type": "text",
     "description": "import_gift_empty"
   },
-  "importGiftIntro": "Det verkar som att du klickade på en länk som innehåller lite NANO, för att kunna ta emot dessa pengar behöver vi bara för att du ska slutföra konfigureringen av din plånbok.",
+  "importGiftIntro": "Det verkar som att du klickade på en länk som innehåller lite Lumex, för att kunna ta emot dessa pengar behöver vi bara för att du ska slutföra konfigureringen av din plånbok.",
   "@importGiftIntro": {
     "type": "text",
     "description": "import_gift_intro"
   },
-  "importGiftv2": "Länken du klickade på innehåller lite NANO, vill du importera den till den här plånboken?",
+  "importGiftv2": "Länken du klickade på innehåller lite Lumex, vill du importera den till den här plånboken?",
   "@importGiftv2": {
     "type": "text",
     "description": "import_gift_v2"
@@ -1466,7 +1466,7 @@
     "type": "text",
     "description": "An error indicating a pin has been entered incorrectly"
   },
-  "iosFundingMessage": "På grund av iOS App Stores riktlinjer och begränsningar kan vi inte länka dig till vår donationssida. Om du vill stödja projektet, överväg att skicka till nautilusnodens adress.",
+  "iosFundingMessage": "På grund av iOS App Stores riktlinjer och begränsningar kan vi inte länka dig till vår donationssida. Om du vill stödja projektet, överväg att skicka till lumexnodens adress.",
   "@iosFundingMessage": {
     "type": "text",
     "description": "ios_funding_message"
@@ -1596,7 +1596,7 @@
     "type": "text",
     "description": "message_header"
   },
-  "minimumSend": "Minsta möjliga belopp att skicka är %1 NANO",
+  "minimumSend": "Minsta möjliga belopp att skicka är %1 Lumex",
   "@minimumSend": {
     "type": "text",
     "description": "send_minimum_error"
@@ -1656,10 +1656,10 @@
     "type": "text",
     "description": "natricon_settings"
   },
-  "nautilusWallet": "Nautilus plånbok",
-  "@nautilusWallet": {
+  "lumexWallet": "Lumex plånbok",
+  "@lumexWallet": {
     "type": "text",
-    "description": "nautilus_wallet"
+    "description": "lumex_wallet"
   },
   "nearby": "Närliggande",
   "@nearby": {
@@ -1676,7 +1676,7 @@
     "type": "text",
     "description": "verification_needed_header"
   },
-  "newAccountIntro": "Det här är ditt nya konto. Så snart du tar emot NANO, kommer transaktioner att se ut så här:",
+  "newAccountIntro": "Det här är ditt nya konto. Så snart du tar emot Lumex, kommer transaktioner att se ut så här:",
   "@newAccountIntro": {
     "type": "text",
     "description": "Alternate account intro card"
@@ -1746,7 +1746,7 @@
     "type": "text",
     "description": "no_thanks_app_button"
   },
-  "notificationBody": "Öppna Nautilus för att visa transaktion.",
+  "notificationBody": "Öppna Lumex för att visa transaktion.",
   "@notificationBody": {
     "type": "text",
     "description": "notification_body"
@@ -1891,10 +1891,10 @@
     "type": "text",
     "description": "An error indicating the password is incorrect"
   },
-  "passwordNoLongerRequiredToOpenParagraph": "Du behöver inte lösenord för att öppna Nautilus längre.",
+  "passwordNoLongerRequiredToOpenParagraph": "Du behöver inte lösenord för att öppna Lumex längre.",
   "@passwordNoLongerRequiredToOpenParagraph": {
     "type": "text",
-    "description": "An info paragraph that tells the user a password will no longer be needed to open Nautilus"
+    "description": "An info paragraph that tells the user a password will no longer be needed to open Velocity"
   },
   "passwordNumber": "Lösenordet måste innehålla minst 1 nummer",
   "@passwordNumber": {
@@ -1916,15 +1916,15 @@
     "type": "text",
     "description": "An error indicating the password is too short"
   },
-  "passwordWarning": "Detta lösenord kommer att krävas för att öppna Nautilus.",
+  "passwordWarning": "Detta lösenord kommer att krävas för att öppna Lumex.",
   "@passwordWarning": {
     "type": "text",
     "description": "A paragraph that warns the user to not lose their password."
   },
-  "passwordWillBeRequiredToOpenParagraph": "Lösenordet behövs för att öppna Nautilus.",
+  "passwordWillBeRequiredToOpenParagraph": "Lösenordet behövs för att öppna Lumex.",
   "@passwordWillBeRequiredToOpenParagraph": {
     "type": "text",
-    "description": "A paragraph that tells the users that the created password will be required to open Nautilus."
+    "description": "A paragraph that tells the users that the created password will be required to open Velocity."
   },
   "pastDue": "Gått över tiden",
   "@pastDue": {
@@ -2061,17 +2061,17 @@
     "type": "text",
     "description": "settings_privacy_policy"
   },
-  "promotionalLink": "Gratis NANO",
+  "promotionalLink": "Gratis Lumex",
   "@promotionalLink": {
     "type": "text",
     "description": "promo_Link"
   },
-  "proSubRequiredHeader": "Nautilus Pro-abonnemang krävs",
+  "proSubRequiredHeader": "Velocity Pro-abonnemang krävs",
   "@proSubRequiredHeader": {
     "type": "text",
     "description": "pro_sub_required_header"
   },
-  "proSubRequiredParagraph": "För bara 1 NANO per månad kan du låsa upp alla funktionerna i Nautilus Pro.",
+  "proSubRequiredParagraph": "För bara 1 Lumex per månad kan du låsa upp alla funktionerna i Velocity Pro.",
   "@proSubRequiredParagraph": {
     "type": "text",
     "description": "pro_sub_required_paragraph"
@@ -2081,7 +2081,7 @@
     "type": "text",
     "description": "purchase_currency"
   },
-  "purchaseNano": "Köp Nano",
+  "purchaseNano": "Köp Lumex",
   "@purchaseNano": {
     "type": "text",
     "description": "purchase_nano"
@@ -2286,7 +2286,7 @@
     "type": "text",
     "description": "requested_from"
   },
-  "requestError": "Begäran misslyckades: Den här användaren verkar inte ha Nautilus installerat eller har aviseringar inaktiverade.",
+  "requestError": "Begäran misslyckades: Den här användaren verkar inte ha Lumex installerat eller har aviseringar inaktiverade.",
   "@requestError": {
     "type": "text",
     "description": "request_generic_error"
@@ -2316,7 +2316,7 @@
     "type": "text",
     "description": "request_sent_again"
   },
-  "requestSheetInfo": "Begär en betalning, med End to End-krypterade meddelanden!\n\nBetalningsförfrågningar, anteckningar och meddelanden kommer endast att kunna tas emot av andra nautilus-användare, men du kan använda dem för din egen journalföring även om mottagaren inte använder nautilus.",
+  "requestSheetInfo": "Begär en betalning, med End to End-krypterade meddelanden!\n\nBetalningsförfrågningar, anteckningar och meddelanden kommer endast att kunna tas emot av andra lumex-användare, men du kan använda dem för din egen journalföring även om mottagaren inte använder lumex.",
   "@requestSheetInfo": {
     "type": "text",
     "description": "request_sheet_info"
@@ -2326,10 +2326,10 @@
     "type": "text",
     "description": "request_sheet_info_header"
   },
-  "requireAPasswordToOpenHeader": "Kräv lösenord för att öppna Nautilus?",
+  "requireAPasswordToOpenHeader": "Kräv lösenord för att öppna Lumex?",
   "@requireAPasswordToOpenHeader": {
     "type": "text",
-    "description": "A paragraph that asks the users if they would like a password to be required to open Nautilus."
+    "description": "A paragraph that asks the users if they would like a password to be required to open Velocity."
   },
   "requireCaptcha": "Kräv CAPTCHA för att göra anspråk på presentkort",
   "@requireCaptcha": {
@@ -2376,7 +2376,7 @@
     "type": "text",
     "description": "dialog_save"
   },
-  "scanInstructions": "Skanna en Nano\nadress QR-kod",
+  "scanInstructions": "Skanna en Lumex\nadress QR-kod",
   "@scanInstructions": {
     "type": "text",
     "description": "scan_send_instruction_label"
@@ -2511,7 +2511,7 @@
     "type": "text",
     "description": "send_sending"
   },
-  "sendMemoError": "Att skicka memo med transaktion misslyckades, de kanske inte är en Nautilus-användare.",
+  "sendMemoError": "Att skicka memo med transaktion misslyckades, de kanske inte är en Lumex-användare.",
   "@sendMemoError": {
     "type": "text",
     "description": "send_memo_error"
@@ -2531,7 +2531,7 @@
     "type": "text",
     "description": "split_bill_send_requests"
   },
-  "sendSheetInfo": "Skicka eller begär en betalning, med krypterade meddelanden från slut till slut!\n\nBetalningsförfrågningar, PM, och meddelanden kommer endast att tas emot av andra nautilus-användare.\n\nDu behöver inte ha ett användarnamn för att skicka eller ta emot betalningsförfrågningar, och du kan använda dem för din egen journalföring även om de inte använder nautilus.",
+  "sendSheetInfo": "Skicka eller begär en betalning, med krypterade meddelanden från slut till slut!\n\nBetalningsförfrågningar, PM, och meddelanden kommer endast att tas emot av andra lumex-användare.\n\nDu behöver inte ha ett användarnamn för att skicka eller ta emot betalningsförfrågningar, och du kan använda dem för din egen journalföring även om de inte använder lumex.",
   "@sendSheetInfo": {
     "type": "text",
     "description": "send_sheet_info"
@@ -2624,14 +2624,14 @@
   "share": "Dela med sig",
   "@share": {
     "type": "text",
-    "description": "nautilus_share"
+    "description": "lumex_share"
   },
   "shareApp": "Dela %1",
   "@shareApp": {
     "type": "text",
     "description": "settings_share"
   },
-  "shareAppText": "Kolla in %1! En förstklassig NANO-mobilplånbok!",
+  "shareAppText": "Kolla in %1! En förstklassig Lumex-mobilplånbok!",
   "@shareAppText": {
     "type": "text",
     "description": "share_extra"
@@ -2646,13 +2646,13 @@
     "type": "text",
     "description": "share_message"
   },
-  "shareNautilus": "Dela Nautilus",
-  "@shareNautilus": {
+  "shareLumex": "Dela Lumex",
+  "@shareLumex": {
     "type": "text",
     "description": "settings_share"
   },
-  "shareNautilusText": "Kolla in Nautilus! Nanos officiella Androidplånbok!",
-  "@shareNautilusText": {
+  "shareLumexText": "Kolla in Lumex! Nanos officiella Androidplånbok!",
+  "@shareLumexText": {
     "type": "text",
     "description": "share_extra"
   },
@@ -2751,7 +2751,7 @@
     "type": "text",
     "description": "spend_currency"
   },
-  "spendNano": "Spendera NANO",
+  "spendNano": "Spendera Lumex",
   "@spendNano": {
     "type": "text",
     "description": "spend_nano"
@@ -2846,7 +2846,7 @@
     "type": "text",
     "description": "swap_xmr_header"
   },
-  "swapXMRInfo": "Monero är en integritetsfokuserad kryptovaluta som gör det mycket svårt eller till och med omöjligt att spåra transaktioner. Samtidigt är NANO en betalningsfokuserad kryptovaluta som är snabb och avgiftsfri. Tillsammans ger de några av de mest användbara aspekterna av kryptovalutor!\n\nAnvänd den här sidan för att enkelt byta ut din NANO mot XMR!",
+  "swapXMRInfo": "Monero är en integritetsfokuserad kryptovaluta som gör det mycket svårt eller till och med omöjligt att spåra transaktioner. Samtidigt är Lumex en betalningsfokuserad kryptovaluta som är snabb och avgiftsfri. Tillsammans ger de några av de mest användbara aspekterna av kryptovalutor!\n\nAnvänd den här sidan för att enkelt byta ut din Lumex mot XMR!",
   "@swapXMRInfo": {
     "type": "text",
     "description": "swap_xmr_header"
@@ -2946,12 +2946,12 @@
     "type": "text",
     "description": "transfer_close_text"
   },
-  "transferComplete": "%1 %2 har överförts till din Nautilus-plånbok.",
+  "transferComplete": "%1 %2 har överförts till din Lumex-plånbok.",
   "@transferComplete": {
     "type": "text",
     "description": "transfer_complete_text"
   },
-  "transferConfirmInfo": "En plånbok med ett saldo på %1 NANO har upptäckts.\n",
+  "transferConfirmInfo": "En plånbok med ett saldo på %1 Lumex har upptäckts.\n",
   "@transferConfirmInfo": {
     "type": "text",
     "description": "transfer_confirm_info_first"
@@ -2976,12 +2976,12 @@
     "type": "text",
     "description": "transfer_header"
   },
-  "transferIntro": "Den här processen kommer att överföra tillgångar från en pappersplånbok till din Nautilus-plånbok.\n\nTryck på \"%1\" knappen för att starta.",
+  "transferIntro": "Den här processen kommer att överföra tillgångar från en pappersplånbok till din Lumex-plånbok.\n\nTryck på \"%1\" knappen för att starta.",
   "@transferIntro": {
     "type": "text",
     "description": "transfer_intro"
   },
-  "transferIntroShort": "Denna process överför pengarna från en pappersplånbok till din Nautilus plånbok.",
+  "transferIntroShort": "Denna process överför pengarna från en pappersplånbok till din Lumex plånbok.",
   "@transferIntroShort": {
     "type": "text",
     "description": "transfer_intro_short"
@@ -2996,7 +2996,7 @@
     "type": "text",
     "description": "transfer_hint"
   },
-  "transferNoFunds": "Detta seed innehåller inga NANO.",
+  "transferNoFunds": "Detta seed innehåller inga Lumex.",
   "@transferNoFunds": {
     "type": "text",
     "description": "transfer_no_funds_toast"
@@ -3006,7 +3006,7 @@
     "type": "text",
     "description": "transfer_qr_scan_error"
   },
-  "transferQrScanHint": "Skanna en Nano \nseed eller en privat nyckel",
+  "transferQrScanHint": "Skanna en Lumex \nseed eller en privat nyckel",
   "@transferQrScanHint": {
     "type": "text",
     "description": "transfer_qr_scan_hint"
@@ -3031,12 +3031,12 @@
     "type": "text",
     "description": "unlocktxt"
   },
-  "unlockBiometrics": "Verifiera för att låsa upp Nautilus",
+  "unlockBiometrics": "Verifiera för att låsa upp Lumex",
   "@unlockBiometrics": {
     "type": "text",
     "description": "unlock_bio"
   },
-  "unlockPin": "Ange PIN för att låsa upp Nautilus",
+  "unlockPin": "Ange PIN för att låsa upp Lumex",
   "@unlockPin": {
     "type": "text",
     "description": "unlock_pin"
@@ -3096,15 +3096,15 @@
     "type": "text",
     "description": "use_currency"
   },
-  "useNano": "Använd NANO",
+  "useNano": "Använd Lumex",
   "@useNano": {
     "type": "text",
     "description": "use_nano"
   },
-  "useNautilusRep": "Use Nautilus Rep",
-  "@useNautilusRep": {
+  "useLumexRep": "Use Lumex Rep",
+  "@useLumexRep": {
     "type": "text",
-    "description": "use nautilus node as rep"
+    "description": "use lumex node as rep"
   },
   "userAlreadyAddedError": "Användaren har redan lagts till!",
   "@userAlreadyAddedError": {
@@ -3131,7 +3131,7 @@
     "type": "text",
     "description": "username_unknown_error"
   },
-  "usernameInfo": "Välj ut en unik @username för att göra det enkelt för vänner och familj att hitta dig!\n\nAtt ha ett Nautilus-användarnamn uppdaterar användargränssnittet globalt för att återspegla ditt nya handtag.",
+  "usernameInfo": "Välj ut en unik @username för att göra det enkelt för vänner och familj att hitta dig!\n\nAtt ha ett Lumex-användarnamn uppdaterar användargränssnittet globalt för att återspegla ditt nya handtag.",
   "@usernameInfo": {
     "type": "text",
     "description": "Description for username registration"
@@ -3146,7 +3146,7 @@
     "type": "text",
     "description": "username_unavailable"
   },
-  "usernameWarning": "Nautilus användarnamn är en centraliserad tjänst som tillhandahålls av Nano.to",
+  "usernameWarning": "Lumex användarnamn är en centraliserad tjänst som tillhandahålls av Lumex.to",
   "@usernameWarning": {
     "type": "text",
     "description": "Username centralization warning"
@@ -3211,17 +3211,17 @@
     "type": "text",
     "description": "frequency_weekly"
   },
-  "welcomeText": "Välkommen till Nautilus. För att fortsätta, behöver du skapa en ny plånbok eller importera en befintlig.",
+  "welcomeText": "Välkommen till Lumex. För att fortsätta, behöver du skapa en ny plånbok eller importera en befintlig.",
   "@welcomeText": {
     "type": "text",
     "description": "intro_welcome_title"
   },
-  "welcomeTextLogin": "Välkommen till Nautilus. Välj ett alternativ för att komma igång eller välj ett tema med hjälp av ikonen nedan.",
+  "welcomeTextLogin": "Välkommen till Lumex. Välj ett alternativ för att komma igång eller välj ett tema med hjälp av ikonen nedan.",
   "@welcomeTextLogin": {
     "type": "text",
     "description": "intro_welcome_login"
   },
-  "welcomeTextUpdated": "Välkommen till Nautilus. Börja med att skapa en ny plånbok eller importera en befintlig.",
+  "welcomeTextUpdated": "Välkommen till Lumex. Börja med att skapa en ny plånbok eller importera en befintlig.",
   "@welcomeTextUpdated": {
     "type": "text",
     "description": "intro_welcome_title"

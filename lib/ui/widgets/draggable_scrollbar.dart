@@ -3,9 +3,9 @@ import 'dart:io';
 import 'dart:math';
 
 import 'package:flutter/material.dart';
-import 'package:wallet_flutter/service_locator.dart';
-import 'package:wallet_flutter/ui/widgets/custom_stack.dart';
-import 'package:wallet_flutter/util/hapticutil.dart';
+import 'package:velocity/service_locator.dart';
+import 'package:velocity/ui/widgets/custom_stack.dart';
+import 'package:velocity/util/hapticutil.dart';
 
 class DraggableScrollbar extends StatefulWidget {
   const DraggableScrollbar(

@@ -291,7 +291,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "eula": MessageLookupByLibrary.simpleMessage("EULA"),
         "exampleCardFrom": MessageLookupByLibrary.simpleMessage("임의의 발송자로부터"),
         "exampleCardIntro": MessageLookupByLibrary.simpleMessage(
-            "Nautilus에 오신 것을 환영합니다. NANO를 받으시면 거래가 다음과 같이 표시됩니다."),
+            "Lumex에 오신 것을 환영합니다. NANO를 받으시면 거래가 다음과 같이 표시됩니다."),
         "exampleCardLittle": MessageLookupByLibrary.simpleMessage("조금"),
         "exampleCardLot": MessageLookupByLibrary.simpleMessage("많은"),
         "exampleCardTo": MessageLookupByLibrary.simpleMessage("임의의 수령인에게"),
@@ -328,7 +328,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "failedMessage": MessageLookupByLibrary.simpleMessage("msg failed"),
         "fallbackHeader": MessageLookupByLibrary.simpleMessage("노틸러스 연결 끊김"),
         "fallbackInfo": MessageLookupByLibrary.simpleMessage(
-            "Nautilus 서버는 연결이 끊어진 것처럼 보입니다. 전송 및 수신 (메모 없음) 은 여전히 작동해야하지만 지불 요청은 진행되지 않을 수 있습니다.\n\n 나중에 다시 방문하거나 앱을 다시 시작하여 다시 시도하세요"),
+            "Lumex 서버는 연결이 끊어진 것처럼 보입니다. 전송 및 수신 (메모 없음) 은 여전히 작동해야하지만 지불 요청은 진행되지 않을 수 있습니다.\n\n 나중에 다시 방문하거나 앱을 다시 시작하여 다시 시도하세요"),
         "favoriteExists": MessageLookupByLibrary.simpleMessage("즐겨찾기가 이미 있음"),
         "favoriteHeader": MessageLookupByLibrary.simpleMessage("즐겨찾기"),
         "favoriteInvalid": MessageLookupByLibrary.simpleMessage("잘못된 즐겨찾기 이름"),
@@ -364,7 +364,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "giftCardInfoHeader": MessageLookupByLibrary.simpleMessage("선물 시트 정보"),
         "giftFrom": MessageLookupByLibrary.simpleMessage("선물 보낸 사람"),
         "giftInfo": MessageLookupByLibrary.simpleMessage(
-            "NANO로 디지털 기프트 카드를 로드하세요!금액을 설정하고 수신자가 열 때 볼 수 있는 선택적 메시지를 설정합니다.\n\n링크가 생성되면 누구에게나 보낼 수 있으며, 링크를 열면 Nautilus를 설치 한 후 수취인에게 자동으로 자금을 분배합니다!\n\n수취인이 이미 Nautilus 사용자인 경우 링크를 열 때 자금을 계좌로 이체하라는 메시지가 표시됩니다."),
+            "NANO로 디지털 기프트 카드를 로드하세요!금액을 설정하고 수신자가 열 때 볼 수 있는 선택적 메시지를 설정합니다.\n\n링크가 생성되면 누구에게나 보낼 수 있으며, 링크를 열면 Lumex를 설치 한 후 수취인에게 자동으로 자금을 분배합니다!\n\n수취인이 이미 Lumex 사용자인 경우 링크를 열 때 자금을 계좌로 이체하라는 메시지가 표시됩니다."),
         "giftMessage": MessageLookupByLibrary.simpleMessage("기프트 메시지"),
         "giftProcessError": MessageLookupByLibrary.simpleMessage(
             "이 기프트 카드를 처리하는 동안 오류가 발생했습니다. 연결을 확인하고 선물 링크를 다시 클릭해 보세요."),
@@ -451,7 +451,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "logoutAction": MessageLookupByLibrary.simpleMessage("시드 삭제 및 로그 아웃"),
         "logoutAreYouSure": MessageLookupByLibrary.simpleMessage("확실합니까?"),
         "logoutDetail": MessageLookupByLibrary.simpleMessage(
-            "로그 아웃하면 시드와 모든 Nautilus 관련 데이터가 삭제됩니다. 귀하의 시드가 백업되지 않은 경우 귀하의 자금을 다시  복구 할 수 없습니다."),
+            "로그 아웃하면 시드와 모든 Lumex 관련 데이터가 삭제됩니다. 귀하의 시드가 백업되지 않은 경우 귀하의 자금을 다시  복구 할 수 없습니다."),
         "logoutReassurance":
             MessageLookupByLibrary.simpleMessage("시드를 백업했다면, 걱정하지 않으셔도 됩니다."),
         "looksLikeHdSeed": MessageLookupByLibrary.simpleMessage(
@@ -486,14 +486,14 @@ class MessageLookup extends MessageLookupByLibrary {
         "moreSettings": MessageLookupByLibrary.simpleMessage("자세한 설정"),
         "nameEmpty": MessageLookupByLibrary.simpleMessage("이름을 입력하세요"),
         "natricon": MessageLookupByLibrary.simpleMessage("Natricon"),
-        "nautilusWallet": MessageLookupByLibrary.simpleMessage("노틸러스 지갑"),
+        "lumexWallet": MessageLookupByLibrary.simpleMessage("노틸러스 지갑"),
         "nearby": MessageLookupByLibrary.simpleMessage("가까운"),
         "needVerificationAlert": MessageLookupByLibrary.simpleMessage(
             "이 기능을 사용하려면 스팸을 방지하기 위해 거래 내역이 더 길어야 합니다.\n\n다른 사람이 스캔할 수 있도록 QR 코드를 보여줄 수도 있습니다."),
         "needVerificationAlertHeader":
             MessageLookupByLibrary.simpleMessage("검증 필요"),
         "newAccountIntro": MessageLookupByLibrary.simpleMessage(
-            "This is your new account. Once you receive NANO, transactions will show up like this:"),
+            "This is your new account. Once you receive Lumex, transactions will show up like this:"),
         "newWallet": MessageLookupByLibrary.simpleMessage("새 지갑"),
         "nextButton": MessageLookupByLibrary.simpleMessage("Next"),
         "nextPayment": MessageLookupByLibrary.simpleMessage("다음 결제"),
@@ -512,7 +512,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "noneMethod": MessageLookupByLibrary.simpleMessage("없음"),
         "notSent": MessageLookupByLibrary.simpleMessage("보내지 않음"),
         "notificationBody":
-            MessageLookupByLibrary.simpleMessage("이 거래를 보려면 Nautilus을 여십시오."),
+            MessageLookupByLibrary.simpleMessage("이 거래를 보려면 Lumex을 여십시오."),
         "notificationHeaderSupplement":
             MessageLookupByLibrary.simpleMessage("열려면 누르십시오."),
         "notificationInfo": MessageLookupByLibrary.simpleMessage(
@@ -550,7 +550,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "passwordIncorrect": MessageLookupByLibrary.simpleMessage("잘못된 비밀번호"),
         "passwordNoLongerRequiredToOpenParagraph":
             MessageLookupByLibrary.simpleMessage(
-                "You will not need a password to open Nautilus anymore."),
+                "You will not need a password to open Lumex anymore."),
         "passwordNumber":
             MessageLookupByLibrary.simpleMessage("비밀번호는 1개 이상의 숫자를 포함해야 합니다."),
         "passwordSpecialCharacter": MessageLookupByLibrary.simpleMessage(
@@ -561,7 +561,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("이 암호는 노틸러스를 열 때 필요합니다."),
         "passwordWillBeRequiredToOpenParagraph":
             MessageLookupByLibrary.simpleMessage(
-                "This password will be required to open Nautilus."),
+                "This password will be required to open Lumex."),
         "passwordsDontMatch":
             MessageLookupByLibrary.simpleMessage("Passwords do not match"),
         "pastDue": MessageLookupByLibrary.simpleMessage("연체"),
@@ -602,9 +602,9 @@ class MessageLookup extends MessageLookupByLibrary {
         "preferences": MessageLookupByLibrary.simpleMessage("환경 설정"),
         "privacyPolicy": MessageLookupByLibrary.simpleMessage("Privacy Policy"),
         "proSubRequiredHeader":
-            MessageLookupByLibrary.simpleMessage("Nautilus Pro 구독 필요"),
+            MessageLookupByLibrary.simpleMessage("Lumex Pro 구독 필요"),
         "proSubRequiredParagraph": MessageLookupByLibrary.simpleMessage(
-            "매월 단 1NANO로 Nautilus Pro의 모든 기능을 잠금 해제할 수 있습니다."),
+            "매월 단 1NANO로 Lumex Pro의 모든 기능을 잠금 해제할 수 있습니다."),
         "promotionalLink": MessageLookupByLibrary.simpleMessage("무료 나노"),
         "purchaseCurrency": MessageLookupByLibrary.simpleMessage("구매 %2"),
         "purchaseNano": MessageLookupByLibrary.simpleMessage("나노 구매"),
@@ -663,7 +663,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "requestAmountConfirm":
             MessageLookupByLibrary.simpleMessage("요청 %1 %2"),
         "requestError": MessageLookupByLibrary.simpleMessage(
-            "요청 실패: 이 사용자는 Nautilus가 설치되어 있지 않거나 알림이 비활성화된 것으로 보입니다."),
+            "요청 실패: 이 사용자는 Lumex가 설치되어 있지 않거나 알림이 비활성화된 것으로 보입니다."),
         "requestFrom": MessageLookupByLibrary.simpleMessage("요청처"),
         "requestPayment": MessageLookupByLibrary.simpleMessage("결제 요청"),
         "requestSendError": MessageLookupByLibrary.simpleMessage(
@@ -678,7 +678,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "requestedFrom": MessageLookupByLibrary.simpleMessage("요청된 사람"),
         "requesting": MessageLookupByLibrary.simpleMessage("요청하기"),
         "requireAPasswordToOpenHeader": MessageLookupByLibrary.simpleMessage(
-            "Require a password to open Nautilus?"),
+            "Require a password to open Lumex?"),
         "requireCaptcha":
             MessageLookupByLibrary.simpleMessage("기프트 카드를 청구하려면 보안문자가 필요합니다."),
         "resendMemo": MessageLookupByLibrary.simpleMessage("이 메모 다시 보내기"),
@@ -693,7 +693,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "It appears your device is \"rooted\", \"jailbroken\", or modified in a way that compromises security. It is recommended that you reset your device to its original state before proceeding."),
         "save": MessageLookupByLibrary.simpleMessage("구하다"),
         "scanInstructions":
-            MessageLookupByLibrary.simpleMessage("Nano QR 코드 주소를 스캔하하세요"),
+            MessageLookupByLibrary.simpleMessage("Lumex QR 코드 주소를 스캔하하세요"),
         "scanNFC": MessageLookupByLibrary.simpleMessage("NFC를 통해 보내기"),
         "scanQrCode": MessageLookupByLibrary.simpleMessage("QR 코드를 스캔하세요"),
         "schedule": MessageLookupByLibrary.simpleMessage("일정"),
@@ -731,12 +731,12 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("문제가 발생했습니다. 나중에 다시 시도하시오."),
         "sendFrom": MessageLookupByLibrary.simpleMessage("보낸 사람 "),
         "sendMemoError": MessageLookupByLibrary.simpleMessage(
-            "트랜잭션과 함께 메모를 보내지 못했습니다. Nautilus 사용자가 아닐 수 있습니다."),
+            "트랜잭션과 함께 메모를 보내지 못했습니다. Lumex 사용자가 아닐 수 있습니다."),
         "sendMessageConfirm": MessageLookupByLibrary.simpleMessage("메시지 보내기"),
         "sendRequestAgain": MessageLookupByLibrary.simpleMessage("요청 다시 보내기"),
         "sendRequests": MessageLookupByLibrary.simpleMessage("요청을 보낼"),
         "sendSheetInfo": MessageLookupByLibrary.simpleMessage(
-            "엔드투엔드 암호화 메시지로 결제를 보내거나 요청하세요!\n\n지불 요청, 메모 및 메시지는 다른 nautilus 사용자만 받을 수 있습니다.\n\n지불 요청을 보내거나 받기 위해 사용자 이름이 필요하지 않으며, 노틸러스를 사용하지 않더라도 자신의 기록 보관에 사용할 수 있습니다."),
+            "엔드투엔드 암호화 메시지로 결제를 보내거나 요청하세요!\n\n지불 요청, 메모 및 메시지는 다른 lumex 사용자만 받을 수 있습니다.\n\n지불 요청을 보내거나 받기 위해 사용자 이름이 필요하지 않으며, 노틸러스를 사용하지 않더라도 자신의 기록 보관에 사용할 수 있습니다."),
         "sendSheetInfoHeader":
             MessageLookupByLibrary.simpleMessage("시트 정보 보내기"),
         "sending": MessageLookupByLibrary.simpleMessage("전송중"),
@@ -767,12 +767,12 @@ class MessageLookup extends MessageLookupByLibrary {
         "share": MessageLookupByLibrary.simpleMessage("공유하다"),
         "shareApp": MessageLookupByLibrary.simpleMessage("공유 %1"),
         "shareAppText": MessageLookupByLibrary.simpleMessage(
-            "%1을(를) 확인하십시오! 최고의 NANO 모바일 지갑!"),
+            "%1을(를) 확인하십시오! 최고의 Lumex 모바일 지갑!"),
         "shareLink": MessageLookupByLibrary.simpleMessage("공유 링크"),
         "shareMessage": MessageLookupByLibrary.simpleMessage("메시지 공유"),
-        "shareNautilus": MessageLookupByLibrary.simpleMessage("Nautilus 공유 "),
-        "shareNautilusText": MessageLookupByLibrary.simpleMessage(
-            "Nautilus을 확인하세요! Nano의 공식 Android 지갑!"),
+        "shareLumex": MessageLookupByLibrary.simpleMessage("Lumex 공유 "),
+        "shareLumexText": MessageLookupByLibrary.simpleMessage(
+            "Lumex을 확인하세요! Nano의 공식 Android 지갑!"),
         "shareText": MessageLookupByLibrary.simpleMessage("텍스트 공유"),
         "shopButton": MessageLookupByLibrary.simpleMessage("가게"),
         "show": MessageLookupByLibrary.simpleMessage("보여 주다"),
@@ -844,7 +844,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "transferClose": MessageLookupByLibrary.simpleMessage(
             "Tap anywhere to close the window."),
         "transferComplete": MessageLookupByLibrary.simpleMessage(
-            "%1 %2 successfully transferred to your Nautilus Wallet.\n"),
+            "%1 %2 successfully transferred to your Lumex Wallet.\n"),
         "transferConfirmInfo": MessageLookupByLibrary.simpleMessage(
             "A wallet with a balance of %1 %2 has been detected.\n"),
         "transferConfirmInfoSecond": MessageLookupByLibrary.simpleMessage(
@@ -856,26 +856,26 @@ class MessageLookup extends MessageLookupByLibrary {
         "transferHeader":
             MessageLookupByLibrary.simpleMessage("Transfer Funds"),
         "transferIntro": MessageLookupByLibrary.simpleMessage(
-            "This process will transfer the funds from a paper wallet to your Nautilus wallet.\n\nTap the \"%1\" button to start."),
+            "This process will transfer the funds from a paper wallet to your Lumex wallet.\n\nTap the \"%1\" button to start."),
         "transferIntroShort": MessageLookupByLibrary.simpleMessage(
-            "이 프로세스는 종이 지갑에서 Nautilus 지갑으로 자금을 이체합니다."),
+            "이 프로세스는 종이 지갑에서 Lumex 지갑으로 자금을 이체합니다."),
         "transferLoading": MessageLookupByLibrary.simpleMessage("Transferring"),
         "transferManualHint": MessageLookupByLibrary.simpleMessage(
             "Please enter the seed below."),
         "transferNoFunds": MessageLookupByLibrary.simpleMessage(
-            "This seed does not have any NANO on it"),
+            "This seed does not have any Lumex on it"),
         "transferQrScanError": MessageLookupByLibrary.simpleMessage(
             "This QR code does not contain a valid seed."),
         "transferQrScanHint": MessageLookupByLibrary.simpleMessage(
-            "Scan a Nano \nseed or private key"),
+            "Scan a Lumex \nseed or private key"),
         "unacknowledged": MessageLookupByLibrary.simpleMessage("승인되지 않았습니다"),
         "unconfirmed": MessageLookupByLibrary.simpleMessage("미확인"),
         "unfulfilled": MessageLookupByLibrary.simpleMessage("충족되지 않은"),
         "unlock": MessageLookupByLibrary.simpleMessage("Unlock"),
         "unlockBiometrics": MessageLookupByLibrary.simpleMessage(
-            "Authenticate to Unlock Nautilus"),
+            "Authenticate to Unlock Lumex"),
         "unlockPin": MessageLookupByLibrary.simpleMessage(
-            "Enter PIN to Unlock Nautilus"),
+            "Enter PIN to Unlock Lumex"),
         "unopenedWarningHeader":
             MessageLookupByLibrary.simpleMessage("미개봉 경고 표시"),
         "unopenedWarningInfo": MessageLookupByLibrary.simpleMessage(
@@ -892,8 +892,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "useAppRep": MessageLookupByLibrary.simpleMessage("%1 담당자 사용"),
         "useCurrency": MessageLookupByLibrary.simpleMessage("%2 사용"),
         "useNano": MessageLookupByLibrary.simpleMessage("나노를 사용"),
-        "useNautilusRep":
-            MessageLookupByLibrary.simpleMessage("Use Nautilus Rep"),
+        "useLumexRep":
+            MessageLookupByLibrary.simpleMessage("Use Lumex Rep"),
         "userAlreadyAddedError":
             MessageLookupByLibrary.simpleMessage("사용자가 이미 추가되었습니다!"),
         "userNotFound": MessageLookupByLibrary.simpleMessage("사용자를 찾을 수 없습니다!"),
@@ -904,12 +904,12 @@ class MessageLookup extends MessageLookupByLibrary {
         "usernameEmpty": MessageLookupByLibrary.simpleMessage("사용자 이름을 입력하세요"),
         "usernameError": MessageLookupByLibrary.simpleMessage("사용자 이름 오류"),
         "usernameInfo": MessageLookupByLibrary.simpleMessage(
-            "친구와 가족이 나를 쉽게 찾을 수 있도록 독특한 @username 를 선택하세요!\n\nNautilus 사용자 이름이 있으면 새로운 핸들을 반영하기 위해 UI가 전역으로 업데이트됩니다."),
+            "친구와 가족이 나를 쉽게 찾을 수 있도록 독특한 @username 를 선택하세요!\n\nLumex 사용자 이름이 있으면 새로운 핸들을 반영하기 위해 UI가 전역으로 업데이트됩니다."),
         "usernameInvalid": MessageLookupByLibrary.simpleMessage("잘못된 사용자 이름"),
         "usernameUnavailable":
             MessageLookupByLibrary.simpleMessage("사용자 이름 사용"),
         "usernameWarning": MessageLookupByLibrary.simpleMessage(
-            "노틸러스 사용자 이름은 Nano.to에서 제공하는 중앙 집중식 서비스입니다."),
+            "노틸러스 사용자 이름은 Lumex.to에서 제공하는 중앙 집중식 서비스입니다."),
         "using": MessageLookupByLibrary.simpleMessage("사용"),
         "viewDetails": MessageLookupByLibrary.simpleMessage("세부 정보보기"),
         "viewPaymentHistory": MessageLookupByLibrary.simpleMessage("결제 내역 보기"),
@@ -924,7 +924,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "weekAgo": MessageLookupByLibrary.simpleMessage("일주일 전"),
         "weekly": MessageLookupByLibrary.simpleMessage("주간"),
         "welcomeText": MessageLookupByLibrary.simpleMessage(
-            "Nautilus에 오신 것을 환영합니다. 계속하려면, 새 지갑을 만들거나 기존 지갑을 불러오세요."),
+            "Lumex에 오신 것을 환영합니다. 계속하려면, 새 지갑을 만들거나 기존 지갑을 불러오세요."),
         "welcomeTextLogin": MessageLookupByLibrary.simpleMessage(
             "노틸러스에 오신 것을 환영합니다. 시작하는 옵션을 선택하거나 아래 아이콘을 사용하여 테마를 선택하세요."),
         "welcomeTextUpdated": MessageLookupByLibrary.simpleMessage(

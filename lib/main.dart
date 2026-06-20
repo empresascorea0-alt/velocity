@@ -41,11 +41,11 @@ import 'package:velocity/ui/password_lock_screen.dart';
 import 'package:velocity/ui/purchase_nano.dart';
 import 'package:velocity/ui/register/register_lumex_to_username.dart';
 import 'package:velocity/ui/register/register_onchain_username.dart';
-import 'package:velocity/ui/scan/before_scan_screen.dart';
 import 'package:velocity/ui/scan/scan_screen.dart';
 import 'package:velocity/ui/swap/swap_xmr_screen.dart';
 import 'package:velocity/ui/util/routes.dart';
 import 'package:velocity/ui/widgets/dialog.dart';
+import 'package:velocity/ui/widgets/stitch_animations.dart';
 import 'package:velocity/util/caseconverter.dart';
 import 'package:velocity/util/nanoutil.dart';
 import 'package:velocity/util/sharedprefsutil.dart';
@@ -459,6 +459,8 @@ class SplashState extends State<Splash> with WidgetsBindingObserver {
     } else {
       return;
     }
+    // Allow splash animation to play
+    await Future.delayed(const Duration(seconds: 4));
     try {
       // iOS key store is persistent, so if this is first launch then we will clear the keystore
       final bool firstLaunch = await sl.get<SharedPrefsUtil>().getFirstLaunch();
@@ -594,6 +596,9 @@ class SplashState extends State<Splash> with WidgetsBindingObserver {
     });
     return Scaffold(
       backgroundColor: StateContainer.of(context).curTheme.background,
+      body: const Center(
+        child: StitchWordmark(),
+      ),
     );
   }
 }

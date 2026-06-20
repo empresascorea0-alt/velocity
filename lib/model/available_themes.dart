@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:velocity/themes.dart';
 import 'package:velocity/model/setting_item.dart';
 
-enum ThemeOptions { NAUTILUS, POTASSIUS, TITANIUM, INDIUM, SUNSHINE, NEPTUNIUM, THORIUM, CARBON, PURPELIUM, MONOCHROME, MIDNIGHT, PERISHABLE }
+enum ThemeOptions { NAUTILUS, POTASSIUS, TITANIUM, INDIUM, SUNSHINE, NEPTUNIUM, THORIUM, CARBON, PURPELIUM, MONOCHROME, MIDNIGHT, PERISHABLE, STITCH }
 
 /// Represent notification on/off setting
 class ThemeSetting extends SettingSelectionItem {
@@ -18,6 +18,8 @@ class ThemeSetting extends SettingSelectionItem {
         return "Carbon";
       case ThemeOptions.PURPELIUM:
         return "Purpelium";
+      case ThemeOptions.STITCH:
+        return "Stitch";
       // case ThemeOptions.NYANO:
       //   return "Nyano";
       case ThemeOptions.THORIUM:
@@ -50,6 +52,8 @@ class ThemeSetting extends SettingSelectionItem {
         return CarbonTheme();
       case ThemeOptions.PURPELIUM:
         return PurpeliumTheme();
+      case ThemeOptions.STITCH:
+        return StitchTheme();
       // case ThemeOptions.NYANO:
       //   return NyanoTheme();
       case ThemeOptions.THORIUM:

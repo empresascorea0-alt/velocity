@@ -62,6 +62,10 @@ import 'package:velocity/ui/auth/auth_confirm_sheet.dart';
 import 'package:velocity/ui/business/calc_sheet.dart';
 import 'package:velocity/ui/handoff/handoff_confirm_sheet.dart';
 import 'package:velocity/ui/home/wallet_info.dart';
+import 'package:velocity/ui/home/stitch_dashboard.dart';
+import 'package:velocity/ui/grifo/grifo_body.dart';
+import 'package:velocity/ui/shop/shop_body.dart';
+import 'package:velocity/ui/exchange/exchange_body.dart';
 import 'package:velocity/ui/popup_button.dart';
 import 'package:velocity/ui/receive/receive_show_qr.dart';
 import 'package:velocity/ui/send/send_confirm_sheet.dart';
@@ -2441,12 +2445,286 @@ class AppHomePageState extends State<AppHomePage>
     );
   }
 
+  Widget _buildStitchMainColumnView(BuildContext context) {
+    final wallet = StateContainer.of(context).wallet;
+    final fiatBalance = wallet?.getLocalCurrencyBalance(
+            context, StateContainer.of(context).curCurrency,
+            locale: StateContainer.of(context).currencyLocale) ??
+        "$0.00";
+    final lmxBalance = "${getRawAsThemeAwareFormattedAmount(context, wallet?.accountBalance.toString())} LMX";
+
+    return Column(
+      children: [
+        // Custom App Bar
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 16),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              IconButton(
+                icon: const Icon(Icons.menu),
+                onPressed: () => _scaffoldKey.currentState?.openDrawer(),
+                color: StateContainer.of(context).curTheme.text60,
+              ),
+              const Text(
+                "VELOCITY",
+                style: TextStyle(
+                  fontFamily: 'NunitoSans',
+                  fontSize: 20,
+                  fontWeight: FontWeight.w200,
+                  letterSpacing: 8,
+                  color: StitchTheme.stitchGold,
+                ),
+              ),
+              IconButton(
+                icon: const Icon(Icons.account_circle),
+                onPressed: () {
+                  Sheets.showAppHeightFullSheet(
+                    context: context,
+                    widget: SettingsSheet(),
+                  );
+                },
+                color: StateContainer.of(context).curTheme.text60,
+              ),
+            ],
+          ),
+        ),
+        Expanded(
+          child: RefreshIndicator(
+            onRefresh: _refresh,
+            backgroundColor: StateContainer.of(context).curTheme.backgroundDark,
+            color: StateContainer.of(context).curTheme.primary,
+            child: SingleChildScrollView(
+              padding: const EdgeInsets.symmetric(horizontal: 24),
+              physics: const AlwaysScrollableScrollPhysics(),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  StitchDashboardHeader(
+                    balanceFiat: fiatBalance,
+                    balanceLMX: lmxBalance,
+                    onAdd: () {
+                      final String data =
+                          "${NonTranslatable.currencyUriPrefix}:${StateContainer.of(context).wallet!.address}";
+                      UIUtil.getQRImage(context, data).then((qrWidget) {
+                        Sheets.showAppHeightEightSheet(
+                          context: context,
+                          widget: ReceiveShowQRSheet(
+                            localCurrency: StateContainer.of(context).curCurrency,
+                            address: StateContainer.of(context).wallet!.address,
+                            qrWidget: qrWidget,
+                          ),
+                        );
+                      });
+                    },
+                    onSend: () {
+                      Sheets.showAppHeightEightSheet(
+                        context: context,
+                        widget: SendSheet(
+                          localCurrency: StateContainer.of(context).curCurrency,
+                        ),
+                      );
+                    },
+                  ),
+                  const SizedBox(height: 32),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      const Text(
+                        "Recent Activity",
+                        style: TextStyle(
+                          fontSize: 20,
+                          fontWeight: FontWeight.w600,
+                        ),
+                      ),
+                      TextButton(
+                        onPressed: () {},
+                        child: Text(
+                          "VIEW ALL",
+                          style: TextStyle(
+                            fontSize: 12,
+                            fontWeight: FontWeight.bold,
+                            color: StateContainer.of(context).curTheme.primary,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                  const SizedBox(height: 16),
+                  _buildStitchTransactionList(context),
+                  const SizedBox(height: 32),
+                  const Text(
+                    "Vault Assets",
+                    style: TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.w600,
+                    ),
+                  ),
+                  const SizedBox(height: 16),
+                  Row(
+                    children: [
+                      Expanded(
+                        child: StitchAssetCard(
+                          label: "STAKED",
+                          amount: "12.5M LMX",
+                          progress: 0.75,
+                          color: StateContainer.of(context).curTheme.primary!,
+                        ),
+                      ),
+                      const SizedBox(width: 16),
+                      Expanded(
+                        child: StitchAssetCard(
+                          label: "LIQUID",
+                          amount: lmxBalance,
+                          progress: 0.25,
+                          color: const Color(0xFF00DBE8),
+                        ),
+                      ),
+                    ],
+                  ),
+                  const SizedBox(height: 120), // Space for floating nav bar
+                ],
+              ),
+            ),
+          ),
+        ),
+      ],
+    );
+  }
+
+  Widget _buildStitchTransactionList(BuildContext context) {
+    final history = StateContainer.of(context).wallet?.history ?? [];
+    if (history.isEmpty) {
+      return Center(
+        child: Text(
+          "No activity yet",
+          style: TextStyle(color: StateContainer.of(context).curTheme.text60),
+        ),
+      );
+    }
+
+    return ListView.separated(
+      shrinkWrap: true,
+      physics: const NeverScrollableScrollPhysics(),
+      itemCount: min(history.length, 5),
+      separatorBuilder: (context, index) => const SizedBox(height: 8),
+      itemBuilder: (context, index) {
+        final item = history[index];
+        final isSend = item.subtype == BlockTypes.SEND;
+        final icon = isSend ? Icons.call_made : Icons.call_received;
+        final color = isSend
+            ? StateContainer.of(context).curTheme.error!
+            : StateContainer.of(context).curTheme.primary!;
+
+        return StitchTransactionItem(
+          title: isSend ? "Sent Lumex" : "Received Lumex",
+          subtitle: DateFormat.yMMMd().add_Hm().format(
+              DateTime.fromMillisecondsSinceEpoch(item.local_timestamp! * 1000)),
+          amountLMX: getRawAsThemeAwareFormattedAmount(context, item.amount),
+          amountFiat: StateContainer.of(context).wallet!.getLocalCurrencyBalance(
+              context, StateContainer.of(context).curCurrency,
+              locale: StateContainer.of(context).currencyLocale,
+              amountRaw: item.amount),
+          icon: icon,
+          iconColor: color,
+          iconBgColor: color,
+          isNegative: isSend,
+        );
+      },
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     // handle branch gift if it exists:
     if (StateContainer.of(context).gift != null && !_lockTriggered) {
       handleBranchGift(StateContainer.of(context).gift);
       StateContainer.of(context).resetGift();
+    }
+
+    final bool isStitch = StateContainer.of(context).curTheme is StitchTheme;
+
+    if (isStitch) {
+      return Scaffold(
+        key: _scaffoldKey,
+        backgroundColor: StateContainer.of(context).curTheme.background,
+        drawer: SizedBox(
+          width: UIUtil.drawerWidth(context),
+          child: Drawer(
+            child: SettingsSheet(),
+          ),
+        ),
+        body: Stack(
+          children: [
+            // Ambient Background Orbs
+            Positioned(
+              top: -100,
+              left: -100,
+              child: Container(
+                width: 500,
+                height: 500,
+                decoration: BoxDecoration(
+                  shape: BoxShape.circle,
+                  color: StateContainer.of(context).curTheme.primary!.withOpacity(0.05),
+                ),
+                child: BackdropFilter(
+                  filter: ImageFilter.blur(sigmaX: 80, sigmaY: 80),
+                  child: Container(color: Colors.transparent),
+                ),
+              ),
+            ),
+            Positioned(
+              bottom: -50,
+              right: -50,
+              child: Container(
+                width: 400,
+                height: 400,
+                decoration: BoxDecoration(
+                  shape: BoxShape.circle,
+                  color: StateContainer.of(context).curTheme.primary!.withOpacity(0.05),
+                ),
+                child: BackdropFilter(
+                  filter: ImageFilter.blur(sigmaX: 80, sigmaY: 80),
+                  child: Container(color: Colors.transparent),
+                ),
+              ),
+            ),
+            SafeArea(
+              child: Column(
+                children: [
+                  Expanded(
+                    child: _selectedIndex == 1
+                        ? const StitchGrifoBody()
+                        : _selectedIndex == 2
+                            ? const StitchShopBody()
+                            : _selectedIndex == 3
+                                ? const StitchExchangeBody()
+                                : _buildStitchMainColumnView(context),
+                  ),
+                ],
+              ),
+            ),
+            Positioned(
+              bottom: 0,
+              left: 0,
+              right: 0,
+              child: StitchFloatingNavBar(
+                currentIndex: _selectedIndex,
+                onTap: (index) {
+                  if (index == _selectedIndex) return;
+                  
+                  if (index == 0 || index == 1 || index == 2 || index == 3) {
+                    setState(() {
+                      _selectedIndex = index;
+                    });
+                    return;
+                  }
+                },
+              ),
+            ),
+          ],
+        ),
+      );
     }
 
     /* MOBILE MODE */

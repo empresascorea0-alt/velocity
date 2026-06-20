@@ -1489,6 +1489,99 @@ class PerishableTheme extends BaseTheme {
   );
 }
 
+class StitchTheme extends BaseTheme {
+  static const Color stitchGold = Color(0xFFFFD700);
+  static const Color stitchBg = Color(0xFF0B0C10);
+  static const Color stitchDarkBg = Color(0xFF050505);
+
+  static const Color white = Color(0xFFFFFFFF);
+  static const Color black = Color(0xFF000000);
+
+  static const Color green = Color(0xFF41E099);
+  static const Color greenDark = Color(0xFF148A55);
+
+  static const Color yellow = Color(0xFFFFB300);
+  static const Color yellowDark = Color(0xFFFFCB00);
+
+  static const Color red = Color(0xFFE80000);
+  static const Color redDark = Color(0xFFB20000);
+
+  Color? primary = stitchGold;
+  Color? primary60 = stitchGold.withOpacity(0.6);
+  Color? primary45 = stitchGold.withOpacity(0.45);
+  Color? primary30 = stitchGold.withOpacity(0.3);
+  Color? primary20 = stitchGold.withOpacity(0.2);
+  Color? primary15 = stitchGold.withOpacity(0.15);
+  Color? primary10 = stitchGold.withOpacity(0.1);
+
+  Color? success = green;
+  Color? success60 = green.withOpacity(0.6);
+  Color? success45 = green.withOpacity(0.45);
+  Color? success30 = green.withOpacity(0.3);
+  Color? success15 = green.withOpacity(0.15);
+
+  Color? successDark = greenDark;
+  Color? successDark30 = greenDark.withOpacity(0.3);
+
+  Color? warning = yellow;
+  Color? warning60 = yellow.withOpacity(0.6);
+  Color? warning45 = yellow.withOpacity(0.45);
+  Color? warning30 = yellow.withOpacity(0.3);
+  Color? warning15 = yellow.withOpacity(0.15);
+
+  Color? warningDark = yellowDark;
+  Color? warningDark30 = yellowDark.withOpacity(0.3);
+
+  Color? error = red;
+  Color? error60 = red.withOpacity(0.6);
+  Color? error30 = red.withOpacity(0.3);
+  Color? error15 = red.withOpacity(0.15);
+
+  Color? errorDark = redDark;
+  Color? errorDark30 = redDark.withOpacity(0.3);
+
+  Color? background = stitchBg;
+  Color? background40 = stitchBg.withOpacity(0.4);
+  Color? background00 = stitchBg.withOpacity(0.0);
+
+  Color? backgroundDark = stitchDarkBg;
+  Color? backgroundDark00 = stitchDarkBg.withOpacity(0.0);
+
+  Color? backgroundDarkest = stitchDarkBg;
+
+  Color? text = white.withOpacity(0.9);
+  Color? text60 = white.withOpacity(0.6);
+  Color? text45 = white.withOpacity(0.45);
+  Color? text30 = white.withOpacity(0.3);
+  Color? text20 = white.withOpacity(0.2);
+  Color? text15 = white.withOpacity(0.15);
+  Color? text10 = white.withOpacity(0.1);
+  Color? text05 = white.withOpacity(0.05);
+  Color? text03 = white.withOpacity(0.03);
+
+  Color? overlay90 = black.withOpacity(0.9);
+  Color? overlay85 = black.withOpacity(0.85);
+  Color? overlay80 = black.withOpacity(0.8);
+  Color? overlay70 = black.withOpacity(0.7);
+  Color? overlay50 = black.withOpacity(0.5);
+  Color? overlay30 = black.withOpacity(0.3);
+  Color? overlay20 = black.withOpacity(0.2);
+
+  Color? barrier = black.withOpacity(0.7);
+  Color? barrierWeaker = black.withOpacity(0.4);
+  Color? barrierWeakest = black.withOpacity(0.3);
+  Color? barrierStronger = black.withOpacity(0.85);
+
+  Color? animationOverlayMedium = black.withOpacity(0.7);
+  Color? animationOverlayStrong = black.withOpacity(0.85);
+
+  Brightness? brightness = Brightness.dark;
+  SystemUiOverlayStyle? statusBar = SystemUiOverlayStyle.light.copyWith(statusBarColor: Colors.transparent);
+
+  BoxShadow? boxShadow = const BoxShadow(color: Colors.transparent);
+  BoxShadow? boxShadowButton = const BoxShadow(color: Colors.transparent);
+}
+
 enum AppIconEnum { NAUTILUS, TITANIUM, INDIUM, SUNSHINE, NEPTUNIUM, THORIUM, CARBON, PURPELIUM, NYANO }
 
 class AppIcon {

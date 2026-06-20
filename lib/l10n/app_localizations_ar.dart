@@ -674,7 +674,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get exchangeCurrency => 'تبادل٪ 2';
 
   @override
-  String get exchangeNano => 'صرف نانو';
+  String get exchangeLumex => 'صرف نانو';
 
   @override
   String get existingPasswordHint => 'إدخل كلمة السر الحالية';
@@ -763,7 +763,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get getCurrency => 'احصل على٪ 2';
 
   @override
-  String get getNano => 'احصل على Lumex';
+  String get getLumex => 'احصل على Lumex';
 
   @override
   String get giftAlert => 'لديك هدية!';
@@ -1335,7 +1335,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get purchaseCurrency => 'شراء٪ 2';
 
   @override
-  String get purchaseNano => 'شراء نانو';
+  String get purchaseLumex => 'شراء نانو';
 
   @override
   String get qrInvalidAddress =>
@@ -1759,7 +1759,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get spendCurrency => 'أنفق٪ 2';
 
   @override
-  String get spendNano => 'أنفق نانو';
+  String get spendLumex => 'أنفق نانو';
 
   @override
   String get splitBill => 'سبليت بيل';
@@ -1977,7 +1977,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get useCurrency => 'استخدم٪ 2';
 
   @override
-  String get useNano => 'استخدم Lumex';
+  String get useLumex => 'استخدم Lumex';
 
   @override
   String get useLumexRep => 'Use Lumex Rep';

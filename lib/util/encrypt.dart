@@ -27,7 +27,7 @@ class Salsa20Encryptor {
     final Uint8List input = Uint8List.fromList(plainText.codeUnits);
     final Uint8List output = _cipher.process(input);
 
-    return NanoHelpers.byteToHex(output);
+    return LumexHelpers.byteToHex(output);
   }
 
   String decrypt(String cipherText) {
@@ -35,7 +35,7 @@ class Salsa20Encryptor {
       ..reset()
       ..init(false, _params);
 
-    final Uint8List input = NanoHelpers.hexToBytes(cipherText);
+    final Uint8List input = LumexHelpers.hexToBytes(cipherText);
     final Uint8List output = _cipher.process(input);
 
     return String.fromCharCodes(output);

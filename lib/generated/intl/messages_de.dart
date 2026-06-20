@@ -441,7 +441,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "giftCardCreationError": MessageLookupByLibrary.simpleMessage(
             "Beim Versuch, einen Geschenkkarten-Link zu erstellen, ist ein Fehler aufgetreten"),
         "giftCardCreationErrorSent": MessageLookupByLibrary.simpleMessage(
-            "Beim Versuch, eine Geschenkkarte zu erstellen, ist ein Fehler aufgetreten! Der Link zur Geschenkkarte und zum Download von Lumex, mit Seed (getrennt von einem ^ Zeichen) wurde in ihre Zwischenablage kopiert. Je nach Fehlerart ist es möglich, dass die übertragenen Nanos wieder hergestellt werden können."),
+            "Beim Versuch, eine Geschenkkarte zu erstellen, ist ein Fehler aufgetreten! Der Link zur Geschenkkarte und zum Download von Lumex, mit Seed (getrennt von einem ^ Zeichen) wurde in ihre Zwischenablage kopiert. Je nach Fehlerart ist es möglich, dass die übertragenen Lumexs wieder hergestellt werden können."),
         "giftCardInfoHeader": MessageLookupByLibrary.simpleMessage(
             "Informationen zum Geschenkbogen"),
         "giftFrom": MessageLookupByLibrary.simpleMessage("Geschenk von"),
@@ -484,7 +484,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "imSure": MessageLookupByLibrary.simpleMessage("Ich bin sicher"),
         "import": MessageLookupByLibrary.simpleMessage("Importieren"),
         "importGift": MessageLookupByLibrary.simpleMessage(
-            "Der Link, auf den Sie geklickt haben, enthält einige Nanos. Möchten Sie ihn in diese Brieftasche importieren oder demjenigen, der ihn gesendet hat, erstatten?"),
+            "Der Link, auf den Sie geklickt haben, enthält einige Lumexs. Möchten Sie ihn in diese Brieftasche importieren oder demjenigen, der ihn gesendet hat, erstatten?"),
         "importGiftEmpty": MessageLookupByLibrary.simpleMessage(
             "Unfortunately the link you clicked that contained some nano appears to be empty, but you can still see the amount and associated message."),
         "importGiftIntro": MessageLookupByLibrary.simpleMessage(
@@ -778,7 +778,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "removeFavoriteConfirmation": MessageLookupByLibrary.simpleMessage(
             "Are you sure you want to delete %1?"),
         "repInfo": MessageLookupByLibrary.simpleMessage(
-            "Kommt es zu zwei widersprüchlichen Transaktionen, so stimmen Vertreter-Accounts darüber ab, welche der Transaktionen akzeptiert wird. Dabei entspricht ein Lumex einem Stimmrecht. Du kannst einem Vertreter Stimmrechte in Höhe deines Guthabens übertragen. Deine Nanos gehören dabei natürlich weiterhin dir und der Vertreter kann diese nicht ausgeben. Wähle einen vertrauenswürdigen Vertreter mit einer hohen Erreichbarkeit."),
+            "Kommt es zu zwei widersprüchlichen Transaktionen, so stimmen Vertreter-Accounts darüber ab, welche der Transaktionen akzeptiert wird. Dabei entspricht ein Lumex einem Stimmrecht. Du kannst einem Vertreter Stimmrechte in Höhe deines Guthabens übertragen. Deine Lumexs gehören dabei natürlich weiterhin dir und der Vertreter kann diese nicht ausgeben. Wähle einen vertrauenswürdigen Vertreter mit einer hohen Erreichbarkeit."),
         "repInfoHeader":
             MessageLookupByLibrary.simpleMessage("Was ist ein Vertreter?"),
         "reply": MessageLookupByLibrary.simpleMessage("Antworten"),
@@ -909,7 +909,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "shareLumex":
             MessageLookupByLibrary.simpleMessage("Lumex teilen"),
         "shareLumexText": MessageLookupByLibrary.simpleMessage(
-            "Probier mal Lumex, Nanos offizielles Android-Wallet!"),
+            "Probier mal Lumex, Lumexs offizielles Android-Wallet!"),
         "shareText": MessageLookupByLibrary.simpleMessage("Text teilen"),
         "shopButton": MessageLookupByLibrary.simpleMessage("Geschäft"),
         "show": MessageLookupByLibrary.simpleMessage("Zeigen"),

@@ -994,7 +994,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "transferQrScanError": MessageLookupByLibrary.simpleMessage(
             "Ten kod QR nie zawiera ważnego nasiona."),
         "transferQrScanHint": MessageLookupByLibrary.simpleMessage(
-            "Skanuj Nasiono \nNano lub klucz prywatny"),
+            "Skanuj Nasiono \nLumex lub klucz prywatny"),
         "unacknowledged":
             MessageLookupByLibrary.simpleMessage("niepotwierdzone"),
         "unconfirmed": MessageLookupByLibrary.simpleMessage("niepotwierdzone"),

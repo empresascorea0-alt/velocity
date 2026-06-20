@@ -714,8 +714,8 @@ class _SendConfirmSheetState extends State<SendConfirmSheet> {
 
       final String derivationMethod =
           await sl.get<SharedPrefsUtil>().getKeyDerivationMethod();
-      final NanoDerivationType derivationType =
-          NanoUtilities.derivationMethodToType(derivationMethod);
+      final LumexDerivationType derivationType =
+          LumexUtilities.derivationMethodToType(derivationMethod);
       if (!isMessage) {
         if (widget.anonymousMode) {
           if (!mounted) return;
@@ -725,7 +725,7 @@ class _SendConfirmSheetState extends State<SendConfirmSheet> {
                 "nanAmountToSendRaw == null || nanDestination == null");
           }
 
-          final String privKey = await NanoDerivations.universalSeedToPrivate(
+          final String privKey = await LumexDerivations.universalSeedToPrivate(
             await StateContainer.of(context).getSeed(),
             index: StateContainer.of(context).selectedAccount!.index!,
             type: derivationType,
@@ -761,17 +761,17 @@ class _SendConfirmSheetState extends State<SendConfirmSheet> {
           // random index between 1-4 billion:
           final int randomIndex = Random().nextInt(3000000000) + 1000000000;
 
-          final NanoDerivationType derivationType =
-              NanoUtilities.derivationMethodToType(derivationMethod);
+          final LumexDerivationType derivationType =
+              LumexUtilities.derivationMethodToType(derivationMethod);
 
           final String address200 =
-              await NanoDerivations.universalSeedToAddress(
+              await LumexDerivations.universalSeedToAddress(
             await StateContainer.of(context).getSeed(),
             index: randomIndex,
             type: derivationType,
           );
 
-          final String privKey = await NanoDerivations.universalSeedToPrivate(
+          final String privKey = await LumexDerivations.universalSeedToPrivate(
               await StateContainer.of(context).getSeed(),
               index: StateContainer.of(context).selectedAccount!.index!,
               type: derivationType);
@@ -817,7 +817,7 @@ class _SendConfirmSheetState extends State<SendConfirmSheet> {
           sl.get<Logger>().v("SENT TO DESTINATION");
         } else if (!obscuredMode) {
           // regular mode:
-          final String privKey = await NanoDerivations.universalSeedToPrivate(
+          final String privKey = await LumexDerivations.universalSeedToPrivate(
             await StateContainer.of(context).getSeed(),
             index: StateContainer.of(context).selectedAccount!.index!,
             type: derivationType,
@@ -852,9 +852,9 @@ class _SendConfirmSheetState extends State<SendConfirmSheet> {
 
       // if there's a memo to be sent, and this isn't a gift card creation, send it:
       if (widget.memo.isNotEmpty && widget.link.isEmpty) {
-        final NanoDerivationType derivationType =
-            NanoUtilities.derivationMethodToType(derivationMethod);
-        final String privKey = await NanoDerivations.universalSeedToPrivate(
+        final LumexDerivationType derivationType =
+            LumexUtilities.derivationMethodToType(derivationMethod);
+        final String privKey = await LumexDerivations.universalSeedToPrivate(
           await StateContainer.of(context).getSeed(),
           index: StateContainer.of(context).selectedAccount!.index!,
           type: derivationType,

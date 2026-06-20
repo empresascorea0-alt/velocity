@@ -37,7 +37,7 @@ class SwapXMRScreen extends StatefulWidget {
 
 class SwapXMRScreenState extends State<SwapXMRScreen> {
   GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
-  // String paper_wallet_seed = NanoSeeds.generateSeed();
+  // String paper_wallet_seed = LumexSeeds.generateSeed();
   // late String paper_wallet_account;
 
   FocusNode? _amountFocusNode;
@@ -75,7 +75,7 @@ class SwapXMRScreenState extends State<SwapXMRScreen> {
   void initState() {
     super.initState();
 
-    // paper_wallet_account = NanoUtil.seedToAddress(paper_wallet_seed, 0);
+    // paper_wallet_account = LumexUtil.seedToAddress(paper_wallet_seed, 0);
 
     _amountFocusNode = FocusNode();
     _addressFocusNode = FocusNode();
@@ -407,12 +407,12 @@ class SwapXMRScreenState extends State<SwapXMRScreen> {
         textField = textField.replaceAll(",", ".");
         final String sanitizedTextField = sanitizedAmount(_localCurrencyFormat, textField);
         final String sanitizedBalance = sanitizedAmount(_localCurrencyFormat, balance);
-        textFieldInt = (Decimal.parse(sanitizedTextField) * Decimal.fromInt(pow(10, NanoAmounts.maxDecimalDigits) as int)).toDouble().toInt();
-        balanceInt = (Decimal.parse(sanitizedBalance) * Decimal.fromInt(pow(10, NanoAmounts.maxDecimalDigits) as int)).toDouble().toInt();
+        textFieldInt = (Decimal.parse(sanitizedTextField) * Decimal.fromInt(pow(10, LumexAmounts.maxDecimalDigits) as int)).toDouble().toInt();
+        balanceInt = (Decimal.parse(sanitizedBalance) * Decimal.fromInt(pow(10, LumexAmounts.maxDecimalDigits) as int)).toDouble().toInt();
       } else {
         textField = sanitizedAmount(_localCurrencyFormat, textField);
-        textFieldInt = (Decimal.parse(textField) * Decimal.fromInt(pow(10, NanoAmounts.maxDecimalDigits) as int)).toDouble().toInt();
-        balanceInt = (Decimal.parse(balance) * Decimal.fromInt(pow(10, NanoAmounts.maxDecimalDigits) as int)).toDouble().toInt();
+        textFieldInt = (Decimal.parse(textField) * Decimal.fromInt(pow(10, LumexAmounts.maxDecimalDigits) as int)).toDouble().toInt();
+        balanceInt = (Decimal.parse(balance) * Decimal.fromInt(pow(10, LumexAmounts.maxDecimalDigits) as int)).toDouble().toInt();
       }
       return textFieldInt == balanceInt;
     } catch (e) {
@@ -441,7 +441,7 @@ class SwapXMRScreenState extends State<SwapXMRScreen> {
         CurrencyFormatter2(
           active: _localCurrencyMode,
           currencyFormat: _localCurrencyFormat,
-          maxDecimalDigits: _localCurrencyMode ? _localCurrencyFormat.decimalDigits ?? 2 : NanoAmounts.maxDecimalDigits,
+          maxDecimalDigits: _localCurrencyMode ? _localCurrencyFormat.decimalDigits ?? 2 : LumexAmounts.maxDecimalDigits,
         ),
       ],
       onChanged: (String text) {
@@ -587,7 +587,7 @@ class SwapXMRScreenState extends State<SwapXMRScreen> {
         bool isUser = false;
         final bool isDomain = text.contains(".") || text.contains(r"$");
         final bool isFavorite = text.startsWith("★");
-        final bool isNano = text.startsWith(NonTranslatable.currencyPrefix);
+        final bool isLumex = text.startsWith(NonTranslatable.currencyPrefix);
 
         // prevent spaces:
         if (text.contains(" ")) {

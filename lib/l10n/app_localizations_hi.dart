@@ -680,7 +680,7 @@ class AppLocalizationsHi extends AppLocalizations {
   String get exchangeCurrency => 'एक्सचेंज%2';
 
   @override
-  String get exchangeNano => 'एक्सचेंज नैनो';
+  String get exchangeLumex => 'एक्सचेंज नैनो';
 
   @override
   String get existingPasswordHint => 'वर्तमान पासवर्ड डालें';
@@ -770,7 +770,7 @@ class AppLocalizationsHi extends AppLocalizations {
   String get getCurrency => '%2 प्राप्त करें';
 
   @override
-  String get getNano => 'नैनो प्राप्त करें';
+  String get getLumex => 'नैनो प्राप्त करें';
 
   @override
   String get giftAlert => 'आपके पास एक उपहार है!';
@@ -1343,7 +1343,7 @@ class AppLocalizationsHi extends AppLocalizations {
   String get purchaseCurrency => 'खरीद%2';
 
   @override
-  String get purchaseNano => 'नैनो खरीदें';
+  String get purchaseLumex => 'नैनो खरीदें';
 
   @override
   String get qrInvalidAddress => 'क्यूआर कोड में मान्य गंतव्य नहीं है';
@@ -1771,7 +1771,7 @@ class AppLocalizationsHi extends AppLocalizations {
   String get spendCurrency => 'खर्च %2';
 
   @override
-  String get spendNano => 'नैनो खर्च करें';
+  String get spendLumex => 'नैनो खर्च करें';
 
   @override
   String get splitBill => 'स्प्लिट बिल';
@@ -1992,7 +1992,7 @@ class AppLocalizationsHi extends AppLocalizations {
   String get useCurrency => '%2 का प्रयोग करें';
 
   @override
-  String get useNano => 'नैनो का प्रयोग करें';
+  String get useLumex => 'नैनो का प्रयोग करें';
 
   @override
   String get useLumexRep => 'Use Lumex Rep';

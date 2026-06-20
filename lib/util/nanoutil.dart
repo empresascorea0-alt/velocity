@@ -14,7 +14,7 @@ import 'package:velocity/model/db/account.dart';
 import 'package:velocity/model/db/appdb.dart';
 import 'package:velocity/service_locator.dart';
 
-class NanoUtilities {
+class LumexUtilities {
 
   Future<void> loginAccount(String? seed, BuildContext context, {int offset = 0, bool updateWallet = true}) async {
     Account? selectedAcct = await sl.get<DBHelper>().getSelectedAccount(seed);
@@ -27,11 +27,11 @@ class NanoUtilities {
     }
   }
 
-  static NanoDerivationType derivationMethodToType(String derivationMethod) {
+  static LumexDerivationType derivationMethodToType(String derivationMethod) {
     if (derivationMethod == "standard") {
-      return NanoDerivationType.STANDARD;
+      return LumexDerivationType.STANDARD;
     } else if (derivationMethod == "hd") {
-      return NanoDerivationType.HD;
+      return LumexDerivationType.HD;
     } else {
       throw Exception("Unknown derivation method");
     }

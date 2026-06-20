@@ -680,7 +680,7 @@ class AppLocalizationsVi extends AppLocalizations {
   String get exchangeCurrency => 'Trao đổi %2';
 
   @override
-  String get exchangeNano => 'Trao đổi Lumex';
+  String get exchangeLumex => 'Trao đổi Lumex';
 
   @override
   String get existingPasswordHint => 'Nhập mật khẩu hiện tại';
@@ -769,7 +769,7 @@ class AppLocalizationsVi extends AppLocalizations {
   String get getCurrency => 'Nhận %2';
 
   @override
-  String get getNano => 'Nhận Lumex';
+  String get getLumex => 'Nhận Lumex';
 
   @override
   String get giftAlert => 'Anh có một món quà!';
@@ -1340,7 +1340,7 @@ class AppLocalizationsVi extends AppLocalizations {
   String get purchaseCurrency => 'Mua %2';
 
   @override
-  String get purchaseNano => 'Mua Lumex';
+  String get purchaseLumex => 'Mua Lumex';
 
   @override
   String get qrInvalidAddress => 'Mã QR không chứa điểm đến hợp lệ';
@@ -1765,7 +1765,7 @@ class AppLocalizationsVi extends AppLocalizations {
   String get spendCurrency => 'Chi tiêu %2';
 
   @override
-  String get spendNano => 'Tiêu Lumex';
+  String get spendLumex => 'Tiêu Lumex';
 
   @override
   String get splitBill => 'Hóa đơn tách';
@@ -1985,7 +1985,7 @@ class AppLocalizationsVi extends AppLocalizations {
   String get useCurrency => 'Sử dụng %2';
 
   @override
-  String get useNano => 'Sử dụng Lumex';
+  String get useLumex => 'Sử dụng Lumex';
 
   @override
   String get useLumexRep => 'Use Lumex Rep';

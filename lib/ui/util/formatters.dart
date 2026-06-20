@@ -23,7 +23,7 @@ int findDifferentCharacterInString(String str1, String str2) {
 /// Input formatter for Crypto/Fiat amounts
 class CurrencyFormatter2 extends TextInputFormatter {
   CurrencyFormatter2(
-      {required this.currencyFormat, this.maxDecimalDigits = NanoAmounts.maxDecimalDigits, this.active = false});
+      {required this.currencyFormat, this.maxDecimalDigits = LumexAmounts.maxDecimalDigits, this.active = false});
 
   NumberFormat currencyFormat;
   int maxDecimalDigits;
@@ -256,7 +256,7 @@ String convertLocalCurrencyToLocalizedCrypto(BuildContext context, NumberFormat 
   final Decimal valueLocal = Decimal.parse(sanitizedAmt);
   final Decimal conversion = Decimal.parse(StateContainer.of(context).wallet!.localCurrencyConversion!);
   final String nanoAmount =
-      NanoAmounts.truncateDecimal((valueLocal / conversion).toDecimal(scaleOnInfinitePrecision: 16));
+      LumexAmounts.truncateDecimal((valueLocal / conversion).toDecimal(scaleOnInfinitePrecision: 16));
 
   // replace dec separator as this function expects the localized version:
   // no need to put the group separator back in as it's stripped again anyways:
@@ -275,7 +275,7 @@ String convertCryptoToLocalCurrency(BuildContext context, NumberFormat localCurr
   }
   final Decimal valueCrypto = Decimal.parse(sanitizedAmt);
   final Decimal conversion = Decimal.parse(StateContainer.of(context).wallet!.localCurrencyConversion!);
-  sanitizedAmt = NanoAmounts.truncateDecimal(valueCrypto * conversion, digits: 2);
+  sanitizedAmt = LumexAmounts.truncateDecimal(valueCrypto * conversion, digits: 2);
 
   return (localCurrencyFormat.currencySymbol + convertCryptoToLocalAmount(sanitizedAmt, localCurrencyFormat))
       .replaceAll(" ", "");
@@ -387,21 +387,21 @@ List<TextSpan> displayRawFull(BuildContext context, TextStyle textStyle, String 
 
 String getRawAsThemeAwareAmount(BuildContext context, String? raw) {
   final BigInt rawPerCur = StateContainer.of(context).nyanoMode
-      ? NanoAmounts.rawPerNyano
+      ? LumexAmounts.rawPerNyano
       : StateContainer.of(context).bananoMode
-          ? NanoAmounts.rawPerBanano
-          : NanoAmounts.rawPerNano;
-  return NanoAmounts.getRawAsUsableString(raw, rawPerCur); // "$amount.$decPart"
+          ? LumexAmounts.rawPerBanano
+          : LumexAmounts.rawPerNano;
+  return LumexAmounts.getRawAsUsableString(raw, rawPerCur); // "$amount.$decPart"
 }
 
 String getThemeAwareRawAccuracy(BuildContext context, String? raw) {
   final BigInt rawPerCur = StateContainer.of(context).nyanoMode
-      ? NanoAmounts.rawPerNyano
+      ? LumexAmounts.rawPerNyano
       : StateContainer.of(context).bananoMode
-          ? NanoAmounts.rawPerBanano
-          : NanoAmounts.rawPerNano;
-  final String rawString = NanoAmounts.getRawAsUsableString(raw, rawPerCur);
-  final String rawDecimalString = NanoAmounts.getRawAsDecimal(raw, rawPerCur).toString();
+          ? LumexAmounts.rawPerBanano
+          : LumexAmounts.rawPerNano;
+  final String rawString = LumexAmounts.getRawAsUsableString(raw, rawPerCur);
+  final String rawDecimalString = LumexAmounts.getRawAsDecimal(raw, rawPerCur).toString();
 
   if (raw == null || raw.isEmpty || raw == "0") {
     return "";
@@ -419,11 +419,11 @@ String getThemeAwareRawAccuracy(BuildContext context, String? raw) {
 
 String getThemeAwareAmountAsRaw(BuildContext context, String amount) {
   if (StateContainer.of(context).nyanoMode) {
-    return NanoAmounts.getAmountAsRaw(amount, NanoAmounts.rawPerNyano);
+    return LumexAmounts.getAmountAsRaw(amount, LumexAmounts.rawPerNyano);
   } else if (StateContainer.of(context).bananoMode) {
-    return NanoAmounts.getAmountAsRaw(amount, NanoAmounts.rawPerBanano);
+    return LumexAmounts.getAmountAsRaw(amount, LumexAmounts.rawPerBanano);
   } else {
-    return NanoAmounts.getAmountAsRaw(amount, NanoAmounts.rawPerNano);
+    return LumexAmounts.getAmountAsRaw(amount, LumexAmounts.rawPerNano);
   }
 }
 
@@ -445,8 +445,8 @@ String getRawAsThemeAwareFormattedAmount(BuildContext context, String? raw) {
   //   final String result = numAmount.replaceAllMapped(reg, mathFunc);
 
   //   // truncate:
-  //   if (decAmount.length > NanoAmounts.maxDecimalDigits) {
-  //     decAmount = decAmount.substring(0, NanoAmounts.maxDecimalDigits);
+  //   if (decAmount.length > LumexAmounts.maxDecimalDigits) {
+  //     decAmount = decAmount.substring(0, LumexAmounts.maxDecimalDigits);
   //     // remove trailing zeros:
   //     decAmount = decAmount.replaceAllMapped(RegExp(r'0+$'), (Match match) => "");
   //   }

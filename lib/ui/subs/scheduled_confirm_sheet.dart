@@ -364,7 +364,7 @@ class ScheduledConfirmSheetState extends State<ScheduledConfirmSheet> {
       // bool payNow = false;
       // if (payNow) {
       //   final String derivationMethod = await sl.get<SharedPrefsUtil>().getKeyDerivationMethod();
-      //   final String privKey = await NanoUtil.uniSeedToPrivate(await StateContainer.of(context).getSeed(),
+      //   final String privKey = await LumexUtil.uniSeedToPrivate(await StateContainer.of(context).getSeed(),
       //       StateContainer.of(context).selectedAccount!.index!, derivationMethod);
       //   var resp = await sl.get<AccountService>().requestSend(
       //         StateContainer.of(context).wallet!.representative,

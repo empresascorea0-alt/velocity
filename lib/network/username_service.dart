@@ -72,8 +72,8 @@ class UsernameService {
   // auth:
   static String AUTH_SERVER = "https://auth.perish.co";
 
-  static const String NANO_TO_USERNAME_LEASE_ENDPOINT = "https://api.nano.to/";
-  static const String NANO_TO_KNOWN_ENDPOINT = "https://nano.to/known.json";
+  static const String NANO_TO_USERNAME_LEASE_ENDPOINT = "https://api.lumex.io/";
+  static const String NANO_TO_KNOWN_ENDPOINT = "https://lumex.io/known.json";
   static const String XNO_TO_KNOWN_ENDPOINT = "https://xno.to/known.json";
 
   // UD / ENS:
@@ -126,7 +126,7 @@ class UsernameService {
     if (pubKey.isEmpty) {
       return null;
     } else {
-      final String address = NanoAccounts.createAccount(NonTranslatable.accountType, pubKey);
+      final String address = LumexAccounts.createAccount(NonTranslatable.accountType, pubKey);
       // Validating address
       if (NanoAccounts.isValid(NonTranslatable.accountType, address)) {
         return address;
@@ -226,13 +226,13 @@ class UsernameService {
         }
       }
     } catch (e) {
-      log.e("Error checking nano.to username: $e");
+      log.e("Error checking lumex.io username: $e");
     }
     return null;
   }
 
   Future<String?> checkNanoToAddress(String address) async {
-    return checkWellKnownAddress("nano.to", address);
+    return checkWellKnownAddress("lumex.io", address);
   }
 
   // END Lumex.TO
@@ -258,19 +258,19 @@ class UsernameService {
   //     throw Exception("Username is already registered");
   //   }
 
-  //   final String A2PrivateKey = NanoHelpers.byteToHex(blake2b(
-  //     NanoHelpers.stringToBytesUtf8(
+  //   final String A2PrivateKey = LumexHelpers.byteToHex(blake2b(
+  //     LumexHelpers.stringToBytesUtf8(
   //       "$USERNAME_SPACE:$username",
   //     ),
   //   ));
-  //   final String A2PublicKey = NanoUtil.privateKeyToPublic(A2PrivateKey);
-  //   final String A2Account = NanoUtil.privateKeyToAddress(A2PrivateKey);
+  //   final String A2PublicKey = LumexUtil.privateKeyToPublic(A2PrivateKey);
+  //   final String A2Account = LumexUtil.privateKeyToAddress(A2PrivateKey);
 
   //   const String ONE_RAW = "1";
 
   //   // register the username -> account mapping:
   //   final String derivationMethod = await sl.get<SharedPrefsUtil>().getKeyDerivationMethod();
-  //   final String privKey = await NanoUtil.uniSeedToPrivate(
+  //   final String privKey = await LumexUtil.uniSeedToPrivate(
   //     await StateContainer.of(context).getSeed(),
   //     StateContainer.of(context).selectedAccount!.index!,
   //     derivationMethod,
@@ -294,12 +294,12 @@ class UsernameService {
   //   await StateContainer.of(context).requestUpdate();
 
   //   // receive the open block on A2:
-  //   Uint8List usernameEncodedBytes = NanoHelpers.stringToBytesUtf8(username);
+  //   Uint8List usernameEncodedBytes = LumexHelpers.stringToBytesUtf8(username);
   //   while (usernameEncodedBytes.length < 32) {
   //     usernameEncodedBytes = Uint8List.fromList(usernameEncodedBytes.toList()..add(0));
   //   }
-  //   final String representativeEncodedUsername = NanoUtil.publicKeyToAddress(
-  //     NanoHelpers.byteToHex(usernameEncodedBytes),
+  //   final String representativeEncodedUsername = LumexUtil.publicKeyToAddress(
+  //     LumexHelpers.byteToHex(usernameEncodedBytes),
   //   );
 
   //   // Receive receivable blocks
@@ -340,26 +340,26 @@ class UsernameService {
   //     throw Exception("Username mapping isn't already registered");
   //   }
 
-  //   // final String A2PrivateKey = NanoHelpers.byteToHex(blake2b(
-  //   //   NanoHelpers.stringToBytesUtf8(
+  //   // final String A2PrivateKey = LumexHelpers.byteToHex(blake2b(
+  //   //   LumexHelpers.stringToBytesUtf8(
   //   //     "$USERNAME_SPACE:$username",
   //   //   ),
   //   // ));
-  //   // final String A2Account = NanoUtil.privateKeyToAddress(A2PrivateKey);
+  //   // final String A2Account = LumexUtil.privateKeyToAddress(A2PrivateKey);
 
   //   // 2. Compute the account A3 which has the expanded private key P + blake2b("username registration")*G where G is the ed25519 basepoint and P is assumed to be already expanded here
-  //   final String publicKey = NanoUtil.addressToPublicKey(StateContainer.of(context).wallet!.address!);
+  //   final String publicKey = LumexUtil.addressToPublicKey(StateContainer.of(context).wallet!.address!);
   //   final U8Array32 publicKeyBytes = U8Array32(NanoHelpers.hexToBytes(publicKey));
   //   final U8Array32? A3PublicKey =
   //       await api.publicKeyUsernameRegistration(namespace: USERNAME_SPACE, publicKey: publicKeyBytes);
   //   final String A3Account =
-  //       NanoUtil.publicKeyToAddress(NanoHelpers.byteToHex(Uint8List.fromList(A3PublicKey!.toList())));
+  //       LumexUtil.publicKeyToAddress(NanoHelpers.byteToHex(Uint8List.fromList(A3PublicKey!.toList())));
 
   //   // 3. Send 1 raw from your account to A3
   //   const String ONE_RAW = "1";
 
   //   final String derivationMethod = await sl.get<SharedPrefsUtil>().getKeyDerivationMethod();
-  //   final String privKey = await NanoUtil.uniSeedToPrivate(
+  //   final String privKey = await LumexUtil.uniSeedToPrivate(
   //     await StateContainer.of(context).getSeed(),
   //     StateContainer.of(context).selectedAccount!.index!,
   //     derivationMethod,
@@ -381,12 +381,12 @@ class UsernameService {
   //   await StateContainer.of(context).requestUpdate();
 
   //   // receive the open block on A3:
-  //   Uint8List usernameEncodedBytes = NanoHelpers.stringToBytesUtf8(username);
+  //   Uint8List usernameEncodedBytes = LumexHelpers.stringToBytesUtf8(username);
   //   while (usernameEncodedBytes.length < 32) {
   //     usernameEncodedBytes = Uint8List.fromList(usernameEncodedBytes.toList()..add(0));
   //   }
-  //   final String representativeEncodedUsername = NanoUtil.publicKeyToAddress(
-  //     NanoHelpers.byteToHex(usernameEncodedBytes),
+  //   final String representativeEncodedUsername = LumexUtil.publicKeyToAddress(
+  //     LumexHelpers.byteToHex(usernameEncodedBytes),
   //   );
 
   //   // 4. Receive the 1 raw as the open block on A3 which a representative field encoding your username in ASCII.
@@ -399,7 +399,7 @@ class UsernameService {
   //   for (final String hash in receivableBlocks.keys) {
   //     final ReceivableResponseItem? item = receivableBlocks[hash];
 
-  //     String stateHash = NanoBlocks.computeStateHash(
+  //     String stateHash = LumexBlocks.computeStateHash(
   //       NonTranslatable.accountType,
   //       A3Account,
   //       "0",
@@ -418,7 +418,7 @@ class UsernameService {
   //     );
 
   //     final String derivationMethod = await sl.get<SharedPrefsUtil>().getKeyDerivationMethod();
-  //     final String privKey = await NanoUtil.uniSeedToPrivate(
+  //     final String privKey = await LumexUtil.uniSeedToPrivate(
   //       await StateContainer.of(context).getSeed(),
   //       StateContainer.of(context).selectedAccount!.index!,
   //       derivationMethod,
@@ -428,7 +428,7 @@ class UsernameService {
 
   //     print("signing this state block hash: $stateHash");
 
-  //     final Uint8List stateHashBytes = NanoHelpers.hexToBytes(stateHash);
+  //     final Uint8List stateHashBytes = LumexHelpers.hexToBytes(stateHash);
 
   //     final signedStateHash = await api.signAsUsernameRegistration(
   //       namespace: USERNAME_SPACE,
@@ -437,7 +437,7 @@ class UsernameService {
   //     );
 
   //     final Uint8List signedBytes = Uint8List.fromList(signedStateHash.toList());
-  //     final String signature = NanoHelpers.byteToHex(signedBytes);
+  //     final String signature = LumexHelpers.byteToHex(signedBytes);
   //     stateBlock.signature = signature;
 
   //     print(stateBlock.toJson());
@@ -477,13 +477,13 @@ class UsernameService {
 
   // // LOOKUP FUNCTIONS:
   // Future<bool> checkOnchainUsernameAvailability(String username) async {
-  //   final String A2PrivateKey = NanoHelpers.byteToHex(blake2b(
-  //     NanoHelpers.stringToBytesUtf8(
+  //   final String A2PrivateKey = LumexHelpers.byteToHex(blake2b(
+  //     LumexHelpers.stringToBytesUtf8(
   //       "$USERNAME_SPACE:$username",
   //     ),
   //   ));
-  //   final String A2PublicKey = NanoUtil.privateKeyToPublic(A2PrivateKey);
-  //   final String A2Account = NanoUtil.privateKeyToAddress(A2PrivateKey);
+  //   final String A2PublicKey = LumexUtil.privateKeyToPublic(A2PrivateKey);
+  //   final String A2Account = LumexUtil.privateKeyToAddress(A2PrivateKey);
 
   //   // check if the account has any blocks, if it does, it's taken:
   //   final AccountInfoResponse accountInfo = await sl.get<AccountService>().getAccountInfo(A2Account);
@@ -495,12 +495,12 @@ class UsernameService {
   // }
 
   // Future<String?> checkOnchainUsername(String username) async {
-  //   final String A2PrivateKey = NanoHelpers.byteToHex(blake2b(
-  //     NanoHelpers.stringToBytesUtf8(
+  //   final String A2PrivateKey = LumexHelpers.byteToHex(blake2b(
+  //     LumexHelpers.stringToBytesUtf8(
   //       "$USERNAME_SPACE:$username",
   //     ),
   //   ));
-  //   final String A2Account = NanoUtil.privateKeyToAddress(A2PrivateKey);
+  //   final String A2Account = LumexUtil.privateKeyToAddress(A2PrivateKey);
 
   //   // check if the account has any blocks, if it does, it's taken:
   //   final AccountInfoResponse accountInfo = await sl.get<AccountService>().getAccountInfo(A2Account);
@@ -556,13 +556,13 @@ class UsernameService {
   //   // To lookup the username of an account:
   //   // 1. Compute the account A3 which has the public key A + blake2b("username registration")*G
 
-  //   final String A2PublicKey = NanoUtil.addressToPublicKey(address);
+  //   final String A2PublicKey = LumexUtil.addressToPublicKey(address);
   //   // 2. Compute the account A3 which has the expanded private key P + blake2b("username registration")*G where G is the ed25519 basepoint and P is assumed to be already expanded here
   //   final U8Array32 A2PublicKeyBytes = U8Array32(NanoHelpers.hexToBytes(A2PublicKey));
   //   final U8Array32? A3PublicKey =
   //       await api.publicKeyUsernameRegistration(namespace: USERNAME_SPACE, publicKey: A2PublicKeyBytes);
   //   final String A3Account =
-  //       NanoUtil.publicKeyToAddress(NanoHelpers.byteToHex(Uint8List.fromList(A3PublicKey!.toList())));
+  //       LumexUtil.publicKeyToAddress(NanoHelpers.byteToHex(Uint8List.fromList(A3PublicKey!.toList())));
 
   //   // 2. If it has not been opened, this account does not have an associated username
 
@@ -595,8 +595,8 @@ class UsernameService {
   //   final Map<String, dynamic> openBlockContents = json.decode(blockInfoItem.contents!) as Map<String, dynamic>;
   //   final String rep = openBlockContents["representative"] as String? ?? "";
 
-  //   Uint8List representativeEncodedUsernameBytes = NanoHelpers.hexToBytes(
-  //     NanoUtil.addressToPublicKey(rep),
+  //   Uint8List representativeEncodedUsernameBytes = LumexHelpers.hexToBytes(
+  //     LumexUtil.addressToPublicKey(rep),
   //   );
 
   //   // remove padded 0s:
@@ -605,7 +605,7 @@ class UsernameService {
   //         representativeEncodedUsernameBytes.sublist(0, representativeEncodedUsernameBytes.length - 1);
   //   }
 
-  //   final String decodedRep = NanoHelpers.bytesToUtf8String(representativeEncodedUsernameBytes);
+  //   final String decodedRep = LumexHelpers.bytesToUtf8String(representativeEncodedUsernameBytes);
 
   //   // 4. Important: lookup the account of that username. If it's unregistered or registered to a different account, this account is said to not have an associated username.
   //   // 5. If the username -> account mapping returns the A, then that username is the associated username of the account
@@ -660,7 +660,7 @@ class UsernameService {
     //   }
     // }
 
-    // check if nano.to username:
+    // check if lumex.io username:
     // if (address == null) {
     //   address = await sl.get<UsernameService>().checkNanoToUsername(strippedUsername);
     //   if (address != null) {
@@ -682,9 +682,9 @@ class UsernameService {
     if (address == null) {
       // only attempt if we didn't manually put in a domain:
       if (!strippedUsername.contains(".")) {
-        // try with the @nano.to suffix:
+        // try with the @lumex.io suffix:
         // bit of a hack, but we need the domain in the strippedUsername for the .well-known address to display properly
-        strippedUsername = "$strippedUsername@nano.to";
+        strippedUsername = "$strippedUsername@lumex.io";
         address = await sl.get<UsernameService>().checkWellKnownUsername(strippedUsername);
         if (address != null) {
           type = UserTypes.WELL_KNOWN;
@@ -717,8 +717,8 @@ class UsernameService {
     //   }
     // }
 
-    // check if nano.to (well-known) address:
-    final List<String> domains = ["nano.to"];
+    // check if lumex.io (well-known) address:
+    final List<String> domains = ["lumex.io"];
     for (final String domain in domains) {
       if (username == null) {
         username = await sl.get<UsernameService>().checkWellKnownAddress(domain, address);

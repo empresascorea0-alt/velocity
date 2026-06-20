@@ -213,14 +213,14 @@ class _PinScreenState extends State<PinScreen> with SingleTickerProviderStateMix
                     // re-add account index 0 and switch the account to it:
                     final String seed = await StateContainer.of(context).getSeed();
                     // hash the current seed:
-                    final String hashedSeed = NanoHelpers.byteToHex(blake2b(NanoHelpers.hexToBytes(seed))).substring(0, 64);
+                    final String hashedSeed = LumexHelpers.byteToHex(blake2b(NanoHelpers.hexToBytes(seed))).substring(0, 64);
                     // logout:
                     StateContainer.of(context).logOut();
                     if (!mounted) return;
                     await sl.get<Vault>().deleteSeed();
                     await sl.get<Vault>().setSeed(hashedSeed);
                     if (!mounted) return;
-                    await NanoUtilities().loginAccount(hashedSeed, context, offset: 0);
+                    await LumexUtilities().loginAccount(hashedSeed, context, offset: 0);
                     await sl.get<Vault>().updateSessionKey();
                     if (!mounted) return;
                     await StateContainer.of(context).resetRecentlyUsedAccounts();

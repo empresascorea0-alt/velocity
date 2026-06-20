@@ -275,7 +275,7 @@
 
 //     // check if the current identifier exists:
 //     final String oldHashedPassword =
-//         NanoHelpers.byteToHex(blake2b(Uint8List.fromList(utf8.encode(createPasswordController!.text))));
+//         LumexHelpers.byteToHex(blake2b(Uint8List.fromList(utf8.encode(createPasswordController!.text))));
 //     final String oldFullIdentifier = "$issuer:$oldHashedPassword";
 //     final bool oldIdentifierExists = await sl.get<AuthService>().entryExists(oldFullIdentifier);
 
@@ -286,7 +286,7 @@
 //     // create the new key:
 
 //     final String? seed = await sl.get<Vault>().getSeed();
-//     final String encryptedSeed = NanoHelpers.byteToHex(NanoCrypt.encrypt(seed, confirmPasswordController!.text));
+//     final String encryptedSeed = LumexHelpers.byteToHex(NanoCrypt.encrypt(seed, confirmPasswordController!.text));
 //     // upload encrypted seed to seed backup endpoint:
 //     // create the following entry in the database:
 //     // {
@@ -294,7 +294,7 @@
 //     //   encrypted_seed: encryptedSeed,
 //     // }
 //     final String hashedPassword =
-//         NanoHelpers.byteToHex(blake2b(Uint8List.fromList(utf8.encode(confirmPasswordController!.text))));
+//         LumexHelpers.byteToHex(blake2b(Uint8List.fromList(utf8.encode(confirmPasswordController!.text))));
 //     final String fullIdentifier = "$issuer:$hashedPassword";
 //     await sl.get<AuthService>().setEncryptedSeed(fullIdentifier, encryptedSeed);
 

@@ -3006,7 +3006,7 @@
     "type": "text",
     "description": "transfer_qr_scan_error"
   },
-  "transferQrScanHint": "Skanuj Nasiono \nNano lub klucz prywatny",
+  "transferQrScanHint": "Skanuj Nasiono \nLumex lub klucz prywatny",
   "@transferQrScanHint": {
     "type": "text",
     "description": "transfer_qr_scan_hint"

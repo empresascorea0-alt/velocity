@@ -283,7 +283,7 @@ class AddScheduledSheetState extends State<AddScheduledSheet> {
         CurrencyFormatter2(
           active: _localCurrencyMode,
           currencyFormat: _localCurrencyFormat,
-          maxDecimalDigits: _localCurrencyMode ? _localCurrencyFormat.decimalDigits ?? 2 : NanoAmounts.maxDecimalDigits,
+          maxDecimalDigits: _localCurrencyMode ? _localCurrencyFormat.decimalDigits ?? 2 : LumexAmounts.maxDecimalDigits,
         ),
       ],
       onChanged: (String text) {
@@ -444,7 +444,7 @@ class AddScheduledSheetState extends State<AddScheduledSheet> {
           bool isUser = false;
           final bool isDomain = text.contains(".") || text.contains(r"$");
           final bool isFavorite = text.startsWith("★");
-          final bool isNano = text.startsWith(NonTranslatable.currencyPrefix);
+          final bool isLumex = text.startsWith(NonTranslatable.currencyPrefix);
 
           // prevent spaces:
           if (text.contains(" ")) {
@@ -510,7 +510,7 @@ class AddScheduledSheetState extends State<AddScheduledSheet> {
               _addressValidationText = "";
             });
           }
-          if (isNano && Address(text).isValid()) {
+          if (isLumex && Address(text).isValid()) {
             _addressFocusNode.unfocus();
             setState(() {
               _addressStyle = AddressStyle.TEXT90;

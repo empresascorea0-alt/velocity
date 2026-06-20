@@ -566,12 +566,12 @@ class _ReceiveSheetState extends State<ReceiveSheet> {
                         amountRaw = "0";
                       } else {
                         if (_localCurrencyMode) {
-                          amountRaw = NanoAmounts.getAmountAsRaw(
+                          amountRaw = LumexAmounts.getAmountAsRaw(
                               sanitizedAmount(
                                   _localCurrencyFormat,
                                   convertLocalCurrencyToLocalizedCrypto(
                                       context, _localCurrencyFormat, _amountController.text)),
-                              NanoAmounts.rawPerNano);
+                              LumexAmounts.rawPerNano);
                         } else {
                           if (!mounted) return;
                           amountRaw = getThemeAwareAmountAsRaw(context, formattedAmount);
@@ -650,12 +650,12 @@ class _ReceiveSheetState extends State<ReceiveSheet> {
                         amountRaw = "0";
                       } else {
                         if (_localCurrencyMode) {
-                          amountRaw = NanoAmounts.getAmountAsRaw(
+                          amountRaw = LumexAmounts.getAmountAsRaw(
                               sanitizedAmount(
                                   _localCurrencyFormat,
                                   convertLocalCurrencyToLocalizedCrypto(
                                       context, _localCurrencyFormat, _amountController.text)),
-                              NanoAmounts.rawPerNano);
+                              LumexAmounts.rawPerNano);
                         } else {
                           if (!mounted) return;
                           amountRaw = getThemeAwareAmountAsRaw(context, formattedAmount);
@@ -707,21 +707,21 @@ class _ReceiveSheetState extends State<ReceiveSheet> {
         final String sanitizedTextField = sanitizedAmount(_localCurrencyFormat, textField);
         final String sanitizedBalance = sanitizedAmount(_localCurrencyFormat, balance);
         textFieldInt = (Decimal.parse(sanitizedTextField) *
-                Decimal.fromInt(pow(10, NanoAmounts.maxDecimalDigits) as int))
+                Decimal.fromInt(pow(10, LumexAmounts.maxDecimalDigits) as int))
             .toDouble()
             .toInt();
         balanceInt = (Decimal.parse(sanitizedBalance) *
-                Decimal.fromInt(pow(10, NanoAmounts.maxDecimalDigits) as int))
+                Decimal.fromInt(pow(10, LumexAmounts.maxDecimalDigits) as int))
             .toDouble()
             .toInt();
       } else {
         textField = sanitizedAmount(_localCurrencyFormat, textField);
         textFieldInt = (Decimal.parse(textField) *
-                Decimal.fromInt(pow(10, NanoAmounts.maxDecimalDigits) as int))
+                Decimal.fromInt(pow(10, LumexAmounts.maxDecimalDigits) as int))
             .toDouble()
             .toInt();
         balanceInt =
-            (Decimal.parse(balance) * Decimal.fromInt(pow(10, NanoAmounts.maxDecimalDigits) as int))
+            (Decimal.parse(balance) * Decimal.fromInt(pow(10, LumexAmounts.maxDecimalDigits) as int))
                 .toDouble()
                 .toInt();
       }
@@ -740,16 +740,16 @@ class _ReceiveSheetState extends State<ReceiveSheet> {
           convertLocalCurrencyToLocalizedCrypto(
               context, _localCurrencyFormat, _amountController.text));
       if (_lastCryptoAmount.isNotEmpty) {
-        raw = NanoAmounts.getAmountAsRaw(_lastCryptoAmount, NanoAmounts.rawPerNano);
+        raw = LumexAmounts.getAmountAsRaw(_lastCryptoAmount, LumexAmounts.rawPerNano);
       }
     } else {
       raw = _amountController.text.isNotEmpty
-          ? NanoAmounts.getAmountAsRaw(
+          ? LumexAmounts.getAmountAsRaw(
               _amountController.text
                   .trim()
                   .replaceAll(_localCurrencyFormat.currencySymbol, "")
                   .replaceAll(_localCurrencyFormat.symbols.GROUP_SEP, ""),
-              NanoAmounts.rawPerNano)
+              LumexAmounts.rawPerNano)
           : "";
     }
     paintQrCode(address: widget.address, amount: raw);
@@ -967,7 +967,7 @@ class _ReceiveSheetState extends State<ReceiveSheet> {
           currencyFormat: _localCurrencyFormat,
           maxDecimalDigits: _localCurrencyMode
               ? _localCurrencyFormat.decimalDigits ?? 2
-              : NanoAmounts.maxDecimalDigits,
+              : LumexAmounts.maxDecimalDigits,
         ),
       ],
       onChanged: (String text) {
@@ -1154,7 +1154,7 @@ class _ReceiveSheetState extends State<ReceiveSheet> {
           bool isUser = false;
           final bool isDomain = text.contains(".") || text.contains(r"$");
           final bool isFavorite = text.startsWith("★");
-          final bool isNano = text.startsWith(NonTranslatable.currencyPrefix);
+          final bool isLumex = text.startsWith(NonTranslatable.currencyPrefix);
 
           // prevent spaces:
           if (text.contains(" ")) {
@@ -1224,7 +1224,7 @@ class _ReceiveSheetState extends State<ReceiveSheet> {
               _addressValidationText = "";
             });
           }
-          if (isNano && Address(text).isValid()) {
+          if (isLumex && Address(text).isValid()) {
             _addressFocusNode.unfocus();
             setState(() {
               _addressStyle = AddressStyle.TEXT90;

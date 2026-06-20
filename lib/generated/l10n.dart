@@ -2156,7 +2156,7 @@ class Z {
   }
 
   /// `Exchange Lumex`
-  String get exchangeNano {
+  String get exchangeLumex {
     return Intl.message(
       'Exchange Lumex',
       name: 'exchangeNano',
@@ -2447,7 +2447,7 @@ class Z {
   }
 
   /// `Get Lumex`
-  String get getNano {
+  String get getLumex {
     return Intl.message(
       'Get Lumex',
       name: 'getNano',
@@ -4233,7 +4233,7 @@ class Z {
   }
 
   /// `Purchase Lumex`
-  String get purchaseNano {
+  String get purchaseLumex {
     return Intl.message(
       'Purchase Lumex',
       name: 'purchaseNano',
@@ -5576,7 +5576,7 @@ class Z {
   }
 
   /// `Spend Lumex`
-  String get spendNano {
+  String get spendLumex {
     return Intl.message(
       'Spend Lumex',
       name: 'spendNano',
@@ -6266,7 +6266,7 @@ class Z {
   }
 
   /// `Use Lumex`
-  String get useNano {
+  String get useLumex {
     return Intl.message(
       'Use Lumex',
       name: 'useNano',

@@ -2651,7 +2651,7 @@
     "type": "text",
     "description": "settings_share"
   },
-  "shareLumexText": "Kolla in Lumex! Nanos officiella Androidplånbok!",
+  "shareLumexText": "Kolla in Lumex! Lumexs officiella Androidplånbok!",
   "@shareLumexText": {
     "type": "text",
     "description": "share_extra"

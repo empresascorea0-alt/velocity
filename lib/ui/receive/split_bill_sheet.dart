@@ -270,12 +270,12 @@ class SplitBillSheetState extends State<SplitBillSheet> {
                           amountRaw = "0";
                         } else {
                           if (_localCurrencyMode) {
-                            amountRaw = NanoAmounts.getAmountAsRaw(
+                            amountRaw = LumexAmounts.getAmountAsRaw(
                                 sanitizedAmount(
                                     widget.localCurrencyFormat,
                                     convertLocalCurrencyToLocalizedCrypto(context,
                                         widget.localCurrencyFormat, amountController.text)),
-                                NanoAmounts.rawPerNano);
+                                LumexAmounts.rawPerNano);
                           } else {
                             if (!mounted) return;
                             amountRaw = getThemeAwareAmountAsRaw(context, formattedAmount);
@@ -469,7 +469,7 @@ class SplitBillSheetState extends State<SplitBillSheet> {
           currencyFormat: widget.localCurrencyFormat,
           maxDecimalDigits: _localCurrencyMode
               ? widget.localCurrencyFormat.decimalDigits ?? 2
-              : NanoAmounts.maxDecimalDigits,
+              : LumexAmounts.maxDecimalDigits,
         ),
       ],
       onChanged: (String text) {

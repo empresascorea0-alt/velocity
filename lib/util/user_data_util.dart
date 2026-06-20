@@ -127,7 +127,7 @@ class UserDataUtil {
       });
       setStream = delayed.asStream().listen((_) {
         Clipboard.getData("text/plain").then((ClipboardData? data) {
-          if (data != null && data.text != null && NanoDerivations.isValidHexFormSeed(data.text!)) {
+          if (data != null && data.text != null && LumexDerivations.isValidHexFormSeed(data.text!)) {
             Clipboard.setData(const ClipboardData(text: ""));
           }
         });

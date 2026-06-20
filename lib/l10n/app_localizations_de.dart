@@ -683,7 +683,7 @@ class AppLocalizationsDe extends AppLocalizations {
   String get exchangeCurrency => 'Austausch %2';
 
   @override
-  String get exchangeNano => 'Lumex austauschen';
+  String get exchangeLumex => 'Lumex austauschen';
 
   @override
   String get existingPasswordHint => 'Gib dein aktuelles Passwort ein';
@@ -773,7 +773,7 @@ class AppLocalizationsDe extends AppLocalizations {
   String get getCurrency => 'Holen Sie sich %2';
 
   @override
-  String get getNano => 'Holen Sie sich Lumex';
+  String get getLumex => 'Holen Sie sich Lumex';
 
   @override
   String get giftAlert => 'Du hast eine Geschenk!';
@@ -790,7 +790,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get giftCardCreationErrorSent =>
-      'Beim Versuch, eine Geschenkkarte zu erstellen, ist ein Fehler aufgetreten! Der Link zur Geschenkkarte und zum Download von Lumex, mit Seed (getrennt von einem ^ Zeichen) wurde in ihre Zwischenablage kopiert. Je nach Fehlerart ist es möglich, dass die übertragenen Nanos wieder hergestellt werden können.';
+      'Beim Versuch, eine Geschenkkarte zu erstellen, ist ein Fehler aufgetreten! Der Link zur Geschenkkarte und zum Download von Lumex, mit Seed (getrennt von einem ^ Zeichen) wurde in ihre Zwischenablage kopiert. Je nach Fehlerart ist es möglich, dass die übertragenen Lumexs wieder hergestellt werden können.';
 
   @override
   String get giftCardInfoHeader => 'Informationen zum Geschenkbogen';
@@ -876,7 +876,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get importGift =>
-      'Der Link, auf den Sie geklickt haben, enthält einige Nanos. Möchten Sie ihn in diese Brieftasche importieren oder demjenigen, der ihn gesendet hat, erstatten?';
+      'Der Link, auf den Sie geklickt haben, enthält einige Lumexs. Möchten Sie ihn in diese Brieftasche importieren oder demjenigen, der ihn gesendet hat, erstatten?';
 
   @override
   String get importGiftEmpty =>
@@ -1348,7 +1348,7 @@ class AppLocalizationsDe extends AppLocalizations {
   String get purchaseCurrency => 'Kaufen Sie %2';
 
   @override
-  String get purchaseNano => 'Lumex kaufen';
+  String get purchaseLumex => 'Lumex kaufen';
 
   @override
   String get qrInvalidAddress => 'QR-Code enthält kein gültiges Ziel';
@@ -1456,7 +1456,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get repInfo =>
-      'Kommt es zu zwei widersprüchlichen Transaktionen, so stimmen Vertreter-Accounts darüber ab, welche der Transaktionen akzeptiert wird. Dabei entspricht ein Lumex einem Stimmrecht. Du kannst einem Vertreter Stimmrechte in Höhe deines Guthabens übertragen. Deine Nanos gehören dabei natürlich weiterhin dir und der Vertreter kann diese nicht ausgeben. Wähle einen vertrauenswürdigen Vertreter mit einer hohen Erreichbarkeit.';
+      'Kommt es zu zwei widersprüchlichen Transaktionen, so stimmen Vertreter-Accounts darüber ab, welche der Transaktionen akzeptiert wird. Dabei entspricht ein Lumex einem Stimmrecht. Du kannst einem Vertreter Stimmrechte in Höhe deines Guthabens übertragen. Deine Lumexs gehören dabei natürlich weiterhin dir und der Vertreter kann diese nicht ausgeben. Wähle einen vertrauenswürdigen Vertreter mit einer hohen Erreichbarkeit.';
 
   @override
   String get repInfoHeader => 'Was ist ein Vertreter?';
@@ -1720,7 +1720,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get shareLumexText =>
-      'Probier mal Lumex, Nanos offizielles Android-Wallet!';
+      'Probier mal Lumex, Lumexs offizielles Android-Wallet!';
 
   @override
   String get shareText => 'Text teilen';
@@ -1780,7 +1780,7 @@ class AppLocalizationsDe extends AppLocalizations {
   String get spendCurrency => 'Verbringen Sie %2';
 
   @override
-  String get spendNano => 'Lumex ausgeben';
+  String get spendLumex => 'Lumex ausgeben';
 
   @override
   String get splitBill => 'Geteilte Rechnung';
@@ -2004,7 +2004,7 @@ class AppLocalizationsDe extends AppLocalizations {
   String get useCurrency => 'Verwenden Sie %2';
 
   @override
-  String get useNano => 'Lumex verwenden';
+  String get useLumex => 'Lumex verwenden';
 
   @override
   String get useLumexRep => 'Use Lumex Rep';

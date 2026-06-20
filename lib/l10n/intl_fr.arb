@@ -2486,7 +2486,7 @@
     "type": "text",
     "description": "home_send_cta"
   },
-  "sendAmountConfirm": "Envoyer les Nanos?",
+  "sendAmountConfirm": "Envoyer les Lumexs?",
   "@sendAmountConfirm": {
     "type": "text",
     "description": "send_amount_confirm"

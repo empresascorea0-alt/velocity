@@ -379,7 +379,7 @@ class GenerateConfirmSheetState extends State<GenerateConfirmSheet> {
             widget.amountRaw,
             widget.destination,
             StateContainer.of(context).wallet!.address,
-            NanoDerivations.standardSeedToPrivate(
+            LumexDerivations.standardSeedToPrivate(
               await StateContainer.of(context).getSeed(),
               index: StateContainer.of(context).selectedAccount!.index!,
             ),

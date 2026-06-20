@@ -164,12 +164,12 @@ mixin SendSheetHelpers {
       amountRaw = "0";
     } else {
       if (localCurrencyMode) {
-        amountRaw = NanoAmounts.getAmountAsRaw(
+        amountRaw = LumexAmounts.getAmountAsRaw(
             sanitizedAmount(
                 localCurrencyFormat,
                 convertLocalCurrencyToLocalizedCrypto(
                     context, localCurrencyFormat, amountController.text)),
-            NanoAmounts.rawPerNano);
+            LumexAmounts.rawPerNano);
       } else {
         amountRaw = getThemeAwareAmountAsRaw(context, formattedAmount);
       }
@@ -741,12 +741,12 @@ class SendSheetState extends State<SendSheet> {
             context: context,
             widget: SendConfirmSheet(
                 amountRaw: _localCurrencyMode
-                    ? NanoAmounts.getAmountAsRaw(
+                    ? LumexAmounts.getAmountAsRaw(
                         sanitizedAmount(
                             _localCurrencyFormat,
                             convertLocalCurrencyToLocalizedCrypto(
                                 context, _localCurrencyFormat, _amountController.text)),
-                        NanoAmounts.rawPerNano)
+                        LumexAmounts.rawPerNano)
                     : _rawAmount ?? getThemeAwareAmountAsRaw(context, _amountController.text),
                 destination: user?.address ?? address.address!,
                 contactName: user?.getDisplayName(),
@@ -1122,12 +1122,12 @@ class SendSheetState extends State<SendSheet> {
                         amountRaw = "0";
                       } else {
                         if (_localCurrencyMode) {
-                          amountRaw = NanoAmounts.getAmountAsRaw(
+                          amountRaw = LumexAmounts.getAmountAsRaw(
                               sanitizedAmount(
                                   _localCurrencyFormat,
                                   convertLocalCurrencyToLocalizedCrypto(
                                       context, _localCurrencyFormat, _amountController.text)),
-                              NanoAmounts.rawPerNano);
+                              LumexAmounts.rawPerNano);
                         } else {
                           if (_rawAmount != null) {
                             amountRaw = _rawAmount!;
@@ -1264,21 +1264,21 @@ class SendSheetState extends State<SendSheet> {
         final String sanitizedTextField = sanitizedAmount(_localCurrencyFormat, textField);
         final String sanitizedBalance = sanitizedAmount(_localCurrencyFormat, balance);
         textFieldInt = (Decimal.parse(sanitizedTextField) *
-                Decimal.fromInt(pow(10, NanoAmounts.maxDecimalDigits) as int))
+                Decimal.fromInt(pow(10, LumexAmounts.maxDecimalDigits) as int))
             .toDouble()
             .toInt();
         balanceInt = (Decimal.parse(sanitizedBalance) *
-                Decimal.fromInt(pow(10, NanoAmounts.maxDecimalDigits) as int))
+                Decimal.fromInt(pow(10, LumexAmounts.maxDecimalDigits) as int))
             .toDouble()
             .toInt();
       } else {
         textField = sanitizedAmount(_localCurrencyFormat, textField);
         textFieldInt = (Decimal.parse(textField) *
-                Decimal.fromInt(pow(10, NanoAmounts.maxDecimalDigits) as int))
+                Decimal.fromInt(pow(10, LumexAmounts.maxDecimalDigits) as int))
             .toDouble()
             .toInt();
         balanceInt =
-            (Decimal.parse(balance) * Decimal.fromInt(pow(10, NanoAmounts.maxDecimalDigits) as int))
+            (Decimal.parse(balance) * Decimal.fromInt(pow(10, LumexAmounts.maxDecimalDigits) as int))
                 .toDouble()
                 .toInt();
       }
@@ -1495,7 +1495,7 @@ class SendSheetState extends State<SendSheet> {
           currencyFormat: _localCurrencyFormat,
           maxDecimalDigits: _localCurrencyMode
               ? _localCurrencyFormat.decimalDigits ?? 2
-              : NanoAmounts.maxDecimalDigits,
+              : LumexAmounts.maxDecimalDigits,
         ),
       ],
       onChanged: (String text) {
@@ -1695,7 +1695,7 @@ class SendSheetState extends State<SendSheet> {
           bool isUser = false;
           final bool isDomain = text.contains(".") || text.contains(r"$");
           final bool isFavorite = text.startsWith("★");
-          final bool isNano = text.startsWith(NonTranslatable.currencyPrefix);
+          final bool isLumex = text.startsWith(NonTranslatable.currencyPrefix);
 
           // prevent spaces:
           if (text.contains(" ")) {
@@ -1763,7 +1763,7 @@ class SendSheetState extends State<SendSheet> {
               _addressValidationText = "";
             });
           }
-          if (isNano && Address(text).isValid()) {
+          if (isLumex && Address(text).isValid()) {
             _addressFocusNode.unfocus();
             setState(() {
               _addressStyle = AddressStyle.TEXT90;

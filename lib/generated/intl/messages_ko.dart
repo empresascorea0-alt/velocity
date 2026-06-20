@@ -772,7 +772,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "shareMessage": MessageLookupByLibrary.simpleMessage("메시지 공유"),
         "shareLumex": MessageLookupByLibrary.simpleMessage("Lumex 공유 "),
         "shareLumexText": MessageLookupByLibrary.simpleMessage(
-            "Lumex을 확인하세요! Nano의 공식 Android 지갑!"),
+            "Lumex을 확인하세요! Lumex의 공식 Android 지갑!"),
         "shareText": MessageLookupByLibrary.simpleMessage("텍스트 공유"),
         "shopButton": MessageLookupByLibrary.simpleMessage("가게"),
         "show": MessageLookupByLibrary.simpleMessage("보여 주다"),

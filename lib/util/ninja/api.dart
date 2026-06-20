@@ -9,7 +9,7 @@ import 'package:velocity/util/sharedprefsutil.dart';
 
 class N2NodeAPI {
   // static const String API_URL = 'https://mynano.ninja/api';
-  static const String API_URL = 'https://rpc.nano.to';
+  static const String API_URL = 'https://rpc.lumex.io';
 
   static Future<String?> getAndCacheAPIResponse() async {
     const String url = '$API_URL';

@@ -94,8 +94,8 @@ class AccountService {
   static const String DEFAULT_HTTP_URL = "https://node.lumex.io/api";
   static const String DEFAULT_WS_URL = "wss://node.lumex.io/websocket";
 
-  static const String DEFAULT_WORKER_NAME = "nano.to";
-  static const String DEFAULT_WORK_URL = "https://rpc.nano.to";
+  static const String DEFAULT_WORKER_NAME = "lumex.io";
+  static const String DEFAULT_WORK_URL = "https://rpc.lumex.io";
 
   Future<void> initUrls() async {
     if (HTTP_URL != "") return;
@@ -313,7 +313,7 @@ class AccountService {
       try {
         // make sure we can actually get block info:
         final resp = await requestBlockInfo(
-            "8D440E336F1A9F876CC4E337E291FD4D5E4F8FC1E4821BA3B303564BCCE48CE0");
+            "401AE27222EC1D13EDE493C3FF57C8ACD91FF4E6CBF7C56FA3E089995D8B768F");
         return true;
       } catch (e) {
         return false;
@@ -631,7 +631,7 @@ class AccountService {
     Map<String, String?>? metadata,
   }) async {
     // if (link != null && link.contains(NonTranslatable.currencyPrefix)) {
-    //   link = NanoUtil.addressToPublicKey(link);
+    //   link = LumexUtil.addressToPublicKey(link);
     // }
 
     final StateBlock sendBlock = StateBlock(
@@ -721,7 +721,7 @@ class AccountService {
       "action": "work_generate",
       "hash": hash,
     };
-    if (url == "https://rpc.nano.to") {
+    if (url == "https://rpc.lumex.io") {
       body["key"] = dotenv.env["RPC_NANO_TO"]!;
     }
     return http
@@ -786,7 +786,7 @@ class AccountService {
       if (requestBlock.previous == "0" ||
           requestBlock.previous ==
               "0000000000000000000000000000000000000000000000000000000000000000") {
-        workHash = NanoDerivations.addressToPublicKey(requestBlock.account!);
+        workHash = LumexDerivations.addressToPublicKey(requestBlock.account!);
       }
 
       if (requestBlock.work == null && workHash != null) {
@@ -876,7 +876,7 @@ class AccountService {
       String? link, String? account, String? privKey,
       {bool max = false}) async {
     if (link != null && link.contains(NonTranslatable.currencyPrefix)) {
-      link = NanoDerivations.addressToPublicKey(link);
+      link = LumexDerivations.addressToPublicKey(link);
     }
 
     final StateBlock sendBlock = StateBlock(

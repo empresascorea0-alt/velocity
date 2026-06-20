@@ -768,10 +768,10 @@ class StateContainerState extends State<StateContainer> {
   // Update the global wallet instance with a new address
   Future<void> updateWallet({required Account account}) async {
     final String derivationMethod = await sl.get<SharedPrefsUtil>().getKeyDerivationMethod();
-    // final String address = NanoUtil.seedToAddress(await getSeed(), account.index!);
-    final NanoDerivationType derivationType =
-        NanoUtilities.derivationMethodToType(derivationMethod);
-    final String address = await NanoDerivations.universalSeedToAddress(
+    // final String address = LumexUtil.seedToAddress(await getSeed(), account.index!);
+    final LumexDerivationType derivationType =
+        LumexUtilities.derivationMethodToType(derivationMethod);
+    final String address = await LumexDerivations.universalSeedToAddress(
       await getSeed(),
       index: account.index!,
       type: derivationType,
@@ -854,7 +854,7 @@ class StateContainerState extends State<StateContainer> {
     if (!mounted) return;
     final String seed = await getSeed();
     if (!mounted) return;
-    await NanoUtilities().loginAccount(seed, context);
+    await LumexUtilities().loginAccount(seed, context);
     if (!mounted) return;
     await resetRecentlyUsedAccounts();
     final Account? mainAccount = await sl.get<DBHelper>().getSelectedAccount(seed);
@@ -895,7 +895,7 @@ class StateContainerState extends State<StateContainer> {
     if (!mounted) return;
     final String seed = await getSeed();
     if (!mounted) return;
-    await NanoUtilities().loginAccount(seed, context, updateWallet: false);
+    await LumexUtilities().loginAccount(seed, context, updateWallet: false);
     if (!mounted) return;
     await resetRecentlyUsedAccounts();
     final Account? mainAccount = await sl.get<DBHelper>().getSelectedAccount(seed);
@@ -988,7 +988,7 @@ class StateContainerState extends State<StateContainer> {
         NonTranslatable.currencyName = "Banano";
         NonTranslatable.currencyPrefix = "ban_";
         NonTranslatable.currencyUriPrefix = "ban";
-        NonTranslatable.accountType = NanoAccountType.BANANO;
+        NonTranslatable.accountType = LumexAccountType.BANANO;
       } else {
         if (wallet?.representative.startsWith("ban_") ?? false) {
           wallet?.representative = wallet!.representative.replaceAll("ban_", "lumex_");
@@ -996,7 +996,7 @@ class StateContainerState extends State<StateContainer> {
         NonTranslatable.currencyName = "Lumex";
         NonTranslatable.currencyPrefix = "lumex_";
         NonTranslatable.currencyUriPrefix = "nano";
-        NonTranslatable.accountType = NanoAccountType.Lumex;
+        NonTranslatable.accountType = LumexAccountType.Lumex;
       }
       if (context != null) {
         modeChange(context);
@@ -1174,9 +1174,9 @@ class StateContainerState extends State<StateContainer> {
       // }
 
       // final String derivationMethod = await sl.get<SharedPrefsUtil>().getKeyDerivationMethod();
-      // final NanoDerivationType derivationType =
-      //     NanoUtilities.derivationMethodToType(derivationMethod);
-      // final String privKey = await NanoDerivations.universalSeedToPrivate(
+      // final LumexDerivationType derivationType =
+      //     LumexUtilities.derivationMethodToType(derivationMethod);
+      // final String privKey = await LumexDerivations.universalSeedToPrivate(
       //   seed,
       //   index: correctAccount.index!,
       //   type: derivationType,
@@ -1607,9 +1607,9 @@ class StateContainerState extends State<StateContainer> {
     }
 
     final String derivationMethod = await sl.get<SharedPrefsUtil>().getKeyDerivationMethod();
-    final NanoDerivationType derivationType =
-        NanoUtilities.derivationMethodToType(derivationMethod);
-    final String privKey = await NanoDerivations.universalSeedToPrivate(
+    final LumexDerivationType derivationType =
+        LumexUtilities.derivationMethodToType(derivationMethod);
+    final String privKey = await LumexDerivations.universalSeedToPrivate(
       await getSeed(),
       index: correctAccount.index!,
       type: derivationType,
@@ -2131,10 +2131,10 @@ class StateContainerState extends State<StateContainer> {
 
   Future<String> _getPrivKey() async {
     final String derivationMethod = await sl.get<SharedPrefsUtil>().getKeyDerivationMethod();
-    final NanoDerivationType derivationType =
-        NanoUtilities.derivationMethodToType(derivationMethod);
+    final LumexDerivationType derivationType =
+        LumexUtilities.derivationMethodToType(derivationMethod);
     final String seed = await getSeed();
-    return NanoDerivations.universalSeedToPrivate(
+    return LumexDerivations.universalSeedToPrivate(
       seed,
       index: selectedAccount!.index!,
       type: derivationType,
@@ -2144,8 +2144,8 @@ class StateContainerState extends State<StateContainer> {
   Future<String> getSeed() async {
     String? seed;
     if (encryptedSecret != null) {
-      seed = NanoHelpers.byteToHex(
-          NanoCrypt.decrypt(encryptedSecret, await sl.get<Vault>().getSessionKey()));
+      seed = LumexHelpers.byteToHex(
+          LumexCrypt.decrypt(encryptedSecret, await sl.get<Vault>().getSessionKey()));
     } else {
       seed = await sl.get<Vault>().getSeed();
     }

@@ -20,7 +20,7 @@ import 'package:velocity/util/sharedprefsutil.dart';
 
 class DBHelper {
   DBHelper() {
-    _nanoUtil = NanoUtilities();
+    _nanoUtil = LumexUtilities();
   }
   static const int DB_VERSION = 12;
   static const String CONTACTS_SQL = """
@@ -166,7 +166,7 @@ class DBHelper {
 
   static Database? _db;
 
-  NanoUtilities? _nanoUtil;
+  LumexUtilities? _nanoUtil;
 
   Future<Database?> get db async {
     if (_db != null) {
@@ -287,86 +287,6 @@ class DBHelper {
       ),
       dbClient: dbClient,
     );
-    await saveNode(
-      Node(
-        id: id++,
-        name: "Natrium Node",
-        selected: false,
-        http_url: "https://app.natrium.io/api",
-        ws_url: "wss://app.natrium.io",
-      ),
-      dbClient: dbClient,
-    );
-    await saveNode(
-      Node(
-        id: id++,
-        name: "rainstorm.city",
-        selected: false,
-        http_url: "https://rainstorm.city/api",
-        ws_url: "wss://rainstorm.city/websocket",
-      ),
-      dbClient: dbClient,
-    );
-    await saveNode(
-      Node(
-        id: id++,
-        name: "SomeNano",
-        selected: false,
-        http_url: "https://node.somenano.com/proxy",
-        ws_url: "wss://node.somenano.com/websocket",
-      ),
-      dbClient: dbClient,
-    );
-    await saveNode(
-      Node(
-        id: id++,
-        name: "NanOslo",
-        selected: false,
-        http_url: "https://nanoslo.0x.no/proxy",
-        ws_url: "wss://nanoslo.0x.no/websocket",
-      ),
-      dbClient: dbClient,
-    );
-    await saveNode(
-      Node(
-        id: id++,
-        name: "PowerNode",
-        selected: false,
-        http_url: "https://proxy.powernode.cc/proxy",
-        ws_url: "wss://ws.powernode.cc",
-      ),
-      dbClient: dbClient,
-    );
-    await saveNode(
-      Node(
-        id: id++,
-        name: "Nanos.cc",
-        selected: false,
-        http_url: "https://nault.nanos.cc/proxy",
-        ws_url: "wss://nault-ws.nanos.cc",
-      ),
-      dbClient: dbClient,
-    );
-    await saveNode(
-      Node(
-        id: id++,
-        name: "Kalium Node (banano)",
-        selected: false,
-        http_url: "https://kaliumapi.appditto.com/api",
-        ws_url: "wss://kaliumapi.appditto.com",
-      ),
-      dbClient: dbClient,
-    );
-    // await saveNode(
-    //   Node(
-    //     id: 1,
-    //     name: "Lumex.to Node",
-    //     selected: false,
-    //     http_url: "https://rpc.nano.to",
-    //     // ws_url: "",// todo: add nano.to rpc ws (doesn't exist yet)
-    //   ),
-    //   dbClient: dbClient,
-    // );
   }
 
   Future<void> _addDefaultWorkSources({Database? dbClient}) async {
@@ -387,36 +307,6 @@ class DBHelper {
         selected: true,
         type: WorkSourceTypes.URL,
         url: AccountService.DEFAULT_WORK_URL,
-      ),
-      dbClient: dbClient,
-    );
-    // await saveWorkSource(
-    //   WorkSource(
-    //     id: id++,
-    //     name: "nano.to",
-    //     selected: false,
-    //     type: WorkSourceTypes.URL,
-    //     url: "https://rpc.nano.to",
-    //   ),
-    //   dbClient: dbClient,
-    // );
-    await saveWorkSource(
-      WorkSource(
-        id: id++,
-        name: "Natrium (BoomPoW)",
-        selected: false,
-        type: WorkSourceTypes.URL,
-        url: "https://app.natrium.io/api",
-      ),
-      dbClient: dbClient,
-    );
-    await saveWorkSource(
-      WorkSource(
-        id: id++,
-        name: "solar",
-        selected: false,
-        type: WorkSourceTypes.URL,
-        url: "https://rpc.nano.to/?source=solar",
       ),
       dbClient: dbClient,
     );
@@ -1605,8 +1495,8 @@ class DBHelper {
           balance: list[i]["balance"] as String?));
     }
     for (final Account acc in accounts) {
-      NanoDerivationType derivationType = NanoUtilities.derivationMethodToType(derivationMethod);
-      acc.address ??= await NanoDerivations.universalSeedToAddress(
+      LumexDerivationType derivationType = LumexUtilities.derivationMethodToType(derivationMethod);
+      acc.address ??= await LumexDerivations.universalSeedToAddress(
         seed!,
         index: acc.index!,
         type: derivationType,
@@ -1638,11 +1528,11 @@ class DBHelper {
           balance: list[i]["balance"] as String?));
     }
     final String derivationMethod = await sl.get<SharedPrefsUtil>().getKeyDerivationMethod();
-    final NanoDerivationType derivationType =
-        NanoUtilities.derivationMethodToType(derivationMethod);
+    final LumexDerivationType derivationType =
+        LumexUtilities.derivationMethodToType(derivationMethod);
     // check if account has a user:
     for (final Account acc in accounts) {
-      acc.address ??= await NanoDerivations.universalSeedToAddress(
+      acc.address ??= await LumexDerivations.universalSeedToAddress(
         seed!,
         index: acc.index!,
         type: derivationType,
@@ -1673,15 +1563,15 @@ class DBHelper {
       final int nextID = nextIndex + 1;
       final String nextName = nameBuilder!.replaceAll("%1", nextID.toString());
       final String derivationMethod = await sl.get<SharedPrefsUtil>().getKeyDerivationMethod();
-      final NanoDerivationType derivationType =
-          NanoUtilities.derivationMethodToType(derivationMethod);
+      final LumexDerivationType derivationType =
+          LumexUtilities.derivationMethodToType(derivationMethod);
       account = Account(
         index: nextIndex,
         name: nextName,
         lastAccess: 0,
         selected: false,
         watchOnly: false,
-        address: await NanoDerivations.universalSeedToAddress(
+        address: await LumexDerivations.universalSeedToAddress(
           seed!,
           index: nextIndex,
           type: derivationType,
@@ -1755,14 +1645,14 @@ class DBHelper {
       final int nextID = nextIndex + 1;
       final String nextName = nameBuilder!.replaceAll("%1", nextID.toString());
       final String derivationMethod = await sl.get<SharedPrefsUtil>().getKeyDerivationMethod();
-      final NanoDerivationType derivationType =
-          NanoUtilities.derivationMethodToType(derivationMethod);
+      final LumexDerivationType derivationType =
+          LumexUtilities.derivationMethodToType(derivationMethod);
       account = Account(
         index: nextIndex,
         name: nextName,
         lastAccess: 0,
         selected: true,
-        address: await NanoDerivations.universalSeedToAddress(
+        address: await LumexDerivations.universalSeedToAddress(
           seed!,
           index: nextIndex,
           type: derivationType,
@@ -1830,10 +1720,10 @@ class DBHelper {
       return null;
     }
     final String derivationMethod = await sl.get<SharedPrefsUtil>().getKeyDerivationMethod();
-    final NanoDerivationType derivationType =
-        NanoUtilities.derivationMethodToType(derivationMethod);
+    final LumexDerivationType derivationType =
+        LumexUtilities.derivationMethodToType(derivationMethod);
     final String address = (list[0]["address"] as String?) ??
-        await NanoDerivations.universalSeedToAddress(
+        await LumexDerivations.universalSeedToAddress(
           seed!,
           index: list[0]["acct_index"] as int,
           type: derivationType,
@@ -1862,9 +1752,9 @@ class DBHelper {
       return null;
     }
     final String derivationMethod = await sl.get<SharedPrefsUtil>().getKeyDerivationMethod();
-    final NanoDerivationType derivationType =
-        NanoUtilities.derivationMethodToType(derivationMethod);
-    final String address = await NanoDerivations.universalSeedToAddress(
+    final LumexDerivationType derivationType =
+        LumexUtilities.derivationMethodToType(derivationMethod);
+    final String address = await LumexDerivations.universalSeedToAddress(
       seed!,
       index: list[0]["acct_index"] as int,
       type: derivationType,

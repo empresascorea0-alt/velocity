@@ -235,7 +235,7 @@
 
 //     // get identifier:
 //     final String hashedPassword =
-//         NanoHelpers.byteToHex(blake2b(Uint8List.fromList(utf8.encode(confirmPasswordController!.text))));
+//         LumexHelpers.byteToHex(blake2b(Uint8List.fromList(utf8.encode(confirmPasswordController!.text))));
 //     final String fullIdentifier = "$issuer:$hashedPassword";
 
 //     if (!mounted) return;

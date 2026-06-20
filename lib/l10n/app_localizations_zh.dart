@@ -656,7 +656,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get exchangeCurrency => '交换 %2';
 
   @override
-  String get exchangeNano => '交换纳米';
+  String get exchangeLumex => '交换纳米';
 
   @override
   String get existingPasswordHint => '输入当前密码';
@@ -744,7 +744,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get getCurrency => '获取 %2';
 
   @override
-  String get getNano => '获取纳米';
+  String get getLumex => '获取纳米';
 
   @override
   String get giftAlert => '你有天赋！';
@@ -1291,7 +1291,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get purchaseCurrency => '购买 %2';
 
   @override
-  String get purchaseNano => '购买 Lumex';
+  String get purchaseLumex => '购买 Lumex';
 
   @override
   String get qrInvalidAddress => '二维码不包含一个有效的地址';
@@ -1700,7 +1700,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get spendCurrency => '花费 %2';
 
   @override
-  String get spendNano => '花费 Lumex';
+  String get spendLumex => '花费 Lumex';
 
   @override
   String get splitBill => '拆分账单';
@@ -1913,7 +1913,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get useCurrency => '使用 %2';
 
   @override
-  String get useNano => '使用纳米';
+  String get useLumex => '使用纳米';
 
   @override
   String get useLumexRep => 'Use Lumex Rep';
@@ -1945,7 +1945,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get usernameUnavailable => '用户名不可用';
 
   @override
-  String get usernameWarning => '鹦鹉螺用户名是由 nano.to 提供的集中式服务';
+  String get usernameWarning => '鹦鹉螺用户名是由 lumex.io 提供的集中式服务';
 
   @override
   String get userNotFound => '找不到用户！';
@@ -2687,7 +2687,7 @@ class AppLocalizationsZhHans extends AppLocalizationsZh {
   String get exchangeCurrency => '交换 %2';
 
   @override
-  String get exchangeNano => '交换纳米';
+  String get exchangeLumex => '交换纳米';
 
   @override
   String get existingPasswordHint => '输入当前密码';
@@ -2775,7 +2775,7 @@ class AppLocalizationsZhHans extends AppLocalizationsZh {
   String get getCurrency => '获取 %2';
 
   @override
-  String get getNano => '获取纳米';
+  String get getLumex => '获取纳米';
 
   @override
   String get giftAlert => '你有天赋！';
@@ -3322,7 +3322,7 @@ class AppLocalizationsZhHans extends AppLocalizationsZh {
   String get purchaseCurrency => '购买 %2';
 
   @override
-  String get purchaseNano => '购买 Lumex';
+  String get purchaseLumex => '购买 Lumex';
 
   @override
   String get qrInvalidAddress => '二维码不包含一个有效的地址';
@@ -3731,7 +3731,7 @@ class AppLocalizationsZhHans extends AppLocalizationsZh {
   String get spendCurrency => '花费 %2';
 
   @override
-  String get spendNano => '花费 Lumex';
+  String get spendLumex => '花费 Lumex';
 
   @override
   String get splitBill => '拆分账单';
@@ -3944,7 +3944,7 @@ class AppLocalizationsZhHans extends AppLocalizationsZh {
   String get useCurrency => '使用 %2';
 
   @override
-  String get useNano => '使用纳米';
+  String get useLumex => '使用纳米';
 
   @override
   String get useLumexRep => 'Use Lumex Rep';
@@ -3976,7 +3976,7 @@ class AppLocalizationsZhHans extends AppLocalizationsZh {
   String get usernameUnavailable => '用户名不可用';
 
   @override
-  String get usernameWarning => '鹦鹉螺用户名是由 nano.to 提供的集中式服务';
+  String get usernameWarning => '鹦鹉螺用户名是由 lumex.io 提供的集中式服务';
 
   @override
   String get userNotFound => '找不到用户！';
@@ -4718,7 +4718,7 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   String get exchangeCurrency => '交換 %2';
 
   @override
-  String get exchangeNano => '交換納米';
+  String get exchangeLumex => '交換納米';
 
   @override
   String get existingPasswordHint => '輸入當前密碼';
@@ -4806,7 +4806,7 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   String get getCurrency => '獲取 %2';
 
   @override
-  String get getNano => '獲取納米';
+  String get getLumex => '獲取納米';
 
   @override
   String get giftAlert => '你有禮物！';
@@ -5354,7 +5354,7 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   String get purchaseCurrency => '購買 %2';
 
   @override
-  String get purchaseNano => '購買納米';
+  String get purchaseLumex => '購買納米';
 
   @override
   String get qrInvalidAddress => '二維條碼不含有效的地址';
@@ -5764,7 +5764,7 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   String get spendCurrency => '花費 %2';
 
   @override
-  String get spendNano => '花費 Lumex';
+  String get spendLumex => '花費 Lumex';
 
   @override
   String get splitBill => '拆分賬單';
@@ -5977,7 +5977,7 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   String get useCurrency => '使用 %2';
 
   @override
-  String get useNano => '使用納米';
+  String get useLumex => '使用納米';
 
   @override
   String get useLumexRep => 'Use Lumex Rep';

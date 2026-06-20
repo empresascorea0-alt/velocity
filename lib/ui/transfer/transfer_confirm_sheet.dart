@@ -163,12 +163,12 @@ class AppTransferConfirmSheetState extends State<AppTransferConfirmSheet> {
   Future<String> _getPrivKey(int index) async {
     String? seed;
     if (StateContainer.of(context).encryptedSecret != null) {
-      seed = NanoHelpers.byteToHex(
-          NanoCrypt.decrypt(StateContainer.of(context).encryptedSecret, await sl.get<Vault>().getSessionKey()));
+      seed = LumexHelpers.byteToHex(
+          LumexCrypt.decrypt(StateContainer.of(context).encryptedSecret, await sl.get<Vault>().getSessionKey()));
     } else {
       seed = await sl.get<Vault>().getSeed();
     }
-    return NanoDerivations.standardSeedToPrivate(seed!, index: index);
+    return LumexDerivations.standardSeedToPrivate(seed!, index: index);
   }
 
   Future<void> processWallets() async {

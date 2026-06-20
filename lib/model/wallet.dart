@@ -66,7 +66,7 @@ class AppWallet {
         solids = solids ?? [],
         unified = unified ?? [] {
     if (representative.isEmpty) {
-      if (NonTranslatable.accountType == NanoAccountType.Lumex) {
+      if (NonTranslatable.accountType == LumexAccountType.Lumex) {
         representative = AppWallet.lumexRepresentative;
       } else {
         representative = AppWallet.potasiusRepresentative;
@@ -106,12 +106,12 @@ class AppWallet {
 
   String getLocalCurrencyBalance(BuildContext context, AvailableCurrency currency,
       {String locale = "en_US"}) {
-    final BigInt rawPerCur = (NonTranslatable.accountType == NanoAccountType.Lumex)
-        ? NanoAmounts.rawPerNano
-        : NanoAmounts.rawPerBanano;
+    final BigInt rawPerCur = (NonTranslatable.accountType == LumexAccountType.Lumex)
+        ? LumexAmounts.rawPerNano
+        : LumexAmounts.rawPerBanano;
 
     final Decimal converted = Decimal.parse(localCurrencyPrice) *
-        NanoAmounts.getRawAsDecimal(accountBalance.toString(), rawPerCur);
+        LumexAmounts.getRawAsDecimal(accountBalance.toString(), rawPerCur);
     return NumberFormat.currency(locale: locale, symbol: currency.getCurrencySymbol())
         .format(converted.toDouble());
   }

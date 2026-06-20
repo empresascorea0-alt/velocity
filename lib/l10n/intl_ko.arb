@@ -2651,7 +2651,7 @@
     "type": "text",
     "description": "settings_share"
   },
-  "shareLumexText": "Lumex을 확인하세요! Nano의 공식 Android 지갑!",
+  "shareLumexText": "Lumex을 확인하세요! Lumex의 공식 Android 지갑!",
   "@shareLumexText": {
     "type": "text",
     "description": "share_extra"

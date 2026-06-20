@@ -431,7 +431,7 @@ class IntroImportSeedState extends State<IntroImportSeedPage> {
                           await sl.get<SharedPrefsUtil>().setKeyDerivationMethod("hd");
                           await sl.get<DBHelper>().dropAccounts();
                           if (!mounted) return;
-                          await NanoUtilities().loginAccount(_seedInputController.text, context);
+                          await LumexUtilities().loginAccount(_seedInputController.text, context);
                           if (!mounted) return;
                           // final String? pin = await Navigator.of(context).push(MaterialPageRoute<String>(builder: (BuildContext context) {
                           //   return PinScreen(
@@ -443,7 +443,7 @@ class IntroImportSeedState extends State<IntroImportSeedPage> {
                           // }
                           skipPin();
                         } else {
-                          if (_seedInputController.text.length == 64 && NanoDerivations.isValidHexFormSeed(_seedInputController.text)) {
+                          if (_seedInputController.text.length == 64 && LumexDerivations.isValidHexFormSeed(_seedInputController.text)) {
                             await AppDialogs.showInfoDialog(
                               context,
                               Z.of(context).logoutAreYouSure,
@@ -463,12 +463,12 @@ class IntroImportSeedState extends State<IntroImportSeedPage> {
                         if (NanoMnemomics.validateMnemonic(_mnemonicController.text.split(' '))) {
                           await sl.get<SharedPrefsUtil>().setSeedBackedUp(true);
                           await sl.get<SharedPrefsUtil>().setKeyDerivationMethod("hd");
-                          final String seed = await NanoDerivations.hdMnemonicListToSeed(_mnemonicController.text.split(' '));
+                          final String seed = await LumexDerivations.hdMnemonicListToSeed(_mnemonicController.text.split(' '));
                           await sl.get<Vault>().setSeed(seed);
                           await changingSeed(seed);
                           await sl.get<DBHelper>().dropAccounts();
                           if (!mounted) return;
-                          await NanoUtilities().loginAccount(seed, context);
+                          await LumexUtilities().loginAccount(seed, context);
                           if (!mounted) return;
                           skipPin();
                         } else {
@@ -515,7 +515,7 @@ class IntroImportSeedState extends State<IntroImportSeedPage> {
                           await changingSeed(_seedInputController.text);
                           await sl.get<DBHelper>().dropAccounts();
                           if (!mounted) return;
-                          await NanoUtilities().loginAccount(_seedInputController.text, context);
+                          await LumexUtilities().loginAccount(_seedInputController.text, context);
                           if (!mounted) return;
 
                           skipPin();
@@ -530,12 +530,12 @@ class IntroImportSeedState extends State<IntroImportSeedPage> {
                         _mnemonicFocusNode.unfocus();
                         if (NanoMnemomics.validateMnemonic(_mnemonicController.text.split(' '))) {
                           await sl.get<SharedPrefsUtil>().setSeedBackedUp(true);
-                          final String seed = NanoMnemomics.mnemonicListToSeed(_mnemonicController.text.split(' '));
+                          final String seed = LumexMnemomics.mnemonicListToSeed(_mnemonicController.text.split(' '));
                           await sl.get<Vault>().setSeed(seed);
                           await changingSeed(seed);
                           await sl.get<DBHelper>().dropAccounts();
                           if (!mounted) return;
-                          await NanoUtilities().loginAccount(seed, context);
+                          await LumexUtilities().loginAccount(seed, context);
                           if (!mounted) return;
                           skipPin();
                         } else {
@@ -576,7 +576,7 @@ class IntroImportSeedState extends State<IntroImportSeedPage> {
         }
 
         // upload the seed backup:
-        final String encryptedSeed = NanoHelpers.byteToHex(NanoCrypt.encrypt(seed, widget.password!));
+        final String encryptedSeed = LumexHelpers.byteToHex(NanoCrypt.encrypt(seed, widget.password!));
         await sl.get<AuthService>().setEncryptedSeed(widget.fullIdentifier!, encryptedSeed);
       } catch (e) {
         sl.get<Logger>().e("Error uploading seed backup $e");

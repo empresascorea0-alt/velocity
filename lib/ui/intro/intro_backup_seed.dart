@@ -34,14 +34,14 @@ class IntroBackupSeedState extends State<IntroBackupSeedPage> {
       sl.get<Vault>().getSeed().then((String? seed) {
         setState(() {
           _seed = seed;
-          _mnemonic = NanoMnemomics.seedToMnemonic(seed!);
+          _mnemonic = LumexMnemomics.seedToMnemonic(seed!);
         });
       });
     } else {
       sl.get<Vault>().getSessionKey().then((String key) {
         setState(() {
-          _seed = NanoHelpers.byteToHex(NanoCrypt.decrypt(widget.encryptedSeed, key));
-          _mnemonic = NanoMnemomics.seedToMnemonic(_seed!);
+          _seed = LumexHelpers.byteToHex(NanoCrypt.decrypt(widget.encryptedSeed, key));
+          _mnemonic = LumexMnemomics.seedToMnemonic(_seed!);
         });
       });
     }
@@ -174,7 +174,7 @@ class IntroBackupSeedState extends State<IntroBackupSeedPage> {
                       // Update wallet
                       sl.get<DBHelper>().dropAccounts().then((_) {
                         StateContainer.of(context).getSeed().then((String seed) {
-                          NanoUtilities().loginAccount(seed, context).then((_) {
+                          LumexUtilities().loginAccount(seed, context).then((_) {
                             Navigator.of(context).pushNamed('/intro_backup_confirm');
                           });
                         });

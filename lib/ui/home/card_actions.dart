@@ -32,8 +32,8 @@ class CardActions {
 
     // send the request again:
     final String derivationMethod = await sl.get<SharedPrefsUtil>().getKeyDerivationMethod();
-    NanoDerivationType derivationType = NanoUtilities.derivationMethodToType(derivationMethod);
-    final String privKey = await NanoDerivations.universalSeedToPrivate(
+    LumexDerivationType derivationType = LumexUtilities.derivationMethodToType(derivationMethod);
+    final String privKey = await LumexDerivations.universalSeedToPrivate(
       await StateContainer.of(context).getSeed(),
       index: StateContainer.of(context).selectedAccount!.index!,
       type: derivationType,
@@ -43,7 +43,7 @@ class CardActions {
     final int secondsSinceEpoch =
         DateTime.now().millisecondsSinceEpoch ~/ Duration.millisecondsPerSecond;
     final String nonceHex = secondsSinceEpoch.toRadixString(16);
-    final String signature = NanoSignatures.signBlock(nonceHex, privKey);
+    final String signature = LumexSignatures.signBlock(nonceHex, privKey);
 
     // check validity locally:
     final String pubKey =
@@ -124,9 +124,9 @@ class CardActions {
 
     // send the memo again:
     final String derivationMethod = await sl.get<SharedPrefsUtil>().getKeyDerivationMethod();
-    NanoDerivationType derivationType = NanoUtilities.derivationMethodToType(derivationMethod);
+    LumexDerivationType derivationType = LumexUtilities.derivationMethodToType(derivationMethod);
 
-    final String privKey = await NanoDerivations.universalSeedToPrivate(
+    final String privKey = await LumexDerivations.universalSeedToPrivate(
       await StateContainer.of(context).getSeed(),
       index: StateContainer.of(context).selectedAccount!.index!,
       type: derivationType,
@@ -136,7 +136,7 @@ class CardActions {
     final int secondsSinceEpoch =
         DateTime.now().millisecondsSinceEpoch ~/ Duration.millisecondsPerSecond;
     final String nonceHex = secondsSinceEpoch.toRadixString(16);
-    final String signature = NanoSignatures.signBlock(nonceHex, privKey);
+    final String signature = LumexSignatures.signBlock(nonceHex, privKey);
 
     // check validity locally:
     final String pubKey =
@@ -213,7 +213,7 @@ class CardActions {
     bool sendFailed = false;
 
     // send the message again:
-    final String privKey = NanoDerivations.standardSeedToPrivate(
+    final String privKey = LumexDerivations.standardSeedToPrivate(
       await StateContainer.of(context).getSeed(),
       index: StateContainer.of(context).selectedAccount!.index!,
     );
@@ -221,7 +221,7 @@ class CardActions {
     final int secondsSinceEpoch =
         DateTime.now().millisecondsSinceEpoch ~/ Duration.millisecondsPerSecond;
     final String nonceHex = secondsSinceEpoch.toRadixString(16);
-    final String signature = NanoSignatures.signBlock(nonceHex, privKey);
+    final String signature = LumexSignatures.signBlock(nonceHex, privKey);
 
     // check validity locally:
     final String pubKey =

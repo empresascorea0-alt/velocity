@@ -473,7 +473,7 @@ class _RegisterNanoToUsernameScreenState extends State<RegisterNanoToUsernameScr
         onChanged: (String text) {
           final bool isUser = text.startsWith("@");
           final bool isFavorite = text.startsWith("★");
-          final bool isNano = text.startsWith(NonTranslatable.currencyPrefix);
+          final bool isLumex = text.startsWith(NonTranslatable.currencyPrefix);
 
           // prevent spaces:
           if (text.contains(" ")) {
@@ -493,7 +493,7 @@ class _RegisterNanoToUsernameScreenState extends State<RegisterNanoToUsernameScr
             //   });
           }
           // add the @ back in:
-          if (text.isNotEmpty && !isUser && !isNano && !isFavorite) {
+          if (text.isNotEmpty && !isUser && !isLumex && !isFavorite) {
             // add @ to the beginning of the string:
             _usernameController!.text = "@$text";
             _usernameController!.selection =

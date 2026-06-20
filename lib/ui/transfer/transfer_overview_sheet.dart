@@ -437,16 +437,16 @@ class AppTransferOverviewSheetState extends State<AppTransferOverviewSheet> {
 
   Future<void> receiveAtIndex(BuildContext context, String seed, int index,
       String derivationMethod) async {
-    final NanoDerivationType derivationType =
-        NanoUtilities.derivationMethodToType(derivationMethod);
+    final LumexDerivationType derivationType =
+        LumexUtilities.derivationMethodToType(derivationMethod);
     final String receivingAccount =
-        await NanoDerivations.universalSeedToAddress(
+        await LumexDerivations.universalSeedToAddress(
       seed,
       index: index,
       type: derivationType,
     );
     final String receivingAccountPrivKey =
-        await NanoDerivations.universalSeedToPrivate(
+        await LumexDerivations.universalSeedToPrivate(
       seed,
       index: index,
       type: derivationType,
@@ -509,9 +509,9 @@ class AppTransferOverviewSheetState extends State<AppTransferOverviewSheet> {
       String address,
       String amountRaw,
       bool maxSend) async {
-    final NanoDerivationType derivationType =
-        NanoUtilities.derivationMethodToType(derivationMethod);
-    final String sendingAccount = await NanoDerivations.universalSeedToAddress(
+    final LumexDerivationType derivationType =
+        LumexUtilities.derivationMethodToType(derivationMethod);
+    final String sendingAccount = await LumexDerivations.universalSeedToAddress(
       seed,
       index: index,
       type: derivationType,
@@ -524,7 +524,7 @@ class AppTransferOverviewSheetState extends State<AppTransferOverviewSheet> {
     final AccountInfoResponse accountInfoResp =
         await sl.get<AccountService>().getAccountInfo(sendingAccount);
 
-    final String privKey = await NanoDerivations.universalSeedToPrivate(
+    final String privKey = await LumexDerivations.universalSeedToPrivate(
       await StateContainer.of(context).getSeed(),
       index: index,
       type: derivationType,
@@ -551,8 +551,8 @@ class AppTransferOverviewSheetState extends State<AppTransferOverviewSheet> {
     String address;
     // Get NUM_SWEEP private keys + accounts from seed
     for (int i = 0; i < NUM_SWEEP; i++) {
-      privKey = NanoDerivations.standardSeedToPrivate(seed, index: i);
-      address = NanoDerivations.standardSeedToAddress(seed, index: i);
+      privKey = LumexDerivations.standardSeedToPrivate(seed, index: i);
+      address = LumexDerivations.standardSeedToAddress(seed, index: i);
       // Don't add this if it is the currently logged in account
       if (address != StateContainer.of(context).wallet!.address) {
         privKeyBalanceMap.putIfAbsent(
@@ -561,8 +561,8 @@ class AppTransferOverviewSheetState extends State<AppTransferOverviewSheet> {
       }
     }
     // Also treat this seed as a private key
-    address = NanoAccounts.createAccount(
-        NonTranslatable.accountType, NanoKeys.createPublicKey(seed));
+    address = LumexAccounts.createAccount(
+        NonTranslatable.accountType, LumexKeys.createPublicKey(seed));
     if (address != StateContainer.of(context).wallet!.address) {
       privKeyBalanceMap.putIfAbsent(
           address, () => AccountBalanceItem(privKey: seed));

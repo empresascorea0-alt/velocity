@@ -1037,7 +1037,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "usernameUnavailable":
             MessageLookupByLibrary.simpleMessage("Brukernavn utilgjengelig"),
         "usernameWarning": MessageLookupByLibrary.simpleMessage(
-            "Lumex brukernavn er en sentralisert tjeneste levert av nano.to"),
+            "Lumex brukernavn er en sentralisert tjeneste levert av lumex.io"),
         "using": MessageLookupByLibrary.simpleMessage("Ved hjelp av"),
         "viewDetails": MessageLookupByLibrary.simpleMessage("Vis detaljer"),
         "viewPaymentHistory":

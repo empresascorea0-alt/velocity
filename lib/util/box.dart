@@ -75,7 +75,7 @@ class Box {
   static const int NONCE_LENGTH = 24;
 
   static String encrypt(String message, String address, String privateKey) {
-    final String publicKey = NanoAccounts.extractPublicKey(address);
+    final String publicKey = LumexAccounts.extractPublicKey(address);
 
     final Uint8List convertedPublicKey = Sodium.cryptoSignEd25519PkToCurve25519(NanoHelpers.hexToBytes(publicKey));
     final Uint8List convertedPrivateKey = convertEd25519SecretKeyToCurve25519(NanoHelpers.hexToBytes(privateKey));
@@ -93,7 +93,7 @@ class Box {
   }
 
   static String decrypt(String encrypted, String address, String privateKey) {
-    final String publicKey = NanoAccounts.extractPublicKey(address);
+    final String publicKey = LumexAccounts.extractPublicKey(address);
 
     final Uint8List convertedPublicKey = Sodium.cryptoSignEd25519PkToCurve25519(NanoHelpers.hexToBytes(publicKey));
     final Uint8List convertedPrivateKey = convertEd25519SecretKeyToCurve25519(NanoHelpers.hexToBytes(privateKey));

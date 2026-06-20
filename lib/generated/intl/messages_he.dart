@@ -967,7 +967,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "usernameUnavailable":
             MessageLookupByLibrary.simpleMessage("שם משתמש זמין"),
         "usernameWarning": MessageLookupByLibrary.simpleMessage(
-            "שמות משתמש של נאוטילוס הם שירות מרכזי המסופק על ידי nano.to"),
+            "שמות משתמש של נאוטילוס הם שירות מרכזי המסופק על ידי lumex.io"),
         "using": MessageLookupByLibrary.simpleMessage("באמצעות"),
         "viewDetails": MessageLookupByLibrary.simpleMessage("ראה פרטים"),
         "viewPaymentHistory":

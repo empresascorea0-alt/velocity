@@ -338,8 +338,8 @@ class SendGiftSheetState extends State<SendGiftSheet> {
                       String? paperWalletSeed;
 
                       // we need to create a gift card and change the destination address to the gift card address:
-                      paperWalletSeed = NanoSeeds.generateSeed();
-                      final String paperWalletAccount = NanoUtil.seedToAddress(paperWalletSeed, 0);
+                      paperWalletSeed = LumexSeeds.generateSeed();
+                      final String paperWalletAccount = LumexUtil.seedToAddress(paperWalletSeed, 0);
                       // final String paperWalletAccount = "lumex_1i4fcujt49de3mio9eb9y5jakw8o9m1za6ntidxn4nkwgnunktpy54z1ma58";
                       if (!mounted) return;
                       final BranchResponse<dynamic> giftCardItem = await sl<GiftCards>().createGiftCard(
@@ -410,19 +410,19 @@ class SendGiftSheetState extends State<SendGiftSheet> {
         final String sanitizedTextField = sanitizedAmount(_localCurrencyFormat, textField);
         final String sanitizedBalance = sanitizedAmount(_localCurrencyFormat, balance);
         textFieldInt =
-            (Decimal.parse(sanitizedTextField) * Decimal.fromInt(pow(10, NanoAmounts.maxDecimalDigits) as int))
+            (Decimal.parse(sanitizedTextField) * Decimal.fromInt(pow(10, LumexAmounts.maxDecimalDigits) as int))
                 .toDouble()
                 .toInt();
-        balanceInt = (Decimal.parse(sanitizedBalance) * Decimal.fromInt(pow(10, NanoAmounts.maxDecimalDigits) as int))
+        balanceInt = (Decimal.parse(sanitizedBalance) * Decimal.fromInt(pow(10, LumexAmounts.maxDecimalDigits) as int))
             .toDouble()
             .toInt();
       } else {
         textField = sanitizedAmount(_localCurrencyFormat, textField);
-        textFieldInt = (Decimal.parse(textField) * Decimal.fromInt(pow(10, NanoAmounts.maxDecimalDigits) as int))
+        textFieldInt = (Decimal.parse(textField) * Decimal.fromInt(pow(10, LumexAmounts.maxDecimalDigits) as int))
             .toDouble()
             .toInt();
         balanceInt =
-            (Decimal.parse(balance) * Decimal.fromInt(pow(10, NanoAmounts.maxDecimalDigits) as int)).toDouble().toInt();
+            (Decimal.parse(balance) * Decimal.fromInt(pow(10, LumexAmounts.maxDecimalDigits) as int)).toDouble().toInt();
       }
       return textFieldInt == balanceInt;
     } catch (e) {
@@ -502,7 +502,7 @@ class SendGiftSheetState extends State<SendGiftSheet> {
         CurrencyFormatter2(
           active: _localCurrencyMode,
           currencyFormat: _localCurrencyFormat,
-          maxDecimalDigits: _localCurrencyMode ? _localCurrencyFormat.decimalDigits ?? 2 : NanoAmounts.maxDecimalDigits,
+          maxDecimalDigits: _localCurrencyMode ? _localCurrencyFormat.decimalDigits ?? 2 : LumexAmounts.maxDecimalDigits,
         ),
       ],
       onChanged: (String text) {

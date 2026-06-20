@@ -885,7 +885,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "shareMessage": MessageLookupByLibrary.simpleMessage("Dela meddelande"),
         "shareLumex": MessageLookupByLibrary.simpleMessage("Dela Lumex"),
         "shareLumexText": MessageLookupByLibrary.simpleMessage(
-            "Kolla in Lumex! Nanos officiella Androidplånbok!"),
+            "Kolla in Lumex! Lumexs officiella Androidplånbok!"),
         "shareText": MessageLookupByLibrary.simpleMessage("Dela text"),
         "shopButton": MessageLookupByLibrary.simpleMessage("affär"),
         "show": MessageLookupByLibrary.simpleMessage("Show"),

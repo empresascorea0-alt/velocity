@@ -667,7 +667,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get exchangeCurrency => '교환 %2';
 
   @override
-  String get exchangeNano => '거래소 나노';
+  String get exchangeLumex => '거래소 나노';
 
   @override
   String get existingPasswordHint => '현재 비밀번호를 입력하세요';
@@ -755,7 +755,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get getCurrency => '%2 가져오기';
 
   @override
-  String get getNano => '나노를 얻으십시오';
+  String get getLumex => '나노를 얻으십시오';
 
   @override
   String get giftAlert => '선물이 있어요!';
@@ -1315,7 +1315,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get purchaseCurrency => '구매 %2';
 
   @override
-  String get purchaseNano => '나노 구매';
+  String get purchaseLumex => '나노 구매';
 
   @override
   String get qrInvalidAddress => 'QR code does not contain a valid destination';
@@ -1679,7 +1679,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get shareLumex => 'Lumex 공유 ';
 
   @override
-  String get shareLumexText => 'Lumex을 확인하세요! Nano의 공식 Android 지갑!';
+  String get shareLumexText => 'Lumex을 확인하세요! Lumex의 공식 Android 지갑!';
 
   @override
   String get shareText => '텍스트 공유';
@@ -1739,7 +1739,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get spendCurrency => '지출 %2';
 
   @override
-  String get spendNano => '나노를 쓰다';
+  String get spendLumex => '나노를 쓰다';
 
   @override
   String get splitBill => '분할 청구서';
@@ -1959,7 +1959,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get useCurrency => '%2 사용';
 
   @override
-  String get useNano => '나노를 사용';
+  String get useLumex => '나노를 사용';
 
   @override
   String get useLumexRep => 'Use Lumex Rep';

@@ -50,7 +50,7 @@ class _AppSeedBackupSheetState extends State<AppSeedBackupSheet> {
     showMnemonic = true;
 
     try {
-      _mnemonic = NanoMnemomics.seedToMnemonic(_seed!);
+      _mnemonic = LumexMnemomics.seedToMnemonic(_seed!);
     } catch (e) {
       showMnemonic = false;
       _mnemonicDisabled = true;

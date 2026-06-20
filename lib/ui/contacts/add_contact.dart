@@ -242,7 +242,7 @@ class _AddContactSheetState extends State<AddContactSheet> {
         bool isUser = false;
         final bool isDomain = text.contains(".") || text.contains(r"$");
         final bool isFavorite = text.startsWith("★");
-        final bool isNano = text.startsWith(NonTranslatable.currencyPrefix);
+        final bool isLumex = text.startsWith(NonTranslatable.currencyPrefix);
 
         // prevent spaces:
         if (text.contains(" ")) {
@@ -300,7 +300,7 @@ class _AddContactSheetState extends State<AddContactSheet> {
             _addressValidationText = "";
           });
         }
-        if (isNano && Address(text).isValid()) {
+        if (isLumex && Address(text).isValid()) {
           _addressFocusNode!.unfocus();
           setState(() {
             _addressStyle = AddressStyle.TEXT90;

@@ -680,7 +680,7 @@ class AppLocalizationsPl extends AppLocalizations {
   String get exchangeCurrency => 'Wymiana %2';
 
   @override
-  String get exchangeNano => 'Wymiana Lumex';
+  String get exchangeLumex => 'Wymiana Lumex';
 
   @override
   String get existingPasswordHint => 'Wprowadź bieżące hasło';
@@ -770,7 +770,7 @@ class AppLocalizationsPl extends AppLocalizations {
   String get getCurrency => 'Uzyskaj %2';
 
   @override
-  String get getNano => 'Zdobądź Lumex';
+  String get getLumex => 'Zdobądź Lumex';
 
   @override
   String get giftAlert => 'Masz dar!';
@@ -1345,7 +1345,7 @@ class AppLocalizationsPl extends AppLocalizations {
   String get purchaseCurrency => 'Kup %2';
 
   @override
-  String get purchaseNano => 'Zakup Lumex';
+  String get purchaseLumex => 'Zakup Lumex';
 
   @override
   String get qrInvalidAddress => 'Kod QR jest nieprawidłowy';
@@ -1772,7 +1772,7 @@ class AppLocalizationsPl extends AppLocalizations {
   String get spendCurrency => 'Wydaj %2';
 
   @override
-  String get spendNano => 'Wydaj Lumex';
+  String get spendLumex => 'Wydaj Lumex';
 
   @override
   String get splitBill => 'Podziel rachunek';
@@ -1937,7 +1937,7 @@ class AppLocalizationsPl extends AppLocalizations {
   String get transferQrScanError => 'Ten kod QR nie zawiera ważnego nasiona.';
 
   @override
-  String get transferQrScanHint => 'Skanuj Nasiono \nNano lub klucz prywatny';
+  String get transferQrScanHint => 'Skanuj Nasiono \nLumex lub klucz prywatny';
 
   @override
   String get unacknowledged => 'niepotwierdzone';
@@ -1993,7 +1993,7 @@ class AppLocalizationsPl extends AppLocalizations {
   String get useCurrency => 'Użyj %2';
 
   @override
-  String get useNano => 'Użyj Lumex';
+  String get useLumex => 'Użyj Lumex';
 
   @override
   String get useLumexRep => 'Use Lumex Rep';

@@ -388,13 +388,13 @@ class ReceiveShowQRSheetState extends State<ReceiveShowQRSheet> {
           convertLocalCurrencyToLocalizedCrypto(
               context, _localCurrencyFormat, _amountController.text));
       if (_lastCryptoAmount.isNotEmpty) {
-        raw = NanoAmounts.getAmountAsRaw(_lastCryptoAmount, NanoAmounts.rawPerNano);
+        raw = LumexAmounts.getAmountAsRaw(_lastCryptoAmount, LumexAmounts.rawPerNano);
       }
     } else {
       print(sanitizedAmount(_localCurrencyFormat, _amountController.text));
       raw = _amountController.text.isNotEmpty
-          ? NanoAmounts.getAmountAsRaw(
-              sanitizedAmount(_localCurrencyFormat, _amountController.text), NanoAmounts.rawPerNano)
+          ? LumexAmounts.getAmountAsRaw(
+              sanitizedAmount(_localCurrencyFormat, _amountController.text), LumexAmounts.rawPerNano)
           : "";
     }
     paintQrCode(address: widget.address, amount: raw);
@@ -436,7 +436,7 @@ class ReceiveShowQRSheetState extends State<ReceiveShowQRSheet> {
           currencyFormat: _localCurrencyFormat,
           maxDecimalDigits: _localCurrencyMode
               ? _localCurrencyFormat.decimalDigits ?? 2
-              : NanoAmounts.maxDecimalDigits,
+              : LumexAmounts.maxDecimalDigits,
         ),
       ],
       onChanged: (String text) {

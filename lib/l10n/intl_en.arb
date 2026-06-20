@@ -155,7 +155,7 @@
     "type": "text",
     "description": "send_enter_amount"
   },
-  "anonymousAdvancedInfoBody": "Change the advanced nanonymous settings. This allows you to change the number of hops and the delays between them, as well as the percentage of the total amount of each transaction.",
+  "anonymousAdvancedInfoBody": "Change the advanced anonymous settings. This allows you to change the number of hops and the delays between them, as well as the percentage of the total amount of each transaction.",
   "@anonymousAdvancedInfoBody": {
     "type": "text",
     "description": "anonymous_advanced_info_body"
@@ -165,7 +165,7 @@
     "type": "text",
     "description": "anonymous_fee_error"
   },
-  "anonymousInfoBody": "This is NOT true privacy, but it will make it much harder for people to track your transactions using the nanonymous API. This is a centralized service, and we're not responsible for any issues that may arise from it's use.",
+  "anonymousInfoBody": "This is NOT true privacy, but it will make it much harder for people to track your transactions using the anonymous API. This is a centralized service, and we're not responsible for any issues that may arise from it's use.",
   "@anonymousInfoBody": {
     "type": "text",
     "description": "anonymous_info_body"
@@ -1047,8 +1047,8 @@
     "type": "text",
     "description": "exchange_currency"
   },
-  "exchangeNano": "Exchange Lumex",
-  "@exchangeNano": {
+  "exchangeLumex": "Exchange Lumex",
+  "@exchangeLumex": {
     "type": "text",
     "description": "exchange_nano"
   },
@@ -1191,8 +1191,8 @@
     "type": "text",
     "description": "get_currency"
   },
-  "getNano": "Get Lumex",
-  "@getNano": {
+  "getLumex": "Get Lumex",
+  "@getLumex": {
     "type": "text",
     "description": "get_nano"
   },
@@ -2081,8 +2081,8 @@
     "type": "text",
     "description": "purchase_currency"
   },
-  "purchaseNano": "Purchase Lumex",
-  "@purchaseNano": {
+  "purchaseLumex": "Purchase Lumex",
+  "@purchaseLumex": {
     "type": "text",
     "description": "purchase_nano"
   },
@@ -2751,8 +2751,8 @@
     "type": "text",
     "description": "spend_currency"
   },
-  "spendNano": "Spend Lumex",
-  "@spendNano": {
+  "spendLumex": "Spend Lumex",
+  "@spendLumex": {
     "type": "text",
     "description": "spend_nano"
   },
@@ -3096,8 +3096,8 @@
     "type": "text",
     "description": "use_currency"
   },
-  "useNano": "Use Lumex",
-  "@useNano": {
+  "useLumex": "Use Lumex",
+  "@useLumex": {
     "type": "text",
     "description": "use_nano"
   },

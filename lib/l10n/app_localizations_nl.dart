@@ -679,7 +679,7 @@ class AppLocalizationsNl extends AppLocalizations {
   String get exchangeCurrency => 'Ruil %2';
 
   @override
-  String get exchangeNano => 'Ruil Lumex';
+  String get exchangeLumex => 'Ruil Lumex';
 
   @override
   String get existingPasswordHint => 'Vul huidig wachtwoord in';
@@ -769,7 +769,7 @@ class AppLocalizationsNl extends AppLocalizations {
   String get getCurrency => 'Krijg %2';
 
   @override
-  String get getNano => 'Krijg Lumex';
+  String get getLumex => 'Krijg Lumex';
 
   @override
   String get giftAlert => 'Je hebt een cadeau!';
@@ -1345,7 +1345,7 @@ class AppLocalizationsNl extends AppLocalizations {
   String get purchaseCurrency => 'Koop %2';
 
   @override
-  String get purchaseNano => 'Koop Lumex';
+  String get purchaseLumex => 'Koop Lumex';
 
   @override
   String get qrInvalidAddress => 'QR code bevat geen geldig adres';
@@ -1775,7 +1775,7 @@ class AppLocalizationsNl extends AppLocalizations {
   String get spendCurrency => 'Besteed %2';
 
   @override
-  String get spendNano => 'Besteed Lumex';
+  String get spendLumex => 'Besteed Lumex';
 
   @override
   String get splitBill => 'Factuur splitsen';
@@ -1995,7 +1995,7 @@ class AppLocalizationsNl extends AppLocalizations {
   String get useCurrency => 'Gebruik %2';
 
   @override
-  String get useNano => 'Gebruik Lumex';
+  String get useLumex => 'Gebruik Lumex';
 
   @override
   String get useLumexRep => 'Use Lumex Rep';

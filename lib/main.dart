@@ -414,8 +414,8 @@ class SplashState extends State<Splash> with WidgetsBindingObserver {
 
   bool seedIsEncrypted(String seed) {
     try {
-      final String salted = NanoHelpers.bytesToUtf8String(
-          NanoHelpers.hexToBytes(seed.substring(0, 16)));
+      final String salted = LumexHelpers.bytesToUtf8String(
+          LumexHelpers.hexToBytes(seed.substring(0, 16)));
       if (salted == "Salted__") {
         return true;
       }
@@ -499,7 +499,7 @@ class SplashState extends State<Splash> with WidgetsBindingObserver {
             await sl.get<SharedPrefsUtil>().shouldLock()) {
           Navigator.of(context).pushReplacementNamed('/lock_screen');
         } else {
-          await NanoUtilities().loginAccount(seed, context);
+          await LumexUtilities().loginAccount(seed, context);
           final PriceConversion conversion =
               await sl.get<SharedPrefsUtil>().getPriceConversion();
           Navigator.of(context)

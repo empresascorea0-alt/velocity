@@ -281,12 +281,12 @@ class _IntroPasswordState extends State<IntroPassword> {
       }
     } else if (widget.seed != null) {
       final String encryptedSeed =
-          NanoHelpers.byteToHex(NanoCrypt.encrypt(widget.seed, confirmPasswordController!.text));
+          LumexHelpers.byteToHex(NanoCrypt.encrypt(widget.seed, confirmPasswordController!.text));
       await sl.get<Vault>().setSeed(encryptedSeed);
       StateContainer.of(context).setEncryptedSecret(NanoHelpers.byteToHex(
-          NanoCrypt.encrypt(widget.seed, await sl.get<Vault>().getSessionKey())));
+          LumexCrypt.encrypt(widget.seed, await sl.get<Vault>().getSessionKey())));
       await sl.get<DBHelper>().dropAccounts();
-      await NanoUtilities().loginAccount(widget.seed, context);
+      await LumexUtilities().loginAccount(widget.seed, context);
       // StateContainer.of(context).requestUpdate();// todo: is this necessary?
       String? pin =
           await Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext context) {
@@ -297,15 +297,15 @@ class _IntroPasswordState extends State<IntroPassword> {
       }
     } else {
       // Generate a new seed and encrypt
-      String seed = NanoSeeds.generateSeed();
+      String seed = LumexSeeds.generateSeed();
       String encryptedSeed =
-          NanoHelpers.byteToHex(NanoCrypt.encrypt(seed, confirmPasswordController!.text));
+          LumexHelpers.byteToHex(NanoCrypt.encrypt(seed, confirmPasswordController!.text));
       await sl.get<Vault>().setSeed(encryptedSeed);
       // Also encrypt it with the session key, so user doesnt need password to sign blocks within the app
       StateContainer.of(context).setEncryptedSecret(
-          NanoHelpers.byteToHex(NanoCrypt.encrypt(seed, await sl.get<Vault>().getSessionKey())));
+          LumexHelpers.byteToHex(NanoCrypt.encrypt(seed, await sl.get<Vault>().getSessionKey())));
       // Update wallet
-      NanoUtilities().loginAccount(await StateContainer.of(context).getSeed(), context).then((_) {
+      LumexUtilities().loginAccount(await StateContainer.of(context).getSeed(), context).then((_) {
         // StateContainer.of(context).requestUpdate();// todo: is this necessary?
         Navigator.of(context).pushNamed('/intro_backup_safety');
       });

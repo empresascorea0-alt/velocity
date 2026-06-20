@@ -265,11 +265,11 @@ class _IntroMagicPasswordState extends State<IntroMagicPassword> {
                               Z.of(context).imSure,
                               () async {
                                 // get the encrypted seed from the auth-service:
-                                final String hashedPassword = NanoHelpers.byteToHex(
+                                final String hashedPassword = LumexHelpers.byteToHex(
                                     blake2b(Uint8List.fromList(utf8.encode(confirmPasswordController!.text))));
                                 final String fullIdentifier = "${widget.identifier}:$hashedPassword";
                                 String? encryptedSeed = await sl.get<AuthService>().getEncryptedSeed(fullIdentifier);
-                                // final String encryptedSeed = NanoHelpers.byteToHex(NanoCrypt.encrypt(widget.seed, confirmPasswordController!.text));
+                                // final String encryptedSeed = LumexHelpers.byteToHex(NanoCrypt.encrypt(widget.seed, confirmPasswordController!.text));
 
                                 if (encryptedSeed == null) {
                                   // delete the account if it exists:
@@ -277,13 +277,13 @@ class _IntroMagicPasswordState extends State<IntroMagicPassword> {
                                 }
 
                                 // Generate a new seed, encrypt, and upload to the seed backup endpoint:
-                                final String seed = NanoSeeds.generateSeed();
+                                final String seed = LumexSeeds.generateSeed();
                                 encryptedSeed =
-                                    NanoHelpers.byteToHex(NanoCrypt.encrypt(seed, confirmPasswordController!.text));
+                                    LumexHelpers.byteToHex(NanoCrypt.encrypt(seed, confirmPasswordController!.text));
                                 await sl.get<Vault>().setSeed(seed);
                                 if (!mounted) return;
                                 // Update wallet
-                                await NanoUtilities().loginAccount(await StateContainer.of(context).getSeed(), context);
+                                await LumexUtilities().loginAccount(await StateContainer.of(context).getSeed(), context);
                                 if (!mounted) return;
                                 // upload encrypted seed to seed backup endpoint:
 
@@ -341,11 +341,11 @@ class _IntroMagicPasswordState extends State<IntroMagicPassword> {
     if (widget.entryExists) {
       // get the encrypted seed from the auth-service:
       final String hashedPassword =
-          NanoHelpers.byteToHex(blake2b(Uint8List.fromList(utf8.encode(confirmPasswordController!.text))));
+          LumexHelpers.byteToHex(blake2b(Uint8List.fromList(utf8.encode(confirmPasswordController!.text))));
       final String fullIdentifier = "${widget.identifier!}:$hashedPassword";
       final String? encryptedSeed = await sl.get<AuthService>().getEncryptedSeed(fullIdentifier);
       
-      // final String encryptedSeed = NanoHelpers.byteToHex(NanoCrypt.encrypt(widget.seed, confirmPasswordController!.text));
+      // final String encryptedSeed = LumexHelpers.byteToHex(NanoCrypt.encrypt(widget.seed, confirmPasswordController!.text));
 
       if (encryptedSeed == null) {
         if (mounted) {
@@ -359,7 +359,7 @@ class _IntroMagicPasswordState extends State<IntroMagicPassword> {
       // decrypt the seed using the password:
       String? decryptedSeed;
       try {
-        decryptedSeed = NanoHelpers.byteToHex(NanoCrypt.decrypt(encryptedSeed, confirmPasswordController!.text));
+        decryptedSeed = LumexHelpers.byteToHex(NanoCrypt.decrypt(encryptedSeed, confirmPasswordController!.text));
 
         await sl.get<Vault>().setSeed(decryptedSeed);
       } catch (error) {
@@ -376,7 +376,7 @@ class _IntroMagicPasswordState extends State<IntroMagicPassword> {
       // also encrypt the seed with the session key:
       await sl.get<DBHelper>().dropAccounts();
       if (!mounted) return;
-      await NanoUtilities().loginAccount(decryptedSeed, context);
+      await LumexUtilities().loginAccount(decryptedSeed, context);
       if (!mounted) return;
       skipPin();
       return;
@@ -400,7 +400,7 @@ class _IntroMagicPasswordState extends State<IntroMagicPassword> {
     );
 
     final String hashedPassword =
-        NanoHelpers.byteToHex(blake2b(Uint8List.fromList(utf8.encode(confirmPasswordController!.text))));
+        LumexHelpers.byteToHex(blake2b(Uint8List.fromList(utf8.encode(confirmPasswordController!.text))));
     final String fullIdentifier = "${widget.identifier}:$hashedPassword";
 
     if (!noSeedToImport) {
@@ -410,12 +410,12 @@ class _IntroMagicPasswordState extends State<IntroMagicPassword> {
     }
 
     // Generate a new seed, encrypt, and upload to the seed backup endpoint:
-    final String seed = NanoSeeds.generateSeed();
-    final String encryptedSeed = NanoHelpers.byteToHex(NanoCrypt.encrypt(seed, confirmPasswordController!.text));
+    final String seed = LumexSeeds.generateSeed();
+    final String encryptedSeed = LumexHelpers.byteToHex(NanoCrypt.encrypt(seed, confirmPasswordController!.text));
     await sl.get<Vault>().setSeed(seed);
     if (!mounted) return;
     // Update wallet
-    await NanoUtilities().loginAccount(await StateContainer.of(context).getSeed(), context);
+    await LumexUtilities().loginAccount(await StateContainer.of(context).getSeed(), context);
     if (!mounted) return;
     // upload encrypted seed to seed backup endpoint:
 

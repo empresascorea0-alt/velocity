@@ -9,7 +9,7 @@ class NumberUtil {
   static String getPercentOfTotalSupply(BigInt amount) {
     final Decimal totalSupply = Decimal.parse('133248290000000000000000000000000000000');
     final Decimal amountRaw = Decimal.parse(amount.toString());
-    return ((amountRaw / totalSupply).toDecimal(scaleOnInfinitePrecision: NanoAmounts.maxDecimalDigits) * Decimal.fromInt(100))
+    return ((amountRaw / totalSupply).toDecimal(scaleOnInfinitePrecision: LumexAmounts.maxDecimalDigits) * Decimal.fromInt(100))
         .toStringAsFixed(4);
   }
 
@@ -17,7 +17,7 @@ class NumberUtil {
   /// be parsed. Expects "." to be decimal separator
   /// @param amount $1,512
   /// @returns 1.512
-  static String sanitizeNumber(String input, {int maxDecimalDigits = NanoAmounts.maxDecimalDigits}) {
+  static String sanitizeNumber(String input, {int maxDecimalDigits = LumexAmounts.maxDecimalDigits}) {
     String sanitized = "";
     final List<String> splitStr = input.split(".");
     if (splitStr.length > 1) {

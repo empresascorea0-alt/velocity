@@ -678,7 +678,7 @@ class AppLocalizationsLv extends AppLocalizations {
   String get exchangeCurrency => 'Apmaiņa %2';
 
   @override
-  String get exchangeNano => 'Apmainīties ar Lumex';
+  String get exchangeLumex => 'Apmainīties ar Lumex';
 
   @override
   String get existingPasswordHint => 'Ievadiet pašreizējo paroli';
@@ -767,7 +767,7 @@ class AppLocalizationsLv extends AppLocalizations {
   String get getCurrency => 'Iegūstiet %2';
 
   @override
-  String get getNano => 'Iegūstiet Lumex';
+  String get getLumex => 'Iegūstiet Lumex';
 
   @override
   String get giftAlert => 'You have a gift!';
@@ -1340,7 +1340,7 @@ class AppLocalizationsLv extends AppLocalizations {
   String get purchaseCurrency => 'Pirkums %2';
 
   @override
-  String get purchaseNano => 'Purchase Lumex';
+  String get purchaseLumex => 'Purchase Lumex';
 
   @override
   String get qrInvalidAddress => 'QR code does not contain a valid destination';
@@ -1769,7 +1769,7 @@ class AppLocalizationsLv extends AppLocalizations {
   String get spendCurrency => 'Iztērē %2';
 
   @override
-  String get spendNano => 'Tērē Lumex';
+  String get spendLumex => 'Tērē Lumex';
 
   @override
   String get splitBill => 'Sadalīts Bils';
@@ -1989,7 +1989,7 @@ class AppLocalizationsLv extends AppLocalizations {
   String get useCurrency => 'Izmantojiet %2';
 
   @override
-  String get useNano => 'Izmantojiet Lumex';
+  String get useLumex => 'Izmantojiet Lumex';
 
   @override
   String get useLumexRep => 'Use Lumex Rep';

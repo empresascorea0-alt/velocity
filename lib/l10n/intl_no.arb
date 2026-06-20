@@ -3146,7 +3146,7 @@
     "type": "text",
     "description": "username_unavailable"
   },
-  "usernameWarning": "Lumex brukernavn er en sentralisert tjeneste levert av nano.to",
+  "usernameWarning": "Lumex brukernavn er en sentralisert tjeneste levert av lumex.io",
   "@usernameWarning": {
     "type": "text",
     "description": "Username centralization warning"

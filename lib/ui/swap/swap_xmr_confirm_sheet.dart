@@ -304,7 +304,7 @@ class SwapXMRConfirmSheetState extends State<SwapXMRConfirmSheet> {
     //       widget.amountRaw,
     //       widget.destination,
     //       StateContainer.of(context).wallet!.address,
-    //       NanoUtil.seedToPrivate(
+    //       LumexUtil.seedToPrivate(
     //           await StateContainer.of(context).getSeed(), StateContainer.of(context).selectedAccount!.index!),
     //       max: widget.maxSend);
 

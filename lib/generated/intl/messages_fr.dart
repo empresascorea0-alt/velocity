@@ -858,7 +858,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "Impossible de demander à soi-même"),
         "send": MessageLookupByLibrary.simpleMessage("Envoyer"),
         "sendAmountConfirm":
-            MessageLookupByLibrary.simpleMessage("Envoyer les Nanos?"),
+            MessageLookupByLibrary.simpleMessage("Envoyer les Lumexs?"),
         "sendAmounts":
             MessageLookupByLibrary.simpleMessage("Envoyer des montants"),
         "sendError": MessageLookupByLibrary.simpleMessage(

@@ -666,7 +666,7 @@ class AppLocalizationsJa extends AppLocalizations {
   String get exchangeCurrency => '交換 %2';
 
   @override
-  String get exchangeNano => '交換ナノ';
+  String get exchangeLumex => '交換ナノ';
 
   @override
   String get existingPasswordHint => '現在のパスワードを入力してください';
@@ -754,7 +754,7 @@ class AppLocalizationsJa extends AppLocalizations {
   String get getCurrency => '%2 を取得';
 
   @override
-  String get getNano => 'ナノを入手';
+  String get getLumex => 'ナノを入手';
 
   @override
   String get giftAlert => 'おまえには贈り物がある！';
@@ -1314,7 +1314,7 @@ class AppLocalizationsJa extends AppLocalizations {
   String get purchaseCurrency => '%2 を購入';
 
   @override
-  String get purchaseNano => 'ナノを購入';
+  String get purchaseLumex => 'ナノを購入';
 
   @override
   String get qrInvalidAddress => 'QRコードに正しい送金先が含まれていません。';
@@ -1735,7 +1735,7 @@ class AppLocalizationsJa extends AppLocalizations {
   String get spendCurrency => '%2 消費';
 
   @override
-  String get spendNano => 'NANOを使う';
+  String get spendLumex => 'NANOを使う';
 
   @override
   String get splitBill => '分割請求';
@@ -1949,7 +1949,7 @@ class AppLocalizationsJa extends AppLocalizations {
   String get useCurrency => '%2 を使用';
 
   @override
-  String get useNano => 'NANOを使う';
+  String get useLumex => 'NANOを使う';
 
   @override
   String get useLumexRep => 'Use Lumex Rep';

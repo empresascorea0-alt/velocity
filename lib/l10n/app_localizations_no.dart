@@ -678,7 +678,7 @@ class AppLocalizationsNo extends AppLocalizations {
   String get exchangeCurrency => 'Bytt %2';
 
   @override
-  String get exchangeNano => 'Bytt Lumex';
+  String get exchangeLumex => 'Bytt Lumex';
 
   @override
   String get existingPasswordHint => 'Skriv inn nåværende passord';
@@ -767,7 +767,7 @@ class AppLocalizationsNo extends AppLocalizations {
   String get getCurrency => 'Få %2';
 
   @override
-  String get getNano => 'Skaff deg Lumex';
+  String get getLumex => 'Skaff deg Lumex';
 
   @override
   String get giftAlert => 'Du har en gave!';
@@ -1339,7 +1339,7 @@ class AppLocalizationsNo extends AppLocalizations {
   String get purchaseCurrency => 'Kjøp %2';
 
   @override
-  String get purchaseNano => 'Kjøp Lumex';
+  String get purchaseLumex => 'Kjøp Lumex';
 
   @override
   String get qrInvalidAddress => 'QR-koden inneholder ikke en gyldig adresse';
@@ -1769,7 +1769,7 @@ class AppLocalizationsNo extends AppLocalizations {
   String get spendCurrency => 'Bruk %2';
 
   @override
-  String get spendNano => 'Bruk Lumex';
+  String get spendLumex => 'Bruk Lumex';
 
   @override
   String get splitBill => 'Delt regning';
@@ -1992,7 +1992,7 @@ class AppLocalizationsNo extends AppLocalizations {
   String get useCurrency => 'Bruk %2';
 
   @override
-  String get useNano => 'Bruk Lumex';
+  String get useLumex => 'Bruk Lumex';
 
   @override
   String get useLumexRep => 'Use Lumex Rep';
@@ -2025,7 +2025,7 @@ class AppLocalizationsNo extends AppLocalizations {
 
   @override
   String get usernameWarning =>
-      'Lumex brukernavn er en sentralisert tjeneste levert av nano.to';
+      'Lumex brukernavn er en sentralisert tjeneste levert av lumex.io';
 
   @override
   String get userNotFound => 'Bruker ikke funnet!';

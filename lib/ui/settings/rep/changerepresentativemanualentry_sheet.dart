@@ -330,8 +330,8 @@ class _ChangeRepManualSheetState extends State<ChangeRepManualSheet> {
     } else {
       try {
         final String derivationMethod = await sl.get<SharedPrefsUtil>().getKeyDerivationMethod();
-        final NanoDerivationType derivationType = NanoUtilities.derivationMethodToType(derivationMethod);
-        final String privKey = await NanoDerivations.universalSeedToPrivate(
+        final LumexDerivationType derivationType = LumexUtilities.derivationMethodToType(derivationMethod);
+        final String privKey = await LumexDerivations.universalSeedToPrivate(
           await StateContainer.of(context).getSeed(),
           index: StateContainer.of(context).selectedAccount!.index!,
           type: derivationType,

@@ -310,17 +310,17 @@ class AuthConfirmSheetState extends State<AuthConfirmSheet> {
 
       final String derivationMethod =
           await sl.get<SharedPrefsUtil>().getKeyDerivationMethod();
-      final NanoDerivationType derivationType =
-          NanoUtilities.derivationMethodToType(derivationMethod);
+      final LumexDerivationType derivationType =
+          LumexUtilities.derivationMethodToType(derivationMethod);
 
-      final String privKey = await NanoDerivations.universalSeedToPrivate(
+      final String privKey = await LumexDerivations.universalSeedToPrivate(
         await StateContainer.current.getSeed(),
         index: StateContainer.current.selectedAccount!.index!,
         type: derivationType,
       );
       final String signature = NFFI.NanoSignatures.signBlock(signed, privKey);
-      // final String pubKey = NanoAccounts.extractPublicKey(walletAddress);
-      // final bool isValid = NanoSignatures.validateSig(signed, NanoHelpers.hexToBytes(pubKey), NanoHelpers.hexToBytes(signature));
+      // final String pubKey = LumexAccounts.extractPublicKey(walletAddress);
+      // final bool isValid = LumexSignatures.validateSig(signed, LumexHelpers.hexToBytes(pubKey), LumexHelpers.hexToBytes(signature));
 
       final HandoffResponse authResponse =
           await sl.get<AccountService>().requestAuthHTTP(

@@ -680,7 +680,7 @@ class AppLocalizationsCa extends AppLocalizations {
   String get exchangeCurrency => 'Intercanvi %2';
 
   @override
-  String get exchangeNano => 'Intercanvi Lumex';
+  String get exchangeLumex => 'Intercanvi Lumex';
 
   @override
   String get existingPasswordHint => 'Introduïu la contrasenya actual';
@@ -769,7 +769,7 @@ class AppLocalizationsCa extends AppLocalizations {
   String get getCurrency => 'Obteniu %2';
 
   @override
-  String get getNano => 'Aconsegueix Lumex';
+  String get getLumex => 'Aconsegueix Lumex';
 
   @override
   String get giftAlert => 'You have a gift!';
@@ -1344,7 +1344,7 @@ class AppLocalizationsCa extends AppLocalizations {
   String get purchaseCurrency => 'Compra %2';
 
   @override
-  String get purchaseNano => 'Purchase Lumex';
+  String get purchaseLumex => 'Purchase Lumex';
 
   @override
   String get qrInvalidAddress => 'QR kód neobsahuje platnou destinaci.';
@@ -1773,7 +1773,7 @@ class AppLocalizationsCa extends AppLocalizations {
   String get spendCurrency => 'Gasta %2';
 
   @override
-  String get spendNano => 'Gasta Lumex';
+  String get spendLumex => 'Gasta Lumex';
 
   @override
   String get splitBill => 'Bill dividit';
@@ -1996,7 +1996,7 @@ class AppLocalizationsCa extends AppLocalizations {
   String get useCurrency => 'Utilitzeu %2';
 
   @override
-  String get useNano => 'Utilitzeu Lumex';
+  String get useLumex => 'Utilitzeu Lumex';
 
   @override
   String get useLumexRep => 'Use Lumex Rep';

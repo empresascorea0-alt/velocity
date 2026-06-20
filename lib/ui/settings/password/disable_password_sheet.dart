@@ -163,7 +163,7 @@ class _DisablePasswordSheetState extends State<DisablePasswordSheet> {
       }
     } else {
       try {
-        String decryptedSeed = NanoHelpers.byteToHex(NanoCrypt.decrypt(encryptedSeed, passwordController!.text));
+        String decryptedSeed = LumexHelpers.byteToHex(NanoCrypt.decrypt(encryptedSeed, passwordController!.text));
         throwIf(!NanoUtil.isValidSeed(decryptedSeed), const FormatException());
         await sl.get<Vault>().setSeed(decryptedSeed);
         StateContainer.of(context).resetEncryptedSecret();

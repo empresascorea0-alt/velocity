@@ -24,7 +24,7 @@ import 'package:uuid/uuid.dart';
 
 import '../util/nanoutil.dart';
 
-final BigInt rawPerNano = BigInt.from(10).pow(30);
+final BigInt rawPerLumex = BigInt.from(10).pow(30);
 final BigInt rawPerNyano = BigInt.from(10).pow(24);
 
 class GiftCards {
@@ -36,15 +36,15 @@ class GiftCards {
     String? memo,
     bool requireCaptcha = false,
   }) async {
-    final String paperWalletAccount = NanoDerivations.standardSeedToAddress(paperWalletSeed, index: 0);
+    final String paperWalletAccount = LumexDerivations.standardSeedToAddress(paperWalletSeed, index: 0);
 
     String giftDescription = "Get the app to open this gift card!";
 
     final BigInt amountBigInt = BigInt.parse(amountRaw ?? "0");
     if (amountBigInt > BigInt.parse("1000000000000000000000000000000")) {
       // more than 1 Lumex:
-      final BigInt rawPerNano = BigInt.from(10).pow(30);
-      final String formattedAmount = NanoAmounts.getRawAsUsableString(amountRaw, rawPerNano);
+      final BigInt rawPerLumex = BigInt.from(10).pow(30);
+      final String formattedAmount = LumexAmounts.getRawAsUsableString(amountRaw, rawPerNano);
       giftDescription = "Someone sent you $formattedAmount Lumex! Get the app to open this gift card!";
     }
 
@@ -197,11 +197,11 @@ class GiftCards {
 
   // Future<String> createSplitGiftCardLink(BuildContext context,
   //     {required String paperWalletSeed, String? amountRaw, String? splitAmountRaw, String? memo}) async {
-  //   final String paperWalletAccount = NanoUtil.seedToAddress(paperWalletSeed, 0);
+  //   final String paperWalletAccount = LumexUtil.seedToAddress(paperWalletSeed, 0);
 
   //   sl<AccountService>().createSplitGiftCard(seed: paperWalletSeed, requestingAccount: paperWalletAccount, memo: memo, splitAmountRaw: splitAmountRaw);
 
-  //   // final String paperWalletAccount = NanoUtil.seedToAddress(paperWalletSeed, 0);
+  //   // final String paperWalletAccount = LumexUtil.seedToAddress(paperWalletSeed, 0);
 
   //   // final BranchUniversalObject buo = BranchUniversalObject(
   //   //     canonicalIdentifier: 'flutter/branch',

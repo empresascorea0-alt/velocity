@@ -823,7 +823,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "usernameInvalid": MessageLookupByLibrary.simpleMessage("用户名无效"),
         "usernameUnavailable": MessageLookupByLibrary.simpleMessage("用户名不可用"),
         "usernameWarning":
-            MessageLookupByLibrary.simpleMessage("鹦鹉螺用户名是由 nano.to 提供的集中式服务"),
+            MessageLookupByLibrary.simpleMessage("鹦鹉螺用户名是由 lumex.io 提供的集中式服务"),
         "using": MessageLookupByLibrary.simpleMessage("使用"),
         "viewDetails": MessageLookupByLibrary.simpleMessage("查看详情"),
         "viewPaymentHistory": MessageLookupByLibrary.simpleMessage("查看付款记录"),

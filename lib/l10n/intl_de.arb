@@ -1216,7 +1216,7 @@
     "type": "text",
     "description": "create_gift_error"
   },
-  "giftCardCreationErrorSent": "Beim Versuch, eine Geschenkkarte zu erstellen, ist ein Fehler aufgetreten! Der Link zur Geschenkkarte und zum Download von Lumex, mit Seed (getrennt von einem ^ Zeichen) wurde in ihre Zwischenablage kopiert. Je nach Fehlerart ist es möglich, dass die übertragenen Nanos wieder hergestellt werden können.",
+  "giftCardCreationErrorSent": "Beim Versuch, eine Geschenkkarte zu erstellen, ist ein Fehler aufgetreten! Der Link zur Geschenkkarte und zum Download von Lumex, mit Seed (getrennt von einem ^ Zeichen) wurde in ihre Zwischenablage kopiert. Je nach Fehlerart ist es möglich, dass die übertragenen Lumexs wieder hergestellt werden können.",
   "@giftCardCreationErrorSent": {
     "type": "text",
     "description": "gift_generic_error"
@@ -1346,7 +1346,7 @@
     "type": "text",
     "description": "Generic import"
   },
-  "importGift": "Der Link, auf den Sie geklickt haben, enthält einige Nanos. Möchten Sie ihn in diese Brieftasche importieren oder demjenigen, der ihn gesendet hat, erstatten?",
+  "importGift": "Der Link, auf den Sie geklickt haben, enthält einige Lumexs. Möchten Sie ihn in diese Brieftasche importieren oder demjenigen, der ihn gesendet hat, erstatten?",
   "@importGift": {
     "type": "text",
     "description": "import_gift"
@@ -2246,7 +2246,7 @@
     "type": "text",
     "description": "favorite_remove_sure"
   },
-  "repInfo": "Kommt es zu zwei widersprüchlichen Transaktionen, so stimmen Vertreter-Accounts darüber ab, welche der Transaktionen akzeptiert wird. Dabei entspricht ein Lumex einem Stimmrecht. Du kannst einem Vertreter Stimmrechte in Höhe deines Guthabens übertragen. Deine Nanos gehören dabei natürlich weiterhin dir und der Vertreter kann diese nicht ausgeben. Wähle einen vertrauenswürdigen Vertreter mit einer hohen Erreichbarkeit.",
+  "repInfo": "Kommt es zu zwei widersprüchlichen Transaktionen, so stimmen Vertreter-Accounts darüber ab, welche der Transaktionen akzeptiert wird. Dabei entspricht ein Lumex einem Stimmrecht. Du kannst einem Vertreter Stimmrechte in Höhe deines Guthabens übertragen. Deine Lumexs gehören dabei natürlich weiterhin dir und der Vertreter kann diese nicht ausgeben. Wähle einen vertrauenswürdigen Vertreter mit einer hohen Erreichbarkeit.",
   "@repInfo": {
     "type": "text",
     "description": "change_representative_info"
@@ -2651,7 +2651,7 @@
     "type": "text",
     "description": "settings_share"
   },
-  "shareLumexText": "Probier mal Lumex, Nanos offizielles Android-Wallet!",
+  "shareLumexText": "Probier mal Lumex, Lumexs offizielles Android-Wallet!",
   "@shareLumexText": {
     "type": "text",
     "description": "share_extra"

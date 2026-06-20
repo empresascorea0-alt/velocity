@@ -679,7 +679,7 @@ class AppLocalizationsId extends AppLocalizations {
   String get exchangeCurrency => 'Tukar %2';
 
   @override
-  String get exchangeNano => 'Tukarkan Lumex';
+  String get exchangeLumex => 'Tukarkan Lumex';
 
   @override
   String get existingPasswordHint => 'Masukkan kata sandi saat ini';
@@ -769,7 +769,7 @@ class AppLocalizationsId extends AppLocalizations {
   String get getCurrency => 'Dapatkan %2';
 
   @override
-  String get getNano => 'Dapatkan Lumex';
+  String get getLumex => 'Dapatkan Lumex';
 
   @override
   String get giftAlert => 'Kau punya hadiah!';
@@ -1342,7 +1342,7 @@ class AppLocalizationsId extends AppLocalizations {
   String get purchaseCurrency => 'Beli %2';
 
   @override
-  String get purchaseNano => 'Pembelian Lumex';
+  String get purchaseLumex => 'Pembelian Lumex';
 
   @override
   String get qrInvalidAddress => 'Kode QR tidak berisikan alamat yang benar';
@@ -1770,7 +1770,7 @@ class AppLocalizationsId extends AppLocalizations {
   String get spendCurrency => 'Habiskan %2';
 
   @override
-  String get spendNano => 'Habiskan Lumex';
+  String get spendLumex => 'Habiskan Lumex';
 
   @override
   String get splitBill => 'Pisahkan Tagihan';
@@ -1991,7 +1991,7 @@ class AppLocalizationsId extends AppLocalizations {
   String get useCurrency => 'Gunakan %2';
 
   @override
-  String get useNano => 'Gunakan Lumex';
+  String get useLumex => 'Gunakan Lumex';
 
   @override
   String get useLumexRep => 'Use Lumex Rep';

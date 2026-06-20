@@ -33,39 +33,21 @@ class NonTranslatable {
   /// -- NON-TRANSLATABLE ITEMS
   static String getBlockExplorerUrl(String? hash, AvailableBlockExplorer explorer) {
     switch (explorer.explorer) {
-      case AvailableBlockExplorerEnum.NANOCOMMUNITY:
-        return "https://nano.community/$hash";
-      case AvailableBlockExplorerEnum.NANOLOOKER:
-        return "https://nanolooker.com/block/$hash";
-      case AvailableBlockExplorerEnum.BLOCKLATTICE:
-        return "https://blocklattice.io/block/$hash";
-      case AvailableBlockExplorerEnum.NANEXPLORER:
-        return "https://nanexplorer.com/nano/block/$hash";
-      case AvailableBlockExplorerEnum.NANOCAFE:
-        return "https://nanocafe.cc/$hash";
-      case AvailableBlockExplorerEnum.NANOBROWSE:
+      case AvailableBlockExplorerEnum.LUMEXIO:
+        return "https://lumex.io/$hash";
+      case AvailableBlockExplorerEnum.EXPLORERLUMEXIO:
       default:
-        return "https://nanobrowse.com/block/$hash";
+        return "https://explorer.lumex.io/block/$hash";
     }
   }
 
   static String getAccountExplorerUrl(String? account, AvailableBlockExplorer explorer) {
     switch (explorer.explorer) {
-      case AvailableBlockExplorerEnum.NANOCOMMUNITY:
-        return "https://nano.community/$account";
-      case AvailableBlockExplorerEnum.NANOLOOKER:
-        return "https://nanolooker.com/account/$account";
-      case AvailableBlockExplorerEnum.NANOLOOKER:
-        return "https://nanolooker.com/account/$account";
-      case AvailableBlockExplorerEnum.BLOCKLATTICE:
-        return "https://blocklattice.io/account/$account";
-      case AvailableBlockExplorerEnum.NANEXPLORER:
-        return "https://nanexplorer.com/nano/account/$account";
-      case AvailableBlockExplorerEnum.NANOCAFE:
-        return "https://nanocafe.cc/$account";
-      case AvailableBlockExplorerEnum.NANOBROWSE:
+      case AvailableBlockExplorerEnum.LUMEXIO:
+        return "https://lumex.io/$account";
+      case AvailableBlockExplorerEnum.EXPLORERLUMEXIO:
       default:
-        return "https://nanobrowse.com/account/$account";
+        return "https://explorer.lumex.io/account/$account";
     }
   }
 

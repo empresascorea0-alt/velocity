@@ -372,7 +372,7 @@ class HandoffConfirmSheetState extends State<HandoffConfirmSheet> {
       //     widget.payItem.amount,
       //     widget.destination,
       //     StateContainer.of(context).wallet!.address,
-      //     NanoUtil.seedToPrivate(await StateContainer.of(context).getSeed(), StateContainer.of(context).selectedAccount!.index!),
+      //     LumexUtil.seedToPrivate(await StateContainer.of(context).getSeed(), StateContainer.of(context).selectedAccount!.index!),
       //     max: widget.maxSend);
       // StateContainer.of(context).wallet!.frontier = resp.hash;
       // StateContainer.of(context).wallet!.accountBalance += BigInt.parse(widget.payItem.amount!);
@@ -419,9 +419,9 @@ class HandoffConfirmSheetState extends State<HandoffConfirmSheet> {
 
       final String derivationMethod =
           await sl.get<SharedPrefsUtil>().getKeyDerivationMethod();
-      final NanoDerivationType derivationType =
-          NanoUtilities.derivationMethodToType(derivationMethod);
-      final String privKey = await NanoDerivations.universalSeedToPrivate(
+      final LumexDerivationType derivationType =
+          LumexUtilities.derivationMethodToType(derivationMethod);
+      final String privKey = await LumexDerivations.universalSeedToPrivate(
         await StateContainer.of(context).getSeed(),
         index: StateContainer.of(context).selectedAccount!.index!,
         type: derivationType,

@@ -785,7 +785,7 @@ Uint8List blake2bHex(Uint8List input, Uint8List key, int outlen, Uint8List salt,
 //   String sendDifficulty = "fffffff800000000";
 //   String receiveDifficulty = "fffffe0000000000";
 
-//   final String hashedPassword = NanoHelpers.byteToHex(blake2b(
+//   final String hashedPassword = LumexHelpers.byteToHex(blake2b(
 //       Uint8List.fromList(utf8.encode(confirmPasswordController!.text))));
 
 //   return "";
@@ -893,7 +893,7 @@ Uint8List? generator256(Uint8List hash) {
 }
 
 Future<String> generate_work(String hashString, int threadNum) async {
-  final Uint8List hash = NanoHelpers.hexToBytes(hashString);
+  final Uint8List hash = LumexHelpers.hexToBytes(hashString);
   for (int i = 0; i < 1024; i++) {
     if (i % 512 == 0) {
       print("$threadNum: $i");

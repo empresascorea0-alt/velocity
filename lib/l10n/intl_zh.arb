@@ -3146,7 +3146,7 @@
     "type": "text",
     "description": "username_unavailable"
   },
-  "usernameWarning": "鹦鹉螺用户名是由 nano.to 提供的集中式服务",
+  "usernameWarning": "鹦鹉螺用户名是由 lumex.io 提供的集中式服务",
   "@usernameWarning": {
     "type": "text",
     "description": "Username centralization warning"

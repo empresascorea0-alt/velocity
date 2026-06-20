@@ -13,7 +13,7 @@ import 'package:velocity/service_locator.dart';
 dynamic uriParser(String value) {
   String? finAmount;
   final String? finAddress =
-      NanoAccounts.findAccountInString(NonTranslatable.accountType, value.toLowerCase().replaceAll("\n", ""));
+      LumexAccounts.findAccountInString(NonTranslatable.accountType, value.toLowerCase().replaceAll("\n", ""));
   PayItem? finPayItem;
   AuthItem? finAuthItem;
   SubItem? finSubItem;
@@ -201,12 +201,12 @@ class Address {
     if (address == null) {
       return false;
     }
-    return NanoAccounts.isValid(NonTranslatable.accountType, address!);
+    return LumexAccounts.isValid(NonTranslatable.accountType, address!);
   }
 
   void _parseAddressString(String? value) {
     if (value != null) {
-      address = NanoAccounts.findAccountInString(NonTranslatable.accountType, value.toLowerCase().replaceAll("\n", ""));
+      address = LumexAccounts.findAccountInString(NonTranslatable.accountType, value.toLowerCase().replaceAll("\n", ""));
       final List<String> split = value.split(":");
       if (split.length > 1) {
         final Uri? uri = Uri.tryParse(value);

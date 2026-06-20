@@ -3146,7 +3146,7 @@
     "type": "text",
     "description": "username_unavailable"
   },
-  "usernameWarning": "שמות משתמש של נאוטילוס הם שירות מרכזי המסופק על ידי nano.to",
+  "usernameWarning": "שמות משתמש של נאוטילוס הם שירות מרכזי המסופק על ידי lumex.io",
   "@usernameWarning": {
     "type": "text",
     "description": "Username centralization warning"

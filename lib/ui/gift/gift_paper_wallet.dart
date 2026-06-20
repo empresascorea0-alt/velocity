@@ -37,7 +37,7 @@ class GeneratePaperWalletScreen extends StatefulWidget {
 
 class GeneratePaperWalletScreenState extends State<GeneratePaperWalletScreen> {
   GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
-  String paper_wallet_seed = NanoSeeds.generateSeed();
+  String paper_wallet_seed = LumexSeeds.generateSeed();
   late String paper_wallet_account;
 
   FocusNode _amountFocusNode = FocusNode();
@@ -82,7 +82,7 @@ class GeneratePaperWalletScreenState extends State<GeneratePaperWalletScreen> {
   void initState() {
     super.initState();
 
-    paper_wallet_account = NanoDerivations.standardSeedToAddress(paper_wallet_seed, index: 0);
+    paper_wallet_account = LumexDerivations.standardSeedToAddress(paper_wallet_seed, index: 0);
 
     _amountFocusNode = FocusNode();
     _splitAmountFocusNode = FocusNode();
@@ -484,12 +484,12 @@ class GeneratePaperWalletScreenState extends State<GeneratePaperWalletScreen> {
 
                     if (_splitAmountController.text.isNotEmpty) {
                       if (_localCurrencyMode) {
-                        splitAmountRaw = NanoAmounts.getAmountAsRaw(
+                        splitAmountRaw = LumexAmounts.getAmountAsRaw(
                             sanitizedAmount(
                                 _localCurrencyFormat,
                                 convertLocalCurrencyToLocalizedCrypto(
                                     context, _localCurrencyFormat, splitAmountRaw)),
-                            NanoAmounts.rawPerNano);
+                            LumexAmounts.rawPerNano);
                       } else {
                         splitAmountRaw = getThemeAwareAmountAsRaw(context, splitAmountRaw);
                       }
@@ -502,12 +502,12 @@ class GeneratePaperWalletScreenState extends State<GeneratePaperWalletScreen> {
                           memo: memo ?? "",
                           destination: paper_wallet_account,
                           amountRaw: _localCurrencyMode
-                              ? NanoAmounts.getAmountAsRaw(
+                              ? LumexAmounts.getAmountAsRaw(
                                   sanitizedAmount(
                                       _localCurrencyFormat,
                                       convertLocalCurrencyToLocalizedCrypto(
                                           context, _localCurrencyFormat, formattedAmount)),
-                                  NanoAmounts.rawPerNano)
+                                  LumexAmounts.rawPerNano)
                               : getThemeAwareAmountAsRaw(context, formattedAmount),
                           splitAmountRaw: splitAmountRaw,
                           requireCaptcha: requireCaptcha,
@@ -561,21 +561,21 @@ class GeneratePaperWalletScreenState extends State<GeneratePaperWalletScreen> {
         final String sanitizedTextField = sanitizedAmount(_localCurrencyFormat, textField);
         final String sanitizedBalance = sanitizedAmount(_localCurrencyFormat, balance);
         textFieldInt = (Decimal.parse(sanitizedTextField) *
-                Decimal.fromInt(pow(10, NanoAmounts.maxDecimalDigits) as int))
+                Decimal.fromInt(pow(10, LumexAmounts.maxDecimalDigits) as int))
             .toDouble()
             .toInt();
         balanceInt = (Decimal.parse(sanitizedBalance) *
-                Decimal.fromInt(pow(10, NanoAmounts.maxDecimalDigits) as int))
+                Decimal.fromInt(pow(10, LumexAmounts.maxDecimalDigits) as int))
             .toDouble()
             .toInt();
       } else {
         textField = sanitizedAmount(_localCurrencyFormat, textField);
         textFieldInt = (Decimal.parse(textField) *
-                Decimal.fromInt(pow(10, NanoAmounts.maxDecimalDigits) as int))
+                Decimal.fromInt(pow(10, LumexAmounts.maxDecimalDigits) as int))
             .toDouble()
             .toInt();
         balanceInt =
-            (Decimal.parse(balance) * Decimal.fromInt(pow(10, NanoAmounts.maxDecimalDigits) as int))
+            (Decimal.parse(balance) * Decimal.fromInt(pow(10, LumexAmounts.maxDecimalDigits) as int))
                 .toDouble()
                 .toInt();
       }
@@ -681,7 +681,7 @@ class GeneratePaperWalletScreenState extends State<GeneratePaperWalletScreen> {
           currencyFormat: _localCurrencyFormat,
           maxDecimalDigits: _localCurrencyMode
               ? _localCurrencyFormat.decimalDigits ?? 2
-              : NanoAmounts.maxDecimalDigits,
+              : LumexAmounts.maxDecimalDigits,
         ),
       ],
       onChanged: (String text) {
@@ -816,7 +816,7 @@ class GeneratePaperWalletScreenState extends State<GeneratePaperWalletScreen> {
           currencyFormat: _localCurrencyFormat,
           maxDecimalDigits: _localCurrencyMode
               ? _localCurrencyFormat.decimalDigits ?? 2
-              : NanoAmounts.maxDecimalDigits,
+              : LumexAmounts.maxDecimalDigits,
         ),
       ],
       onChanged: (String text) {

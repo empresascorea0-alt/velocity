@@ -675,7 +675,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get exchangeCurrency => 'Exchange %2';
 
   @override
-  String get exchangeNano => 'החלף Lumex';
+  String get exchangeLumex => 'החלף Lumex';
 
   @override
   String get existingPasswordHint => 'הכנס סיסמא נוכחית';
@@ -763,7 +763,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get getCurrency => 'קבל %2';
 
   @override
-  String get getNano => 'קבל Lumex';
+  String get getLumex => 'קבל Lumex';
 
   @override
   String get giftAlert => 'יש לך כישרון!';
@@ -1331,7 +1331,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get purchaseCurrency => 'קנה %2';
 
   @override
-  String get purchaseNano => 'רכישת ננו';
+  String get purchaseLumex => 'רכישת ננו';
 
   @override
   String get qrInvalidAddress => 'QR code does not contain a valid destination';
@@ -1756,7 +1756,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get spendCurrency => 'הוצא%2';
 
   @override
-  String get spendNano => 'להוציא ננו';
+  String get spendLumex => 'להוציא ננו';
 
   @override
   String get splitBill => 'ביל מפוצל';
@@ -1972,7 +1972,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get useCurrency => 'השתמש ב%2';
 
   @override
-  String get useNano => 'השתמש ב-Lumex';
+  String get useLumex => 'השתמש ב-Lumex';
 
   @override
   String get useLumexRep => 'Use Lumex Rep';
@@ -2005,7 +2005,7 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get usernameWarning =>
-      'שמות משתמש של נאוטילוס הם שירות מרכזי המסופק על ידי nano.to';
+      'שמות משתמש של נאוטילוס הם שירות מרכזי המסופק על ידי lumex.io';
 
   @override
   String get userNotFound => 'המשתמש לא נמצא!';

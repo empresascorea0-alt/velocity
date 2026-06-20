@@ -187,7 +187,7 @@ class _AppPasswordLockScreenState extends State<AppPasswordLockScreen> {
 
   Future<void> validateAndDecrypt() async {
     try {
-      final String decryptedSeed = NanoHelpers.byteToHex(NanoCrypt.decrypt(await sl.get<Vault>().getSeed(), enterPasswordController!.text));
+      final String decryptedSeed = LumexHelpers.byteToHex(NanoCrypt.decrypt(await sl.get<Vault>().getSeed(), enterPasswordController!.text));
       StateContainer.of(context).setEncryptedSecret(NanoHelpers.byteToHex(NanoCrypt.encrypt(decryptedSeed, await sl.get<Vault>().getSessionKey())));
       _goHome();
     } catch (e) {
@@ -203,7 +203,7 @@ class _AppPasswordLockScreenState extends State<AppPasswordLockScreen> {
     if (StateContainer.of(context).wallet != null) {
       StateContainer.of(context).reconnect();
     } else {
-      await NanoUtilities().loginAccount(await StateContainer.of(context).getSeed(), context);
+      await LumexUtilities().loginAccount(await StateContainer.of(context).getSeed(), context);
     }
     StateContainer.of(context).requestUpdate();
     final PriceConversion conversion = await sl.get<SharedPrefsUtil>().getPriceConversion();

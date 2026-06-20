@@ -681,7 +681,7 @@ class AppLocalizationsRo extends AppLocalizations {
   String get exchangeCurrency => 'Schimb %2';
 
   @override
-  String get exchangeNano => 'Schimbă Lumex';
+  String get exchangeLumex => 'Schimbă Lumex';
 
   @override
   String get existingPasswordHint => 'Introduceti parola curenta';
@@ -771,7 +771,7 @@ class AppLocalizationsRo extends AppLocalizations {
   String get getCurrency => 'Obțineți %2';
 
   @override
-  String get getNano => 'Ia Lumex';
+  String get getLumex => 'Ia Lumex';
 
   @override
   String get giftAlert => 'Ai un cadou!';
@@ -1346,7 +1346,7 @@ class AppLocalizationsRo extends AppLocalizations {
   String get purchaseCurrency => 'Cumpărați %2';
 
   @override
-  String get purchaseNano => 'Achiziționați Lumex';
+  String get purchaseLumex => 'Achiziționați Lumex';
 
   @override
   String get qrInvalidAddress => 'Codul QR este invalid';
@@ -1775,7 +1775,7 @@ class AppLocalizationsRo extends AppLocalizations {
   String get spendCurrency => 'Cheltuiește %2';
 
   @override
-  String get spendNano => 'Cheltuiește Lumex';
+  String get spendLumex => 'Cheltuiește Lumex';
 
   @override
   String get splitBill => 'Bill împărțit';
@@ -1999,7 +1999,7 @@ class AppLocalizationsRo extends AppLocalizations {
   String get useCurrency => 'Folosiți %2';
 
   @override
-  String get useNano => 'Folosește Lumex';
+  String get useLumex => 'Folosește Lumex';
 
   @override
   String get useLumexRep => 'Use Lumex Rep';

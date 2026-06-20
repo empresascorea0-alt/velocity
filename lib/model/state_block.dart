@@ -137,7 +137,7 @@ class StateBlock {
       return null;
     }
     if (link.contains(NonTranslatable.currencyPrefix)) {
-      return NanoDerivations.addressToPublicKey(link);
+      return LumexDerivations.addressToPublicKey(link);
     }
     return link;
   }

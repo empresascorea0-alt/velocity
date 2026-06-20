@@ -241,7 +241,7 @@ class _SetPasswordSheetState extends State<SetPasswordSheet> {
       Navigator.pop(context);
       UIUtil.showSnackbar(Z.of(context).encryptionFailedError, context);
     } else {
-      String encryptedSeed = NanoHelpers.byteToHex(NanoCrypt.encrypt(seed, confirmPasswordController!.text));
+      String encryptedSeed = LumexHelpers.byteToHex(NanoCrypt.encrypt(seed, confirmPasswordController!.text));
       await sl.get<Vault>().setSeed(encryptedSeed);
       StateContainer.of(context)
           .setEncryptedSecret(NanoHelpers.byteToHex(NanoCrypt.encrypt(seed, await sl.get<Vault>().getSessionKey())));

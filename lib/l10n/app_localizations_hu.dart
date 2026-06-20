@@ -680,7 +680,7 @@ class AppLocalizationsHu extends AppLocalizations {
   String get exchangeCurrency => 'Csere %2';
 
   @override
-  String get exchangeNano => 'Csere Lumex';
+  String get exchangeLumex => 'Csere Lumex';
 
   @override
   String get existingPasswordHint => 'Írd be a jelenlegi jelszót';
@@ -770,7 +770,7 @@ class AppLocalizationsHu extends AppLocalizations {
   String get getCurrency => 'Szerezze be a %2-t';
 
   @override
-  String get getNano => 'Szerezd meg a Lumex-t';
+  String get getLumex => 'Szerezd meg a Lumex-t';
 
   @override
   String get giftAlert => 'Van egy ajándékod!';
@@ -1346,7 +1346,7 @@ class AppLocalizationsHu extends AppLocalizations {
   String get purchaseCurrency => 'Vásároljon %2';
 
   @override
-  String get purchaseNano => 'Vásárlás Lumex';
+  String get purchaseLumex => 'Vásárlás Lumex';
 
   @override
   String get qrInvalidAddress => 'QR code does not contain a valid destination';
@@ -1776,7 +1776,7 @@ class AppLocalizationsHu extends AppLocalizations {
   String get spendCurrency => 'Költés %2';
 
   @override
-  String get spendNano => 'Töltsön Lumex-t';
+  String get spendLumex => 'Töltsön Lumex-t';
 
   @override
   String get splitBill => 'Split Bill';
@@ -1999,7 +1999,7 @@ class AppLocalizationsHu extends AppLocalizations {
   String get useCurrency => 'Használja a %2';
 
   @override
-  String get useNano => 'Használj Lumex-t';
+  String get useLumex => 'Használj Lumex-t';
 
   @override
   String get useLumexRep => 'Use Lumex Rep';

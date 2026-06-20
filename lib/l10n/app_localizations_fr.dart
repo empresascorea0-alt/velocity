@@ -682,7 +682,7 @@ class AppLocalizationsFr extends AppLocalizations {
   String get exchangeCurrency => 'Échangez %2';
 
   @override
-  String get exchangeNano => 'Échange Lumex';
+  String get exchangeLumex => 'Échange Lumex';
 
   @override
   String get existingPasswordHint => 'Entrer le mot de passe actuel';
@@ -772,7 +772,7 @@ class AppLocalizationsFr extends AppLocalizations {
   String get getCurrency => 'Obtenez %2';
 
   @override
-  String get getNano => 'Obtenez Lumex';
+  String get getLumex => 'Obtenez Lumex';
 
   @override
   String get giftAlert => 'Tu as un cadeau !';
@@ -1347,7 +1347,7 @@ class AppLocalizationsFr extends AppLocalizations {
   String get purchaseCurrency => 'Achetez %2';
 
   @override
-  String get purchaseNano => 'Acheter Lumex';
+  String get purchaseLumex => 'Acheter Lumex';
 
   @override
   String get qrInvalidAddress =>
@@ -1615,7 +1615,7 @@ class AppLocalizationsFr extends AppLocalizations {
   String get send => 'Envoyer';
 
   @override
-  String get sendAmountConfirm => 'Envoyer les Nanos?';
+  String get sendAmountConfirm => 'Envoyer les Lumexs?';
 
   @override
   String get sendAmounts => 'Envoyer des montants';
@@ -1780,7 +1780,7 @@ class AppLocalizationsFr extends AppLocalizations {
   String get spendCurrency => 'Dépensez %2';
 
   @override
-  String get spendNano => 'Dépensez Lumex';
+  String get spendLumex => 'Dépensez Lumex';
 
   @override
   String get splitBill => 'Facture fractionnée';
@@ -2003,7 +2003,7 @@ class AppLocalizationsFr extends AppLocalizations {
   String get useCurrency => 'Utiliser %2';
 
   @override
-  String get useNano => 'Utiliser Lumex';
+  String get useLumex => 'Utiliser Lumex';
 
   @override
   String get useLumexRep => 'Use Lumex Rep';

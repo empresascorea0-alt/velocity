@@ -681,7 +681,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get exchangeCurrency => 'Обмен %2';
 
   @override
-  String get exchangeNano => 'Обмен НАНО';
+  String get exchangeLumex => 'Обмен НАНО';
 
   @override
   String get existingPasswordHint => 'Введите текущий пароль';
@@ -771,7 +771,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get getCurrency => 'Получить %2';
 
   @override
-  String get getNano => 'Получить НАНО';
+  String get getLumex => 'Получить НАНО';
 
   @override
   String get giftAlert => 'У тебя есть подарок!';
@@ -1346,7 +1346,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get purchaseCurrency => 'Купить %2';
 
   @override
-  String get purchaseNano => 'Приобрести нано';
+  String get purchaseLumex => 'Приобрести нано';
 
   @override
   String get qrInvalidAddress => 'QR-не содержит действительный адрес';
@@ -1775,7 +1775,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get spendCurrency => 'Потратить %2';
 
   @override
-  String get spendNano => 'Потратить НАНО';
+  String get spendLumex => 'Потратить НАНО';
 
   @override
   String get splitBill => 'Разделить счет';
@@ -1995,7 +1995,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get useCurrency => 'Использовать %2';
 
   @override
-  String get useNano => 'Используйте НАНО';
+  String get useLumex => 'Используйте НАНО';
 
   @override
   String get useLumexRep => 'Use Lumex Rep';

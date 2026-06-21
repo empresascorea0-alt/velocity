@@ -681,7 +681,7 @@ class AppLocalizationsIt extends AppLocalizations {
   String get exchangeCurrency => 'Scambia %2';
 
   @override
-  String get exchangeLumex => 'Scambio Lumex';
+  String get exchangeLumex => 'Exchange Lumex';
 
   @override
   String get existingPasswordHint => 'Immetti la password corrente';
@@ -771,7 +771,7 @@ class AppLocalizationsIt extends AppLocalizations {
   String get getCurrency => 'Ottieni %2';
 
   @override
-  String get getLumex => 'Ottieni Lumex';
+  String get getLumex => 'Get Lumex';
 
   @override
   String get giftAlert => 'Hai un regalo!';
@@ -1335,17 +1335,17 @@ class AppLocalizationsIt extends AppLocalizations {
   String get promotionalLink => 'Lumex libero';
 
   @override
-  String get proSubRequiredHeader => 'Abbonamento Lumex Pro richiesto';
+  String get proSubRequiredHeader => 'Abbonamento Velocity Pro richiesto';
 
   @override
   String get proSubRequiredParagraph =>
-      'Per solo 1 Lumex al mese, puoi sbloccare tutte le funzionalità di Lumex Pro.';
+      'Per solo 1 Lumex al mese, puoi sbloccare tutte le funzionalità di Velocity Pro.';
 
   @override
   String get purchaseCurrency => 'Acquista %2';
 
   @override
-  String get purchaseLumex => 'Acquista Lumex';
+  String get purchaseLumex => 'Purchase Lumex';
 
   @override
   String get qrInvalidAddress =>
@@ -1775,7 +1775,7 @@ class AppLocalizationsIt extends AppLocalizations {
   String get spendCurrency => 'Spendi %2';
 
   @override
-  String get spendLumex => 'Spendi Lumex';
+  String get spendLumex => 'Spend Lumex';
 
   @override
   String get splitBill => 'Fattura divisa';
@@ -1998,7 +1998,7 @@ class AppLocalizationsIt extends AppLocalizations {
   String get useCurrency => 'Usa %2';
 
   @override
-  String get useLumex => 'Usa Lumex';
+  String get useLumex => 'Use Lumex';
 
   @override
   String get useLumexRep => 'Use Lumex Rep';

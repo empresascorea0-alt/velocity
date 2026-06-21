@@ -680,7 +680,7 @@ class AppLocalizationsPl extends AppLocalizations {
   String get exchangeCurrency => 'Wymiana %2';
 
   @override
-  String get exchangeLumex => 'Wymiana Lumex';
+  String get exchangeLumex => 'Exchange Lumex';
 
   @override
   String get existingPasswordHint => 'Wprowadź bieżące hasło';
@@ -770,7 +770,7 @@ class AppLocalizationsPl extends AppLocalizations {
   String get getCurrency => 'Uzyskaj %2';
 
   @override
-  String get getLumex => 'Zdobądź Lumex';
+  String get getLumex => 'Get Lumex';
 
   @override
   String get giftAlert => 'Masz dar!';
@@ -1239,8 +1239,7 @@ class AppLocalizationsPl extends AppLocalizations {
   String get passwordTooShort => 'Hasło jest za krótkie';
 
   @override
-  String get passwordWarning =>
-      'To hasło będzie wymagane do otwarcia Lumexa.';
+  String get passwordWarning => 'To hasło będzie wymagane do otwarcia Lumexa.';
 
   @override
   String get passwordWillBeRequiredToOpenParagraph =>
@@ -1335,17 +1334,17 @@ class AppLocalizationsPl extends AppLocalizations {
   String get promotionalLink => 'Bezpłatna Lumex';
 
   @override
-  String get proSubRequiredHeader => 'Wymagana subskrypcja Lumex Pro';
+  String get proSubRequiredHeader => 'Wymagana subskrypcja Velocity Pro';
 
   @override
   String get proSubRequiredParagraph =>
-      'Za jedyne 1 Lumex miesięcznie możesz odblokować wszystkie funkcje Lumex Pro.';
+      'Za jedyne 1 Lumex miesięcznie możesz odblokować wszystkie funkcje Velocity Pro.';
 
   @override
   String get purchaseCurrency => 'Kup %2';
 
   @override
-  String get purchaseLumex => 'Zakup Lumex';
+  String get purchaseLumex => 'Purchase Lumex';
 
   @override
   String get qrInvalidAddress => 'Kod QR jest nieprawidłowy';
@@ -1772,7 +1771,7 @@ class AppLocalizationsPl extends AppLocalizations {
   String get spendCurrency => 'Wydaj %2';
 
   @override
-  String get spendLumex => 'Wydaj Lumex';
+  String get spendLumex => 'Spend Lumex';
 
   @override
   String get splitBill => 'Podziel rachunek';
@@ -1993,7 +1992,7 @@ class AppLocalizationsPl extends AppLocalizations {
   String get useCurrency => 'Użyj %2';
 
   @override
-  String get useLumex => 'Użyj Lumex';
+  String get useLumex => 'Use Lumex';
 
   @override
   String get useLumexRep => 'Use Lumex Rep';

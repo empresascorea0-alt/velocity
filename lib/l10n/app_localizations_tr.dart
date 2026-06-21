@@ -677,7 +677,7 @@ class AppLocalizationsTr extends AppLocalizations {
   String get exchangeCurrency => '%2 takas';
 
   @override
-  String get exchangeLumex => 'Lumex değişimi';
+  String get exchangeLumex => 'Exchange Lumex';
 
   @override
   String get existingPasswordHint => 'Güncel şifrenizi giriniz';
@@ -767,7 +767,7 @@ class AppLocalizationsTr extends AppLocalizations {
   String get getCurrency => '%2\'yi al';
 
   @override
-  String get getLumex => 'Lumex\'yu edinin';
+  String get getLumex => 'Get Lumex';
 
   @override
   String get giftAlert => 'Bir yeteneğin var!';
@@ -1330,17 +1330,17 @@ class AppLocalizationsTr extends AppLocalizations {
   String get promotionalLink => 'Ücretsiz Lumex';
 
   @override
-  String get proSubRequiredHeader => 'Lumex Pro Aboneliği Gerekli';
+  String get proSubRequiredHeader => 'Velocity Pro Aboneliği Gerekli';
 
   @override
   String get proSubRequiredParagraph =>
-      'Ayda sadece 1 Lumex karşılığında Lumex Pro\'nun tüm özelliklerinin kilidini açabilirsiniz.';
+      'Ayda sadece 1 Lumex karşılığında Velocity Pro\'nun tüm özelliklerinin kilidini açabilirsiniz.';
 
   @override
   String get purchaseCurrency => '%2 satın al';
 
   @override
-  String get purchaseLumex => 'Satın al Lumex';
+  String get purchaseLumex => 'Purchase Lumex';
 
   @override
   String get qrInvalidAddress => 'QR kodu geçerli bir adres içermiyor';
@@ -1769,7 +1769,7 @@ class AppLocalizationsTr extends AppLocalizations {
   String get spendCurrency => '%2 harca';
 
   @override
-  String get spendLumex => 'Lumex harca';
+  String get spendLumex => 'Spend Lumex';
 
   @override
   String get splitBill => 'Faturayı Böl';
@@ -1991,7 +1991,7 @@ class AppLocalizationsTr extends AppLocalizations {
   String get useCurrency => '%2 kullan';
 
   @override
-  String get useLumex => 'Lumex kullan';
+  String get useLumex => 'Use Lumex';
 
   @override
   String get useLumexRep => 'Use Lumex Rep';

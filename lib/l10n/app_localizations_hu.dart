@@ -680,7 +680,7 @@ class AppLocalizationsHu extends AppLocalizations {
   String get exchangeCurrency => 'Csere %2';
 
   @override
-  String get exchangeLumex => 'Csere Lumex';
+  String get exchangeLumex => 'Exchange Lumex';
 
   @override
   String get existingPasswordHint => 'Írd be a jelenlegi jelszót';
@@ -770,7 +770,7 @@ class AppLocalizationsHu extends AppLocalizations {
   String get getCurrency => 'Szerezze be a %2-t';
 
   @override
-  String get getLumex => 'Szerezd meg a Lumex-t';
+  String get getLumex => 'Get Lumex';
 
   @override
   String get giftAlert => 'Van egy ajándékod!';
@@ -1223,7 +1223,7 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get passwordNoLongerRequiredToOpenParagraph =>
-      'You will not need a password to open Lumex anymore.';
+      'You will not need a password to open Velocity anymore.';
 
   @override
   String get passwordNumber =>
@@ -1240,12 +1240,11 @@ class AppLocalizationsHu extends AppLocalizations {
   String get passwordTooShort => 'A jelszó túl rövid';
 
   @override
-  String get passwordWarning =>
-      'Ez a jelszó szükséges a Lumex megnyitásához.';
+  String get passwordWarning => 'Ez a jelszó szükséges a Lumex megnyitásához.';
 
   @override
   String get passwordWillBeRequiredToOpenParagraph =>
-      'This password will be required to open Lumex.';
+      'This password will be required to open Velocity.';
 
   @override
   String get pastDue => 'Határidőn túl';
@@ -1336,17 +1335,17 @@ class AppLocalizationsHu extends AppLocalizations {
   String get promotionalLink => 'Ingyenes Lumex';
 
   @override
-  String get proSubRequiredHeader => 'Lumex Pro előfizetés szükséges';
+  String get proSubRequiredHeader => 'Velocity Pro előfizetés szükséges';
 
   @override
   String get proSubRequiredParagraph =>
-      'Mindössze havi 1 Lumex-ért feloldhatja a Lumex Pro összes funkcióját.';
+      'Mindössze havi 1 Lumex-ért feloldhatja a Velocity Pro összes funkcióját.';
 
   @override
   String get purchaseCurrency => 'Vásároljon %2';
 
   @override
-  String get purchaseLumex => 'Vásárlás Lumex';
+  String get purchaseLumex => 'Purchase Lumex';
 
   @override
   String get qrInvalidAddress => 'QR code does not contain a valid destination';
@@ -1507,7 +1506,7 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get requireAPasswordToOpenHeader =>
-      'Require a password to open Lumex?';
+      'Require a password to open Velocity?';
 
   @override
   String get requireCaptcha =>
@@ -1776,7 +1775,7 @@ class AppLocalizationsHu extends AppLocalizations {
   String get spendCurrency => 'Költés %2';
 
   @override
-  String get spendLumex => 'Töltsön Lumex-t';
+  String get spendLumex => 'Spend Lumex';
 
   @override
   String get splitBill => 'Split Bill';
@@ -1899,7 +1898,7 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get transferComplete =>
-      '%1 %2 successfully transferred to your Lumex Wallet.\n';
+      '%1 %2 successfully transferred to your Velocity Wallet.\n';
 
   @override
   String get transferConfirmInfo =>
@@ -1999,7 +1998,7 @@ class AppLocalizationsHu extends AppLocalizations {
   String get useCurrency => 'Használja a %2';
 
   @override
-  String get useLumex => 'Használj Lumex-t';
+  String get useLumex => 'Use Lumex';
 
   @override
   String get useLumexRep => 'Use Lumex Rep';

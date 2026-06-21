@@ -681,7 +681,7 @@ class AppLocalizationsRo extends AppLocalizations {
   String get exchangeCurrency => 'Schimb %2';
 
   @override
-  String get exchangeLumex => 'Schimbă Lumex';
+  String get exchangeLumex => 'Exchange Lumex';
 
   @override
   String get existingPasswordHint => 'Introduceti parola curenta';
@@ -771,7 +771,7 @@ class AppLocalizationsRo extends AppLocalizations {
   String get getCurrency => 'Obțineți %2';
 
   @override
-  String get getLumex => 'Ia Lumex';
+  String get getLumex => 'Get Lumex';
 
   @override
   String get giftAlert => 'Ai un cadou!';
@@ -1336,17 +1336,17 @@ class AppLocalizationsRo extends AppLocalizations {
   String get promotionalLink => 'Lumex gratuit';
 
   @override
-  String get proSubRequiredHeader => 'Este necesar un abonament Lumex Pro';
+  String get proSubRequiredHeader => 'Este necesar un abonament Velocity Pro';
 
   @override
   String get proSubRequiredParagraph =>
-      'Pentru doar 1 Lumex pe lună, puteți debloca toate funcțiile Lumex Pro.';
+      'Pentru doar 1 Lumex pe lună, puteți debloca toate funcțiile Velocity Pro.';
 
   @override
   String get purchaseCurrency => 'Cumpărați %2';
 
   @override
-  String get purchaseLumex => 'Achiziționați Lumex';
+  String get purchaseLumex => 'Purchase Lumex';
 
   @override
   String get qrInvalidAddress => 'Codul QR este invalid';
@@ -1775,7 +1775,7 @@ class AppLocalizationsRo extends AppLocalizations {
   String get spendCurrency => 'Cheltuiește %2';
 
   @override
-  String get spendLumex => 'Cheltuiește Lumex';
+  String get spendLumex => 'Spend Lumex';
 
   @override
   String get splitBill => 'Bill împărțit';
@@ -1999,7 +1999,7 @@ class AppLocalizationsRo extends AppLocalizations {
   String get useCurrency => 'Folosiți %2';
 
   @override
-  String get useLumex => 'Folosește Lumex';
+  String get useLumex => 'Use Lumex';
 
   @override
   String get useLumexRep => 'Use Lumex Rep';

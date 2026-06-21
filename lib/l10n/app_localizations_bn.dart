@@ -680,7 +680,7 @@ class AppLocalizationsBn extends AppLocalizations {
   String get exchangeCurrency => 'বিনিময় %2';
 
   @override
-  String get exchangeLumex => 'ন্যানো বিনিময় করুন';
+  String get exchangeLumex => 'Exchange Lumex';
 
   @override
   String get existingPasswordHint => 'বর্তমান পাসওয়ার্ড লিখুন';
@@ -769,7 +769,7 @@ class AppLocalizationsBn extends AppLocalizations {
   String get getCurrency => '%2 পান';
 
   @override
-  String get getLumex => 'Lumex পান';
+  String get getLumex => 'Get Lumex';
 
   @override
   String get giftAlert => 'তোমার কাছে একটা উপহার আছে!';
@@ -1335,13 +1335,13 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get proSubRequiredParagraph =>
-      'প্রতি মাসে মাত্র 1 Lumex এর জন্য, আপনি Lumex Pro এর সমস্ত বৈশিষ্ট্য আনলক করতে পারেন।';
+      'প্রতি মাসে মাত্র 1 Lumex এর জন্য, আপনি Velocity Pro এর সমস্ত বৈশিষ্ট্য আনলক করতে পারেন।';
 
   @override
   String get purchaseCurrency => 'ক্রয় %2';
 
   @override
-  String get purchaseLumex => 'ন্যানো ক্রয়';
+  String get purchaseLumex => 'Purchase Lumex';
 
   @override
   String get qrInvalidAddress => 'QR কোডে কোন বৈধ গন্তব্য নেই';
@@ -1708,7 +1708,7 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get shareLumexText =>
-      'Check out Lumex! A premier Lumex mobile wallet!';
+      'Check out Velocity! A premier Lumex mobile wallet!';
 
   @override
   String get shareText => 'টেক্সট শেয়ার করুন';
@@ -1768,7 +1768,7 @@ class AppLocalizationsBn extends AppLocalizations {
   String get spendCurrency => '%2 খরচ করুন';
 
   @override
-  String get spendLumex => 'Lumex খরচ করুন';
+  String get spendLumex => 'Spend Lumex';
 
   @override
   String get splitBill => 'বিভক্ত বিল';
@@ -1990,7 +1990,7 @@ class AppLocalizationsBn extends AppLocalizations {
   String get useCurrency => '%2 ব্যবহার করুন';
 
   @override
-  String get useLumex => 'Lumex ব্যবহার করুন';
+  String get useLumex => 'Use Lumex';
 
   @override
   String get useLumexRep => 'Use Lumex Rep';

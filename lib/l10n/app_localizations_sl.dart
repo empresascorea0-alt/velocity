@@ -679,7 +679,7 @@ class AppLocalizationsSl extends AppLocalizations {
   String get exchangeCurrency => 'Menjava %2';
 
   @override
-  String get exchangeLumex => 'Menjava Lumex';
+  String get exchangeLumex => 'Exchange Lumex';
 
   @override
   String get existingPasswordHint => 'Vnesite trenutno geslo';
@@ -768,7 +768,7 @@ class AppLocalizationsSl extends AppLocalizations {
   String get getCurrency => 'Pridobite %2';
 
   @override
-  String get getLumex => 'Pridobite Lumex';
+  String get getLumex => 'Get Lumex';
 
   @override
   String get giftAlert => 'Imate darilo!';
@@ -1220,7 +1220,7 @@ class AppLocalizationsSl extends AppLocalizations {
 
   @override
   String get passwordNoLongerRequiredToOpenParagraph =>
-      'You will not need a password to open Lumex anymore.';
+      'You will not need a password to open Velocity anymore.';
 
   @override
   String get passwordNumber => 'Geslo mora vsebovati vsaj 1 številko';
@@ -1240,7 +1240,7 @@ class AppLocalizationsSl extends AppLocalizations {
 
   @override
   String get passwordWillBeRequiredToOpenParagraph =>
-      'This password will be required to open Lumex.';
+      'This password will be required to open Velocity.';
 
   @override
   String get pastDue => 'Preteklost';
@@ -1330,7 +1330,7 @@ class AppLocalizationsSl extends AppLocalizations {
   String get promotionalLink => 'Brezplačni Lumex';
 
   @override
-  String get proSubRequiredHeader => 'Zahtevana je naročnina na Lumex Pro';
+  String get proSubRequiredHeader => 'Zahtevana je naročnina na Velocity Pro';
 
   @override
   String get proSubRequiredParagraph =>
@@ -1340,7 +1340,7 @@ class AppLocalizationsSl extends AppLocalizations {
   String get purchaseCurrency => 'Nakup %2';
 
   @override
-  String get purchaseLumex => 'Nakup Lumex';
+  String get purchaseLumex => 'Purchase Lumex';
 
   @override
   String get qrInvalidAddress => 'QR code does not contain a valid destination';
@@ -1500,7 +1500,7 @@ class AppLocalizationsSl extends AppLocalizations {
 
   @override
   String get requireAPasswordToOpenHeader =>
-      'Require a password to open Lumex?';
+      'Require a password to open Velocity?';
 
   @override
   String get requireCaptcha => 'Za prevzem darilne kartice zahtevajte CAPTCHA';
@@ -1706,8 +1706,7 @@ class AppLocalizationsSl extends AppLocalizations {
   String get shareLumex => 'Deli Lumex';
 
   @override
-  String get shareLumexText =>
-      'Preveri Lumex! Uradna mobilna Lumex denarnica!';
+  String get shareLumexText => 'Preveri Lumex! Uradna mobilna Lumex denarnica!';
 
   @override
   String get shareText => 'Delite besedilo';
@@ -1767,7 +1766,7 @@ class AppLocalizationsSl extends AppLocalizations {
   String get spendCurrency => 'Porabite %2';
 
   @override
-  String get spendLumex => 'Porabite Lumex';
+  String get spendLumex => 'Spend Lumex';
 
   @override
   String get splitBill => 'Razdeljeni račun';
@@ -1985,7 +1984,7 @@ class AppLocalizationsSl extends AppLocalizations {
   String get useCurrency => 'Uporabi %2';
 
   @override
-  String get useLumex => 'Uporabite Lumex';
+  String get useLumex => 'Use Lumex';
 
   @override
   String get useLumexRep => 'Use Lumex Rep';

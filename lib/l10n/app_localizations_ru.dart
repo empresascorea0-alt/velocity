@@ -681,7 +681,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get exchangeCurrency => 'Обмен %2';
 
   @override
-  String get exchangeLumex => 'Обмен НАНО';
+  String get exchangeLumex => 'Exchange Lumex';
 
   @override
   String get existingPasswordHint => 'Введите текущий пароль';
@@ -771,7 +771,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get getCurrency => 'Получить %2';
 
   @override
-  String get getLumex => 'Получить НАНО';
+  String get getLumex => 'Get Lumex';
 
   @override
   String get giftAlert => 'У тебя есть подарок!';
@@ -1241,8 +1241,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get passwordTooShort => 'Пароль слишком короткий';
 
   @override
-  String get passwordWarning =>
-      'Этот пароль потребуется для открытия Lumex.';
+  String get passwordWarning => 'Этот пароль потребуется для открытия Lumex.';
 
   @override
   String get passwordWillBeRequiredToOpenParagraph =>
@@ -1336,17 +1335,17 @@ class AppLocalizationsRu extends AppLocalizations {
   String get promotionalLink => 'Бесплатно НАНО';
 
   @override
-  String get proSubRequiredHeader => 'Требуется подписка Lumex Pro';
+  String get proSubRequiredHeader => 'Требуется подписка Velocity Pro';
 
   @override
   String get proSubRequiredParagraph =>
-      'Всего за 1 Lumex в месяц вы можете разблокировать все функции Lumex Pro.';
+      'Всего за 1 Lumex в месяц вы можете разблокировать все функции Velocity Pro.';
 
   @override
   String get purchaseCurrency => 'Купить %2';
 
   @override
-  String get purchaseLumex => 'Приобрести нано';
+  String get purchaseLumex => 'Purchase Lumex';
 
   @override
   String get qrInvalidAddress => 'QR-не содержит действительный адрес';
@@ -1714,8 +1713,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get shareLumex => 'Поделиться Lumex';
 
   @override
-  String get shareLumexText =>
-      'Оцените Lumex! Лучший Android кошелёк Lumex!';
+  String get shareLumexText => 'Оцените Lumex! Лучший Android кошелёк Lumex!';
 
   @override
   String get shareText => 'Поделиться текстом';
@@ -1775,7 +1773,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get spendCurrency => 'Потратить %2';
 
   @override
-  String get spendLumex => 'Потратить НАНО';
+  String get spendLumex => 'Spend Lumex';
 
   @override
   String get splitBill => 'Разделить счет';
@@ -1897,8 +1895,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get transferClose => 'Нажмите в любом месте, чтобы закрыть окно.';
 
   @override
-  String get transferComplete =>
-      '%1 %2 успешно переведены в Lumex кошелёк.\n';
+  String get transferComplete => '%1 %2 успешно переведены в Lumex кошелёк.\n';
 
   @override
   String get transferConfirmInfo => 'Обнаружен кошелёк с балансом %1 %2.\n';
@@ -1995,7 +1992,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get useCurrency => 'Использовать %2';
 
   @override
-  String get useLumex => 'Используйте НАНО';
+  String get useLumex => 'Use Lumex';
 
   @override
   String get useLumexRep => 'Use Lumex Rep';

@@ -678,7 +678,7 @@ class AppLocalizationsLv extends AppLocalizations {
   String get exchangeCurrency => 'Apmaiņa %2';
 
   @override
-  String get exchangeLumex => 'Apmainīties ar Lumex';
+  String get exchangeLumex => 'Exchange Lumex';
 
   @override
   String get existingPasswordHint => 'Ievadiet pašreizējo paroli';
@@ -767,7 +767,7 @@ class AppLocalizationsLv extends AppLocalizations {
   String get getCurrency => 'Iegūstiet %2';
 
   @override
-  String get getLumex => 'Iegūstiet Lumex';
+  String get getLumex => 'Get Lumex';
 
   @override
   String get giftAlert => 'You have a gift!';
@@ -1124,8 +1124,7 @@ class AppLocalizationsLv extends AppLocalizations {
   String get noThanks => 'No Thanks';
 
   @override
-  String get notificationBody =>
-      'Atveriet Lumex, lai apskatītu šo transakciju';
+  String get notificationBody => 'Atveriet Lumex, lai apskatītu šo transakciju';
 
   @override
   String get notificationHeaderSupplement => 'Pieskaries, lai atvērtu';
@@ -1219,7 +1218,7 @@ class AppLocalizationsLv extends AppLocalizations {
 
   @override
   String get passwordNoLongerRequiredToOpenParagraph =>
-      'You will not need a password to open Lumex anymore.';
+      'You will not need a password to open Velocity anymore.';
 
   @override
   String get passwordNumber => 'Parolē ir jābūt vismaz 1 ciparam';
@@ -1240,7 +1239,7 @@ class AppLocalizationsLv extends AppLocalizations {
 
   @override
   String get passwordWillBeRequiredToOpenParagraph =>
-      'This password will be required to open Lumex.';
+      'This password will be required to open Velocity.';
 
   @override
   String get pastDue => 'Nokavēts termiņš';
@@ -1330,11 +1329,11 @@ class AppLocalizationsLv extends AppLocalizations {
   String get promotionalLink => 'Bezmaksas Lumex';
 
   @override
-  String get proSubRequiredHeader => 'Nepieciešams Lumex Pro abonements';
+  String get proSubRequiredHeader => 'Nepieciešams Velocity Pro abonements';
 
   @override
   String get proSubRequiredParagraph =>
-      'Tikai par 1 Lumex mēnesī varat atbloķēt visas Lumex Pro funkcijas.';
+      'Tikai par 1 Lumex mēnesī varat atbloķēt visas Velocity Pro funkcijas.';
 
   @override
   String get purchaseCurrency => 'Pirkums %2';
@@ -1501,7 +1500,7 @@ class AppLocalizationsLv extends AppLocalizations {
 
   @override
   String get requireAPasswordToOpenHeader =>
-      'Require a password to open Lumex?';
+      'Require a password to open Velocity?';
 
   @override
   String get requireCaptcha =>
@@ -1708,8 +1707,7 @@ class AppLocalizationsLv extends AppLocalizations {
   String get shareLumex => 'Dalīties ar Lumex';
 
   @override
-  String get shareLumexText =>
-      'Uzmet aci Lumex! Izcils Lumex viedais maks!';
+  String get shareLumexText => 'Uzmet aci Lumex! Izcils Lumex viedais maks!';
 
   @override
   String get shareText => 'Kopīgot tekstu';
@@ -1769,7 +1767,7 @@ class AppLocalizationsLv extends AppLocalizations {
   String get spendCurrency => 'Iztērē %2';
 
   @override
-  String get spendLumex => 'Tērē Lumex';
+  String get spendLumex => 'Spend Lumex';
 
   @override
   String get splitBill => 'Sadalīts Bils';
@@ -1989,7 +1987,7 @@ class AppLocalizationsLv extends AppLocalizations {
   String get useCurrency => 'Izmantojiet %2';
 
   @override
-  String get useLumex => 'Izmantojiet Lumex';
+  String get useLumex => 'Use Lumex';
 
   @override
   String get useLumexRep => 'Use Lumex Rep';

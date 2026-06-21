@@ -680,7 +680,7 @@ class AppLocalizationsBg extends AppLocalizations {
   String get exchangeCurrency => 'Разменете %2';
 
   @override
-  String get exchangeLumex => 'Разменете Lumex';
+  String get exchangeLumex => 'Exchange Lumex';
 
   @override
   String get existingPasswordHint => 'Въведете текущата парола';
@@ -769,7 +769,7 @@ class AppLocalizationsBg extends AppLocalizations {
   String get getCurrency => 'Вземете %2';
 
   @override
-  String get getLumex => 'Вземете Lumex';
+  String get getLumex => 'Get Lumex';
 
   @override
   String get giftAlert => 'Имаш дарба!';
@@ -1332,17 +1332,17 @@ class AppLocalizationsBg extends AppLocalizations {
   String get promotionalLink => 'Безплатен Lumex';
 
   @override
-  String get proSubRequiredHeader => 'Изисква се абонамент за Lumex Pro';
+  String get proSubRequiredHeader => 'Изисква се абонамент за Velocity Pro';
 
   @override
   String get proSubRequiredParagraph =>
-      'Само за 1 Lumex на месец можете да отключите всички функции на Lumex Pro.';
+      'Само за 1 Lumex на месец можете да отключите всички функции на Velocity Pro.';
 
   @override
   String get purchaseCurrency => 'Купете %2';
 
   @override
-  String get purchaseLumex => 'Покупка Нано';
+  String get purchaseLumex => 'Purchase Lumex';
 
   @override
   String get qrInvalidAddress => 'QR кода не съдържа валидна дестинация ';
@@ -1709,8 +1709,7 @@ class AppLocalizationsBg extends AppLocalizations {
   String get shareLumex => 'Сподели Lumex';
 
   @override
-  String get shareLumexText =>
-      'Виж Lumex! Водещият Lumex мобилен портфейл!';
+  String get shareLumexText => 'Виж Lumex! Водещият Lumex мобилен портфейл!';
 
   @override
   String get shareText => 'Споделяне на текст';
@@ -1770,7 +1769,7 @@ class AppLocalizationsBg extends AppLocalizations {
   String get spendCurrency => 'Похарчете %2';
 
   @override
-  String get spendLumex => 'Прекарайте Lumex';
+  String get spendLumex => 'Spend Lumex';
 
   @override
   String get splitBill => 'Разделен Бил';
@@ -1991,7 +1990,7 @@ class AppLocalizationsBg extends AppLocalizations {
   String get useCurrency => 'Използвайте %2';
 
   @override
-  String get useLumex => 'Използвайте Lumex';
+  String get useLumex => 'Use Lumex';
 
   @override
   String get useLumexRep => 'Use Lumex Rep';

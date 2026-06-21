@@ -674,7 +674,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get exchangeCurrency => 'تبادل٪ 2';
 
   @override
-  String get exchangeLumex => 'صرف نانو';
+  String get exchangeLumex => 'Exchange Lumex';
 
   @override
   String get existingPasswordHint => 'إدخل كلمة السر الحالية';
@@ -763,7 +763,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get getCurrency => 'احصل على٪ 2';
 
   @override
-  String get getLumex => 'احصل على Lumex';
+  String get getLumex => 'Get Lumex';
 
   @override
   String get giftAlert => 'لديك هدية!';
@@ -1325,17 +1325,17 @@ class AppLocalizationsAr extends AppLocalizations {
   String get promotionalLink => 'نانو مجاني';
 
   @override
-  String get proSubRequiredHeader => 'الاشتراك في Lumex Pro مطلوب';
+  String get proSubRequiredHeader => 'الاشتراك في Velocity Pro مطلوب';
 
   @override
   String get proSubRequiredParagraph =>
-      'مقابل 1 Lumex فقط شهريًا ، يمكنك فتح جميع ميزات Lumex Pro.';
+      'مقابل 1 Lumex فقط شهريًا ، يمكنك فتح جميع ميزات Velocity Pro.';
 
   @override
   String get purchaseCurrency => 'شراء٪ 2';
 
   @override
-  String get purchaseLumex => 'شراء نانو';
+  String get purchaseLumex => 'Purchase Lumex';
 
   @override
   String get qrInvalidAddress =>
@@ -1759,7 +1759,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get spendCurrency => 'أنفق٪ 2';
 
   @override
-  String get spendLumex => 'أنفق نانو';
+  String get spendLumex => 'Spend Lumex';
 
   @override
   String get splitBill => 'سبليت بيل';
@@ -1977,7 +1977,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get useCurrency => 'استخدم٪ 2';
 
   @override
-  String get useLumex => 'استخدم Lumex';
+  String get useLumex => 'Use Lumex';
 
   @override
   String get useLumexRep => 'Use Lumex Rep';

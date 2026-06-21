@@ -680,7 +680,7 @@ class AppLocalizationsHi extends AppLocalizations {
   String get exchangeCurrency => 'एक्सचेंज%2';
 
   @override
-  String get exchangeLumex => 'एक्सचेंज नैनो';
+  String get exchangeLumex => 'Exchange Lumex';
 
   @override
   String get existingPasswordHint => 'वर्तमान पासवर्ड डालें';
@@ -770,7 +770,7 @@ class AppLocalizationsHi extends AppLocalizations {
   String get getCurrency => '%2 प्राप्त करें';
 
   @override
-  String get getLumex => 'नैनो प्राप्त करें';
+  String get getLumex => 'Get Lumex';
 
   @override
   String get giftAlert => 'आपके पास एक उपहार है!';
@@ -1337,13 +1337,13 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String get proSubRequiredParagraph =>
-      'केवल 1 नैनो प्रति माह के लिए, आप Lumex Pro की सभी विशेषताओं को अनलॉक कर सकते हैं।';
+      'केवल 1 नैनो प्रति माह के लिए, आप Velocity Pro की सभी विशेषताओं को अनलॉक कर सकते हैं।';
 
   @override
   String get purchaseCurrency => 'खरीद%2';
 
   @override
-  String get purchaseLumex => 'नैनो खरीदें';
+  String get purchaseLumex => 'Purchase Lumex';
 
   @override
   String get qrInvalidAddress => 'क्यूआर कोड में मान्य गंतव्य नहीं है';
@@ -1771,7 +1771,7 @@ class AppLocalizationsHi extends AppLocalizations {
   String get spendCurrency => 'खर्च %2';
 
   @override
-  String get spendLumex => 'नैनो खर्च करें';
+  String get spendLumex => 'Spend Lumex';
 
   @override
   String get splitBill => 'स्प्लिट बिल';
@@ -1992,7 +1992,7 @@ class AppLocalizationsHi extends AppLocalizations {
   String get useCurrency => '%2 का प्रयोग करें';
 
   @override
-  String get useLumex => 'नैनो का प्रयोग करें';
+  String get useLumex => 'Use Lumex';
 
   @override
   String get useLumexRep => 'Use Lumex Rep';

@@ -675,7 +675,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get exchangeCurrency => 'Exchange %2';
 
   @override
-  String get exchangeLumex => 'החלף Lumex';
+  String get exchangeLumex => 'Exchange Lumex';
 
   @override
   String get existingPasswordHint => 'הכנס סיסמא נוכחית';
@@ -763,7 +763,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get getCurrency => 'קבל %2';
 
   @override
-  String get getLumex => 'קבל Lumex';
+  String get getLumex => 'Get Lumex';
 
   @override
   String get giftAlert => 'יש לך כישרון!';
@@ -1211,7 +1211,7 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get passwordNoLongerRequiredToOpenParagraph =>
-      'You will not need a password to open Lumex anymore.';
+      'You will not need a password to open Velocity anymore.';
 
   @override
   String get passwordNumber => 'הסיסמה חייבת להכיל לפחות מספר אחד';
@@ -1231,7 +1231,7 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get passwordWillBeRequiredToOpenParagraph =>
-      'This password will be required to open Lumex.';
+      'This password will be required to open Velocity.';
 
   @override
   String get pastDue => 'עבר מועד';
@@ -1321,17 +1321,17 @@ class AppLocalizationsHe extends AppLocalizations {
   String get promotionalLink => 'חינם Lumex';
 
   @override
-  String get proSubRequiredHeader => 'נדרש מנוי ל-Lumex Pro';
+  String get proSubRequiredHeader => 'נדרש מנוי ל-Velocity Pro';
 
   @override
   String get proSubRequiredParagraph =>
-      'תמורת Lumex אחד בלבד לחודש, אתה יכול לפתוח את כל התכונות של Lumex Pro.';
+      'תמורת Lumex אחד בלבד לחודש, אתה יכול לפתוח את כל התכונות של Velocity Pro.';
 
   @override
   String get purchaseCurrency => 'קנה %2';
 
   @override
-  String get purchaseLumex => 'רכישת ננו';
+  String get purchaseLumex => 'Purchase Lumex';
 
   @override
   String get qrInvalidAddress => 'QR code does not contain a valid destination';
@@ -1490,7 +1490,7 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get requireAPasswordToOpenHeader =>
-      'Require a password to open Lumex?';
+      'Require a password to open Velocity?';
 
   @override
   String get requireCaptcha => 'דרוש CAPTCHA כדי לתבוע כרטיס מתנה';
@@ -1696,7 +1696,7 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get shareLumexText =>
-      'Check out Lumex! A premier Lumex mobile wallet!';
+      'Check out Velocity! A premier Lumex mobile wallet!';
 
   @override
   String get shareText => 'שתף טקסט';
@@ -1756,7 +1756,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get spendCurrency => 'הוצא%2';
 
   @override
-  String get spendLumex => 'להוציא ננו';
+  String get spendLumex => 'Spend Lumex';
 
   @override
   String get splitBill => 'ביל מפוצל';
@@ -1972,7 +1972,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get useCurrency => 'השתמש ב%2';
 
   @override
-  String get useLumex => 'השתמש ב-Lumex';
+  String get useLumex => 'Use Lumex';
 
   @override
   String get useLumexRep => 'Use Lumex Rep';

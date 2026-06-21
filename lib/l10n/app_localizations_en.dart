@@ -107,7 +107,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get anonymousAdvancedInfoBody =>
-      'Change the advanced nanonymous settings. This allows you to change the number of hops and the delays between them, as well as the percentage of the total amount of each transaction.';
+      'Change the advanced anonymous settings. This allows you to change the number of hops and the delays between them, as well as the percentage of the total amount of each transaction.';
 
   @override
   String get anonymousFeeError =>
@@ -115,7 +115,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get anonymousInfoBody =>
-      'This is NOT true privacy, but it will make it much harder for people to track your transactions using the nanonymous API. This is a centralized service, and we\'re not responsible for any issues that may arise from it\'s use.';
+      'This is NOT true privacy, but it will make it much harder for people to track your transactions using the anonymous API. This is a centralized service, and we\'re not responsible for any issues that may arise from it\'s use.';
 
   @override
   String get appWallet => '%1 Wallet';
@@ -1069,7 +1069,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get natricon => 'Natricon';
 
   @override
-  String get lumexWallet => 'Lumex Wallet';
+  String get lumexWallet => 'Velocity Wallet';
 
   @override
   String get nearby => 'Nearby';
@@ -1705,7 +1705,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get shareLumexText =>
-      'Check out Lumex! A premier Lumex mobile wallet!';
+      'Check out Velocity! A premier Lumex mobile wallet!';
 
   @override
   String get shareText => 'Share Text';

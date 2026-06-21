@@ -680,7 +680,7 @@ class AppLocalizationsCa extends AppLocalizations {
   String get exchangeCurrency => 'Intercanvi %2';
 
   @override
-  String get exchangeLumex => 'Intercanvi Lumex';
+  String get exchangeLumex => 'Exchange Lumex';
 
   @override
   String get existingPasswordHint => 'Introduïu la contrasenya actual';
@@ -769,7 +769,7 @@ class AppLocalizationsCa extends AppLocalizations {
   String get getCurrency => 'Obteniu %2';
 
   @override
-  String get getLumex => 'Aconsegueix Lumex';
+  String get getLumex => 'Get Lumex';
 
   @override
   String get giftAlert => 'You have a gift!';
@@ -1128,8 +1128,7 @@ class AppLocalizationsCa extends AppLocalizations {
   String get noThanks => 'No Thanks';
 
   @override
-  String get notificationBody =>
-      'Otevřete Lumex pro zobrazení této transakce';
+  String get notificationBody => 'Otevřete Lumex pro zobrazení této transakce';
 
   @override
   String get notificationHeaderSupplement => 'Klepnutím otevřete';
@@ -1334,11 +1333,11 @@ class AppLocalizationsCa extends AppLocalizations {
   String get promotionalLink => 'Lumex gratuït';
 
   @override
-  String get proSubRequiredHeader => 'Cal subscriure a Lumex Pro';
+  String get proSubRequiredHeader => 'Cal subscriure a Velocity Pro';
 
   @override
   String get proSubRequiredParagraph =>
-      'Per només 1 Lumex al mes, podeu desbloquejar totes les funcions de Lumex Pro.';
+      'Per només 1 Lumex al mes, podeu desbloquejar totes les funcions de Velocity Pro.';
 
   @override
   String get purchaseCurrency => 'Compra %2';
@@ -1773,7 +1772,7 @@ class AppLocalizationsCa extends AppLocalizations {
   String get spendCurrency => 'Gasta %2';
 
   @override
-  String get spendLumex => 'Gasta Lumex';
+  String get spendLumex => 'Spend Lumex';
 
   @override
   String get splitBill => 'Bill dividit';
@@ -1996,7 +1995,7 @@ class AppLocalizationsCa extends AppLocalizations {
   String get useCurrency => 'Utilitzeu %2';
 
   @override
-  String get useLumex => 'Utilitzeu Lumex';
+  String get useLumex => 'Use Lumex';
 
   @override
   String get useLumexRep => 'Use Lumex Rep';

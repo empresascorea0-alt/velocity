@@ -667,7 +667,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get exchangeCurrency => '교환 %2';
 
   @override
-  String get exchangeLumex => '거래소 나노';
+  String get exchangeLumex => 'Exchange Lumex';
 
   @override
   String get existingPasswordHint => '현재 비밀번호를 입력하세요';
@@ -755,7 +755,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get getCurrency => '%2 가져오기';
 
   @override
-  String get getLumex => '나노를 얻으십시오';
+  String get getLumex => 'Get Lumex';
 
   @override
   String get giftAlert => '선물이 있어요!';
@@ -1197,7 +1197,7 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get passwordNoLongerRequiredToOpenParagraph =>
-      'You will not need a password to open Lumex anymore.';
+      'You will not need a password to open Velocity anymore.';
 
   @override
   String get passwordNumber => '비밀번호는 1개 이상의 숫자를 포함해야 합니다.';
@@ -1216,7 +1216,7 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get passwordWillBeRequiredToOpenParagraph =>
-      'This password will be required to open Lumex.';
+      'This password will be required to open Velocity.';
 
   @override
   String get pastDue => '연체';
@@ -1305,17 +1305,17 @@ class AppLocalizationsKo extends AppLocalizations {
   String get promotionalLink => '무료 나노';
 
   @override
-  String get proSubRequiredHeader => 'Lumex Pro 구독 필요';
+  String get proSubRequiredHeader => 'Velocity Pro 구독 필요';
 
   @override
   String get proSubRequiredParagraph =>
-      '매월 단 1NANO로 Lumex Pro의 모든 기능을 잠금 해제할 수 있습니다.';
+      '매월 단 1NANO로 Velocity Pro의 모든 기능을 잠금 해제할 수 있습니다.';
 
   @override
   String get purchaseCurrency => '구매 %2';
 
   @override
-  String get purchaseLumex => '나노 구매';
+  String get purchaseLumex => 'Purchase Lumex';
 
   @override
   String get qrInvalidAddress => 'QR code does not contain a valid destination';
@@ -1474,7 +1474,7 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get requireAPasswordToOpenHeader =>
-      'Require a password to open Lumex?';
+      'Require a password to open Velocity?';
 
   @override
   String get requireCaptcha => '기프트 카드를 청구하려면 보안문자가 필요합니다.';
@@ -1592,8 +1592,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get sending => '전송중';
 
   @override
-  String get sendMemoError =>
-      '트랜잭션과 함께 메모를 보내지 못했습니다. Lumex 사용자가 아닐 수 있습니다.';
+  String get sendMemoError => '트랜잭션과 함께 메모를 보내지 못했습니다. Lumex 사용자가 아닐 수 있습니다.';
 
   @override
   String get sendMessageConfirm => '메시지 보내기';
@@ -1739,7 +1738,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get spendCurrency => '지출 %2';
 
   @override
-  String get spendLumex => '나노를 쓰다';
+  String get spendLumex => 'Spend Lumex';
 
   @override
   String get splitBill => '분할 청구서';
@@ -1861,7 +1860,7 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get transferComplete =>
-      '%1 %2 successfully transferred to your Lumex Wallet.\n';
+      '%1 %2 successfully transferred to your Velocity Wallet.\n';
 
   @override
   String get transferConfirmInfo =>
@@ -1959,7 +1958,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get useCurrency => '%2 사용';
 
   @override
-  String get useLumex => '나노를 사용';
+  String get useLumex => 'Use Lumex';
 
   @override
   String get useLumexRep => 'Use Lumex Rep';

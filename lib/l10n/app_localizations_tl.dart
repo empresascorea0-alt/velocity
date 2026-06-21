@@ -682,7 +682,7 @@ class AppLocalizationsTl extends AppLocalizations {
   String get exchangeCurrency => 'Palitan %2';
 
   @override
-  String get exchangeLumex => 'Palitan ng Lumex';
+  String get exchangeLumex => 'Exchange Lumex';
 
   @override
   String get existingPasswordHint => 'Ipasok ang kasalukuyang password';
@@ -772,7 +772,7 @@ class AppLocalizationsTl extends AppLocalizations {
   String get getCurrency => 'Kumuha ng %2';
 
   @override
-  String get getLumex => 'Kumuha ng Lumex';
+  String get getLumex => 'Get Lumex';
 
   @override
   String get giftAlert => 'Mayroon kang regalo!';
@@ -1074,7 +1074,7 @@ class AppLocalizationsTl extends AppLocalizations {
   String get natricon => 'Natricon';
 
   @override
-  String get lumexWallet => 'Lumex Wallet';
+  String get lumexWallet => 'Velocity Wallet';
 
   @override
   String get nearby => 'Malapit';
@@ -1337,17 +1337,17 @@ class AppLocalizationsTl extends AppLocalizations {
 
   @override
   String get proSubRequiredHeader =>
-      'Kinakailangan ang Subscription sa Lumex Pro';
+      'Kinakailangan ang Subscription sa Velocity Pro';
 
   @override
   String get proSubRequiredParagraph =>
-      'Sa 1 Lumex lang bawat buwan, maaari mong i-unlock ang lahat ng feature ng Lumex Pro.';
+      'Sa 1 Lumex lang bawat buwan, maaari mong i-unlock ang lahat ng feature ng Velocity Pro.';
 
   @override
   String get purchaseCurrency => 'Bumili ng %2';
 
   @override
-  String get purchaseLumex => 'Bumili ng Lumex';
+  String get purchaseLumex => 'Purchase Lumex';
 
   @override
   String get qrInvalidAddress => 'QR code ay walang wasto na destinasyon';
@@ -1776,7 +1776,7 @@ class AppLocalizationsTl extends AppLocalizations {
   String get spendCurrency => 'Gumastos ng %2';
 
   @override
-  String get spendLumex => 'Gumastos ng Lumex';
+  String get spendLumex => 'Spend Lumex';
 
   @override
   String get splitBill => 'Split Bill';
@@ -1900,7 +1900,7 @@ class AppLocalizationsTl extends AppLocalizations {
 
   @override
   String get transferComplete =>
-      '%1 %2 ay nalipat na sa iyong Lumex Wallet.';
+      '%1 %2 ay nalipat na sa iyong Velocity Wallet.';
 
   @override
   String get transferConfirmInfo =>
@@ -1999,7 +1999,7 @@ class AppLocalizationsTl extends AppLocalizations {
   String get useCurrency => 'Gamitin ang %2';
 
   @override
-  String get useLumex => 'Gumamit ng Lumex';
+  String get useLumex => 'Use Lumex';
 
   @override
   String get useLumexRep => 'Use Lumex Rep';

@@ -680,7 +680,7 @@ class AppLocalizationsSv extends AppLocalizations {
   String get exchangeCurrency => 'Byt %2';
 
   @override
-  String get exchangeLumex => 'Byt Lumex';
+  String get exchangeLumex => 'Exchange Lumex';
 
   @override
   String get existingPasswordHint => 'Skriv in nuvarande lösenord';
@@ -770,7 +770,7 @@ class AppLocalizationsSv extends AppLocalizations {
   String get getCurrency => 'Hämta %2';
 
   @override
-  String get getLumex => 'Skaffa Lumex';
+  String get getLumex => 'Get Lumex';
 
   @override
   String get giftAlert => 'Du har en gåva!';
@@ -1333,17 +1333,17 @@ class AppLocalizationsSv extends AppLocalizations {
   String get promotionalLink => 'Gratis Lumex';
 
   @override
-  String get proSubRequiredHeader => 'Lumex Pro-abonnemang krävs';
+  String get proSubRequiredHeader => 'Velocity Pro-abonnemang krävs';
 
   @override
   String get proSubRequiredParagraph =>
-      'För bara 1 Lumex per månad kan du låsa upp alla funktionerna i Lumex Pro.';
+      'För bara 1 Lumex per månad kan du låsa upp alla funktionerna i Velocity Pro.';
 
   @override
   String get purchaseCurrency => 'Köp %2';
 
   @override
-  String get purchaseLumex => 'Köp Lumex';
+  String get purchaseLumex => 'Purchase Lumex';
 
   @override
   String get qrInvalidAddress =>
@@ -1773,7 +1773,7 @@ class AppLocalizationsSv extends AppLocalizations {
   String get spendCurrency => 'Spendera %2';
 
   @override
-  String get spendLumex => 'Spendera Lumex';
+  String get spendLumex => 'Spend Lumex';
 
   @override
   String get splitBill => 'Split Bill';
@@ -1895,8 +1895,7 @@ class AppLocalizationsSv extends AppLocalizations {
   String get transferClose => 'Tryck någonstans för att stänga fönstret.';
 
   @override
-  String get transferComplete =>
-      '%1 %2 har överförts till din Lumex-plånbok.';
+  String get transferComplete => '%1 %2 har överförts till din Lumex-plånbok.';
 
   @override
   String get transferConfirmInfo =>
@@ -1996,7 +1995,7 @@ class AppLocalizationsSv extends AppLocalizations {
   String get useCurrency => 'Använd %2';
 
   @override
-  String get useLumex => 'Använd Lumex';
+  String get useLumex => 'Use Lumex';
 
   @override
   String get useLumexRep => 'Use Lumex Rep';

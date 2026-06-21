@@ -94,7 +94,7 @@ Future<void> main() async {
     disableTracking: true,
   );
 
-  runApp(const StateContainer(child: App()));
+  runApp(const AppRoot());
 
   // Magic.instance = Magic(dotenv.env["MAGIC_SDK_KEY"]!);
 }
@@ -594,11 +594,9 @@ class SplashState extends State<Splash> with WidgetsBindingObserver {
         .then((AvailableCurrency currency) {
       StateContainer.of(context).curCurrency = currency;
     });
-    return Scaffold(
-      backgroundColor: StateContainer.of(context).curTheme.background,
-      body: const Center(
-        child: StitchWordmark(),
-      ),
+    return const Scaffold(
+      backgroundColor: Color(0xFF0B0C10),
+      body: BigBangSplash(),
     );
   }
 }

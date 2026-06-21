@@ -656,7 +656,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get exchangeCurrency => '交换 %2';
 
   @override
-  String get exchangeLumex => '交换纳米';
+  String get exchangeLumex => 'Exchange Lumex';
 
   @override
   String get existingPasswordHint => '输入当前密码';
@@ -744,7 +744,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get getCurrency => '获取 %2';
 
   @override
-  String get getLumex => '获取纳米';
+  String get getLumex => 'Get Lumex';
 
   @override
   String get giftAlert => '你有天赋！';
@@ -1281,17 +1281,17 @@ class AppLocalizationsZh extends AppLocalizations {
   String get promotionalLink => '免费纳米';
 
   @override
-  String get proSubRequiredHeader => '需要订阅 Lumex Pro';
+  String get proSubRequiredHeader => '需要订阅 Velocity Pro';
 
   @override
   String get proSubRequiredParagraph =>
-      '每月只需 1 Lumex，您就可以解锁 Lumex Pro 的所有功能。';
+      '每月只需 1 Lumex，您就可以解锁 Velocity Pro 的所有功能。';
 
   @override
   String get purchaseCurrency => '购买 %2';
 
   @override
-  String get purchaseLumex => '购买 Lumex';
+  String get purchaseLumex => 'Purchase Lumex';
 
   @override
   String get qrInvalidAddress => '二维码不包含一个有效的地址';
@@ -1700,7 +1700,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get spendCurrency => '花费 %2';
 
   @override
-  String get spendLumex => '花费 Lumex';
+  String get spendLumex => 'Spend Lumex';
 
   @override
   String get splitBill => '拆分账单';
@@ -1838,8 +1838,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get transferHeader => '传送钱币';
 
   @override
-  String get transferIntro =>
-      '这个过程会将纸钱包的钱币转移到您的 Lumex 钱包。\n\n请按 \"%1\" 键开始。';
+  String get transferIntro => '这个过程会将纸钱包的钱币转移到您的 Lumex 钱包。\n\n请按 \"%1\" 键开始。';
 
   @override
   String get transferIntroShort => '此过程会将资金从纸质钱包转移到您的Lumex钱包。';
@@ -1913,7 +1912,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get useCurrency => '使用 %2';
 
   @override
-  String get useLumex => '使用纳米';
+  String get useLumex => 'Use Lumex';
 
   @override
   String get useLumexRep => 'Use Lumex Rep';
@@ -2687,9 +2686,6 @@ class AppLocalizationsZhHans extends AppLocalizationsZh {
   String get exchangeCurrency => '交换 %2';
 
   @override
-  String get exchangeLumex => '交换纳米';
-
-  @override
   String get existingPasswordHint => '输入当前密码';
 
   @override
@@ -2773,9 +2769,6 @@ class AppLocalizationsZhHans extends AppLocalizationsZh {
 
   @override
   String get getCurrency => '获取 %2';
-
-  @override
-  String get getLumex => '获取纳米';
 
   @override
   String get giftAlert => '你有天赋！';
@@ -3312,17 +3305,14 @@ class AppLocalizationsZhHans extends AppLocalizationsZh {
   String get promotionalLink => '免费纳米';
 
   @override
-  String get proSubRequiredHeader => '需要订阅 Lumex Pro';
+  String get proSubRequiredHeader => '需要订阅 Velocity Pro';
 
   @override
   String get proSubRequiredParagraph =>
-      '每月只需 1 Lumex，您就可以解锁 Lumex Pro 的所有功能。';
+      '每月只需 1 Lumex，您就可以解锁 Velocity Pro 的所有功能。';
 
   @override
   String get purchaseCurrency => '购买 %2';
-
-  @override
-  String get purchaseLumex => '购买 Lumex';
 
   @override
   String get qrInvalidAddress => '二维码不包含一个有效的地址';
@@ -3731,9 +3721,6 @@ class AppLocalizationsZhHans extends AppLocalizationsZh {
   String get spendCurrency => '花费 %2';
 
   @override
-  String get spendLumex => '花费 Lumex';
-
-  @override
   String get splitBill => '拆分账单';
 
   @override
@@ -3869,8 +3856,7 @@ class AppLocalizationsZhHans extends AppLocalizationsZh {
   String get transferHeader => '传送钱币';
 
   @override
-  String get transferIntro =>
-      '这个过程会将纸钱包的钱币转移到您的 Lumex 钱包。\n\n请按 \"%1\" 键开始。';
+  String get transferIntro => '这个过程会将纸钱包的钱币转移到您的 Lumex 钱包。\n\n请按 \"%1\" 键开始。';
 
   @override
   String get transferIntroShort => '此过程会将资金从纸质钱包转移到您的Lumex钱包。';
@@ -3942,9 +3928,6 @@ class AppLocalizationsZhHans extends AppLocalizationsZh {
 
   @override
   String get useCurrency => '使用 %2';
-
-  @override
-  String get useLumex => '使用纳米';
 
   @override
   String get useLumexRep => 'Use Lumex Rep';
@@ -4718,9 +4701,6 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   String get exchangeCurrency => '交換 %2';
 
   @override
-  String get exchangeLumex => '交換納米';
-
-  @override
   String get existingPasswordHint => '輸入當前密碼';
 
   @override
@@ -4804,9 +4784,6 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
 
   @override
   String get getCurrency => '獲取 %2';
-
-  @override
-  String get getLumex => '獲取納米';
 
   @override
   String get giftAlert => '你有禮物！';
@@ -5237,8 +5214,7 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   String get passwordIncorrect => '密碼錯誤';
 
   @override
-  String get passwordNoLongerRequiredToOpenParagraph =>
-      '您日後啟動 Lumex 時不用輸入密碼。';
+  String get passwordNoLongerRequiredToOpenParagraph => '您日後啟動 Lumex 時不用輸入密碼。';
 
   @override
   String get passwordNumber => '密碼必須至少包含 1 個數字';
@@ -5344,17 +5320,14 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   String get promotionalLink => '免費納米';
 
   @override
-  String get proSubRequiredHeader => '需要訂閱 Lumex Pro';
+  String get proSubRequiredHeader => '需要訂閱 Velocity Pro';
 
   @override
   String get proSubRequiredParagraph =>
-      '每月只需 1 Lumex，您就可以解鎖 Lumex Pro 的所有功能。';
+      '每月只需 1 Lumex，您就可以解鎖 Velocity Pro 的所有功能。';
 
   @override
   String get purchaseCurrency => '購買 %2';
-
-  @override
-  String get purchaseLumex => '購買納米';
 
   @override
   String get qrInvalidAddress => '二維條碼不含有效的地址';
@@ -5764,9 +5737,6 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   String get spendCurrency => '花費 %2';
 
   @override
-  String get spendLumex => '花費 Lumex';
-
-  @override
   String get splitBill => '拆分賬單';
 
   @override
@@ -5902,8 +5872,7 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   String get transferHeader => '自紙錢包移轉資產';
 
   @override
-  String get transferIntro =>
-      '這過程會將紙錢包的資產移轉至您的 Lumex 錢包。\n\n輕觸 \"%1\" 按鈕開始。';
+  String get transferIntro => '這過程會將紙錢包的資產移轉至您的 Lumex 錢包。\n\n輕觸 \"%1\" 按鈕開始。';
 
   @override
   String get transferIntroShort => '這個過程會將資金從紙錢包轉移到您的 Lumex 錢包。';
@@ -5975,9 +5944,6 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
 
   @override
   String get useCurrency => '使用 %2';
-
-  @override
-  String get useLumex => '使用納米';
 
   @override
   String get useLumexRep => 'Use Lumex Rep';

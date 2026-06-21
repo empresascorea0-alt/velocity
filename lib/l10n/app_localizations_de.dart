@@ -683,7 +683,7 @@ class AppLocalizationsDe extends AppLocalizations {
   String get exchangeCurrency => 'Austausch %2';
 
   @override
-  String get exchangeLumex => 'Lumex austauschen';
+  String get exchangeLumex => 'Exchange Lumex';
 
   @override
   String get existingPasswordHint => 'Gib dein aktuelles Passwort ein';
@@ -773,7 +773,7 @@ class AppLocalizationsDe extends AppLocalizations {
   String get getCurrency => 'Holen Sie sich %2';
 
   @override
-  String get getLumex => 'Holen Sie sich Lumex';
+  String get getLumex => 'Get Lumex';
 
   @override
   String get giftAlert => 'Du hast eine Geschenk!';
@@ -1131,8 +1131,7 @@ class AppLocalizationsDe extends AppLocalizations {
   String get noThanks => 'Nein danke';
 
   @override
-  String get notificationBody =>
-      'Öffne Lumex, um diese Transaktion zu sehen.';
+  String get notificationBody => 'Öffne Lumex, um diese Transaktion zu sehen.';
 
   @override
   String get notificationHeaderSupplement => 'Zum Öffnen tippen';
@@ -1338,17 +1337,17 @@ class AppLocalizationsDe extends AppLocalizations {
   String get promotionalLink => 'Kostenlos Lumex';
 
   @override
-  String get proSubRequiredHeader => 'Lumex Pro-Abonnement erforderlich';
+  String get proSubRequiredHeader => 'Velocity Pro-Abonnement erforderlich';
 
   @override
   String get proSubRequiredParagraph =>
-      'Für nur 1 Lumex pro Monat können Sie alle Funktionen von Lumex Pro freischalten.';
+      'Für nur 1 Lumex pro Monat können Sie alle Funktionen von Velocity Pro freischalten.';
 
   @override
   String get purchaseCurrency => 'Kaufen Sie %2';
 
   @override
-  String get purchaseLumex => 'Lumex kaufen';
+  String get purchaseLumex => 'Purchase Lumex';
 
   @override
   String get qrInvalidAddress => 'QR-Code enthält kein gültiges Ziel';
@@ -1780,7 +1779,7 @@ class AppLocalizationsDe extends AppLocalizations {
   String get spendCurrency => 'Verbringen Sie %2';
 
   @override
-  String get spendLumex => 'Lumex ausgeben';
+  String get spendLumex => 'Spend Lumex';
 
   @override
   String get splitBill => 'Geteilte Rechnung';
@@ -1905,7 +1904,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get transferComplete =>
-      '%1 Lumex wurden erfolgreich an dein Lumex Wallet gesendet.';
+      '%1 Lumex wurden erfolgreich an dein Velocity Wallet gesendet.';
 
   @override
   String get transferConfirmInfo =>
@@ -1928,7 +1927,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get transferIntro =>
-      'Dieser Vorgang wird das Guthaben vom Paper Wallet in dein Lumex Wallet transferieren.\n\nTippe zum Starten auf \"%1\" .';
+      'Dieser Vorgang wird das Guthaben vom Paper Wallet in dein Velocity Wallet transferieren.\n\nTippe zum Starten auf \"%1\" .';
 
   @override
   String get transferIntroShort =>
@@ -2004,7 +2003,7 @@ class AppLocalizationsDe extends AppLocalizations {
   String get useCurrency => 'Verwenden Sie %2';
 
   @override
-  String get useLumex => 'Lumex verwenden';
+  String get useLumex => 'Use Lumex';
 
   @override
   String get useLumexRep => 'Use Lumex Rep';

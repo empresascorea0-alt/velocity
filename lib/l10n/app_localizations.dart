@@ -347,7 +347,7 @@ abstract class AppLocalizations {
   /// anonymous_advanced_info_body
   ///
   /// In en, this message translates to:
-  /// **'Change the advanced nanonymous settings. This allows you to change the number of hops and the delays between them, as well as the percentage of the total amount of each transaction.'**
+  /// **'Change the advanced anonymous settings. This allows you to change the number of hops and the delays between them, as well as the percentage of the total amount of each transaction.'**
   String get anonymousAdvancedInfoBody;
 
   /// anonymous_fee_error
@@ -359,7 +359,7 @@ abstract class AppLocalizations {
   /// anonymous_info_body
   ///
   /// In en, this message translates to:
-  /// **'This is NOT true privacy, but it will make it much harder for people to track your transactions using the nanonymous API. This is a centralized service, and we\'re not responsible for any issues that may arise from it\'s use.'**
+  /// **'This is NOT true privacy, but it will make it much harder for people to track your transactions using the anonymous API. This is a centralized service, and we\'re not responsible for any issues that may arise from it\'s use.'**
   String get anonymousInfoBody;
 
   /// app_wallet
@@ -1422,7 +1422,7 @@ abstract class AppLocalizations {
   ///
   /// In en, this message translates to:
   /// **'Exchange Lumex'**
-  String get exchangeNano;
+  String get exchangeLumex;
 
   /// A text field hint that tells the user to enter their current password
   ///
@@ -1596,7 +1596,7 @@ abstract class AppLocalizations {
   ///
   /// In en, this message translates to:
   /// **'Get Lumex'**
-  String get getNano;
+  String get getLumex;
 
   /// import_gift_header
   ///
@@ -2153,7 +2153,7 @@ abstract class AppLocalizations {
   /// lumex_wallet
   ///
   /// In en, this message translates to:
-  /// **'Lumex Wallet'**
+  /// **'Velocity Wallet'**
   String get lumexWallet;
 
   /// nearby_devices
@@ -2432,7 +2432,7 @@ abstract class AppLocalizations {
   /// **'Incorrect password'**
   String get passwordIncorrect;
 
-  /// An info paragraph that tells the user a password will no longer be needed to open Lumex
+  /// An info paragraph that tells the user a password will no longer be needed to open Velocity
   ///
   /// In en, this message translates to:
   /// **'You will not need a password to open %1 anymore.'**
@@ -2468,7 +2468,7 @@ abstract class AppLocalizations {
   /// **'This password will be required to open %1.'**
   String get passwordWarning;
 
-  /// A paragraph that tells the users that the created password will be required to open Lumex.
+  /// A paragraph that tells the users that the created password will be required to open Velocity.
   ///
   /// In en, this message translates to:
   /// **'This password will be required to open %1.'**
@@ -2664,7 +2664,7 @@ abstract class AppLocalizations {
   ///
   /// In en, this message translates to:
   /// **'Purchase Lumex'**
-  String get purchaseNano;
+  String get purchaseLumex;
 
   /// qr_invalid_address
   ///
@@ -2954,7 +2954,7 @@ abstract class AppLocalizations {
   /// **'Request Sheet Info'**
   String get requestSheetInfoHeader;
 
-  /// A paragraph that asks the users if they would like a password to be required to open Lumex.
+  /// A paragraph that asks the users if they would like a password to be required to open Velocity.
   ///
   /// In en, this message translates to:
   /// **'Require a password to open %1?'**
@@ -3347,7 +3347,7 @@ abstract class AppLocalizations {
   /// share_extra
   ///
   /// In en, this message translates to:
-  /// **'Check out Lumex! A premier Lumex mobile wallet!'**
+  /// **'Check out Velocity! A premier Lumex mobile wallet!'**
   String get shareLumexText;
 
   /// settings_share_text
@@ -3468,7 +3468,7 @@ abstract class AppLocalizations {
   ///
   /// In en, this message translates to:
   /// **'Spend Lumex'**
-  String get spendNano;
+  String get spendLumex;
 
   /// show_split_bill
   ///
@@ -3882,7 +3882,7 @@ abstract class AppLocalizations {
   ///
   /// In en, this message translates to:
   /// **'Use Lumex'**
-  String get useNano;
+  String get useLumex;
 
   /// use lumex node as rep
   ///

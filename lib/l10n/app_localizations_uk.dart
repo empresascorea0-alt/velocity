@@ -681,7 +681,7 @@ class AppLocalizationsUk extends AppLocalizations {
   String get exchangeCurrency => 'Обмін %2';
 
   @override
-  String get exchangeLumex => 'Обмін Lumex';
+  String get exchangeLumex => 'Exchange Lumex';
 
   @override
   String get existingPasswordHint => 'Введіть поточний пароль';
@@ -771,7 +771,7 @@ class AppLocalizationsUk extends AppLocalizations {
   String get getCurrency => 'Отримати %2';
 
   @override
-  String get getLumex => 'Отримати Lumex';
+  String get getLumex => 'Get Lumex';
 
   @override
   String get giftAlert => 'У вас є подарунок!';
@@ -1240,8 +1240,7 @@ class AppLocalizationsUk extends AppLocalizations {
   String get passwordTooShort => 'Пароль занадто короткий';
 
   @override
-  String get passwordWarning =>
-      'Цей пароль знадобиться, щоб відкрити Lumex.';
+  String get passwordWarning => 'Цей пароль знадобиться, щоб відкрити Lumex.';
 
   @override
   String get passwordWillBeRequiredToOpenParagraph =>
@@ -1335,17 +1334,17 @@ class AppLocalizationsUk extends AppLocalizations {
   String get promotionalLink => 'Безкоштовний Lumex';
 
   @override
-  String get proSubRequiredHeader => 'Потрібна підписка на Lumex Pro';
+  String get proSubRequiredHeader => 'Потрібна підписка на Velocity Pro';
 
   @override
   String get proSubRequiredParagraph =>
-      'Лише за 1 Lumex на місяць ви можете розблокувати всі функції Lumex Pro.';
+      'Лише за 1 Lumex на місяць ви можете розблокувати всі функції Velocity Pro.';
 
   @override
   String get purchaseCurrency => 'Придбати %2';
 
   @override
-  String get purchaseLumex => 'Придбати Lumex';
+  String get purchaseLumex => 'Purchase Lumex';
 
   @override
   String get qrInvalidAddress => 'QR код не містить правильного адресата';
@@ -1773,7 +1772,7 @@ class AppLocalizationsUk extends AppLocalizations {
   String get spendCurrency => 'Витрати %2';
 
   @override
-  String get spendLumex => 'Витрати НАНО';
+  String get spendLumex => 'Spend Lumex';
 
   @override
   String get splitBill => 'Розділений законопроект';
@@ -1994,7 +1993,7 @@ class AppLocalizationsUk extends AppLocalizations {
   String get useCurrency => 'Використовуйте %2';
 
   @override
-  String get useLumex => 'Використовуйте Lumex';
+  String get useLumex => 'Use Lumex';
 
   @override
   String get useLumexRep => 'Use Lumex Rep';

@@ -678,7 +678,7 @@ class AppLocalizationsNo extends AppLocalizations {
   String get exchangeCurrency => 'Bytt %2';
 
   @override
-  String get exchangeLumex => 'Bytt Lumex';
+  String get exchangeLumex => 'Exchange Lumex';
 
   @override
   String get existingPasswordHint => 'Skriv inn nåværende passord';
@@ -767,7 +767,7 @@ class AppLocalizationsNo extends AppLocalizations {
   String get getCurrency => 'Få %2';
 
   @override
-  String get getLumex => 'Skaff deg Lumex';
+  String get getLumex => 'Get Lumex';
 
   @override
   String get giftAlert => 'Du har en gave!';
@@ -1329,17 +1329,17 @@ class AppLocalizationsNo extends AppLocalizations {
   String get promotionalLink => 'Gratis Lumex';
 
   @override
-  String get proSubRequiredHeader => 'Lumex Pro-abonnement kreves';
+  String get proSubRequiredHeader => 'Velocity Pro-abonnement kreves';
 
   @override
   String get proSubRequiredParagraph =>
-      'For bare 1 Lumex per måned kan du låse opp alle funksjonene til Lumex Pro.';
+      'For bare 1 Lumex per måned kan du låse opp alle funksjonene til Velocity Pro.';
 
   @override
   String get purchaseCurrency => 'Kjøp %2';
 
   @override
-  String get purchaseLumex => 'Kjøp Lumex';
+  String get purchaseLumex => 'Purchase Lumex';
 
   @override
   String get qrInvalidAddress => 'QR-koden inneholder ikke en gyldig adresse';
@@ -1769,7 +1769,7 @@ class AppLocalizationsNo extends AppLocalizations {
   String get spendCurrency => 'Bruk %2';
 
   @override
-  String get spendLumex => 'Bruk Lumex';
+  String get spendLumex => 'Spend Lumex';
 
   @override
   String get splitBill => 'Delt regning';
@@ -1992,7 +1992,7 @@ class AppLocalizationsNo extends AppLocalizations {
   String get useCurrency => 'Bruk %2';
 
   @override
-  String get useLumex => 'Bruk Lumex';
+  String get useLumex => 'Use Lumex';
 
   @override
   String get useLumexRep => 'Use Lumex Rep';

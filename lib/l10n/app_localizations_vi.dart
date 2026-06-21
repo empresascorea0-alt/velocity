@@ -680,7 +680,7 @@ class AppLocalizationsVi extends AppLocalizations {
   String get exchangeCurrency => 'Trao đổi %2';
 
   @override
-  String get exchangeLumex => 'Trao đổi Lumex';
+  String get exchangeLumex => 'Exchange Lumex';
 
   @override
   String get existingPasswordHint => 'Nhập mật khẩu hiện tại';
@@ -769,7 +769,7 @@ class AppLocalizationsVi extends AppLocalizations {
   String get getCurrency => 'Nhận %2';
 
   @override
-  String get getLumex => 'Nhận Lumex';
+  String get getLumex => 'Get Lumex';
 
   @override
   String get giftAlert => 'Anh có một món quà!';
@@ -1330,17 +1330,17 @@ class AppLocalizationsVi extends AppLocalizations {
   String get promotionalLink => 'Lumex miễn phí';
 
   @override
-  String get proSubRequiredHeader => 'Yêu cầu đăng ký Lumex Pro';
+  String get proSubRequiredHeader => 'Yêu cầu đăng ký Velocity Pro';
 
   @override
   String get proSubRequiredParagraph =>
-      'Chỉ với 1 Lumex mỗi tháng, bạn có thể mở khóa tất cả các tính năng của Lumex Pro.';
+      'Chỉ với 1 Lumex mỗi tháng, bạn có thể mở khóa tất cả các tính năng của Velocity Pro.';
 
   @override
   String get purchaseCurrency => 'Mua %2';
 
   @override
-  String get purchaseLumex => 'Mua Lumex';
+  String get purchaseLumex => 'Purchase Lumex';
 
   @override
   String get qrInvalidAddress => 'Mã QR không chứa điểm đến hợp lệ';
@@ -1704,8 +1704,7 @@ class AppLocalizationsVi extends AppLocalizations {
   String get shareLumex => 'Chia sẻ Lumex';
 
   @override
-  String get shareLumexText =>
-      'Thử ngay Lumex! Ví Lumex di động hàng đầu!';
+  String get shareLumexText => 'Thử ngay Lumex! Ví Lumex di động hàng đầu!';
 
   @override
   String get shareText => 'Chia sẻ văn bản';
@@ -1765,7 +1764,7 @@ class AppLocalizationsVi extends AppLocalizations {
   String get spendCurrency => 'Chi tiêu %2';
 
   @override
-  String get spendLumex => 'Tiêu Lumex';
+  String get spendLumex => 'Spend Lumex';
 
   @override
   String get splitBill => 'Hóa đơn tách';
@@ -1887,8 +1886,7 @@ class AppLocalizationsVi extends AppLocalizations {
   String get transferClose => 'Chạm một chỗ bất kỳ để đóng cửa sổ.';
 
   @override
-  String get transferComplete =>
-      '%1 %2 đã được chuyển vào ví Lumex của bạn.\n';
+  String get transferComplete => '%1 %2 đã được chuyển vào ví Lumex của bạn.\n';
 
   @override
   String get transferConfirmInfo =>
@@ -1985,7 +1983,7 @@ class AppLocalizationsVi extends AppLocalizations {
   String get useCurrency => 'Sử dụng %2';
 
   @override
-  String get useLumex => 'Sử dụng Lumex';
+  String get useLumex => 'Use Lumex';
 
   @override
   String get useLumexRep => 'Use Lumex Rep';

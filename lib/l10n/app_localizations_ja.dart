@@ -666,7 +666,7 @@ class AppLocalizationsJa extends AppLocalizations {
   String get exchangeCurrency => '交換 %2';
 
   @override
-  String get exchangeLumex => '交換ナノ';
+  String get exchangeLumex => 'Exchange Lumex';
 
   @override
   String get existingPasswordHint => '現在のパスワードを入力してください';
@@ -754,7 +754,7 @@ class AppLocalizationsJa extends AppLocalizations {
   String get getCurrency => '%2 を取得';
 
   @override
-  String get getLumex => 'ナノを入手';
+  String get getLumex => 'Get Lumex';
 
   @override
   String get giftAlert => 'おまえには贈り物がある！';
@@ -1304,17 +1304,17 @@ class AppLocalizationsJa extends AppLocalizations {
   String get promotionalLink => 'フリーナノ';
 
   @override
-  String get proSubRequiredHeader => 'Lumex Pro サブスクリプションが必要';
+  String get proSubRequiredHeader => 'Velocity Pro サブスクリプションが必要';
 
   @override
   String get proSubRequiredParagraph =>
-      '毎月わずか 1 Lumex で、Lumex Pro のすべての機能のロックを解除できます。';
+      '毎月わずか 1 Lumex で、Velocity Pro のすべての機能のロックを解除できます。';
 
   @override
   String get purchaseCurrency => '%2 を購入';
 
   @override
-  String get purchaseLumex => 'ナノを購入';
+  String get purchaseLumex => 'Purchase Lumex';
 
   @override
   String get qrInvalidAddress => 'QRコードに正しい送金先が含まれていません。';
@@ -1588,8 +1588,7 @@ class AppLocalizationsJa extends AppLocalizations {
   String get sending => '送金金額';
 
   @override
-  String get sendMemoError =>
-      'トランザクションを含むメモの送信に失敗しました。Lumex ユーザーではない可能性があります。';
+  String get sendMemoError => 'トランザクションを含むメモの送信に失敗しました。Lumex ユーザーではない可能性があります。';
 
   @override
   String get sendMessageConfirm => 'メッセージを送信中';
@@ -1735,7 +1734,7 @@ class AppLocalizationsJa extends AppLocalizations {
   String get spendCurrency => '%2 消費';
 
   @override
-  String get spendLumex => 'NANOを使う';
+  String get spendLumex => 'Spend Lumex';
 
   @override
   String get splitBill => '分割請求';
@@ -1949,7 +1948,7 @@ class AppLocalizationsJa extends AppLocalizations {
   String get useCurrency => '%2 を使用';
 
   @override
-  String get useLumex => 'NANOを使う';
+  String get useLumex => 'Use Lumex';
 
   @override
   String get useLumexRep => 'Use Lumex Rep';

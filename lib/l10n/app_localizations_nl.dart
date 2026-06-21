@@ -679,7 +679,7 @@ class AppLocalizationsNl extends AppLocalizations {
   String get exchangeCurrency => 'Ruil %2';
 
   @override
-  String get exchangeLumex => 'Ruil Lumex';
+  String get exchangeLumex => 'Exchange Lumex';
 
   @override
   String get existingPasswordHint => 'Vul huidig wachtwoord in';
@@ -769,7 +769,7 @@ class AppLocalizationsNl extends AppLocalizations {
   String get getCurrency => 'Krijg %2';
 
   @override
-  String get getLumex => 'Krijg Lumex';
+  String get getLumex => 'Get Lumex';
 
   @override
   String get giftAlert => 'Je hebt een cadeau!';
@@ -1239,8 +1239,7 @@ class AppLocalizationsNl extends AppLocalizations {
   String get passwordTooShort => 'Wachtwoord is te kort';
 
   @override
-  String get passwordWarning =>
-      'Dit wachtwoord is vereist om Lumex te openen.';
+  String get passwordWarning => 'Dit wachtwoord is vereist om Lumex te openen.';
 
   @override
   String get passwordWillBeRequiredToOpenParagraph =>
@@ -1335,17 +1334,17 @@ class AppLocalizationsNl extends AppLocalizations {
   String get promotionalLink => 'Gratis Lumex';
 
   @override
-  String get proSubRequiredHeader => 'Lumex Pro-abonnement vereist';
+  String get proSubRequiredHeader => 'Velocity Pro-abonnement vereist';
 
   @override
   String get proSubRequiredParagraph =>
-      'Voor slechts 1 Lumex per maand kunt u alle functies van Lumex Pro ontgrendelen.';
+      'Voor slechts 1 Lumex per maand kunt u alle functies van Velocity Pro ontgrendelen.';
 
   @override
   String get purchaseCurrency => 'Koop %2';
 
   @override
-  String get purchaseLumex => 'Koop Lumex';
+  String get purchaseLumex => 'Purchase Lumex';
 
   @override
   String get qrInvalidAddress => 'QR code bevat geen geldig adres';
@@ -1775,7 +1774,7 @@ class AppLocalizationsNl extends AppLocalizations {
   String get spendCurrency => 'Besteed %2';
 
   @override
-  String get spendLumex => 'Besteed Lumex';
+  String get spendLumex => 'Spend Lumex';
 
   @override
   String get splitBill => 'Factuur splitsen';
@@ -1995,7 +1994,7 @@ class AppLocalizationsNl extends AppLocalizations {
   String get useCurrency => 'Gebruik %2';
 
   @override
-  String get useLumex => 'Gebruik Lumex';
+  String get useLumex => 'Use Lumex';
 
   @override
   String get useLumexRep => 'Use Lumex Rep';

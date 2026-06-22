@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'dart:convert';
 import 'dart:math';
+import 'dart:ui';
 
 import 'package:collection/collection.dart';
 import 'package:devicelocale/devicelocale.dart';
@@ -67,6 +68,7 @@ import 'package:velocity/util/nanoutil.dart';
 import 'package:velocity/util/ninja/api.dart';
 import 'package:velocity/util/ninja/n2_node.dart';
 import 'package:velocity/util/ninja/ninja_node.dart';
+import 'package:velocity/util/lumex_util.dart';
 import 'package:velocity/util/sharedprefsutil.dart';
 
 Future<void> firebaseMessagingBackgroundHandler(RemoteMessage message) async {
@@ -151,11 +153,11 @@ class StateContainerState extends State<StateContainer> {
   AvailableCurrency curCurrency = AvailableCurrency(AvailableCurrencyEnum.USD);
   LanguageSetting curLanguage = LanguageSetting(AvailableLanguage.DEFAULT);
   AvailableBlockExplorer curBlockExplorer =
-      AvailableBlockExplorer(AvailableBlockExplorerEnum.NANOBROWSE);
+      AvailableBlockExplorer(AvailableBlockExplorerEnum.LUMEXIO);
 
-  BaseTheme curTheme = SchedulerBinding.instance.window.platformBrightness == Brightness.dark
-      ? LumexTheme()
-      : IndiumTheme();
+  BaseTheme curTheme = PlatformDispatcher.instance.platformBrightness == Brightness.dark
+      ? StitchTheme()
+      : StitchTheme();
   bool nyanoMode = false;
   bool bananoMode = false;
   String currencyMode = CurrencyModeSetting(CurrencyModeOptions.Lumex).getDisplayName();

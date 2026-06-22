@@ -28,6 +28,7 @@ import 'package:velocity/model/state_block.dart';
 import 'package:velocity/network/model/base_request.dart';
 import 'package:velocity/network/model/block_types.dart';
 import 'package:velocity/network/model/request/account_history_request.dart';
+import 'package:velocity/util/lumex_util.dart';
 import 'package:velocity/network/model/request/account_info_request.dart';
 import 'package:velocity/network/model/request/account_representative_request.dart';
 import 'package:velocity/network/model/request/accounts_balances_request.dart';
@@ -50,7 +51,6 @@ import 'package:velocity/network/model/response/process_response.dart';
 import 'package:velocity/network/model/response/receivable_response.dart';
 import 'package:velocity/network/model/response/subscribe_response.dart';
 import 'package:velocity/service_locator.dart';
-import 'package:velocity/ui/util/ui_util.dart';
 import 'package:velocity/util/blake2b.dart';
 import 'package:velocity/util/nanoutil.dart';
 import 'package:velocity/util/sharedprefsutil.dart';
@@ -802,7 +802,7 @@ class AccountService {
             // rely on the node to handle PoW:
             break;
           case WorkSourceTypes.LOCAL:
-            UIUtil.showSnackbarNoContext(Z.current.generatingWork, durationMs: durationMs);
+            // UIUtil.showSnackbarNoContext(Z.current.generatingWork, durationMs: durationMs);
             requestBlock.work = await requestLocalWork(workHash, subtype);
             break;
           case WorkSourceTypes.URL:
@@ -813,7 +813,7 @@ class AccountService {
               // backup use local work
               log.e("Error getting PoW: $e");
 
-              UIUtil.showSnackbarNoContext(Z.current.generatingWork, durationMs: durationMs);
+              // UIUtil.showSnackbarNoContext(Z.current.generatingWork, durationMs: durationMs);
               requestBlock.work = await requestLocalWork(workHash, subtype);
             }
             break;

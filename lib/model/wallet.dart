@@ -4,6 +4,7 @@ import 'package:flutter_nano_ffi/flutter_nano_ffi.dart';
 import 'package:intl/intl.dart';
 import 'package:nanoutil/nanoutil.dart';
 import 'package:velocity/localize.dart';
+import 'package:velocity/util/lumex_util.dart';
 import 'package:velocity/model/available_currency.dart';
 import 'package:velocity/model/db/txdata.dart';
 import 'package:velocity/model/db/user.dart';

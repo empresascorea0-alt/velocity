@@ -1,5 +1,6 @@
 import 'package:decimal/decimal.dart';
 import 'package:nanoutil/nanoutil.dart';
+import 'package:velocity/util/lumex_util.dart';
 
 class NumberUtil {
 

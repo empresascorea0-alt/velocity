@@ -4,6 +4,7 @@ import 'package:flutter_nano_ffi/flutter_nano_ffi.dart' as NFFI;
 import 'package:json_annotation/json_annotation.dart';
 import 'package:nanoutil/nanoutil.dart';
 import 'package:velocity/localize.dart';
+import 'package:velocity/util/lumex_util.dart';
 import 'package:velocity/network/model/block_types.dart';
 import 'package:velocity/util/nanoutil.dart';
 

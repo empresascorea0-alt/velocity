@@ -13,6 +13,7 @@ import 'dart:math';
 import 'dart:typed_data';
 
 import 'package:flutter_nano_ffi/flutter_nano_ffi.dart';
+import 'package:velocity/util/lumex_util.dart';
 
 Uint32List ADD64AA(Uint32List v, int a, int b) {
   final int o0 = v[a] + v[b];

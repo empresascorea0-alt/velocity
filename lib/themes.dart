@@ -1493,6 +1493,10 @@ class StitchTheme extends BaseTheme {
   static const Color stitchGold = Color(0xFFFFD700);
   static const Color stitchBg = Color(0xFF0B0C10);
   static const Color stitchDarkBg = Color(0xFF050505);
+  static const Color surface = Color(0xFF161308);
+  static const Color onSurface = Color(0xFFEAE2CF);
+  static const Color primaryFixedDim = Color(0xFFE9C400);
+  static const Color glassBase = Color(0xFF1C1D21);
 
   static const Color white = Color(0xFFFFFFFF);
   static const Color black = Color(0xFF000000);
@@ -1549,15 +1553,15 @@ class StitchTheme extends BaseTheme {
 
   Color? backgroundDarkest = stitchDarkBg;
 
-  Color? text = white.withOpacity(0.9);
-  Color? text60 = white.withOpacity(0.6);
-  Color? text45 = white.withOpacity(0.45);
-  Color? text30 = white.withOpacity(0.3);
-  Color? text20 = white.withOpacity(0.2);
-  Color? text15 = white.withOpacity(0.15);
-  Color? text10 = white.withOpacity(0.1);
-  Color? text05 = white.withOpacity(0.05);
-  Color? text03 = white.withOpacity(0.03);
+  Color? text = onSurface;
+  Color? text60 = onSurface.withOpacity(0.6);
+  Color? text45 = onSurface.withOpacity(0.45);
+  Color? text30 = onSurface.withOpacity(0.3);
+  Color? text20 = onSurface.withOpacity(0.2);
+  Color? text15 = onSurface.withOpacity(0.15);
+  Color? text10 = onSurface.withOpacity(0.1);
+  Color? text05 = onSurface.withOpacity(0.05);
+  Color? text03 = onSurface.withOpacity(0.03);
 
   Color? overlay90 = black.withOpacity(0.9);
   Color? overlay85 = black.withOpacity(0.85);

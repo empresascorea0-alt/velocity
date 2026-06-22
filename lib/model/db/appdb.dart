@@ -14,7 +14,7 @@ import 'package:velocity/model/db/user.dart';
 import 'package:velocity/model/db/work_source.dart';
 import 'package:velocity/network/account_service.dart';
 import 'package:velocity/service_locator.dart';
-import 'package:velocity/ui/send/send_sheet.dart';
+import 'package:velocity/util/lumex_util.dart';
 import 'package:velocity/util/nanoutil.dart';
 import 'package:velocity/util/sharedprefsutil.dart';
 

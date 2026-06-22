@@ -285,11 +285,11 @@ class SharedPrefsUtil {
 
   Future<AvailableBlockExplorer> getBlockExplorer() async {
     return AvailableBlockExplorer(AvailableBlockExplorerEnum
-        .values[(await get(cur_explorer, defaultValue: AvailableBlockExplorerEnum.BLOCKLATTICE.index) as int)]);
+        .values[(await get(cur_explorer, defaultValue: AvailableBlockExplorerEnum.LUMEXIO.index) as int)]);
   }
 
   Future<ThemeSetting> getTheme() async {
-    final bool isDarkMode = SchedulerBinding.instance.window.platformBrightness == Brightness.dark;
+    final bool isDarkMode = PlatformDispatcher.instance.platformBrightness == Brightness.dark;
     final int defaultValue = isDarkMode ? ThemeOptions.NAUTILUS.index : ThemeOptions.INDIUM.index;
     return ThemeSetting(ThemeOptions.values[(await get(cur_theme, defaultValue: defaultValue) as int)]);
   }

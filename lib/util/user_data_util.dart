@@ -13,9 +13,7 @@ import 'package:velocity/network/model/response/auth_item.dart';
 import 'package:velocity/network/model/response/pay_item.dart';
 import 'package:velocity/network/model/response/sub_item.dart';
 import 'package:velocity/service_locator.dart';
-import 'package:velocity/ui/scan/scan_screen.dart';
-import 'package:velocity/ui/util/ui_util.dart';
-import 'package:velocity/ui/widgets/sheet_util.dart';
+import 'package:velocity/util/lumex_util.dart';
 import 'package:velocity/util/nanoutil.dart';
 import 'package:quiver/strings.dart';
 import 'package:validators/validators.dart';
@@ -90,19 +88,20 @@ class UserDataUtil {
   }
 
   static Future<dynamic> getQRData(DataType type, BuildContext context) async {
-    UIUtil.cancelLockEvent();
+    // UIUtil.cancelLockEvent();
     try {
-      final String? data = await Sheets.showAppHeightFullSheet(
+      /*final String? data = await Sheets.showAppHeightFullSheet(
         context: context,
         widget: const ScanScreen(),
-      );
+      );*/
+      const String? data = null;
 
       if (isEmpty(data)) {
         return null;
       }
       return _parseData(data!, type);
     } catch (e) {
-      UIUtil.showSnackbar(Z.of(context).qrUnknownError, context);
+      // UIUtil.showSnackbar(Z.of(context).qrUnknownError, context);
       log.e("Unknown QR Scan Error ${e.toString()}");
       return null;
     }

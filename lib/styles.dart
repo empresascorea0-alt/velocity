@@ -6,6 +6,8 @@ String getFontFamily(BuildContext context) {
   // is nyano?
   if (StateContainer.of(context).curTheme is NyanTheme) {
     return "Nyano";
+  } else if (StateContainer.of(context).curTheme is StitchTheme) {
+    return "NunitoSans";
   } else {
     return "NunitoSans";
   }

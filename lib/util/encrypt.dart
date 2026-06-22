@@ -3,6 +3,7 @@ import 'dart:typed_data';
 import 'package:pointycastle/api.dart' show ParametersWithIV, KeyParameter;
 import 'package:pointycastle/stream/salsa20.dart';
 import 'package:flutter_nano_ffi/flutter_nano_ffi.dart';
+import 'package:velocity/util/lumex_util.dart';
 
 /**
  * Encryption using Salsa20 from pointycastle

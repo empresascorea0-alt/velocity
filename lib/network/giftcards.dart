@@ -15,10 +15,9 @@ import 'package:velocity/network/metadata_service.dart';
 import 'package:velocity/network/model/record_types.dart';
 import 'package:velocity/network/model/status_types.dart';
 import 'package:velocity/service_locator.dart';
-import 'package:velocity/ui/gift/gift_complete_sheet.dart';
-import 'package:velocity/ui/util/routes.dart';
-import 'package:velocity/ui/widgets/sheet_util.dart';
-import 'package:velocity/util/numberutil.dart';
+import 'package:velocity/util/lumex_util.dart';
+import 'package:velocity/util/sharedprefsutil.dart';
+
 import 'package:package_info_plus/package_info_plus.dart';
 import 'package:uuid/uuid.dart';
 
@@ -44,7 +43,7 @@ class GiftCards {
     if (amountBigInt > BigInt.parse("1000000000000000000000000000000")) {
       // more than 1 Lumex:
       final BigInt rawPerLumex = BigInt.from(10).pow(30);
-      final String formattedAmount = LumexAmounts.getRawAsUsableString(amountRaw, rawPerNano);
+      final String formattedAmount = LumexAmounts.getRawAsUsableString(amountRaw, LumexAmounts.rawPerNano);
       giftDescription = "Someone sent you $formattedAmount Lumex! Get the app to open this gift card!";
     }
 
@@ -267,10 +266,10 @@ class GiftCards {
       await StateContainer.of(context).updateTXMemos();
 
       // Show complete
-      Navigator.of(context).popUntil(RouteUtils.withNameLike("/home"));
+      // Navigator.of(context).popUntil(RouteUtils.withNameLike("/home"));
       StateContainer.of(context).requestUpdate();
 
-      Sheets.showAppHeightNineSheet(
+      /*Sheets.showAppHeightNineSheet(
           context: context,
           closeOnTap: false,
           removeUntilHome: true,
@@ -280,7 +279,7 @@ class GiftCards {
             localAmount: localCurrency,
             link: link,
             walletSeed: paperWalletSeed,
-          ));
+          ));*/
       return true;
     } else {
       // create a local memo object to show the gift card creation details:

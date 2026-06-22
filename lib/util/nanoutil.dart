@@ -13,6 +13,7 @@ import 'package:velocity/localize.dart';
 import 'package:velocity/model/db/account.dart';
 import 'package:velocity/model/db/appdb.dart';
 import 'package:velocity/service_locator.dart';
+import 'package:velocity/util/lumex_util.dart';
 
 class LumexUtilities {
 

@@ -6,8 +6,9 @@ import 'package:velocity/util/biometrics.dart';
 
 class PinScreen extends StatefulWidget {
   final VoidCallback onAuthenticated;
+  final String? reason;
 
-  const PinScreen({super.key, required this.onAuthenticated});
+  const PinScreen({super.key, required this.onAuthenticated, this.reason});
 
   @override
   State<PinScreen> createState() => _PinScreenState();
@@ -24,9 +25,12 @@ class _PinScreenState extends State<PinScreen> {
   }
 
   Future<void> _checkBiometrics() async {
+    AuthenticationMethod authMethod = await sl.get<SharedPrefsUtil>().getAuthMethod();
+    if (authMethod.method != AuthMethod.BIOMETRICS) return;
+
     final bio = BiometricUtil();
     if (await bio.hasBiometrics()) {
-      bool authenticated = await bio.authenticateWithBiometrics(context, "Authenticate to unlock Velocity");
+      bool authenticated = await bio.authenticateWithBiometrics(context, widget.reason ?? "Authenticate to unlock Velocity");
       if (authenticated) {
         widget.onAuthenticated();
       }

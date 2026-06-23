@@ -2,6 +2,10 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:velocity/appstate_container.dart';
 import 'package:velocity/styles.dart';
+import 'package:velocity/service_locator.dart';
+import 'package:velocity/util/sharedprefsutil.dart';
+import 'package:velocity/model/authentication_method.dart';
+import 'package:velocity/ui/security/pin_screen.dart';
 
 class FaucetScreen extends StatefulWidget {
   const FaucetScreen({super.key});
@@ -12,8 +16,31 @@ class FaucetScreen extends StatefulWidget {
 
 class _FaucetScreenState extends State<FaucetScreen> {
   bool _isClaiming = false;
-  bool _canClaim = false; // Simulated lock state
+  bool _canClaim = true; // Enabled for testing/demo
   final Duration _nextClaim = const Duration(hours: 23, minutes: 59, seconds: 54);
+
+  Future<void> _authenticateAndClaim() async {
+    AuthenticationMethod authMethod = await sl.get<SharedPrefsUtil>().getAuthMethod();
+    
+    if (authMethod.method != AuthMethod.NONE) {
+      if (!mounted) return;
+      bool? authenticated = await Navigator.push<bool>(
+        context,
+        MaterialPageRoute(
+          builder: (context) => PinScreen(
+            onAuthenticated: () => Navigator.pop(context, true),
+            reason: "Autentícate para reclamar tus tokens",
+          ),
+        ),
+      );
+
+      if (authenticated == true) {
+        _claim();
+      }
+    } else {
+      _claim();
+    }
+  }
 
   void _claim() async {
     setState(() => _isClaiming = true);
@@ -57,9 +84,9 @@ class _FaucetScreenState extends State<FaucetScreen> {
               
               const Spacer(),
               
-              // Action Button (Simulated locked)
+              // Action Button
               GestureDetector(
-                onTap: _canClaim ? _claim : null,
+                onTap: (_canClaim && !_isClaiming) ? _authenticateAndClaim : null,
                 child: Container(
                   width: 200,
                   height: 200,

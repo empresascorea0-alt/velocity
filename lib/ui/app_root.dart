@@ -5,12 +5,15 @@ import 'package:velocity/service_locator.dart';
 import 'package:velocity/ui/intro/import_wallet_screen.dart';
 import 'package:velocity/ui/intro/seed_generation_screen.dart';
 import 'package:velocity/ui/intro/welcome_screen.dart';
+import 'package:velocity/ui/intro/security_choice_screen.dart';
 import 'package:velocity/ui/security/pin_screen.dart';
 import 'package:velocity/ui/security/set_pin_screen.dart';
 import 'package:velocity/ui/wallet/dashboard_screen.dart';
 import 'package:velocity/ui/widgets/big_bang_splash.dart';
+import 'package:velocity/util/sharedprefsutil.dart';
+import 'package:velocity/model/authentication_method.dart';
 
-enum IntroState { splash, welcome, create, import, setPin, unlock, wallet }
+enum IntroState { splash, welcome, create, import, setPin, securityChoice, unlock, wallet }
 
 class AppRoot extends StatefulWidget {
   const AppRoot({super.key});
@@ -32,12 +35,15 @@ class _AppRootState extends State<AppRoot> {
     await Future.delayed(const Duration(milliseconds: 4000));
     String? seed = await sl.get<Vault>().getSeed();
     String? pin = await sl.get<Vault>().getPin();
+    bool authMethodSet = await sl.get<SharedPrefsUtil>().get(SharedPrefsUtil.auth_method) != null;
     if (!mounted) return;
 
     if (seed == null) {
       setState(() => _state = IntroState.welcome);
     } else if (pin == null) {
       setState(() => _state = IntroState.setPin);
+    } else if (!authMethodSet) {
+      setState(() => _state = IntroState.securityChoice);
     } else {
       setState(() => _state = IntroState.unlock);
     }
@@ -70,7 +76,10 @@ class _AppRootState extends State<AppRoot> {
         body = ImportWalletScreen(onImportComplete: _handleSeed);
         break;
       case IntroState.setPin:
-        body = SetPinScreen(onPinSet: () => setState(() => _state = IntroState.wallet));
+        body = SetPinScreen(onPinSet: () => setState(() => _state = IntroState.securityChoice));
+        break;
+      case IntroState.securityChoice:
+        body = SecurityChoiceScreen(onChoiceMade: () => setState(() => _state = IntroState.wallet));
         break;
       case IntroState.unlock:
         body = PinScreen(onAuthenticated: () => setState(() => _state = IntroState.wallet));

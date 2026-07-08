@@ -90,12 +90,12 @@ class AccountService {
   };
 // static const String DEFAULT_HTTP_URL = "https://lumex.perish.co/api";
 // static const String DEFAULT_WS_URL = "wss://lumex.perish.co";
-  static const String DEFAULT_NODE_NAME = "Lumex Node";
-  static const String DEFAULT_HTTP_URL = "https://node.lumex.io/api";
-  static const String DEFAULT_WS_URL = "wss://node.lumex.io/websocket";
+  static const String DEFAULT_NODE_NAME = "Local Lumex Node";
+  static const String DEFAULT_HTTP_URL = "http://localhost:8076";
+  static const String DEFAULT_WS_URL = "ws://localhost:8078";
 
-  static const String DEFAULT_WORKER_NAME = "lumex.io";
-  static const String DEFAULT_WORK_URL = "https://rpc.lumex.io";
+  static const String DEFAULT_WORKER_NAME = "Local Worker";
+  static const String DEFAULT_WORK_URL = "http://localhost:8076";
 
   Future<void> initUrls() async {
     if (HTTP_URL != "") return;

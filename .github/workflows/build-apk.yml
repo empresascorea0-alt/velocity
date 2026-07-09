@@ -37,6 +37,7 @@ jobs:
         run: |
           cargo install cargo-ndk cbindgen
           cargo install flutter_rust_bridge_codegen --version 1.51.1
+          echo "$HOME/.cargo/bin" >> $GITHUB_PATH
 
       - name: Install Linux Dependencies
         run: |

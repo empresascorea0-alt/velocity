@@ -79,7 +79,7 @@ dependencies:
   json_annotation: ^4.8.0
 
   # Localization
-  intl: ^0.20.2
+  intl: ^0.19.0
   # BigDecimal alternative
   decimal: ^2.3.0
 

@@ -41,8 +41,8 @@ jobs:
 
       - name: Setup Android NDK
         run: |
-          echo "ANDROID_NDK_HOME=$ANDROID_HOME/ndk/25.1.8937393" >> $GITHUB_ENV
-          sdkmanager --install "ndk;25.1.8937393"
+          yes | ${ANDROID_HOME}/cmdline-tools/latest/bin/sdkmanager --install "ndk;25.1.8937393"
+          echo "ANDROID_NDK_HOME=${ANDROID_HOME}/ndk/25.1.8937393" >> $GITHUB_ENV
 
       - name: Install Linux Dependencies
         run: |

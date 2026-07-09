@@ -58,7 +58,6 @@ jobs:
           echo "FIREBASE_ANDROID_API_KEY=${{ secrets.FIREBASE_ANDROID_API_KEY || 'dummy' }}" >> .env
           echo "FIREBASE_IOS_API_KEY=${{ secrets.FIREBASE_IOS_API_KEY || 'dummy' }}" >> .env
           echo "FIREBASE_MACOS_API_KEY=${{ secrets.FIREBASE_MACOS_API_KEY || 'dummy' }}" >> .env
-        working-directory: velocity
 
       - name: Build Rust Bridge
         run: |
@@ -75,14 +74,12 @@ jobs:
           cd ..
           
           flutter pub run build_runner build --delete-conflicting-outputs
-        working-directory: velocity
 
       - name: Build APK (Debug)
         run: flutter build apk --debug
-        working-directory: velocity
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
           name: debug-apk
-          path: velocity/build/app/outputs/flutter-apk/app-debug.apk
+          path: build/app/outputs/flutter-apk/app-debug.apk

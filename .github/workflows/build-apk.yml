@@ -1,0 +1,88 @@
+name: Build Android APK
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - name: Setup Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'zulu'
+          java-version: '17'
+
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.24.0'
+          cache: true
+
+      - name: Setup Rust
+        uses: dtolnay/rust-toolchain@stable
+        with:
+          targets: aarch64-linux-android, armv7-linux-androideabi
+
+      - name: Install Rust Tools
+        run: |
+          cargo install cargo-ndk cbindgen
+          cargo install flutter_rust_bridge_codegen --version 1.51.1
+
+      - name: Install Linux Dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ninja-build llvm-dev libclang-dev
+
+      - name: Setup Environment Variables
+        run: |
+          touch .env
+          echo "ONRAMPER_API_KEY=${{ secrets.ONRAMPER_API_KEY || 'dummy' }}" >> .env
+          echo "INFURA_API_KEY=${{ secrets.INFURA_API_KEY || 'dummy' }}" >> .env
+          echo "UD_API_KEY=${{ secrets.UD_API_KEY || 'dummy' }}" >> .env
+          echo "MESSAGES_API_KEY=${{ secrets.MESSAGES_API_KEY || 'dummy' }}" >> .env
+          echo "CAPTCHA_SITE_KEY=${{ secrets.CAPTCHA_SITE_KEY || 'dummy' }}" >> .env
+          echo "HCAPTCHA_SITE_KEY=${{ secrets.HCAPTCHA_SITE_KEY || 'dummy' }}" >> .env
+          echo "NANSWAP_API_KEY=${{ secrets.NANSWAP_API_KEY || 'dummy' }}" >> .env
+          echo "MAGIC_SDK_KEY=${{ secrets.MAGIC_SDK_KEY || 'dummy' }}" >> .env
+          echo "FIREBASE_WEB_API_KEY=${{ secrets.FIREBASE_WEB_API_KEY || 'dummy' }}" >> .env
+          echo "FIREBASE_ANDROID_API_KEY=${{ secrets.FIREBASE_ANDROID_API_KEY || 'dummy' }}" >> .env
+          echo "FIREBASE_IOS_API_KEY=${{ secrets.FIREBASE_IOS_API_KEY || 'dummy' }}" >> .env
+          echo "FIREBASE_MACOS_API_KEY=${{ secrets.FIREBASE_MACOS_API_KEY || 'dummy' }}" >> .env
+        working-directory: velocity
+
+      - name: Build Rust Bridge
+        run: |
+          flutter pub get
+          flutter_rust_bridge_codegen --skip-deps-check \
+            --rust-input rust/src/username_registration.rs \
+            --dart-output lib/generated/rust/username_registration.dart \
+            --c-output ios/Runner/Generated/username_registration.h \
+            --rust-output rust/src/username_registration_generated.rs \
+            --class-name UsernameRegistration
+          
+          cd rust
+          cargo ndk -t arm64-v8a -t armeabi-v7a -o ../android/app/src/main/jniLibs build --release
+          cd ..
+          
+          flutter pub run build_runner build --delete-conflicting-outputs
+        working-directory: velocity
+
+      - name: Build APK (Debug)
+        run: flutter build apk --debug
+        working-directory: velocity
+
+      - name: Upload APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: debug-apk
+          path: velocity/build/app/outputs/flutter-apk/app-debug.apk

@@ -240,7 +240,7 @@ dependencies:
 
   # in app purchases:
   # in_app_purchase: ^3.0.8
-  flutter_rust_bridge: ^1.51.1
+  flutter_rust_bridge: ^1.82.6
   ffi: ^2.0.1
   ffigen: ^11.0.0
   flutter_native_timezone: ^2.0.0

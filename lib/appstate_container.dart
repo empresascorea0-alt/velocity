@@ -2145,9 +2145,10 @@ class StateContainerState extends State<StateContainer> {
 
   Future<String> getSeed() async {
     String? seed;
-    if (encryptedSecret != null) {
+    final secret = encryptedSecret;
+    if (secret != null) {
       seed = LumexHelpers.byteToHex(
-          LumexCrypt.decrypt(encryptedSecret, await sl.get<Vault>().getSessionKey()));
+          LumexCrypt.decrypt(secret, utf8.encode(await sl.get<Vault>().getSessionKey())));
     } else {
       seed = await sl.get<Vault>().getSeed();
     }

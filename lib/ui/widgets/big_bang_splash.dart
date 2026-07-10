@@ -183,7 +183,7 @@ class BigBangPainter extends CustomPainter {
     // Rays
     final random = math.Random(42);
     for (int i = 0; i < 40; i++) {
-      final angle = random.nextDouble() * 2 * math.PI;
+      final angle = random.nextDouble() * 2 * math.pi;
       final length = (random.nextDouble() * 200 + 100) * expansion;
       final thickness = random.nextDouble() * 4 + 1;
       

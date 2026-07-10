@@ -112,7 +112,7 @@ class AppWallet {
         : LumexAmounts.rawPerBanano;
 
     final Decimal converted = Decimal.parse(localCurrencyPrice) *
-        LumexAmounts.getRawAsDecimal(accountBalance.toString(), rawPerCur);
+        LumexAmounts.getRawAsDecimal(accountBalance.toString(), rawPerCur.toString());
     return NumberFormat.currency(locale: locale, symbol: currency.getCurrencySymbol())
         .format(converted.toDouble());
   }

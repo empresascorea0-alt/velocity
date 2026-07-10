@@ -128,7 +128,7 @@ class _SecurityChoiceScreenState extends State<SecurityChoiceScreen> {
                 Text(
                   subtitle,
                   style: TextStyle(
-                    color: isPrimary ? theme.background!.withOpacity(0.7) : theme.text60,
+                    color: isPrimary ? (theme.background ?? Colors.black).withOpacity(0.7) : theme.text60,
                     fontSize: 12,
                   ),
                 ),

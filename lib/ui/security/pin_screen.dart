@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:velocity/appstate_container.dart';
-import 'package:velocity/service_locator.dart';
+import 'package:velocity/util/sharedprefsutil.dart';
+import 'package:velocity/util/hapticutil.dart';
 import 'package:velocity/model/vault.dart';
 import 'package:velocity/util/biometrics.dart';
 

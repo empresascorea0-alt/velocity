@@ -17,7 +17,7 @@ class ExchangeScreen extends StatelessWidget {
             center: const Alignment(0, -1.1),
             radius: 1.0,
             colors: [
-              theme.primary.withOpacity(0.08),
+              (theme.primary ?? Colors.orange).withOpacity(0.08),
               const Color(0xFF161308).withOpacity(0),
             ],
           ),
@@ -96,7 +96,7 @@ class ExchangeScreen extends StatelessWidget {
                           borderRadius: BorderRadius.circular(10),
                           boxShadow: [
                             BoxShadow(
-                              color: theme.primary.withOpacity(0.5),
+                              color: (theme.primary ?? Colors.orange).withOpacity(0.5),
                               blurRadius: 12,
                             ),
                           ],
@@ -121,7 +121,7 @@ class ExchangeScreen extends StatelessWidget {
                     borderRadius: BorderRadius.circular(20),
                     boxShadow: [
                       BoxShadow(
-                        color: theme.primary.withOpacity(0.15),
+                        color: (theme.primary ?? Colors.orange).withOpacity(0.15),
                         blurRadius: 40,
                         offset: const Offset(0, 12),
                       ),
@@ -298,7 +298,7 @@ class ExchangeScreen extends StatelessWidget {
                       height: 24,
                       decoration: BoxDecoration(
                         shape: BoxShape.circle,
-                        color: label == 'Pay' ? Colors.blueGrey.shade900 : theme.primary.withOpacity(0.2),
+                        color: label == 'Pay' ? Colors.blueGrey.shade900 : (theme.primary ?? Colors.orange).withOpacity(0.2),
                       ),
                       child: Icon(icon, size: 16, color: theme.primary),
                     ),

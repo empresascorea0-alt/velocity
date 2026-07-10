@@ -17,7 +17,7 @@ import 'package:velocity/model/db/subscription.dart';
 import 'package:velocity/network/model/block_types.dart';
 import 'package:velocity/network/model/response/account_history_response_item.dart';
 import 'package:velocity/service_locator.dart';
-import 'package:velocity/ui/send/send_sheet.dart';
+import 'package:velocity/util/send_sheet_helpers.dart';
 import 'package:velocity/util/sharedprefsutil.dart';
 
 // SubscriptionService singleton

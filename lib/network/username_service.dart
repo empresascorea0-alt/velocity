@@ -31,7 +31,7 @@ import 'package:velocity/network/model/response/process_response.dart';
 import 'package:velocity/network/model/response/receivable_response.dart';
 import 'package:velocity/network/model/response/receivable_response_item.dart';
 import 'package:velocity/service_locator.dart';
-import 'package:velocity/ui/send/send_sheet.dart';
+import 'package:velocity/util/send_sheet_helpers.dart';
 import 'package:velocity/util/blake2b.dart';
 import 'package:velocity/util/nanoutil.dart';
 import 'package:velocity/util/sharedprefsutil.dart';

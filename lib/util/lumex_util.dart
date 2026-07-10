@@ -60,6 +60,18 @@ class LumexAccounts {
   static String extractPublicKey(String address) {
     return NanoAccounts.extractPublicKey(address);
   }
+
+  static String findAccountInString(int type, String value) {
+    return NanoAccounts.findAccountInString(type, value);
+  }
+
+  static bool isValid(int type, String address) {
+    return NanoAccounts.isValid(type, address);
+  }
+
+  static String createAccount(int type, String publicKey) {
+    return NanoAccounts.createAccount(type, publicKey);
+  }
 }
 
 class LumexAmounts {
@@ -67,10 +79,10 @@ class LumexAmounts {
   static BigInt rawPerNano = BigInt.from(10).pow(30);
   static BigInt rawPerBanano = BigInt.from(10).pow(29);
 
-  static double getRawAsDecimal(String raw, String rawPerCur) {
+  static Decimal getRawAsDecimal(String raw, String rawPerCur) {
     Decimal amount = Decimal.parse(raw);
     Decimal divider = Decimal.parse(rawPerCur);
-    return (amount / divider).toDouble();
+    return (amount / divider);
   }
 
   static String getRawAsUsableString(String? raw, BigInt rawPerCur) {

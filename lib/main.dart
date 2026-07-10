@@ -7,6 +7,8 @@ import 'package:flutter/services.dart';
 import 'package:flutter_branch_sdk/flutter_branch_sdk.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:logger/logger.dart';
+import 'package:velocity/app_icons.dart';
+import 'package:velocity/appstate_container.dart';
 import 'package:velocity/firebase_options.dart';
 import 'package:velocity/service_locator.dart';
 import 'package:velocity/ui/app_root.dart';

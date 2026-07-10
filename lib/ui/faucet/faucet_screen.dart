@@ -92,8 +92,8 @@ class _FaucetScreenState extends State<FaucetScreen> {
                   height: 200,
                   decoration: BoxDecoration(
                     shape: BoxShape.circle,
-                    color: _canClaim ? theme.primary!.withOpacity(0.2) : theme.backgroundDarkest,
-                    border: Border.all(color: theme.primary!.withOpacity(0.3)),
+                    color: _canClaim ? (theme.primary ?? Colors.orange).withOpacity(0.2) : theme.backgroundDarkest,
+                    border: Border.all(color: (theme.primary ?? Colors.orange).withOpacity(0.3)),
                   ),
                   child: Center(
                     child: _isClaiming 

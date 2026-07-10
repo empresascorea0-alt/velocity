@@ -7,6 +7,7 @@ import 'package:velocity/network/model/response/auth_item.dart';
 import 'package:velocity/network/model/response/pay_item.dart';
 import 'package:velocity/network/model/response/sub_item.dart';
 import 'package:velocity/service_locator.dart';
+import 'package:velocity/util/lumex_util.dart';
 
 // Object to represent an account address or address URI, and provide useful utilities
 

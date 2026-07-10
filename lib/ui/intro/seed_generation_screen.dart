@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_nano_ffi/flutter_nano_ffi.dart';
 import 'package:nanoutil/nanoutil.dart';
 import 'package:velocity/appstate_container.dart';
 import 'package:velocity/styles.dart';

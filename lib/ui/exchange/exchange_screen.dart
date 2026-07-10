@@ -225,7 +225,7 @@ class ExchangeScreen extends StatelessWidget {
               ),
               const SizedBox(height: 8),
 
-              _buildInputSection(theme, 'Receive', 'Est. Price: $2,450.21', 'USDC', '0.00', Icons.monetization_on),
+              _buildInputSection(theme, 'Receive', 'Est. Price: \$2,450.21', 'USDC', '0.00', Icons.monetization_on),
               
               const SizedBox(height: 24),
               

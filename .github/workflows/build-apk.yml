@@ -92,8 +92,7 @@ jobs:
             --dart-output lib/generated/rust/username_registration.dart \
             --c-output ios/Runner/Generated/username_registration.h \
             --rust-output rust/src/username_registration_generated.rs \
-            --class-name UsernameRegistration \
-            --no-format
+            --class-name UsernameRegistration
           
           mkdir -p android/app/src/main/jniLibs
           cd rust

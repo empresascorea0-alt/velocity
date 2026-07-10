@@ -33,10 +33,29 @@ jobs:
         with:
           targets: aarch64-linux-android, armv7-linux-androideabi, x86_64-linux-android
 
+      - name: Cache Rust Tools
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cargo/bin/
+            ~/.cargo/registry/index/
+            ~/.cargo/registry/cache/
+            ~/.cargo/git/db/
+          key: ${{ runner.os }}-cargo-tools-${{ hashFiles('**/Cargo.toml') }}
+          restore-keys: |
+            ${{ runner.os }}-cargo-tools-
+
       - name: Install Rust Tools
         run: |
-          cargo install cargo-ndk cbindgen
-          cargo install flutter_rust_bridge_codegen --version 1.82.1
+          if ! command -v cargo-ndk &> /dev/null; then
+            cargo install cargo-ndk
+          fi
+          if ! command -v cbindgen &> /dev/null; then
+            cargo install cbindgen
+          fi
+          if ! command -v flutter_rust_bridge_codegen &> /dev/null || [ "$(flutter_rust_bridge_codegen --version | awk '{print $2}')" != "1.82.1" ]; then
+            cargo install flutter_rust_bridge_codegen --version 1.82.1
+          fi
           echo "$HOME/.cargo/bin" >> $GITHUB_PATH
 
       - name: Setup Android NDK
@@ -76,6 +95,7 @@ jobs:
             --class-name UsernameRegistration \
             --no-format
           
+          mkdir -p android/app/src/main/jniLibs
           cd rust
           cargo ndk -t arm64-v8a -t armeabi-v7a -t x86_64 -o ../android/app/src/main/jniLibs build --release
           cd ..

@@ -50,6 +50,9 @@ jobs:
           if ! command -v cargo-ndk &> /dev/null; then
             cargo install cargo-ndk
           fi
+          if ! command -v cargo-expand &> /dev/null; then
+            cargo install cargo-expand
+          fi
           if ! command -v cbindgen &> /dev/null; then
             cargo install cbindgen
           fi

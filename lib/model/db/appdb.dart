@@ -12,6 +12,7 @@ import 'package:velocity/model/db/subscription.dart';
 import 'package:velocity/util/send_sheet_helpers.dart';
 import 'package:velocity/model/db/user.dart';
 import 'package:velocity/model/db/work_source.dart';
+import 'package:velocity/model/db/txdata.dart';
 import 'package:velocity/network/account_service.dart';
 import 'package:velocity/service_locator.dart';
 import 'package:velocity/util/lumex_util.dart';

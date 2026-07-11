@@ -123,7 +123,7 @@ class UsernameService {
   }
 
   Future<String?> checkENSDomain(String domain) async {
-    final String pubKey = await ens.withName(domain).getCoinAddress(CoinType.Lumex);
+    final String pubKey = await ens.withName(domain).getCoinAddress(CoinType.NANO);
     if (pubKey.isEmpty) {
       return null;
     } else {

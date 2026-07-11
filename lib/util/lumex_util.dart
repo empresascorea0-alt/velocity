@@ -82,7 +82,7 @@ class LumexAmounts {
   static Decimal getRawAsDecimal(String raw, String rawPerCur) {
     Decimal amount = Decimal.parse(raw);
     Decimal divider = Decimal.parse(rawPerCur);
-    return (amount / divider);
+    return (amount / divider).toDecimal(scaleOnInfinitePrecision: maxDecimalDigits);
   }
 
   static String getRawAsUsableString(String? raw, BigInt rawPerCur) {

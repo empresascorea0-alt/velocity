@@ -5,6 +5,7 @@ import 'package:velocity/util/sharedprefsutil.dart';
 import 'package:velocity/util/hapticutil.dart';
 import 'package:velocity/model/vault.dart';
 import 'package:velocity/util/biometrics.dart';
+import 'package:velocity/model/authentication_method.dart';
 
 class PinScreen extends StatefulWidget {
   final VoidCallback onAuthenticated;

@@ -512,74 +512,49 @@ class StateContainerState extends State<StateContainer> {
   void initState() {
     super.initState();
 
-    localhostServer.start();
+    try {
+      // Set currency locale here for the UI to access
+      sl.get<SharedPrefsUtil>().getCurrency(deviceLocale).then((AvailableCurrency currency) {
+        if (mounted) {
+          setState(() {
+            currencyLocale = currency.getLocale().toString();
+            curCurrency = currency;
+          });
+        }
+      }).catchError((e) => print("Currency error: $e"));
+    } catch (e) {
+      print("SharedPrefs currency error: $e");
+    }
 
-    // Register RxBus
-    _registerBus();
-    // Set currency locale here for the UI to access
-    sl.get<SharedPrefsUtil>().getCurrency(deviceLocale).then((AvailableCurrency currency) {
-      setState(() {
-        currencyLocale = currency.getLocale().toString();
-        curCurrency = currency;
-        sl.get<MetadataService>().setCurrency(currency);
-      });
-    });
-    // Get default language setting
-    sl.get<SharedPrefsUtil>().getLanguage().then((LanguageSetting language) {
-      setState(() {
-        curLanguage = language;
-      });
-    });
-    // Get theme default
-    sl.get<SharedPrefsUtil>().getTheme().then((ThemeSetting theme) {
-      updateTheme(theme);
-    });
-    // Get default block explorer
-    sl.get<SharedPrefsUtil>().getBlockExplorer().then((AvailableBlockExplorer explorer) {
-      setState(() {
-        curBlockExplorer = explorer;
-      });
-    });
-    // Get initial deep link
-    getInitialLink().then((String? initialLink) {
-      setState(() {
-        initialDeepLink = initialLink;
-      });
-    });
-    // Cache ninja API if we don't already have it
-    checkAndCacheNodeAPIResponse();
-    // Update alert
-    checkAndUpdateAlerts();
-    // Get funding alerts
-    checkAndUpdateFundingAlerts();
-    // make sure we can reach branch.io
-    checkBranchConnection();
-    // Get natricon pref
-    sl.get<SharedPrefsUtil>().getUseNatricon().then((bool useNatricon) {
-      setNatriconOn(useNatricon);
-    });
-    // Get nyanicon pref
-    sl.get<SharedPrefsUtil>().getUseNyanicon().then((bool useNyanicon) {
-      setNyaniconOn(useNyanicon);
-    });
-    // Get min raw receive pref
-    sl.get<SharedPrefsUtil>().getMinRawReceive().then((String minRaw) {
-      setMinRawReceive(minRaw);
-    });
-    // Get currency mode pref
-    sl.get<SharedPrefsUtil>().getCurrencyMode().then((String currencyMode) {
-      setCurrencyMode(currencyMode);
-    });
-    // restore payments from the cache
-    updateSolids();
+    try {
+      sl.get<SharedPrefsUtil>().getLanguage().then((LanguageSetting language) {
+        if (mounted) {
+          setState(() {
+            curLanguage = language;
+          });
+        }
+      }).catchError((e) => print("Language error: $e"));
+    } catch (e) {
+      print("SharedPrefs language error: $e");
+    }
 
-    FirebaseMessaging.onBackgroundMessage(firebaseMessagingBackgroundHandler);
-    FirebaseMessaging.onMessage.listen(firebaseMessagingForegroundHandler);
-    FirebaseMessaging.instance.setForegroundNotificationPresentationOptions(
-      alert: false,
-      badge: true,
-      sound: true,
-    );
+    try {
+      sl.get<SharedPrefsUtil>().getTheme().then((ThemeSetting theme) {
+        if (mounted) {
+          updateTheme(theme);
+        }
+      }).catchError((e) => print("Theme error: $e"));
+    } catch (e) {
+      print("SharedPrefs theme error: $e");
+    }
+
+    try {
+      sl.get<SharedPrefsUtil>().getUseNatricon().then((bool useNatricon) {
+        if (mounted) setNatriconOn(useNatricon);
+      }).catchError((e) => print("Natricon error: $e"));
+    } catch (e) {
+      print("SharedPrefs natricon error: $e");
+    }
   }
 
   // Subscriptions

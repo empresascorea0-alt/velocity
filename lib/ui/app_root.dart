@@ -35,6 +35,10 @@ class _AppRootState extends State<AppRoot> {
     try {
       await Future.delayed(const Duration(milliseconds: 2000)); // Reducido a 2s para mejor UX
       
+      if (!mounted) return;
+      setState(() => _state = IntroState.welcome);
+      return;
+/*
       String? seed;
       try {
         seed = await sl.get<Vault>().getSeed();
@@ -67,6 +71,7 @@ class _AppRootState extends State<AppRoot> {
       } else {
         setState(() => _state = IntroState.unlock);
       }
+*/
     } catch (e) {
       print("Global init error: $e");
       if (mounted) {

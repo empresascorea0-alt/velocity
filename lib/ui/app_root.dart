@@ -32,20 +32,46 @@ class _AppRootState extends State<AppRoot> {
   }
 
   Future<void> _checkInitialState() async {
-    await Future.delayed(const Duration(milliseconds: 4000));
-    String? seed = await sl.get<Vault>().getSeed();
-    String? pin = await sl.get<Vault>().getPin();
-    bool authMethodSet = await sl.get<SharedPrefsUtil>().get(SharedPrefsUtil.auth_method) != null;
-    if (!mounted) return;
+    try {
+      await Future.delayed(const Duration(milliseconds: 2000)); // Reducido a 2s para mejor UX
+      
+      String? seed;
+      try {
+        seed = await sl.get<Vault>().getSeed();
+      } catch (e) {
+        print("Vault Seed error: $e");
+      }
 
-    if (seed == null) {
-      setState(() => _state = IntroState.welcome);
-    } else if (pin == null) {
-      setState(() => _state = IntroState.setPin);
-    } else if (!authMethodSet) {
-      setState(() => _state = IntroState.securityChoice);
-    } else {
-      setState(() => _state = IntroState.unlock);
+      String? pin;
+      try {
+        pin = await sl.get<Vault>().getPin();
+      } catch (e) {
+        print("Vault Pin error: $e");
+      }
+
+      bool authMethodSet = false;
+      try {
+        authMethodSet = await sl.get<SharedPrefsUtil>().get(SharedPrefsUtil.auth_method) != null;
+      } catch (e) {
+        print("Prefs error: $e");
+      }
+
+      if (!mounted) return;
+
+      if (seed == null) {
+        setState(() => _state = IntroState.welcome);
+      } else if (pin == null) {
+        setState(() => _state = IntroState.setPin);
+      } else if (!authMethodSet) {
+        setState(() => _state = IntroState.securityChoice);
+      } else {
+        setState(() => _state = IntroState.unlock);
+      }
+    } catch (e) {
+      print("Global init error: $e");
+      if (mounted) {
+        setState(() => _state = IntroState.welcome);
+      }
     }
   }
 

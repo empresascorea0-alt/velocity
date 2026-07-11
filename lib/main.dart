@@ -15,23 +15,27 @@ import 'package:velocity/ui/app_root.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
-
-  // load environment variables:
+// load environment variables:
+try {
   await dotenv.load();
+} catch (e) {
+  print("Could not load .env file");
+}
 
-  // Setup Service Provider
-  setupServiceLocator();
-  
-  // Setup logger, only show warning and higher in release mode.
-  if (kReleaseMode) {
-    Logger.level = Level.warning;
-  } else {
-    Logger.level = Level.verbose;
-  }
-  
-  // Setup firebase
+// Setup Service Provider
+setupServiceLocator();
+
+// Setup logger
+Logger.level = kReleaseMode ? Level.warning : Level.verbose;
+
+// Setup firebase (Standard initialization)
+try {
   await Firebase.initializeApp(
-      options: DefaultFirebaseOptions.currentPlatform, name: "wallet_flutter");
+      options: DefaultFirebaseOptions.currentPlatform);
+} catch (e) {
+  print("Firebase initialization error: $e");
+}
+
 
   if (kReleaseMode) {
     await SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);

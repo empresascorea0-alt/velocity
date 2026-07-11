@@ -62,7 +62,7 @@ class LumexAccounts {
   }
 
   static String findAccountInString(int type, String value) {
-    return NanoAccounts.findAccountInString(type, value);
+    return NanoAccounts.findAccountInString(type, value) ?? "";
   }
 
   static bool isValid(int type, String address) {
@@ -101,10 +101,10 @@ class LumexAmounts {
 
 class LumexCrypt {
   static Uint8List decrypt(String encrypted, Uint8List key) {
-    return NanoCrypt.decrypt(NanoHelpers.hexToBytes(encrypted), key);
+    return NanoCrypt.decrypt(NanoHelpers.hexToBytes(encrypted), NanoHelpers.byteToHex(key));
   }
   
   static String encrypt(Uint8List data, Uint8List key) {
-    return NanoHelpers.byteToHex(NanoCrypt.encrypt(data, key));
+    return NanoHelpers.byteToHex(NanoCrypt.encrypt(data, NanoHelpers.byteToHex(key)));
   }
 }

@@ -2,7 +2,7 @@
 
 ![Cover](/assets/banner.png)
 
-### Feature Packed LUMEX Wallet
+### Feature Packed LUMEX Wallet (Build v2)
 
 <a href="https://velocity.io/promo">
    <img src="https://imagedelivery.net/uA65-M4gr037oB0C4RNdvw/c6fef9c3-dc48-4973-8303-c4d35e655d00/public" width="200">

@@ -104,6 +104,11 @@ jobs:
           
           flutter pub run build_runner build --delete-conflicting-outputs
 
+      - name: Verify Native Libraries
+        run: |
+          echo "Verifying JNI libraries..."
+          ls -R android/app/src/main/jniLibs
+
       - name: Build APK (Debug)
         run: flutter build apk --debug
 

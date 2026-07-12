@@ -1,4 +1,4 @@
-# Nautilus Wallet
+# Nautilus Wallet (Trigger Build: Safe UI Mode)
 
 ![Cover](/assets/banner.png)
 

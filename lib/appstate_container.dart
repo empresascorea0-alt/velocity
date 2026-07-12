@@ -136,7 +136,17 @@ class StateContainer extends StatefulWidget {
 ///
 /// Basically the central hub behind the entire app
 class StateContainerState extends State<StateContainer> {
-  final Logger log = sl.get<Logger>();
+  Logger? _log;
+  Logger get log {
+    if (_log == null) {
+      try {
+        _log = sl.get<Logger>();
+      } catch (e) {
+        _log = Logger(printer: PrettyPrinter());
+      }
+    }
+    return _log!;
+  }
 
   // Minimum receive = 0.000001 Lumex
   // String receiveThreshold = BigInt.from(10).pow(24).toString();
@@ -512,9 +522,19 @@ class StateContainerState extends State<StateContainer> {
   void initState() {
     super.initState();
 
+    // Safe mode initialization
+    try {
+      _initSafe();
+    } catch (e) {
+      print("Global initState error: $e");
+    }
+  }
+
+  Future<void> _initSafe() async {
     try {
       // Set currency locale here for the UI to access
-      sl.get<SharedPrefsUtil>().getCurrency(deviceLocale).then((AvailableCurrency currency) {
+      final prefs = sl.get<SharedPrefsUtil>();
+      prefs.getCurrency(deviceLocale).then((AvailableCurrency currency) {
         if (mounted) {
           setState(() {
             currencyLocale = currency.getLocale().toString();

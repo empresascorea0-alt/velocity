@@ -6,7 +6,11 @@ import 'package:velocity/service_locator.dart';
 import 'package:velocity/ui/app_root.dart';
 
 void main() async {
-  WidgetsFlutterBinding.ensureInitialized();
+  try {
+    WidgetsFlutterBinding.ensureInitialized();
+  } catch (e) {
+    print("Binding initialization error: $e");
+  }
 
   // Initialize service locator but we will try-catch it
   try {
@@ -16,7 +20,11 @@ void main() async {
   }
 
   // Force portrait mode
-  await SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
+  try {
+    await SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
+  } catch (e) {
+    print("Orientation error: $e");
+  }
   
   runApp(const StateContainer(child: AppRoot()));
 }

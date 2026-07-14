@@ -95,7 +95,7 @@ class WalletHomeScreen extends StatelessWidget {
         border: Border(left: BorderSide(color: borderColor, width: 4)),
       ),
       child: Column(
-        crossAxisAlignment: Alignment.start,
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(title, style: TextStyle(color: theme.text30, fontSize: 10, fontWeight: FontWeight.bold, letterSpacing: 1)),
           const SizedBox(height: 4),

@@ -1503,7 +1503,7 @@ class StitchTheme extends BaseTheme {
   static const Color primaryFixedDim = Color(0xFFE9C400);
   static const Color glassBase = Color(0xFF1C1D21);
 
-  static const Color tertiary = Color(0xFF00DBE8);
+  static const Color stitchTertiary = Color(0xFF00DBE8);
   static const Color tertiaryContainer = Color(0xFF00F1FF);
 
   static const Color white = Color(0xFFFFFFFF);
@@ -1552,10 +1552,10 @@ class StitchTheme extends BaseTheme {
   Color? errorDark = redDark;
   Color? errorDark30 = redDark.withOpacity(0.3);
 
-  Color? tertiary = Color(0xFF00DBE8);
-  Color? tertiary60 = Color(0xFF00DBE8).withOpacity(0.6);
-  Color? tertiary30 = Color(0xFF00DBE8).withOpacity(0.3);
-  Color? tertiary15 = Color(0xFF00DBE8).withOpacity(0.15);
+  Color? tertiary = stitchTertiary;
+  Color? tertiary60 = stitchTertiary.withOpacity(0.6);
+  Color? tertiary30 = stitchTertiary.withOpacity(0.3);
+  Color? tertiary15 = stitchTertiary.withOpacity(0.15);
 
   Color? background = stitchBg;
   Color? background40 = stitchBg.withOpacity(0.4);

@@ -31,37 +31,57 @@ class _DashboardScreenState extends State<DashboardScreen> {
     return Scaffold(
       backgroundColor: theme.background,
       extendBody: true,
-      appBar: AppBar(
-        backgroundColor: theme.background!.withOpacity(0.8),
-        elevation: 0,
-        title: Text(
-          'VELOCITY',
-          style: TextStyle(
-            color: theme.primary,
-            fontSize: 24,
-            fontWeight: FontWeight.w900,
-            letterSpacing: 8,
+      extendBodyBehindAppBar: true,
+      appBar: PreferredSize(
+        preferredSize: const Size.fromHeight(64),
+        child: ClipRRect(
+          child: BackdropFilter(
+            filter: ImageFilter.blur(sigmaX: 20, sigmaY: 20),
+            child: AppBar(
+              backgroundColor: theme.background!.withOpacity(0.8),
+              elevation: 0,
+              title: Text(
+                'VELOCITY',
+                style: TextStyle(
+                  color: theme.primary,
+                  fontSize: 24,
+                  fontWeight: FontWeight.w200, // Light weight as per display-wordmark
+                  letterSpacing: 10,
+                  fontFamily: 'Sora',
+                ),
+              ),
+              centerTitle: true,
+              leading: IconButton(
+                icon: Icon(Icons.menu, color: theme.text60),
+                onPressed: () {},
+              ),
+              actions: [
+                IconButton(
+                  icon: Icon(Icons.account_circle, color: theme.text60),
+                  onPressed: () {},
+                ),
+                const SizedBox(width: 8),
+              ],
+              bottom: PreferredSize(
+                preferredSize: const Size.fromHeight(1),
+                child: Divider(color: Colors.white.withOpacity(0.05), height: 1),
+              ),
+            ),
           ),
         ),
-        centerTitle: true,
-        leading: Icon(Icons.menu, color: theme.primary),
-        actions: [
-          Icon(Icons.account_circle, color: theme.primary),
-          const SizedBox(width: 16),
-        ],
       ),
       body: _pages[_currentIndex],
       bottomNavigationBar: SafeArea(
         child: Container(
-          height: 80,
-          padding: const EdgeInsets.fromLTRB(24, 8, 24, 16),
+          height: 64,
+          margin: const EdgeInsets.fromLTRB(24, 0, 24, 32),
           child: ClipRRect(
             borderRadius: BorderRadius.circular(100),
             child: BackdropFilter(
-              filter: ImageFilter.blur(sigmaX: 20, sigmaY: 20),
+              filter: ImageFilter.blur(sigmaX: 24, sigmaY: 24),
               child: Container(
                 decoration: BoxDecoration(
-                  color: const Color(0xFF231F14).withOpacity(0.7),
+                  color: const Color(0xFF231F14).withOpacity(0.6),
                   borderRadius: BorderRadius.circular(100),
                   border: Border.all(color: Colors.white.withOpacity(0.1)),
                 ),
@@ -84,32 +104,37 @@ class _DashboardScreenState extends State<DashboardScreen> {
 
   Widget _buildNavItem(int index, IconData icon, String label, dynamic theme) {
     final isSelected = _currentIndex == index;
-    final color = isSelected ? theme.primary : const Color(0xFFC7C6CB);
+    final color = isSelected ? theme.primary : const Color(0xFFC7C6CB).withOpacity(0.6);
 
     return GestureDetector(
       onTap: () => setState(() => _currentIndex = index),
       behavior: HitTestBehavior.opaque,
-      child: Column(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          Icon(
-            icon,
-            color: color,
-            size: 24,
-            shadows: isSelected ? [
-              Shadow(color: theme.primary.withOpacity(0.3), blurRadius: 8),
-            ] : null,
-          ),
-          const SizedBox(height: 2),
-          Text(
-            label,
-            style: TextStyle(
+      child: AnimatedScale(
+        duration: const Duration(milliseconds: 300),
+        scale: isSelected ? 1.0 : 0.95,
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Icon(
+              icon,
               color: color,
-              fontSize: 10,
-              fontWeight: isSelected ? FontWeight.bold : FontWeight.normal,
+              size: 26,
+              shadows: isSelected ? [
+                Shadow(color: theme.primary.withOpacity(0.5), blurRadius: 12),
+              ] : null,
             ),
-          ),
-        ],
+            const SizedBox(height: 2),
+            Text(
+              label,
+              style: TextStyle(
+                color: color,
+                fontSize: 10,
+                fontWeight: isSelected ? FontWeight.bold : FontWeight.normal,
+                letterSpacing: -0.5,
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }

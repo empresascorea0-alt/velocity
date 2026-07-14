@@ -636,6 +636,21 @@ class AppStyles {
       fontWeight: FontWeight.w700,
     );
   }
+
+  // Premium Effects
+  static List<Shadow> neonGlow(Color color) {
+    return [
+      Shadow(color: color.withOpacity(0.4), blurRadius: 20),
+    ];
+  }
+
+  static Decoration glassDecoration({double opacity = 0.4, double borderRadius = 16}) {
+    return BoxDecoration(
+      color: const Color(0xFF1C1D21).withOpacity(opacity),
+      borderRadius: BorderRadius.circular(borderRadius),
+      border: Border.all(color: Colors.white.withOpacity(0.08)),
+    );
+  }
 }
 
 class AppFontSizes {

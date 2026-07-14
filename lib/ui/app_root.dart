@@ -48,17 +48,16 @@ class _AppRootState extends State<AppRoot> {
 
   Future<void> _onSplashFinished() async {
     // Determine where to go after splash
-    final prefs = sl.get<SharedPrefsUtil>();
     final vault = sl.get<Vault>();
     
-    bool hasSeed = await vault.hasSeed();
-    if (!hasSeed) {
+    String? seed = await vault.getSeed();
+    if (seed == null) {
       setState(() => _state = IntroState.welcome);
       return;
     }
 
-    bool pinSet = await prefs.getPinSet();
-    if (!pinSet) {
+    String? pin = await vault.getPin();
+    if (pin == null) {
       setState(() => _state = IntroState.setPin);
       return;
     }

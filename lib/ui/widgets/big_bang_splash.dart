@@ -1,5 +1,6 @@
 import 'dart:math' as math;
 import 'package:flutter/material.dart';
+import 'package:velocity/appstate_container.dart';
 
 class BigBangSplash extends StatefulWidget {
   final VoidCallback? onFinished;

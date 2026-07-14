@@ -65,6 +65,41 @@ class WalletHomeScreen extends StatelessWidget {
           // Example Transactions
           _buildTransaction(theme, 'Staking Reward', '+ 1,250.00', theme.success!),
           _buildTransaction(theme, 'Transfer to Exchange', '- 50,000.00', theme.text!),
+          const SizedBox(height: 48),
+          // Assets Section
+          Align(
+            alignment: Alignment.centerLeft,
+            child: Text('Vault Assets',
+                style: TextStyle(color: theme.text, fontSize: 20, fontWeight: FontWeight.bold)),
+          ),
+          const SizedBox(height: 16),
+          Row(
+            children: [
+              Expanded(child: _buildAssetCard(theme, 'STAKED', '12.5M LMX', theme.primary!)),
+              const SizedBox(width: 16),
+              Expanded(child: _buildAssetCard(theme, 'LIQUID', '7.5M LMX', theme.tertiary!)),
+            ],
+          ),
+          const SizedBox(height: 100),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildAssetCard(dynamic theme, String title, String value, Color borderColor) {
+    return Container(
+      padding: const EdgeInsets.all(16),
+      decoration: BoxDecoration(
+        color: const Color(0xFF1C1D21).withOpacity(0.4),
+        borderRadius: BorderRadius.circular(16),
+        border: Border(left: BorderSide(color: borderColor, width: 4)),
+      ),
+      child: Column(
+        crossAxisAlignment: Alignment.start,
+        children: [
+          Text(title, style: TextStyle(color: theme.text30, fontSize: 10, fontWeight: FontWeight.bold, letterSpacing: 1)),
+          const SizedBox(height: 4),
+          Text(value, style: TextStyle(color: theme.text, fontSize: 16, fontWeight: FontWeight.bold)),
         ],
       ),
     );

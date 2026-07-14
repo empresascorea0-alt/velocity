@@ -57,6 +57,11 @@ abstract class BaseTheme {
   Color? errorDark;
   Color? errorDark30;
 
+  Color? tertiary;
+  Color? tertiary60;
+  Color? tertiary30;
+  Color? tertiary15;
+
   Color? background;
   Color? background40;
   Color? background00;
@@ -1490,13 +1495,16 @@ class PerishableTheme extends BaseTheme {
 }
 
 class StitchTheme extends BaseTheme {
-  static const Color stitchGold = Color(0xFFF5C400);
-  static const Color stitchBg = Color(0xFF050505);
-  static const Color stitchDarkBg = Color(0xFF000000);
+  static const Color stitchGold = Color(0xFFFFD700);
+  static const Color stitchBg = Color(0xFF0B0C10);
+  static const Color stitchDarkBg = Color(0xFF050505);
   static const Color surface = Color(0xFF161308);
   static const Color onSurface = Color(0xFFEAE2CF);
   static const Color primaryFixedDim = Color(0xFFE9C400);
   static const Color glassBase = Color(0xFF1C1D21);
+
+  static const Color tertiary = Color(0xFF00DBE8);
+  static const Color tertiaryContainer = Color(0xFF00F1FF);
 
   static const Color white = Color(0xFFFFFFFF);
   static const Color black = Color(0xFF000000);
@@ -1504,7 +1512,7 @@ class StitchTheme extends BaseTheme {
   static const Color green = Color(0xFF41E099);
   static const Color greenDark = Color(0xFF148A55);
 
-  static const Color yellow = Color(0xFFF5C400);
+  static const Color yellow = Color(0xFFFFD700);
   static const Color yellowDark = Color(0xFFE9C400);
 
   static const Color red = Color(0xFFE80000);
@@ -1544,12 +1552,17 @@ class StitchTheme extends BaseTheme {
   Color? errorDark = redDark;
   Color? errorDark30 = redDark.withOpacity(0.3);
 
+  Color? tertiary = Color(0xFF00DBE8);
+  Color? tertiary60 = Color(0xFF00DBE8).withOpacity(0.6);
+  Color? tertiary30 = Color(0xFF00DBE8).withOpacity(0.3);
+  Color? tertiary15 = Color(0xFF00DBE8).withOpacity(0.15);
+
   Color? background = stitchBg;
   Color? background40 = stitchBg.withOpacity(0.4);
   Color? background00 = stitchBg.withOpacity(0.0);
 
-  Color? backgroundDark = stitchDarkBg;
-  Color? backgroundDark00 = stitchDarkBg.withOpacity(0.0);
+  Color? backgroundDark = surface;
+  Color? backgroundDark00 = surface.withOpacity(0.0);
 
   Color? backgroundDarkest = stitchDarkBg;
 

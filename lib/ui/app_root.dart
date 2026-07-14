@@ -33,9 +33,10 @@ class _AppRootState extends State<AppRoot> {
 
   Future<void> _checkInitialState() async {
     try {
-      // Direct navigation to welcome to avoid any potential crashes in background logic
+      // Delay for a short period to allow initial logo to show (system splash)
+      await Future.delayed(const Duration(milliseconds: 500));
       if (mounted) {
-        setState(() => _state = IntroState.welcome);
+        setState(() => _state = IntroState.splash);
       }
     } catch (e) {
       print("Global init error: $e");
@@ -43,6 +44,26 @@ class _AppRootState extends State<AppRoot> {
         setState(() => _state = IntroState.welcome);
       }
     }
+  }
+
+  Future<void> _onSplashFinished() async {
+    // Determine where to go after splash
+    final prefs = sl.get<SharedPrefsUtil>();
+    final vault = sl.get<Vault>();
+    
+    bool hasSeed = await vault.hasSeed();
+    if (!hasSeed) {
+      setState(() => _state = IntroState.welcome);
+      return;
+    }
+
+    bool pinSet = await prefs.getPinSet();
+    if (!pinSet) {
+      setState(() => _state = IntroState.setPin);
+      return;
+    }
+
+    setState(() => _state = IntroState.unlock);
   }
 
   Future<void> _handleSeed(String seed) async {
@@ -57,7 +78,7 @@ class _AppRootState extends State<AppRoot> {
     Widget body;
     switch (_state) {
       case IntroState.splash:
-        body = const BigBangSplash();
+        body = BigBangSplash(onFinished: _onSplashFinished);
         break;
       case IntroState.welcome:
         body = WelcomeScreen(

@@ -1490,9 +1490,9 @@ class PerishableTheme extends BaseTheme {
 }
 
 class StitchTheme extends BaseTheme {
-  static const Color stitchGold = Color(0xFFFFD700);
-  static const Color stitchBg = Color(0xFF0B0C10);
-  static const Color stitchDarkBg = Color(0xFF050505);
+  static const Color stitchGold = Color(0xFFF5C400);
+  static const Color stitchBg = Color(0xFF050505);
+  static const Color stitchDarkBg = Color(0xFF000000);
   static const Color surface = Color(0xFF161308);
   static const Color onSurface = Color(0xFFEAE2CF);
   static const Color primaryFixedDim = Color(0xFFE9C400);
@@ -1504,8 +1504,8 @@ class StitchTheme extends BaseTheme {
   static const Color green = Color(0xFF41E099);
   static const Color greenDark = Color(0xFF148A55);
 
-  static const Color yellow = Color(0xFFFFB300);
-  static const Color yellowDark = Color(0xFFFFCB00);
+  static const Color yellow = Color(0xFFF5C400);
+  static const Color yellowDark = Color(0xFFE9C400);
 
   static const Color red = Color(0xFFE80000);
   static const Color redDark = Color(0xFFB20000);

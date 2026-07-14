@@ -2,7 +2,8 @@ import 'dart:math' as math;
 import 'package:flutter/material.dart';
 
 class BigBangSplash extends StatefulWidget {
-  const BigBangSplash({super.key});
+  final VoidCallback? onFinished;
+  const BigBangSplash({super.key, this.onFinished});
 
   @override
   State<BigBangSplash> createState() => _BigBangSplashState();
@@ -24,6 +25,12 @@ class _BigBangSplashState extends State<BigBangSplash>
       vsync: this,
       duration: const Duration(milliseconds: 4000),
     );
+
+    _controller.addStatusListener((status) {
+      if (status == AnimationStatus.completed) {
+        widget.onFinished?.call();
+      }
+    });
 
     // Expansion starts at t=0
     _expansion = CurvedAnimation(
@@ -66,8 +73,11 @@ class _BigBangSplashState extends State<BigBangSplash>
 
   @override
   Widget build(BuildContext context) {
+    final theme = StateContainer.of(context).curTheme;
+    final primaryColor = theme.primary ?? const Color(0xFFF5C400);
+
     return Scaffold(
-      backgroundColor: const Color(0xFF0B0C10),
+      backgroundColor: theme.background,
       body: Stack(
         fit: StackFit.expand,
         children: [
@@ -79,6 +89,7 @@ class _BigBangSplashState extends State<BigBangSplash>
                 painter: BigBangPainter(
                   expansion: _expansion.value,
                   fadeOut: _fadeOut.value,
+                  color: primaryColor,
                 ),
               );
             },
@@ -95,10 +106,10 @@ class _BigBangSplashState extends State<BigBangSplash>
                     child: Column(
                       mainAxisSize: MainAxisSize.min,
                       children: [
-                        const Text(
+                        Text(
                           'VELOCITY',
                           style: TextStyle(
-                            color: Color(0xFFFFD700),
+                            color: primaryColor,
                             fontSize: 48,
                             fontWeight: FontWeight.w900,
                             letterSpacing: 10,
@@ -109,7 +120,7 @@ class _BigBangSplashState extends State<BigBangSplash>
                         Text(
                           'THE VALUE IS YOURS. YOURS ALONE.',
                           style: TextStyle(
-                            color: const Color(0xFFEAE2CF),
+                            color: theme.text,
                             fontSize: 12,
                             fontWeight: FontWeight.w600,
                             letterSpacing: 2,
@@ -133,11 +144,11 @@ class _BigBangSplashState extends State<BigBangSplash>
               builder: (context, child) {
                 return Opacity(
                   opacity: _signatureOpacity.value,
-                  child: const Center(
+                  child: Center(
                     child: Text(
                       'DESIGNED BY LUMEX',
                       style: TextStyle(
-                        color: Color(0xFF999077),
+                        color: theme.text30,
                         fontSize: 12,
                         fontWeight: FontWeight.w600,
                         letterSpacing: 4,
@@ -158,8 +169,13 @@ class _BigBangSplashState extends State<BigBangSplash>
 class BigBangPainter extends CustomPainter {
   final double expansion;
   final double fadeOut;
+  final Color color;
 
-  BigBangPainter({required this.expansion, required this.fadeOut});
+  BigBangPainter({
+    required this.expansion,
+    required this.fadeOut,
+    required this.color,
+  });
 
   @override
   void paint(Canvas canvas, Size size) {
@@ -167,7 +183,7 @@ class BigBangPainter extends CustomPainter {
 
     final center = Offset(size.width / 2, size.height / 2);
     final paint = Paint()
-      ..color = const Color(0xFFFFD700).withOpacity((1.0 - fadeOut) * 0.8)
+      ..color = color.withOpacity((1.0 - fadeOut) * 0.8)
       ..style = PaintingStyle.fill;
 
     // Center glow
@@ -176,7 +192,7 @@ class BigBangPainter extends CustomPainter {
       center,
       glowRadius,
       Paint()
-        ..color = const Color(0xFFFFD700).withOpacity((1.0 - fadeOut) * 0.5)
+        ..color = color.withOpacity((1.0 - fadeOut) * 0.5)
         ..maskFilter = MaskFilter.blur(BlurStyle.normal, glowRadius),
     );
 
@@ -196,7 +212,7 @@ class BigBangPainter extends CustomPainter {
         center,
         end,
         Paint()
-          ..color = const Color(0xFFFFD700).withOpacity((1.0 - fadeOut) * 0.3)
+          ..color = color.withOpacity((1.0 - fadeOut) * 0.3)
           ..strokeWidth = thickness
           ..strokeCap = StrokeCap.round
           ..maskFilter = const MaskFilter.blur(BlurStyle.normal, 2),

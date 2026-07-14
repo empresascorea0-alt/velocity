@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:velocity/themes.dart';
 import 'package:velocity/model/setting_item.dart';
 
-enum ThemeOptions { VELOCITY, POTASSIUS, TITANIUM, INDIUM, SUNSHINE, NEPTUNIUM, THORIUM, CARBON, PURPELIUM, MONOCHROME, MIDNIGHT, PERISHABLE, STITCH }
+enum ThemeOptions { VELOCITY, POTASSIUS, TITANIUM, INDIUM, SUNSHINE, NEPTUNIUM, THORIUM, CARBON, PURPELIUM, MONOCHROME, MIDNIGHT, PERISHABLE, STITCH, CLASSIC_BLUE }
 
 /// Represent notification on/off setting
 class ThemeSetting extends SettingSelectionItem {
@@ -74,6 +74,8 @@ class ThemeSetting extends SettingSelectionItem {
         return MidnightTheme();
       case ThemeOptions.POTASSIUS:
         return PotassiusTheme();
+      case ThemeOptions.CLASSIC_BLUE:
+        return ClassicBlueTheme();
       case ThemeOptions.VELOCITY:
       default:
         return LumexTheme();

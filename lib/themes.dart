@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 enum OverlayTheme {
+  CLASSIC_BLUE,
   KALIUM,
   NATRIUM,
   IRIDIUM,
@@ -113,10 +114,10 @@ abstract class NyanTheme extends BaseTheme {
   // just used to distinguish between the two types of themes
 }
 
-class LumexTheme extends BaseTheme {
-  static const Color lumexBlue = Color(0xFF4080D7);
+class ClassicBlueTheme extends BaseTheme {
+  static const Color classicBlue = Color(0xFF4080D7);
 
-  static const Color main = lumexBlue;
+  static const Color main = classicBlue;
   static const Color bg = Color.fromRGBO(32, 32, 32, 1);
   static const Color bgDark = Color.fromRGBO(24, 24, 24, 1);
   static const Color bgDarkest = Color.fromRGBO(48, 48, 48, 1);
@@ -1495,19 +1496,16 @@ class PerishableTheme extends BaseTheme {
 }
 
 class StitchTheme extends BaseTheme {
-  static const Color stitchGold = Color(0xFFFFD700);
-  static const Color stitchBg = Color(0xFF0B0C10);
-  static const Color stitchDarkBg = Color(0xFF050505);
+  static const Color obsidian = Color(0xFF0B0C10);
+  static const Color electricYellow = Color(0xFFFFD700);
   static const Color surface = Color(0xFF161308);
   static const Color onSurface = Color(0xFFEAE2CF);
   static const Color primaryFixedDim = Color(0xFFE9C400);
-  static const Color glassBase = Color(0xFF1C1D21);
-
-  static const Color stitchTertiary = Color(0xFF00DBE8);
-  static const Color tertiaryContainer = Color(0xFF00F1FF);
+  static const Color tertiaryCyan = Color(0xFF00DBE8);
 
   static const Color white = Color(0xFFFFFFFF);
   static const Color black = Color(0xFF000000);
+  static const Color error = Color(0xFFFFB4AB);
 
   static const Color green = Color(0xFF41E099);
   static const Color greenDark = Color(0xFF148A55);
@@ -1518,13 +1516,13 @@ class StitchTheme extends BaseTheme {
   static const Color red = Color(0xFFE80000);
   static const Color redDark = Color(0xFFB20000);
 
-  Color? primary = stitchGold;
-  Color? primary60 = stitchGold.withOpacity(0.6);
-  Color? primary45 = stitchGold.withOpacity(0.45);
-  Color? primary30 = stitchGold.withOpacity(0.3);
-  Color? primary20 = stitchGold.withOpacity(0.2);
-  Color? primary15 = stitchGold.withOpacity(0.15);
-  Color? primary10 = stitchGold.withOpacity(0.1);
+  Color? primary = electricYellow;
+  Color? primary60 = electricYellow.withOpacity(0.6);
+  Color? primary45 = electricYellow.withOpacity(0.45);
+  Color? primary30 = electricYellow.withOpacity(0.3);
+  Color? primary20 = electricYellow.withOpacity(0.2);
+  Color? primary15 = electricYellow.withOpacity(0.15);
+  Color? primary10 = electricYellow.withOpacity(0.1);
 
   Color? success = green;
   Color? success60 = green.withOpacity(0.6);
@@ -1544,27 +1542,27 @@ class StitchTheme extends BaseTheme {
   Color? warningDark = yellowDark;
   Color? warningDark30 = yellowDark.withOpacity(0.3);
 
-  Color? error = red;
-  Color? error60 = red.withOpacity(0.6);
-  Color? error30 = red.withOpacity(0.3);
-  Color? error15 = red.withOpacity(0.15);
+  Color? errorColor = error;
+  Color? error60 = error.withOpacity(0.6);
+  Color? error30 = error.withOpacity(0.3);
+  Color? error15 = error.withOpacity(0.15);
 
   Color? errorDark = redDark;
   Color? errorDark30 = redDark.withOpacity(0.3);
 
-  Color? tertiary = stitchTertiary;
-  Color? tertiary60 = stitchTertiary.withOpacity(0.6);
-  Color? tertiary30 = stitchTertiary.withOpacity(0.3);
-  Color? tertiary15 = stitchTertiary.withOpacity(0.15);
+  Color? tertiary = tertiaryCyan;
+  Color? tertiary60 = tertiaryCyan.withOpacity(0.6);
+  Color? tertiary30 = tertiaryCyan.withOpacity(0.3);
+  Color? tertiary15 = tertiaryCyan.withOpacity(0.15);
 
-  Color? background = stitchBg;
-  Color? background40 = stitchBg.withOpacity(0.4);
-  Color? background00 = stitchBg.withOpacity(0.0);
+  Color? background = obsidian;
+  Color? background40 = obsidian.withOpacity(0.4);
+  Color? background00 = obsidian.withOpacity(0.0);
 
   Color? backgroundDark = surface;
   Color? backgroundDark00 = surface.withOpacity(0.0);
 
-  Color? backgroundDarkest = stitchDarkBg;
+  Color? backgroundDarkest = obsidian;
 
   Color? text = onSurface;
   Color? text60 = onSurface.withOpacity(0.6);

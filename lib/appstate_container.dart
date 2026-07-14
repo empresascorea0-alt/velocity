@@ -165,9 +165,7 @@ class StateContainerState extends State<StateContainer> {
   AvailableBlockExplorer curBlockExplorer =
       AvailableBlockExplorer(AvailableBlockExplorerEnum.LUMEXIO);
 
-  BaseTheme curTheme = PlatformDispatcher.instance.platformBrightness == Brightness.dark
-      ? StitchTheme()
-      : StitchTheme();
+  BaseTheme curTheme = StitchTheme();
   bool nyanoMode = false;
   bool bananoMode = false;
   String currencyMode = CurrencyModeSetting(CurrencyModeOptions.Lumex).getDisplayName();

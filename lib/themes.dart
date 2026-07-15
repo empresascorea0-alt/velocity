@@ -1497,99 +1497,98 @@ class PerishableTheme extends BaseTheme {
 }
 
 class StitchTheme extends BaseTheme {
-  static const Color obsidian = Color(0xFF0B0C10);
-  static const Color electricYellow = Color(0xFFFFD700);
-  static const Color surface = Color(0xFF161308);
-  static const Color onSurface = Color(0xFFEAE2CF);
-  static const Color primaryFixedDim = Color(0xFFE9C400);
-  static const Color tertiaryCyan = Color(0xFF00DBE8);
+  static const Color obsidianConst = Color(0xFF0B0C10);
+  static const Color electricYellowConst = Color(0xFFFFD700);
+  static const Color surfaceConst = Color(0xFF161308);
+  static const Color onSurfaceConst = Color(0xFFEAE2CF);
+  static const Color tertiaryCyanConst = Color(0xFF00DBE8);
 
-  static const Color white = Color(0xFFFFFFFF);
-  static const Color black = Color(0xFF000000);
-  static const Color error = Color(0xFFFFB4AB);
+  static const Color whiteConst = Color(0xFFFFFFFF);
+  static const Color blackConst = Color(0xFF000000);
+  static const Color errorConst = Color(0xFFFFB4AB);
 
-  static const Color green = Color(0xFF41E099);
-  static const Color greenDark = Color(0xFF148A55);
+  static const Color greenConst = Color(0xFF41E099);
+  static const Color greenDarkConst = Color(0xFF148A55);
 
-  static const Color yellow = Color(0xFFFFD700);
-  static const Color yellowDark = Color(0xFFE9C400);
+  static const Color yellowConst = Color(0xFFFFD700);
+  static const Color yellowDarkConst = Color(0xFFE9C400);
 
-  static const Color red = Color(0xFFE80000);
-  static const Color redDark = Color(0xFFB20000);
+  static const Color redConst = Color(0xFFE80000);
+  static const Color redDarkConst = Color(0xFFB20000);
 
-  Color? primary = electricYellow;
-  Color? primary60 = electricYellow.withOpacity(0.6);
-  Color? primary45 = electricYellow.withOpacity(0.45);
-  Color? primary30 = electricYellow.withOpacity(0.3);
-  Color? primary20 = electricYellow.withOpacity(0.2);
-  Color? primary15 = electricYellow.withOpacity(0.15);
-  Color? primary10 = electricYellow.withOpacity(0.1);
+  Color? primary = electricYellowConst;
+  Color? primary60 = electricYellowConst.withOpacity(0.6);
+  Color? primary45 = electricYellowConst.withOpacity(0.45);
+  Color? primary30 = electricYellowConst.withOpacity(0.3);
+  Color? primary20 = electricYellowConst.withOpacity(0.2);
+  Color? primary15 = electricYellowConst.withOpacity(0.15);
+  Color? primary10 = electricYellowConst.withOpacity(0.1);
 
-  Color? success = green;
-  Color? success60 = green.withOpacity(0.6);
-  Color? success45 = green.withOpacity(0.45);
-  Color? success30 = green.withOpacity(0.3);
-  Color? success15 = green.withOpacity(0.15);
+  Color? success = greenConst;
+  Color? success60 = greenConst.withOpacity(0.6);
+  Color? success45 = greenConst.withOpacity(0.45);
+  Color? success30 = greenConst.withOpacity(0.3);
+  Color? success15 = greenConst.withOpacity(0.15);
 
-  Color? successDark = greenDark;
-  Color? successDark30 = greenDark.withOpacity(0.3);
+  Color? successDark = greenDarkConst;
+  Color? successDark30 = greenDarkConst.withOpacity(0.3);
 
-  Color? warning = yellow;
-  Color? warning60 = yellow.withOpacity(0.6);
-  Color? warning45 = yellow.withOpacity(0.45);
-  Color? warning30 = yellow.withOpacity(0.3);
-  Color? warning15 = yellow.withOpacity(0.15);
+  Color? warning = yellowConst;
+  Color? warning60 = yellowConst.withOpacity(0.6);
+  Color? warning45 = yellowConst.withOpacity(0.45);
+  Color? warning30 = yellowConst.withOpacity(0.3);
+  Color? warning15 = yellowConst.withOpacity(0.15);
 
-  Color? warningDark = yellowDark;
-  Color? warningDark30 = yellowDark.withOpacity(0.3);
+  Color? warningDark = yellowDarkConst;
+  Color? warningDark30 = yellowDarkConst.withOpacity(0.3);
 
-  Color? errorColor = error;
-  Color? error60 = error.withOpacity(0.6);
-  Color? error30 = error.withOpacity(0.3);
-  Color? error15 = error.withOpacity(0.15);
+  Color? error = errorConst;
+  Color? error60 = errorConst.withOpacity(0.6);
+  Color? error30 = errorConst.withOpacity(0.3);
+  Color? error15 = errorConst.withOpacity(0.15);
 
-  Color? errorDark = redDark;
-  Color? errorDark30 = redDark.withOpacity(0.3);
+  Color? errorDark = redDarkConst;
+  Color? errorDark30 = redDarkConst.withOpacity(0.3);
 
-  Color? tertiary = tertiaryCyan;
-  Color? tertiary60 = tertiaryCyan.withOpacity(0.6);
-  Color? tertiary30 = tertiaryCyan.withOpacity(0.3);
-  Color? tertiary15 = tertiaryCyan.withOpacity(0.15);
+  Color? tertiary = tertiaryCyanConst;
+  Color? tertiary60 = tertiaryCyanConst.withOpacity(0.6);
+  Color? tertiary30 = tertiaryCyanConst.withOpacity(0.3);
+  Color? tertiary15 = tertiaryCyanConst.withOpacity(0.15);
 
-  Color? background = obsidian;
-  Color? background40 = obsidian.withOpacity(0.4);
-  Color? background00 = obsidian.withOpacity(0.0);
+  Color? background = obsidianConst;
+  Color? background40 = obsidianConst.withOpacity(0.4);
+  Color? background00 = obsidianConst.withOpacity(0.0);
 
-  Color? backgroundDark = surface;
-  Color? backgroundDark00 = surface.withOpacity(0.0);
+  Color? backgroundDark = surfaceConst;
+  Color? backgroundDark00 = surfaceConst.withOpacity(0.0);
 
-  Color? backgroundDarkest = obsidian;
+  Color? backgroundDarkest = obsidianConst;
 
-  Color? text = onSurface;
-  Color? text60 = onSurface.withOpacity(0.6);
-  Color? text45 = onSurface.withOpacity(0.45);
-  Color? text30 = onSurface.withOpacity(0.3);
-  Color? text20 = onSurface.withOpacity(0.2);
-  Color? text15 = onSurface.withOpacity(0.15);
-  Color? text10 = onSurface.withOpacity(0.1);
-  Color? text05 = onSurface.withOpacity(0.05);
-  Color? text03 = onSurface.withOpacity(0.03);
+  Color? text = onSurfaceConst;
+  Color? text60 = onSurfaceConst.withOpacity(0.6);
+  Color? text45 = onSurfaceConst.withOpacity(0.45);
+  Color? text30 = onSurfaceConst.withOpacity(0.3);
+  Color? text20 = onSurfaceConst.withOpacity(0.2);
+  Color? text15 = onSurfaceConst.withOpacity(0.15);
+  Color? text10 = onSurfaceConst.withOpacity(0.1);
+  Color? text05 = onSurfaceConst.withOpacity(0.05);
+  Color? text03 = onSurfaceConst.withOpacity(0.03);
 
-  Color? overlay90 = black.withOpacity(0.9);
-  Color? overlay85 = black.withOpacity(0.85);
-  Color? overlay80 = black.withOpacity(0.8);
-  Color? overlay70 = black.withOpacity(0.7);
-  Color? overlay50 = black.withOpacity(0.5);
-  Color? overlay30 = black.withOpacity(0.3);
-  Color? overlay20 = black.withOpacity(0.2);
+  Color? overlay90 = blackConst.withOpacity(0.9);
+  Color? overlay85 = blackConst.withOpacity(0.85);
+  Color? overlay80 = blackConst.withOpacity(0.8);
+  Color? overlay70 = blackConst.withOpacity(0.7);
+  Color? overlay50 = blackConst.withOpacity(0.5);
+  Color? overlay30 = blackConst.withOpacity(0.3);
+  Color? overlay20 = blackConst.withOpacity(0.2);
 
-  Color? barrier = black.withOpacity(0.7);
-  Color? barrierWeaker = black.withOpacity(0.4);
-  Color? barrierWeakest = black.withOpacity(0.3);
-  Color? barrierStronger = black.withOpacity(0.85);
+  Color? barrier = blackConst.withOpacity(0.7);
+  Color? barrierWeaker = blackConst.withOpacity(0.4);
+  Color? barrierWeakest = blackConst.withOpacity(0.3);
+  Color? barrierStronger = blackConst.withOpacity(0.85);
 
-  Color? animationOverlayMedium = black.withOpacity(0.7);
-  Color? animationOverlayStrong = black.withOpacity(0.85);
+  Color? animationOverlayMedium = blackConst.withOpacity(0.7);
+  Color? animationOverlayStrong = blackConst.withOpacity(0.85);
 
   Brightness? brightness = Brightness.dark;
   SystemUiOverlayStyle? statusBar = SystemUiOverlayStyle.light.copyWith(statusBarColor: Colors.transparent);

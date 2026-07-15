@@ -79,7 +79,7 @@ dependencies:
   json_annotation: ^4.9.0
 
   # Localization
-  intl: ^0.19.0
+  intl: ^0.20.2
   # BigDecimal alternative
   decimal: ^2.3.0
 
@@ -263,6 +263,7 @@ flutter_intl:
 dependency_overrides:
   http: ^1.1.0
   uuid: ^4.1.0
+  intl: ^0.20.2
   # ffi: ^2.0.1
   ffi: 2.0.1
   package_info_plus: ^4.0.0

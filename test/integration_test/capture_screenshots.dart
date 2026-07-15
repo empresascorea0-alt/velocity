@@ -15,7 +15,7 @@ import 'package:integration_test/integration_test.dart';
 import 'package:logger/logger.dart';
 import 'package:velocity/appstate_container.dart';
 import 'package:velocity/firebase_options.dart';
-import 'package:velocity/main.dart' as app;
+import 'package:velocity/ui/app_root.dart';
 import 'package:velocity/service_locator.dart';
 
 Future<void> pumpForSeconds(WidgetTester tester, int seconds) async {
@@ -101,7 +101,7 @@ Future<void> appMain() async {
   runApp(const RepaintBoundary(
     key: ValueKey<String>("screenshotter"),
     child: StateContainer(
-      child: app.App(),
+      child: AppRoot(),
     ),
   ));
 

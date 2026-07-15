@@ -289,7 +289,7 @@ class SharedPrefsUtil {
   }
 
   Future<ThemeSetting> getTheme() async {
-    const int defaultValue = ThemeOptions.VELOCITY.index;
+    final int defaultValue = ThemeOptions.VELOCITY.index;
     return ThemeSetting(ThemeOptions.values[(await get(cur_theme, defaultValue: defaultValue) as int)]);
   }
 

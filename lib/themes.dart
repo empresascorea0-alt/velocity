@@ -115,12 +115,13 @@ abstract class NyanTheme extends BaseTheme {
 }
 
 class ClassicBlueTheme extends BaseTheme {
-  static const Color classicBlue = Color(0xFF4080D7);
+  static const Color obsidian = Color(0xFF0B0C10);
+  static const Color electricYellow = Color(0xFFFFD700);
 
-  static const Color main = classicBlue;
-  static const Color bg = Color.fromRGBO(32, 32, 32, 1);
-  static const Color bgDark = Color.fromRGBO(24, 24, 24, 1);
-  static const Color bgDarkest = Color.fromRGBO(48, 48, 48, 1);
+  static const Color main = electricYellow;
+  static const Color bg = obsidian;
+  static const Color bgDark = Color(0xFF000000);
+  static const Color bgDarkest = Color(0xFF161308);
 
   static const Color white = Color(0xFFFFFFFF);
   static const Color black = Color(0xFF000000);
@@ -128,8 +129,8 @@ class ClassicBlueTheme extends BaseTheme {
   static const Color green = Color(0xFF41E099);
   static const Color greenDark = Color(0xFF148A55);
 
-  static const Color yellow = Color(0xFFFFB300);
-  static const Color yellowDark = Color(0xFFFFCB00);
+  static const Color yellow = Color(0xFFFFD700);
+  static const Color yellowDark = Color(0xFFE9C400);
 
   static const Color red = Color(0xFFE80000);
   static const Color redDark = Color(0xFFB20000);
@@ -513,7 +514,7 @@ class IndiumTheme extends BaseTheme {
 }
 
 class SunshineTheme extends BaseTheme {
-  static const Color lumexBlue = Color(0xFF4080D7);
+  static const Color lumexBlue = Color(0xFFFFD700);
 
   static const Color bg = Color(0xFFFFCB42);
   static const Color bgDark = Color(0xFFFFB200);
@@ -1250,7 +1251,7 @@ class MonochromeTheme extends BaseTheme {
 }
 
 class MidnightTheme extends BaseTheme {
-  static const Color lumexBlue = Color(0xFF4080D7);
+  static const Color lumexBlue = Color(0xFFFFD700);
   static const Color brighterBlue = Color(0xFF80BAC7);
   // some test colors:
   // current: #B999F0
@@ -1365,7 +1366,7 @@ class MidnightTheme extends BaseTheme {
 }
 
 class PerishableTheme extends BaseTheme {
-  static const Color lumexBlue = Color(0xFF4080D7);
+  static const Color lumexBlue = Color(0xFFFFD700);
 
   // static const Color perishPurple = Color(0xFF9A5EFC);
   // // static const Color perishPurple = Color(0xFF6305fa);
@@ -1596,6 +1597,8 @@ class StitchTheme extends BaseTheme {
   BoxShadow? boxShadow = const BoxShadow(color: Colors.transparent);
   BoxShadow? boxShadowButton = const BoxShadow(color: Colors.transparent);
 }
+
+class LumexTheme extends StitchTheme {}
 
 enum AppIconEnum { NAUTILUS, TITANIUM, INDIUM, SUNSHINE, NEPTUNIUM, THORIUM, CARBON, PURPELIUM, NYANO }
 

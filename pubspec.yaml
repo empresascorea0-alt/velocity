@@ -33,7 +33,7 @@ dependencies:
   flutter_contacts: ^1.1.4
 
   # uuid:
-  uuid: ^3.0.6
+  uuid: ^4.1.0
 
   # Securely store data in a keystore
   flutter_secure_storage: ^9.0.0

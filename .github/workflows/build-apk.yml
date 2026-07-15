@@ -56,8 +56,8 @@ jobs:
           if ! command -v cbindgen &> /dev/null; then
             cargo install cbindgen
           fi
-          if ! command -v flutter_rust_bridge_codegen &> /dev/null || [ "$(flutter_rust_bridge_codegen --version | awk '{print $2}')" != "1.82.1" ]; then
-            cargo install flutter_rust_bridge_codegen --version 1.82.1
+          if ! command -v flutter_rust_bridge_codegen &> /dev/null || [ "$(flutter_rust_bridge_codegen --version | awk '{print $2}')" != "1.82.6" ]; then
+            cargo install flutter_rust_bridge_codegen --version 1.82.6
           fi
           echo "$HOME/.cargo/bin" >> $GITHUB_PATH
 
@@ -90,6 +90,8 @@ jobs:
       - name: Build Rust Bridge
         run: |
           flutter pub get
+          mkdir -p lib/generated/rust
+          mkdir -p ios/Runner/Generated
           flutter_rust_bridge_codegen --skip-deps-check \
             --rust-input rust/src/username_registration.rs \
             --dart-output lib/generated/rust/username_registration.dart \

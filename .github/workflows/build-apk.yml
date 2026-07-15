@@ -57,7 +57,7 @@ jobs:
             cargo install cbindgen
           fi
           if ! command -v flutter_rust_bridge_codegen &> /dev/null || [ "$(flutter_rust_bridge_codegen --version | awk '{print $2}')" != "1.82.6" ]; then
-            cargo install flutter_rust_bridge_codegen --version 1.82.6
+            cargo install flutter_rust_bridge_codegen --version 1.82.6 --force
           fi
           echo "$HOME/.cargo/bin" >> $GITHUB_PATH
 

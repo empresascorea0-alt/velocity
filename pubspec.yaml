@@ -261,6 +261,8 @@ flutter_intl:
     project_id: 6991a0b2-4aa6-49c1-82d8-fcd38488d8b4
 
 dependency_overrides:
+  http: ^1.1.0
+  uuid: ^4.1.0
   # ffi: ^2.0.1
   ffi: 2.0.1
   package_info_plus: ^4.0.0
@@ -308,10 +310,6 @@ flutter_launcher_icons:
   ios: true
   image_path: "assets/logo.png"
   min_sdk_android: 21
-
-dependency_overrides:
-  http: ^1.1.0
-  uuid: ^4.1.0
 
 flutter:
   fonts:

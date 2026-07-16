@@ -116,7 +116,7 @@ jobs:
           ls -R android/app/src/main/jniLibs
 
       - name: Build APK (Debug)
-        run: flutter build apk --debug --verbose
+        run: flutter build apk --debug
 
       - name: Upload APK
         uses: actions/upload-artifact@v4

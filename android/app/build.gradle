@@ -34,7 +34,7 @@ android {
     compileSdkVersion 34
 
     defaultConfig {
-        applicationId "co.perish.nautiluswallet"
+        applicationId "org.velocity.wallet"
         minSdkVersion 21
         targetSdkVersion 34
         multiDexEnabled true

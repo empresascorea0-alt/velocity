@@ -28,6 +28,7 @@ enum OverlayTheme {
 
 abstract class BaseTheme {
   Color? primary;
+  Color? primaryFixedDim;
   Color? primary60;
   Color? primary45;
   Color? primary30;
@@ -136,6 +137,7 @@ class ClassicBlueTheme extends BaseTheme {
   static const Color redDark = Color(0xFFB20000);
 
   Color? primary = main;
+  Color? primaryFixedDim = null;
   Color? primary60 = main.withOpacity(0.6);
   Color? primary45 = main.withOpacity(0.45);
   Color? primary30 = main.withOpacity(0.3);
@@ -233,6 +235,7 @@ class PotassiusTheme extends BaseTheme {
   static const Color redDark = Color(0xFFB20000);
 
   Color? primary = main;
+  Color? primaryFixedDim = null;
   Color? primary60 = main.withOpacity(0.6);
   Color? primary45 = main.withOpacity(0.45);
   Color? primary30 = main.withOpacity(0.3);

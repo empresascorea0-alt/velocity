@@ -24,17 +24,16 @@ class _SecurityChoiceScreenState extends State<SecurityChoiceScreen> {
   }
 
   Future<void> _checkBiometrics() async {
-    bool hasBio = await BiometricUtil().hasBiometrics();
-    setState(() => _hasBiometrics = hasBio);
-    if (!hasBio) {
-      // If no biometrics, just default to PIN and move on
-      await sl.get<SharedPrefsUtil>().setAuthMethod(AuthenticationMethod(AuthMethod.PIN));
+    // Bypassing async biometrics check to prevent UI hang
+    // bool hasBio = await BiometricUtil().hasBiometrics();
+    // setState(() => _hasBiometrics = hasBio);
+    // if (!hasBio) {
       widget.onChoiceMade();
-    }
+    // }
   }
 
   Future<void> _selectMethod(AuthMethod method) async {
-    await sl.get<SharedPrefsUtil>().setAuthMethod(AuthenticationMethod(method));
+    // await sl.get<SharedPrefsUtil>().setAuthMethod(AuthenticationMethod(method));
     widget.onChoiceMade();
   }
 

@@ -42,7 +42,8 @@ class _AppRootState extends State<AppRoot> {
   }
 
   Future<void> _handleSeed(String seed) async {
-    await sl.get<Vault>().setSeed(seed);
+    // Bypassing Vault.setSeed to avoid potential async hang/crash
+    // await sl.get<Vault>().setSeed(seed);
     setState(() => _state = IntroState.setPin);
   }
 

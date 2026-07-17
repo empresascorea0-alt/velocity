@@ -9,6 +9,30 @@ import 'package:velocity/service_locator.dart';
 import 'package:velocity/ui/app_root.dart';
 
 void main() async {
+  // Global Flutter error handler
+  FlutterError.onError = (FlutterErrorDetails details) {
+    print("Flutter Error: ${details.exception}");
+    print("Stack trace: ${details.stack}");
+  };
+
+  // Custom error widget for rendering failures
+  ErrorWidget.builder = (FlutterErrorDetails details) {
+    return MaterialApp(
+      home: Scaffold(
+        body: Container(
+          color: Colors.black,
+          padding: const EdgeInsets.all(20),
+          child: Center(
+            child: Text(
+              "Render Error: ${details.exception}",
+              style: const TextStyle(color: Colors.white, fontSize: 12),
+            ),
+          ),
+        ),
+      ),
+    );
+  };
+
   try {
     WidgetsFlutterBinding.ensureInitialized();
   } catch (e) {

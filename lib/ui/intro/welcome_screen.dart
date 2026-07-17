@@ -13,25 +13,22 @@ class WelcomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     final theme = StateContainer.of(context).curTheme;
 
-    return PremiumBackground(
-      child: SafeArea(
+    return Scaffold(
+      backgroundColor: theme.background,
+      body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 24.0),
           child: Column(
             children: [
               const Spacer(),
               // Wordmark
-              Hero(
-                tag: 'wordmark',
-                child: Text(
-                  'VELOCITY',
-                  style: TextStyle(
-                    color: theme.primary,
-                    fontSize: 48,
-                    fontWeight: FontWeight.w200, 
-                    letterSpacing: 16,
-                    fontFamily: 'Sora',
-                  ),
+              Text(
+                'VELOCITY',
+                style: TextStyle(
+                  color: theme.primary,
+                  fontSize: 48,
+                  fontWeight: FontWeight.w200, 
+                  letterSpacing: 16,
                 ),
               ),
               const SizedBox(height: 16),
@@ -45,67 +42,59 @@ class WelcomeScreen extends StatelessWidget {
                 ),
               ),
               const Spacer(),
-              // Glass Card for Actions
-              GlassCard(
-                padding: const EdgeInsets.all(32),
-                borderRadius: 32,
-                opacity: 0.5,
-                child: Column(
-                  children: [
-                    // Create Button
-                    SizedBox(
-                      width: double.infinity,
-                      height: 64,
-                      child: ElevatedButton(
-                        onPressed: onCreate,
-                        style: ElevatedButton.styleFrom(
-                          backgroundColor: theme.primary,
-                          foregroundColor: const Color(0xFF221B00),
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(100),
-                          ),
-                          elevation: 0,
+              // Actions
+              Column(
+                children: [
+                  // Create Button
+                  SizedBox(
+                    width: double.infinity,
+                    height: 64,
+                    child: ElevatedButton(
+                      onPressed: onCreate,
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: theme.primary,
+                        foregroundColor: const Color(0xFF221B00),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(100),
                         ),
-                        child: const Text(
-                          'CREATE NEW WALLET',
-                          style: TextStyle(
-                            fontSize: 14,
-                            fontWeight: FontWeight.bold,
-                            letterSpacing: 1.5,
-                          ),
+                      ),
+                      child: const Text(
+                        'CREATE NEW WALLET',
+                        style: TextStyle(
+                          fontSize: 14,
+                          fontWeight: FontWeight.bold,
+                          letterSpacing: 1.5,
                         ),
                       ),
                     ),
-                    const SizedBox(height: 16),
-                    // Import Button
-                    SizedBox(
-                      width: double.infinity,
-                      height: 64,
-                      child: OutlinedButton(
-                        onPressed: onImport,
-                        style: OutlinedButton.styleFrom(
-                          side: BorderSide(
-                            color: theme.primary!.withOpacity(0.2),
-                            width: 1,
-                          ),
-                          backgroundColor: const Color(0xFF231F14).withOpacity(0.3),
-                          foregroundColor: theme.primary,
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(100),
-                          ),
+                  ),
+                  const SizedBox(height: 16),
+                  // Import Button
+                  SizedBox(
+                    width: double.infinity,
+                    height: 64,
+                    child: OutlinedButton(
+                      onPressed: onImport,
+                      style: OutlinedButton.styleFrom(
+                        side: BorderSide(
+                          color: theme.primary!.withOpacity(0.2),
+                          width: 1,
                         ),
-                        child: const Text(
-                          'IMPORT EXISTING',
-                          style: TextStyle(
-                            fontSize: 14,
-                            fontWeight: FontWeight.bold,
-                            letterSpacing: 1.5,
-                          ),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(100),
+                        ),
+                      ),
+                      child: const Text(
+                        'IMPORT EXISTING',
+                        style: TextStyle(
+                          fontSize: 14,
+                          fontWeight: FontWeight.bold,
+                          letterSpacing: 1.5,
                         ),
                       ),
                     ),
-                  ],
-                ),
+                  ),
+                ],
               ),
               const SizedBox(height: 48),
               Text(

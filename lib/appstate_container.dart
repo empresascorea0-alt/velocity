@@ -176,7 +176,7 @@ class StateContainerState extends State<StateContainer> {
   Account? recentSecondLast;
 
   bool showChart = false;
-  final InAppLocalhostServer localhostServer = InAppLocalhostServer();
+  InAppLocalhostServer? localhostServer;
 
   // Natricon / Nyanicon settings
   bool? natriconOn = false;

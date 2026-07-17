@@ -15,14 +15,14 @@ void main() async {
     print("Binding initialization error: $e");
   }
 
-  // Load environment variables
+  // Load environment variables - non-fatal
   try {
     await dotenv.load(fileName: ".env");
   } catch (e) {
     print("Dotenv load error: $e");
   }
 
-  // Initialize Firebase
+  // Initialize Firebase - non-fatal
   try {
     await Firebase.initializeApp(
       options: DefaultFirebaseOptions.currentPlatform,
@@ -31,16 +31,16 @@ void main() async {
     print("Firebase initialization error: $e");
   }
 
-  // Initialize service locator but we will try-catch it
+  // Initialize service locator - non-fatal
   try {
     setupServiceLocator();
   } catch (e) {
     print("Service locator error: $e");
   }
 
-  // Force portrait mode
+  // Force portrait mode - non-fatal
   try {
-    await SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
+    SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
   } catch (e) {
     print("Orientation error: $e");
   }

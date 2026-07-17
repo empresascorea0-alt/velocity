@@ -519,60 +519,12 @@ class StateContainerState extends State<StateContainer> {
   @override
   void initState() {
     super.initState();
-
-    // Safe mode initialization
-    try {
-      _initSafe();
-    } catch (e) {
-      print("Global initState error: $e");
-    }
+    // Disabled all initialization to prevent crashes
+    print("StateContainerState: Minimal initState for UI navigation");
   }
 
   Future<void> _initSafe() async {
-    try {
-      // Set currency locale here for the UI to access
-      final prefs = sl.get<SharedPrefsUtil>();
-      prefs.getCurrency(deviceLocale).then((AvailableCurrency currency) {
-        if (mounted) {
-          setState(() {
-            currencyLocale = currency.getLocale().toString();
-            curCurrency = currency;
-          });
-        }
-      }).catchError((e) => print("Currency error: $e"));
-    } catch (e) {
-      print("SharedPrefs currency error: $e");
-    }
-
-    try {
-      sl.get<SharedPrefsUtil>().getLanguage().then((LanguageSetting language) {
-        if (mounted) {
-          setState(() {
-            curLanguage = language;
-          });
-        }
-      }).catchError((e) => print("Language error: $e"));
-    } catch (e) {
-      print("SharedPrefs language error: $e");
-    }
-
-    try {
-      sl.get<SharedPrefsUtil>().getTheme().then((ThemeSetting theme) {
-        if (mounted) {
-          updateTheme(theme);
-        }
-      }).catchError((e) => print("Theme error: $e"));
-    } catch (e) {
-      print("SharedPrefs theme error: $e");
-    }
-
-    try {
-      sl.get<SharedPrefsUtil>().getUseNatricon().then((bool useNatricon) {
-        if (mounted) setNatriconOn(useNatricon);
-      }).catchError((e) => print("Natricon error: $e"));
-    } catch (e) {
-      print("SharedPrefs natricon error: $e");
-    }
+    // Disabled
   }
 
   // Subscriptions

@@ -150,7 +150,7 @@ class SettingsScreen extends StatelessWidget {
           subtitle,
           style: TextStyle(color: theme.text60, fontSize: 13),
         ),
-        activeThumbColor: theme.primary,
+        activeColor: theme.primary,
         value: value,
         onChanged: onChanged,
       ),

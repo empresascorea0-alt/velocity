@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:velocity/appstate_container.dart';
-import 'package:velocity/model/vault.dart';
-import 'package:velocity/service_locator.dart';
+import 'package:velocity/generated/l10n.dart';
 import 'package:velocity/ui/intro/import_wallet_screen.dart';
 import 'package:velocity/ui/intro/seed_generation_screen.dart';
 import 'package:velocity/ui/intro/welcome_screen.dart';
@@ -10,8 +10,6 @@ import 'package:velocity/ui/security/pin_screen.dart';
 import 'package:velocity/ui/security/set_pin_screen.dart';
 import 'package:velocity/ui/wallet/dashboard_screen.dart';
 import 'package:velocity/ui/widgets/big_bang_splash.dart';
-import 'package:velocity/util/sharedprefsutil.dart';
-import 'package:velocity/model/authentication_method.dart';
 
 enum IntroState { splash, welcome, create, import, setPin, securityChoice, unlock, wallet }
 
@@ -28,12 +26,6 @@ class _AppRootState extends State<AppRoot> {
   @override
   void initState() {
     super.initState();
-    // Bypassing initial state checks to avoid crashes
-    // _checkInitialState();
-  }
-
-  Future<void> _checkInitialState() async {
-    // Disabled
   }
 
   Future<void> _onSplashFinished() async {
@@ -42,15 +34,14 @@ class _AppRootState extends State<AppRoot> {
   }
 
   Future<void> _handleSeed(String seed) async {
-    // Bypassing Vault.setSeed to avoid potential async hang/crash
-    // await sl.get<Vault>().setSeed(seed);
     setState(() => _state = IntroState.setPin);
   }
 
   @override
   Widget build(BuildContext context) {
     try {
-      final theme = StateContainer.of(context).curTheme;
+      final BaseTheme theme = StateContainer.of(context).curTheme;
+      final StateContainerState state = StateContainer.of(context);
 
       Widget body;
       switch (_state) {
@@ -92,6 +83,14 @@ class _AppRootState extends State<AppRoot> {
           primaryColor: theme.primary,
           fontFamily: 'NunitoSans',
         ),
+        localizationsDelegates: const <LocalizationsDelegate<dynamic>>[
+          Z.delegate,
+          GlobalMaterialLocalizations.delegate,
+          GlobalWidgetsLocalizations.delegate,
+          GlobalCupertinoLocalizations.delegate,
+        ],
+        supportedLocales: Z.delegate.supportedLocales,
+        locale: state.curLanguage.getLocale(),
         home: body,
       );
     } catch (e) {

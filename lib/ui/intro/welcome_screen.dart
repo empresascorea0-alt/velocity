@@ -21,44 +21,39 @@ class WelcomeScreen extends StatelessWidget {
             padding: const EdgeInsets.symmetric(horizontal: 24.0),
             child: Column(
               children: [
-                const Spacer(flex: 3),
-                // Logo or Icon Placeholder for a more Top feel
-                Container(
-                  padding: const EdgeInsets.all(16),
-                  decoration: BoxDecoration(
-                    shape: BoxShape.circle,
-                    border: Border.all(color: theme.primary!.withOpacity(0.2)),
-                  ),
-                  child: Icon(Icons.bolt, color: theme.primary, size: 42),
-                ),
-                const SizedBox(height: 24),
-                // Wordmark with auto-scaling to prevent overflow
+                const Spacer(flex: 4),
+                // Wordmark Ultra-Impactante
                 FittedBox(
                   fit: BoxFit.scaleDown,
                   child: Text(
                     'VELOCITY',
                     style: TextStyle(
                       color: theme.primary,
-                      fontSize: 54, // Increased size for impact
-                      fontWeight: FontWeight.w100, // Thinner for elegance
-                      letterSpacing: 20, // Even more spacing for that premium look
+                      fontSize: 64, // Tamaño masivo para impacto "Waw"
+                      fontWeight: FontWeight.w900, // Negrita extrema
+                      letterSpacing: 24, // Espaciado de vanguardia expansivo
                       fontFamily: 'Sora',
+                      height: 1.0,
                     ),
                   ),
                 ),
-                const SizedBox(height: 12),
-                Text(
-                  'THE VALUE IS YOURS. YOURS ALONE.',
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                    color: theme.text60,
-                    fontSize: 10,
-                    fontWeight: FontWeight.w900,
-                    letterSpacing: 2.5,
+                const SizedBox(height: 20),
+                // Subtítulo con peso visual equilibrado
+                Opacity(
+                  opacity: 0.8,
+                  child: Text(
+                    'THE VALUE IS YOURS. YOURS ALONE.',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      color: theme.text60,
+                      fontSize: 11,
+                      fontWeight: FontWeight.w900, // Negrita para consistencia
+                      letterSpacing: 3.5,
+                    ),
                   ),
                 ),
-                const Spacer(flex: 4),
-                // Actions
+                const Spacer(flex: 5),
+                // Botones con diseño de vanguardia
                 Column(
                   children: [
                     // Create Button
@@ -68,9 +63,9 @@ class WelcomeScreen extends StatelessWidget {
                       decoration: BoxDecoration(
                         boxShadow: [
                           BoxShadow(
-                            color: theme.primary!.withOpacity(0.2),
-                            blurRadius: 24,
-                            offset: const Offset(0, 8),
+                            color: theme.primary!.withOpacity(0.25),
+                            blurRadius: 30,
+                            offset: const Offset(0, 10),
                           ),
                         ],
                       ),
@@ -87,14 +82,14 @@ class WelcomeScreen extends StatelessWidget {
                         child: const Text(
                           'CREATE NEW WALLET',
                           style: TextStyle(
-                            fontSize: 14,
-                            fontWeight: FontWeight.w900,
-                            letterSpacing: 1.5,
+                            fontSize: 15,
+                            fontWeight: FontWeight.w900, // Ultra negrita
+                            letterSpacing: 2.0,
                           ),
                         ),
                       ),
                     ),
-                    const SizedBox(height: 16),
+                    const SizedBox(height: 20),
                     // Import Button
                     SizedBox(
                       width: double.infinity,
@@ -103,38 +98,36 @@ class WelcomeScreen extends StatelessWidget {
                         onPressed: onImport,
                         style: OutlinedButton.styleFrom(
                           side: BorderSide(
-                            color: theme.primary!.withOpacity(0.2),
-                            width: 1.5,
+                            color: theme.primary!.withOpacity(0.3),
+                            width: 2.0,
                           ),
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(100),
                           ),
-                          backgroundColor: Colors.white.withOpacity(0.03),
+                          backgroundColor: Colors.white.withOpacity(0.04),
                         ),
                         child: Text(
                           'IMPORT EXISTING',
                           style: TextStyle(
                             color: theme.text,
-                            fontSize: 14,
-                            fontWeight: FontWeight.w900,
-                            letterSpacing: 1.5,
+                            fontSize: 15,
+                            fontWeight: FontWeight.w900, // Ultra negrita
+                            letterSpacing: 2.0,
                           ),
                         ),
                       ),
                     ),
                   ],
                 ),
-                const SizedBox(height: 48),
-                Opacity(
-                  opacity: 0.5,
-                  child: Text(
-                    'DESIGNED BY LUMEX',
-                    style: TextStyle(
-                      color: theme.text,
-                      fontSize: 9,
-                      fontWeight: FontWeight.bold,
-                      letterSpacing: 5,
-                    ),
+                const SizedBox(height: 60),
+                // Pie de página destacado
+                Text(
+                  'DESIGNED BY LUMEX',
+                  style: TextStyle(
+                    color: theme.text,
+                    fontSize: 11,
+                    fontWeight: FontWeight.w900, // Negrita solicitada
+                    letterSpacing: 8, // Espaciado ultra-ancho
                   ),
                 ),
                 const SizedBox(height: 32),

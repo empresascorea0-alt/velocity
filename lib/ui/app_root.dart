@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:velocity/appstate_container.dart';
 import 'package:velocity/generated/l10n.dart';
+import 'package:velocity/themes.dart';
 import 'package:velocity/ui/intro/import_wallet_screen.dart';
 import 'package:velocity/ui/intro/seed_generation_screen.dart';
 import 'package:velocity/ui/intro/welcome_screen.dart';

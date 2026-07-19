@@ -1,9 +1,10 @@
 import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:velocity/appstate_container.dart';
-import 'package:velocity/styles.dart';
+import 'package:velocity/themes.dart';
 import 'package:velocity/ui/exchange/exchange_screen.dart';
 import 'package:velocity/ui/faucet/faucet_screen.dart';
+import 'package:velocity/ui/settings/settings_screen.dart';
 import 'package:velocity/ui/shop/shop_screen.dart';
 import 'package:velocity/ui/wallet/wallet_home_screen.dart';
 
@@ -26,7 +27,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final theme = StateContainer.of(context).curTheme;
+    final BaseTheme theme = StateContainer.of(context).curTheme;
 
     return Scaffold(
       backgroundColor: theme.background,
@@ -53,7 +54,11 @@ class _DashboardScreenState extends State<DashboardScreen> {
               centerTitle: true,
               leading: IconButton(
                 icon: Icon(Icons.menu, color: theme.text60),
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.of(context).push(
+                    MaterialPageRoute(builder: (context) => const SettingsScreen()),
+                  );
+                },
               ),
               actions: [
                 IconButton(
@@ -102,7 +107,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
     );
   }
 
-  Widget _buildNavItem(int index, IconData icon, String label, dynamic theme) {
+  Widget _buildNavItem(int index, IconData icon, String label, BaseTheme theme) {
     final isSelected = _currentIndex == index;
     final color = isSelected ? theme.primary : const Color(0xFFC7C6CB).withOpacity(0.6);
 
@@ -120,7 +125,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
               color: color,
               size: 26,
               shadows: isSelected ? [
-                Shadow(color: theme.primary.withOpacity(0.5), blurRadius: 12),
+                Shadow(color: theme.primary!.withOpacity(0.5), blurRadius: 12),
               ] : null,
             ),
             const SizedBox(height: 2),

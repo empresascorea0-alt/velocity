@@ -3,6 +3,7 @@ import 'package:velocity/appstate_container.dart';
 import 'package:velocity/model/available_language.dart';
 import 'package:velocity/model/available_themes.dart';
 import 'package:velocity/themes.dart';
+import 'package:velocity/ui/settings/about_screen.dart';
 
 class SettingsScreen extends StatelessWidget {
   const SettingsScreen({super.key});
@@ -64,9 +65,19 @@ class SettingsScreen extends StatelessWidget {
             theme: theme,
             onTap: () => _showLanguageDialog(context),
           ),
-          const SizedBox(height: 40),
-          _buildSectionHeader('Acerca de', theme),
-          _buildAboutContent(theme),
+          const SizedBox(height: 20),
+          _buildSectionHeader('Información', theme),
+          _buildSettingTile(
+            icon: Icons.info_outline,
+            title: 'Acerca de Velocity',
+            subtitle: 'Conoce la misión y el ecosistema',
+            theme: theme,
+            onTap: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(builder: (context) => const AboutScreen()),
+              );
+            },
+          ),
           const SizedBox(height: 40),
           Center(
             child: Text(
@@ -154,105 +165,6 @@ class SettingsScreen extends StatelessWidget {
         value: value,
         onChanged: onChanged,
       ),
-    );
-  }
-
-  Widget _buildAboutContent(BaseTheme theme) {
-    return Container(
-      padding: const EdgeInsets.all(24),
-      decoration: BoxDecoration(
-        gradient: LinearGradient(
-          begin: Alignment.topLeft,
-          end: Alignment.bottomRight,
-          colors: [
-            theme.primary!.withOpacity(0.1),
-            theme.backgroundDark!.withOpacity(0.3),
-          ],
-        ),
-        borderRadius: BorderRadius.circular(24),
-        border: Border.all(color: theme.primary!.withOpacity(0.2)),
-      ),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Row(
-            children: [
-              Container(
-                padding: const EdgeInsets.all(8),
-                decoration: BoxDecoration(
-                  color: theme.primary,
-                  shape: BoxShape.circle,
-                ),
-                child: Icon(Icons.bolt, color: theme.background, size: 24),
-              ),
-              const SizedBox(width: 12),
-              Text(
-                'Velocity',
-                style: TextStyle(
-                  color: theme.text,
-                  fontSize: 22,
-                  fontWeight: FontWeight.w900,
-                ),
-              ),
-            ],
-          ),
-          const SizedBox(height: 20),
-          _buildAboutItem(
-            'CERO COMISIONES',
-            'Lumex elimina las barreras entre tú y tu dinero. Sin comisiones, sin intermediarios. Lo que envías es lo que llega.',
-            theme,
-          ),
-          const SizedBox(height: 16),
-          _buildAboutItem(
-            'RAPIDEZ INSTANTÁNEA',
-            'Diseñada para el ritmo de la vida moderna. Transferencias instantáneas en la palma de tu mano, desafiando el tiempo y el espacio.',
-            theme,
-          ),
-          const SizedBox(height: 16),
-          _buildAboutItem(
-            'ESCASEZ DE VALOR',
-            'Un activo digital finito en un mundo de inflación infinita. Lumex no es solo dinero; es la reserva de valor para la nueva era.',
-            theme,
-          ),
-          const SizedBox(height: 24),
-          Text(
-            'Velocity es la vanguardia de una revolución financiera. Estamos construyendo el futuro del dinero cotidiano, donde la libertad no es una opción, es el estándar.',
-            style: TextStyle(
-              color: theme.text,
-              fontSize: 14,
-              height: 1.5,
-              fontWeight: FontWeight.bold,
-              fontStyle: FontStyle.italic,
-            ),
-          ),
-        ],
-      ),
-    );
-  }
-
-  Widget _buildAboutItem(String title, String description, BaseTheme theme) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Text(
-          title,
-          style: TextStyle(
-            color: theme.primary,
-            fontSize: 11,
-            fontWeight: FontWeight.w900,
-            letterSpacing: 1,
-          ),
-        ),
-        const SizedBox(height: 4),
-        Text(
-          description,
-          style: TextStyle(
-            color: theme.text60,
-            fontSize: 13,
-            height: 1.4,
-          ),
-        ),
-      ],
     );
   }
 

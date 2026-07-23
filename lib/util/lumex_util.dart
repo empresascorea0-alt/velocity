@@ -77,6 +77,7 @@ class LumexAccounts {
 class LumexAmounts {
   static const int maxDecimalDigits = 30;
   static BigInt rawPerNano = BigInt.from(10).pow(30);
+  static BigInt rawPerLumex = BigInt.from(10).pow(30);
   static BigInt rawPerBanano = BigInt.from(10).pow(29);
 
   static Decimal getRawAsDecimal(String raw, String rawPerCur) {

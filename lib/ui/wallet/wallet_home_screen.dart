@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:velocity/appstate_container.dart';
-import 'package:velocity/styles.dart';
+import 'package:velocity/localize.dart';
+import 'package:velocity/themes.dart';
 import 'package:velocity/ui/widgets/premium_widgets.dart';
 
 class WalletHomeScreen extends StatelessWidget {
@@ -8,7 +9,7 @@ class WalletHomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final theme = StateContainer.of(context).curTheme;
+    final BaseTheme theme = StateContainer.of(context).curTheme;
 
     return PremiumBackground(
       child: SingleChildScrollView(
@@ -25,7 +26,7 @@ class WalletHomeScreen extends StatelessWidget {
                   fontWeight: FontWeight.w500,
                 )),
             const SizedBox(height: 16),
-            Text('20,000,000 LMX',
+            Text('${NonTranslatable.currencySymbol} 20,000,000',
                 style: TextStyle(
                     color: theme.primaryFixedDim ?? theme.primary,
                     fontSize: 42,
@@ -101,9 +102,9 @@ class WalletHomeScreen extends StatelessWidget {
             ),
             const SizedBox(height: 16),
             // Example Transactions
-            _buildTransaction(theme, Icons.call_received, 'LMX Staking Reward', 'Oct 24, 2023 • 14:02', '+ 1,250.00', '\$8.42', theme.tertiary ?? theme.success!, true),
-            _buildTransaction(theme, Icons.call_made, 'Transfer to Exchange', 'Oct 23, 2023 • 09:15', '- 50,000.00', '\$341.10', theme.error!, false),
-            _buildTransaction(theme, Icons.shopping_cart, 'Luxury Marketplace', 'Oct 21, 2023 • 18:45', '- 12,400.00', '\$82.15', theme.primary!, false),
+            _buildTransaction(theme, Icons.call_received, '${NonTranslatable.currencyCode} Staking Reward', 'Oct 24, 2023 • 14:02', '+ ${NonTranslatable.currencySymbol} 1,250.00', '\$8.42', theme.tertiary ?? theme.success!, true),
+            _buildTransaction(theme, Icons.call_made, 'Transfer to Exchange', 'Oct 23, 2023 • 09:15', '- ${NonTranslatable.currencySymbol} 50,000.00', '\$341.10', theme.error!, false),
+            _buildTransaction(theme, Icons.shopping_cart, 'Luxury Marketplace', 'Oct 21, 2023 • 18:45', '- ${NonTranslatable.currencySymbol} 12,400.00', '\$82.15', theme.primary!, false),
             
             const SizedBox(height: 48),
             // Assets Section
@@ -115,9 +116,9 @@ class WalletHomeScreen extends StatelessWidget {
             const SizedBox(height: 16),
             Row(
               children: [
-                Expanded(child: _buildAssetCard(theme, 'STAKED', '12.5M LMX', theme.primary!)),
+                Expanded(child: _buildAssetCard(theme, 'STAKED', '12.5M ${NonTranslatable.currencyCode}', theme.primary!)),
                 const SizedBox(width: 16),
-                Expanded(child: _buildAssetCard(theme, 'LIQUID', '7.5M LMX', theme.tertiary!)),
+                Expanded(child: _buildAssetCard(theme, 'LIQUID', '7.5M ${NonTranslatable.currencyCode}', theme.tertiary!)),
               ],
             ),
           ],
@@ -126,7 +127,7 @@ class WalletHomeScreen extends StatelessWidget {
     );
   }
 
-  Widget _buildAssetCard(dynamic theme, String title, String value, Color borderColor) {
+  Widget _buildAssetCard(BaseTheme theme, String title, String value, Color borderColor) {
     return GlassCard(
       padding: const EdgeInsets.all(16),
       border: Border(left: BorderSide(color: borderColor, width: 4)),
@@ -141,7 +142,7 @@ class WalletHomeScreen extends StatelessWidget {
     );
   }
 
-  Widget _buildTransaction(dynamic theme, IconData icon, String title, String date, String amount, String value, Color iconColor, bool isPositive) {
+  Widget _buildTransaction(BaseTheme theme, IconData icon, String title, String date, String amount, String value, Color iconColor, bool isPositive) {
     return Padding(
       padding: const EdgeInsets.only(bottom: 12),
       child: GlassCard(

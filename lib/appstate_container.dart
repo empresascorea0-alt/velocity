@@ -933,6 +933,8 @@ class StateContainerState extends State<StateContainer> {
           wallet?.representative = wallet!.representative.replaceAll("lumex_", "ban_");
         }
         NonTranslatable.currencyName = "Banano";
+        NonTranslatable.currencySymbol = "BAN";
+        NonTranslatable.currencyCode = "BAN";
         NonTranslatable.currencyPrefix = "ban_";
         NonTranslatable.currencyUriPrefix = "ban";
         NonTranslatable.accountType = LumexAccountType.BANANO;
@@ -941,8 +943,10 @@ class StateContainerState extends State<StateContainer> {
           wallet?.representative = wallet!.representative.replaceAll("ban_", "lumex_");
         }
         NonTranslatable.currencyName = "Lumex";
+        NonTranslatable.currencySymbol = "Ⱡ";
+        NonTranslatable.currencyCode = "LMX";
         NonTranslatable.currencyPrefix = "lumex_";
-        NonTranslatable.currencyUriPrefix = "nano";
+        NonTranslatable.currencyUriPrefix = "lumex";
         NonTranslatable.accountType = LumexAccountType.Lumex;
       }
       if (context != null) {

@@ -120,6 +120,8 @@ class NonTranslatable {
   }
 
   static String currencyName = "Lumex";
+  static String currencySymbol = "Ⱡ";
+  static String currencyCode = "LMX";
   static String currencyPrefix = "lumex_";
   static String currencyUriPrefix = "lumex";
   static int accountType = 1;

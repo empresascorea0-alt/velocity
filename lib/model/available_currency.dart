@@ -39,7 +39,8 @@ enum AvailableCurrencyEnum {
   AED,
   VES,
   ZAR,
-  UAH
+  UAH,
+  LMX
 }
 
 /// Represent the available authentication methods our app supports
@@ -132,6 +133,8 @@ class AvailableCurrency extends SettingSelectionItem {
         return "South African Rand";
       case "UAH":
         return "Ukraine hryvnia";
+      case "LMX":
+        return "Lumex";
       case "USD":
       default:
         return "US Dollar";
@@ -214,6 +217,8 @@ class AvailableCurrency extends SettingSelectionItem {
         return "R";
       case "UAH":
         return "₴";
+      case "LMX":
+        return "Ⱡ";
       case "USD":
       default:
         return "\$";
@@ -296,6 +301,8 @@ class AvailableCurrency extends SettingSelectionItem {
         return Locale("en", "ZA");
       case "UAH":
         return Locale("uk", "UA");
+      case "LMX":
+        return Locale("en", "US");
       case "USD":
       default:
         return Locale("en", "US");
